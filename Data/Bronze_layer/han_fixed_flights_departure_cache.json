@@ -66902,45 +66902,314 @@
         "type": "dynamic",
         "is_fixed": 0,
         "schedule": {
-            "07 Jan 2026": "17:33",
-            "06 Jan 2026": "17:35",
-            "05 Jan 2026": "17:21",
-            "04 Jan 2026": "17:52",
-            "03 Jan 2026": "17:17",
-            "02 Jan 2026": "17:51",
-            "01 Jan 2026": "17:08",
-            "31 Dec 2025": "17:35",
-            "30 Dec 2025": "17:20",
-            "29 Dec 2025": "17:07",
-            "28 Dec 2025": "17:20",
-            "27 Dec 2025": "17:16",
-            "26 Dec 2025": "17:09",
-            "25 Dec 2025": "17:19",
-            "24 Dec 2025": "15:33",
-            "23 Dec 2025": "17:20",
-            "22 Dec 2025": "17:09",
-            "21 Dec 2025": "17:39",
-            "20 Dec 2025": "17:22",
-            "19 Dec 2025": "17:16",
-            "18 Dec 2025": "17:14",
-            "17 Dec 2025": "17:24",
-            "16 Dec 2025": "17:26",
-            "15 Dec 2025": "17:18",
-            "14 Dec 2025": "17:10",
-            "13 Dec 2025": "20:33",
-            "12 Dec 2025": "17:09",
-            "11 Dec 2025": "17:16",
-            "10 Dec 2025": "17:34",
-            "09 Dec 2025": "17:04",
-            "08 Dec 2025": "17:15",
-            "07 Dec 2025": "17:23",
-            "06 Dec 2025": "18:15",
-            "05 Dec 2025": "17:12",
-            "04 Dec 2025": "17:34",
-            "03 Dec 2025": "17:07",
-            "02 Dec 2025": "17:25",
-            "01 Dec 2025": "17:33"
-        }
+            "07 Jan 2026": [
+                {
+                    "std": "17:33",
+                    "atd": "15:47",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "06 Jan 2026": [
+                {
+                    "std": "17:35",
+                    "atd": "15:42",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "17:21",
+                    "atd": "15:40",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "04 Jan 2026": [
+                {
+                    "std": "17:52",
+                    "atd": "16:02",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "03 Jan 2026": [
+                {
+                    "std": "17:17",
+                    "atd": "15:31",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "02 Jan 2026": [
+                {
+                    "std": "17:51",
+                    "atd": "16:01",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "01 Jan 2026": [
+                {
+                    "std": "17:08",
+                    "atd": "15:26",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "31 Dec 2025": [
+                {
+                    "std": "17:35",
+                    "atd": "15:44",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "30 Dec 2025": [
+                {
+                    "std": "17:20",
+                    "atd": "15:36",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "29 Dec 2025": [
+                {
+                    "std": "17:07",
+                    "atd": "15:23",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "28 Dec 2025": [
+                {
+                    "std": "17:20",
+                    "atd": "15:34",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "27 Dec 2025": [
+                {
+                    "std": "17:16",
+                    "atd": "15:30",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "26 Dec 2025": [
+                {
+                    "std": "17:09",
+                    "atd": "15:32",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "25 Dec 2025": [
+                {
+                    "std": "17:19",
+                    "atd": "15:36",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "24 Dec 2025": [
+                {
+                    "std": "15:33",
+                    "atd": "15:31",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "23 Dec 2025": [
+                {
+                    "std": "17:20",
+                    "atd": "15:37",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "22 Dec 2025": [
+                {
+                    "std": "17:09",
+                    "atd": "15:28",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "21 Dec 2025": [
+                {
+                    "std": "17:39",
+                    "atd": "15:58",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "20 Dec 2025": [
+                {
+                    "std": "17:22",
+                    "atd": "15:40",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "19 Dec 2025": [
+                {
+                    "std": "17:16",
+                    "atd": "15:33",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "18 Dec 2025": [
+                {
+                    "std": "17:14",
+                    "atd": "15:30",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "17 Dec 2025": [
+                {
+                    "std": "17:24",
+                    "atd": "15:36",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "16 Dec 2025": [
+                {
+                    "std": "17:26",
+                    "atd": "15:36",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "15 Dec 2025": [
+                {
+                    "std": "17:18",
+                    "atd": "15:28",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "14 Dec 2025": [
+                {
+                    "std": "17:10",
+                    "atd": "15:20",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "13 Dec 2025": [
+                {
+                    "std": "20:33",
+                    "atd": "18:47",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "12 Dec 2025": [
+                {
+                    "std": "17:09",
+                    "atd": "15:27",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "11 Dec 2025": [
+                {
+                    "std": "17:16",
+                    "atd": "15:34",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "10 Dec 2025": [
+                {
+                    "std": "17:34",
+                    "atd": "15:20",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "09 Dec 2025": [
+                {
+                    "std": "17:04",
+                    "atd": "15:19",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "08 Dec 2025": [
+                {
+                    "std": "17:15",
+                    "atd": "15:33",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "07 Dec 2025": [
+                {
+                    "std": "17:23",
+                    "atd": "15:35",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "06 Dec 2025": [
+                {
+                    "std": "18:15",
+                    "atd": "16:27",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "05 Dec 2025": [
+                {
+                    "std": "17:12",
+                    "atd": "15:31",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "04 Dec 2025": [
+                {
+                    "std": "17:34",
+                    "atd": "15:41",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "03 Dec 2025": [
+                {
+                    "std": "17:07",
+                    "atd": "15:25",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "02 Dec 2025": [
+                {
+                    "std": "17:25",
+                    "atd": "15:35",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "01 Dec 2025": [
+                {
+                    "std": "17:33",
+                    "atd": "15:22",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ]
+        },
+        "dest": "Ho Chi Minh City",
+        "iata": "SGN",
+        "airline": "Sun PhuQuoc Airways"
     },
     "MU6012": {
         "type": "dynamic",
@@ -87679,25 +87948,153 @@
         "type": "dynamic",
         "is_fixed": 0,
         "schedule": {
-            "18 Dec 2025": "09:25",
-            "17 Dec 2025": "09:25",
-            "16 Dec 2025": "09:25",
-            "15 Dec 2025": "09:25",
-            "14 Dec 2025": "09:25",
-            "13 Dec 2025": "09:25",
-            "12 Dec 2025": "09:25",
-            "11 Dec 2025": "09:25",
-            "10 Dec 2025": "09:25",
-            "09 Dec 2025": "09:25",
-            "08 Dec 2025": "09:25",
-            "07 Dec 2025": "09:25",
-            "06 Dec 2025": "09:25",
-            "05 Dec 2025": "09:25",
-            "04 Dec 2025": "09:25",
-            "03 Dec 2025": "09:25",
-            "02 Dec 2025": "09:25",
-            "01 Dec 2025": "09:25"
-        }
+            "18 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:44",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "17 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "10:06",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "16 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:50",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "15 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:36",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "14 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:36",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "13 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:57",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "12 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "11:34",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "11 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:49",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "10 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:34",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "09 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:30",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "08 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:27",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "07 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:35",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "06 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:49",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "05 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:29",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "04 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:36",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "03 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:52",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "02 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:30",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "01 Dec 2025": [
+                {
+                    "std": "09:25",
+                    "atd": "09:50",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ]
+        },
+        "dest": "Ho Chi Minh City",
+        "iata": "SGN"
     },
     "VJ915": {
         "type": "dynamic",
@@ -115889,45 +116286,314 @@
         "type": "dynamic",
         "is_fixed": 0,
         "schedule": {
-            "07 Jan 2026": "15:16",
-            "06 Jan 2026": "15:09",
-            "05 Jan 2026": "15:34",
-            "04 Jan 2026": "15:31",
-            "03 Jan 2026": "15:38",
-            "02 Jan 2026": "15:35",
-            "01 Jan 2026": "15:19",
-            "31 Dec 2025": "15:32",
-            "30 Dec 2025": "15:22",
-            "29 Dec 2025": "15:23",
-            "28 Dec 2025": "15:19",
-            "27 Dec 2025": "17:15",
-            "26 Dec 2025": "15:30",
-            "25 Dec 2025": "15:30",
-            "24 Dec 2025": "15:26",
-            "23 Dec 2025": "15:17",
-            "22 Dec 2025": "15:20",
-            "21 Dec 2025": "15:27",
-            "20 Dec 2025": "15:31",
-            "19 Dec 2025": "15:28",
-            "18 Dec 2025": "15:33",
-            "17 Dec 2025": "15:25",
-            "16 Dec 2025": "15:20",
-            "15 Dec 2025": "15:26",
-            "14 Dec 2025": "15:20",
-            "13 Dec 2025": "15:24",
-            "12 Dec 2025": "15:22",
-            "11 Dec 2025": "15:13",
-            "10 Dec 2025": "15:19",
-            "09 Dec 2025": "15:29",
-            "08 Dec 2025": "15:07",
-            "07 Dec 2025": "15:19",
-            "06 Dec 2025": "15:29",
-            "05 Dec 2025": "15:19",
-            "04 Dec 2025": "15:25",
-            "03 Dec 2025": "15:11",
-            "02 Dec 2025": "15:25",
-            "01 Dec 2025": "15:18"
-        }
+            "07 Jan 2026": [
+                {
+                    "std": "15:16",
+                    "atd": "13:32",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "06 Jan 2026": [
+                {
+                    "std": "15:09",
+                    "atd": "13:24",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "15:34",
+                    "atd": "13:52",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "04 Jan 2026": [
+                {
+                    "std": "15:31",
+                    "atd": "13:41",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "03 Jan 2026": [
+                {
+                    "std": "15:38",
+                    "atd": "13:54",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "02 Jan 2026": [
+                {
+                    "std": "15:35",
+                    "atd": "13:32",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "01 Jan 2026": [
+                {
+                    "std": "15:19",
+                    "atd": "13:34",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "31 Dec 2025": [
+                {
+                    "std": "15:32",
+                    "atd": "13:45",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "30 Dec 2025": [
+                {
+                    "std": "15:22",
+                    "atd": "13:32",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "29 Dec 2025": [
+                {
+                    "std": "15:23",
+                    "atd": "13:27",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "28 Dec 2025": [
+                {
+                    "std": "15:19",
+                    "atd": "13:37",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "27 Dec 2025": [
+                {
+                    "std": "17:15",
+                    "atd": "15:35",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "26 Dec 2025": [
+                {
+                    "std": "15:30",
+                    "atd": "13:43",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "25 Dec 2025": [
+                {
+                    "std": "15:30",
+                    "atd": "13:45",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "24 Dec 2025": [
+                {
+                    "std": "15:26",
+                    "atd": "13:41",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "23 Dec 2025": [
+                {
+                    "std": "15:17",
+                    "atd": "13:37",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "22 Dec 2025": [
+                {
+                    "std": "15:20",
+                    "atd": "13:36",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "21 Dec 2025": [
+                {
+                    "std": "15:27",
+                    "atd": "13:37",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "20 Dec 2025": [
+                {
+                    "std": "15:31",
+                    "atd": "13:50",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "19 Dec 2025": [
+                {
+                    "std": "15:28",
+                    "atd": "13:39",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "18 Dec 2025": [
+                {
+                    "std": "15:33",
+                    "atd": "13:45",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "17 Dec 2025": [
+                {
+                    "std": "15:25",
+                    "atd": "13:38",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "16 Dec 2025": [
+                {
+                    "std": "15:20",
+                    "atd": "13:32",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "15 Dec 2025": [
+                {
+                    "std": "15:26",
+                    "atd": "13:36",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "14 Dec 2025": [
+                {
+                    "std": "15:20",
+                    "atd": "13:31",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "13 Dec 2025": [
+                {
+                    "std": "15:24",
+                    "atd": "13:41",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "12 Dec 2025": [
+                {
+                    "std": "15:22",
+                    "atd": "13:37",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "11 Dec 2025": [
+                {
+                    "std": "15:13",
+                    "atd": "13:30",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "10 Dec 2025": [
+                {
+                    "std": "15:19",
+                    "atd": "13:35",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "09 Dec 2025": [
+                {
+                    "std": "15:29",
+                    "atd": "13:30",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "08 Dec 2025": [
+                {
+                    "std": "15:07",
+                    "atd": "13:25",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "07 Dec 2025": [
+                {
+                    "std": "15:19",
+                    "atd": "13:33",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "06 Dec 2025": [
+                {
+                    "std": "15:29",
+                    "atd": "13:42",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "05 Dec 2025": [
+                {
+                    "std": "15:19",
+                    "atd": "13:34",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "04 Dec 2025": [
+                {
+                    "std": "15:25",
+                    "atd": "13:39",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "03 Dec 2025": [
+                {
+                    "std": "15:11",
+                    "atd": "13:25",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "02 Dec 2025": [
+                {
+                    "std": "15:25",
+                    "atd": "13:43",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "01 Dec 2025": [
+                {
+                    "std": "15:18",
+                    "atd": "13:26",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ]
+        },
+        "dest": "Phu Quoc",
+        "iata": "PQC",
+        "airline": "Sun PhuQuoc Airways"
     },
     "QH251": {
         "type": "dynamic",
@@ -120535,42 +121201,290 @@
         "type": "dynamic",
         "is_fixed": 0,
         "schedule": {
-            "07 Jan 2026": "12:07",
-            "06 Jan 2026": "12:07",
-            "05 Jan 2026": "12:12",
-            "04 Jan 2026": "11:39",
-            "03 Jan 2026": "11:26",
-            "02 Jan 2026": "11:31",
-            "01 Jan 2026": "11:23",
-            "31 Dec 2025": "11:29",
-            "30 Dec 2025": "11:46",
-            "29 Dec 2025": "11:27",
-            "28 Dec 2025": "11:40",
-            "27 Dec 2025": "11:32",
-            "26 Dec 2025": "11:42",
-            "25 Dec 2025": "11:21",
-            "24 Dec 2025": "11:33",
-            "23 Dec 2025": "11:39",
-            "22 Dec 2025": "11:36",
-            "21 Dec 2025": "11:38",
-            "20 Dec 2025": "11:37",
-            "19 Dec 2025": "11:30",
-            "18 Dec 2025": "11:27",
-            "17 Dec 2025": "11:19",
-            "16 Dec 2025": "11:43",
-            "15 Dec 2025": "11:22",
-            "14 Dec 2025": "11:14",
-            "13 Dec 2025": "14:37",
-            "12 Dec 2025": "11:31",
-            "09 Dec 2025": "11:22",
-            "08 Dec 2025": "11:21",
-            "07 Dec 2025": "11:29",
-            "06 Dec 2025": "11:41",
-            "05 Dec 2025": "11:22",
-            "04 Dec 2025": "11:26",
-            "02 Dec 2025": "11:29",
-            "01 Dec 2025": "11:19"
-        }
+            "07 Jan 2026": [
+                {
+                    "std": "12:07",
+                    "atd": "10:20",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "06 Jan 2026": [
+                {
+                    "std": "12:07",
+                    "atd": "10:28",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "12:12",
+                    "atd": "10:28",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "04 Jan 2026": [
+                {
+                    "std": "11:39",
+                    "atd": "09:40",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "03 Jan 2026": [
+                {
+                    "std": "11:26",
+                    "atd": "09:37",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "02 Jan 2026": [
+                {
+                    "std": "11:31",
+                    "atd": "09:42",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "01 Jan 2026": [
+                {
+                    "std": "11:23",
+                    "atd": "09:39",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "31 Dec 2025": [
+                {
+                    "std": "11:29",
+                    "atd": "09:42",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "30 Dec 2025": [
+                {
+                    "std": "11:46",
+                    "atd": "09:52",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "29 Dec 2025": [
+                {
+                    "std": "11:27",
+                    "atd": "09:36",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "28 Dec 2025": [
+                {
+                    "std": "11:40",
+                    "atd": "09:53",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "27 Dec 2025": [
+                {
+                    "std": "11:32",
+                    "atd": "09:48",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "26 Dec 2025": [
+                {
+                    "std": "11:42",
+                    "atd": "09:46",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "25 Dec 2025": [
+                {
+                    "std": "11:21",
+                    "atd": "09:31",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "24 Dec 2025": [
+                {
+                    "std": "11:33",
+                    "atd": "09:50",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "23 Dec 2025": [
+                {
+                    "std": "11:39",
+                    "atd": "09:54",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "22 Dec 2025": [
+                {
+                    "std": "11:36",
+                    "atd": "09:48",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "21 Dec 2025": [
+                {
+                    "std": "11:38",
+                    "atd": "09:51",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "20 Dec 2025": [
+                {
+                    "std": "11:37",
+                    "atd": "09:51",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "19 Dec 2025": [
+                {
+                    "std": "11:30",
+                    "atd": "09:38",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "18 Dec 2025": [
+                {
+                    "std": "11:27",
+                    "atd": "09:38",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "17 Dec 2025": [
+                {
+                    "std": "11:19",
+                    "atd": "09:32",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "16 Dec 2025": [
+                {
+                    "std": "11:43",
+                    "atd": "09:53",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "15 Dec 2025": [
+                {
+                    "std": "11:22",
+                    "atd": "09:31",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "14 Dec 2025": [
+                {
+                    "std": "11:14",
+                    "atd": "09:24",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "13 Dec 2025": [
+                {
+                    "std": "14:37",
+                    "atd": "12:50",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "12 Dec 2025": [
+                {
+                    "std": "11:31",
+                    "atd": "09:43",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "09 Dec 2025": [
+                {
+                    "std": "11:22",
+                    "atd": "09:38",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "08 Dec 2025": [
+                {
+                    "std": "11:21",
+                    "atd": "09:35",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "07 Dec 2025": [
+                {
+                    "std": "11:29",
+                    "atd": "09:44",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "06 Dec 2025": [
+                {
+                    "std": "11:41",
+                    "atd": "09:54",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "05 Dec 2025": [
+                {
+                    "std": "11:22",
+                    "atd": "09:35",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "04 Dec 2025": [
+                {
+                    "std": "11:26",
+                    "atd": "09:39",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "02 Dec 2025": [
+                {
+                    "std": "11:29",
+                    "atd": "09:38",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "01 Dec 2025": [
+                {
+                    "std": "11:19",
+                    "atd": "09:38",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ]
+        },
+        "dest": "Phu Quoc",
+        "iata": "PQC",
+        "airline": "Sun PhuQuoc Airways"
     },
     "VN779": {
         "type": "dynamic",
@@ -121598,44 +122512,306 @@
         "type": "dynamic",
         "is_fixed": 0,
         "schedule": {
-            "07 Jan 2026": "09:46",
-            "06 Jan 2026": "09:27",
-            "05 Jan 2026": "09:36",
-            "04 Jan 2026": "09:42",
-            "03 Jan 2026": "09:49",
-            "02 Jan 2026": "09:54",
-            "01 Jan 2026": "09:47",
-            "31 Dec 2025": "09:51",
-            "30 Dec 2025": "09:34",
-            "29 Dec 2025": "09:38",
-            "28 Dec 2025": "09:35",
-            "27 Dec 2025": "11:47",
-            "26 Dec 2025": "09:37",
-            "25 Dec 2025": "09:40",
-            "24 Dec 2025": "09:39",
-            "23 Dec 2025": "09:36",
-            "22 Dec 2025": "09:30",
-            "21 Dec 2025": "09:46",
-            "20 Dec 2025": "09:42",
-            "19 Dec 2025": "09:42",
-            "18 Dec 2025": "09:55",
-            "17 Dec 2025": "09:48",
-            "16 Dec 2025": "09:41",
-            "15 Dec 2025": "09:37",
-            "14 Dec 2025": "09:39",
-            "13 Dec 2025": "09:49",
-            "12 Dec 2025": "09:39",
-            "11 Dec 2025": "09:38",
-            "10 Dec 2025": "09:39",
-            "09 Dec 2025": "09:24",
-            "08 Dec 2025": "09:36",
-            "07 Dec 2025": "09:37",
-            "06 Dec 2025": "09:43",
-            "05 Dec 2025": "09:36",
-            "04 Dec 2025": "09:49",
-            "02 Dec 2025": "09:41",
-            "01 Dec 2025": "09:39"
-        }
+            "07 Jan 2026": [
+                {
+                    "std": "09:46",
+                    "atd": "08:01",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "06 Jan 2026": [
+                {
+                    "std": "09:27",
+                    "atd": "07:43",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "09:36",
+                    "atd": "07:55",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "04 Jan 2026": [
+                {
+                    "std": "09:42",
+                    "atd": "07:54",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "03 Jan 2026": [
+                {
+                    "std": "09:49",
+                    "atd": "07:54",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "02 Jan 2026": [
+                {
+                    "std": "09:54",
+                    "atd": "07:57",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "01 Jan 2026": [
+                {
+                    "std": "09:47",
+                    "atd": "08:00",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "31 Dec 2025": [
+                {
+                    "std": "09:51",
+                    "atd": "08:06",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "30 Dec 2025": [
+                {
+                    "std": "09:34",
+                    "atd": "07:46",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "29 Dec 2025": [
+                {
+                    "std": "09:38",
+                    "atd": "07:52",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "28 Dec 2025": [
+                {
+                    "std": "09:35",
+                    "atd": "07:48",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "27 Dec 2025": [
+                {
+                    "std": "11:47",
+                    "atd": "10:05",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "26 Dec 2025": [
+                {
+                    "std": "09:37",
+                    "atd": "07:55",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "25 Dec 2025": [
+                {
+                    "std": "09:40",
+                    "atd": "07:56",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "24 Dec 2025": [
+                {
+                    "std": "09:39",
+                    "atd": "07:56",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "23 Dec 2025": [
+                {
+                    "std": "09:36",
+                    "atd": "07:54",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "22 Dec 2025": [
+                {
+                    "std": "09:30",
+                    "atd": "07:48",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "21 Dec 2025": [
+                {
+                    "std": "09:46",
+                    "atd": "07:52",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "20 Dec 2025": [
+                {
+                    "std": "09:42",
+                    "atd": "07:52",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "19 Dec 2025": [
+                {
+                    "std": "09:42",
+                    "atd": "07:51",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "18 Dec 2025": [
+                {
+                    "std": "09:55",
+                    "atd": "07:59",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "17 Dec 2025": [
+                {
+                    "std": "09:48",
+                    "atd": "07:58",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "16 Dec 2025": [
+                {
+                    "std": "09:41",
+                    "atd": "07:56",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "15 Dec 2025": [
+                {
+                    "std": "09:37",
+                    "atd": "07:51",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "14 Dec 2025": [
+                {
+                    "std": "09:39",
+                    "atd": "07:53",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "13 Dec 2025": [
+                {
+                    "std": "09:49",
+                    "atd": "08:06",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "12 Dec 2025": [
+                {
+                    "std": "09:39",
+                    "atd": "07:56",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "11 Dec 2025": [
+                {
+                    "std": "09:38",
+                    "atd": "07:50",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "10 Dec 2025": [
+                {
+                    "std": "09:39",
+                    "atd": "07:53",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "09 Dec 2025": [
+                {
+                    "std": "09:24",
+                    "atd": "07:41",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "08 Dec 2025": [
+                {
+                    "std": "09:36",
+                    "atd": "07:53",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "07 Dec 2025": [
+                {
+                    "std": "09:37",
+                    "atd": "07:54",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "06 Dec 2025": [
+                {
+                    "std": "09:43",
+                    "atd": "07:55",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "05 Dec 2025": [
+                {
+                    "std": "09:36",
+                    "atd": "07:55",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "04 Dec 2025": [
+                {
+                    "std": "09:49",
+                    "atd": "07:52",
+                    "dest": "",
+                    "iata": ""
+                }
+            ],
+            "02 Dec 2025": [
+                {
+                    "std": "09:41",
+                    "atd": "07:52",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ],
+            "01 Dec 2025": [
+                {
+                    "std": "09:39",
+                    "atd": "07:52",
+                    "dest": "Phu Quoc",
+                    "iata": "PQC"
+                }
+            ]
+        },
+        "dest": "Phu Quoc",
+        "iata": "PQC",
+        "airline": "Sun PhuQuoc Airways"
     },
     "VN1603": {
         "type": "dynamic",
@@ -129476,41 +130652,282 @@
         "type": "dynamic",
         "is_fixed": 0,
         "schedule": {
-            "07 Jan 2026": "08:19",
-            "06 Jan 2026": "08:22",
-            "05 Jan 2026": "08:19",
-            "04 Jan 2026": "08:16",
-            "03 Jan 2026": "08:20",
-            "02 Jan 2026": "08:16",
-            "01 Jan 2026": "08:19",
-            "31 Dec 2025": "08:17",
-            "30 Dec 2025": "08:21",
-            "29 Dec 2025": "08:15",
-            "28 Dec 2025": "08:16",
-            "27 Dec 2025": "08:21",
-            "26 Dec 2025": "08:15",
-            "25 Dec 2025": "08:18",
-            "24 Dec 2025": "08:18",
-            "23 Dec 2025": "08:23",
-            "22 Dec 2025": "08:23",
-            "21 Dec 2025": "08:21",
-            "20 Dec 2025": "08:20",
-            "19 Dec 2025": "08:31",
-            "18 Dec 2025": "08:16",
-            "17 Dec 2025": "08:23",
-            "16 Dec 2025": "08:19",
-            "15 Dec 2025": "08:31",
-            "14 Dec 2025": "08:28",
-            "13 Dec 2025": "08:36",
-            "12 Dec 2025": "08:24",
-            "11 Dec 2025": "08:27",
-            "10 Dec 2025": "08:22",
-            "09 Dec 2025": "08:20",
-            "08 Dec 2025": "08:13",
-            "07 Dec 2025": "08:18",
-            "06 Dec 2025": "08:10",
-            "05 Dec 2025": "08:22"
-        }
+            "07 Jan 2026": [
+                {
+                    "std": "08:19",
+                    "atd": "06:37",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "06 Jan 2026": [
+                {
+                    "std": "08:22",
+                    "atd": "06:42",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "08:19",
+                    "atd": "06:38",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "04 Jan 2026": [
+                {
+                    "std": "08:16",
+                    "atd": "06:31",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "03 Jan 2026": [
+                {
+                    "std": "08:20",
+                    "atd": "06:35",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "02 Jan 2026": [
+                {
+                    "std": "08:16",
+                    "atd": "06:34",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "01 Jan 2026": [
+                {
+                    "std": "08:19",
+                    "atd": "06:36",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "31 Dec 2025": [
+                {
+                    "std": "08:17",
+                    "atd": "06:37",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "30 Dec 2025": [
+                {
+                    "std": "08:21",
+                    "atd": "06:35",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "29 Dec 2025": [
+                {
+                    "std": "08:15",
+                    "atd": "06:34",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "28 Dec 2025": [
+                {
+                    "std": "08:16",
+                    "atd": "06:34",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "27 Dec 2025": [
+                {
+                    "std": "08:21",
+                    "atd": "06:40",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "26 Dec 2025": [
+                {
+                    "std": "08:15",
+                    "atd": "06:39",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "25 Dec 2025": [
+                {
+                    "std": "08:18",
+                    "atd": "06:37",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "24 Dec 2025": [
+                {
+                    "std": "08:18",
+                    "atd": "06:38",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "23 Dec 2025": [
+                {
+                    "std": "08:23",
+                    "atd": "06:42",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "22 Dec 2025": [
+                {
+                    "std": "08:23",
+                    "atd": "06:40",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "21 Dec 2025": [
+                {
+                    "std": "08:21",
+                    "atd": "06:39",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "20 Dec 2025": [
+                {
+                    "std": "08:20",
+                    "atd": "06:35",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "19 Dec 2025": [
+                {
+                    "std": "08:31",
+                    "atd": "06:41",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "18 Dec 2025": [
+                {
+                    "std": "08:16",
+                    "atd": "06:33",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "17 Dec 2025": [
+                {
+                    "std": "08:23",
+                    "atd": "06:34",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "16 Dec 2025": [
+                {
+                    "std": "08:19",
+                    "atd": "06:37",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "15 Dec 2025": [
+                {
+                    "std": "08:31",
+                    "atd": "06:44",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "14 Dec 2025": [
+                {
+                    "std": "08:28",
+                    "atd": "06:44",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "13 Dec 2025": [
+                {
+                    "std": "08:36",
+                    "atd": "06:50",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "12 Dec 2025": [
+                {
+                    "std": "08:24",
+                    "atd": "06:38",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "11 Dec 2025": [
+                {
+                    "std": "08:27",
+                    "atd": "06:45",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "10 Dec 2025": [
+                {
+                    "std": "08:22",
+                    "atd": "06:41",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "09 Dec 2025": [
+                {
+                    "std": "08:20",
+                    "atd": "06:37",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "08 Dec 2025": [
+                {
+                    "std": "08:13",
+                    "atd": "06:36",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "07 Dec 2025": [
+                {
+                    "std": "08:18",
+                    "atd": "06:37",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "06 Dec 2025": [
+                {
+                    "std": "08:10",
+                    "atd": "06:31",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ],
+            "05 Dec 2025": [
+                {
+                    "std": "08:22",
+                    "atd": "06:40",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ]
+        },
+        "dest": "Ho Chi Minh City",
+        "iata": "SGN",
+        "airline": "Sun PhuQuoc Airways"
     },
     "VN73": {
         "type": "dynamic",
@@ -135386,8 +136803,18 @@
         "type": "dynamic",
         "is_fixed": 0,
         "schedule": {
-            "16 Dec 2025": "14:18"
-        }
+            "16 Dec 2025": [
+                {
+                    "std": "14:18",
+                    "atd": "12:32",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN"
+                }
+            ]
+        },
+        "dest": "Ho Chi Minh City",
+        "iata": "SGN",
+        "airline": "Sun PhuQuoc Airways"
     },
     "KB605": {
         "type": "dynamic",

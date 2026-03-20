@@ -18,9 +18,9 @@ VN_IATAS = ['SGN', 'DAD', 'CXR', 'PQC', 'VCA', 'VDO', 'HPH', 'VII', 'THD', 'VDH'
 START_DATE = "2025-12-16"
 END_DATE = "2025-12-20"
 
-DEST_IATA = "HAN"
+ORIGIN_IATA = "HAN"
 LIMIT_DATE = datetime(2025, 12, 1)
-CACHE_FILE = f"{DEST_IATA.lower()}_fixed_flights_arrival_cache.json"
+CACHE_FILE = f"{ORIGIN_IATA.lower()}_fixed_flights_cache.json"
 
 ENG_MONTHS = {1: "Jan", 2: "Feb", 3: "Mar", 4: "Apr", 5: "May", 6: "Jun",
               7: "Jul", 8: "Aug", 9: "Sep", 10: "Oct", 11: "Nov", 12: "Dec"}
@@ -76,12 +76,12 @@ flight_std_cache = load_cache()
 
 
 def wait_for_manual_login(driver):
-    print("\nCHỜ ĐĂNG NHẬP TÀI KHOẢN")
+    print("\n[!!!] CHỜ ĐĂNG NHẬP TÀI KHOẢN BUSINESS [!!!]")
     while True:
         try:
             auth_btn = driver.find_element(By.ID, "auth-button")
             if "business" in auth_btn.text.lower():
-                print("\n[v] Đã nhận diện tài khoản!\n")
+                print("\n[v] Đã nhận diện tài khoản Business!\n")
                 break
             time.sleep(3)
         except:
@@ -96,9 +96,10 @@ def format_date_short(date_str):
         return date_str.replace("-", "")
 
 
-def get_std_from_ui(driver, flight_no, t_fmt1, t_fmt2, p_fmt1, p_fmt2, actual_time, cached_std, dest_iata,
+# ================= HÀM MỞ FLIGHT INFO (BỔ SUNG AIRCRAFT TYPE) =================
+def get_std_from_ui(driver, flight_no, t_fmt1, t_fmt2, p_fmt1, p_fmt2, actual_time, cached_std, origin_iata,
                     flight_element=None):
-    std_result, is_fixed, info_origin, info_iata, info_airline, is_valid = "", 0, "", "", "", False
+    std_result, is_fixed, info_dest, info_iata, info_airline, info_aircraft, is_valid = "", 0, "", "", "", "", False
     full_schedule = {}
 
     flight_slug = flight_no.replace(' ', '').lower()
@@ -165,26 +166,27 @@ def get_std_from_ui(driver, flight_no, t_fmt1, t_fmt2, p_fmt1, p_fmt2, actual_ti
 
                     if not row_std or row_std == "—": continue
 
-                    dest_tag = f"({dest_iata.lower()})"
+                    origin_tag = f"({origin_iata.lower()})"
                     r_from, r_to = row_from.lower(), row_to.lower()
+                    if origin_tag in r_to: continue
+                    if origin_tag not in r_from and r_from not in ["", "—", "n/a", "unknown"]: continue
 
-                    # Nếu sân bay đích hiện tại lại nằm ở cột khởi hành
-                    if dest_tag in r_from: continue
-                    # Nếu sân bay đích hiện tại KHÔNG nằm ở cột hạ cánh
-                    if dest_tag not in r_to and r_to not in ["", "—", "n/a", "unknown"]: continue
-
-                    row_origin, row_iata = "", ""
+                    row_dest, row_iata, row_aircraft = "", "", ""
                     if "canceled" not in row_status:
-                        if cols[3].find('a'):
-                            row_iata = cols[3].find('a').text.replace('(', '').replace(')', '').strip()
-                            row_origin = ' '.join(
-                                cols[3].get_text(separator=" ").replace(cols[3].find('a').text, '').split())
+                        if cols[4].find('a'):
+                            row_iata = cols[4].find('a').text.replace('(', '').replace(')', '').strip()
+                            row_dest = ' '.join(
+                                cols[4].get_text(separator=" ").replace(cols[4].find('a').text, '').split())
                         else:
-                            row_origin = cols[3].text.strip()
+                            row_dest = cols[4].text.strip()
+
+                        # Hút loại máy bay (Cột số 5, VD: "B78X (VN-A874)" -> lấy "B78X")
+                        if len(cols) > 5:
+                            row_aircraft = cols[5].text.split('(')[0].strip()
 
                     if row_date not in full_schedule: full_schedule[row_date] = []
                     full_schedule[row_date].append(
-                        {'std': row_std, 'atd': row_atd, 'origin': row_origin, 'iata': row_iata})
+                        {'std': row_std, 'atd': row_atd, 'dest': row_dest, 'iata': row_iata, 'aircraft': row_aircraft})
                     all_stds.add(row_std)
 
             t_flights = full_schedule.get(t_fmt1, []) + full_schedule.get(t_fmt2, [])
@@ -192,10 +194,11 @@ def get_std_from_ui(driver, flight_no, t_fmt1, t_fmt2, p_fmt1, p_fmt2, actual_ti
             atd_mins = time_to_mins(actual_time)
 
             def assign_flight_info(f):
-                nonlocal std_result, info_origin, info_iata, is_valid
+                nonlocal std_result, info_dest, info_iata, info_aircraft, is_valid
                 std_result = f['std']
-                if f.get('origin'): info_origin = f['origin']
+                if f.get('dest'): info_dest = f['dest']
                 if f.get('iata'): info_iata = f['iata']
+                if f.get('aircraft'): info_aircraft = f['aircraft']
                 is_valid = True
 
             def find_best_match(flights, target_atd, target_std):
@@ -241,14 +244,15 @@ def get_std_from_ui(driver, flight_no, t_fmt1, t_fmt2, p_fmt1, p_fmt2, actual_ti
     except Exception as e:
         pass
     finally:
-        driver.close()
+        driver.close();
         driver.switch_to.window(driver.window_handles[0])
 
-    return std_result, is_fixed, info_origin, info_iata, info_airline, is_valid, full_schedule
+    return std_result, is_fixed, info_dest, info_iata, info_airline, info_aircraft, is_valid, full_schedule
 
 
+# ================= KỊCH BẢN CHÍNH (DEPARTURE) =================
 def crawl_historical_business_master():
-    print(f"[+] Khởi động trình duyệt Edge ...")
+    print(f"[+] Khởi động trình duyệt Edge Cào Departures cho {ORIGIN_IATA}...")
     options = EdgeOptions()
     options.add_argument(
         "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0")
@@ -263,8 +267,7 @@ def crawl_historical_business_master():
 
     for target_date in date_list:
         print(f"\n========== ĐANG CÀO NGÀY: {target_date} ==========")
-        # Đã đổi URL thành type=landings
-        url = f"https://www.flightradar24.com/airport/{DEST_IATA.lower()}/history?type=landings&date={target_date}"
+        url = f"https://www.flightradar24.com/airport/{ORIGIN_IATA.lower()}/history?type=takeoffs&date={target_date}"
         driver.get(url)
         time.sleep(3)
 
@@ -286,7 +289,7 @@ def crawl_historical_business_master():
             total_flights = len(flights)
             if total_flights == 0: continue
 
-            print(f"  > Tìm thấy {total_flights} chuyến bay hạ cánh.")
+            print(f"  > Tìm thấy {total_flights} chuyến bay.")
 
             for i in range(total_flights):
                 try:
@@ -298,7 +301,6 @@ def crawl_historical_business_master():
                     driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", flight)
                     time.sleep(0.3)
 
-                    # Bóc tách bên ngoài bảng (Lấy Origin thay vì Destination)
                     html_outer = flight.get_attribute("outerHTML")
                     soup_outer = BeautifulSoup(html_outer, 'html.parser')
 
@@ -307,69 +309,87 @@ def crawl_historical_business_master():
                         return el.text.strip() if el else ""
 
                     actual_time = get_text_safe(soup_outer, "airport-history__result-item__time").replace('\n', '')
-                    origin = get_text_safe(soup_outer, "airport-history__result-item__airport-city")
+                    destination = get_text_safe(soup_outer, "airport-history__result-item__airport-city")
                     iata_code = get_text_safe(soup_outer, "airport-history__result-item__airport-iata")
 
-                    # Bung bảng chi tiết
                     clickable_div = flight.find_element(By.CSS_SELECTOR,
                                                         "div[data-testid='airport-history__result-item__data']")
-                    driver.execute_script("arguments[0].click();", clickable_div)
 
-                    WebDriverWait(flight, 8).until(EC.visibility_of_element_located(
-                        (By.CSS_SELECTOR, "dl[data-testid='airport-history__result-item__details__category']")))
-                    time.sleep(1.0)
+                    # ================= VÒNG LẶP RETRY ĐỂ BUNG BẢNG UI =================
+                    category, airline, flight_no, departure_runway, tail_number, aircraft_type, ui_terminal = "", "", "", "", "", "", ""
 
-                    soup_inner = BeautifulSoup(flight.get_attribute("outerHTML"), 'html.parser')
+                    for attempt in range(3):
+                        details_check = flight.find_elements(By.CSS_SELECTOR,
+                                                             "dl[data-testid='airport-history__result-item__details__category']")
+                        if not details_check or not details_check[0].is_displayed():
+                            driver.execute_script("arguments[0].click();", clickable_div)
 
-                    # 1. Category
-                    cat_el = soup_inner.find(attrs={"data-testid": "airport-history__result-item__details__category"})
-                    category_raw = cat_el.find('dd').text.strip().lower() if cat_el and cat_el.find('dd') else ""
-                    category = "unknown" if not category_raw or category_raw in ["n/a", "—", ""] else category_raw
+                        try:
+                            WebDriverWait(flight, 4).until(EC.visibility_of_element_located(
+                                (By.CSS_SELECTOR, "dl[data-testid='airport-history__result-item__details__category']")))
+                            time.sleep(1.2)
+                        except TimeoutException:
+                            pass
 
-                    # 2. Airline
-                    airline_el = soup_inner.find(
-                        attrs={"data-testid": "airport-history__result-item__details__airline"})
-                    airline = airline_el.find('dd').text.strip() if airline_el and airline_el.find('dd') else ""
+                        soup_inner = BeautifulSoup(flight.get_attribute("outerHTML"), 'html.parser')
 
-                    # 3. Flight No
-                    fno_el = soup_inner.find(attrs={"data-testid": "airport-history__result-item__details__flight"})
-                    flight_no = fno_el.find('dd').text.strip() if fno_el and fno_el.find('dd') else ""
+                        # Hút Dữ liệu
+                        cat_el = soup_inner.find(
+                            attrs={"data-testid": "airport-history__result-item__details__category"})
+                        category_raw = cat_el.find('dd').text.strip().lower() if cat_el and cat_el.find('dd') else ""
+                        category = "unknown" if not category_raw or category_raw in ["n/a", "—", ""] else category_raw
 
-                    # 4. Arrival Runway (Hạ cánh)
-                    runway_el = soup_inner.find(attrs={"data-testid": "airport-history__result-item__details__runway"})
-                    arrival_runway = runway_el.find('dd').text.strip() if runway_el and runway_el.find('dd') else ""
+                        airline_el = soup_inner.find(
+                            attrs={"data-testid": "airport-history__result-item__details__airline"})
+                        airline = airline_el.find('dd').text.strip() if airline_el and airline_el.find('dd') else ""
 
-                    # 5. Tail Number (Dính liền)
-                    tail_el = soup_inner.find(
-                        attrs={"data-testid": "airport-history__result-item__details__aircraft-registration"})
-                    tail_number = tail_el.get_text(separator="", strip=True) if tail_el else ""
+                        fno_el = soup_inner.find(attrs={"data-testid": "airport-history__result-item__details__flight"})
+                        flight_no = fno_el.find('dd').text.strip() if fno_el and fno_el.find('dd') else ""
 
-                    # 6. Aircraft Type
-                    ac_code_el = soup_inner.find(
-                        attrs={"data-testid": "airport-history__result-item__details__aircraft-code"})
-                    aircraft_type = ac_code_el.text.strip() if ac_code_el else ""
+                        runway_el = soup_inner.find(
+                            attrs={"data-testid": "airport-history__result-item__details__runway"})
+                        departure_runway = runway_el.find('dd').text.strip() if runway_el and runway_el.find(
+                            'dd') else ""
 
-                    ui_terminal = ""
-                    dt_tags = soup_inner.find_all('dt')
-                    for dt in dt_tags:
-                        if "Terminal" in dt.text:
-                            dd_tag = dt.find_next_sibling('dd')
-                            if dd_tag: ui_terminal = dd_tag.text.strip()
-                            break
+                        tail_el = soup_inner.find(
+                            attrs={"data-testid": "airport-history__result-item__details__aircraft-registration"})
+                        tail_number = tail_el.get_text(separator="", strip=True) if tail_el else ""
 
+                        ac_code_el = soup_inner.find(
+                            attrs={"data-testid": "airport-history__result-item__details__aircraft-code"})
+                        aircraft_type = ac_code_el.text.strip() if ac_code_el else ""
+
+                        ui_terminal = ""
+                        dt_tags = soup_inner.find_all('dt')
+                        for dt in dt_tags:
+                            if "Terminal" in dt.text:
+                                dd_tag = dt.find_next_sibling('dd')
+                                if dd_tag: ui_terminal = dd_tag.text.strip()
+                                break
+
+                        # Điều kiện retry UI
+                        if category == "unknown" or is_empty_val(aircraft_type):
+                            if attempt < 2:
+                                print(f"      [~] Ẩn Data (Cat/AC). Click Lần {attempt + 1}/3...")
+                                driver.execute_script("arguments[0].click();", clickable_div)
+                                time.sleep(1.0)
+                                continue
+                        break
+
+                    # Logic Gán Terminal
                     if category == "cargo":
                         terminal_val = "0"
                     elif ui_terminal and ui_terminal.lower() not in ["n/a", "—", "-", "unknown", ""]:
                         terminal_val = ui_terminal
                     else:
-                        if DEST_IATA.upper() == "SGN":
-                            if iata_code in VN_IATAS:  # Bay nội địa
+                        if ORIGIN_IATA.upper() == "SGN":
+                            if iata_code in VN_IATAS:
                                 if "vietjet" in airline.lower().replace(" ", ""):
                                     terminal_val = "1"
                                 else:
                                     terminal_val = "3"
                             else:
-                                terminal_val = "2"  # SGN Quốc tế
+                                terminal_val = "2"
                         else:
                             terminal_val = "1" if iata_code in VN_IATAS else "2"
 
@@ -378,10 +398,10 @@ def crawl_historical_business_master():
                     is_passenger_or_unknown = ("passenger" in category) or (category == "unknown")
 
                     if is_invalid_flight_no:
-                        print(f"      [i] Chuyến thiếu Flight No -> Lấy ATA ({actual_time}) tính Congestion.")
+                        print(f"      [i] Chuyến thiếu Flight No -> Lấy ATD ({actual_time}) tính Congestion.")
 
                     elif is_passenger_or_unknown:
-                        needs_deep = is_empty_val(origin) or is_empty_val(airline)
+                        needs_deep = is_empty_val(destination) or is_empty_val(airline) or is_empty_val(aircraft_type)
                         atd_mins = time_to_mins(actual_time)
 
                         if flight_no in flight_std_cache:
@@ -393,7 +413,6 @@ def crawl_historical_business_master():
                             elif entry.get("type") == "dynamic":
                                 sched = entry.get("schedule", {})
                                 t_flights, p_flights = [], []
-
                                 for f_date in [fmt1, fmt2]:
                                     val = sched.get(f_date)
                                     if val: t_flights.extend(
@@ -422,48 +441,53 @@ def crawl_historical_business_master():
                                             break
 
                             if cache_hit and needs_deep:
-                                if is_empty_val(origin) and entry.get("origin"): origin, iata_code = entry.get(
-                                    "origin"), entry.get("iata", iata_code)
+                                if is_empty_val(destination) and entry.get("dest"): destination, iata_code = entry.get(
+                                    "dest"), entry.get("iata", iata_code)
                                 if is_empty_val(airline) and entry.get("airline"): airline = entry.get("airline")
+                                # Chữa lành Aircraft Type từ Cache JSON
+                                if is_empty_val(aircraft_type) and entry.get("aircraft"): aircraft_type = entry.get(
+                                    "aircraft")
 
-                                if is_empty_val(origin):
-                                    if matched_f and matched_f.get("origin") and not is_empty_val(
-                                            matched_f.get("origin")):
-                                        origin, iata_code = matched_f["origin"], matched_f.get("iata", iata_code)
+                                if is_empty_val(destination):
+                                    if matched_f and matched_f.get("dest") and not is_empty_val(matched_f.get("dest")):
+                                        destination, iata_code = matched_f["dest"], matched_f.get("iata", iata_code)
                                     else:
                                         for d_key, f_list in entry.get("schedule", {}).items():
                                             for f_item in (f_list if isinstance(f_list, list) else []):
-                                                if isinstance(f_item, dict) and not is_empty_val(f_item.get("origin")):
-                                                    origin, iata_code = f_item["origin"], f_item.get("iata", iata_code)
+                                                if isinstance(f_item, dict) and not is_empty_val(f_item.get("dest")):
+                                                    destination, iata_code = f_item["dest"], f_item.get("iata",
+                                                                                                        iata_code)
                                                     break
-                                            if not is_empty_val(origin): break
+                                            if not is_empty_val(destination): break
 
-                                needs_deep = is_empty_val(origin) or is_empty_val(airline) or is_empty_val(
-                                    scheduled_time)
+                                needs_deep = is_empty_val(destination) or is_empty_val(airline) or is_empty_val(
+                                    scheduled_time) or is_empty_val(aircraft_type)
 
                         if not cache_hit or needs_deep:
                             print(f"      [!] Bật Flight Info check {flight_no}...")
-                            std_res, is_fix, i_orig, i_iata, i_air, is_val, full_sched = get_std_from_ui(
+                            std_res, is_fix, i_dest, i_iata, i_air, i_ac, is_val, full_sched = get_std_from_ui(
                                 driver, flight_no, fmt1, fmt2, p_fmt1, p_fmt2, actual_time,
-                                scheduled_time if cache_hit else "", DEST_IATA, flight
+                                scheduled_time if cache_hit else "", ORIGIN_IATA, flight
                             )
 
                             if not is_val:
-                                print(
-                                    f"  [X] XÓA CHUYẾN {flight_no}: Không thấy lịch sử khớp giờ/sân bay trên bảng FR24.")
+                                print(f"  [X] XÓA CHUYẾN {flight_no}: Không thấy lịch sử khớp giờ/sân bay trên bảng.")
                                 continue
 
                             if not cache_hit:
                                 scheduled_time, is_fixed = std_res, is_fix
 
                             if needs_deep:
-                                if is_empty_val(origin) and i_orig: origin, iata_code = i_orig, i_iata
+                                if is_empty_val(destination) and i_dest: destination, iata_code = i_dest, i_iata
                                 if is_empty_val(airline) and i_air: airline = i_air
+                                if is_empty_val(aircraft_type) and i_ac: aircraft_type = i_ac  # Bù đắp từ Tab lịch sử
 
                             if flight_no not in flight_std_cache: flight_std_cache[flight_no] = {"schedule": {}}
-                            if not is_empty_val(origin): flight_std_cache[flight_no]["origin"] = origin
+                            if not is_empty_val(destination): flight_std_cache[flight_no]["dest"] = destination
                             if iata_code: flight_std_cache[flight_no]["iata"] = iata_code
                             if not is_empty_val(airline): flight_std_cache[flight_no]["airline"] = airline
+                            if not is_empty_val(aircraft_type): flight_std_cache[flight_no][
+                                "aircraft"] = aircraft_type  # Save cache AC
                             flight_std_cache[flight_no]["type"] = "fixed" if is_fixed == 1 else "dynamic"
                             flight_std_cache[flight_no]["is_fixed"] = is_fixed
                             if is_fixed == 1: flight_std_cache[flight_no]["std"] = scheduled_time
@@ -473,13 +497,13 @@ def crawl_historical_business_master():
                             save_cache(flight_std_cache)
                     else:
                         print(
-                            f"      [i] Chuyến {category.capitalize()[:10]} ({flight_no}) -> Lấy ATA ({actual_time}) tính Congestion.")
+                            f"      [i] Chuyến {category.capitalize()[:10]} ({flight_no}) -> Lấy ATD ({actual_time}) tính Congestion.")
 
                     record = {
                         "Crawl_Date": target_date, "Scheduled_Time": scheduled_time, "Actual_Time": actual_time,
-                        "Origin": origin, "IATA": iata_code, "Airline": airline, "Flight_No": flight_no,
-                        "Terminal": terminal_val, "Arrival_Runway": arrival_runway,
-                        "Status": "Landed", "Tail_Number": tail_number, "Aircraft_Type": aircraft_type,
+                        "Destination": destination, "IATA": iata_code, "Airline": airline, "Flight_No": flight_no,
+                        "Terminal": terminal_val, "Departure_Runway": departure_runway,
+                        "Status": "Departed", "Tail_Number": tail_number, "Aircraft_Type": aircraft_type,
                         "Is_Fixed_Flight": is_fixed, "Category": category
                     }
                     all_flights_data.append(record)
@@ -487,10 +511,10 @@ def crawl_historical_business_master():
                     if is_passenger_or_unknown and not is_invalid_flight_no:
                         print_src = 'Cache+Tab' if cache_hit and needs_deep else 'Cache' if cache_hit else 'Tab'
                         print(
-                            f"  [{i + 1}/{total_flights}] {flight_no} | TỪ: {iata_code} | AC: {aircraft_type} | Term: {terminal_val} | Nguồn: {print_src}")
+                            f"  [{i + 1}/{total_flights}] {flight_no} | Đích: {iata_code} | AC: {aircraft_type} | Term: {terminal_val} | Nguồn: {print_src}")
                     else:
                         print(
-                            f"  [{i + 1}/{total_flights}] {flight_no} | TỪ: {iata_code} | ATA: {actual_time} | Term: {terminal_val}")
+                            f"  [{i + 1}/{total_flights}] {flight_no} | Đích: {iata_code} | ATD: {actual_time} | Term: {terminal_val}")
 
                 except Exception as e:
                     print(f"  [!] Lỗi bóc tách dòng {i + 1}: {type(e).__name__} - {str(e).splitlines()[0]}")
@@ -498,21 +522,20 @@ def crawl_historical_business_master():
 
             if all_flights_data:
                 df = pd.DataFrame(all_flights_data)
-                cols = ["Crawl_Date", "Scheduled_Time", "Actual_Time", "Origin", "IATA", "Airline", "Flight_No",
-                        "Terminal", "Arrival_Runway", "Status", "Tail_Number", "Aircraft_Type", "Is_Fixed_Flight",
+                cols = ["Crawl_Date", "Scheduled_Time", "Actual_Time", "Destination", "IATA", "Airline", "Flight_No",
+                        "Terminal", "Departure_Runway", "Status", "Tail_Number", "Aircraft_Type", "Is_Fixed_Flight",
                         "Category"]
                 df = df[cols]
                 s_day = format_date_short(START_DATE)
                 e_day = format_date_short(END_DATE)
-                df.to_csv(f"{DEST_IATA.lower()}_arrivals_history_{s_day}_{e_day}.csv", index=False,
+                df.to_csv(f"{ORIGIN_IATA.lower()}_flights_history_{s_day}_{e_day}.csv", index=False,
                           encoding='utf-8-sig')
 
         except Exception as e:
-            print(f"[!] Lỗi khi xử lý ngày {target_date}: {type(e).__name__}")
             continue
 
     driver.quit()
-    print(f"\n[v] HOÀN TẤT TOÀN BỘ QUÁ TRÌNH. TỔNG SỐ CHUYẾN ĐẾN: {len(all_flights_data)}")
+    print(f"\n[v] HOÀN TẤT TOÀN BỘ QUÁ TRÌNH. TỔNG SỐ CHUYẾN XUẤT PHÁT: {len(all_flights_data)}")
 
 
 if __name__ == "__main__":
