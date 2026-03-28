@@ -1,0 +1,958 @@
+﻿Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
+2025-12-29,23:56,01:29,Nha Trang,CXR,VietJet Air,VJ778,1,11L,Landed,VN-A635,A321,passenger
+2025-12-29,23:52,01:33,Ho Chi Minh City,SGN,Vietnam Airlines,VN7226,1,11L,Landed,VN-A879,B78X,passenger
+2025-12-29,23:47,03:56,Jakarta,CGK,Citilink,QG8846,2,11L,Landed,PK-GTG,A20N,passenger
+2025-12-29,23:43,00:56,Hue,HUI,Vietnam Airlines,VN1548,1,11L,Landed,VN-A604,A321,passenger
+2025-12-29,23:41,01:40,Ho Chi Minh City,SGN,VietJet Air,VJ156,1,11L,Landed,VN-A526,A21N,passenger
+2025-12-29,23:38,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ190,1,11L,Landed,VN-A641,A321,passenger
+2025-12-29,23:34,06:13,Tokyo,NRT,All Nippon Airways,NH8447,0,11L,Landed,JA601F,B763,cargo
+2025-12-29,23:31,01:43,Ho Chi Minh City,SGN,VietJet Air,VJ180,1,11L,Landed,VN-A810,A333,passenger
+2025-12-29,23:27,04:46,Seoul,ICN,T'way Air,TW61,2,11L,Landed,HL8378,B738,passenger
+2025-12-29,23:23,01:39,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ882,1,11L,Landed,VN-A279,A321,passenger
+2025-12-29,23:20,01:38,Ho Chi Minh City,SGN,Vietnam Airlines,VN260,1,11L,Landed,VN-A505,A21N,passenger
+2025-12-29,23:17,01:48,Can Tho,VCA,VietJet Air,VJ464,1,11L,Landed,VN-A643,A321,passenger
+2025-12-29,23:14,00:53,Hue,HUI,Vietnam Airlines,VN7540,1,11L,Landed,VN-A514,A20N,passenger
+2025-12-29,23:09,01:02,Da Nang,DAD,VietJet Air,VJ518,1,11L,Landed,VN-A535,A321,passenger
+2025-12-29,23:07,01:40,Guangzhou,CAN,China Southern Airlines,CZ371,2,11L,Landed,B-6251,A320,passenger
+2025-12-29,23:03,00:55,Hue,HUI,VietJet Air,VJ568,1,11L,Landed,VN-A538,A21N,passenger
+2025-12-29,23:00,02:58,Zhengzhou,CGO,Air Central,GI4201,0,11L,Landed,B-5137,B738,cargo
+2025-12-29,22:57,01:44,Ho Chi Minh City,SGN,Bamboo Airways,QH286,1,11L,Landed,VN-A585,A321,passenger
+2025-12-29,22:55,01:45,Ho Chi Minh City,SGN,VietJet Air,VJ166,1,11L,Landed,VN-A671,A320,passenger
+2025-12-29,22:51,04:42,Shijiazhuang,SJW,VietJet Air,VJ7049,2,11L,Landed,VN-A528,A21N,passenger
+2025-12-29,22:48,01:30,Siem Reap,SAI,VietJet Air,VJ914,2,11L,Landed,VN-A634,A321,passenger
+2025-12-29,22:45,06:02,Tokyo,NRT,All Nippon Airways,NH897,2,11L,Landed,JA876A,B789,passenger
+2025-12-29,22:41,01:43,Ho Chi Minh City,SGN,Vietnam Airlines,VN220,1,11L,Landed,VN-A865,B789,passenger
+2025-12-29,22:39,06:02,Tokyo,NRT,VietJet Air,VJ935,2,11L,Landed,VN-A545,A21N,passenger
+2025-12-29,22:36,04:32,Seoul,ICN,Asiana Airlines,OZ733,2,11L,Landed,HL8362,A359,passenger
+2025-12-29,22:33,01:23,Qui Nhon,UIH,VietJet Air,VJ432,1,11L,Landed,VN-A642,A321,passenger
+2025-12-29,22:30,05:56,Tokyo,NRT,Japan Airlines,JL751,2,11L,Landed,JA618J,B763,passenger
+2025-12-29,22:27,04:35,Seoul,ICN,FedEx,FX9073,0,11L,Landed,N117FE,B763,cargo
+2025-12-29,22:23,01:03,Da Nang,DAD,N/A,VN6070,1,11L,Landed,VN-A363,A321,passenger
+2025-12-29,22:21,02:46,Kuala Lumpur,KUL,Vietnam Airlines,VN680,2,11L,Landed,VN-A357,A321,passenger
+2025-12-29,22:18,01:45,Ho Chi Minh City,SGN,Vietnam Airlines,VN258,1,11L,Landed,VN-A873,B78X,passenger
+2025-12-29,22:15,01:47,Ho Chi Minh City,SGN,VietJet Air,VJ196,1,11L,Landed,VN-A820,A333,passenger
+2025-12-29,22:13,01:06,Da Nang,DAD,Vietnam Airlines,VN7160,1,11L,Landed,VN-A611,A321,passenger
+2025-12-29,22:10,01:34,Phnom Penh,KTI,Vietnam Airlines,VN922,2,11L,Landed,VN-A398,A321,passenger
+2025-12-29,22:07,01:47,Ho Chi Minh City,SGN,BBN Airlines Indonesia,QH268,1,11L,Landed,PK-BBK,B739,passenger
+2025-12-29,22:05,01:57,Chengdu,TFU,Sichuan Airlines,3U3905,2,11L,Landed,B-6621,A320,passenger
+2025-12-29,22:02,01:35,Yangon,RGN,Myanmar Airways International,8M450,2,11L,Landed,XY-ALY,A319,passenger
+2025-12-29,21:59,01:50,Can Tho,VCA,Vietnam Airlines,VN1206,1,11L,Landed,VN-A625,A21N,passenger
+2025-12-29,21:55,01:43,Ho Chi Minh City,SGN,VietJet Air,VJ154,1,N/A,Landed,VN-A632,A321,passenger
+2025-12-29,21:52,01:31,Nha Trang,CXR,Vietnam Airlines,VN1562,1,11L,Landed,VN-A332,A321,passenger
+2025-12-29,21:49,01:26,Macau,MFM,Air Macau,NX982,2,29R,Landed,B-MBU,A21N,passenger
+2025-12-29,21:45,04:24,Seoul,ICN,Korean Air,KE447,2,11L,Landed,HL8392,B789,passenger
+2025-12-29,21:39,00:56,Da Nang,DAD,Vietnam Airlines,VN7196,1,11L,Landed,VN-A602,A321,passenger
+2025-12-29,21:22,01:43,Phu Quoc,PQC,VietJet Air,VJ1440,1,N/A,Landed,VN-A546,A21N,passenger
+2025-12-29,21:19,01:41,Da Lat,DLI,VietJet Air,VJ410,1,11L,Landed,VN-A668,A320,passenger
+2025-12-29,21:16,02:52,Taipei,TPE,VietJet Air,VJ943,2,11L,Landed,VN-A693,A21N,passenger
+2025-12-29,21:12,01:28,Bangkok,BKK,Vietnam Airlines,VN618,2,11L,Landed,VN-A606,A321,passenger
+2025-12-29,21:10,00:52,Vientiane,VTE,Vietnam Airlines,VN920,2,N/A,Landed,VN-A507,A21N,passenger
+2025-12-29,21:07,00:46,Luang Prabang,LPQ,Vietnam Airlines,VN930,2,11L,Landed,VN-A601,A321,passenger
+2025-12-29,21:04,01:41,Phu Quoc,PQC,Sun PhuQuoc Airways,SPQ1230,1,11L,Landed,VN-A284,A21N,passenger
+2025-12-29,21:00,01:44,Ho Chi Minh City,SGN,Bamboo Airways,QH262,1,11L,Landed,ER-00005,A320,passenger
+2025-12-29,20:58,04:36,Denpasar,DPS,VietJet Air,VJ998,2,N/A,Landed,VN-A516,A21N,passenger
+2025-12-29,20:55,01:00,Da Nang,DAD,Vietravel Airlines,VU658,1,29R,Landed,VN-A136,A320,passenger
+2025-12-29,20:52,01:52,Ho Chi Minh City,SGN,VietJet Air,VJ158,1,11L,Landed,VN-A661,A321,passenger
+2025-12-29,20:49,01:12,Da Nang,DAD,Vietnam Airlines,VN188,1,11L,Landed,VN-A513,A20N,passenger
+2025-12-29,20:46,04:27,Seoul,ICN,Vietnam Airlines,VN415,2,11L,Landed,VN-A892,A359,passenger
+2025-12-29,20:43,05:48,Tokyo,HND,Vietnam Airlines,VN385,2,11L,Landed,VN-A861,B789,passenger
+2025-12-29,20:41,09:11,Sydney,SYD,Vietnam Airlines,VN786,2,11L,Landed,VN-A898,A359,passenger
+2025-12-29,20:38,01:32,Phnom Penh,KTI,Air Cambodia,K6850,2,11L,Landed,XU-353,A320,passenger
+2025-12-29,20:34,01:18,Bangkok,BKK,VietJet Air,VJ904,2,11L,Landed,VN-A542,A321,passenger
+2025-12-29,20:32,00:33,Vinh,VII,Vietnam Airlines,VN1718,1,11L,Landed,VN-A512,A21N,passenger
+2025-12-29,20:27,01:41,Phu Quoc,PQC,Vietnam Airlines,VN7236,1,11L,Landed,VN-A608,A321,passenger
+2025-12-29,20:24,01:15,Pleiku,PXU,VietJet Air,VJ424,1,11L,Landed,VN-A649,A321,passenger
+2025-12-29,20:21,00:59,Da Nang,DAD,VietJet Air,VJ516,1,11L,Landed,VN-A676,A320,passenger
+2025-12-29,20:18,01:24,Bangkok,DMK,AirAsia,FD644,2,11L,Landed,HS-EAD,A21N,passenger
+2025-12-29,20:15,01:37,Ho Chi Minh City,SGN,Vietnam Airlines,VN218,1,N/A,Landed,VN-A878,B78X,passenger
+2025-12-29,20:11,01:39,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ868,1,11L,Landed,VN-A280,A321,passenger
+2025-12-29,20:01,00:59,Hue,HUI,Vietnam Airlines,VN1544,1,11L,Landed,VN-A604,A321,passenger
+2025-12-29,19:55,02:37,Taichung,RMQ,VietJet Air,VJ949,2,11L,Landed,VN-A630,A321,passenger
+2025-12-29,19:50,00:59,Da Nang,DAD,Vietnam Airlines,VN180,1,11L,Landed,VN-A508,A21N,passenger
+2025-12-29,19:40,01:16,Siem Reap,SAI,Vietnam Airlines,VN836,2,11L,Landed,VN-A339,A321,passenger
+2025-12-29,19:36,00:58,Da Nang,DAD,Bamboo Airways,QH148,1,11L,Landed,VN-A227,A321,passenger
+2025-12-29,19:33,01:44,Chongqing,CKG,West Air,PN6423,2,11L,Landed,B-9981,A320,passenger
+2025-12-29,19:24,01:39,Ho Chi Minh City,SGN,Vietravel Airlines,VU780,1,11L,Landed,VN-A289,A321,passenger
+2025-12-29,19:19,05:10,Osaka,KIX,VietJet Air,VJ931,2,11L,Landed,VN-A538,A21N,passenger
+2025-12-29,19:17,01:22,Bangkok,BKK,Thai Airways,TG564,2,11L,Landed,HS-TXH,A320,passenger
+2025-12-29,19:12,03:56,Chennai,MAA,N/A,N/A,0,11L,Landed,VT-AFN,B738,cargo
+2025-12-29,19:08,01:38,Ho Chi Minh City,SGN,Vietnam Airlines,VN254,1,11L,Landed,VN-A888,A359,passenger
+2025-12-29,19:06,02:44,Lanzhou,LHW,Spring Airlines,9C7219,2,11L,Landed,B-8370,A320,passenger
+2025-12-29,18:59,01:34,Ho Chi Minh City,SGN,Vietnam Airlines,VN252,1,11L,Landed,VN-A874,B78X,passenger
+2025-12-29,18:56,01:53,Hong Kong,HKG,Hong Kong Airlines,HX528,2,11L,Landed,B-LPN,A320,passenger
+2025-12-29,18:53,09:53,Leipzig,LEJ,DHL Air,QY578,0,11L,Landed,D-AJFK,A333,cargo
+2025-12-29,18:49,01:08,Da Nang,DAD,VietJet Air,VJ512,1,11L,Landed,VN-A635,A321,passenger
+2025-12-29,18:46,01:34,Bangkok,BKK,Vietnam Airlines,VN614,2,11L,Landed,VN-A329,A321,passenger
+2025-12-29,18:42,01:50,Guangzhou,CAN,China Southern Airlines,CZ8177,2,11L,Landed,B-8966,A321,passenger
+2025-12-29,18:39,01:33,Buon Ma Thuot,BMV,VietJet Air,VJ1492,1,11L,Landed,VN-A535,A321,passenger
+2025-12-29,18:36,01:10,Da Nang,DAD,Vietnam Airlines,VN174,1,11L,Landed,VN-A325,A321,passenger
+2025-12-29,18:36,01:39,Nha Trang,CXR,Vietnam Airlines,VN1558,1,29R,Landed,VN-A623,A21N,passenger
+2025-12-29,18:30,01:46,Hong Kong,HKG,Cathay Pacific,CX743,2,11L,Landed,B-HNI,B773,passenger
+2025-12-29,18:27,01:04,Luang Prabang,LPQ,Lao Airlines,QV313,2,N/A,Landed,RDPL-34228,AT76,passenger
+2025-12-29,18:24,01:43,Shenzhen,SZX,Shenzhen Airlines,ZH105,2,N/A,Landed,B-1475,B738,passenger
+2025-12-29,18:22,01:41,Phu Quoc,PQC,N/A,VJ446,1,11L,Landed,,N/A,unknown
+2025-12-29,18:19,01:42,Phu Quoc,PQC,Sun PhuQuoc Airways,SPQ1216,1,N/A,Landed,VN-A281,A21N,passenger
+2025-12-29,18:16,03:06,Shanghai,PVG,Vietnam Airlines,VN533,2,N/A,Landed,VN-A616,A21N,passenger
+2025-12-29,18:11,01:41,Phu Quoc,PQC,N/A,VN6400,1,11L,Landed,VN-A363,A321,passenger
+2025-12-29,18:03,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN216,1,11L,Landed,VN-A886,A359,passenger
+2025-12-29,18:01,03:47,Jakarta,CGK,VietJet Air,VJ928,2,11L,Landed,VN-A663,A320,passenger
+2025-12-29,17:58,01:40,Phu Quoc,PQC,VietJet Air,VJ1444,1,11L,Landed,VN-A642,A321,passenger
+2025-12-29,17:54,02:34,Kaohsiung,KHH,VietJet Air,VJ947,2,11L,Landed,VN-A523,A21N,passenger
+2025-12-29,17:52,03:19,Shanghai,PVG,China Eastern Airlines,MU6013,2,11L,Landed,B-32HY,A21N,passenger
+2025-12-29,17:42,02:47,Singapore,SIN,VietJet Air,VJ916,2,11L,Landed,VN-A687,A321,passenger
+2025-12-29,17:38,00:58,Da Nang,DAD,VietJet Air,VJ514,1,11L,Landed,VN-A643,A321,passenger
+2025-12-29,17:34,01:42,Guangzhou,CAN,Vietnam Airlines,VN507,2,N/A,Landed,VN-A397,A321,passenger
+2025-12-29,17:29,01:05,Da Nang,DAD,Vietnam Airlines,VN172,1,11L,Landed,VN-A512,A21N,passenger
+2025-12-29,17:26,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN232,1,11L,Landed,VN-A871,B789,passenger
+2025-12-29,17:22,01:42,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ854,1,11L,Landed,VN-A279,A321,passenger
+2025-12-29,17:19,03:36,Shanghai,PVG,Air China,CA755,2,11L,Landed,B-8495,A321,passenger
+2025-12-29,17:16,01:44,Ho Chi Minh City,SGN,VietJet Air,VJ194,1,11L,Landed,VN-A655,A320,passenger
+2025-12-29,17:13,01:33,Da Lat,DLI,VietJet Air,VJ404,1,29R,Landed,VN-A634,A321,passenger
+2025-12-29,17:10,01:34,Bangkok,BKK,VietJet Air,VJ902,2,11L,Landed,VN-A641,A321,passenger
+2025-12-29,17:07,02:58,Singapore,SIN,Singapore Airlines,SQ194,2,11L,Landed,9V-SJC,A359,passenger
+2025-12-29,17:05,04:30,Busan,PUS,VietJet Air,VJ957,2,N/A,Landed,VN-A650,A320,passenger
+2025-12-29,17:01,00:47,Luang Prabang,LPQ,AirAsia,FD1038,2,N/A,Landed,HS-BBW,A320,passenger
+2025-12-29,16:59,01:33,Da Lat,DLI,Bamboo Airways,QH1424,1,11L,Landed,VN-A596,A20N,passenger
+2025-12-29,16:55,01:38,Ho Chi Minh City,SGN,Vietnam Airlines,VN250,1,11L,Landed,VN-A879,B78X,passenger
+2025-12-29,16:53,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ146,1,11L,Landed,VN-A816,A333,passenger
+2025-12-29,16:50,02:50,Taipei,TPE,EVA Air,BR385,2,11L,Landed,B-16226,A321,passenger
+2025-12-29,16:47,01:39,Ho Chi Minh City,SGN,VietJet Air,VJ134,1,11L,Landed,VN-A671,A320,passenger
+2025-12-29,16:43,01:50,Can Tho,VCA,Vietnam Airlines,VN1202,1,29R,Landed,VN-A332,A321,passenger
+2025-12-29,16:40,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ130,1,11L,Landed,VN-A810,A333,passenger
+2025-12-29,16:37,04:31,Denpasar,DPS,VietJet Air,VJ900,2,11L,Landed,VN-A544,A321,passenger
+2025-12-29,16:33,02:15,Kolkata,CCU,IndiGo,6E1631,2,11L,Landed,VT-IPY,A20N,passenger
+2025-12-29,16:29,00:38,Dien Bien Phu,DIN,Vietnam Airlines,VN1805,1,11L,Landed,VN-A331,A321,passenger
+2025-12-29,16:26,02:56,Taipei,TPE,China Airlines,CI793,2,11L,Landed,B-18660,B738,passenger
+2025-12-29,16:22,01:28,Da Lat,DLI,Vietnam Airlines,VN1574,1,11L,Landed,VN-A513,A20N,passenger
+2025-12-29,16:17,00:40,N/A,,N/A,N/A,2,11L,Landed,VN-B469,C208,passenger
+2025-12-29,16:13,01:59,Con Dao,VCS,VietJet Air,VJ108,1,11L,Landed,B-656E,AJ27,passenger
+2025-12-29,16:07,00:43,Vientiane,VTE,Lao Airlines,QV311,2,11L,Landed,RDPL-34199,A320,passenger
+2025-12-29,16:02,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN214,1,11L,Landed,VN-A866,B789,passenger
+2025-12-29,15:59,01:30,Tuy Hoa,TBB,Vietnam Airlines,VN1650,1,N/A,Landed,VN-A514,A20N,passenger
+2025-12-29,15:55,01:26,N/A,,Hai Au Aviation,N/A,2,11L,Landed,VN-B466,C208,passenger
+2025-12-29,15:52,01:34,Da Lat,DLI,VietJet Air,VJ408,1,11L,Landed,VN-A668,A320,passenger
+2025-12-29,15:49,01:43,Hong Kong,HKG,Vietnam Airlines,VN593,2,11L,Landed,VN-A604,A321,passenger
+2025-12-29,15:46,01:40,Ho Chi Minh City,SGN,Vietravel Airlines,VU770,1,11L,Landed,VN-A136,A320,passenger
+2025-12-29,15:43,01:33,Nha Trang,CXR,VietJet Air,VJ774,1,11L,Landed,VN-A632,A321,passenger
+2025-12-29,15:40,01:49,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,VN-A676,A320,passenger
+2025-12-29,15:37,04:13,Busan,PUS,Vietnam Airlines,VN429,2,11L,Landed,VN-A869,B789,passenger
+2025-12-29,15:35,02:46,Singapore,SIN,Vietnam Airlines,VN660,2,11L,Landed,VN-A508,A21N,passenger
+2025-12-29,15:32,01:01,Da Nang,DAD,Vietnam Airlines,VN170,1,29R,Landed,VN-A398,A321,passenger
+2025-12-29,15:29,01:43,Ho Chi Minh City,SGN,BBN Airlines Indonesia,QH242,1,11L,Landed,PK-BBK,B739,passenger
+2025-12-29,15:21,08:29,Istanbul,IST,Turkish Airlines,TK164,2,11L,Landed,TC-JOD,A333,passenger
+2025-12-29,15:15,01:42,Ho Chi Minh City,SGN,Avion Express,VU778,1,11L,Landed,9H-MLW,A320,passenger
+2025-12-29,15:13,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ198,1,11L,Landed,VN-A666,A320,passenger
+2025-12-29,15:09,01:30,Da Lat,DLI,Bamboo Airways,QH1422,1,11L,Landed,VN-A227,A321,passenger
+2025-12-29,15:05,01:39,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ838,1,11L,Landed,VN-A284,A21N,passenger
+2025-12-29,15:00,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN248,1,11L,Landed,VN-A897,A359,passenger
+2025-12-29,14:58,02:38,Fuzhou,FOC,Xiamen Air,MF8697,2,11L,Landed,B-5706,B738,passenger
+2025-12-29,14:55,01:20,Qui Nhon,UIH,Vietnam Airlines,VN1622,1,11L,Landed,VN-A625,A21N,passenger
+2025-12-29,14:52,00:58,Kunming,KMG,China Eastern Airlines,MU9605,2,11L,Landed,B-1703,B738,passenger
+2025-12-29,14:50,05:46,Blagoveshchensk,BQS,VietJet Air,VJ7615,2,11L,Landed,VN-A537,A21N,passenger
+2025-12-29,14:46,01:11,Chiang Mai,CNX,AirAsia,FD870,2,11L,Landed,HS-ABY,A320,passenger
+2025-12-29,14:44,02:23,Xiamen,XMN,Xiamen Air,MF869,2,11L,Landed,B-1303,B738,passenger
+2025-12-29,14:41,01:34,Shenzhen,SZX,China Southern Airlines,CZ8469,2,11L,Landed,B-6630,A321,passenger
+2025-12-29,14:39,01:50,Guangzhou,CAN,China Southern Airlines,CZ8315,2,11L,Landed,B-6775,A320,passenger
+2025-12-29,14:36,02:40,Kuala Lumpur,KUL,VietJet Air,VJ906,2,11L,Landed,VN-A542,A321,passenger
+2025-12-29,14:33,01:31,Nha Trang,CXR,Vietnam Airlines,VN1552,1,11L,Landed,VN-A339,A321,passenger
+2025-12-29,14:31,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN212,1,11L,Landed,VN-A891,A359,passenger
+2025-12-29,14:28,00:58,Da Nang,DAD,Vietnam Airlines,VN168,1,11L,Landed,VN-A608,A321,passenger
+2025-12-29,14:24,02:42,Kuala Lumpur,KUL,AirAsia,AK512,2,11L,Landed,9M-AJY,A320,passenger
+2025-12-29,14:20,00:58,Da Nang,DAD,VietJet Air,VJ508,1,N/A,Landed,VN-A635,A321,passenger
+2025-12-29,14:14,02:45,Taipei,TPE,VietJet Air,VJ941,2,11L,Landed,VN-A546,A21N,passenger
+2025-12-29,14:10,01:44,Phu Quoc,PQC,Sun PhuQuoc Airways,SPQ1208,1,11L,Landed,VN-A280,A321,passenger
+2025-12-29,14:07,02:01,Con Dao,VCS,VietJet Air,VJ106,1,11L,Landed,B-652G,AJ27,passenger
+2025-12-29,14:03,01:20,Bangkok,BKK,Vietnam Airlines,VN610,2,11L,Landed,VN-A357,A321,passenger
+2025-12-29,14:01,01:40,Ho Chi Minh City,SGN,VietJet Air,VJ144,1,N/A,Landed,VN-A820,A333,passenger
+2025-12-29,13:58,04:32,Seoul,ICN,VietJet Air,VJ961,2,11L,Landed,VN-A649,A321,passenger
+2025-12-29,13:55,02:26,Penang,PEN,China Airlines,CI6596,0,11L,Landed,B-18720,B744,cargo
+2025-12-29,13:52,05:59,Tokyo,NRT,VietJet Air,VJ933,2,11L,Landed,VN-A817,A333,passenger
+2025-12-29,13:49,03:32,Shanghai,PVG,China Eastern Airlines,MU6011,2,N/A,Landed,B-6886,A321,passenger
+2025-12-29,13:41,01:29,Nha Trang,CXR,Vietnam Airlines,VN7568,1,11L,Landed,VN-A356,A321,passenger
+2025-12-29,13:34,01:35,Shenzhen,SZX,Shenzhen Airlines,ZH103,2,11L,Landed,B-6650,A320,passenger
+2025-12-29,13:26,00:32,Dien Bien Phu,DIN,Vietnam Airlines,VN7805,1,11L,Landed,VN-A325,A321,passenger
+2025-12-29,13:24,00:56,Da Nang,DAD,Vietnam Airlines,VN166,1,N/A,Landed,VN-A331,A321,passenger
+2025-12-29,13:18,05:39,Tokyo,NRT,Vietnam Airlines,VN311,2,11L,Landed,VN-A873,B78X,passenger
+2025-12-29,13:16,00:53,Hue,HUI,VietJet Air,VJ566,1,11L,Landed,VN-A643,A321,passenger
+2025-12-29,13:12,04:15,Seoul,ICN,Vietnam Airlines,VN417,2,11L,Landed,VN-A877,B78X,passenger
+2025-12-29,13:06,05:23,Nagoya,NGO,VietJet Air,VJ921,2,11L,Landed,VN-A693,A21N,passenger
+2025-12-29,13:01,03:39,Delhi,DEL,IndiGo,6E1633,2,11L,Landed,VT-IZK,A20N,passenger
+2025-12-29,12:57,04:44,Osaka,KIX,Vietnam Airlines,VN335,2,11L,Landed,VN-A878,B78X,passenger
+2025-12-29,12:55,01:00,Da Nang,DAD,VietJet Air,VJ528,1,11L,Landed,VN-A535,A321,passenger
+2025-12-29,12:51,05:19,Nagoya,NGO,Vietnam Airlines,VN349,2,11L,Landed,VN-A606,A321,passenger
+2025-12-29,12:48,04:25,Fukuoka,FUK,Vietnam Airlines,VN357,2,11L,Landed,VN-A623,A21N,passenger
+2025-12-29,12:44,01:42,Phu Quoc,PQC,Vietnam Airlines,VN1236,1,11L,Landed,VN-A601,A321,passenger
+2025-12-29,12:44,01:45,Ho Chi Minh City,SGN,Bamboo Airways,QH224,1,11L,Landed,JU-1410,A320,passenger
+2025-12-29,12:37,01:43,Ho Chi Minh City,SGN,VietJet Air,VJ132,1,11L,Landed,VN-A630,A321,passenger
+2025-12-29,12:34,05:11,Dubai,DXB,Emirates,EK394,2,11L,Landed,A6-EPG,B77W,passenger
+2025-12-29,12:31,04:57,Osaka,KIX,VietJet Air,VJ939,2,11L,Landed,VN-A528,A21N,passenger
+2025-12-29,12:28,00:47,Dong Hoi,VDH,Vietnam Airlines,VN1590,1,11L,Landed,VN-A329,A321,passenger
+2025-12-29,12:25,01:49,Phu Quoc,PQC,VietJet Air,VJ440,1,11L,Landed,VN-A672,A320,passenger
+2025-12-29,12:21,01:47,Guangzhou,CAN,Shenzhen Airlines,ZH121,2,11L,Landed,B-5402,B738,passenger
+2025-12-29,12:18,02:50,Kuala Lumpur,KUL,Batik Air,OD571,2,11L,Landed,9M-LRW,B38M,passenger
+2025-12-29,12:15,01:45,Phu Quoc,PQC,Sun PhuQuoc Airways,SPQ1202,1,11L,Landed,VN-A281,A21N,passenger
+2025-12-29,12:13,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN210,1,11L,Landed,VN-A886,A359,passenger
+2025-12-29,12:10,01:39,Ho Chi Minh City,SGN,VietJet Air,VJ128,1,11L,Landed,VN-A815,A333,passenger
+2025-12-29,12:06,02:59,Kuala Lumpur,KUL,Malaysia Airlines,MH752,2,11L,Landed,9M-MXI,B738,passenger
+2025-12-29,12:03,04:24,Seoul,ICN,Asiana Airlines,OZ729,2,11L,Landed,HL7579,A359,passenger
+2025-12-29,12:00,05:42,Doha,DOH,Qatar Airways,QR976,2,11L,Landed,A7-BHF,B789,passenger
+2025-12-29,11:53,01:35,Nha Trang,CXR,VietJet Air,VJ770,1,29R,Landed,VN-A642,A321,passenger
+2025-12-29,11:50,01:03,Da Nang,DAD,N/A,VN6080,1,11L,Landed,VN-A363,A321,passenger
+2025-12-29,11:46,00:55,Nevsehir,NAV,N/A,N/A,2,11L,Landed,VN-B469,C208,passenger
+2025-12-29,11:43,03:40,Beijing,PEK,Air China,CA741,2,11L,Landed,B-326D,A21N,passenger
+2025-12-29,11:40,01:18,Qui Nhon,UIH,Bamboo Airways,QH1214,1,N/A,Landed,VN-A596,A20N,passenger
+2025-12-29,11:37,04:43,Busan,PUS,VietJet Air,VJ981,2,11L,Landed,VN-A634,A321,passenger
+2025-12-29,11:34,02:51,Singapore,SIN,Singapore Airlines,SQ192,2,11L,Landed,9V-SHY,A359,passenger
+2025-12-29,11:31,01:29,Bangkok,DMK,AirAsia,FD640,2,11L,Landed,HS-BBB,A320,passenger
+2025-12-29,11:28,02:42,Taipei,TPE,EVA Air,BR397,2,11L,Landed,B-16725,B77W,passenger
+2025-12-29,11:25,01:47,Can Tho,VCA,Vietnam Airlines,VN1200,1,11L,Landed,VN-A397,A321,passenger
+2025-12-29,11:23,03:24,Shanghai,PVG,Air China,CA703,2,11L,Landed,B-6942,A321,passenger
+2025-12-29,11:17,01:24,Buon Ma Thuot,BMV,Vietnam Airlines,VN1602,1,11L,Landed,VN-A398,A321,passenger
+2025-12-29,11:14,01:39,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ822,1,11L,Landed,VN-A279,A321,passenger
+2025-12-29,11:08,01:47,Phu Quoc,PQC,VietJet Air,VJ442,1,11L,Landed,VN-A671,A320,passenger
+2025-12-29,11:05,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN244,1,11L,Landed,VN-A871,B789,passenger
+2025-12-29,11:03,01:33,Da Lat,DLI,Vietnam Airlines,VN1572,1,11L,Landed,VN-A513,A20N,passenger
+2025-12-29,11:00,01:18,Qui Nhon,UIH,VietJet Air,VJ430,1,11L,Landed,VN-A668,A320,passenger
+2025-12-29,10:56,01:12,Pleiku,PXU,Vietnam Airlines,VN1614,1,11L,Landed,VN-A512,A21N,passenger
+2025-12-29,10:54,04:36,Seoul,ICN,Korean Air,KE441,2,11L,Landed,HL8559,A21N,passenger
+2025-12-29,10:49,00:57,Da Nang,DAD,Vietnam Airlines,VN164,1,11L,Landed,VN-A332,A321,passenger
+2025-12-29,10:47,06:59,Tbilisi,TBS,Turkish Airlines,TK6268,0,11L,Landed,TC-LJO,B77L,cargo
+2025-12-29,10:39,01:28,Nha Trang,CXR,VietJet Air,VJ772,1,11L,Landed,VN-A816,A333,passenger
+2025-12-29,10:32,02:44,Singapore,SIN,EVA Air,BR6061,0,11L,Landed,B-16789,B77L,cargo
+2025-12-29,10:29,02:45,Taipei,TPE,China Airlines,CI791,2,11L,Landed,B-18906,A359,passenger
+2025-12-29,10:26,01:10,Chu Lai,VCL,Vietnam Airlines,VN1640,1,11L,Landed,VN-A625,A21N,passenger
+2025-12-29,10:24,01:45,Guangzhou,CAN,China Southern Airlines,CZ3049,2,11L,Landed,B-30CD,A20N,passenger
+2025-12-29,10:21,02:49,Taipei,TPE,STARLUX,JX715,2,11L,Landed,B-58211,A21N,passenger
+2025-12-29,10:14,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ184,1,11L,Landed,VN-A810,A333,passenger
+2025-12-29,10:09,01:49,Can Tho,VCA,VietJet Air,VJ460,1,11L,Landed,VN-A676,A320,passenger
+2025-12-29,10:07,01:37,Da Lat,DLI,VietJet Air,VJ402,1,11L,Landed,VN-A632,A321,passenger
+2025-12-29,10:04,01:44,Ho Chi Minh City,SGN,Vietnam Airlines,VN208,1,11L,Landed,VN-A866,B789,passenger
+2025-12-29,10:02,01:42,Chongqing,CKG,Tianjin Air Cargo,HT3861,0,11L,Landed,B-5439,B738,cargo
+2025-12-29,09:59,02:33,Kaohsiung,KHH,Vietnam Airlines,VN587,2,11L,Landed,VN-A608,A321,passenger
+2025-12-29,09:56,01:25,Buon Ma Thuot,BMV,VietJet Air,VJ492,1,11L,Landed,VN-A635,A321,passenger
+2025-12-29,09:53,01:22,Bangkok,BKK,Thai Airways,TG560,2,11L,Landed,HS-TXB,A320,passenger
+2025-12-29,09:47,02:47,Taipei,TPE,Vietnam Airlines,VN579,2,11L,Landed,VN-A604,A321,passenger
+2025-12-29,09:43,04:28,Seoul,ICN,VietJet Air,VJ963,2,11L,Landed,VN-A641,A321,passenger
+2025-12-29,09:42,01:03,Da Nang,DAD,Vietravel Airlines,VU638,1,11L,Landed,VN-A136,A320,passenger
+2025-12-29,09:38,00:56,Hue,HUI,Vietnam Airlines,VN1540,1,11L,Landed,VN-A616,A21N,passenger
+2025-12-29,09:36,01:42,Shenzhen,SZX,Shenzhen Airlines,ZH101,2,11L,Landed,B-6935,A320,passenger
+2025-12-29,09:33,01:17,Pleiku,PXU,VietJet Air,VJ422,1,11L,Landed,VN-A643,A321,passenger
+2025-12-29,09:29,01:00,Da Nang,DAD,VietJet Air,VJ504,1,11L,Landed,VN-A687,A321,passenger
+2025-12-29,09:27,01:43,Ho Chi Minh City,SGN,VietJet Air,VJ148,1,11L,Landed,VN-A666,A320,passenger
+2025-12-29,09:22,00:31,Vinh,VII,Vietnam Airlines,VN1716,1,11L,Landed,VN-A331,A321,passenger
+2025-12-29,09:19,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN226,1,11L,Landed,VN-A339,A321,passenger
+2025-12-29,09:13,01:45,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ808,1,11L,Landed,VN-A284,A21N,passenger
+2025-12-29,09:09,01:01,Da Nang,DAD,Vietnam Airlines,VN158,1,11L,Landed,VN-A329,A321,passenger
+2025-12-29,09:06,01:43,Ho Chi Minh City,SGN,Avion Express,VU774,1,11L,Landed,9H-MLW,A320,passenger
+2025-12-29,09:03,01:42,Ho Chi Minh City,SGN,BBN Airlines Indonesia,QH204,1,11L,Landed,PK-BBK,B739,passenger
+2025-12-29,08:52,01:44,Hong Kong,HKG,HK express,UO540,2,11L,Landed,B-KKI,A21N,passenger
+2025-12-29,08:48,01:37,Ho Chi Minh City,SGN,Vietnam Airlines,VN240,1,11L,Landed,VN-A897,A359,passenger
+2025-12-29,08:45,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ176,1,11L,Landed,VN-A516,A21N,passenger
+2025-12-29,08:39,01:39,Hong Kong,HKG,Cathay Pacific,CX2049,0,11L,Landed,B-LIA,B744,cargo
+2025-12-29,08:34,01:00,Da Nang,DAD,VietJet Air,VJ510,1,11L,Landed,VN-A535,A321,passenger
+2025-12-29,08:30,02:51,Singapore,SIN,Scoot,TR300,2,11L,Landed,9V-OFG,B788,passenger
+2025-12-29,08:20,01:22,Bangkok,DMK,AirAsia,FD642,2,11L,Landed,HS-ABA,A320,passenger
+2025-12-29,08:16,01:41,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ806,1,11L,Landed,VN-A280,A321,passenger
+2025-12-29,08:05,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN206,1,11L,Landed,VN-A614,A321,passenger
+2025-12-29,08:01,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ124,1,11L,Landed,VN-A655,A320,passenger
+2025-12-29,07:57,02:46,Kuala Lumpur,KUL,AirAsia,AK9516,2,11L,Landed,9M-AJZ,A320,passenger
+2025-12-29,07:51,01:43,Ho Chi Minh City,SGN,Bamboo Airways,QH202,1,11L,Landed,ER-00005,A320,passenger
+2025-12-29,07:42,01:39,Ho Chi Minh City,SGN,Vietravel Airlines,VU750,1,11L,Landed,VN-A289,A321,passenger
+2025-12-29,07:15,02:48,Manila,MNL,Vietnam Airlines,VN646,2,11L,Landed,VN-A357,A321,passenger
+2025-12-29,07:10,02:58,Manila,MNL,Cebu Pacific,5J744,2,11L,Landed,RP-C4120,A21N,passenger
+2025-12-29,07:05,00:57,Da Nang,DAD,Vietnam Airlines,VN154,1,11L,Landed,VN-A508,A21N,passenger
+2025-12-29,07:01,03:24,Cebu,CEB,Vietnam Airlines,VN642,2,11L,Landed,VN-A503,A21N,passenger
+2025-12-29,06:57,01:44,Ho Chi Minh City,SGN,N/A,VN6002,1,11L,Landed,VN-A363,A321,passenger
+2025-12-29,06:53,00:57,Da Nang,DAD,VietJet Air,VJ502,1,11L,Landed,VN-A642,A321,passenger
+2025-12-29,06:46,04:51,Harbin,HRB,VietJet Air,VJ7359,2,29R,Landed,VN-A538,A21N,passenger
+2025-12-29,06:33,05:35,Doha,DOH,Qatar Airways,QR982,2,11L,Landed,A7-BHW,B789,passenger
+2025-12-29,06:19,05:27,Abu Dhabi,AUH,Etihad Airways,EY432,2,11L,Landed,A6-BLR,B789,passenger
+2025-12-29,06:16,04:02,Jakarta,CGK,Vietnam Airlines,VN634,2,11L,Landed,VN-A331,A321,passenger
+2025-12-29,06:10,02:53,Manila,MNL,VietJet Air,VJ7816,2,11L,Landed,VN-A523,A21N,passenger
+2025-12-29,06:03,09:50,Frankfurt,FRA,Vietnam Airlines,VN36,2,11L,Landed,VN-A861,B789,passenger
+2025-12-29,06:00,03:27,Beijing,PKX,VietJet Air,VJ7713,2,11L,Landed,VN-A542,A321,passenger
+2025-12-29,05:56,08:58,Melbourne,MEL,Vietnam Airlines,VN778,2,11L,Landed,VN-A891,A359,passenger
+2025-12-29,05:51,03:49,Bengaluru,BLR,Vietnam Airlines,VN982,2,11L,Landed,VN-A616,A21N,passenger
+2025-12-29,05:46,10:14,Paris,CDG,Vietnam Airlines,VN18,2,11L,Landed,VN-A892,A359,passenger
+2025-12-29,05:42,03:41,Ahmedabad,AMD,VietJet Air,VJ1926,2,11L,Landed,VN-A650,A320,passenger
+2025-12-29,05:35,03:13,Shanghai,PVG,VietJet Air,VJ7239,2,11L,Landed,VN-A546,A21N,passenger
+2025-12-29,05:32,03:22,Hyderabad,HYD,Vietnam Airlines,VN984,2,11L,Landed,VN-A512,A21N,passenger
+2025-12-29,04:52,01:31,Guangzhou,CAN,VietJet Air,VJ7527,2,11L,Landed,VN-A635,A321,passenger
+2025-12-29,04:42,03:47,Mumbai,BOM,Vietnam Airlines,VN972,2,N/A,Landed,VN-A886,A359,passenger
+2025-12-29,04:38,10:30,London,LHR,Vietnam Airlines,VN56,2,11L,Landed,VN-A867,B789,passenger
+2025-12-29,04:33,03:23,Delhi,DEL,Vietnam Airlines,VN980,2,11L,Landed,VN-A869,B789,passenger
+2025-12-29,04:31,04:35,Seoul,ICN,CMA CGM Air Cargo,5Y8531,0,11L,Landed,N760GT,B77L,cargo
+2025-12-29,03:30,01:38,Ho Chi Minh City,SGN,VietJet Air,VJ182,1,11L,Landed,VN-A668,A320,passenger
+2025-12-29,03:19,01:30,Macau,MFM,Qatar Airways,QR8313,0,11L,Landed,A7-BFK,B77L,cargo
+2025-12-29,02:57,02:34,Xi'an,XIY,VietJet Air,VJ7343,2,11L,Landed,VN-A676,A320,passenger
+2025-12-29,02:51,01:36,Ho Chi Minh City,SGN,Vietnam Airlines,VN7226,1,11L,Landed,VN-A625,A21N,passenger
+2025-12-29,02:45,02:46,Taipei,TPE,EVA Air,BR6021,0,11L,Landed,B-16790,B77L,cargo
+2025-12-29,02:41,01:31,Guangzhou,CAN,FedEx,FX5775,0,11L,Landed,N108FE,B763,cargo
+2025-12-29,02:36,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ178,1,11L,Landed,VN-A632,A321,passenger
+2025-12-29,02:06,04:14,Seoul,ICN,Korean Air,KE361,0,11L,Landed,HL8226,B77L,cargo
+2025-12-29,02:02,04:30,Seoul,ICN,Air Zeta,KJ371,0,11L,Landed,HL8319,B738,cargo
+2025-12-29,01:53,01:42,Ho Chi Minh City,SGN,VietJet Air,N/A,1,11L,Landed,VN-A649,A321,passenger
+2025-12-29,01:47,04:08,Seoul,ICN,Kalitta Air,K4602,0,11L,Landed,N701CK,B744,cargo
+2025-12-29,01:44,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN7206,1,11L,Landed,VN-A601,A321,passenger
+2025-12-29,01:41,01:44,Ho Chi Minh City,SGN,Vietnam Airlines,VN7210,1,11L,Landed,VN-A393,A321,passenger
+2025-12-29,01:38,03:00,Manila,MNL,Philippine Airlines,PR595,2,11L,Landed,RP-C9925,A321,passenger
+2025-12-29,01:37,03:32,Shanghai,PVG,China Eastern Airlines,MU5075,2,11L,Landed,B-1235,B738,passenger
+2025-12-29,01:30,01:44,Ho Chi Minh City,SGN,Bamboo Airways,QH282,1,11L,Landed,VN-A227,A321,passenger
+2025-12-29,01:26,01:34,Nha Trang,CXR,VietJet Air,VJ7614,1,11L,Landed,VN-A537,A21N,passenger
+2025-12-29,01:21,03:27,Shanghai,PVG,Juneyao Air,HO1329,2,11L,Landed,B-30FQ,A20N,passenger
+2025-12-29,01:17,00:58,Da Nang,DAD,VietJet Air,VJ520,1,11L,Landed,VN-A528,A21N,passenger
+2025-12-29,01:14,05:55,Tokyo,NRT,Japan Airlines,JL6739,0,11L,Landed,JA653J,B763,cargo
+2025-12-29,01:04,02:55,Hangzhou,HGH,Air China,CA707,2,11L,Landed,B-6745,A320,passenger
+2025-12-29,01:00,04:35,Kabul,KBL,Turkish Airlines,TK6372,0,11L,Landed,TC-JDR,A332,cargo
+2025-12-29,00:53,01:02,Da Nang,DAD,VietJet Air,VJ522,1,11L,Landed,VN-A693,A21N,passenger
+2025-12-29,00:47,01:33,Shenzhen,SZX,Shenzhen Airlines,ZH107,2,11L,Landed,B-6690,A320,passenger
+2025-12-29,00:44,01:32,Da Lat,DLI,VietJet Air,VJ410,1,11L,Landed,VN-A663,A320,passenger
+2025-12-29,00:40,05:33,Dubai,DWC,Emirates,EK9854,0,11L,Landed,A6-EFY,B77L,cargo
+2025-12-29,00:33,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ158,1,11L,Landed,VN-A634,A321,passenger
+2025-12-29,00:27,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN7260,1,11L,Landed,VN-A390,A321,passenger
+2025-12-29,00:22,01:08,Da Nang,DAD,VietJet Air,VJ518,1,11L,Landed,VN-A643,A321,passenger
+2025-12-29,00:19,01:46,Ho Chi Minh City,SGN,Vietnam Airlines,VN224,1,11L,Landed,VN-A329,A321,passenger
+2025-12-29,00:14,04:33,Seoul,ICN,Jeju Air,7C2201,2,11L,Landed,HL8592,B38M,passenger
+2025-12-29,00:12,03:03,Wenzhou,WNZ,Juneyao Air,HO1525,2,11L,Landed,B-8235,A320,passenger
+2025-12-29,00:09,00:59,Da Nang,DAD,Vietnam Airlines,VN7192,1,11L,Landed,VN-A514,A20N,passenger
+2025-12-29,00:05,01:48,Ho Chi Minh City,SGN,Vietravel Airlines,VU794,1,11L,Landed,VN-A129,A321,passenger
+2025-12-29,00:04,01:41,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ882,1,11L,Landed,VN-A279,A321,passenger
+2025-12-30,23:59,01:46,Ho Chi Minh City,SGN,VietJet Air,VJ156,1,11L,Landed,VN-A656,A320,passenger
+2025-12-30,23:55,01:25,Bangkok,BKK,Vietnam Airlines,VN616,2,11L,Landed,VN-A353,A321,passenger
+2025-12-30,23:53,01:42,Ho Chi Minh City,SGN,Bamboo Airways,QH284,1,11L,Landed,VN-A596,A20N,passenger
+2025-12-30,23:49,04:59,Seoul,ICN,T'way Air,TW61,2,11L,Landed,HL8306,B738,passenger
+2025-12-30,23:47,01:01,Da Nang,DAD,VietJet Air,VJ518,1,11L,Landed,VN-A528,A21N,passenger
+2025-12-30,23:45,01:46,Ho Chi Minh City,SGN,VietJet Air,VJ190,1,11L,Landed,VN-A538,A21N,passenger
+2025-12-30,23:37,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN256,1,N/A,Landed,VN-A877,B78X,passenger
+2025-12-30,23:35,01:40,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ882,1,11L,Landed,VN-A279,A321,passenger
+2025-12-30,23:32,01:23,Buon Ma Thuot,BMV,VietJet Air,VJ494,1,11L,Landed,VN-A644,A321,passenger
+2025-12-30,23:28,01:00,Da Nang,DAD,VietJet Air,VJ516,1,11L,Landed,VN-A635,A321,passenger
+2025-12-30,23:15,02:45,Kuala Lumpur,KUL,Vietnam Airlines,VN680,2,11L,Landed,VN-A326,A321,passenger
+2025-12-30,23:12,01:00,Hue,HUI,VietJet Air,VJ568,1,11L,Landed,VN-A671,A320,passenger
+2025-12-30,23:09,01:35,Nha Trang,CXR,VietJet Air,VJ778,1,N/A,Landed,VN-A630,A321,passenger
+2025-12-30,23:07,01:48,Ho Chi Minh City,SGN,Vietravel Airlines,VU794,1,11L,Landed,VN-A136,A320,passenger
+2025-12-30,23:03,01:39,Guangzhou,CAN,China Southern Airlines,CZ371,2,11L,Landed,B-8997,A321,passenger
+2025-12-30,23:01,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN220,1,29R,Landed,VN-A874,B78X,passenger
+2025-12-30,22:58,00:54,Hue,HUI,Vietnam Airlines,VN7540,1,11L,Landed,VN-A616,A21N,passenger
+2025-12-30,22:55,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN7240,1,11L,Landed,VN-A338,A321,passenger
+2025-12-30,22:51,05:59,Tokyo,NRT,Japan Airlines,JL751,2,11L,Landed,JA619J,B763,passenger
+2025-12-30,22:47,01:41,Ho Chi Minh City,SGN,Bamboo Airways,QH286,1,11L,Landed,VN-A585,A321,passenger
+2025-12-30,22:44,06:06,Tokyo,NRT,All Nippon Airways,NH897,2,N/A,Landed,JA928A,B789,passenger
+2025-12-30,22:41,04:35,Seoul,ICN,Asiana Airlines,OZ733,2,11L,Landed,HL8308,A359,passenger
+2025-12-30,22:26,12:52,Anchorage,ANC,UPS,5X72,0,29R,Landed,N632UP,B748,cargo
+2025-12-30,22:23,01:51,Can Tho,VCA,VietJet Air,VJ464,1,11L,Landed,VN-A545,A21N,passenger
+2025-12-30,22:20,01:43,Ho Chi Minh City,SGN,VietJet Air,VJ180,1,11L,Landed,VN-A817,A333,passenger
+2025-12-30,22:17,02:52,Taipei,TPE,VietJet Air,VJ943,2,11L,Landed,VN-A640,A321,passenger
+2025-12-30,22:13,01:17,Siem Reap,SAI,Vietnam Airlines,VN842,2,11L,Landed,VN-A331,A321,passenger
+2025-12-30,22:11,01:44,Hong Kong,HKG,HK express,UO542,2,11L,Landed,B-KKC,A21N,passenger
+2025-12-30,22:07,00:36,Vinh,VII,Vietnam Airlines,VN1718,1,N/A,Landed,VN-A324,A321,passenger
+2025-12-30,22:04,01:37,Ho Chi Minh City,SGN,Vietnam Airlines,VN258,1,11L,Landed,VN-A886,A359,passenger
+2025-12-30,22:01,01:31,Macau,MFM,Air Macau,NX982,2,11L,Landed,B-MBU,A21N,passenger
+2025-12-30,21:53,01:48,Chengdu,TFU,Sichuan Airlines,3U3905,2,11L,Landed,B-6621,A320,passenger
+2025-12-30,21:47,01:44,Ho Chi Minh City,SGN,BBN Airlines Indonesia,QH268,1,N/A,Landed,PK-BBK,B739,passenger
+2025-12-30,21:39,04:29,Seoul,ICN,Korean Air,KE447,2,11L,Landed,HL8392,B789,passenger
+2025-12-30,21:33,01:54,Can Tho,VCA,Vietnam Airlines,VN1206,1,11L,Landed,VN-A507,A21N,passenger
+2025-12-30,21:30,01:46,Ho Chi Minh City,SGN,Bamboo Airways,QH262,1,11L,Landed,ER-00005,A320,passenger
+2025-12-30,21:27,01:23,Bangkok,BKK,Vietnam Airlines,VN618,2,11L,Landed,VN-A332,A321,passenger
+2025-12-30,21:25,00:55,Vientiane,VTE,Vietnam Airlines,VN920,2,11L,Landed,VN-A604,A321,passenger
+2025-12-30,21:22,02:03,Dhaka,DAC,Cathay Pacific,CX48,0,11L,Landed,B-LIE,B744,cargo
+2025-12-30,21:19,04:47,Denpasar,DPS,VietJet Air,VJ998,2,11L,Landed,VN-A522,A321,passenger
+2025-12-30,21:16,01:24,Bangkok,BKK,FedEx,FX6002,0,N/A,Landed,N126FE,B763,cargo
+2025-12-30,21:12,01:50,Phu Quoc,PQC,Sun PhuQuoc Airways,SPQ1230,1,11L,Landed,VN-A284,A21N,passenger
+2025-12-30,21:09,01:52,Ho Chi Minh City,SGN,Vietnam Airlines,VN218,1,11L,Landed,VN-A893,A359,passenger
+2025-12-30,21:06,01:53,Phu Quoc,PQC,VietJet Air,VJ1440,1,11L,Landed,VN-A658,A320,passenger
+2025-12-30,21:03,01:48,Ho Chi Minh City,SGN,VietJet Air,VJ166,1,11L,Landed,VN-A668,A320,passenger
+2025-12-30,21:00,06:14,Tokyo,NRT,VietJet Air,VJ935,2,11L,Landed,VN-A525,A21N,passenger
+2025-12-30,20:57,01:36,Bangkok,BKK,China Airlines,CI6654,0,11L,Landed,B-18720,B744,cargo
+2025-12-30,20:55,02:41,Taichung,RMQ,VietJet Air,VJ949,2,11L,Landed,VN-A516,A21N,passenger
+2025-12-30,20:52,05:57,Tokyo,HND,Vietnam Airlines,VN385,2,11L,Landed,VN-A868,B789,passenger
+2025-12-30,20:49,01:40,Shenzhen,SZX,China Southern Airlines,CZ8083,2,11L,Landed,B-9917,A320,passenger
+2025-12-30,20:45,01:02,Da Nang,DAD,Vietnam Airlines,VN7196,1,11L,Landed,VN-A327,A321,passenger
+2025-12-30,20:42,04:24,Seoul,ICN,Vietnam Airlines,VN415,2,11L,Landed,VN-A896,A359,passenger
+2025-12-30,20:38,01:18,Bangkok,BKK,VietJet Air,VJ904,2,N/A,Landed,VN-A634,A321,passenger
+2025-12-30,20:34,00:58,Da Nang,DAD,Vietnam Airlines,VN188,1,11L,Landed,VN-A513,A20N,passenger
+2025-12-30,20:30,01:18,Siem Reap,SAI,VietJet Air,VJ914,2,11L,Landed,VN-A632,A321,passenger
+2025-12-30,20:24,00:53,Hue,HUI,Vietnam Airlines,VN1544,1,11L,Landed,VN-A397,A321,passenger
+2025-12-30,20:19,01:00,Da Nang,DAD,Vietravel Airlines,VU658,1,11L,Landed,VN-A129,A321,passenger
+2025-12-30,20:16,01:30,Bangkok,DMK,AirAsia,FD644,2,11L,Landed,HS-EAF,A21N,passenger
+2025-12-30,20:13,01:35,Da Lat,DLI,VietJet Air,VJ410,1,11L,Landed,VN-A544,A321,passenger
+2025-12-30,20:10,01:38,Yangon,RGN,Myanmar Airways International,8M450,2,11L,Landed,XY-ALO,E190,passenger
+2025-12-30,20:07,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ128,1,11L,Landed,VN-A666,A320,passenger
+2025-12-30,20:04,01:41,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ868,1,11L,Landed,VN-A280,A321,passenger
+2025-12-30,20:01,02:13,Enshi,ENH,West Air,PN6535,2,11L,Landed,B-8892,A320,passenger
+2025-12-30,19:59,01:04,Da Nang,DAD,Vietnam Airlines,VN174,1,11L,Landed,VN-A329,A321,passenger
+2025-12-30,19:56,01:48,Ho Chi Minh City,SGN,Vietnam Airlines,VN254,1,11L,Landed,VN-A873,B78X,passenger
+2025-12-30,19:53,01:49,Ho Chi Minh City,SGN,Vietravel Airlines,VU780,1,11L,Landed,VN-A289,A321,passenger
+2025-12-30,19:50,01:49,Ho Chi Minh City,SGN,VietJet Air,VJ172,1,11L,Landed,VN-A812,A333,passenger
+2025-12-30,19:47,01:07,Da Nang,DAD,Vietnam Airlines,VN180,1,11L,Landed,VN-A512,A21N,passenger
+2025-12-30,19:45,01:09,Da Nang,DAD,Bamboo Airways,QH148,1,11L,Landed,VN-A227,A321,passenger
+2025-12-30,19:42,01:22,Pleiku,PXU,VietJet Air,VJ424,1,11L,Landed,VN-A526,A21N,passenger
+2025-12-30,19:40,02:46,Kaohsiung,KHH,VietJet Air,VJ947,2,11L,Landed,VN-A645,A321,passenger
+2025-12-30,19:36,06:11,Bahrain,BAH,DHL Air,QY574,0,11L,Landed,D-ACVG,A333,cargo
+2025-12-30,19:33,01:53,Phu Quoc,PQC,N/A,VN6400,1,11L,Landed,VN-A363,A321,passenger
+2025-12-30,19:30,01:51,Ho Chi Minh City,SGN,VietJet Air,VJ152,1,29R,Landed,VN-A677,A321,passenger
+2025-12-30,19:27,02:55,Xi'an,XIY,China Eastern Airlines,MU867,2,N/A,Landed,B-30CX,A20N,passenger
+2025-12-30,19:24,01:26,Siem Reap,SAI,Vietnam Airlines,VN836,2,11L,Landed,VN-A398,A321,passenger
+2025-12-30,19:22,01:24,Bangkok,BKK,Thai Airways,TG564,2,11L,Landed,HS-TXM,A320,passenger
+2025-12-30,19:19,01:39,Nha Trang,CXR,VietJet Air,VJ784,1,11L,Landed,VN-A673,A321,passenger
+2025-12-30,19:16,01:24,Bangkok,BKK,Vietnam Airlines,VN614,2,11L,Landed,VN-A395,A321,passenger
+2025-12-30,19:13,05:45,Doha,DOH,Qatar Airways,QR984,2,11L,Landed,A7-BCL,B788,passenger
+2025-12-30,19:11,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN252,1,11L,Landed,VN-A899,A359,passenger
+2025-12-30,19:08,05:08,Osaka,KIX,VietJet Air,VJ931,2,11L,Landed,VN-A523,A21N,passenger
+2025-12-30,19:06,01:52,Hong Kong,HKG,Hong Kong Air Cargo,RH317,0,11L,Landed,B-LNW,A332,cargo
+2025-12-30,19:03,01:21,Qui Nhon,UIH,VietJet Air,VJ432,1,N/A,Landed,VN-A671,A320,passenger
+2025-12-30,19:00,01:04,Da Nang,DAD,VietJet Air,VJ512,1,11L,Landed,VN-A635,A321,passenger
+2025-12-30,18:57,,Chennai,MAA,N/A,N/A,0,11L,Landed,VT-AFN,B738,cargo
+2025-12-30,18:54,01:28,Buon Ma Thuot,BMV,VietJet Air,VJ1492,1,11L,Landed,VN-A528,A21N,passenger
+2025-12-30,18:51,03:15,Shanghai,PVG,Vietnam Airlines,VN533,2,11L,Landed,VN-A616,A21N,passenger
+2025-12-30,18:48,01:54,Changsha,CSX,China Southern Airlines,CZ8359,2,11L,Landed,B-32FY,A20N,passenger
+2025-12-30,18:46,01:48,Hong Kong,HKG,Hong Kong Airlines,HX528,2,11L,Landed,B-LPD,A320,passenger
+2025-12-30,18:41,01:38,Shenzhen,SZX,Shenzhen Airlines,ZH105,2,11L,Landed,B-5778,B738,passenger
+2025-12-30,18:32,03:44,Beijing,PEK,Vietnam Airlines,VN513,2,11L,Landed,VN-A336,A321,passenger
+2025-12-30,18:28,01:26,Tuy Hoa,TBB,Vietnam Airlines,VN1650,1,11L,Landed,VN-A602,A321,passenger
+2025-12-30,18:25,01:42,Guangzhou,CAN,China Southern Airlines,CZ8177,2,11L,Landed,B-9952,A320,passenger
+2025-12-30,18:21,01:56,Hong Kong,HKG,Cathay Pacific,CX743,2,11L,Landed,B-HNF,B773,passenger
+2025-12-30,18:19,01:41,Phnom Penh,KTI,Air Cambodia,K6850,2,11L,Landed,XU-356,A320,passenger
+2025-12-30,18:16,03:35,Shanghai,PVG,Air China,CA755,2,11L,Landed,B-6942,A321,passenger
+2025-12-30,18:11,01:36,Nha Trang,CXR,Vietnam Airlines,VN1558,1,11L,Landed,VN-A353,A321,passenger
+2025-12-30,18:09,01:42,Phu Quoc,PQC,Sun PhuQuoc Airways,SPQ1216,1,11L,Landed,VN-A281,A21N,passenger
+2025-12-30,18:07,01:00,Luang Prabang,LPQ,Lao Airlines,QV313,2,11L,Landed,RDPL-34228,AT76,passenger
+2025-12-30,18:03,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN216,1,11L,Landed,VN-A862,B789,passenger
+2025-12-30,18:01,01:48,Ho Chi Minh City,SGN,VietJet Air,VJ194,1,11L,Landed,VN-A552,A21N,passenger
+2025-12-30,17:59,04:00,Jakarta,CGK,VietJet Air,VJ928,2,11L,Landed,VN-A663,A320,passenger
+2025-12-30,17:58,01:56,Phu Quoc,PQC,VietJet Air,VJ446,1,11L,Landed,VN-A689,A320,passenger
+2025-12-30,17:56,01:08,Da Nang,DAD,VietJet Air,VJ514,1,11L,Landed,VN-A538,A21N,passenger
+2025-12-30,17:50,01:24,Bangkok,BKK,VietJet Air,VJ902,2,11L,Landed,VN-A644,A321,passenger
+2025-12-30,17:47,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN232,1,11L,Landed,VN-A878,B78X,passenger
+2025-12-30,17:44,03:04,Singapore,SIN,Singapore Airlines,SQ194,2,11L,Landed,9V-MBI,B38M,passenger
+2025-12-30,17:41,05:22,Abu Dhabi,AUH,Etihad Airways,EY430,2,11L,Landed,A6-BNB,B789,passenger
+2025-12-30,17:39,01:00,Da Nang,DAD,Vietnam Airlines,VN172,1,11L,Landed,VN-A324,A321,passenger
+2025-12-30,17:36,01:37,Ho Chi Minh City,SGN,Vietnam Airlines,VN262,1,11L,Landed,VN-A877,B78X,passenger
+2025-12-30,17:34,03:26,Shanghai,PVG,China Eastern Airlines,MU6013,2,11L,Landed,B-32L9,A21N,passenger
+2025-12-30,17:29,01:40,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ854,1,11L,Landed,VN-A279,A321,passenger
+2025-12-30,17:23,00:41,Dien Bien Phu,DIN,Vietnam Airlines,VN1805,1,11L,Landed,VN-A331,A321,passenger
+2025-12-30,17:22,01:49,Guangzhou,CAN,Vietnam Airlines,VN507,2,11L,Landed,VN-A323,A321,passenger
+2025-12-30,17:18,03:12,Taipei,TPE,EVA Air,BR385,2,11L,Landed,B-16227,A321,passenger
+2025-12-30,17:14,01:50,Ho Chi Minh City,SGN,VietJet Air,VJ134,1,11L,Landed,VN-A539,A21N,passenger
+2025-12-30,17:12,03:00,Singapore,SIN,VietJet Air,VJ916,2,11L,Landed,VN-A630,A321,passenger
+2025-12-30,17:09,01:47,Ho Chi Minh City,SGN,Vietnam Airlines,VN250,1,11L,Landed,VN-A863,B789,passenger
+2025-12-30,17:07,04:39,Busan,PUS,VietJet Air,VJ957,2,11L,Landed,VN-A650,A320,passenger
+2025-12-30,17:03,03:05,Taipei,TPE,China Airlines,CI793,2,11L,Landed,B-18662,B738,passenger
+2025-12-30,17:01,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ130,1,11L,Landed,VN-A814,A333,passenger
+2025-12-30,16:58,04:41,Denpasar,DPS,VietJet Air,VJ900,2,11L,Landed,VN-A657,A321,passenger
+2025-12-30,16:56,01:31,Da Lat,DLI,Bamboo Airways,QH1424,1,11L,Landed,VN-A596,A20N,passenger
+2025-12-30,16:53,02:11,Kolkata,CCU,IndiGo,6E1631,2,11L,Landed,VT-ISS,A20N,passenger
+2025-12-30,16:50,05:09,Hiroshima,HIJ,VietJet Air,VJ953,2,11L,Landed,VN-A676,A320,passenger
+2025-12-30,16:47,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN214,1,29R,Landed,VN-A874,B78X,passenger
+2025-12-30,16:44,00:59,Da Nang,DAD,Hai Au Aviation,HAI488,1,11L,Landed,VN-A488,FA8X,business jet
+2025-12-30,16:40,00:40,Luang Prabang,LPQ,AirAsia,FD1038,2,11L,Landed,HS-BBL,A320,passenger
+2025-12-30,16:37,01:45,Can Tho,VCA,Vietnam Airlines,VN1202,1,11L,Landed,VN-A357,A321,passenger
+2025-12-30,16:24,01:28,Nha Trang,CXR,Vietnam Airlines,VN7568,1,11L,Landed,VN-A623,A21N,passenger
+2025-12-30,16:16,01:45,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,VN-A545,A21N,passenger
+2025-12-30,16:12,00:48,Vientiane,VTE,Lao Airlines,QV311,2,11L,Landed,RDPL-34199,A320,passenger
+2025-12-30,16:09,01:30,Da Lat,DLI,Vietnam Airlines,VN1574,1,11L,Landed,VN-A514,A20N,passenger
+2025-12-30,16:05,01:43,Hong Kong,HKG,Vietnam Airlines,VN593,2,11L,Landed,VN-A397,A321,passenger
+2025-12-30,16:01,01:39,Ho Chi Minh City,SGN,Vietravel Airlines,VU770,1,11L,Landed,VN-A129,A321,passenger
+2025-12-30,15:52,01:56,Con Dao,VCS,VietJet Air,VJ108,1,11L,Landed,B-656E,AJ27,passenger
+2025-12-30,15:46,01:47,Ho Chi Minh City,SGN,BBN Airlines Indonesia,QH242,1,11L,Landed,PK-BBK,B739,passenger
+2025-12-30,15:43,01:03,Da Nang,DAD,Vietnam Airlines,VN168,1,11L,Landed,VN-A505,A21N,passenger
+2025-12-30,15:40,01:36,Nha Trang,CXR,Vietnam Airlines,VN1552,1,11L,Landed,VN-A332,A321,passenger
+2025-12-30,15:38,01:07,Da Nang,DAD,Vietnam Airlines,VN170,1,11L,Landed,VN-A329,A321,passenger
+2025-12-30,15:35,01:49,Phu Quoc,PQC,VietJet Air,VJ1444,1,11L,Landed,VN-A643,A321,passenger
+2025-12-30,15:32,01:46,Ho Chi Minh City,SGN,Avion Express,VU778,1,11L,Landed,9H-MLW,A320,passenger
+2025-12-30,15:29,01:33,Da Lat,DLI,Bamboo Airways,QH1422,1,11L,Landed,VN-A227,A321,passenger
+2025-12-30,15:25,02:43,Singapore,SIN,Vietnam Airlines,VN660,2,11L,Landed,VN-A507,A21N,passenger
+2025-12-30,15:23,01:33,Da Lat,DLI,VietJet Air,VJ408,1,11L,Landed,VN-A632,A321,passenger
+2025-12-30,15:20,01:44,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ838,1,11L,Landed,VN-A284,A21N,passenger
+2025-12-30,15:17,01:19,Qui Nhon,UIH,Vietnam Airlines,VN1622,1,11L,Landed,VN-A503,A21N,passenger
+2025-12-30,15:14,01:44,Ho Chi Minh City,SGN,VietJet Air,VJ198,1,11L,Landed,VN-A535,A321,passenger
+2025-12-30,15:11,07:55,Istanbul,IST,Turkish Airlines,TK164,2,11L,Landed,TC-LGP,A359,passenger
+2025-12-30,15:08,02:46,Singapore,XSP,Flexjet,LXJ668,2,11L,Landed,N668FX,GLF6,business jet
+2025-12-30,15:06,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN248,1,11L,Landed,VN-A886,A359,passenger
+2025-12-30,15:02,02:26,Xiamen,XMN,Xiamen Air,MF869,2,11L,Landed,B-7821,B738,passenger
+2025-12-30,15:00,03:04,Taipei,TPE,VietJet Air,VJ941,2,11L,Landed,VN-A526,A21N,passenger
+2025-12-30,14:57,01:43,Phu Quoc,PQC,Vietnam Airlines,VN1236,1,11L,Landed,VN-A326,A321,passenger
+2025-12-30,14:53,01:10,Chiang Mai,CNX,AirAsia,FD870,2,11L,Landed,HS-ABY,A320,passenger
+2025-12-30,14:50,01:40,Shenzhen,SZX,China Southern Airlines,CZ8469,2,11L,Landed,B-32H3,A20N,passenger
+2025-12-30,14:47,01:35,Da Lat,DLI,VietJet Air,VJ404,1,11L,Landed,VN-A671,A320,passenger
+2025-12-30,14:45,01:48,Ho Chi Minh City,SGN,Vietnam Airlines,VN212,1,11L,Landed,VN-A893,A359,passenger
+2025-12-30,14:41,01:09,Kunming,KMG,China Eastern Airlines,MU9605,2,N/A,Landed,B-7590,B738,passenger
+2025-12-30,14:38,01:49,Phu Quoc,PQC,Sun PhuQuoc Airways,SPQ1208,1,11L,Landed,VN-A280,A321,passenger
+2025-12-30,14:35,01:52,Guangzhou,CAN,China Southern Airlines,CZ8315,2,11L,Landed,B-6783,A320,passenger
+2025-12-30,14:33,01:08,Da Nang,DAD,VietJet Air,VJ508,1,11L,Landed,VN-A635,A321,passenger
+2025-12-30,14:29,02:20,N/A,,N/A,N/A,2,11L,Landed,VN-B469,C208,passenger
+2025-12-30,14:23,02:46,Kuala Lumpur,KUL,VietJet Air,VJ906,2,11L,Landed,VN-A544,A321,passenger
+2025-12-30,14:21,03:00,Kuala Lumpur,KUL,AirAsia,AK512,2,11L,Landed,9M-AJT,A320,passenger
+2025-12-30,14:18,01:26,Bangkok,BKK,Vietnam Airlines,VN610,2,11L,Landed,VN-A512,A21N,passenger
+2025-12-30,14:16,05:01,Matsuyama,MYJ,VietJet Air,VJ7809,2,11L,Landed,VN-A658,A320,passenger
+2025-12-30,14:13,04:47,Seoul,ICN,VietJet Air,VJ961,2,11L,Landed,VN-A634,A321,passenger
+2025-12-30,14:11,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ144,1,N/A,Landed,VN-A817,A333,passenger
+2025-12-30,14:08,01:55,Con Dao,VCS,VietJet Air,VJ106,1,11L,Landed,B-652G,AJ27,passenger
+2025-12-30,14:06,01:06,Da Nang,DAD,Vietnam Airlines,VN166,1,11L,Landed,VN-A331,A321,passenger
+2025-12-30,14:01,06:17,Tokyo,NRT,VietJet Air,VJ933,2,11L,Landed,VN-A820,A333,passenger
+2025-12-30,13:58,02:52,Wuhu,WHA,N/A,JG2851,0,11L,Landed,B-226T,B738,cargo
+2025-12-30,13:55,03:35,Shanghai,PVG,China Eastern Airlines,MU6011,2,11L,Landed,B-8576,A321,passenger
+2025-12-30,13:51,01:39,Chongqing,CKG,West Air,PN6423,2,11L,Landed,B-8892,A320,passenger
+2025-12-30,13:47,01:34,Nha Trang,CXR,VietJet Air,VJ780,1,11L,Landed,VN-A673,A321,passenger
+2025-12-30,13:37,04:58,Osaka,KIX,Vietnam Airlines,VN335,2,11L,Landed,VN-A888,A359,passenger
+2025-12-30,13:33,05:46,Tokyo,NRT,Vietnam Airlines,VN311,2,11L,Landed,VN-A879,B78X,passenger
+2025-12-30,13:31,01:39,Phu Quoc,PQC,VietJet Air,VJ440,1,11L,Landed,VN-A669,A320,passenger
+2025-12-30,13:28,01:38,Shenzhen,SZX,Shenzhen Airlines,ZH103,2,11L,Landed,B-6286,A320,passenger
+2025-12-30,13:25,00:54,N/A,,Hai Au Aviation,N/A,2,11L,Landed,VN-B466,C208,passenger
+2025-12-30,13:21,02:32,Kaohsiung,KHH,Vietnam Airlines,VN583,2,11L,Landed,VN-A398,A321,passenger
+2025-12-30,13:18,00:58,Da Nang,DAD,Vietnam Airlines,VN164,1,11L,Landed,VN-A395,A321,passenger
+2025-12-30,13:15,04:25,Seoul,ICN,Vietnam Airlines,VN417,2,11L,Landed,VN-A873,B78X,passenger
+2025-12-30,13:12,05:32,Nagoya,NGO,Vietnam Airlines,VN349,2,11L,Landed,VN-A602,A321,passenger
+2025-12-30,13:09,05:37,Nagoya,NGO,VietJet Air,VJ921,2,11L,Landed,VN-A528,A21N,passenger
+2025-12-30,13:05,01:49,Ho Chi Minh City,SGN,Vietnam Airlines,VN246,1,11L,Landed,VN-A870,B789,passenger
+2025-12-30,13:03,01:40,Phnom Penh,KTI,Air Cambodia,K6854,2,11L,Landed,XU-350,A321,passenger
+2025-12-30,13:00,01:00,Hue,HUI,VietJet Air,VJ566,1,11L,Landed,VN-A641,A321,passenger
+2025-12-30,12:57,05:07,Osaka,KIX,VietJet Air,VJ939,2,11L,Landed,VN-A538,A21N,passenger
+2025-12-30,12:55,01:52,Ho Chi Minh City,SGN,Bamboo Airways,QH224,1,11L,Landed,JU-1410,A320,passenger
+2025-12-30,12:52,04:13,Busan,PUS,Vietnam Airlines,VN429,2,11L,Landed,VN-A865,B789,passenger
+2025-12-30,12:49,00:56,Da Nang,DAD,N/A,VN6080,1,11L,Landed,VN-A363,A321,passenger
+2025-12-30,12:43,05:15,Dubai,DXB,Emirates,EK394,2,11L,Landed,A6-EGG,B77W,passenger
+2025-12-30,12:36,01:49,Guangzhou,CAN,Shenzhen Airlines,ZH121,2,11L,Landed,B-7750,B738,passenger
+2025-12-30,12:33,03:25,Delhi,DEL,IndiGo,6E1633,2,11L,Landed,VT-IFM,A320,passenger
+2025-12-30,12:30,01:58,Dhaka,DAC,Ethiopian Airlines,ET678,2,29R,Landed,ET-ARE,B788,passenger
+2025-12-30,12:26,01:42,Phu Quoc,PQC,Sun PhuQuoc Airways,SPQ1202,1,11L,Landed,VN-A281,A21N,passenger
+2025-12-30,12:23,01:54,Ho Chi Minh City,SGN,Vietnam Airlines,VN210,1,11L,Landed,VN-A862,B789,passenger
+2025-12-30,12:20,04:40,Seoul,ICN,Asiana Airlines,OZ729,2,29R,Landed,HL8381,A359,passenger
+2025-12-30,12:17,02:46,Kuala Lumpur,KUL,Batik Air,OD571,2,11L,Landed,9M-LRF,B38M,passenger
+2025-12-30,12:14,01:37,Nha Trang,CXR,VietJet Air,VJ770,1,11L,Landed,VN-A644,A321,passenger
+2025-12-30,12:11,02:50,Manila,MNL,Philippine Airlines,PR593,2,11L,Landed,RP-C9926,A321,passenger
+2025-12-30,12:08,02:59,Taipei,TPE,China Airlines,CI791,2,11L,Landed,B-18108,A21N,passenger
+2025-12-30,12:05,02:57,Kuala Lumpur,KUL,Malaysia Airlines,MH752,2,11L,Landed,9M-MXV,B738,passenger
+2025-12-30,12:03,05:43,Doha,DOH,Qatar Airways,QR976,2,11L,Landed,A7-BHC,B789,passenger
+2025-12-30,11:59,04:38,Fukuoka,FUK,VietJet Air,VJ959,2,11L,Landed,VN-A516,A21N,passenger
+2025-12-30,11:55,03:42,Beijing,PEK,Air China,CA741,2,11L,Landed,B-32A1,A21N,passenger
+2025-12-30,11:48,01:50,Can Tho,VCA,Vietnam Airlines,VN1200,1,11L,Landed,VN-A323,A321,passenger
+2025-12-30,11:44,01:54,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ822,1,11L,Landed,VN-A279,A321,passenger
+2025-12-30,11:41,01:30,Bangkok,DMK,AirAsia,FD640,2,11L,Landed,HS-ABW,A320,passenger
+2025-12-30,11:38,03:35,Shanghai,PVG,Air China,CA703,2,29R,Landed,B-6885,A321,passenger
+2025-12-30,11:34,02:49,Taipei,TPE,EVA Air,BR397,2,11L,Landed,B-16720,B77W,passenger
+2025-12-30,11:32,01:50,Ho Chi Minh City,SGN,VietJet Air,VJ148,1,11L,Landed,VN-A672,A320,passenger
+2025-12-30,11:28,01:53,Ho Chi Minh City,SGN,VietJet Air,VJ132,1,11L,Landed,VN-A645,A321,passenger
+2025-12-30,11:25,01:46,Ho Chi Minh City,SGN,Vietnam Airlines,VN244,1,11L,Landed,VN-A863,B789,passenger
+2025-12-30,11:19,01:43,Phu Quoc,PQC,VietJet Air,VJ442,1,11L,Landed,VN-A546,A21N,passenger
+2025-12-30,11:16,02:55,Singapore,SIN,Singapore Airlines,SQ192,2,11L,Landed,9V-SHF,A359,passenger
+2025-12-30,11:13,00:44,Dong Hoi,VDH,Vietnam Airlines,VN1590,1,11L,Landed,VN-A505,A21N,passenger
+2025-12-30,11:10,01:13,Pleiku,PXU,Vietnam Airlines,VN1614,1,11L,Landed,VN-A329,A321,passenger
+2025-12-30,11:07,,Buon Ma Thuot,BMV,Vietnam Airlines,VN1602,1,11L,Landed,VN-A357,A321,passenger
+2025-12-30,11:05,04:48,Seoul,ICN,Korean Air,KE441,2,11L,Landed,HL8531,A21N,passenger
+2025-12-30,11:01,01:28,Da Lat,DLI,Vietnam Airlines,VN1572,1,11L,Landed,VN-A514,A20N,passenger
+2025-12-30,10:55,04:33,Busan,PUS,VietJet Air,VJ981,2,11L,Landed,VN-A640,A321,passenger
+2025-12-30,10:50,01:49,Ho Chi Minh City,SGN,VietJet Air,VJ184,1,11L,Landed,VN-A814,A333,passenger
+2025-12-30,10:46,01:05,Chu Lai,VCL,Vietnam Airlines,VN1640,1,N/A,Landed,VN-A503,A21N,passenger
+2025-12-30,10:40,03:00,Taipei,TPE,STARLUX,JX715,2,11L,Landed,B-58212,A21N,passenger
+2025-12-30,10:37,01:15,Qui Nhon,UIH,VietJet Air,VJ430,1,11L,Landed,VN-A632,A321,passenger
+2025-12-30,10:34,01:46,Guangzhou,CAN,China Southern Airlines,CZ3049,2,11L,Landed,B-301W,A20N,passenger
+2025-12-30,10:30,00:59,Da Nang,DAD,Bamboo Airways,QH104,1,11L,Landed,VN-A597,A321,passenger
+2025-12-30,10:17,02:54,Singapore,SIN,Scoot,TR326,2,11L,Landed,9V-OFA,B788,passenger
+2025-12-30,10:13,01:49,Ho Chi Minh City,SGN,Vietnam Airlines,VN208,1,29R,Landed,VN-A332,A321,passenger
+2025-12-30,10:09,02:31,Kaohsiung,KHH,Vietnam Airlines,VN587,2,11L,Landed,VN-A397,A321,passenger
+2025-12-30,10:07,00:58,Hue,HUI,Vietnam Airlines,VN1540,1,11L,Landed,VN-A616,A21N,passenger
+2025-12-30,10:04,01:32,Da Lat,DLI,VietJet Air,VJ402,1,11L,Landed,VN-A671,A320,passenger
+2025-12-30,10:01,01:25,Buon Ma Thuot,BMV,VietJet Air,VJ492,1,29R,Landed,VN-A635,A321,passenger
+2025-12-30,09:57,02:57,Taipei,TPE,Vietnam Airlines,VN579,2,11L,Landed,VN-A331,A321,passenger
+2025-12-30,09:54,01:38,Hong Kong,HKG,Cathay Pacific,CX741,2,29R,Landed,B-HNE,B773,passenger
+2025-12-30,09:47,00:57,Da Nang,DAD,Vietravel Airlines,VU638,1,11L,Landed,VN-A129,A321,passenger
+2025-12-30,09:42,01:48,Ho Chi Minh City,SGN,Vietnam Airlines,VN226,1,11L,Landed,VN-A896,A359,passenger
+2025-12-30,09:40,04:44,Seoul,ICN,VietJet Air,VJ963,2,11L,Landed,VN-A545,A21N,passenger
+2025-12-30,09:35,00:58,Da Nang,DAD,VietJet Air,VJ504,1,11L,Landed,VN-A522,A321,passenger
+2025-12-30,09:31,01:53,Ho Chi Minh City,SGN,Bamboo Airways,QH204,1,11L,Landed,VN-A596,A20N,passenger
+2025-12-30,09:28,00:36,Vinh,VII,Vietnam Airlines,VN1716,1,11L,Landed,VN-A336,A321,passenger
+2025-12-30,09:26,01:12,Pleiku,PXU,VietJet Air,VJ422,1,11L,Landed,VN-A641,A321,passenger
+2025-12-30,09:22,01:02,Da Nang,DAD,Vietnam Airlines,VN158,1,11L,Landed,VN-A604,A321,passenger
+2025-12-30,09:19,01:22,Bangkok,BKK,Thai Airways,TG560,2,11L,Landed,HS-TXQ,A320,passenger
+2025-12-30,09:16,01:50,Ho Chi Minh City,SGN,Avion Express,VU774,1,11L,Landed,9H-MLW,A320,passenger
+2025-12-30,09:10,01:50,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ808,1,11L,Landed,VN-A284,A21N,passenger
+2025-12-30,09:08,03:11,Shanghai,PVG,Air China Cargo,CA3115,0,11L,Landed,B-2475,B744,cargo
+2025-12-30,08:59,01:47,Ho Chi Minh City,SGN,Vietnam Airlines,VN240,1,11L,Landed,VN-A395,A321,passenger
+2025-12-30,08:49,01:42,Hong Kong,HKG,HK express,UO540,2,11L,Landed,B-KKI,A21N,passenger
+2025-12-30,08:42,01:24,Bangkok,DMK,AirAsia,FD642,2,11L,Landed,HS-CBM,A320,passenger
+2025-12-30,08:17,01:41,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ806,1,11L,Landed,VN-A280,A321,passenger
+2025-12-30,08:12,01:34,Shenzhen,SZX,Shenzhen Airlines,ZH101,2,11L,Landed,B-8219,A320,passenger
+2025-12-30,08:07,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ126,1,11L,Landed,VN-A668,A320,passenger
+2025-12-30,08:04,02:46,Kuala Lumpur,KUL,AirAsia,AK516,2,11L,Landed,9M-AJJ,A320,passenger
+2025-12-30,08:01,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN206,1,11L,Landed,VN-A893,A359,passenger
+2025-12-30,07:58,01:20,Bangkok,BKK,K-Mile Air,8K525,0,11L,Landed,HS-KMD,B738,cargo
+2025-12-30,07:48,01:06,Da Nang,DAD,VietJet Air,VJ524,1,11L,Landed,VN-A643,A321,passenger
+2025-12-30,07:46,01:45,Ho Chi Minh City,SGN,VietJet Air,VJ124,1,11L,Landed,VN-A817,A333,passenger
+2025-12-30,07:42,01:44,Ho Chi Minh City,SGN,Bamboo Airways,QH202,1,11L,Landed,ER-00005,A320,passenger
+2025-12-30,07:38,00:58,Da Nang,DAD,Vietnam Airlines,VN156,1,11L,Landed,VN-A326,A321,passenger
+2025-12-30,07:34,01:39,Ho Chi Minh City,SGN,Vietravel Airlines,VU750,1,11L,Landed,VN-A289,A321,passenger
+2025-12-30,07:26,03:04,Manila,MNL,Cebu Pacific,5J744,2,11L,Landed,RP-C4146,A21N,passenger
+2025-12-30,07:22,02:46,Manila,MNL,Vietnam Airlines,VN646,2,11L,Landed,VN-A505,A21N,passenger
+2025-12-30,07:19,03:17,Delhi,DEL,Vietnam Airlines,VN980,2,N/A,Landed,VN-A886,A359,passenger
+2025-12-30,07:17,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ122,1,11L,Landed,VN-A525,A21N,passenger
+2025-12-30,06:56,00:58,Da Nang,DAD,VietJet Air,VJ502,1,29R,Landed,VN-A644,A321,passenger
+2025-12-30,06:52,01:43,Ho Chi Minh City,SGN,N/A,VN6002,1,11L,Landed,VN-A363,A321,passenger
+2025-12-30,06:39,07:43,Istanbul,IST,Turkish Airlines,TK252,2,11L,Landed,TC-LLM,B789,passenger
+2025-12-30,06:19,03:42,Mumbai,BOM,VietJet Air,VJ910,2,11L,Landed,VN-A523,A21N,passenger
+2025-12-30,06:16,05:31,Doha,DOH,Qatar Airways,QR982,2,11L,Landed,A7-BHN,B789,passenger
+2025-12-30,06:11,04:10,Jakarta,CGK,Vietnam Airlines,VN634,2,11L,Landed,VN-A329,A321,passenger
+2025-12-30,06:08,08:12,Moscow,SVO,Vietnam Airlines,VN62,2,11L,Landed,VN-A867,B789,passenger
+2025-12-30,06:03,04:25,Seoul,ICN,Air Zeta,KJ285,0,11L,Landed,HL7616,B744,cargo
+2025-12-30,05:32,09:51,Paris,CDG,Vietnam Airlines,VN18,2,11L,Landed,VN-A890,A359,passenger
+2025-12-30,05:28,09:20,Frankfurt,FRA,Vietnam Airlines,VN36,2,11L,Landed,VN-A870,B789,passenger
+2025-12-30,05:19,07:57,Beirut,BEY,Turkish Airlines,TK6312,0,11L,Landed,TC-JCI,A332,cargo
+2025-12-30,05:13,01:31,Guangzhou,CAN,FedEx,FX6001,0,11L,Landed,N126FE,B763,cargo
+2025-12-30,05:10,03:17,Shanghai,PVG,VietJet Air,VJ7239,2,11L,Landed,VN-A630,A321,passenger
+2025-12-30,05:01,12:38,Anchorage,ANC,UPS,5X72,0,11L,Landed,N633UP,B748,cargo
+2025-12-30,04:34,09:08,Munich,MUC,Vietnam Airlines,VN34,2,11L,Landed,VN-A862,B789,passenger
+2025-12-30,04:21,10:06,London,LHR,Vietnam Airlines,VN56,2,11L,Landed,VN-A868,B789,passenger
+2025-12-30,04:20,03:29,Beijing,PKX,VietJet Air,VJ7713,2,11L,Landed,VN-A663,A320,passenger
+2025-12-30,04:15,01:35,Guangzhou,CAN,VietJet Air,VJ7527,2,11L,Landed,VN-A632,A321,passenger
+2025-12-30,03:45,02:33,Xi'an,XIY,VietJet Air,VJ7343,2,11L,Landed,VN-A676,A320,passenger
+2025-12-30,03:25,04:27,Seoul,ICN,Korean Air,KE361,0,11L,Landed,HL7602,B744,cargo
+2025-12-30,03:25,04:44,Seoul,ICN,Air Zeta,KJ391,0,N/A,Landed,HL7507,B763,cargo
+2025-12-30,02:47,04:20,Seoul,ICN,Kalitta Air,K4650,0,11L,Landed,N712CK,B744,cargo
+2025-12-30,02:29,01:44,Chengdu,TFU,VietJet Air,VJ7307,2,11L,Landed,VN-A661,A321,passenger
+2025-12-30,02:23,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN270,1,11L,Landed,VN-A323,A321,passenger
+2025-12-30,02:09,04:43,Seoul,ICN,Air Zeta,KJ375,0,11L,Landed,HL8319,B738,cargo
+2025-12-30,01:45,02:43,Manila,MNL,Philippine Airlines,PR595,2,11L,Landed,RP-C8763,A333,passenger
+2025-12-30,01:33,03:32,Shanghai,PVG,China Eastern Airlines,MU5075,2,11L,Landed,B-1908,B738,passenger
+2025-12-30,01:30,01:05,Da Nang,DAD,VietJet Air,VJ522,1,11L,Landed,VN-A546,A21N,passenger
+2025-12-30,01:26,01:46,Ho Chi Minh City,SGN,Bamboo Airways,QH282,1,11L,Landed,VN-A227,A321,passenger
+2025-12-30,01:23,01:35,Shenzhen,SZX,Shenzhen Airlines,ZH107,2,11L,Landed,B-8219,A320,passenger
+2025-12-30,01:20,07:16,Amman,AMM,Turkish Airlines,TK6232,0,11L,Landed,TC-LJU,B77L,cargo
+2025-12-30,01:17,00:56,Da Nang,DAD,VietJet Air,VJ520,1,11L,Landed,VN-A516,A21N,passenger
+2025-12-30,01:14,03:15,Shanghai,PVG,Juneyao Air,HO1329,2,11L,Landed,B-8957,A321,passenger
+2025-12-30,01:10,01:38,Ho Chi Minh City,SGN,VietJet Air,VJ178,1,11L,Landed,VN-A544,A321,passenger
+2025-12-30,01:04,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN256,1,11L,Landed,VN-A503,A21N,passenger
+2025-12-30,01:01,02:55,Manila,MNL,Cebu Pacific,5J746,2,11L,Landed,RP-C4111,A321,passenger
+2025-12-30,00:42,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN262,1,11L,Landed,VN-A353,A321,passenger
+2025-12-30,00:32,00:55,Da Nang,DAD,Vietnam Airlines,VN7192,1,11L,Landed,VN-A512,A21N,passenger
+2025-12-30,00:28,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN224,1,11L,Landed,VN-A336,A321,passenger
+2025-12-30,00:23,03:33,Delhi,DEL,SF Airlines,O3168,0,11L,Landed,B-226X,B763,cargo
+2025-12-30,00:19,01:46,Ho Chi Minh City,SGN,VietJet Air,VJ174,1,11L,Landed,VN-A650,A320,passenger
+2025-12-30,00:15,01:22,Bangkok,BKK,Vietnam Airlines,VN616,2,11L,Landed,VN-A616,A21N,passenger
+2025-12-30,00:12,01:45,Ho Chi Minh City,SGN,Vietravel Airlines,VU794,1,11L,Landed,VN-A129,A321,passenger
+2025-12-30,00:09,04:27,Ulaanbaatar,UBN,Aero Mongolia,M0535,2,11L,Landed,JU-1188,A319,passenger
+2025-12-30,00:06,01:36,Ho Chi Minh City,SGN,VietJet Air,VJ164,1,11L,Landed,VN-A816,A333,passenger
+2025-12-31,23:59,01:46,Ho Chi Minh City,SGN,Vietravel Airlines,VU794,1,11L,Landed,VN-A129,A321,passenger
+2025-12-31,23:56,01:47,Ho Chi Minh City,SGN,VietJet Air,VJ160,1,11L,Landed,VN-A641,A321,passenger
+2025-12-31,23:52,02:44,Kuala Lumpur,KUL,Vietnam Airlines,VN680,2,N/A,Landed,VN-A501,A21N,passenger
+2025-12-31,23:49,01:32,Nha Trang,CXR,VietJet Air,VJ778,1,11L,Landed,VN-A545,A21N,passenger
+2025-12-31,23:46,01:40,Ho Chi Minh City,SGN,VietJet Air,VJ164,1,11L,Landed,VN-A815,A333,passenger
+2025-12-31,23:41,01:40,Ho Chi Minh City,SGN,VietJet Air,VJ166,1,11L,Landed,VN-A699,A320,passenger
+2025-12-31,23:36,01:38,Ho Chi Minh City,SGN,Vietnam Airlines,VN256,1,11L,Landed,VN-A878,B78X,passenger
+2025-12-31,23:31,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ190,1,11L,Landed,VN-A640,A321,passenger
+2025-12-31,23:28,04:59,Seoul,ICN,T'way Air,TW61,2,11L,Landed,HL8565,B738,passenger
+2025-12-31,23:24,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN7250,1,11L,Landed,VN-A512,A21N,passenger
+2025-12-31,23:21,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN262,1,11L,Landed,VN-A879,B78X,passenger
+2025-12-31,23:18,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN260,1,11L,Landed,VN-A890,A359,passenger
+2025-12-31,23:16,01:01,Hue,HUI,Vietnam Airlines,VN7540,1,11L,Landed,VN-A514,A20N,passenger
+2025-12-31,23:12,01:52,Can Tho,VCA,Vietnam Airlines,VN1206,1,11L,Landed,VN-A507,A21N,passenger
+2025-12-31,23:10,01:48,Ho Chi Minh City,SGN,Bamboo Airways,QH286,1,11L,Landed,VN-A585,A321,passenger
+2025-12-31,23:06,13:00,Anchorage,ANC,UPS,5X72,0,11L,Landed,N617UP,B748,cargo
+2025-12-31,23:04,01:46,Guangzhou,CAN,China Southern Airlines,CZ371,2,11L,Landed,B-1845,A321,passenger
+2025-12-31,23:00,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ158,1,11L,Landed,VN-A644,A321,passenger
+2025-12-31,22:54,06:02,Tokyo,NRT,All Nippon Airways,NH897,2,11L,Landed,JA876A,B789,passenger
+2025-12-31,22:50,01:02,Da Nang,DAD,VietJet Air,VJ518,1,11L,Landed,VN-A642,A321,passenger
+2025-12-31,22:48,01:53,Can Tho,VCA,VietJet Air,VJ464,1,11L,Landed,VN-A632,A321,passenger
+2025-12-31,22:45,01:40,Macau,MFM,Air Macau,NX982,2,N/A,Landed,B-MBP,A20N,passenger
+2025-12-31,22:42,06:16,Tokyo,NRT,Japan Airlines,JL751,2,11L,Landed,JA617J,B763,passenger
+2025-12-31,22:38,04:42,Seoul,ICN,Asiana Airlines,OZ733,2,11L,Landed,HL7771,A359,passenger
+2025-12-31,22:35,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ180,1,11L,Landed,VN-A817,A333,passenger
+2025-12-31,22:32,01:01,Da Nang,DAD,Vietnam Airlines,VN7160,1,11L,Landed,VN-A604,A321,passenger
+2025-12-31,22:29,01:00,Da Nang,DAD,N/A,VN6070,1,11L,Landed,VN-A363,A321,passenger
+2025-12-31,22:24,02:45,Kuala Lumpur,KUL,MJets Air,WW220,0,11L,Landed,9M-KXD,B738,cargo
+2025-12-31,22:20,00:54,Hue,HUI,VietJet Air,VJ568,1,11L,Landed,VN-A534,A21N,passenger
+2025-12-31,22:16,01:45,Ho Chi Minh City,SGN,VietJet Air,VJ196,1,11L,Landed,VN-A820,A333,passenger
+2025-12-31,22:14,01:27,Siem Reap,SAI,VietJet Air,VJ914,2,N/A,Landed,VN-A634,A321,passenger
+2025-12-31,22:10,04:42,Seoul,ICN,Korean Air,KE447,2,N/A,Landed,HL8390,B789,passenger
+2025-12-31,22:06,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN220,1,11L,Landed,VN-A874,B78X,passenger
+2025-12-31,22:03,01:47,Ho Chi Minh City,SGN,BBN Airlines Indonesia,QH268,1,11L,Landed,PK-BBK,B739,passenger
+2025-12-31,22:00,01:55,Chengdu,TFU,Sichuan Airlines,3U3905,2,N/A,Landed,B-6388,A320,passenger
+2025-12-31,21:58,02:25,Kolkata,CCU,IndiGo,6E8961,0,11L,Landed,VT-IKW,A321,cargo
+2025-12-31,21:55,09:50,Sydney,SYD,China Southern Airlines,CZ416,0,11L,Landed,B-20EN,B77L,cargo
+2025-12-31,21:52,03:19,Taipei,TPE,VietJet Air,VJ943,2,11L,Landed,VN-A633,A321,passenger
+2025-12-31,21:49,02:01,Shenzhen,SZX,China Southern Airlines,CZ8083,2,11L,Landed,B-6975,A320,passenger
+2025-12-31,21:46,01:39,Phnom Penh,KTI,Vietnam Airlines,VN922,2,11L,Landed,VN-A332,A321,passenger
+2025-12-31,21:43,06:47,Tokyo,NRT,VietJet Air,VJ935,2,11L,Landed,VN-A538,A21N,passenger
+2025-12-31,21:40,02:02,Ho Chi Minh City,SGN,Bamboo Airways,QH262,1,29R,Landed,ER-00005,A320,passenger
+2025-12-31,21:37,02:06,Phu Quoc,PQC,Sun PhuQuoc Airways,SPQ1230,1,11L,Landed,VN-A284,A21N,passenger
+2025-12-31,21:35,02:06,Hong Kong,HKG,Cathay Pacific,CX3147,0,11L,Landed,B-LIC,B744,cargo
+2025-12-31,21:33,01:42,Bangkok,BKK,Vietnam Airlines,VN618,2,11L,Landed,VN-A325,A321,passenger
+2025-12-31,21:28,05:02,Seoul,ICN,Vietnam Airlines,VN415,2,11L,Landed,VN-A869,B789,passenger
+2025-12-31,21:26,01:58,Ho Chi Minh City,SGN,Vietnam Airlines,VN258,1,11L,Landed,VN-A866,B789,passenger
+2025-12-31,21:23,01:44,Bangkok,BKK,FedEx,FX6002,0,11L,Landed,N104FE,B763,cargo
+2025-12-31,21:20,04:49,Denpasar,DPS,VietJet Air,VJ998,2,11L,Landed,VN-A522,A321,passenger
+2025-12-31,21:17,01:49,Da Lat,DLI,VietJet Air,VJ410,1,11L,Landed,VN-A685,A321,passenger
+2025-12-31,21:15,09:50,Sydney,SYD,Vietnam Airlines,VN786,2,11L,Landed,VN-A896,A359,passenger
+2025-12-31,21:11,01:53,Nha Trang,CXR,Vietnam Airlines,VN1562,1,11L,Landed,VN-A324,A321,passenger
+2025-12-31,21:09,03:48,Delhi,DEL,SF Airlines,O3168,0,11L,Landed,B-222C,B763,cargo
+2025-12-31,21:06,00:58,Luang Prabang,LPQ,Vietnam Airlines,VN930,2,11L,Landed,VN-A338,A321,passenger
+2025-12-31,21:03,01:43,Bangkok,BKK,VietJet Air,VJ904,2,11L,Landed,VN-A630,A321,passenger
+2025-12-31,21:01,01:56,Ho Chi Minh City,SGN,Vietnam Airlines,VN252,1,11L,Landed,VN-A871,B789,passenger
+2025-12-31,20:58,06:04,Tokyo,HND,Vietnam Airlines,VN385,2,N/A,Landed,VN-A861,B789,passenger
+2025-12-31,20:54,01:58,Phu Quoc,PQC,VietJet Air,VJ1440,1,11L,Landed,VN-A677,A321,passenger
+2025-12-31,20:51,01:17,Da Nang,DAD,Vietnam Airlines,VN188,1,11L,Landed,VN-A513,A20N,passenger
+2025-12-31,20:49,01:01,Vientiane,VTE,Vietnam Airlines,VN920,2,11L,Landed,VN-A399,A321,passenger
+2025-12-31,20:47,01:49,Ho Chi Minh City,SGN,VietJet Air,VJ154,1,11L,Landed,VN-A658,A320,passenger
+2025-12-31,20:44,01:38,Bangkok,DMK,AirAsia,FD644,2,11L,Landed,HS-EAB,A21N,passenger
+2025-12-31,20:42,01:14,Da Nang,DAD,Vietravel Airlines,VU658,1,11L,Landed,VN-A136,A320,passenger
+2025-12-31,20:37,01:45,Yangon,RGN,Myanmar Airways International,8M450,2,11L,Landed,XY-ALO,E190,passenger
+2025-12-31,20:35,01:11,Da Nang,DAD,Vietnam Airlines,VN180,1,11L,Landed,VN-A357,A321,passenger
+2025-12-31,20:32,00:44,Vinh,VII,Vietnam Airlines,VN1718,1,11L,Landed,VN-A326,A321,passenger
+2025-12-31,20:29,01:49,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ868,1,11L,Landed,VN-A280,A321,passenger
+2025-12-31,20:26,03:46,Jakarta,CGK,China Airlines,CI5870,0,11L,Landed,B-18722,B744,cargo
+2025-12-31,20:22,01:04,Da Nang,DAD,Vietnam Airlines,VN7196,1,11L,Landed,VN-A601,A321,passenger
+2025-12-31,20:20,00:59,Hue,HUI,Vietnam Airlines,VN1544,1,11L,Landed,VN-A353,A321,passenger
+2025-12-31,20:18,01:20,Siem Reap,SAI,Vietnam Airlines,VN836,2,11L,Landed,VN-A503,A21N,passenger
+2025-12-31,20:14,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN218,1,11L,Landed,VN-A877,B78X,passenger
+2025-12-31,20:11,02:41,Taichung,RMQ,VietJet Air,VJ949,2,11L,Landed,VN-A546,A21N,passenger
+2025-12-31,20:08,01:00,Da Nang,DAD,VietJet Air,VJ516,1,11L,Landed,VN-A663,A320,passenger
+2025-12-31,20:04,01:43,Ho Chi Minh City,SGN,Vietravel Airlines,VU780,1,11L,Landed,VN-A289,A321,passenger
+2025-12-31,20:00,01:03,Da Nang,DAD,Bamboo Airways,QH148,1,11L,Landed,VN-A227,A321,passenger
+2025-12-31,19:56,01:15,Qui Nhon,UIH,VietJet Air,VJ432,1,11L,Landed,VN-A689,A320,passenger
+2025-12-31,19:49,01:41,Phu Quoc,PQC,VietJet Air,VJ1444,1,11L,Landed,VN-A542,A321,passenger
+2025-12-31,19:45,01:14,Pleiku,PXU,VietJet Air,VJ424,1,11L,Landed,VN-A635,A321,passenger
+2025-12-31,19:36,05:43,Osaka,KIX,VietJet Air,VJ931,2,29R,Landed,VN-A525,A21N,passenger
+2025-12-31,19:25,01:38,Chongqing,CKG,West Air,PN6423,2,11L,Landed,B-8846,A320,passenger
+2025-12-31,19:22,01:46,Ho Chi Minh City,SGN,Vietnam Airlines,VN254,1,11L,Landed,VN-A872,B78X,passenger
+2025-12-31,19:19,01:50,Chengdu,TFU,Chengdu Airlines,EU2863,2,N/A,Landed,B-32M2,A20N,passenger
+2025-12-31,19:14,06:06,Bahrain,BAH,DHL Air,QY576,0,11L,Landed,D-AJFK,A333,cargo
+2025-12-31,19:11,01:25,Bangkok,BKK,Thai Airways,TG564,2,11L,Landed,HS-TXM,A320,passenger
+2025-12-31,19:08,01:43,Ho Chi Minh City,SGN,VietJet Air,VJ152,1,11L,Landed,VN-A816,A333,passenger
+2025-12-31,19:05,01:51,Hong Kong,HKG,Hong Kong Air Cargo,RH317,0,11L,Landed,B-LNX,A332,cargo
+2025-12-31,19:02,01:58,Changsha,CSX,China Southern Airlines,CZ8359,2,11L,Landed,B-32FU,A20N,passenger
+2025-12-31,18:57,01:05,Da Nang,DAD,Vietnam Airlines,VN174,1,11L,Landed,VN-A331,A321,passenger
+2025-12-31,18:54,02:01,Hong Kong,HKG,Hong Kong Airlines,HX528,2,11L,Landed,B-LPN,A320,passenger
+2025-12-31,18:51,01:45,Shenzhen,SZX,Shenzhen Airlines,ZH105,2,11L,Landed,B-5401,B738,passenger
+2025-12-31,18:48,01:49,Guangzhou,CAN,China Southern Airlines,CZ8177,2,11L,Landed,B-9952,A320,passenger
+2025-12-31,18:44,01:32,Buon Ma Thuot,BMV,VietJet Air,VJ1492,1,11L,Landed,VN-A642,A321,passenger
+2025-12-31,18:42,04:05,Jakarta,CGK,VietJet Air,VJ928,2,11L,Landed,VN-A666,A320,passenger
+2025-12-31,18:39,01:59,Phu Quoc,PQC,Sun PhuQuoc Airways,SPQ1216,1,29R,Landed,VN-A281,A21N,passenger
+2025-12-31,18:36,01:48,Phnom Penh,KTI,Air Cambodia,K6850,2,11L,Landed,XU-350,A321,passenger
+2025-12-31,18:32,01:57,Hong Kong,HKG,Cathay Pacific,CX743,2,11L,Landed,B-HNS,B773,passenger
+2025-12-31,18:30,01:26,Da Nang,DAD,Vietnam Airlines,VN172,1,11L,Landed,VN-A334,A321,passenger
+2025-12-31,18:30,03:49,Beijing,PEK,Vietnam Airlines,VN513,2,11L,Landed,VN-A397,A321,passenger
+2025-12-31,18:24,02:01,Ho Chi Minh City,SGN,Vietnam Airlines,VN216,1,11L,Landed,VN-A865,B789,passenger
+2025-12-31,18:21,03:27,Shanghai,PVG,Vietnam Airlines,VN533,2,11L,Landed,VN-A616,A21N,passenger
+2025-12-31,18:17,01:46,Nha Trang,CXR,Vietnam Airlines,VN1558,1,11L,Landed,VN-A605,A321,passenger
+2025-12-31,18:14,02:05,Ho Chi Minh City,SGN,VietJet Air,VJ194,1,11L,Landed,VN-A655,A320,passenger
+2025-12-31,18:11,03:05,Kaohsiung,KHH,VietJet Air,VJ947,2,11L,Landed,VN-A534,A21N,passenger
+2025-12-31,18:08,01:18,Da Nang,DAD,VietJet Air,VJ512,1,11L,Landed,VN-A545,A21N,passenger
+2025-12-31,18:04,01:43,Bangkok,BKK,VietJet Air,VJ902,2,11L,Landed,VN-A648,A321,passenger
+2025-12-31,18:01,02:04,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ854,1,N/A,Landed,VN-A279,A321,passenger
+2025-12-31,17:59,03:53,Shanghai,PVG,China Eastern Airlines,MU6013,2,11L,Landed,B-32KT,A21N,passenger
+2025-12-31,17:56,01:42,Bangkok,BKK,Vietnam Airlines,VN614,2,11L,Landed,VN-A602,A321,passenger
+2025-12-31,17:56,02:00,Phu Quoc,PQC,N/A,VN6400,1,11L,Landed,VN-A363,A321,passenger
+2025-12-31,17:52,03:22,Taipei,TPE,STARLUX,JX717,2,11L,Landed,B-58204,A21N,passenger
+2025-12-31,17:46,01:11,Luang Prabang,LPQ,Lao Airlines,QV313,2,11L,Landed,RDPL-34228,AT76,passenger
+2025-12-31,17:45,01:54,Ho Chi Minh City,SGN,Vietnam Airlines,VN232,1,11L,Landed,VN-A898,A359,passenger
+2025-12-31,17:42,01:53,Phu Quoc,PQC,VietJet Air,VJ446,1,11L,Landed,VN-A671,A320,passenger
+2025-12-31,17:40,02:04,Can Tho,VCA,Vietnam Airlines,VN1202,1,11L,Landed,VN-A507,A21N,passenger
+2025-12-31,17:37,01:39,Tuy Hoa,TBB,Vietnam Airlines,VN1650,1,11L,Landed,VN-A514,A20N,passenger
+2025-12-31,17:34,02:00,Guangzhou,CAN,Vietnam Airlines,VN507,2,11L,Landed,VN-A356,A321,passenger
+2025-12-31,17:30,04:51,Denpasar,DPS,VietJet Air,VJ900,2,11L,Landed,VN-A544,A321,passenger
+2025-12-31,17:28,01:52,Ho Chi Minh City,SGN,Vietnam Airlines,VN7208,1,11L,Landed,VN-A878,B78X,passenger
+2025-12-31,17:25,01:52,Ho Chi Minh City,SGN,Vietnam Airlines,VN250,1,11L,Landed,VN-A879,B78X,passenger
+2025-12-31,17:22,00:43,Dien Bien Phu,DIN,Vietnam Airlines,VN1805,1,11L,Landed,VN-A326,A321,passenger
+2025-12-31,17:20,03:03,Singapore,SIN,Singapore Airlines,SQ194,2,11L,Landed,9V-SME,A359,passenger
+2025-12-31,17:17,01:10,Da Nang,DAD,VietJet Air,VJ514,1,11L,Landed,VN-A632,A321,passenger
+2025-12-31,17:14,01:50,Ho Chi Minh City,SGN,VietJet Air,VJ134,1,11L,Landed,VN-A687,A321,passenger
+2025-12-31,17:13,04:41,Busan,PUS,VietJet Air,VJ957,2,11L,Landed,VN-A656,A320,passenger
+2025-12-31,17:09,01:31,Da Lat,DLI,Bamboo Airways,QH1424,1,11L,Landed,VN-A596,A20N,passenger
+2025-12-31,17:07,06:35,Tokyo,NRT,VietJet Air,VJ933,2,11L,Landed,VN-A815,A333,passenger
+2025-12-31,17:03,02:59,Taipei,TPE,EVA Air,BR385,2,11L,Landed,B-16216,A321,passenger
+2025-12-31,17:00,02:49,Singapore,SIN,VietJet Air,VJ916,2,11L,Landed,VN-A640,A321,passenger
+2025-12-31,16:56,00:42,Bethel,BET,N/A,N/A,2,29R,Landed,VN-B469,C208,passenger
+2025-12-31,16:51,03:26,Shanghai,PVG,Air China,CA755,2,29R,Landed,B-6825,A321,passenger
+2025-12-31,16:47,00:41,Luang Prabang,LPQ,AirAsia,FD1038,2,11L,Landed,HS-CBM,A320,passenger
+2025-12-31,16:43,02:40,Singapore,SIN,China Cargo Airlines,CK288,0,11L,Landed,B-226V,B77L,cargo
+2025-12-31,16:41,03:04,Taipei,TPE,China Airlines,CI793,2,11L,Landed,B-18660,B738,passenger
+2025-12-31,16:32,02:13,Kolkata,CCU,IndiGo,6E1631,2,11L,Landed,VT-IQS,A20N,passenger
+2025-12-31,16:28,01:33,Da Lat,DLI,Vietnam Airlines,VN1574,1,11L,Landed,VN-A513,A20N,passenger
+2025-12-31,16:25,01:38,Ho Chi Minh City,SGN,Vietnam Airlines,VN214,1,29R,Landed,VN-A870,B789,passenger
+2025-12-31,16:09,01:40,Shenzhen,SZX,Shenzhen Airlines,ZH103,2,11L,Landed,B-6835,A320,passenger
+2025-12-31,16:05,00:46,Vientiane,VTE,Lao Airlines,QV311,2,11L,Landed,RDPL-34199,A320,passenger
+2025-12-31,16:02,02:02,Con Dao,VCS,VietJet Air,VJ108,1,11L,Landed,B-656E,AJ27,passenger
+2025-12-31,16:00,01:46,Hong Kong,HKG,Vietnam Airlines,VN593,2,11L,Landed,VN-A357,A321,passenger
+2025-12-31,15:56,01:43,Ho Chi Minh City,SGN,Vietravel Airlines,VU770,1,11L,Landed,VN-A136,A320,passenger
+2025-12-31,15:53,01:35,Da Lat,DLI,VietJet Air,VJ408,1,11L,Landed,VN-A685,A321,passenger
+2025-12-31,15:50,01:04,Da Nang,DAD,Vietnam Airlines,VN170,1,11L,Landed,VN-A614,A321,passenger
+2025-12-31,15:47,01:50,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,VN-A663,A320,passenger
+2025-12-31,15:43,01:00,Da Nang,DAD,Vietnam Airlines,VN168,1,11L,Landed,VN-A332,A321,passenger
+2025-12-31,15:40,01:45,Ho Chi Minh City,SGN,Avion Express,VU778,1,11L,Landed,9H-MLW,A320,passenger
+2025-12-31,15:36,01:28,Da Lat,DLI,VietJet Air,VJ404,1,11L,Landed,VN-A689,A320,passenger
+2025-12-31,15:32,02:47,Singapore,SIN,Vietnam Airlines,VN660,2,11L,Landed,VN-A353,A321,passenger
+2025-12-31,15:29,01:44,Ho Chi Minh City,SGN,VietJet Air,VJ198,1,11L,Landed,VN-A675,A320,passenger
+2025-12-31,15:25,01:43,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ838,1,11L,Landed,VN-A284,A21N,passenger
+2025-12-31,15:22,01:38,Da Lat,DLI,Bamboo Airways,QH1422,1,11L,Landed,VN-A227,A321,passenger
+2025-12-31,15:20,01:52,Ho Chi Minh City,SGN,Vietnam Airlines,VN248,1,11L,Landed,VN-A325,A321,passenger
+2025-12-31,15:16,02:54,Fuzhou,FOC,Xiamen Air,MF8697,2,29R,Landed,B-5633,B738,passenger
+2025-12-31,15:13,08:09,Istanbul,IST,Turkish Airlines,TK164,2,N/A,Landed,TC-LGL,A359,passenger
+2025-12-31,15:10,01:45,Ho Chi Minh City,SGN,BBN Airlines Indonesia,QH242,1,11L,Landed,PK-BBK,B739,passenger
+2025-12-31,15:07,06:06,Khabarovsk,KHV,VietJet Air,VJ7707,2,11L,Landed,VN-A539,A21N,passenger
+2025-12-31,15:04,01:18,Qui Nhon,UIH,Vietnam Airlines,VN1622,1,11L,Landed,VN-A503,A21N,passenger
+2025-12-31,15:01,01:34,Nha Trang,CXR,VietJet Air,VJ774,1,11L,Landed,VN-A658,A320,passenger
+2025-12-31,14:58,02:42,Xiamen,XMN,Xiamen Air,MF869,2,11L,Landed,B-5383,B738,passenger
+2025-12-31,14:51,01:04,Da Nang,DAD,VietJet Air,VJ508,1,11L,Landed,VN-A635,A321,passenger
+2025-12-31,14:48,02:58,Taipei,TPE,VietJet Air,VJ941,2,11L,Landed,VN-A630,A321,passenger
+2025-12-31,14:45,00:57,Kunming,KMG,China Eastern Airlines,MU9605,2,11L,Landed,B-6145,B738,passenger
+2025-12-31,14:42,01:33,Nha Trang,CXR,Vietnam Airlines,VN1552,1,11L,Landed,VN-A331,A321,passenger
+2025-12-31,14:42,01:37,Shenzhen,SZX,China Southern Airlines,CZ8469,2,11L,Landed,B-6657,A321,passenger
+2025-12-31,14:36,01:01,Chiang Mai,CNX,AirAsia,FD870,2,11L,Landed,HS-ABY,A320,passenger
+2025-12-31,14:33,02:55,Kuala Lumpur,KUL,AirAsia,AK512,2,11L,Landed,9M-AJH,A320,passenger
+2025-12-31,14:31,01:46,Guangzhou,CAN,China Southern Airlines,CZ8315,2,11L,Landed,B-6816,A320,passenger
+2025-12-31,14:28,02:49,Kuala Lumpur,KUL,VietJet Air,VJ906,2,11L,Landed,VN-A634,A321,passenger
+2025-12-31,14:25,01:45,Phu Quoc,PQC,Sun PhuQuoc Airways,SPQ1208,1,11L,Landed,VN-A280,A321,passenger
+2025-12-31,14:22,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN212,1,N/A,Landed,VN-A871,B789,passenger
+2025-12-31,14:19,04:56,Seoul,ICN,VietJet Air,VJ961,2,11L,Landed,VN-A677,A321,passenger
+2025-12-31,14:15,01:37,Ho Chi Minh City,SGN,VietJet Air,VJ144,1,11L,Landed,VN-A817,A333,passenger
+2025-12-31,14:12,01:58,Con Dao,VCS,VietJet Air,VJ106,1,11L,Landed,B-652G,AJ27,passenger
+2025-12-31,14:09,01:00,Da Nang,DAD,Vietnam Airlines,VN166,1,11L,Landed,VN-A326,A321,passenger
+2025-12-31,14:06,06:24,Tokyo,NRT,Vietnam Airlines,VN311,2,11L,Landed,VN-A877,B78X,passenger
+2025-12-31,14:03,03:48,Shanghai,PVG,China Eastern Airlines,MU6011,2,11L,Landed,B-6886,A321,passenger
+2025-12-31,14:00,01:40,Phu Quoc,PQC,VietJet Air,VJ450,1,11L,Landed,VN-A810,A333,passenger
+2025-12-31,13:57,01:18,Bangkok,BKK,Vietnam Airlines,VN610,2,11L,Landed,VN-A622,A21N,passenger
+2025-12-31,13:50,04:42,Seoul,ICN,Vietnam Airlines,VN417,2,11L,Landed,VN-A874,B78X,passenger
+2025-12-31,13:44,01:36,Nha Trang,CXR,Vietnam Airlines,VN7568,1,11L,Landed,VN-A501,A21N,passenger
+2025-12-31,13:38,05:36,Nagoya,NGO,Vietnam Airlines,VN349,2,11L,Landed,VN-A334,A321,passenger
+2025-12-31,13:35,01:44,Ho Chi Minh City,SGN,VietJet Air,VJ132,1,N/A,Landed,VN-A650,A320,passenger
+2025-12-31,13:32,01:49,Can Tho,VCA,Vietnam Airlines,VN1200,1,11L,Landed,VN-A324,A321,passenger
+2025-12-31,13:28,05:14,Osaka,KIX,Vietnam Airlines,VN335,2,11L,Landed,VN-A886,A359,passenger
+2025-12-31,13:23,06:01,Nagoya,NGO,VietJet Air,VJ921,2,11L,Landed,VN-A546,A21N,passenger
+2025-12-31,13:17,05:36,Osaka,KIX,VietJet Air,VJ939,2,11L,Landed,VN-A545,A21N,passenger
+2025-12-31,13:12,01:08,Da Nang,DAD,VietJet Air,VJ528,1,11L,Landed,VN-A633,A321,passenger
+2025-12-31,13:09,04:37,Busan,PUS,Vietnam Airlines,VN429,2,11L,Landed,VN-A872,B78X,passenger
+2025-12-31,13:07,03:34,Delhi,DEL,IndiGo,6E1633,2,11L,Landed,VT-ISS,A20N,passenger
+2025-12-31,13:03,00:58,Hue,HUI,VietJet Air,VJ566,1,11L,Landed,VN-A632,A321,passenger
+2025-12-31,13:00,01:55,Dhaka,DAC,Ethiopian Airlines,ET678,2,29R,Landed,ET-AOS,B788,passenger
+2025-12-31,12:57,01:37,Ho Chi Minh City,SGN,Vietnam Airlines,VN246,1,11L,Landed,VN-A897,A359,passenger
+2025-12-31,12:47,01:40,Phu Quoc,PQC,Sun PhuQuoc Airways,SPQ1202,1,N/A,Landed,VN-A281,A21N,passenger
+2025-12-31,12:45,05:27,Dubai,DXB,Emirates,EK394,2,11L,Landed,A6-EWC,B77L,passenger
+2025-12-31,12:45,01:57,Ho Chi Minh City,SGN,Bamboo Airways,QH224,1,11L,Landed,JU-1410,A320,passenger
+2025-12-31,12:38,05:07,Seoul,ICN,Asiana Airlines,OZ729,2,11L,Landed,HL8381,A359,passenger
+2025-12-31,12:35,02:52,Kuala Lumpur,KUL,Batik Air,OD571,2,N/A,Landed,9M-LRR,B38M,passenger
+2025-12-31,12:32,00:51,Vinh,VII,Vietnam Airlines,VN1716,1,29R,Landed,VN-A514,A20N,passenger
+2025-12-31,12:29,02:01,Guangzhou,CAN,Shenzhen Airlines,ZH121,2,11L,Landed,B-5606,B738,passenger
+2025-12-31,12:25,01:47,Nha Trang,CXR,VietJet Air,VJ770,1,29R,Landed,VN-A642,A321,passenger
+2025-12-31,12:19,05:47,Doha,DOH,Qatar Airways,QR976,2,11L,Landed,A7-BHA,B789,passenger
+2025-12-31,12:16,03:58,Beijing,PEK,Air China,CA741,2,11L,Landed,B-326D,A21N,passenger
+2025-12-31,12:12,01:49,Ho Chi Minh City,SGN,Vietnam Airlines,VN210,1,11R,Landed,VN-A888,A359,passenger
+2025-12-31,12:09,01:45,Phu Quoc,PQC,Vietnam Airlines,VN1236,1,11L,Landed,VN-A338,A321,passenger
+2025-12-31,12:06,02:57,Kuala Lumpur,KUL,Malaysia Airlines,MH752,2,11L,Landed,9M-MXF,B738,passenger
+2025-12-31,12:03,01:16,Pleiku,PXU,Vietnam Airlines,VN1614,1,11L,Landed,VN-A605,A321,passenger
+2025-12-31,12:00,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ128,1,11L,Landed,VN-A814,A333,passenger
+2025-12-31,11:57,01:39,Phu Quoc,PQC,VietJet Air,VJ440,1,11L,Landed,VN-A676,A320,passenger
+2025-12-31,11:53,04:49,Fukuoka,FUK,Vietnam Airlines,VN359,2,11L,Landed,VN-A356,A321,passenger
+2025-12-31,11:48,02:45,Taipei,TPE,EVA Air,BR397,2,11L,Landed,B-16718,B77W,passenger
+2025-12-31,11:42,01:16,Qui Nhon,UIH,Bamboo Airways,QH1214,1,11L,Landed,VN-A596,A20N,passenger
+2025-12-31,11:38,01:26,Bangkok,DMK,AirAsia,FD640,2,11L,Landed,HS-ABM,A320,passenger
+2025-12-31,11:36,03:31,Shanghai,PVG,Air China,CA703,2,29R,Landed,B-6885,A321,passenger
+2025-12-31,11:32,01:02,Da Nang,DAD,N/A,VN6080,1,11L,Landed,VN-A363,A321,passenger
+2025-12-31,11:29,04:43,Busan,PUS,VietJet Air,VJ981,2,11L,Landed,VN-A648,A321,passenger
+2025-12-31,11:25,01:46,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ822,1,11L,Landed,VN-A279,A321,passenger
+2025-12-31,11:22,02:55,Singapore,SIN,Singapore Airlines,SQ192,2,11L,Landed,9V-SHG,A359,passenger
+2025-12-31,11:19,00:51,Dong Hoi,VDH,Vietnam Airlines,VN1590,1,11L,Landed,VN-A602,A321,passenger
+2025-12-31,11:16,01:29,Buon Ma Thuot,BMV,Vietnam Airlines,VN1602,1,11L,Landed,VN-A614,A321,passenger
+2025-12-31,11:13,01:33,Da Lat,DLI,Vietnam Airlines,VN1572,1,11L,Landed,VN-A513,A20N,passenger
+2025-12-31,11:10,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN244,1,11L,Landed,VN-A898,A359,passenger
+2025-12-31,11:07,01:01,Da Nang,DAD,Vietnam Airlines,VN164,1,11L,Landed,VN-A507,A21N,passenger
+2025-12-31,11:04,04:55,Seoul,ICN,Korean Air,KE441,2,N/A,Landed,HL8531,A21N,passenger
+2025-12-31,11:01,02:55,Taipei,TPE,China Airlines,CI791,2,N/A,Landed,B-18115,A21N,passenger
+2025-12-31,10:51,01:31,Nha Trang,CXR,VietJet Air,VJ772,1,11L,Landed,VN-A816,A333,passenger
+2025-12-31,10:48,,Qui Nhon,UIH,VietJet Air,VJ430,1,11L,Landed,VN-A689,A320,passenger
+2025-12-31,10:43,01:42,Phu Quoc,PQC,VietJet Air,VJ442,1,11L,Landed,VN-A535,A321,passenger
+2025-12-31,10:40,01:28,Buon Ma Thuot,BMV,VietJet Air,VJ492,1,11L,Landed,VN-A635,A321,passenger
+2025-12-31,10:37,01:45,Ho Chi Minh City,SGN,VietJet Air,VJ136,1,11L,Landed,VN-A534,A21N,passenger
+2025-12-31,10:34,01:50,Ho Chi Minh City,SGN,VietJet Air,VJ148,1,N/A,Landed,VN-A500,A21N,passenger
+2025-12-31,10:30,01:15,Chu Lai,VCL,Vietnam Airlines,VN1640,1,11L,Landed,VN-A332,A321,passenger
+2025-12-31,10:27,04:32,Seoul,ICN,Kalitta Air,K4602,0,11L,Landed,N708CK,B744,cargo
+2025-12-31,10:24,01:33,Da Lat,DLI,VietJet Air,VJ402,1,11L,Landed,VN-A685,A321,passenger
+2025-12-31,10:22,01:43,Guangzhou,CAN,China Southern Airlines,CZ3049,2,11L,Landed,B-30CD,A20N,passenger
+2025-12-31,10:18,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN208,1,N/A,Landed,VN-A870,B789,passenger
+2025-12-31,10:15,02:43,Singapore,SIN,EVA Air,BR6061,0,11L,Landed,B-16787,B77L,cargo
+2025-12-31,10:12,02:36,Kaohsiung,KHH,Vietnam Airlines,VN587,2,29R,Landed,VN-A503,A21N,passenger
+2025-12-31,10:09,01:02,Da Nang,DAD,Vietnam Airlines,VN7150,1,11L,Landed,VN-A329,A321,passenger
+2025-12-31,10:09,02:53,Taipei,TPE,Vietnam Airlines,VN579,2,11L,Landed,VN-A357,A321,passenger
+2025-12-31,10:02,01:45,Can Tho,VCA,VietJet Air,VJ460,1,11L,Landed,VN-A663,A320,passenger
+2025-12-31,09:56,01:45,Hong Kong,HKG,Cathay Pacific,CX741,2,11L,Landed,B-HNQ,B773,passenger
+2025-12-31,09:52,01:47,Ho Chi Minh City,SGN,Vietnam Airlines,VN226,1,11L,Landed,VN-A869,B789,passenger
+2025-12-31,09:50,01:08,Da Nang,DAD,Vietravel Airlines,VU638,1,11L,Landed,VN-A136,A320,passenger
+2025-12-31,09:47,01:10,Da Nang,DAD,VietJet Air,VJ504,1,29R,Landed,VN-A528,A21N,passenger
+2025-12-31,09:44,01:05,Hue,HUI,Vietnam Airlines,VN1540,1,11L,Landed,VN-A326,A321,passenger
+2025-12-31,09:41,01:50,Ho Chi Minh City,SGN,VietJet Air,VJ126,1,11L,Landed,VN-A675,A320,passenger
+2025-12-31,09:35,01:24,Bangkok,BKK,Thai Airways,TG560,2,11L,Landed,HS-TXT,A320,passenger
+2025-12-31,09:32,01:44,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ808,1,11L,Landed,VN-A284,A21N,passenger
+2025-12-31,09:30,04:50,Seoul,ICN,VietJet Air,VJ963,2,11L,Landed,VN-A522,A321,passenger
+2025-12-31,09:25,01:14,Pleiku,PXU,VietJet Air,VJ422,1,N/A,Landed,VN-A632,A321,passenger
+2025-12-31,09:22,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN240,1,11L,Landed,VN-A397,A321,passenger
+2025-12-31,09:21,01:44,Ho Chi Minh City,SGN,Vietravel Airlines,VU774,1,11L,Landed,VN-A129,A321,passenger
+2025-12-31,09:15,00:58,Da Nang,DAD,Vietnam Airlines,VN158,1,11L,Landed,VN-A331,A321,passenger
+2025-12-31,09:10,01:42,Ho Chi Minh City,SGN,BBN Airlines Indonesia,QH204,1,11L,Landed,PK-BBK,B739,passenger
+2025-12-31,09:05,04:53,Seoul,ICN,Air Zeta,KJ389,0,11L,Landed,HL7507,B763,cargo
+2025-12-31,09:01,04:46,Seoul,ICN,Air Zeta,KJ951,0,11L,Landed,HL7423,B744,cargo
+2025-12-31,08:46,01:41,Hong Kong,HKG,HK express,UO540,2,11L,Landed,B-KKB,A21N,passenger
+2025-12-31,08:40,02:53,Singapore,SIN,Scoot,TR300,2,11L,Landed,9V-OFH,B788,passenger
+2025-12-31,08:36,01:44,Shenzhen,SZX,Shenzhen Airlines,ZH101,2,11L,Landed,B-8219,A320,passenger
+2025-12-31,08:33,01:05,Da Nang,DAD,VietJet Air,VJ510,1,11L,Landed,VN-A640,A321,passenger
+2025-12-31,08:29,01:24,Bangkok,DMK,AirAsia,FD642,2,11L,Landed,HS-CBR,A320,passenger
+2025-12-31,08:24,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN238,1,N/A,Landed,VN-A399,A321,passenger
+2025-12-31,08:17,01:39,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,SPQ806,1,11L,Landed,VN-A280,A321,passenger
+2025-12-31,08:14,00:50,Nanning,NNG,GX Airlines,GX8971,2,11L,Landed,B-6670,A320,passenger
+2025-12-31,07:59,01:19,Bangkok,BKK,K-Mile Air,8K525,0,11L,Landed,HS-KMD,B738,cargo
+2025-12-31,07:56,02:44,Kuala Lumpur,KUL,AirAsia,AK9516,2,11L,Landed,9M-AHJ,A320,passenger
+2025-12-31,07:51,01:38,Ho Chi Minh City,SGN,Vietnam Airlines,VN206,1,11L,Landed,VN-A866,B789,passenger
+2025-12-31,07:46,01:05,Da Nang,DAD,Vietnam Airlines,VN156,1,11L,Landed,VN-A622,A21N,passenger
+2025-12-31,07:44,01:45,Ho Chi Minh City,SGN,VietJet Air,VJ124,1,11L,Landed,VN-A817,A333,passenger
+2025-12-31,07:41,02:53,Manila,MNL,Vietnam Airlines,VN646,2,11L,Landed,VN-A324,A321,passenger
+2025-12-31,07:38,01:42,Ho Chi Minh City,SGN,Vietravel Airlines,VU750,1,11L,Landed,VN-A289,A321,passenger
+2025-12-31,07:34,01:41,Ho Chi Minh City,SGN,Bamboo Airways,QH202,1,11L,Landed,ER-00005,A320,passenger
+2025-12-31,07:27,03:04,Manila,MNL,Cebu Pacific,5J744,2,11L,Landed,RP-C4140,A21N,passenger
+2025-12-31,07:24,00:58,Da Nang,DAD,VietJet Air,VJ524,1,11L,Landed,VN-A633,A321,passenger
+2025-12-31,07:12,03:27,Cebu,CEB,Vietnam Airlines,VN642,2,11L,Landed,VN-A605,A321,passenger
+2025-12-31,07:10,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ122,1,11L,Landed,VN-A525,A21N,passenger
+2025-12-31,06:53,05:41,Doha,DOH,Qatar Airways,QR982,2,11L,Landed,A7-BHE,B789,passenger
+2025-12-31,06:50,07:53,Istanbul,IST,Turkish Airlines,TK252,2,11L,Landed,TC-LLM,B789,passenger
+2025-12-31,06:45,01:39,Ho Chi Minh City,SGN,N/A,VN6002,1,11L,Landed,VN-A363,A321,passenger
+2025-12-31,06:42,00:59,Da Nang,DAD,VietJet Air,VJ502,1,11L,Landed,VN-A642,A321,passenger
+2025-12-31,06:23,09:07,Melbourne,MEL,Vietnam Airlines,VN778,2,29R,Landed,VN-A867,B789,passenger
+2025-12-31,06:17,03:47,Bengaluru,BLR,Vietnam Airlines,VN982,2,11L,Landed,VN-A602,A321,passenger
+2025-12-31,06:13,05:49,Doha,DOH,Qatar Airways,QR8950,0,11L,Landed,A7-BFY,B77L,cargo
+2025-12-31,06:01,03:41,Mumbai,BOM,Turkish Airlines,TK6334,0,11L,Landed,TC-LJM,B77L,cargo
+2025-12-31,05:58,01:20,Bangkok,BKK,VietJet Air,VZ8930,2,11L,Landed,HS-VKJ,A321,passenger
+2025-12-31,05:48,03:29,Shanghai,PVG,VietJet Air,VJ7239,2,11L,Landed,VN-A666,A320,passenger
+2025-12-31,05:42,09:54,Paris,CDG,Vietnam Airlines,VN18,2,N/A,Landed,VN-A897,A359,passenger
+2025-12-31,05:31,09:25,Frankfurt,FRA,Vietnam Airlines,VN36,2,11L,Landed,VN-A861,B789,passenger
+2025-12-31,05:26,03:38,Ahmedabad,AMD,VietJet Air,VJ1926,2,11L,Landed,VN-A689,A320,passenger
+2025-12-31,05:18,01:35,Guangzhou,CAN,FedEx,FX6001,0,11L,Landed,N104FE,B763,cargo
+2025-12-31,04:36,03:40,Mumbai,BOM,Vietnam Airlines,VN972,2,11L,Landed,VN-A888,A359,passenger
+2025-12-31,04:25,01:35,Guangzhou,CAN,VietJet Air,VJ7527,2,11L,Landed,VN-A630,A321,passenger
+2025-12-31,04:10,03:29,Beijing,PKX,VietJet Air,VJ7713,2,11L,Landed,VN-A663,A320,passenger
+2025-12-31,03:45,09:19,Milan,MXP,Vietnam Airlines,VN72,2,11L,Landed,VN-A892,A359,passenger
+2025-12-31,02:53,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ182,1,11L,Landed,VN-A535,A321,passenger
+2025-12-31,02:47,01:44,Chengdu,TFU,VietJet Air,VJ7307,2,11L,Landed,VN-A658,A320,passenger
+2025-12-31,02:43,01:38,Ho Chi Minh City,SGN,VietJet Air,VJ196,1,11L,Landed,VN-A815,A333,passenger
+2025-12-31,02:30,04:55,Seoul,ICN,Air Zeta,KJ373,0,11L,Landed,HL8319,B738,cargo
+2025-12-31,02:26,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ178,1,11L,Landed,VN-A685,A321,passenger
+2025-12-31,02:21,01:33,Macau,MFM,Qatar Airways,QR8315,0,11L,Landed,A7-BTB,B77L,cargo
+2025-12-31,02:06,04:34,Seoul,ICN,Korean Air,KE361,0,11L,Landed,HL7601,B744,cargo
+2025-12-31,02:02,03:48,Shanghai,PVG,China Eastern Airlines,MU5075,2,11L,Landed,B-1319,B738,passenger
+2025-12-31,01:43,01:39,Ho Chi Minh City,SGN,Bamboo Airways,QH282,1,11L,Landed,VN-A227,A321,passenger
+2025-12-31,01:36,01:32,Nha Trang,CXR,VietJet Air,VJ7706,1,11L,Landed,VN-A539,A21N,passenger
+2025-12-31,01:29,03:05,Hangzhou,HGH,Air China,CA707,2,11L,Landed,B-6731,A320,passenger
+2025-12-31,01:23,03:23,Shanghai,PVG,Juneyao Air,HO1329,2,11L,Landed,B-8459,A321,passenger
+2025-12-31,01:16,02:33,Wuhan,WUH,China Eastern Airlines,MU2573,2,11L,Landed,B-205W,B738,passenger
+2025-12-31,01:02,02:46,Manila,MNL,Philippine Airlines,PR595,2,11L,Landed,RP-C8764,A333,passenger
+2025-12-31,00:56,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN270,1,11L,Landed,VN-A356,A321,passenger
+2025-12-31,00:51,00:59,Da Nang,DAD,Vietnam Airlines,VN7194,1,11L,Landed,VN-A513,A20N,passenger
+2025-12-31,00:47,01:46,Ho Chi Minh City,SGN,Vietnam Airlines,VN224,1,11L,Landed,VN-A614,A321,passenger
+2025-12-31,00:44,01:41,Shenzhen,SZX,Shenzhen Airlines,ZH107,2,29R,Landed,B-6615,A320,passenger
+2025-12-31,00:40,01:00,Da Nang,DAD,Vietnam Airlines,VN7192,1,11L,Landed,VN-A329,A321,passenger
+2025-12-31,00:38,01:39,Ho Chi Minh City,SGN,VietJet Air,VJ174,1,11L,Landed,VN-A546,A21N,passenger
+2025-12-31,00:30,04:52,Seoul,ICN,Jeju Air,7C2201,2,11L,Landed,HL8592,B38M,passenger
+2025-12-31,00:27,00:59,Da Nang,DAD,VietJet Air,VJ522,1,11L,Landed,VN-A526,A21N,passenger
+2025-12-31,00:24,01:00,Hue,HUI,Vietnam Airlines,VN1548,1,11L,Landed,VN-A395,A321,passenger
+2025-12-31,00:20,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN7206,1,11L,Landed,VN-A334,A321,passenger
+2025-12-31,00:17,02:12,Kolkata,CCU,IndiGo,6E9478,0,11L,Landed,VT-IKW,A321,cargo
+2025-12-31,00:13,01:35,Nha Trang,CXR,Vietnam Airlines,VN1562,1,11L,Landed,VN-A336,A321,passenger
+2025-12-31,00:11,01:01,Da Nang,DAD,Vietnam Airlines,VN7180,1,11L,Landed,VN-A608,A321,passenger
+2025-12-31,00:07,00:59,Da Nang,DAD,N/A,VN6070,1,11L,Landed,VN-A363,A321,passenger
+2025-12-31,00:04,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN260,1,11L,Landed,VN-A865,B789,passenger
+2025-12-31,00:02,01:01,Da Nang,DAD,VietJet Air,VJ520,1,11L,Landed,VN-A677,A321,passenger
