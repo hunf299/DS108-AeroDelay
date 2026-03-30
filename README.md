@@ -98,3 +98,5 @@ Triển khai các mô hình học máy để dự báo thời gian trễ:
 | `scikit-learn`, `joblib` | Huấn luyện, đánh giá mô hình học máy và lưu trữ/tải mô hình |
 | `matplotlib`, `seaborn` | Trực quan hóa dữ liệu và vẽ biểu đồ đánh giá hiệu suất mô hình |
 | `python-dotenv` | Quản lý các biến môi trường và thiết lập cấu hình an toàn |
+--- 
+Dự án đang trong quá trình phát triển và hoàn thiện các giai đoạn tiếp theo.
