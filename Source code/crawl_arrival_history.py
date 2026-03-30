@@ -10,12 +10,12 @@ import time
 from datetime import datetime, timedelta
 
 # ================= CẤU HÌNH BIẾN MÔI TRƯỜNG =================
-VN_IATAS = ['SGN', 'DAD', 'CXR', 'PQC', 'VCA', 'VDO', 'HPH', 'VII', 'THD', 'VDH', 'HUI', 'VCL', 'UIH', 'TBB', 'PXU',
+VN_IATAS = ['HAN', 'DAD', 'CXR', 'PQC', 'VCA', 'VDO', 'HPH', 'VII', 'THD', 'VDH', 'HUI', 'VCL', 'UIH', 'TBB', 'PXU',
             'BMV', 'DLI', 'VKG', 'CAH', 'VCS', 'DIN']
-START_DATE = "2025-01-01"
-END_DATE = "2026-01-03"
+START_DATE = "2026-01-12"
+END_DATE = "2026-01-31"
 
-DEST_IATA = "HAN"
+DEST_IATA = "SGN"
 
 
 # ================= CÁC HÀM HỖ TRỢ =================
