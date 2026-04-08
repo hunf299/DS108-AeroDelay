@@ -87,7 +87,7 @@ def wait_for_manual_login(driver):
             time.sleep(3)
 
 
-# ================= HÀM MỞ FLIGHT INFO (Chỉ kích hoạt khi thiếu Data) =================
+# ================= HÀM MỞ FLIGHT INFO (Chỉ kích hoạt khi thiếu Data crawl) =================
 def get_std_from_ui(driver, flight_no, t_fmt1, t_fmt2, p_fmt1, p_fmt2, actual_time, cached_std, origin_iata,
                     flight_element=None):
     std_result, is_fixed, info_dest, info_iata, info_airline, is_valid = "", 0, "", "", "", False

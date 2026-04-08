@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 
 # ================= CẤU HÌNH =================
 DEST_IATA = "DAD"
-ORIGINAL_CSV = "Data crawl/Arrival/{ORIGIN_IATA.lower()}_flights_arrival_bronze_layer.csv"
+ORIGINAL_CSV = "Data crawl crawl/Arrival/{ORIGIN_IATA.lower()}_flights_arrival_bronze_layer.csv"
 AIRCRAFT_CSV_FILE = f"{DEST_IATA.lower()}_aircraft.csv"
 
 # Mapping tháng (giữ nguyên của bạn)
