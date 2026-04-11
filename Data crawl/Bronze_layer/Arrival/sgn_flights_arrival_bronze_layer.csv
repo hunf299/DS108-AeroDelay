@@ -6655,7 +6655,6 @@
 2026-01-02,00:09,12:59,Anchorage,ANC,NetJets,,2,25R,Landed,N177QS,GL7T,business jet
 2026-01-02,00:06,01:50,Hanoi,HAN,Sun PhuQuoc Airways,SPQ895,3,25R,Landed,VN-A284,A21N,passenger
 2026-01-02,00:03,01:49,Hanoi,HAN,Vietnam Airlines,VN265,3,25R,Landed,VN-A879,B78X,passenger
-Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2026-01-03,23:55,02:11,Manila,MNL,Cebu Pacific,5J751,2,25R,Landed,RP-C4142,A21N,passenger
 2026-01-03,23:53,00:58,Da Nang,DAD,Vietnam Airlines,VN7125,3,25R,Landed,VN-A393,A321,passenger
 2026-01-03,23:50,01:40,Hanoi,HAN,Vietnam Airlines,VN267,3,25R,Landed,VN-A325,A321,passenger
@@ -8552,7 +8551,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-08,00:17,01:35,Sao Vang,THD,Vietnam Airlines,VN1279,3,25R,Landed,VN-A515,A20N,passenger
 2026-01-08,00:11,01:37,Hanoi,HAN,Sun PhuQuoc Airways,SPQ1230,3,25R,Landed,VN-A281,A21N,passenger
 2026-01-08,00:02,01:36,Hanoi,HAN,VietJet Air,VJ123,1,25R,Landed,VN-A539,A21N,passenger
-Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2026-01-09,23:49,01:37,Hanoi,HAN,Vietnam Airlines,VN265,3,25R,Landed,VN-A869,B789,passenger
 2026-01-09,23:45,,Haiphong,HPH,Vietnam Airlines,VN1187,3,,Landed,VN-A615,A321,passenger
 2026-01-09,23:36,00:37,Phu Quoc,PQC,Vietnam Airlines,VN1834,3,25R,Landed,VN-A395,A321,passenger
@@ -9676,7 +9674,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-11,00:09,01:42,Hanoi,HAN,VietJet Air,VJ161,1,25R,Landed,VN-A632,A321,passenger
 2026-01-11,00:06,01:31,Sao Vang,THD,Vietnam Airlines,VN1279,3,25R,Landed,VN-A357,A321,passenger
 2026-01-11,00:01,06:32,Dubai,DWC,Cargolux,CV7855,0,25R,Landed,LX-TCV,B744,cargo
-Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2026-01-12,23:53,06:23,Tokyo,NRT,All Nippon Airways,NH833,2,25R,Landed,JA804A,B788,passenger
 2026-01-12,23:43,01:38,Hanoi,HAN,Vietnam Airlines,VN267,3,25R,Landed,VN-A390,A321,passenger
 2026-01-12,23:39,04:09,Shanghai,PVG,Juneyao Air,HO1327,2,25R,Landed,B-8537,A321,passenger

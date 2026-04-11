@@ -573,7 +573,6 @@
 2025-12-17,00:42,05:35,Tokyo,NRT,Japan Airlines,JL751,2,29R,Landed,JA617J,B763,passenger
 2025-12-17,00:14,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN7206,1,11L,Landed,VN-A505,A21N,passenger
 2025-12-17,00:00,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ160,1,11L,Landed,VN-A635,A321,passenger
-Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2025-12-18,23:56,02:48,Taipei,TPE,Emirates,EK9869,0,11L,Landed,A6-EFX,B77L,cargo
 2025-12-18,23:54,01:44,Ho Chi Minh City,SGN,Vietnam Airlines,VN224,1,11L,Landed,VN-A602,A321,passenger
 2025-12-18,23:50,05:55,Tokyo,NRT,All Nippon Airways,NH8447,0,11L,Landed,JA605F,B763,cargo
@@ -1488,7 +1487,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-20,00:08,01:43,Ho Chi Minh City,SGN,Vietnam Airlines,VN7218,1,11L,Landed,VN-A332,A321,passenger
 2025-12-20,00:03,02:45,Huangshan City,TXN,Vietravel Airlines,VU1237,2,11L,Landed,VN-A129,A321,passenger
 2025-12-20,00:00,01:37,Ho Chi Minh City,SGN,Vietnam Airlines,VN7240,1,11L,Landed,VN-A603,A321,passenger
-Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2025-12-21,23:58,01:29,Bangkok,BKK,Vietnam Airlines,VN616,2,11L,Landed,VN-A357,A321,passenger
 2025-12-21,23:55,04:25,Seoul,ICN,Jeju Air,7C2201,2,11L,Landed,HL8523,B38M,passenger
 2025-12-21,23:53,00:56,Hue,HUI,Vietnam Airlines,VN1548,1,11L,Landed,VN-A611,A321,passenger
@@ -2097,7 +2095,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-22,00:26,01:36,Nha Trang,CXR,VietJet Air,VJ778,1,11L,Landed,VN-A548,A21N,passenger
 2025-12-22,00:23,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN224,1,11L,Landed,VN-A325,A321,passenger
 2025-12-22,00:07,03:44,Chennai,MAA,N/A,N/A,0,11L,Landed,VT-AFO,B738,cargo
-Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2025-12-23,23:59,04:17,Seoul,ICN,Jeju Air,7C2201,2,11L,Landed,HL8555,B38M,passenger
 2025-12-23,23:48,01:32,Nha Trang,CXR,VietJet Air,VJ778,1,11L,Landed,VN-A639,A321,passenger
 2025-12-23,23:41,01:48,Ho Chi Minh City,SGN,Vietnam Airlines,VN262,1,11L,Landed,VN-A873,B78X,passenger
@@ -2988,7 +2985,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-25,00:16,01:43,Ho Chi Minh City,SGN,VietJet Air,VJ174,1,11L,Landed,VN-A662,A320,passenger
 2025-12-25,00:05,02:49,Huangshan City,TXN,Vietravel Airlines,VU1237,2,11L,Landed,VN-A129,A321,passenger
 2025-12-25,00:01,01:21,Bangkok,BKK,Vietnam Airlines,VN616,2,11L,Landed,VN-A324,A321,passenger
-Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2025-12-26,23:57,04:35,Seoul,ICN,T'way Air,TW61,2,11L,Landed,HL8047,B738,passenger
 2025-12-26,23:50,00:58,Da Nang,DAD,VietJet Air,VJ522,1,11L,Landed,VN-A542,A321,passenger
 2025-12-26,23:46,01:38,Ho Chi Minh City,SGN,Vietnam Airlines,VN260,1,11L,Landed,VN-A889,A359,passenger
@@ -3937,7 +3933,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-28,00:15,04:33,Seoul,ICN,Jeju Air,7C2201,2,11L,Landed,HL8592,B38M,passenger
 2025-12-28,00:11,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN224,1,11L,Landed,VN-A608,A321,passenger
 2025-12-28,00:03,01:42,Ho Chi Minh City,SGN,Vietravel Airlines,VU794,1,11L,Landed,VN-A129,A321,passenger
-Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2025-12-29,23:56,01:29,Nha Trang,CXR,VietJet Air,VJ778,1,11L,Landed,VN-A635,A321,passenger
 2025-12-29,23:52,01:33,Ho Chi Minh City,SGN,Vietnam Airlines,VN7226,1,11L,Landed,VN-A879,B78X,passenger
 2025-12-29,23:47,03:56,Jakarta,CGK,Citilink,QG8846,2,11L,Landed,PK-GTG,A20N,passenger
@@ -4895,7 +4890,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-31,00:07,00:59,Da Nang,DAD,N/A,VN6070,1,11L,Landed,VN-A363,A321,passenger
 2025-12-31,00:04,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN260,1,11L,Landed,VN-A865,B789,passenger
 2025-12-31,00:02,01:01,Da Nang,DAD,VietJet Air,VJ520,1,11L,Landed,VN-A677,A321,passenger
-Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2026-01-01,23:58,01:21,Bangkok,BKK,Vietnam Airlines,VN616,2,11L,Landed,VN-A353,A321,passenger
 2026-01-01,23:48,01:07,Hue,HUI,Vietnam Airlines,VN1548,1,11L,Landed,VN-A514,A20N,passenger
 2026-01-01,23:44,01:11,Da Nang,DAD,VietJet Air,VJ518,1,11L,Landed,VN-A635,A321,passenger
@@ -6469,7 +6463,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-05,00:10,02:16,Kolkata,CCU,IndiGo,6E8961,0,11L,Landed,VT-IKY,A321,cargo
 2026-01-05,00:05,00:59,Da Nang,DAD,VietJet Air,VJ520,1,11L,Landed,VN-A641,A321,passenger
 2026-01-05,00:00,05:00,Seoul,ICN,T'way Air,TW61,2,11L,Landed,HL8378,B738,passenger
-Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2026-01-06,23:59,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN224,1,29R,Landed,VN-A503,A21N,passenger
 2026-01-06,23:53,01:40,Ho Chi Minh City,SGN,Bamboo Airways,QH284,1,11L,Landed,VN-A596,A20N,passenger
 2026-01-06,23:48,01:19,Bangkok,BKK,Vietnam Airlines,VN616,2,11L,Landed,VN-A356,A321,passenger
@@ -7065,7 +7058,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-07,00:36,03:06,Shanghai,PVG,Juneyao Air,HO1329,2,11L,Landed,B-321C,A20N,passenger
 2026-01-07,00:33,00:56,Da Nang,DAD,Vietnam Airlines,VN7192,1,11L,Landed,VN-A323,A321,passenger
 2026-01-07,00:09,04:22,Seoul,ICN,Jeju Air,7C2201,2,11L,Landed,HL8524,B38M,passenger
-Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2026-01-08,23:54,06:15,Tokyo,NRT,All Nippon Airways,NH8447,0,11L,Landed,JA605F,B763,cargo
 2026-01-08,23:49,01:21,Bangkok,BKK,Vietnam Airlines,VN616,2,11L,Landed,VN-A503,A21N,passenger
 2026-01-08,23:45,01:24,Buon Ma Thuot,BMV,VietJet Air,VJ494,1,11L,Landed,VN-A655,A320,passenger
@@ -8275,7 +8267,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-11,00:16,06:06,Tokyo,NRT,All Nippon Airways,NH8447,0,11L,Landed,JA605F,B763,cargo
 2026-01-11,00:03,01:27,Bangkok,BKK,Vietnam Airlines,VN616,2,11L,Landed,VN-A395,A321,passenger
 2026-01-11,00:01,01:46,Ho Chi Minh City,SGN,Vietnam Airlines,VN224,1,11L,Landed,VN-A623,A21N,passenger
-Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2026-01-12,23:58,06:24,Tokyo,NRT,All Nippon Airways,NH8447,0,11L,Landed,JA604F,B763,cargo
 2026-01-12,23:54,01:24,Bangkok,BKK,Vietnam Airlines,VN616,2,11L,Landed,VN-A323,A321,passenger
 2026-01-12,23:53,01:41,Ho Chi Minh City,SGN,Bamboo Airways,QH284,1,11L,Landed,VN-A596,A20N,passenger
@@ -9158,7 +9149,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-14,00:40,01:39,Shenzhen,SZX,Shenzhen Airlines,ZH107,2,11L,Landed,B-8079,A320,passenger
 2026-01-14,00:32,03:14,Shanghai,PVG,Juneyao Air,HO1329,2,11L,Landed,B-6921,A320,passenger
 2026-01-14,00:23,04:26,Seoul,ICN,Jeju Air,7C2201,2,11L,Landed,HL8554,B38M,passenger
-Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2026-01-15,23:58,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN256,1,11L,Landed,VN-A612,A321,passenger
 2026-01-15,23:55,01:31,Nha Trang,CXR,VietJet Air,VJ778,1,11L,Landed,VN-A630,A321,passenger
 2026-01-15,23:51,01:24,Bangkok,BKK,Vietnam Airlines,VN616,2,11L,Landed,VN-A327,A321,passenger
@@ -10687,7 +10677,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-20,00:23,01:38,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G886,1,11L,Landed,VN-A281,A21N,passenger
 2026-01-20,00:06,04:33,Seoul,ICN,Jeju Air,7C2201,2,11L,Landed,HL8089,B738,passenger
 2026-01-20,00:03,01:40,Ho Chi Minh City,SGN,Bamboo Airways,QH284,1,11L,Landed,VN-A596,A20N,passenger
-Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2026-01-21,23:53,01:45,Ho Chi Minh City,SGN,Vietnam Airlines,VN224,1,11L,Landed,VN-A329,A321,passenger
 2026-01-21,23:50,06:03,Tokyo,NRT,Japan Airlines,JL751,2,11L,Landed,JA616J,B763,passenger
 2026-01-21,23:47,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ1321,1,11L,Landed,VN-A539,A21N,passenger
