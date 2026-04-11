@@ -174,7 +174,7 @@
 2025-12-16,14:39,05:13,Seoul,ICN,VietJet Air,VJ863,2,25R,Landed,VN-A546,A21N,passenger
 2025-12-16,14:34,01:40,Singapore,SIN,Scoot,TR352,2,25R,Landed,9V-NCK,A21N,passenger
 2025-12-16,14:32,02:49,Kaohsiung,KHH,VietJet Air,VJ885,2,25R,Landed,VN-A516,A21N,passenger
-2025-12-16,14:30,05:02,Tianjin,TSN,,GS9948,2,25R,Landed,B-9948,A320,passenger
+2025-12-16,14:30,05:02,Tianjin,TSN,Tianjin Airlines,GS9948,2,25R,Landed,B-9948,A320,passenger
 2025-12-16,14:26,01:34,Kuala Lumpur,KUL,VietJet Air,VJ826,2,25R,Landed,VN-A689,A320,passenger
 2025-12-16,14:23,01:05,Hue,HUI,Vietnam Airlines,VN1371,3,25R,Landed,VN-A353,A321,passenger
 2025-12-16,14:21,00:45,Con Dao,VCS,VASCO,VN1858,3,25R,Landed,VN-B225,AT75,passenger
@@ -2706,7 +2706,7 @@
 2025-12-23,16:28,02:41,Jakarta,CGK,VietJet Air,VJ854,2,25R,Landed,VN-A699,A320,passenger
 2025-12-23,16:25,08:21,Sydney,SYD,VietJet Air,VJ86,2,25R,Landed,VN-A812,A333,passenger
 2025-12-23,16:22,01:16,Bangkok,BKK,Vietravel Airlines,VU130,2,25R,Landed,VN-A289,A321,passenger
-2025-12-23,16:21,01:40,Kuala Lumpur,KUL,,MH758,2,25R,Landed,9M-MLU,B738,passenger
+2025-12-23,16:21,01:40,Kuala Lumpur,KUL,Malaysia Airlines,MH758,2,25R,Landed,9M-MLU,B738,passenger
 2025-12-23,16:19,00:46,Phu Quoc,PQC,Vietnam Airlines,VN1826,3,25R,Landed,VN-A612,A321,passenger
 2025-12-23,16:14,01:01,Da Nang,DAD,,VN6037,3,25R,Landed,VN-A359,A321,passenger
 2025-12-23,16:10,01:12,Bangkok,BKK,VietJet Air,VJ804,2,25R,Landed,VN-A685,A321,passenger
