@@ -1,4 +1,4 @@
-﻿Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
+﻿Crawl_Date,Scheduled_Time,Actual_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category
 2025-12-16,23:57,00:57,Da Nang,DAD,VietJet Air,VJ647,1,25R,Landed,VN-A546,A21N,passenger
 2025-12-16,23:53,01:38,Hanoi,HAN,Sun PhuQuoc Airways,SPQ895,3,25R,Landed,VN-A282,A21N,passenger
 2025-12-16,23:49,01:41,Hanoi,HAN,Vietnam Airlines,VN267,3,25R,Landed,VN-A612,A321,passenger
