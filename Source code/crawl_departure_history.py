@@ -13,12 +13,12 @@ import os
 import random
 
 # ================= CẤU HÌNH BIẾN MÔI TRƯỜNG =================
-VN_IATAS = ['HAN', 'DAD', 'CXR', 'PQC', 'VCA', 'VDO', 'HPH', 'VII', 'THD', 'VDH', 'HUI', 'VCL', 'UIH', 'TBB', 'PXU',
+VN_IATAS = ['HAN', 'SGN', 'CXR', 'PQC', 'VCA', 'VDO', 'HPH', 'VII', 'THD', 'VDH', 'HUI', 'VCL', 'UIH', 'TBB', 'PXU',
             'BMV', 'DLI', 'VKG', 'CAH', 'VCS', 'DIN']
 START_DATE = "2026-03-16"
 END_DATE = "2026-03-16"
 
-ORIGIN_IATA = "SGN"
+ORIGIN_IATA = "DAD"
 LIMIT_DATE = datetime(2025, 12, 1)
 CACHE_FILE = f"{ORIGIN_IATA.lower()}_fixed_flights_cache.json"
 

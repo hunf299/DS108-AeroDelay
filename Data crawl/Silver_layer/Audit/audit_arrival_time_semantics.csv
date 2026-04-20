@@ -1,0 +1,4 @@
+airport,rows_total_arrival,rows_actual_landing_parsed,rows_planned_landing_parsed,rows_duration_parsed,rows_duration_parse_failed,rows_actual_landing_missing,mapping_profile_applied
+SGN,36568,36568,0,36273,0,0,FR_SOURCE
+HAN,23549,23549,0,23357,0,0,FR_SOURCE
+DAD,12499,12499,12499,0,0,0,DAD_SOURCE

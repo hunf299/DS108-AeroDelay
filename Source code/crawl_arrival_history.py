@@ -10,12 +10,12 @@ import time
 from datetime import datetime, timedelta
 
 # ================= CẤU HÌNH BIẾN MÔI TRƯỜNG =================
-VN_IATAS = ['HAN', 'DAD', 'CXR', 'PQC', 'VCA', 'VDO', 'HPH', 'VII', 'THD', 'VDH', 'HUI', 'VCL', 'UIH', 'TBB', 'PXU',
+VN_IATAS = ['DAD', 'SGN', 'CXR', 'PQC', 'VCA', 'VDO', 'HPH', 'VII', 'THD', 'VDH', 'HUI', 'VCL', 'UIH', 'TBB', 'PXU',
             'BMV', 'DLI', 'VKG', 'CAH', 'VCS', 'DIN']
 START_DATE = "2026-01-12"
-END_DATE = "2026-01-31"
+END_DATE = "2026-01-13"
 
-DEST_IATA = "SGN"
+DEST_IATA = "HAN"
 
 
 # ================= CÁC HÀM HỖ TRỢ =================
@@ -49,6 +49,10 @@ def wait_for_manual_login(driver):
 def crawl_arrivals_history_fast():
     print(f"[+] Khởi động trình duyệt Edge cào Arrivals cho {DEST_IATA}...")
     options = EdgeOptions()
+    options.add_argument('--ignore-certificate-errors')
+    options.add_argument('--ignore-ssl-errors')
+    options.add_argument('--allow-running-insecure-content')
+    options.add_experimental_option("excludeSwitches", ["enable-logging"])
     options.add_argument(
         "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0")
 

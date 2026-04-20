@@ -1,4 +1,4 @@
-Crawl_Date,Scheduled_Time,Actual_Time,Origin,IATA,Airline,Flight_No,Terminal,Belt,Status,Tail_Number,Aircraft_Type,Category
+Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Belt,Status,Tail_Number,Aircraft_Type,Category
 2025-12-16,00:20,00:06,Ho Chi Minh City,SGN,VIETJET AIR,VJ636,1,1.0,Arrived,VN-A656,A320,passenger
 2025-12-16,00:20,23:55,Seoul,ICN,EASTAR JET,ZE593,2,1.0,Bags Delivered,HL8543,B38M,passenger
 2025-12-16,00:45,01:05,Cheongju,CJJ,AERO-K AIRLINES,RF531,2,2.0,Bags Delivered,HL8562,A320,passenger

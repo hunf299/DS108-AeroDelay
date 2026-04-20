@@ -1,85 +1,85 @@
 Airport,Row_Index,Flight_No,Category,Action,Gap_Minutes
 SGN,1268,,helicopter,keep_noncommercial_same_origin,
 SGN,1333,0V5002,passenger,drop_unmatched_same_origin,
-SGN,1477,QH268,passenger,drop_unmatched_same_origin,240.0
-SGN,2328,HAI499,business jet,keep_noncommercial_same_origin,537.0
+SGN,1477,QH268,passenger,keep_return_emergency,36.0
+SGN,2328,HAI499,business jet,keep_return_emergency,34.0
 SGN,3044,VJ35,passenger,drop_unmatched_same_origin,
 SGN,3276,VN1415,passenger,drop_unmatched_same_origin,
 SGN,3545,,military or government,keep_noncommercial_same_origin,
 SGN,3587,,military or government,keep_noncommercial_same_origin,
 SGN,3890,,military or government,keep_noncommercial_same_origin,
-SGN,4768,VN815,passenger,drop_unmatched_same_origin,352.0
+SGN,4768,VN815,passenger,drop_unmatched_same_origin,147.0
 SGN,6194,,passenger,drop_unmatched_same_origin,
-SGN,6798,VJ386,passenger,drop_unmatched_same_origin,733.0
-SGN,7979,QR970,passenger,drop_unmatched_same_origin,604.0
-SGN,8450,,military or government,keep_noncommercial_same_origin,
-SGN,8668,VN1423,passenger,drop_unmatched_same_origin,
-SGN,8810,,military or government,keep_noncommercial_same_origin,
-SGN,9258,,military or government,keep_noncommercial_same_origin,
-SGN,9387,VJ359,passenger,drop_unmatched_same_origin,
-SGN,9458,VN1395,passenger,drop_unmatched_same_origin,
-SGN,9525,VJ113,passenger,drop_unmatched_same_origin,851.0
-SGN,10372,,military or government,keep_noncommercial_same_origin,
-SGN,10754,,military or government,keep_noncommercial_same_origin,
-SGN,12720,VJ35,passenger,drop_unmatched_same_origin,
-SGN,13027,9G868,passenger,drop_unmatched_same_origin,401.0
-SGN,13799,VN1415,passenger,drop_unmatched_same_origin,
-SGN,13933,,helicopter,keep_noncommercial_same_origin,
-SGN,14002,VN1272,passenger,drop_unmatched_same_origin,2684.0
-SGN,14039,VN6171,passenger,drop_unmatched_same_origin,
-SGN,14078,VJ3949,passenger,drop_unmatched_same_origin,
-SGN,14342,,non-categorized,keep_noncommercial_same_origin,
-SGN,15239,VN31,passenger,keep_return_emergency,86.0
-SGN,15527,OK8902,military or government,keep_noncommercial_same_origin,
-SGN,15697,,passenger,drop_unmatched_same_origin,
-SGN,15936,,military or government,keep_noncommercial_same_origin,
-SGN,15960,OK8902,military or government,keep_noncommercial_same_origin,808.0
-SGN,16181,VJ35,passenger,drop_unmatched_same_origin,653.0
-SGN,16658,VN1857,passenger,drop_unmatched_same_origin,930.0
-SGN,16676,VN8077,passenger,drop_unmatched_same_origin,6707.0
-SGN,16712,VN8059,passenger,drop_unmatched_same_origin,1083.0
-SGN,17357,VU778,passenger,drop_unmatched_same_origin,420.0
-SGN,20789,VN1856,passenger,drop_unmatched_same_origin,608.0
-SGN,21658,VN1885,passenger,drop_unmatched_same_origin,492.0
-SGN,22748,VN1382,passenger,drop_unmatched_same_origin,752.0
-SGN,23879,VJ274,passenger,drop_unmatched_same_origin,805.0
-SGN,24402,VN5001,passenger,drop_unmatched_same_origin,
-SGN,26284,VN8073,passenger,drop_unmatched_same_origin,1180.0
-SGN,27210,VJ1240,passenger,drop_unmatched_same_origin,1606.0
-SGN,28399,VJ246,passenger,drop_unmatched_same_origin,166.0
-SGN,29252,VU550,passenger,drop_unmatched_same_origin,422.0
-SGN,29760,VJ113,passenger,drop_unmatched_same_origin,574.0
-SGN,29766,VJ119,passenger,drop_unmatched_same_origin,585.0
-SGN,30418,VU684,passenger,drop_unmatched_same_origin,1562.0
-SGN,31199,VJ113,passenger,drop_unmatched_same_origin,830.0
-SGN,31530,VN7272,passenger,drop_unmatched_same_origin,5272.0
-SGN,32845,VJ811,passenger,drop_unmatched_same_origin,933.0
-SGN,33480,,passenger,drop_unmatched_same_origin,
-SGN,33864,,passenger,drop_unmatched_same_origin,
-SGN,34271,,military or government,keep_noncommercial_same_origin,
-SGN,34596,VJ809,passenger,drop_unmatched_same_origin,812.0
-SGN,34618,,helicopter,keep_noncommercial_same_origin,
+SGN,6797,VJ386,passenger,drop_unmatched_same_origin,153.0
+SGN,7978,QR970,passenger,keep_return_emergency,65.0
+SGN,8449,,military or government,keep_noncommercial_same_origin,
+SGN,8666,VN1423,passenger,drop_unmatched_same_origin,
+SGN,8808,,military or government,keep_noncommercial_same_origin,
+SGN,9256,,military or government,keep_noncommercial_same_origin,
+SGN,9385,VJ359,passenger,drop_unmatched_same_origin,
+SGN,9456,VN1395,passenger,drop_unmatched_same_origin,
+SGN,9523,VJ113,passenger,keep_return_emergency,88.0
+SGN,10369,,military or government,keep_noncommercial_same_origin,
+SGN,10751,,military or government,keep_noncommercial_same_origin,
+SGN,12717,VJ35,passenger,drop_unmatched_same_origin,
+SGN,13024,9G868,passenger,drop_unmatched_same_origin,294.0
+SGN,13796,VN1415,passenger,drop_unmatched_same_origin,
+SGN,13930,,helicopter,keep_noncommercial_same_origin,
+SGN,13999,VN1272,passenger,drop_unmatched_same_origin,260.0
+SGN,14036,VN6171,passenger,drop_unmatched_same_origin,
+SGN,14075,VJ3949,passenger,drop_unmatched_same_origin,
+SGN,14339,,non-categorized,keep_noncommercial_same_origin,
+SGN,15236,VN31,passenger,drop_unmatched_same_origin,91.0
+SGN,15524,OK8902,military or government,keep_return_emergency,17.0
+SGN,15694,,passenger,drop_unmatched_same_origin,
+SGN,15933,,military or government,keep_noncommercial_same_origin,
+SGN,15957,OK8902,military or government,keep_return_emergency,11.0
+SGN,16178,VJ35,passenger,keep_return_emergency,55.0
+SGN,16655,VN1857,passenger,drop_unmatched_same_origin,117.0
+SGN,16673,VN8077,passenger,drop_unmatched_same_origin,113.0
+SGN,16709,VN8059,passenger,drop_unmatched_same_origin,116.0
+SGN,17354,VU778,passenger,keep_return_emergency,83.0
+SGN,20786,VN1856,passenger,drop_unmatched_same_origin,124.0
+SGN,21655,VN1885,passenger,drop_unmatched_same_origin,127.0
+SGN,22745,VN1382,passenger,drop_unmatched_same_origin,147.0
+SGN,23876,VJ274,passenger,keep_return_emergency,46.0
+SGN,24399,VN5001,passenger,drop_unmatched_same_origin,
+SGN,26281,VN8073,passenger,drop_unmatched_same_origin,100.0
+SGN,27207,VJ1240,passenger,drop_unmatched_same_origin,237.0
+SGN,28396,VJ246,passenger,drop_unmatched_same_origin,240.0
+SGN,29249,VU550,passenger,keep_return_emergency,62.0
+SGN,29757,VJ113,passenger,keep_return_emergency,86.0
+SGN,29763,VJ119,passenger,keep_return_emergency,76.0
+SGN,30415,VU684,passenger,drop_unmatched_same_origin,1806.0
+SGN,31196,VJ113,passenger,keep_return_emergency,73.0
+SGN,31527,VN7272,passenger,drop_unmatched_same_origin,278.0
+SGN,32842,VJ811,passenger,keep_return_emergency,44.0
+SGN,33477,,passenger,drop_unmatched_same_origin,
+SGN,33861,,passenger,drop_unmatched_same_origin,
+SGN,34268,,military or government,keep_noncommercial_same_origin,
+SGN,34593,VJ809,passenger,drop_unmatched_same_origin,99.0
+SGN,34615,,helicopter,keep_noncommercial_same_origin,
 HAN,279,M0535,passenger,drop_unmatched_same_origin,
 HAN,442,,passenger,drop_unmatched_same_origin,
-HAN,1072,,passenger,drop_unmatched_same_origin,
-HAN,1717,VN5000,passenger,drop_unmatched_same_origin,
-HAN,2478,VN1718,passenger,drop_unmatched_same_origin,
-HAN,3750,,passenger,drop_unmatched_same_origin,
-HAN,6276,,passenger,drop_unmatched_same_origin,
-HAN,6586,QH15,passenger,drop_unmatched_same_origin,
-HAN,6784,VN5005,passenger,drop_unmatched_same_origin,
-HAN,7358,RH9376,cargo,keep_return_emergency,0.0
-HAN,9307,VN5000,passenger,drop_unmatched_same_origin,
-HAN,10939,VN5005,passenger,drop_unmatched_same_origin,
-HAN,10995,VN895,passenger,drop_unmatched_same_origin,
-HAN,13048,VN1203,passenger,drop_unmatched_same_origin,709.0
-HAN,13357,VN1641,passenger,drop_unmatched_same_origin,1064.0
-HAN,13363,VN1715,passenger,drop_unmatched_same_origin,986.0
-HAN,13461,VN5005,passenger,drop_unmatched_same_origin,
-HAN,14740,,unknown,drop_unmatched_same_origin,
-HAN,15942,VJ7239,unknown,keep_return_emergency,69.0
-HAN,16631,VJ147,passenger,keep_return_emergency,71.0
-HAN,17411,VN7715,passenger,drop_unmatched_same_origin,1074.0
-HAN,20195,VJ107,passenger,drop_unmatched_same_origin,1057.0
-HAN,20973,VN5000,passenger,drop_unmatched_same_origin,48313.0
-HAN,23495,,unknown,drop_unmatched_same_origin,
+HAN,1071,,passenger,drop_unmatched_same_origin,
+HAN,1715,VN5000,passenger,drop_unmatched_same_origin,
+HAN,2474,VN1718,passenger,drop_unmatched_same_origin,
+HAN,3745,,passenger,drop_unmatched_same_origin,
+HAN,6269,,passenger,drop_unmatched_same_origin,
+HAN,6578,QH15,passenger,drop_unmatched_same_origin,
+HAN,6776,VN5005,passenger,drop_unmatched_same_origin,
+HAN,7349,RH9376,cargo,keep_return_emergency,0.0
+HAN,9296,VN5000,passenger,drop_unmatched_same_origin,
+HAN,10927,VN5005,passenger,drop_unmatched_same_origin,
+HAN,10983,VN895,passenger,drop_unmatched_same_origin,
+HAN,13036,VN1203,passenger,keep_return_emergency,31.0
+HAN,13345,VN1641,passenger,drop_unmatched_same_origin,185.0
+HAN,13351,VN1715,passenger,drop_unmatched_same_origin,127.0
+HAN,13449,VN5005,passenger,drop_unmatched_same_origin,
+HAN,14728,,unknown,drop_unmatched_same_origin,
+HAN,15930,VJ7239,unknown,drop_unmatched_same_origin,194.0
+HAN,16619,VJ147,passenger,drop_unmatched_same_origin,4467.0
+HAN,17399,VN7715,passenger,drop_unmatched_same_origin,112.0
+HAN,20183,VJ107,passenger,drop_unmatched_same_origin,125.0
+HAN,20961,VN5000,passenger,drop_unmatched_same_origin,48924.0
+HAN,23483,,unknown,drop_unmatched_same_origin,
