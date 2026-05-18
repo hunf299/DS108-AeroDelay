@@ -108,6 +108,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Data crawl/Silver_layer/Audit/audit_arrival_time_semantics.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Silver_layer/Audit/audit_deduplicate_decisions.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Data crawl/Silver_layer/Audit/audit_duplicates.csv">
           <value>
             <Attribute>
