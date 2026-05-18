@@ -1,5 +1,5 @@
 from selenium import webdriver
-from selenium.webdriver.safari.options import Options as SafariOptions
+from selenium.webdriver.edge.options import Options as EdgeOptions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -57,10 +57,10 @@ def patch_missing_runways():
     print(f"[!] Phát hiện {missing_mask.sum()} chuyến bay bị thiếu Runway phân bố trong {len(dates_to_patch)} ngày.")
 
     # Khởi động Trình duyệt
-    options = SafariOptions()
+    options = EdgeOptions()
     options.add_argument(
         "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0")
-    driver = webdriver.Safari(options=options)
+    driver = webdriver.Edge(options=options)
     driver.maximize_window()
 
     # Chỉ load trang chủ lịch sử 1 lần
