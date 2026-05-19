@@ -45,6 +45,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Data crawl/Bronze_layer/Departure/dad_flights_departure_bronze_layer_v2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Data crawl/Bronze_layer/Departure/han_aircraft.csv">
           <value>
             <Attribute>
@@ -179,20 +186,6 @@
           </value>
         </entry>
         <entry key="/Data crawl/Silver_layer/Features/military_activity_events.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Source code/dad.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Source code/dad1.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
