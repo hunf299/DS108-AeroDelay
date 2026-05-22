@@ -88,7 +88,7 @@ DAD,departure,rows_input,12529
 DAD,departure,rows_after_basic_clean,12529
 DAD,departure,header_rows_removed,0
 DAD,departure,invalid_iata_fixed,0
-DAD,departure,invalid_runway_fixed,0
+DAD,departure,invalid_runway_fixed,739
 DAD,departure,exact_duplicate_removed,0
 DAD,departure,cluster_duplicate_removed,3
 DAD,departure,near_time_duplicate_removed,3
@@ -96,11 +96,11 @@ DAD,departure,dual_runway_duplicate_removed,0
 DAD,departure,spq_to_9g_converted,0
 DAD,departure,spq_to_9g_airline_match,0
 DAD,departure,spq_to_9g_pattern_match,0
-DAD,departure,runway_missing_before,12526
+DAD,departure,runway_missing_before,950
 DAD,departure,runway_filled_orientation,0
 DAD,departure,runway_filled_nearest,0
 DAD,departure,runway_filled_default,0
-DAD,departure,runway_marked_unknown_dad,12526
+DAD,departure,runway_marked_unknown_dad,950
 ALL,arrival,arrivals_cross_corrected,0
 ALL,departure,dep_tail_overwritten,963
 ALL,departure,dep_ac_overwritten,483
