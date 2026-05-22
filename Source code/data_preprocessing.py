@@ -21,7 +21,7 @@ RUNWAY_REGEX = r"^(0[1-9]|[1-3][0-9])[LR]$"
 
 RETURN_THRESHOLD_MINUTES_DEFAULT = 90
 RETURN_THRESHOLD_MAX_MINUTES = 120
-ROUTE_MATCH_MAX_HOURS = 12.0
+ROUTE_MATCH_MAX_HOURS = 6.0
 DEDUP_NEAR_TIME_WINDOW_MINUTES = 10
 
 DROP_SAME_ORIGIN_CATEGORIES = {"passenger", "unknown", "cargo"}
@@ -272,6 +272,9 @@ def canonicalize_arrival_time_by_source(df: pd.DataFrame, airport: str) -> Tuple
     planned_dt = parse_datetime_from_clock(crawl_date, planned_landing_time)
     actual_dt = parse_datetime_from_clock(crawl_date, actual_landing_time)
 
+    iata_series = out.get("IATA", pd.Series(pd.NA, index=out.index, dtype="string")).astype("string").str.upper().str.strip()
+    domestic_mask = iata_series.isin(DOMESTIC_IATA_CODES)
+
     if airport == "DAD":
         planned_clock = pd.to_datetime(planned_landing_time, format="%H:%M", errors="coerce")
         actual_clock = pd.to_datetime(actual_landing_time, format="%H:%M", errors="coerce")
@@ -279,7 +282,22 @@ def canonicalize_arrival_time_by_source(df: pd.DataFrame, airport: str) -> Tuple
         planned_minutes = planned_clock.dt.hour * 60 + planned_clock.dt.minute
         actual_minutes = actual_clock.dt.hour * 60 + actual_clock.dt.minute
 
+        # Existing: actual landed after midnight relative to planned
         rollover_mask = planned_minutes.notna() & actual_minutes.notna() & ((actual_minutes + 720) < planned_minutes)
+        actual_dt.loc[rollover_mask & actual_dt.notna()] = actual_dt.loc[rollover_mask & actual_dt.notna()] + pd.Timedelta(days=1)
+
+        # NEW: both planned and actual are early morning (domestic) -> next day relative to crawl_date
+        both_early_mask = planned_minutes.notna() & actual_minutes.notna() & (planned_minutes < 300) & (actual_minutes < 300)
+        next_day_mask = domestic_mask & both_early_mask
+        actual_dt.loc[next_day_mask & actual_dt.notna()] = actual_dt.loc[next_day_mask & actual_dt.notna()] + pd.Timedelta(days=1)
+        planned_dt.loc[next_day_mask & planned_dt.notna()] = planned_dt.loc[next_day_mask & planned_dt.notna()] + pd.Timedelta(days=1)
+    else:
+        # SGN/HAN arrivals from FR24: Actual_Time is actual landing time.
+        # Early morning domestic arrivals are almost always next-day relative to STD.
+        actual_clock = pd.to_datetime(actual_landing_time, format="%H:%M", errors="coerce")
+        actual_minutes = actual_clock.dt.hour * 60 + actual_clock.dt.minute
+        early_morning_mask = actual_minutes.notna() & (actual_minutes < 300)
+        rollover_mask = domestic_mask & early_morning_mask
         actual_dt.loc[rollover_mask & actual_dt.notna()] = actual_dt.loc[rollover_mask & actual_dt.notna()] + pd.Timedelta(days=1)
 
     out["Arrival_Planned_Landing_Time"] = planned_landing_time.astype("string")
@@ -330,7 +348,234 @@ def add_datetime_columns_with_rollover(df: pd.DataFrame, airport: str, mode: str
             out.loc[rollover_mask & out["Actual_DateTime"].notna(), "Actual_DateTime"] + pd.Timedelta(days=1)
         )
 
+        # Fallback: scheduled missing but actual is early morning -> likely next day
+        sched_missing = out["Scheduled_Time"].isna() | out["Scheduled_Time"].astype("string").str.strip().eq("")
+        fallback_mask = sched_missing & actual_minutes.notna() & (actual_minutes < 300)
+        out.loc[fallback_mask & out["Actual_DateTime"].notna(), "Actual_DateTime"] = (
+            out.loc[fallback_mask & out["Actual_DateTime"].notna(), "Actual_DateTime"] + pd.Timedelta(days=1)
+        )
+
     return out, {}
+
+
+def cross_correct_arrival_dates(
+    departures: Dict[str, pd.DataFrame],
+    arrivals: Dict[str, pd.DataFrame],
+    routes: List[Tuple[str, str]],
+    max_gap_hours: float = 6.0,
+) -> Tuple[Dict[str, pd.DataFrame], Dict[str, int]]:
+    """Correct arrival actual datetimes by cross-matching with corresponding departures.
+
+    When FR24 assigns the wrong crawl date to an arrival (midnight overlap),
+    the naive Actual_DateTime can be off by +/- 1 day.  This function looks up
+    the matching departure record (same Flight_No + Tail_Number + route) and
+    shifts the arrival date so that the departure-arrival gap falls within a
+    realistic flight-time window.
+    """
+    stats = {"arrivals_corrected": 0}
+
+    for origin, dest in routes:
+        dep_df = departures.get(origin)
+        arr_df = arrivals.get(dest)
+        if dep_df is None or arr_df is None or dep_df.empty or arr_df.empty:
+            continue
+
+        dep_time = event_datetime_series(dep_df)
+        arr_time = event_datetime_series(arr_df)
+
+        # Build departure lookup with flight/tail/route keys
+        dep_valid = dep_df.loc[
+            dep_df["Flight_No"].notna() & dep_time.notna() & dep_df["IATA"].notna()
+        ].copy()
+        if dep_valid.empty:
+            continue
+        dep_valid["Event_Time"] = dep_time.loc[dep_valid.index]
+        dep_valid["Flight_Key"] = dep_valid["Flight_No"].astype("string").str.upper().str.strip()
+        dep_valid["Tail_Key"] = dep_valid["Tail_Number"].astype("string").str.upper().str.strip()
+        dep_valid["Route_Key"] = dep_valid["IATA"].astype("string").str.upper().str.strip()
+
+        # Build arrival working set for this origin only
+        arr_valid = arr_df.loc[
+            arr_df["Flight_No"].notna() & arr_time.notna() & arr_df["IATA"].notna()
+        ].copy()
+        if arr_valid.empty:
+            continue
+        arr_valid["Event_Time"] = arr_time.loc[arr_valid.index]
+        arr_valid["Flight_Key"] = arr_valid["Flight_No"].astype("string").str.upper().str.strip()
+        arr_valid["Tail_Key"] = arr_valid["Tail_Number"].astype("string").str.upper().str.strip()
+        arr_valid["Route_Key"] = arr_valid["IATA"].astype("string").str.upper().str.strip()
+        arr_valid = arr_valid.loc[arr_valid["Route_Key"] == origin.upper()].copy()
+        if arr_valid.empty:
+            continue
+
+        merged = arr_valid.merge(
+            dep_valid,
+            on=["Flight_Key", "Tail_Key", "Route_Key"],
+            how="left",
+            suffixes=("_arr", "_dep"),
+        )
+        if merged.empty:
+            continue
+
+        merged["gap_hours"] = (merged["Event_Time_arr"] - merged["Event_Time_dep"]).dt.total_seconds() / 3600.0
+
+        corrections: Dict[int, pd.Timestamp] = {}
+        for idx in merged.index.unique():
+            subset = merged.loc[[idx]]
+
+            # Already valid?
+            naive_ok = subset.loc[(subset["gap_hours"] > 0) & (subset["gap_hours"] <= max_gap_hours)]
+            if not naive_ok.empty:
+                continue
+
+            # Try +1 day on arrival
+            plus1_gap = ((subset["Event_Time_arr"] + pd.Timedelta(days=1)) - subset["Event_Time_dep"]).dt.total_seconds() / 3600.0
+            plus1_ok = subset.loc[(plus1_gap > 0) & (plus1_gap <= max_gap_hours)]
+            if not plus1_ok.empty:
+                corrections[int(idx)] = subset.at[idx, "Event_Time_arr"] + pd.Timedelta(days=1)
+                continue
+
+            # Try -1 day on arrival
+            minus1_gap = ((subset["Event_Time_arr"] - pd.Timedelta(days=1)) - subset["Event_Time_dep"]).dt.total_seconds() / 3600.0
+            minus1_ok = subset.loc[(minus1_gap > 0) & (minus1_gap <= max_gap_hours)]
+            if not minus1_ok.empty:
+                corrections[int(idx)] = subset.at[idx, "Event_Time_arr"] - pd.Timedelta(days=1)
+                continue
+
+        corrected = 0
+        for idx, new_time in corrections.items():
+            if pd.notna(new_time):
+                arr_df.at[idx, "Actual_DateTime"] = new_time
+                if "Arrival_Actual_Landing_DateTime" in arr_df.columns:
+                    arr_df.at[idx, "Arrival_Actual_Landing_DateTime"] = new_time
+                corrected += 1
+
+        stats["arrivals_corrected"] += corrected
+        arrivals[dest] = arr_df
+
+    return arrivals, stats
+
+
+def reconcile_tails_from_arrivals(
+    departures: Dict[str, pd.DataFrame],
+    arrivals: Dict[str, pd.DataFrame],
+    routes: List[Tuple[str, str]],
+    max_gap_hours: float = 6.0,
+) -> Tuple[Dict[str, pd.DataFrame], List[Dict[str, object]], Dict[str, int]]:
+    """Overwrite departure Tail_Number and Aircraft_Type from matched arrivals.
+
+    FR24 sometimes reports different tail numbers (and therefore different
+    aircraft types) for the same flight on the departure page vs the arrival
+    page.  This function treats the arrival record as the source of truth:
+    it matches each departure to its corresponding arrival by
+    (Flight_No, Route, time window) and, when the tails differ, overwrites
+    the departure tail (and aircraft type) with the arrival values.
+    """
+    audit_rows: List[Dict[str, object]] = []
+    stats = {"dep_tail_overwritten": 0, "dep_ac_overwritten": 0}
+
+    for origin, dest in routes:
+        dep_df = departures.get(origin)
+        arr_df = arrivals.get(dest)
+        if dep_df is None or arr_df is None or dep_df.empty or arr_df.empty:
+            continue
+
+        dep_time = event_datetime_series(dep_df)
+        arr_time = event_datetime_series(arr_df)
+
+        # Filter arrivals to this origin only (arrival.IATA = origin airport)
+        arr_filtered = arr_df.loc[
+            arr_df["IATA"].astype("string").str.upper().str.strip() == origin.upper()
+        ].copy()
+
+        # Build arrival lookup: flight_key -> list of candidates
+        arr_lookup: Dict[str, List[Dict[str, object]]] = {}
+        for idx in arr_filtered.index:
+            if pd.isna(arr_time.at[idx]) or pd.isna(arr_filtered.at[idx, "Flight_No"]):
+                continue
+            flight_key = str(arr_filtered.at[idx, "Flight_No"]).strip().upper()
+            candidate = {
+                "arr_idx": int(idx),
+                "arr_time": arr_time.at[idx],
+                "tail": str(arr_filtered.at[idx, "Tail_Number"]).strip().upper()
+                if pd.notna(arr_filtered.at[idx, "Tail_Number"])
+                else "",
+                "ac_type": str(arr_filtered.at[idx, "Aircraft_Type"]).strip().upper()
+                if pd.notna(arr_filtered.at[idx, "Aircraft_Type"])
+                else "",
+            }
+            arr_lookup.setdefault(flight_key, []).append(candidate)
+
+        if not arr_lookup:
+            continue
+
+        # Filter departures to this destination only (departure.IATA = destination airport)
+        dep_filtered = dep_df.loc[
+            dep_df["IATA"].astype("string").str.upper().str.strip() == dest.upper()
+        ].copy()
+
+        overwritten = 0
+        ac_overwritten = 0
+
+        for dep_idx in dep_filtered.index:
+            if pd.isna(dep_time.at[dep_idx]) or pd.isna(dep_filtered.at[dep_idx, "Flight_No"]):
+                continue
+
+            flight_key = str(dep_filtered.at[dep_idx, "Flight_No"]).strip().upper()
+            dep_tail = (
+                str(dep_filtered.at[dep_idx, "Tail_Number"]).strip().upper()
+                if pd.notna(dep_filtered.at[dep_idx, "Tail_Number"])
+                else ""
+            )
+            dep_ac = (
+                str(dep_filtered.at[dep_idx, "Aircraft_Type"]).strip().upper()
+                if pd.notna(dep_filtered.at[dep_idx, "Aircraft_Type"])
+                else ""
+            )
+
+            candidates = arr_lookup.get(flight_key, [])
+            if not candidates:
+                continue
+
+            best: Dict[str, object] | None = None
+            best_gap: float | None = None
+            for cand in candidates:
+                gap = (cand["arr_time"] - dep_time.at[dep_idx]).total_seconds() / 3600.0
+                if 0 < gap <= max_gap_hours:
+                    if best is None or gap < best_gap:
+                        best = cand
+                        best_gap = gap
+
+            if best is None:
+                continue
+
+            if best["tail"] and best["tail"] != dep_tail:
+                dep_df.at[dep_idx, "Tail_Number"] = best["tail"]
+                overwritten += 1
+
+                if best["ac_type"] and best["ac_type"] != dep_ac:
+                    dep_df.at[dep_idx, "Aircraft_Type"] = best["ac_type"]
+                    ac_overwritten += 1
+
+                audit_rows.append(
+                    {
+                        "Route": f"{origin.upper()}->{dest.upper()}",
+                        "Dep_Index": int(dep_idx),
+                        "Arr_Index": best["arr_idx"],
+                        "Flight_No": flight_key,
+                        "Dep_Tail_Before": dep_tail,
+                        "Arr_Tail_After": best["tail"],
+                        "Dep_AC_Before": dep_ac,
+                        "Arr_AC_After": best["ac_type"],
+                        "Gap_Hours": round(float(best_gap), 4) if best_gap is not None else None,
+                    }
+                )
+
+        departures[origin] = dep_df
+        stats["dep_tail_overwritten"] += overwritten
+        stats["dep_ac_overwritten"] += ac_overwritten
+
+    return departures, audit_rows, stats
 
 
 def row_quality_score(row: pd.Series, mode: str) -> float:
@@ -369,7 +614,8 @@ def deduplicate_flights(df: pd.DataFrame, airport: str, mode: str) -> Tuple[pd.D
     group_cols = [
         c
         for c in [
-            "Crawl_Date",
+            # NOTE: Crawl_Date removed so that the same flight appearing on adjacent
+            # FR24 history pages (midnight overlap) is still detected as a duplicate.
             "Flight_No",
             "Scheduled_Time",
             "IATA",
@@ -639,11 +885,33 @@ def fill_runway_values(df: pd.DataFrame, airport: str, mode: str) -> Tuple[pd.Da
         "runway_marked_unknown_dad": 0,
     }
 
-    if airport == "DAD":
+    if airport == "DAD" and mode == "departure":
         dad_missing = out[rw_col].isna()
         stats["runway_marked_unknown_dad"] = int(dad_missing.sum())
         out.loc[dad_missing, rw_col] = "Unknown"
         out["_Runway_Orientation"] = pd.NA
+        return out, stats
+
+    if airport == "DAD" and mode == "arrival":
+        orientation = infer_runway_orientation(out, airport=airport, mode=mode)
+        out["_Runway_Orientation"] = orientation
+
+        default_rw = RUNWAY_RULES[airport][mode]["default"]
+        reverse_rw = RUNWAY_RULES[airport][mode]["reverse"]
+
+        missing_mask = out[rw_col].isna()
+        fill_default = missing_mask & out["_Runway_Orientation"].eq("default")
+        fill_reverse = missing_mask & out["_Runway_Orientation"].eq("reverse")
+
+        out.loc[fill_default, rw_col] = default_rw
+        out.loc[fill_reverse, rw_col] = reverse_rw
+        stats["runway_filled_orientation"] = int(fill_default.sum() + fill_reverse.sum())
+
+        remaining_mask = out[rw_col].isna()
+        if remaining_mask.any():
+            stats["runway_marked_unknown_dad"] = int(remaining_mask.sum())
+            out.loc[remaining_mask, rw_col] = "Unknown"
+
         return out, stats
 
     orientation = infer_runway_orientation(out, airport=airport, mode=mode)
@@ -1229,6 +1497,7 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
     same_origin_audit_rows: List[Dict[str, object]] = []
     arrival_semantics_audit_rows: List[Dict[str, object]] = []
     spq_flight_no_audit_rows: List[Dict[str, object]] = []
+    tail_reconcile_audit_rows: List[Dict[str, object]] = []
 
     # 1) Load and clean basic schema.
     for airport in AIRPORTS:
@@ -1366,6 +1635,46 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
                     },
                 ]
             )
+
+    # 1b) Cross-correct arrival actual dates against matched departures.
+    arrivals, cross_stats = cross_correct_arrival_dates(
+        departures,
+        arrivals,
+        routes=ROUTES,
+        max_gap_hours=ROUTE_MATCH_MAX_HOURS,
+    )
+    summary_rows.append(
+        {
+            "Airport": "ALL",
+            "Mode": "arrival",
+            "Metric": "arrivals_cross_corrected",
+            "Value": cross_stats.get("arrivals_corrected", 0),
+        }
+    )
+
+    # 1c) Reconcile departure tails (and aircraft types) from matched arrivals.
+    departures, tail_reconcile_audit_rows, tail_stats = reconcile_tails_from_arrivals(
+        departures,
+        arrivals,
+        routes=ROUTES,
+        max_gap_hours=ROUTE_MATCH_MAX_HOURS,
+    )
+    summary_rows.extend(
+        [
+            {
+                "Airport": "ALL",
+                "Mode": "departure",
+                "Metric": "dep_tail_overwritten",
+                "Value": tail_stats.get("dep_tail_overwritten", 0),
+            },
+            {
+                "Airport": "ALL",
+                "Mode": "departure",
+                "Metric": "dep_ac_overwritten",
+                "Value": tail_stats.get("dep_ac_overwritten", 0),
+            },
+        ]
+    )
 
     # 2) Same-origin anomaly handling on arrival, using departure of the same airport.
     for airport in AIRPORTS:
@@ -1509,6 +1818,7 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
     write_audit_csv(silver_audit_dir / "audit_duplicates.csv", duplicate_audit_rows)
     write_audit_csv(silver_audit_dir / "audit_flight_no_spq_to_9g.csv", spq_flight_no_audit_rows)
     write_audit_csv(silver_audit_dir / "audit_same_origin_actions.csv", same_origin_audit_rows)
+    write_audit_csv(silver_audit_dir / "audit_tail_reconciliation.csv", tail_reconcile_audit_rows)
 
     if swap_audit_df.empty:
         pd.DataFrame().to_csv(silver_audit_dir / "audit_aircraft_swap_matches.csv", index=False)
