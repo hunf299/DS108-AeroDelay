@@ -704,6 +704,26 @@
                     "iata": "MNL",
                     "tail_number": "RP-C4142"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "22:30",
+                    "dest": "Manila",
+                    "iata": "MNL",
+                    "tail_number": "RP-C4122",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "22:30",
+                    "dest": "Manila",
+                    "iata": "MNL",
+                    "tail_number": "RP-C4145",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -1722,6 +1742,26 @@
                     "iata": "ICN",
                     "tail_number": "HL8592"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "14:25",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8087",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "14:25",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8089",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -2285,7 +2325,9 @@
                     "std": "01:30",
                     "dest": "Seoul",
                     "iata": "ICN",
-                    "tail_number": "HL8593"
+                    "tail_number": "HL8593",
+                    "aircraft_type": "B38M",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -2382,6 +2424,16 @@
                     "dest": "Seoul",
                     "iata": "ICN",
                     "tail_number": "HL8301"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "01:30",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8524",
+                    "aircraft_type": "B38M",
+                    "category": "passenger"
                 }
             ]
         },
@@ -2788,6 +2840,26 @@
                     "iata": "RGN",
                     "tail_number": "XY-ALK"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "20:00",
+                    "dest": "Yangon",
+                    "iata": "RGN",
+                    "tail_number": "XY-ALP",
+                    "aircraft_type": "E190",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "20:00",
+                    "dest": "Yangon",
+                    "iata": "RGN",
+                    "tail_number": "XY-ALO",
+                    "aircraft_type": "E190",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -2998,7 +3070,9 @@
                     "std": "12:40",
                     "dest": "Hanoi",
                     "iata": "HAN",
-                    "tail_number": "VN-A281"
+                    "tail_number": "VN-A281",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -3293,6 +3367,16 @@
                     "iata": "HAN",
                     "tail_number": "VN-A282"
                 }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "16:45",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A281",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -3466,7 +3550,9 @@
                     "std": "08:15",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A281"
+                    "tail_number": "VN-A281",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -3802,6 +3888,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A908"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "21:10",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A909",
+                    "aircraft_type": "A20N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -4512,6 +4608,26 @@
                     "iata": "KUL",
                     "tail_number": "9M-AHV"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "15:45",
+                    "dest": "Kuala Lumpur",
+                    "iata": "KUL",
+                    "tail_number": "9M-AQG",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "15:45",
+                    "dest": "Kuala Lumpur",
+                    "iata": "KUL",
+                    "tail_number": "9M-AQQ",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -5099,7 +5215,9 @@
                     "std": "11:20",
                     "dest": "Kuala Lumpur",
                     "iata": "KUL",
-                    "tail_number": "9M-AGL"
+                    "tail_number": "9M-AGL",
+                    "aircraft_type": "A20N",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -5236,6 +5354,16 @@
                     "dest": "Kuala Lumpur",
                     "iata": "KUL",
                     "tail_number": "9M-RAJ"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "11:20",
+                    "dest": "Kuala Lumpur",
+                    "iata": "KUL",
+                    "tail_number": "9M-AJD",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ]
         },
@@ -5824,7 +5952,9 @@
                     "std": "12:20",
                     "dest": "Kuala Lumpur",
                     "iata": "KUL",
-                    "tail_number": "9M-RAK"
+                    "tail_number": "9M-RAK",
+                    "aircraft_type": "A20N",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -5961,6 +6091,16 @@
                     "dest": "Kuala Lumpur",
                     "iata": "KUL",
                     "tail_number": "9M-AJD"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "12:20",
+                    "dest": "Kuala Lumpur",
+                    "iata": "KUL",
+                    "tail_number": "9M-RAH",
+                    "aircraft_type": "A20N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -6679,6 +6819,16 @@
                     "iata": "SGN",
                     "tail_number": "VN-A354"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "14:15",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
+                }
             ]
         },
         "is_fixed": 0
@@ -7371,6 +7521,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A363"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "20:20",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
                 }
             ]
         },
@@ -8081,6 +8241,16 @@
                     "iata": "HAN",
                     "tail_number": "VN-A363"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "10:15",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
+                }
             ]
         },
         "is_fixed": 1
@@ -8309,6 +8479,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A359"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "23:30",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
                 }
             ]
         },
@@ -9342,7 +9522,9 @@
                     "std": "13:00",
                     "dest": "Taipei",
                     "iata": "TPE",
-                    "tail_number": "B-16208"
+                    "tail_number": "B-16208",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -9479,6 +9661,16 @@
                     "dest": "Taipei",
                     "iata": "TPE",
                     "tail_number": "B-16337"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "13:00",
+                    "dest": "Taipei",
+                    "iata": "TPE",
+                    "tail_number": "B-16336",
+                    "aircraft_type": "A333",
+                    "category": "passenger"
                 }
             ]
         },
@@ -10059,7 +10251,9 @@
                     "std": "02:00",
                     "dest": "Busan",
                     "iata": "PUS",
-                    "tail_number": "HL8365"
+                    "tail_number": "HL8365",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -10196,6 +10390,16 @@
                     "dest": "Busan",
                     "iata": "PUS",
                     "tail_number": "HL8365"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "02:00",
+                    "dest": "Busan",
+                    "iata": "PUS",
+                    "tail_number": "HL8365",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -10784,7 +10988,9 @@
                     "std": "00:45",
                     "dest": "Busan",
                     "iata": "PUS",
-                    "tail_number": "HL8328"
+                    "tail_number": "HL8328",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -10921,6 +11127,16 @@
                     "dest": "Busan",
                     "iata": "PUS",
                     "tail_number": "HL8256"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "00:45",
+                    "dest": "Busan",
+                    "iata": "PUS",
+                    "tail_number": "HL8309",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ]
         },
@@ -11636,6 +11852,26 @@
                     "iata": "TPE",
                     "tail_number": "B-18109"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "17:35",
+                    "dest": "Taipei",
+                    "iata": "TPE",
+                    "tail_number": "B-18110",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "17:35",
+                    "dest": "Taipei",
+                    "iata": "TPE",
+                    "tail_number": "B-18108",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -12040,6 +12276,26 @@
                     "dest": "Bangkok",
                     "iata": "BKK",
                     "tail_number": ""
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "23:30",
+                    "dest": "Bangkok",
+                    "iata": "BKK",
+                    "tail_number": "A6-EPG",
+                    "aircraft_type": "B77W",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "23:30",
+                    "dest": "Bangkok",
+                    "iata": "BKK",
+                    "tail_number": "A6-EPG",
+                    "aircraft_type": "B77W",
+                    "category": "passenger"
                 }
             ]
         },
@@ -12620,7 +12876,9 @@
                     "std": "09:40",
                     "dest": "Bangkok",
                     "iata": "DMK",
-                    "tail_number": "HS-EAB"
+                    "tail_number": "HS-EAB",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -12757,6 +13015,16 @@
                     "dest": "Bangkok",
                     "iata": "DMK",
                     "tail_number": "HS-EAA"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "09:40",
+                    "dest": "Bangkok",
+                    "iata": "DMK",
+                    "tail_number": "HS-EAA",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -13345,7 +13613,9 @@
                     "std": "12:40",
                     "dest": "Bangkok",
                     "iata": "DMK",
-                    "tail_number": "HS-CBL"
+                    "tail_number": "HS-CBL",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -13482,6 +13752,16 @@
                     "dest": "Bangkok",
                     "iata": "DMK",
                     "tail_number": "HS-BBR"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "12:40",
+                    "dest": "Bangkok",
+                    "iata": "DMK",
+                    "tail_number": "HS-BBO",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ]
         },
@@ -14192,6 +14472,26 @@
                     "iata": "DMK",
                     "tail_number": "HS-CBB"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "18:50",
+                    "dest": "Bangkok",
+                    "iata": "DMK",
+                    "tail_number": "HS-CBM",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "18:50",
+                    "dest": "Bangkok",
+                    "iata": "DMK",
+                    "tail_number": "HS-CBK",
+                    "aircraft_type": "A20N",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -14638,6 +14938,26 @@
                     "dest": "Hong Kong",
                     "iata": "HKG",
                     "tail_number": ""
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "20:45",
+                    "dest": "Hong Kong",
+                    "iata": "HKG",
+                    "tail_number": "B-LPC",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "20:45",
+                    "dest": "Hong Kong",
+                    "iata": "HKG",
+                    "tail_number": "B-LPN",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ]
         },
@@ -15348,6 +15668,26 @@
                     "iata": "HKG",
                     "tail_number": "B-LPW"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "16:55",
+                    "dest": "Hong Kong",
+                    "iata": "HKG",
+                    "tail_number": "B-LPR",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "16:55",
+                    "dest": "Hong Kong",
+                    "iata": "HKG",
+                    "tail_number": "B-LPR",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -15848,6 +16188,26 @@
                     "dest": "Taipei",
                     "iata": "TPE",
                     "tail_number": "B-50027"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "20:00",
+                    "dest": "Taipei",
+                    "iata": "TPE",
+                    "tail_number": "B-50005",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "20:00",
+                    "dest": "Taipei",
+                    "iata": "TPE",
+                    "tail_number": "B-50005",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ]
         },
@@ -16912,6 +17272,26 @@
                     "iata": "TPE",
                     "tail_number": "B-58208"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "18:25",
+                    "dest": "Taipei",
+                    "iata": "TPE",
+                    "tail_number": "B-58213",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "18:25",
+                    "dest": "Taipei",
+                    "iata": "TPE",
+                    "tail_number": "B-58213",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -17620,6 +18000,26 @@
                     "dest": "Siem Reap",
                     "iata": "SAI",
                     "tail_number": "ER-00011"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "16:25",
+                    "dest": "Siem Reap",
+                    "iata": "SAI",
+                    "tail_number": "ER-00011",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "16:25",
+                    "dest": "Siem Reap",
+                    "iata": "SAI",
+                    "tail_number": "ER-00011",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ]
         },
@@ -18442,7 +18842,9 @@
                     "std": "03:00",
                     "dest": "Busan",
                     "iata": "PUS",
-                    "tail_number": "HL7710"
+                    "tail_number": "HL7710",
+                    "aircraft_type": "A333",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -18579,6 +18981,16 @@
                     "dest": "Busan",
                     "iata": "PUS",
                     "tail_number": "HL7586"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "03:00",
+                    "dest": "Busan",
+                    "iata": "PUS",
+                    "tail_number": "HL7586",
+                    "aircraft_type": "A333",
+                    "category": "passenger"
                 }
             ]
         },
@@ -19289,6 +19701,26 @@
                     "iata": "ICN",
                     "tail_number": "HL8003"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "15:45",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8001",
+                    "aircraft_type": "A333",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "15:45",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8027",
+                    "aircraft_type": "A333",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -19997,6 +20429,26 @@
                     "dest": "Seoul",
                     "iata": "ICN",
                     "tail_number": "HL7702"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "23:20",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL7586",
+                    "aircraft_type": "A333",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "23:20",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL7584",
+                    "aircraft_type": "A333",
+                    "category": "passenger"
                 }
             ]
         },
@@ -20811,7 +21263,9 @@
                     "std": "01:05",
                     "dest": "Busan",
                     "iata": "PUS",
-                    "tail_number": "HL8225"
+                    "tail_number": "HL8225",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -20948,6 +21402,16 @@
                     "dest": "Busan",
                     "iata": "PUS",
                     "tail_number": "HL7560"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "01:05",
+                    "dest": "Busan",
+                    "iata": "PUS",
+                    "tail_number": "HL7561",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
                 }
             ]
         },
@@ -21464,7 +21928,9 @@
                     "std": "00:40",
                     "dest": "Busan",
                     "iata": "PUS",
-                    "tail_number": "HL7786"
+                    "tail_number": "HL7786",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -21601,6 +22067,16 @@
                     "dest": "Busan",
                     "iata": "PUS",
                     "tail_number": "HL7562"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "00:40",
+                    "dest": "Busan",
+                    "iata": "PUS",
+                    "tail_number": "HL8244",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
                 }
             ]
         },
@@ -22218,7 +22694,9 @@
                     "std": "13:30",
                     "dest": "Seoul",
                     "iata": "ICN",
-                    "tail_number": "HL8012"
+                    "tail_number": "HL8012",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -22355,6 +22833,16 @@
                     "dest": "Seoul",
                     "iata": "ICN",
                     "tail_number": "HL8246"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "13:30",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8016",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
                 }
             ]
         },
@@ -23091,6 +23579,26 @@
                     "iata": "KUL",
                     "tail_number": "9M-MXM"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "14:40",
+                    "dest": "Kuala Lumpur",
+                    "iata": "KUL",
+                    "tail_number": "9M-MXD",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "14:40",
+                    "dest": "Kuala Lumpur",
+                    "iata": "KUL",
+                    "tail_number": "9M-MXS",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -23784,6 +24292,26 @@
                     "iata": "MFM",
                     "tail_number": "B-MCA"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "23:55",
+                    "dest": "Macau",
+                    "iata": "MFM",
+                    "tail_number": "B-MBC",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "23:55",
+                    "dest": "Macau",
+                    "iata": "MFM",
+                    "tail_number": "B-MCL",
+                    "aircraft_type": "A20N",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -24355,7 +24883,9 @@
                     "std": "00:30",
                     "dest": "Macau",
                     "iata": "MFM",
-                    "tail_number": "B-MCG"
+                    "tail_number": "B-MCG",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -24492,6 +25022,16 @@
                     "dest": "Macau",
                     "iata": "MFM",
                     "tail_number": "B-MBA"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "00:30",
+                    "dest": "Macau",
+                    "iata": "MFM",
+                    "tail_number": "B-MCC",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -25000,7 +25540,9 @@
                     "std": "13:05",
                     "dest": "Kuala Lumpur",
                     "iata": "KUL",
-                    "tail_number": "9M-LRS"
+                    "tail_number": "9M-LRS",
+                    "aircraft_type": "B38M",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -25137,6 +25679,16 @@
                     "dest": "Kuala Lumpur",
                     "iata": "KUL",
                     "tail_number": "9M-LRQ"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "13:05",
+                    "dest": "Kuala Lumpur",
+                    "iata": "KUL",
+                    "tail_number": "9M-LRR",
+                    "aircraft_type": "B38M",
+                    "category": "passenger"
                 }
             ]
         },
@@ -25847,6 +26399,26 @@
                     "iata": "ICN",
                     "tail_number": "HL8582"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "23:00",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL7794",
+                    "aircraft_type": "A333",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "23:00",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8258",
+                    "aircraft_type": "A333",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -26439,7 +27011,9 @@
                     "std": "12:25",
                     "dest": "Manila",
                     "iata": "MNL",
-                    "tail_number": "RP-C9903"
+                    "tail_number": "RP-C9903",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -26576,6 +27150,16 @@
                     "dest": "Manila",
                     "iata": "MNL",
                     "tail_number": "RP-C9902"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "12:25",
+                    "dest": "Manila",
+                    "iata": "MNL",
+                    "tail_number": "RP-C9915",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -27531,6 +28115,16 @@
                     "iata": "HAN",
                     "tail_number": "VN-A585"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "18:20",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A227",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -28110,7 +28704,9 @@
                     "std": "08:10",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "JU-1410"
+                    "tail_number": "JU-1410",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -28248,6 +28844,16 @@
                     "iata": "SGN",
                     "tail_number": "JU-1410"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "08:10",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "JU-1410",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -28349,6 +28955,16 @@
                     "iata": "SGN",
                     "tail_number": "ER-00005"
                 }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "19:40",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A585",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -28417,6 +29033,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "ER-00005"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "13:45",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "ER-00005",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ]
         },
@@ -29015,6 +29641,26 @@
                     "iata": "SGN",
                     "tail_number": "VN-A227"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "18:40",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A585",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "15:40",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "PK-BBK",
+                    "aircraft_type": "B739",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -29580,7 +30226,9 @@
                     "std": "09:55",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A227"
+                    "tail_number": "VN-A227",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -29723,7 +30371,9 @@
                     "std": "05:05",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A585"
+                    "tail_number": "VN-A585",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -30046,6 +30696,16 @@
                     "dest": "Taipei",
                     "iata": "TPE",
                     "tail_number": "VN-A585"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "17:00",
+                    "dest": "Taipei",
+                    "iata": "TPE",
+                    "tail_number": "VN-A227",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -30668,6 +31328,16 @@
                     "iata": "MFM",
                     "tail_number": "VN-A585"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "12:30",
+                    "dest": "Macau",
+                    "iata": "MFM",
+                    "tail_number": "VN-A585",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -31247,7 +31917,9 @@
                     "std": "02:00",
                     "dest": "Cheongju",
                     "iata": "CJJ",
-                    "tail_number": "HL8744"
+                    "tail_number": "HL8744",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -31384,6 +32056,16 @@
                     "dest": "Cheongju",
                     "iata": "CJJ",
                     "tail_number": "HL8562"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "02:00",
+                    "dest": "Cheongju",
+                    "iata": "CJJ",
+                    "tail_number": "HL8743",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ]
         },
@@ -31972,7 +32654,9 @@
                     "std": "00:40",
                     "dest": "Seoul",
                     "iata": "ICN",
-                    "tail_number": "HL8255"
+                    "tail_number": "HL8255",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -32109,6 +32793,16 @@
                     "dest": "Seoul",
                     "iata": "ICN",
                     "tail_number": "HL8073"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "00:40",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8255",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -32723,7 +33417,9 @@
                     "std": "11:50",
                     "dest": "Singapore",
                     "iata": "SIN",
-                    "tail_number": "9V-MBQ"
+                    "tail_number": "9V-MBQ",
+                    "aircraft_type": "B38M",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -32860,6 +33556,16 @@
                     "dest": "Singapore",
                     "iata": "SIN",
                     "tail_number": "9V-MBK"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "11:50",
+                    "dest": "Singapore",
+                    "iata": "SIN",
+                    "tail_number": "9V-MBL",
+                    "aircraft_type": "B38M",
+                    "category": "passenger"
                 }
             ]
         },
@@ -33570,6 +34276,26 @@
                     "iata": "SIN",
                     "tail_number": "9V-MBO"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "16:30",
+                    "dest": "Singapore",
+                    "iata": "SIN",
+                    "tail_number": "9V-MBM",
+                    "aircraft_type": "B38M",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "16:30",
+                    "dest": "Singapore",
+                    "iata": "SIN",
+                    "tail_number": "9V-MBH",
+                    "aircraft_type": "B38M",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -34199,6 +34925,26 @@
                     "iata": "SIN",
                     "tail_number": "9V-NCE"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "17:35",
+                    "dest": "Singapore",
+                    "iata": "SIN",
+                    "tail_number": "9V-NCJ",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "17:35",
+                    "dest": "Singapore",
+                    "iata": "SIN",
+                    "tail_number": "9V-NCH",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -34739,6 +35485,26 @@
                     "dest": "Seoul",
                     "iata": "ICN",
                     "tail_number": "HL8086"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "23:35",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8326",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "23:35",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8000",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
                 }
             ]
         },
@@ -35400,6 +36166,16 @@
                     "dest": "Seoul",
                     "iata": "ICN",
                     "tail_number": "HL8751"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "01:30",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8354",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
                 }
             ]
         },
@@ -36201,7 +36977,8 @@
                     "std": "01:00",
                     "dest": "Daegu",
                     "iata": "TAE",
-                    "tail_number": "HL8070"
+                    "tail_number": "HL8070",
+                    "aircraft_type": "B738"
                 }
             ],
             "28 Feb 2026": [
@@ -36344,6 +37121,16 @@
                     "dest": "Daegu",
                     "iata": "TAE",
                     "tail_number": "HL8324"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "01:00",
+                    "dest": "Daegu",
+                    "iata": "TAE",
+                    "tail_number": "HL8565",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
                 }
             ]
         },
@@ -36971,7 +37758,9 @@
                     "std": "11:55",
                     "dest": "Seoul",
                     "iata": "ICN",
-                    "tail_number": "HL8513"
+                    "tail_number": "HL8513",
+                    "aircraft_type": "B38M",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -37108,6 +37897,16 @@
                     "dest": "Seoul",
                     "iata": "ICN",
                     "tail_number": "HL8581"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "11:55",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8581",
+                    "aircraft_type": "B38M",
+                    "category": "passenger"
                 }
             ]
         },
@@ -37440,7 +38239,9 @@
                     "std": "13:50",
                     "dest": "Hong Kong",
                     "iata": "HKG",
-                    "tail_number": "B-LEI"
+                    "tail_number": "B-LEI",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "01 Mar 2026": [
@@ -38101,7 +38902,9 @@
                     "std": "10:05",
                     "dest": "Hong Kong",
                     "iata": "HKG",
-                    "tail_number": "B-LCS"
+                    "tail_number": "B-LCS",
+                    "aircraft_type": "A20N",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -38238,6 +39041,16 @@
                     "dest": "Hong Kong",
                     "iata": "HKG",
                     "tail_number": "B-KKG"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "10:05",
+                    "dest": "Hong Kong",
+                    "iata": "HKG",
+                    "tail_number": "B-LEL",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -38948,6 +39761,26 @@
                     "iata": "HKG",
                     "tail_number": "B-LEK"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "18:30",
+                    "dest": "Hong Kong",
+                    "iata": "HKG",
+                    "tail_number": "B-LEJ",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "18:30",
+                    "dest": "Hong Kong",
+                    "iata": "HKG",
+                    "tail_number": "B-HTH",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -39447,7 +40280,9 @@
                     "std": "12:25",
                     "dest": "Hong Kong",
                     "iata": "HKG",
-                    "tail_number": "B-LCL"
+                    "tail_number": "B-LCL",
+                    "aircraft_type": "A20N",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -39584,6 +40419,16 @@
                     "dest": "Hong Kong",
                     "iata": "HKG",
                     "tail_number": "B-LCL"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "12:25",
+                    "dest": "Hong Kong",
+                    "iata": "HKG",
+                    "tail_number": "B-LEK",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -39894,7 +40739,9 @@
                     "std": "05:00",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A655"
+                    "tail_number": "VN-A655",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -39972,6 +40819,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A637"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "21:20",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A648",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -40136,7 +40993,9 @@
                     "std": "07:05",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A673"
+                    "tail_number": "VN-A673",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -41126,6 +41985,26 @@
                     "iata": "PQC",
                     "tail_number": "VN-A580"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "15:50",
+                    "dest": "Phu Quoc Island",
+                    "iata": "PQC",
+                    "tail_number": "VN-A677",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "15:50",
+                    "dest": "Phu Quoc Island",
+                    "iata": "PQC",
+                    "tail_number": "VN-A645",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -41491,6 +42370,16 @@
                     "iata": "BKK",
                     "tail_number": "VN-A516"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "17:05",
+                    "dest": "Bangkok",
+                    "iata": "BKK",
+                    "tail_number": "VN-A661",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -41847,6 +42736,16 @@
                     "dest": "Bangkok",
                     "iata": "BKK",
                     "tail_number": "VN-A637"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "07:00",
+                    "dest": "Bangkok",
+                    "iata": "BKK",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
                 }
             ]
         },
@@ -42397,7 +43296,9 @@
                     "std": "05:45",
                     "dest": "Hanoi",
                     "iata": "HAN",
-                    "tail_number": "VN-A633"
+                    "tail_number": "VN-A633",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -42470,6 +43371,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A552"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "05:45",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A575",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -42914,7 +43825,9 @@
                     "std": "07:40",
                     "dest": "Hanoi",
                     "iata": "HAN",
-                    "tail_number": "VN-A657"
+                    "tail_number": "VN-A657",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -43051,6 +43964,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A632"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "08:25",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A655",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ]
         },
@@ -43668,7 +44591,9 @@
                     "std": "12:20",
                     "dest": "Hanoi",
                     "iata": "HAN",
-                    "tail_number": "VN-A636"
+                    "tail_number": "VN-A636",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -43805,6 +44730,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A575"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "12:20",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A644",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -43985,7 +44920,9 @@
                     "std": "07:15",
                     "dest": "Hanoi",
                     "iata": "HAN",
-                    "tail_number": "VN-A666"
+                    "tail_number": "VN-A666",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ],
             "08 Mar 2026": [
@@ -44034,6 +44971,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A575"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "07:15",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A643",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -44711,6 +45658,26 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A647"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "16:10",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A697",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "16:10",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A542",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -45412,6 +46379,26 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A629"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "15:25",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A643",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "15:55",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A546",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -46122,6 +47109,26 @@
                     "iata": "HAN",
                     "tail_number": "VN-A524"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "18:15",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A675",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "18:15",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A642",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -46606,6 +47613,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A632"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "22:00",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A546",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -47147,6 +48164,26 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A634"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "21:35",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A552",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "21:35",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A522",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -47956,7 +48993,9 @@
                     "std": "07:20",
                     "dest": "Hanoi",
                     "iata": "HAN",
-                    "tail_number": "VN-A649"
+                    "tail_number": "VN-A649",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -48093,6 +49132,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A635"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "06:20",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A689",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ]
         },
@@ -48337,7 +49386,9 @@
                     "std": "11:20",
                     "dest": "Hanoi",
                     "iata": "HAN",
-                    "tail_number": "VN-A661"
+                    "tail_number": "VN-A661",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "02 Mar 2026": [
@@ -48394,6 +49445,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A635"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "11:20",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A643",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -48799,6 +49860,16 @@
                     "dest": "Nha Trang",
                     "iata": "CXR",
                     "tail_number": "VN-A667"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "15:35",
+                    "dest": "Nha Trang",
+                    "iata": "CXR",
+                    "tail_number": "VN-A535",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -49259,7 +50330,9 @@
                     "std": "06:25",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A635"
+                    "tail_number": "VN-A635",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -49396,6 +50469,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A642"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "06:25",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A548",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -49824,7 +50907,9 @@
                     "std": "05:25",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A630"
+                    "tail_number": "VN-A630",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -49945,6 +51030,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A633"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "05:25",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A677",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -50269,7 +51364,9 @@
                     "std": "10:10",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A538"
+                    "tail_number": "VN-A538",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ],
             "01 Mar 2026": [
@@ -50850,7 +51947,9 @@
                     "std": "11:15",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A543"
+                    "tail_number": "VN-A543",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -50987,6 +52086,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A535"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "12:15",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A575",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -51367,7 +52476,9 @@
                     "std": "07:50",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A642"
+                    "tail_number": "VN-A642",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -51504,6 +52615,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A644"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "09:20",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A677",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -52158,6 +53279,26 @@
                     "iata": "SGN",
                     "tail_number": "VN-A535"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "15:00",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A640",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "15:00",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A543",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -52745,7 +53886,9 @@
                     "std": "12:05",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A645"
+                    "tail_number": "VN-A645",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -52882,6 +54025,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A644"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "13:10",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A685",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -53398,7 +54551,9 @@
                     "std": "13:30",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A651"
+                    "tail_number": "VN-A651",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -53535,6 +54690,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A642"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "13:30",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A677",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -53844,6 +55009,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A644"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "20:45",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A635",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -54433,6 +55608,26 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A639"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "17:15",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A663",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "17:15",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A673",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -55077,6 +56272,26 @@
                     "iata": "SGN",
                     "tail_number": "VN-A684"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "19:30",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "19:30",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A636",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -55590,6 +56805,26 @@
                     "iata": "SGN",
                     "tail_number": "VN-A684"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "23:15",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "23:15",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A670",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -55970,6 +57205,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A644"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "20:45",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A657",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -56648,6 +57893,26 @@
                     "iata": "SGN",
                     "tail_number": "LY-MLN"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "22:30",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "22:30",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
+                }
             ]
         },
         "is_fixed": 0
@@ -57325,6 +58590,26 @@
                     "iata": "SGN",
                     "tail_number": "VN-A675"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "20:05",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A575",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "20:05",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A667",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -57904,7 +59189,9 @@
                     "std": "13:30",
                     "dest": "Can Tho",
                     "iata": "VCA",
-                    "tail_number": "VN-A685"
+                    "tail_number": "VN-A685",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -58041,6 +59328,16 @@
                     "dest": "Can Tho",
                     "iata": "VCA",
                     "tail_number": "VN-A676"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "13:05",
+                    "dest": "Can Tho",
+                    "iata": "VCA",
+                    "tail_number": "VN-A637",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -58301,7 +59598,9 @@
                     "std": "05:20",
                     "dest": "Phu Quoc Island",
                     "iata": "PQC",
-                    "tail_number": "VN-A645"
+                    "tail_number": "VN-A645",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -58890,7 +60189,9 @@
                     "std": "08:25",
                     "dest": "Phu Quoc Island",
                     "iata": "PQC",
-                    "tail_number": "VN-A685"
+                    "tail_number": "VN-A685",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -59027,6 +60328,16 @@
                     "dest": "Phu Quoc Island",
                     "iata": "PQC",
                     "tail_number": "VN-A676"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "08:35",
+                    "dest": "Phu Quoc Island",
+                    "iata": "PQC",
+                    "tail_number": "VN-A663",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ]
         },
@@ -59327,7 +60638,9 @@
                     "std": "10:20",
                     "dest": "Haiphong",
                     "iata": "HPH",
-                    "tail_number": "VN-A630"
+                    "tail_number": "VN-A630",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -59464,6 +60777,16 @@
                     "dest": "Haiphong",
                     "iata": "HPH",
                     "tail_number": "VN-A647"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "10:20",
+                    "dest": "Haiphong",
+                    "iata": "HPH",
+                    "tail_number": "VN-A685",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -60054,6 +61377,26 @@
                     "iata": "HPH",
                     "tail_number": "VN-A676"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "17:10",
+                    "dest": "Haiphong",
+                    "iata": "HPH",
+                    "tail_number": "VN-A657",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "17:10",
+                    "dest": "Haiphong",
+                    "iata": "HPH",
+                    "tail_number": "VN-A635",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -60402,6 +61745,16 @@
                     "dest": "Da Lat",
                     "iata": "DLI",
                     "tail_number": "VN-A634"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "17:00",
+                    "dest": "Da Lat",
+                    "iata": "DLI",
+                    "tail_number": "VN-A636",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -61381,7 +62734,9 @@
                     "std": "09:50",
                     "dest": "Kuala Lumpur",
                     "iata": "KUL",
-                    "tail_number": "VN-A542"
+                    "tail_number": "VN-A542",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -61518,6 +62873,16 @@
                     "dest": "Kuala Lumpur",
                     "iata": "KUL",
                     "tail_number": "VN-A684"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "10:10",
+                    "dest": "Kuala Lumpur",
+                    "iata": "KUL",
+                    "tail_number": "VN-A661",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -61683,6 +63048,16 @@
                     "dest": "Taichung",
                     "iata": "RMQ",
                     "tail_number": "VN-A534"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "14:35",
+                    "dest": "Taichung",
+                    "iata": "RMQ",
+                    "tail_number": "VN-A630",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -62463,6 +63838,26 @@
                     "iata": "ICN",
                     "tail_number": "VN-A554"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "15:10",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "VN-A674",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "15:10",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "VN-A640",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -63140,6 +64535,26 @@
                     "iata": "ICN",
                     "tail_number": "VN-A522"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "23:40",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "VN-A634",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "23:40",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "VN-A651",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -63360,6 +64775,16 @@
                     "dest": "Seoul",
                     "iata": "ICN",
                     "tail_number": "VN-A634"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "22:45",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "VN-A630",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -63805,6 +65230,16 @@
                     "dest": "Singapore",
                     "iata": "SIN",
                     "tail_number": "VN-A629"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "15:00",
+                    "dest": "Singapore",
+                    "iata": "SIN",
+                    "tail_number": "VN-A667",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -64393,7 +65828,9 @@
                     "std": "12:15",
                     "dest": "Macau",
                     "iata": "MFM",
-                    "tail_number": "VN-A642"
+                    "tail_number": "VN-A642",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -64530,6 +65967,16 @@
                     "dest": "Macau",
                     "iata": "MFM",
                     "tail_number": "VN-A543"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "12:15",
+                    "dest": "Macau",
+                    "iata": "MFM",
+                    "tail_number": "VN-A657",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -64999,6 +66446,26 @@
                     "dest": "Macau",
                     "iata": "MFM",
                     "tail_number": "VN-A687"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "18:45",
+                    "dest": "Macau",
+                    "iata": "MFM",
+                    "tail_number": "VN-A685",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "18:45",
+                    "dest": "Macau",
+                    "iata": "MFM",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
                 }
             ]
         },
@@ -65688,7 +67155,9 @@
                     "std": "12:05",
                     "dest": "Singapore",
                     "iata": "SIN",
-                    "tail_number": "VN-A634"
+                    "tail_number": "VN-A634",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -65825,6 +67294,16 @@
                     "dest": "Singapore",
                     "iata": "SIN",
                     "tail_number": "VN-A661"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "12:05",
+                    "dest": "Singapore",
+                    "iata": "SIN",
+                    "tail_number": "VN-A634",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -66365,7 +67844,9 @@
                     "std": "00:30",
                     "dest": "Busan",
                     "iata": "PUS",
-                    "tail_number": "VN-A634"
+                    "tail_number": "VN-A634",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -66502,6 +67983,16 @@
                     "dest": "Busan",
                     "iata": "PUS",
                     "tail_number": "VN-A661"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "00:30",
+                    "dest": "Busan",
+                    "iata": "PUS",
+                    "tail_number": "VN-A657",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -67074,7 +68565,9 @@
                     "std": "06:00",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A625"
+                    "tail_number": "VN-A625",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -67211,6 +68704,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A357"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "06:00",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A398",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -67791,7 +69294,9 @@
                     "std": "08:00",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A609"
+                    "tail_number": "VN-A609",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -67928,6 +69433,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A399"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "08:00",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A395",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -68500,7 +70015,9 @@
                     "std": "08:55",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A619"
+                    "tail_number": "VN-A619",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -68637,6 +70154,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A617"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "08:55",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A505",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -69225,7 +70752,9 @@
                     "std": "10:05",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A614"
+                    "tail_number": "VN-A614",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -69362,6 +70891,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A356"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "10:05",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A392",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -69950,7 +71489,9 @@
                     "std": "11:00",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A324"
+                    "tail_number": "VN-A324",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -70087,6 +71628,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A606"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "11:00",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A323",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -70675,7 +72226,9 @@
                     "std": "12:00",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A395"
+                    "tail_number": "VN-A395",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -70812,6 +72365,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A608"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "12:00",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A393",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -71384,7 +72947,9 @@
                     "std": "13:00",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A335"
+                    "tail_number": "VN-A335",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -71521,6 +73086,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A617"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "13:00",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A505",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -72101,7 +73676,9 @@
                     "std": "14:00",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A610"
+                    "tail_number": "VN-A610",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -72238,6 +73815,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A335"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "14:00",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A335",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -72948,6 +74535,26 @@
                     "iata": "SGN",
                     "tail_number": "VN-A338"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "16:05",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A396",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "15:25",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A396",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -73657,6 +75264,26 @@
                     "iata": "SGN",
                     "tail_number": "VN-A606"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "17:10",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A331",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "17:10",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A332",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -74350,6 +75977,26 @@
                     "iata": "SGN",
                     "tail_number": "VN-A335"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "18:15",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A507",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "18:10",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A610",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -74690,6 +76337,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A390"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "18:50",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A353",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -75392,6 +77049,26 @@
                     "iata": "SGN",
                     "tail_number": "VN-A501"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "21:25",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A602",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "20:50",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
+                }
             ]
         },
         "is_fixed": 0
@@ -75723,7 +77400,9 @@
                     "std": "13:20",
                     "dest": "Can Tho",
                     "iata": "VCA",
-                    "tail_number": "VN-A606"
+                    "tail_number": "VN-A606",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "01 Mar 2026": [
@@ -75804,6 +77483,16 @@
                     "dest": "Can Tho",
                     "iata": "VCA",
                     "tail_number": "VN-A601"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "13:20",
+                    "dest": "Can Tho",
+                    "iata": "VCA",
+                    "tail_number": "VN-A338",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -75905,6 +77594,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A611"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "05:55",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A611",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -76395,7 +78094,9 @@
                     "std": "06:05",
                     "dest": "Hanoi",
                     "iata": "HAN",
-                    "tail_number": "VN-A393"
+                    "tail_number": "VN-A393",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -77080,7 +78781,9 @@
                     "std": "07:55",
                     "dest": "Hanoi",
                     "iata": "HAN",
-                    "tail_number": "VN-A613"
+                    "tail_number": "VN-A613",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -77217,6 +78920,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A358"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "08:00",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A616",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -77797,7 +79510,9 @@
                     "std": "09:50",
                     "dest": "Hanoi",
                     "iata": "HAN",
-                    "tail_number": "VN-A399"
+                    "tail_number": "VN-A399",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -77934,6 +79649,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A505"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "10:10",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A611",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -78514,7 +80239,9 @@
                     "std": "12:10",
                     "dest": "Hanoi",
                     "iata": "HAN",
-                    "tail_number": "VN-A325"
+                    "tail_number": "VN-A325",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -78651,6 +80378,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A399"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "12:10",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A608",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -79159,7 +80896,9 @@
                     "std": "06:00",
                     "dest": "Haiphong",
                     "iata": "HPH",
-                    "tail_number": "VN-A606"
+                    "tail_number": "VN-A606",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -79296,6 +81035,16 @@
                     "dest": "Haiphong",
                     "iata": "HPH",
                     "tail_number": "VN-A601"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "06:00",
+                    "dest": "Haiphong",
+                    "iata": "HPH",
+                    "tail_number": "VN-A338",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -79780,7 +81529,9 @@
                     "std": "12:55",
                     "dest": "Hanoi",
                     "iata": "HAN",
-                    "tail_number": "VN-A327"
+                    "tail_number": "VN-A327",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -80441,7 +82192,9 @@
                     "std": "14:00",
                     "dest": "Hanoi",
                     "iata": "HAN",
-                    "tail_number": "VN-A334"
+                    "tail_number": "VN-A334",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -80578,6 +82331,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A395"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "13:45",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A612",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -81261,6 +83024,26 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A615"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "15:00",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A356",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "15:05",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
                 }
             ]
         },
@@ -81963,6 +83746,26 @@
                     "iata": "HAN",
                     "tail_number": "VN-A327"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "17:05",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A619",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "17:10",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A327",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -82664,6 +84467,26 @@
                     "iata": "HAN",
                     "tail_number": "VN-A513"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "18:15",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A513",
+                    "aircraft_type": "A20N",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "18:10",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A514",
+                    "aircraft_type": "A20N",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -83364,6 +85187,26 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A514"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "19:05",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A514",
+                    "aircraft_type": "A20N",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "19:10",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A515",
+                    "aircraft_type": "A20N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -84383,6 +86226,26 @@
                     "iata": "CXR",
                     "tail_number": "VN-A601"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "17:30",
+                    "dest": "Nha Trang",
+                    "iata": "CXR",
+                    "tail_number": "VN-A338",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "17:30",
+                    "dest": "Nha Trang",
+                    "iata": "CXR",
+                    "tail_number": "VN-A606",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -84962,7 +86825,9 @@
                     "std": "09:50",
                     "dest": "Da Lat",
                     "iata": "DLI",
-                    "tail_number": "VN-A606"
+                    "tail_number": "VN-A606",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "01 Mar 2026": [
@@ -84987,6 +86852,16 @@
                     "dest": "Da Lat",
                     "iata": "DLI",
                     "tail_number": "VN-A398"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "09:45",
+                    "dest": "Da Lat",
+                    "iata": "DLI",
+                    "tail_number": "VN-A338",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -85588,7 +87463,9 @@
                     "std": "00:30",
                     "dest": "Tokyo",
                     "iata": "NRT",
-                    "tail_number": "VN-A610"
+                    "tail_number": "VN-A610",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -85725,6 +87602,16 @@
                     "dest": "Tokyo",
                     "iata": "NRT",
                     "tail_number": "VN-A610"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "00:30",
+                    "dest": "Tokyo",
+                    "iata": "NRT",
+                    "tail_number": "VN-A335",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -86073,7 +87960,9 @@
                     "std": "01:05",
                     "dest": "Osaka",
                     "iata": "KIX",
-                    "tail_number": "VN-A334"
+                    "tail_number": "VN-A334",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "01 Mar 2026": [
@@ -86154,6 +88043,16 @@
                     "dest": "Osaka",
                     "iata": "KIX",
                     "tail_number": "VN-A335"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "01:05",
+                    "dest": "Osaka",
+                    "iata": "KIX",
+                    "tail_number": "VN-A390",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -86856,6 +88755,26 @@
                     "iata": "ICN",
                     "tail_number": "VN-A505"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "23:30",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "VN-A507",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "23:30",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "VN-A512",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -87461,6 +89380,26 @@
                     "iata": "BKK",
                     "tail_number": "VN-A610"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "15:15",
+                    "dest": "Bangkok",
+                    "iata": "BKK",
+                    "tail_number": "VN-A390",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "15:15",
+                    "dest": "Bangkok",
+                    "iata": "BKK",
+                    "tail_number": "VN-A608",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -87695,7 +89634,9 @@
                     "std": "07:35",
                     "dest": "Vinh",
                     "iata": "VII",
-                    "tail_number": "VN-A622"
+                    "tail_number": "VN-A622",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -87867,7 +89808,9 @@
                     "std": "02:10",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A395"
+                    "tail_number": "VN-A395",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -87976,7 +89919,9 @@
                     "std": "03:30",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A390"
+                    "tail_number": "VN-A390",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -88085,7 +90030,9 @@
                     "std": "03:25",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A353"
+                    "tail_number": "VN-A353",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -88194,7 +90141,9 @@
                     "std": "04:40",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A398"
+                    "tail_number": "VN-A398",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -88279,7 +90228,9 @@
                     "std": "04:10",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A619"
+                    "tail_number": "VN-A619",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -88712,7 +90663,9 @@
                     "std": "00:10",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A617"
+                    "tail_number": "VN-A617",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -89209,6 +91162,16 @@
                     "iata": "SGN",
                     "tail_number": "VN-A614"
                 }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "23:25",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "9H-MLE",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -89354,6 +91317,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A390"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "20:20",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A390",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -90204,6 +92177,16 @@
                     "iata": "SGN",
                     "tail_number": "9H-MLO"
                 }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "19:05",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A501",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -90312,6 +92295,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A606"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "01:00",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A613",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -90530,7 +92523,9 @@
                     "std": "00:20",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A393"
+                    "tail_number": "VN-A393",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -90547,6 +92542,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A327"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "21:05",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A338",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -90777,6 +92782,26 @@
                     "iata": "SGN",
                     "tail_number": "VN-A357"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "19:10",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A398",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "21:45",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A608",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -90797,6 +92822,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A623"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "21:00",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A396",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -90911,7 +92946,9 @@
                     "std": "01:55",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A332"
+                    "tail_number": "VN-A332",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "01 Mar 2026": [
@@ -91017,6 +93054,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A611"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "23:40",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A625",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -91125,6 +93172,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A331"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "22:25",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A614",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -91770,6 +93827,26 @@
                     "iata": "HAN",
                     "tail_number": "VN-A611"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "14:40",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A508",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "14:40",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
+                }
             ]
         },
         "is_fixed": 0
@@ -92100,6 +94177,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A357"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "15:10",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A622",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -92714,6 +94801,16 @@
                     "iata": "HAN",
                     "tail_number": "VN-A325"
                 }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "23:10",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A605",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -92734,6 +94831,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A513"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "00:05",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A619",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ]
         },
@@ -93067,6 +95174,16 @@
                     "iata": "BMV",
                     "tail_number": "VN-A601"
                 }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "14:50",
+                    "dest": "Buon Ma Thuot",
+                    "iata": "BMV",
+                    "tail_number": "VN-A501",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -93245,7 +95362,9 @@
                     "std": "11:20",
                     "dest": "Nha Trang",
                     "iata": "CXR",
-                    "tail_number": "VN-A512"
+                    "tail_number": "VN-A512",
+                    "aircraft_type": "A21N",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -93675,7 +95794,9 @@
                     "std": "08:30",
                     "dest": "Hanoi",
                     "iata": "HAN",
-                    "tail_number": "VN-A129"
+                    "tail_number": "VN-A129",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -93804,6 +95925,16 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A129"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "08:30",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A129",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ]
         },
@@ -94473,6 +96604,26 @@
                     "dest": "Hanoi",
                     "iata": "HAN",
                     "tail_number": "VN-A129"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "18:55",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "VN-A129",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "18:55",
+                    "dest": "Hanoi",
+                    "iata": "HAN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
                 }
             ]
         },
@@ -95223,7 +97374,9 @@
                     "std": "11:05",
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
-                    "tail_number": "VN-A129"
+                    "tail_number": "VN-A129",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -95360,6 +97513,16 @@
                     "dest": "Ho Chi Minh City",
                     "iata": "SGN",
                     "tail_number": "VN-A289"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "11:05",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A136",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ]
         },
@@ -96054,6 +98217,26 @@
                     "iata": "SGN",
                     "tail_number": "9H-MLW"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "21:15",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "9H-MLW",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "21:15",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "VN-A289",
+                    "aircraft_type": "A321",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 0
@@ -96633,7 +98816,9 @@
                     "std": "13:15",
                     "dest": "Bangkok",
                     "iata": "BKK",
-                    "tail_number": "HS-VZF"
+                    "tail_number": "HS-VZF",
+                    "aircraft_type": "B38M",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -96770,6 +98955,16 @@
                     "dest": "Bangkok",
                     "iata": "BKK",
                     "tail_number": "HS-VZC"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "13:15",
+                    "dest": "Bangkok",
+                    "iata": "BKK",
+                    "tail_number": "HS-VKS",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ]
         },
@@ -97120,6 +99315,16 @@
                     "iata": "BKK",
                     "tail_number": "HS-VZD"
                 }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "18:10",
+                    "dest": "Bangkok",
+                    "iata": "BKK",
+                    "tail_number": "HS-VZF",
+                    "aircraft_type": "B38M",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -97347,7 +99552,9 @@
                     "std": "10:40",
                     "dest": "Bangkok",
                     "iata": "BKK",
-                    "tail_number": "HS-VKS"
+                    "tail_number": "HS-VKS",
+                    "aircraft_type": "A320",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -97825,6 +100032,26 @@
                     "dest": "Seoul",
                     "iata": "ICN",
                     "tail_number": "HL8709"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "22:55",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "22:55",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8709",
+                    "aircraft_type": "A332",
+                    "category": "passenger"
                 }
             ]
         },
@@ -98452,6 +100679,16 @@
                     "iata": "ICN",
                     "tail_number": "HL8704"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "21:50",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
+                }
             ]
         },
         "is_fixed": 0
@@ -99031,7 +101268,9 @@
                     "std": "01:20",
                     "dest": "Seoul",
                     "iata": "ICN",
-                    "tail_number": "HL8544"
+                    "tail_number": "HL8544",
+                    "aircraft_type": "B38M",
+                    "category": "passenger"
                 }
             ],
             "28 Feb 2026": [
@@ -99168,6 +101407,16 @@
                     "dest": "Seoul",
                     "iata": "ICN",
                     "tail_number": "HL8544"
+                }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "01:20",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8507",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
                 }
             ]
         },
@@ -99702,6 +101951,26 @@
                     "iata": "ICN",
                     "tail_number": "HL8375"
                 }
+            ],
+            "05 Jan 2026": [
+                {
+                    "std": "20:40",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8375",
+                    "aircraft_type": "B738",
+                    "category": "passenger"
+                }
+            ],
+            "27 Feb 2026": [
+                {
+                    "std": "20:40",
+                    "dest": "Seoul",
+                    "iata": "ICN",
+                    "tail_number": "HL8544",
+                    "aircraft_type": "B38M",
+                    "category": "passenger"
+                }
             ]
         },
         "is_fixed": 1
@@ -99718,5 +101987,19 @@
             ]
         },
         "is_fixed": 0
+    },
+    "VN9456": {
+        "schedule": {
+            "05 Jan 2026": [
+                {
+                    "std": "14:00",
+                    "dest": "Ho Chi Minh City",
+                    "iata": "SGN",
+                    "tail_number": "",
+                    "aircraft_type": "",
+                    "category": ""
+                }
+            ]
+        }
     }
 }

@@ -2,7 +2,7 @@
 
 ## 1) Quyết định đã chốt
 1. Return/Emergency threshold: mặc định <= 90 phút (tối đa cấu hình 120), không dùng 600 phút.
-2. DAD runway: giữ Unknown/N/A, tuyệt đối không ép default.
+2. DAD runway: arrival fill theo orientation window (+-30p); nếu vẫn thiếu thì giữ Unknown. Departure vẫn giữ Unknown, không ép default.
 3. Military/Helicopter: không dùng làm dòng huấn luyện thương mại, tách thành nguồn feature ngoại sinh.
 4. Logic tail mismatch: không ghi đè dữ liệu gốc.
    - Departure: Tail_Number -> Scheduled_Tail.
@@ -94,7 +94,7 @@ Ranking giữ dòng trong cụm được phép xóa:
 
 ### 4.5 Runway normalization
 - Orientation window (+-30 phút) cho arrival dùng Arrival_Actual_Landing_DateTime.
-- DAD runway vẫn giữ Unknown nếu thiếu nguồn runway.
+- DAD arrival: nếu thiếu runway thì suy ra bằng orientation window (+-30 phút); nếu không đủ tín hiệu thì giữ Unknown. DAD departure vẫn giữ Unknown.
 
 ### 4.6 Aircraft swap matching
 - Ghép route departure -> arrival dùng mốc arrival actual landing datetime.

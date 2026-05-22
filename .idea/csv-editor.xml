@@ -38,7 +38,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Data crawl/Bronze_layer/Departure/dad_aircraft_departure_updated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Data crawl/Bronze_layer/Departure/dad_flights_departure_bronze_layer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Bronze_layer/Departure/dad_flights_departure_bronze_layer_v2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
