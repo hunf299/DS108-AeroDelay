@@ -49,6 +49,6 @@ HAN,departure,12999,13297,near_time,5.0,Flight_No=NX981|Scheduled_Time=23:00|Air
 HAN,departure,26267,26576,near_time,2.0,Flight_No=VN416|Scheduled_Time=23:40|Aircraft_Type=B78X|Tail=VN-A877
 HAN,departure,14818,15132,near_time,5.0,Flight_No=VJ7526|Scheduled_Time=23:40|Aircraft_Type=A321|Tail=VN-A649
 HAN,departure,21020,21362,near_time,1.0,Flight_No=QH283|Scheduled_Time=23:10|Aircraft_Type=B739|Tail=PK-BBK
-DAD,departure,7427,7426,near_time,0.0,Flight_No=QH195|Scheduled_Time=04:25|Aircraft_Type=B739|Tail=PK-BBK
-DAD,departure,7726,7725,near_time,0.0,Flight_No=QH195|Scheduled_Time=04:25|Aircraft_Type=B739|Tail=PK-BBK
-DAD,departure,12001,12000,near_time,0.0,Flight_No=QH146|Scheduled_Time=18:15|Aircraft_Type=A321|Tail=VN-A227
+DAD,departure,7566,7565,near_time,0.0,Flight_No=QH195|Scheduled_Time=04:25|Aircraft_Type=B739|Tail=PK-BBK
+DAD,departure,7865,7864,near_time,0.0,Flight_No=QH195|Scheduled_Time=04:25|Aircraft_Type=B739|Tail=PK-BBK
+DAD,departure,12212,12211,near_time,0.0,Flight_No=QH146|Scheduled_Time=18:15|Aircraft_Type=A321|Tail=VN-A227
