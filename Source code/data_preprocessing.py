@@ -1294,13 +1294,21 @@ def build_swap_matches_for_route(
     dest: str,
     max_gap_hours: float,
 ) -> pd.DataFrame:
-    dep_time = departure_df["Scheduled_DateTime"].where(
-        departure_df["Scheduled_DateTime"].notna(), departure_df["Actual_DateTime"]
-    )
+    origin_upper = origin.upper()
+    dest_upper = dest.upper()
+    dep_time = event_datetime_series(departure_df)
     arr_time = event_datetime_series(arrival_df)
 
-    dep_work = departure_df.loc[departure_df["Flight_No"].notna() & dep_time.notna(), ["Flight_No", "Scheduled_Tail"]].copy()
-    arr_work = arrival_df.loc[arrival_df["Flight_No"].notna() & arr_time.notna(), ["Flight_No", "Actual_Tail"]].copy()
+    dep_mask = departure_df["Flight_No"].notna() & dep_time.notna()
+    if "IATA" in departure_df.columns:
+        dep_mask = dep_mask & (departure_df["IATA"].astype("string").str.upper().str.strip() == dest_upper)
+
+    arr_mask = arrival_df["Flight_No"].notna() & arr_time.notna()
+    if "IATA" in arrival_df.columns:
+        arr_mask = arr_mask & (arrival_df["IATA"].astype("string").str.upper().str.strip() == origin_upper)
+
+    dep_work = departure_df.loc[dep_mask, ["Flight_No", "Scheduled_Tail"]].copy()
+    arr_work = arrival_df.loc[arr_mask, ["Flight_No", "Actual_Tail"]].copy()
 
     if dep_work.empty or arr_work.empty:
         return pd.DataFrame()
@@ -1324,7 +1332,7 @@ def build_swap_matches_for_route(
         return pd.DataFrame()
 
     nearest = merged.sort_values(["dep_index", "gap_hours"]).groupby("dep_index", as_index=False).first()
-    nearest["Route"] = f"{origin.upper()}->{dest.upper()}"
+    nearest["Route"] = f"{origin_upper}->{dest_upper}"
     return nearest
 
 
@@ -1506,8 +1514,16 @@ def finalize_dataframe_for_export(df: pd.DataFrame) -> pd.DataFrame:
         out["Scheduled_Time"] = out["Scheduled_Time"].astype("string")
         out.loc[out["Scheduled_DateTime"].notna(), "Scheduled_Time"] = scheduled_text
 
+    redundant_cols = [
+        "Arrival_Planned_Landing_Time",
+        "Arrival_Actual_Landing_Time",
+        "Arrival_Planned_Landing_DateTime",
+        "Arrival_Actual_Landing_DateTime",
+        "Scheduled_DateTime",
+        "Actual_DateTime",
+    ]
     helper_cols = ["_Runway_Orientation"]
-    drop_cols = [c for c in helper_cols if c in out.columns]
+    drop_cols = [c for c in helper_cols + redundant_cols if c in out.columns]
     if drop_cols:
         out = out.drop(columns=drop_cols)
 

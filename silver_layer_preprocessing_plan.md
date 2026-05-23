@@ -73,6 +73,10 @@ Quy uoc Crawl_Date va chinh ngay cho Scheduled/Planned:
 - DAD departure: Crawl_Date la ngay cua Scheduled_Time; Actual datetime co the +1 ngay neu actual gio som hon scheduled (qua dem).
 - SGN/HAN arrival + departure: Crawl_Date la ngay cua Actual_Time; Scheduled datetime (departure) co the +1/-1 ngay de gan Actual (chenh > 12h thi dich ngay).
 
+Export format:
+- Scheduled_Time va Actual_Time duoc ghi de thanh dang YYYY-MM-DD HH:MM de de quan sat.
+- Loai bo cac cot trung thong tin voi 2 cot tren trong file xuat (Scheduled_DateTime, Actual_DateTime, Arrival_*_DateTime, Arrival_*_Time).
+
 ### 4.3 Deduplicate (recheck theo rule mới)
 Áp dụng cho cả arrival và departure, chia 2 nhóm hợp lệ để xóa:
 1. Near-time duplicates:
@@ -103,6 +107,8 @@ Ranking giữ dòng trong cụm được phép xóa:
 
 ### 4.6 Aircraft swap matching
 - Ghép route departure -> arrival dùng mốc arrival actual landing datetime.
+- Departure time ưu tien Actual_DateTime (fallback Scheduled_DateTime neu thieu).
+- Loc route theo IATA: departure.IATA = destination, arrival.IATA = origin.
 - Không dùng planned landing của SGN/HAN do không khả dụng chuẩn.
 - Vẫn giữ thiết kế Scheduled_Tail / Actual_Tail / Is_Aircraft_Swapped.
 
