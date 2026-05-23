@@ -150,6 +150,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Data crawl/Silver_layer/Audit/audit_tail_reconciliation.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Data crawl/Silver_layer/Departure/dad_flights_departure_silver_layer.csv">
           <value>
             <Attribute>
@@ -179,6 +186,13 @@
           </value>
         </entry>
         <entry key="/Data crawl/Silver_layer/Features/military_activity_events.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Silver_layer/Features/weather_features_hourly.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
