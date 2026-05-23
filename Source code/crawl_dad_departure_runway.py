@@ -1,12 +1,8 @@
-from selenium import webdriver
-from selenium.webdriver.edge.options import Options as EdgeOptions
 from selenium.webdriver.common.by import By
-from selenium.webdriver.edge.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 import pandas as pd
-import time
 from datetime import datetime
 import os
 import undetected_chromedriver as uc
@@ -18,7 +14,7 @@ CSV_FILE = r"Z:\PycharmProjects\DS108-AeroDelay\Data crawl\Silver_layer\Departur
 
 # Nếu bạn muốn chỉ vá 1 vài ngày cụ thể, điền vào đây (VD: ["2026-03-15"]).
 # Để trống [] tool sẽ tự quét toàn bộ CSV.
-TARGET_PATCH_DATES = ["2026-02-08", "2026-03-07"]
+TARGET_PATCH_DATES = []
 
 
 def start_undetected_browser():
@@ -31,7 +27,7 @@ def start_undetected_browser():
 
     # Khởi tạo trình duyệt
     # Lưu ý: Không dùng chế độ ẩn danh (incognito) hay headless vì dễ bị Cloudflare nghi ngờ
-    driver = uc.Chrome(options=options)
+    driver = uc.Chrome(options=options, version_main=148)
     driver.maximize_window()
 
     return driver
