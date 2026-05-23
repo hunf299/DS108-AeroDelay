@@ -68,6 +68,11 @@ Mapping chi tiết:
   - Planned datetime giữ N/A nếu không có nguồn schedule chuẩn.
 - Xử lý rollover qua ngày áp dụng trên actual landing datetime (ưu tiên theo nghiệp vụ).
 
+Quy uoc Crawl_Date va chinh ngay cho Scheduled/Planned:
+- DAD arrival: Crawl_Date la ngay cua Actual_Time; Planned datetime co the +1/-1 ngay de gan Actual (chenh > 12h thi dich ngay).
+- DAD departure: Crawl_Date la ngay cua Scheduled_Time; Actual datetime co the +1 ngay neu actual gio som hon scheduled (qua dem).
+- SGN/HAN arrival + departure: Crawl_Date la ngay cua Actual_Time; Scheduled datetime (departure) co the +1/-1 ngay de gan Actual (chenh > 12h thi dich ngay).
+
 ### 4.3 Deduplicate (recheck theo rule mới)
 Áp dụng cho cả arrival và departure, chia 2 nhóm hợp lệ để xóa:
 1. Near-time duplicates:
