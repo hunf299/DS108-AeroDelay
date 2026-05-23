@@ -11179,7 +11179,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-22,01:15,02:50,Manila,MNL,Cebu Pacific,5J746,2,11L,Landed,RP-C4146,A21N,passenger,N/A,N/A,01:15,170,N/A,2026-01-22 01:15:00,N/A,2026-01-22 01:15:00,False,False,N/A,0,0,False
 2026-01-22,01:08,01:38,Ho Chi Minh City,SGN,VietJet Air,VJ178,1,11L,Landed,VN-A553,A21N,passenger,N/A,N/A,01:08,98,N/A,2026-01-23 01:08:00,N/A,2026-01-23 01:08:00,False,False,N/A,0,0,False
 2026-01-22,01:00,02:14,Kolkata,CCU,IndiGo,6E8961,0,11L,Landed,VT-IKW,A321,cargo,N/A,N/A,01:00,134,N/A,2026-01-22 01:00:00,N/A,2026-01-22 01:00:00,False,False,N/A,0,0,False
-2026-01-22,00:56,01:40,Ho Chi Minh City,SGN,VietJet Air,VJ641,1,11L,Landed,VN-A699,A320,passenger,N/A,N/A,00:56,100,N/A,2026-01-23 00:56:00,N/A,2026-01-23 00:56:00,False,False,N/A,0,0,False
+2026-01-22,00:56,01:40,Ho Chi Minh City,SGN,VietJet Air,VJ164,1,11L,Landed,VN-A699,A320,passenger,N/A,N/A,00:56,100,N/A,2026-01-23 00:56:00,N/A,2026-01-23 00:56:00,False,False,N/A,0,0,False
 2026-01-22,00:49,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN270,1,11L,Landed,VN-A612,A321,passenger,N/A,N/A,00:49,102,N/A,2026-01-23 00:49:00,N/A,2026-01-23 00:49:00,False,False,N/A,0,0,False
 2026-01-22,00:46,03:23,Jinan,TNA,Shandong Airlines,SC8071,2,11L,Landed,B-7978,B738,passenger,N/A,N/A,00:46,203,N/A,2026-01-22 00:46:00,N/A,2026-01-22 00:46:00,False,False,N/A,0,0,False
 2026-01-22,00:39,01:36,Shenzhen,SZX,Shenzhen Airlines,ZH107,2,11L,Landed,B-6935,A320,passenger,N/A,N/A,00:39,96,N/A,2026-01-22 00:39:00,N/A,2026-01-22 00:39:00,False,False,N/A,0,0,False
