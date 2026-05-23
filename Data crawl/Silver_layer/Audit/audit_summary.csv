@@ -11,6 +11,9 @@ SGN,arrival,dual_runway_duplicate_removed,0
 SGN,arrival,spq_to_9g_converted,236
 SGN,arrival,spq_to_9g_airline_match,236
 SGN,arrival,spq_to_9g_pattern_match,0
+SGN,arrival,dad_cancelled_cleared,0
+SGN,arrival,dad_bl_to_vn,0
+SGN,arrival,dad_airline_pacific_to_vietnam,0
 SGN,arrival,runway_missing_before,778
 SGN,arrival,runway_filled_orientation,772
 SGN,arrival,runway_filled_nearest,6
@@ -28,6 +31,9 @@ SGN,departure,dual_runway_duplicate_removed,6
 SGN,departure,spq_to_9g_converted,236
 SGN,departure,spq_to_9g_airline_match,236
 SGN,departure,spq_to_9g_pattern_match,0
+SGN,departure,dad_cancelled_cleared,0
+SGN,departure,dad_bl_to_vn,0
+SGN,departure,dad_airline_pacific_to_vietnam,0
 SGN,departure,runway_missing_before,192
 SGN,departure,runway_filled_orientation,189
 SGN,departure,runway_filled_nearest,3
@@ -45,6 +51,9 @@ HAN,arrival,dual_runway_duplicate_removed,0
 HAN,arrival,spq_to_9g_converted,242
 HAN,arrival,spq_to_9g_airline_match,242
 HAN,arrival,spq_to_9g_pattern_match,0
+HAN,arrival,dad_cancelled_cleared,0
+HAN,arrival,dad_bl_to_vn,0
+HAN,arrival,dad_airline_pacific_to_vietnam,0
 HAN,arrival,runway_missing_before,894
 HAN,arrival,runway_filled_orientation,885
 HAN,arrival,runway_filled_nearest,9
@@ -62,6 +71,9 @@ HAN,departure,dual_runway_duplicate_removed,0
 HAN,departure,spq_to_9g_converted,246
 HAN,departure,spq_to_9g_airline_match,246
 HAN,departure,spq_to_9g_pattern_match,0
+HAN,departure,dad_cancelled_cleared,0
+HAN,departure,dad_bl_to_vn,0
+HAN,departure,dad_airline_pacific_to_vietnam,0
 HAN,departure,runway_missing_before,180
 HAN,departure,runway_filled_orientation,180
 HAN,departure,runway_filled_nearest,0
@@ -79,6 +91,9 @@ DAD,arrival,dual_runway_duplicate_removed,0
 DAD,arrival,spq_to_9g_converted,0
 DAD,arrival,spq_to_9g_airline_match,0
 DAD,arrival,spq_to_9g_pattern_match,0
+DAD,arrival,dad_cancelled_cleared,99
+DAD,arrival,dad_bl_to_vn,293
+DAD,arrival,dad_airline_pacific_to_vietnam,293
 DAD,arrival,runway_missing_before,680
 DAD,arrival,runway_filled_orientation,637
 DAD,arrival,runway_filled_nearest,0
@@ -96,6 +111,9 @@ DAD,departure,dual_runway_duplicate_removed,0
 DAD,departure,spq_to_9g_converted,0
 DAD,departure,spq_to_9g_airline_match,0
 DAD,departure,spq_to_9g_pattern_match,0
+DAD,departure,dad_cancelled_cleared,118
+DAD,departure,dad_bl_to_vn,294
+DAD,departure,dad_airline_pacific_to_vietnam,294
 DAD,departure,runway_missing_before,761
 DAD,departure,runway_filled_orientation,0
 DAD,departure,runway_filled_nearest,729
@@ -129,13 +147,13 @@ HAN,arrival,terminal_values_changed,188
 HAN,departure,airline_values_changed,1045
 HAN,departure,category_unknown_assigned,43
 HAN,departure,terminal_values_changed,1367
-DAD,arrival,airline_values_changed,12380
+DAD,arrival,airline_values_changed,12087
 DAD,arrival,category_unknown_assigned,0
 DAD,arrival,terminal_values_changed,0
-DAD,departure,airline_values_changed,12418
+DAD,departure,airline_values_changed,12124
 DAD,departure,category_unknown_assigned,0
 DAD,departure,terminal_values_changed,213
-ALL,departure,swap_matched_rows,21755
+ALL,departure,swap_matched_rows,22288
 ALL,departure,swap_true_rows,245
 ALL,departure,swap_true_sgn->dad,160
 ALL,departure,swap_true_sgn->han,1

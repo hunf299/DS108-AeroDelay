@@ -129,6 +129,17 @@ Ranking giữ dòng trong cụm được phép xóa:
 ### 4.9 Các rule còn lại
 - Airline normalization, terminal normalization, category unknown giữ nguyên như kế hoạch trước.
 
+Dad-only cleanup:
+- Xoa Status = Cancelled (set NA).
+- Flight_No bat dau bang BLxxxx doi thanh VNxxxx.
+- Airline "Pacific Airlines" doi thanh "Vietnam Airlines".
+
+DAD departure gate/terminal features:
+- Is_Jet_Bridge: 1 cho ong long, 0 cho xe buyt.
+  - Terminal 1: gate 1-3, 9-11 = buyt; gate 4-8 = ong long.
+  - Terminal 2: gate 1-3, 8-10 = buyt; gate 4-7 = ong long.
+- Is_Remote_Stand: 1 cho buyt, 0 cho ong long.
+
 ## 5) Bổ sung kiểm thử và audit bắt buộc
 Tạo thêm audit_arrival_time_semantics.csv với các chỉ số:
 - airport
