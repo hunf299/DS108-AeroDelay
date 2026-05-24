@@ -826,6 +826,48 @@ def normalize_spq_flight_number(
     return out, audit_rows, stats
 
 
+def apply_dad_specific_fixes(
+    df: pd.DataFrame,
+    airport: str,
+) -> Tuple[pd.DataFrame, Dict[str, int]]:
+    if airport != "DAD":
+        return df, {
+            "dad_cancelled_cleared": 0,
+            "dad_bl_to_vn": 0,
+            "dad_airline_pacific_to_vietnam": 0,
+        }
+
+    out = df.copy()
+    stats = {
+        "dad_cancelled_cleared": 0,
+        "dad_bl_to_vn": 0,
+        "dad_airline_pacific_to_vietnam": 0,
+    }
+
+    if "Status" in out.columns:
+        status = out["Status"].astype("string").str.strip()
+        cancelled_mask = status.str.lower().eq("cancelled")
+        if cancelled_mask.any():
+            out.loc[cancelled_mask, "Status"] = pd.NA
+            stats["dad_cancelled_cleared"] = int(cancelled_mask.sum())
+
+    if "Flight_No" in out.columns:
+        flight_no = out["Flight_No"].astype("string").str.upper().str.strip()
+        bl_mask = flight_no.str.match(r"^BL(\d+)$", na=False)
+        if bl_mask.any():
+            out.loc[bl_mask, "Flight_No"] = flight_no.loc[bl_mask].str.replace(r"^BL", "VN", regex=True)
+            stats["dad_bl_to_vn"] = int(bl_mask.sum())
+
+    if "Airline" in out.columns:
+        airline = out["Airline"].astype("string").str.strip()
+        pac_mask = airline.str.lower().eq("pacific airlines")
+        if pac_mask.any():
+            out.loc[pac_mask, "Airline"] = "Vietnam Airlines"
+            stats["dad_airline_pacific_to_vietnam"] = int(pac_mask.sum())
+
+    return out, stats
+
+
 def infer_runway_orientation(
     df: pd.DataFrame,
     airport: str,
@@ -1275,6 +1317,43 @@ def normalize_terminal_values(df: pd.DataFrame, airport: str, mode: str) -> int:
     return changed
 
 
+def add_dad_departure_gate_features(df: pd.DataFrame) -> pd.DataFrame:
+    if "Gate" not in df.columns or "Terminal" not in df.columns:
+        return df
+
+    out = df.copy()
+    terminal = out["Terminal"].astype("string").str.strip()
+    terminal = terminal.str.replace(r"\.0$", "", regex=True)
+    terminal = terminal.mask(terminal.str.lower().isin(NA_TOKENS))
+
+    gate_text = out["Gate"].astype("string").str.strip()
+    gate_text = gate_text.mask(gate_text.str.lower().isin(NA_TOKENS))
+    gate_num = gate_text.str.extract(r"(\d{1,2})", expand=False)
+    gate_num = pd.to_numeric(gate_num, errors="coerce").astype("Int64")
+
+    is_jet_bridge = pd.Series(pd.NA, index=out.index, dtype="Int64")
+
+    term1_mask = terminal.eq("1") & gate_num.notna()
+    term2_mask = terminal.eq("2") & gate_num.notna()
+
+    term1_bus = {1, 2, 3, 9, 10, 11}
+    term1_jet = {4, 5, 6, 7, 8}
+    term2_bus = {1, 2, 3, 8, 9, 10}
+    term2_jet = {4, 5, 6, 7}
+
+    term1_bus_mask = term1_mask & gate_num.isin(term1_bus)
+    term1_jet_mask = term1_mask & gate_num.isin(term1_jet)
+    term2_bus_mask = term2_mask & gate_num.isin(term2_bus)
+    term2_jet_mask = term2_mask & gate_num.isin(term2_jet)
+
+    is_jet_bridge.loc[term1_bus_mask | term2_bus_mask] = 0
+    is_jet_bridge.loc[term1_jet_mask | term2_jet_mask] = 1
+
+    out["Is_Jet_Bridge"] = is_jet_bridge
+    out["Is_Remote_Stand"] = is_jet_bridge.where(is_jet_bridge.isna(), 1 - is_jet_bridge)
+    return out
+
+
 def rename_tail_column(df: pd.DataFrame, mode: str) -> pd.DataFrame:
     out = df.copy()
     if "Tail_Number" not in out.columns:
@@ -1627,6 +1706,8 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
             df, spq_audit, spq_stats = normalize_spq_flight_number(df, airport=airport.upper(), mode=mode)
             spq_flight_no_audit_rows.extend(spq_audit)
 
+            df, dad_fix_stats = apply_dad_specific_fixes(df, airport=airport.upper())
+
             deduped, dedup_audit, dedup_stats = deduplicate_flights(df, airport=airport.upper(), mode=mode)
             duplicate_audit_rows.extend(dedup_audit)
 
@@ -1698,6 +1779,24 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
                         "Mode": mode,
                         "Metric": "spq_to_9g_pattern_match",
                         "Value": spq_stats.get("spq_to_9g_pattern_match", 0),
+                    },
+                    {
+                        "Airport": airport.upper(),
+                        "Mode": mode,
+                        "Metric": "dad_cancelled_cleared",
+                        "Value": dad_fix_stats.get("dad_cancelled_cleared", 0),
+                    },
+                    {
+                        "Airport": airport.upper(),
+                        "Mode": mode,
+                        "Metric": "dad_bl_to_vn",
+                        "Value": dad_fix_stats.get("dad_bl_to_vn", 0),
+                    },
+                    {
+                        "Airport": airport.upper(),
+                        "Mode": mode,
+                        "Metric": "dad_airline_pacific_to_vietnam",
+                        "Value": dad_fix_stats.get("dad_airline_pacific_to_vietnam", 0),
                     },
                     {
                         "Airport": airport.upper(),
@@ -1834,6 +1933,9 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
             airline_changed = normalize_airline_values(df)
             category_unknown_assigned = normalize_category_unknown(df)
             terminal_changed = normalize_terminal_values(df, airport=airport.upper(), mode=mode)
+
+            if airport.upper() == "DAD" and mode == "departure":
+                df = add_dad_departure_gate_features(df)
 
             df = rename_tail_column(df, mode=mode)
             datasets[airport] = df
