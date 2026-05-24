@@ -11891,7 +11891,6 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-24,2026-01-24 15:55,2026-01-24 16:10,Ho Chi Minh City,SGN,VietJet Air,VJ191,1,11R,Departed,VN-A663,A320,0,passenger,VN-A672,98.0,True,0,0,False
 2026-01-24,2026-01-24 15:50,2026-01-24 16:06,Bangkok,BKK,VietJet Air,VJ903,2,11R,Departed,VN-A578,A21N,1,passenger,N/A,N/A,False,0,0,False
 2026-01-24,2026-01-24 15:45,2026-01-24 16:03,Kunming,KMG,China Eastern Airlines,MU9606,2,11R,Departed,B-1792,B738,0,passenger,N/A,N/A,False,0,0,False
-2026-01-24,2026-01-24 15:55,2026-01-24 15:59,Ho Chi Minh City,SGN,VietJet Air,VJ191,1,11R,Departed,VN-A672,A320,0,passenger,VN-A672,109.0,False,0,0,False
 2026-01-24,2026-01-24 15:45,2026-01-24 15:55,Guangzhou,CAN,China Southern Airlines,CZ8316,2,11R,Departed,B-6816,A320,1,passenger,N/A,N/A,False,0,0,False
 2026-01-24,2026-01-24 15:40,2026-01-24 15:53,Xiamen,XMN,Xiamen Air,MF870,2,11R,Departed,B-1969,B738,1,passenger,N/A,N/A,False,0,0,False
 2026-01-24,2026-01-24 15:20,2026-01-24 15:50,Chiang Mai,CNX,AirAsia,FD871,2,11R,Departed,HS-ABR,A320,1,passenger,N/A,N/A,False,0,0,False
