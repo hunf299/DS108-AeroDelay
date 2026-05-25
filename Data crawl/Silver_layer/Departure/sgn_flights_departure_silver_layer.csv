@@ -31717,7 +31717,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-03,2026-03-03 07:01,2026-03-03 07:28,Nha Trang,CXR,Vietnam Airlines,VN1340,3,25L,Departed,VN-A514,A20N,0,passenger,N/A,N/A,False,1,1,True
 2026-03-03,2026-03-03 06:50,2026-03-03 07:25,Singapore,SIN,VietJet Air,VJ813,2,25L,Departed,VN-A670,A321,0,passenger,N/A,N/A,False,1,1,True
 2026-03-03,2026-03-03 05:10,2026-03-03 07:23,Sao Vang,THD,VietJet Air,VJ240,1,25L,Departed,VN-A647,A321,0,passenger,N/A,N/A,False,1,1,True
-2026-03-03,2026-03-03 07:05,2026-03-03 07:22,Hanoi,HAN,Vietravel Airlines,VU774,3,25L,Departed,VN-A136,A320,0,passenger,VN-A136,108.0,False,1,1,True
+2026-03-03,2026-03-03 07:05,2026-03-03 07:51,Hanoi,HAN,Vietravel Airlines,VU774,3,25L,Departed,VN-A136,A320,0,passenger,VN-A136,108.0,False,1,1,True
 2026-03-03,2026-03-03 07:01,2026-03-03 07:18,Hanoi,HAN,Vietnam Airlines,VN240,3,25L,Departed,VN-A899,A359,0,passenger,N/A,N/A,False,1,1,True
 2026-03-03,2026-03-03 07:10,2026-03-03 07:16,Hanoi,HAN,Bamboo Airways,QH204,3,25L,Departed,ER-00005,A320,0,passenger,ER-00005,107.0,False,1,1,True
 2026-03-03,2026-03-03 07:01,2026-03-03 07:15,Da Lat,DLI,Vietnam Airlines,VN6170,3,25L,Departed,VN-A354,A321,0,passenger,N/A,N/A,False,1,1,True

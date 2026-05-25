@@ -42,15 +42,6 @@ SGN,departure,34869,34870,near_time,0.0,Flight_No=VN1853|Scheduled_Time=06:20|Ai
 SGN,departure,33281,33282,near_time,0.0,Flight_No=VN8055|Scheduled_Time=08:25|Aircraft_Type=AT75|Tail=VN-B219
 SGN,departure,34485,34484,dual_runway,0.0,Flight_No=VJ260|Scheduled_Time=05:30|Aircraft_Type=A21N|Tail=VN-A551
 HAN,departure,24273,24284,near_time,39.0,Flight_No=VJ905|Scheduled_Time=07:10|Aircraft_Type=A21N|Tail=VN-A516
-DAD,arrival,5903,6038,near_time,35.0,Flight_No=ZE593|Scheduled_Time=00:20|Aircraft_Type=B38M|Tail=HL8715
-DAD,arrival,8273,8429,near_time,15.0,Flight_No=ZE593|Scheduled_Time=00:20|Aircraft_Type=B38M|Tail=HL8715
-DAD,arrival,5096,5232,near_time,10.0,Flight_No=TW13|Scheduled_Time=23:35|Aircraft_Type=B738|Tail=HL8378
-DAD,arrival,8104,7949,near_time,42.0,Flight_No=VJ646|Scheduled_Time=22:00|Aircraft_Type=A320|Tail=LY-MLN
-DAD,arrival,9897,9741,near_time,27.0,Flight_No=VJ646|Scheduled_Time=22:00|Aircraft_Type=A320|Tail=LY-MLN
-DAD,arrival,8109,8258,near_time,50.0,Flight_No=VN7122|Scheduled_Time=22:40|Aircraft_Type=A320|Tail=9H-MLE
-DAD,arrival,7395,7533,near_time,37.0,Flight_No=ZE593|Scheduled_Time=00:20|Aircraft_Type=B38M|Tail=HL8759
-DAD,arrival,7955,8110,near_time,34.0,Flight_No=VJ640|Scheduled_Time=22:45|Aircraft_Type=A321|Tail=VN-A643
-DAD,arrival,9753,9602,near_time,15.0,Flight_No=LJ183|Scheduled_Time=23:40|Aircraft_Type=B738|Tail=HL7757
 DAD,departure,8143,8142,near_time,30.0,Flight_No=VN7123|Scheduled_Time=23:25|Aircraft_Type=A320|Tail=9H-MLE
 DAD,departure,7566,7565,near_time,0.0,Flight_No=QH195|Scheduled_Time=04:25|Aircraft_Type=B739|Tail=PK-BBK
 DAD,departure,7865,7864,near_time,0.0,Flight_No=QH195|Scheduled_Time=04:25|Aircraft_Type=B739|Tail=PK-BBK

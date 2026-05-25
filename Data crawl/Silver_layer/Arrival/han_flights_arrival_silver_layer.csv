@@ -21705,6 +21705,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-03-05,2026-03-05 09:30,02:54,Taipei,TPE,Vietnam Airlines,VN579,2,11L,Landed,VN-A327,A321,passenger,N/A,174,False,False,N/A,0,2,False
 2026-03-05,2026-03-05 09:28,01:41,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G808,1,11L,Landed,VN-A286,A21N,passenger,N/A,101,False,False,N/A,0,2,False
 2026-03-05,2026-03-05 09:21,01:43,Ho Chi Minh City,SGN,VietJet Air,VJ148,1,11L,Landed,LY-NVG,A320,passenger,N/A,103,False,False,N/A,1,2,True
+2026-03-05,2026-03-05 09:12,01:47,Ho Chi Minh City,SGN,Vietravel Airlines,VU774,1,11L,Landed,9H-MLW,A320,passenger,N/A,107,False,False,N/A,1,2,True
 2026-03-05,2026-03-05 09:04,01:45,Ho Chi Minh City,SGN,Bamboo Airways,QH204,1,11L,Landed,ER-00005,A320,passenger,N/A,105,False,False,N/A,1,2,True
 2026-03-05,2026-03-05 09:00,01:01,Da Nang,DAD,VietJet Air,VJ504,1,11L,Landed,VN-A542,A321,passenger,N/A,61,False,False,N/A,1,2,True
 2026-03-05,2026-03-05 08:57,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN240,1,11L,Landed,VN-A891,A359,passenger,N/A,100,False,False,N/A,1,2,True
