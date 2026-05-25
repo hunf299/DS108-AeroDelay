@@ -3315,7 +3315,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-27,2025-12-27 23:00,2025-12-27 23:58,Macau,MFM,Air Macau,NX981,2,11R,Departed,B-MBT,A21N,0,passenger,N/A,N/A,False,0,0,False
 2025-12-27,2025-12-27 22:55,2025-12-27 23:45,Ho Chi Minh City,SGN,Vietnam Airlines,VN7223,1,11R,Departed,VN-A326,A321,0,passenger,VN-A326,102.0,False,0,0,False
 2025-12-27,N/A,2025-12-27 23:36,N/A,N/A,Ups,5X99,N/A,11R,Departed,N632UP,B748,0,cargo,N/A,N/A,False,0,0,False
-2025-12-27,2025-12-27 22:45,2025-12-27 23:30,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A676,A320,0,passenger,VN-A532,68.0,True,0,0,False
+2025-12-27,2025-12-27 22:45,2025-12-27 23:30,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A676,A320,0,passenger,VN-A676,68.0,False,0,0,False
 2025-12-27,2025-12-28 06:51,2025-12-27 23:28,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8575,B78X,0,passenger,N/A,N/A,False,0,0,False
 2025-12-27,2025-12-27 20:50,2025-12-27 23:24,Da Nang,DAD,VietJet Air,VJ521,1,11R,Departed,VN-A687,A321,0,passenger,N/A,N/A,False,0,0,False
 2025-12-27,2025-12-27 23:00,2025-12-27 23:16,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,110.0,False,0,0,False
@@ -3613,7 +3613,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-27,2025-12-27 00:14,2025-12-27 01:12,Khabarovsk,KHV,VietJet Air,VJ3523,2,11R,Departed,VN-A537,A21N,0,passenger,N/A,N/A,False,0,1,False
 2025-12-27,2025-12-27 00:55,2025-12-27 01:09,Tokyo,NRT,VietJet Air,VJ932,2,11R,Departed,VN-A820,A333,1,passenger,N/A,N/A,False,0,1,False
 2025-12-27,2025-12-27 00:25,2025-12-27 01:04,Dubai,DXB,Emirates,EK395,2,11R,Departed,A6-ENF,B77W,1,passenger,N/A,N/A,False,0,1,False
-2025-12-27,2025-12-26 22:45,2025-12-27 01:02,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A649,A321,0,passenger,VN-A676,66.0,True,0,1,False
+2025-12-27,2025-12-26 22:45,2025-12-27 01:02,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A649,A321,0,passenger,VN-A649,66.0,False,0,1,False
 2025-12-27,2025-12-27 00:25,2025-12-27 01:00,Tokyo,NRT,All Nippon Airways,NH898,2,11R,Departed,JA836A,B789,1,passenger,N/A,N/A,False,0,1,False
 2025-12-27,2025-12-27 00:20,2025-12-27 00:58,Manila,MNL,Vietnam Airlines,VN647,2,11R,Departed,VN-A399,A321,1,passenger,N/A,N/A,False,0,1,False
 2025-12-27,2025-12-27 00:20,2025-12-27 00:55,Nagoya,NGO,Vietnam Airlines,VN348,2,11R,Departed,VN-A334,A321,0,passenger,N/A,N/A,False,0,1,False
@@ -3639,7 +3639,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-28,2025-12-28 23:00,2025-12-28 23:30,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,126.0,False,0,0,False
 2025-12-28,2025-12-28 21:20,2025-12-28 23:27,Yangon,RGN,Myanmar Airways International,8M451,2,11R,Departed,XY-ALP,E190,0,passenger,N/A,N/A,False,0,0,False
 2025-12-28,2025-12-28 23:15,2025-12-28 23:24,Haikou,HAK,Hainan Airlines,HU784,2,11R,Departed,B-207T,B38M,1,passenger,N/A,N/A,False,0,0,False
-2025-12-28,2025-12-28 20:15,2025-12-28 23:21,Da Nang,DAD,VietJet Air,VJ501,1,11R,Departed,VN-A636,A321,0,passenger,VN-A649,44.0,True,0,0,False
+2025-12-28,2025-12-28 20:15,2025-12-28 23:21,Da Nang,DAD,VietJet Air,VJ501,1,11R,Departed,VN-A636,A321,0,passenger,VN-A636,44.0,False,0,0,False
 2025-12-28,2025-12-28 22:35,2025-12-28 23:18,Ho Chi Minh City,SGN,Bamboo Airways,QH283,1,11R,Departed,PK-BBK,B739,0,passenger,PK-BBK,130.0,False,0,0,False
 2025-12-28,2025-12-28 22:50,2025-12-28 23:07,Ho Chi Minh City,SGN,Vietnam Airlines,VN7243,1,11R,Departed,VN-A327,A321,0,passenger,VN-A327,116.0,False,0,0,False
 2025-12-28,2025-12-28 22:50,2025-12-28 23:03,Cebu,CEB,Vietnam Airlines,VN643,2,11R,Departed,VN-A503,A21N,1,passenger,N/A,N/A,False,0,0,False
@@ -4560,7 +4560,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-30,2025-12-30 00:45,2025-12-30 00:53,Busan,PUS,Vietnam Airlines,VN428,2,11R,Departed,VN-A865,B789,0,passenger,N/A,N/A,False,0,0,False
 2025-12-30,2025-12-29 23:25,2025-12-30 00:47,Ho Chi Minh City,SGN,VietJet Air,VJ171,1,11R,Departed,VN-A810,A333,0,passenger,VN-A810,101.0,False,0,0,False
 2025-12-30,2025-12-30 00:25,2025-12-30 00:45,Dubai,DXB,Emirates,EK395,2,11R,Departed,A6-EPG,B77W,1,passenger,N/A,N/A,False,0,0,False
-2025-12-30,2025-12-29 22:45,2025-12-30 00:41,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A643,A321,0,passenger,VN-A671,68.0,True,0,0,False
+2025-12-30,2025-12-29 22:45,2025-12-30 00:41,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A643,A321,0,passenger,VN-A643,68.0,False,0,0,False
 2025-12-30,2025-12-30 00:25,2025-12-30 00:38,Tokyo,NRT,All Nippon Airways,NH898,2,11R,Departed,JA876A,B789,1,passenger,N/A,N/A,False,0,0,False
 2025-12-30,2025-12-30 00:20,2025-12-30 00:36,Manila,MNL,Vietnam Airlines,VN647,2,11R,Departed,VN-A505,A21N,1,passenger,N/A,N/A,False,0,0,False
 2025-12-30,2025-12-30 00:20,2025-12-30 00:33,Nagoya,NGO,Vietnam Airlines,VN348,2,11R,Departed,VN-A602,A321,0,passenger,N/A,N/A,False,0,0,False
@@ -5504,7 +5504,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-02,2026-01-01 23:00,2026-01-02 00:19,Macau,MFM,Air Macau,NX981,2,11R,Departed,B-MBU,A21N,0,passenger,N/A,N/A,False,0,0,False
 2026-01-02,2026-01-01 23:55,2026-01-02 00:10,Tokyo,NRT,Japan Airlines,JL752,2,11R,Departed,JA606J,B763,1,passenger,N/A,N/A,False,0,0,False
 2026-01-02,2026-01-01 23:50,2026-01-02 00:06,Seoul,ICN,Asiana Airlines,OZ734,2,11R,Departed,HL8308,A359,1,passenger,N/A,N/A,False,0,0,False
-2026-01-02,2026-01-01 22:45,2026-01-02 00:03,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A671,A320,0,passenger,VN-A532,69.0,True,0,0,False
+2026-01-02,2026-01-01 22:45,2026-01-02 00:03,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A671,A320,0,passenger,VN-A671,69.0,False,0,0,False
 2026-01-02,2026-01-01 23:40,2026-01-02 00:00,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A685,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-01-03,2026-01-03 23:50,2026-01-03 23:57,Seoul,ICN,Asiana Airlines,OZ734,2,11R,Departed,HL8308,A359,1,passenger,N/A,N/A,False,0,1,False
 2026-01-03,2026-01-03 23:40,2026-01-03 23:54,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A644,A321,1,passenger,N/A,N/A,False,0,1,False
@@ -6135,7 +6135,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-04,2026-01-04 00:20,2026-01-04 00:43,Nagoya,NGO,Vietnam Airlines,VN348,2,11R,Departed,VN-A879,B78X,0,passenger,N/A,N/A,False,0,1,False
 2026-01-04,2026-01-04 00:25,2026-01-04 00:40,Dubai,DXB,Emirates,EK395,2,11R,Departed,A6-EPE,B77W,1,passenger,N/A,N/A,False,0,1,False
 2026-01-04,2026-01-04 00:25,2026-01-04 00:35,Tokyo,NRT,All Nippon Airways,NH898,2,11R,Departed,JA928A,B789,1,passenger,N/A,N/A,False,0,1,False
-2026-01-04,2026-01-03 22:45,2026-01-04 00:33,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A544,A321,0,passenger,VN-A677,65.0,True,0,1,False
+2026-01-04,2026-01-03 22:45,2026-01-04 00:33,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A544,A321,0,passenger,VN-A544,65.0,False,0,1,False
 2026-01-04,2026-01-03 21:00,2026-01-04 00:20,Ho Chi Minh City,SGN,Vietravel Airlines,VU791,1,11R,Departed,VN-A129,A321,0,passenger,VN-A129,102.0,False,0,1,False
 2026-01-04,2026-01-03 23:25,2026-01-04 00:18,Ho Chi Minh City,SGN,VietJet Air,VJ171,1,11R,Departed,VN-A553,A21N,0,passenger,VN-A553,100.0,False,0,1,False
 2026-01-04,N/A,2026-01-04 00:05,Kuala Lumpur,KUL,MJets Air,WW221,0,11R,Departed,9M-WWB,B738,0,cargo,N/A,N/A,False,0,1,False
@@ -6440,7 +6440,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-05,2026-01-04 23:45,2026-01-05 00:31,Munich,MUC,Vietnam Airlines,VN35,2,11R,Departed,VN-A861,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-01-05,2026-01-04 23:00,2026-01-05 00:27,Macau,MFM,Air Macau,NX981,2,11R,Departed,B-MBT,A21N,0,passenger,N/A,N/A,False,0,0,False
 2026-01-05,N/A,2026-01-05 00:25,Anchorage,ANC,CMA CGM Air Cargo,5Y8532,0,11R,Departed,N761GT,B77L,0,cargo,N/A,N/A,False,0,0,False
-2026-01-05,2026-01-04 22:45,2026-01-05 00:22,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A677,A321,0,passenger,VN-A643,62.0,True,0,0,False
+2026-01-05,2026-01-04 22:45,2026-01-05 00:22,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A677,A321,0,passenger,VN-A677,62.0,False,0,0,False
 2026-01-05,2026-01-04 23:55,2026-01-05 00:17,Tokyo,NRT,Japan Airlines,JL752,2,11R,Departed,JA618J,B763,1,passenger,N/A,N/A,False,0,0,False
 2026-01-05,2026-01-04 21:00,2026-01-05 00:15,Ho Chi Minh City,SGN,Vietnam Airlines,VN221,1,11R,Departed,VN-A612,A321,0,passenger,VN-A612,100.0,False,0,0,False
 2026-01-05,2026-01-04 23:40,2026-01-05 00:12,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A629,A321,1,passenger,N/A,N/A,False,0,0,False
@@ -6450,7 +6450,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-06,2026-01-06 23:40,2026-01-06 23:54,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A632,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-01-06,2026-01-06 23:30,2026-01-06 23:45,Sydney,SYD,Vietnam Airlines,VN787,2,11R,Departed,VN-A899,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-01-06,2026-01-06 23:25,2026-01-06 23:41,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A871,B789,0,passenger,N/A,N/A,False,0,1,False
-2026-01-06,2026-01-06 22:45,2026-01-06 23:39,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A661,A321,0,passenger,VN-A658,66.0,True,0,1,False
+2026-01-06,2026-01-06 22:45,2026-01-06 23:39,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A661,A321,0,passenger,VN-A661,66.0,False,0,1,False
 2026-01-06,2026-01-06 23:00,2026-01-06 23:36,Macau,MFM,Air Macau,NX981,2,11R,Departed,B-MBB,A321,0,passenger,N/A,N/A,False,0,1,False
 2026-01-06,N/A,2026-01-06 23:32,Guangzhou,CAN,FedEx,FX6002,0,11R,Departed,N102FE,B763,0,cargo,N/A,N/A,False,0,1,False
 2026-01-06,2026-01-06 23:05,2026-01-06 23:18,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8084,B789,0,passenger,N/A,N/A,False,0,1,False
@@ -6722,7 +6722,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-06,2026-01-06 00:20,2026-01-06 00:44,Manila,MNL,Vietnam Airlines,VN647,2,11R,Departed,VN-A608,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-01-06,2026-01-06 00:20,2026-01-06 00:39,Tokyo,NRT,Vietnam Airlines,VN310,2,11R,Departed,VN-A886,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-01-06,2026-01-06 00:15,2026-01-06 00:34,Seoul,ICN,T'way Air,TW62,2,11R,Departed,HL8086,B738,0,passenger,N/A,N/A,False,0,0,False
-2026-01-06,2026-01-05 22:45,2026-01-06 00:24,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A643,A321,0,passenger,VN-A661,65.0,True,0,0,False
+2026-01-06,2026-01-05 22:45,2026-01-06 00:24,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A643,A321,0,passenger,VN-A643,65.0,False,0,0,False
 2026-01-06,2026-01-05 23:55,2026-01-06 00:20,Tokyo,NRT,Japan Airlines,JL752,2,11R,Departed,JA608J,B763,1,passenger,N/A,N/A,False,0,0,False
 2026-01-06,2026-01-05 23:50,2026-01-06 00:17,Seoul,ICN,Asiana Airlines,OZ734,2,11R,Departed,HL7579,A359,1,passenger,N/A,N/A,False,0,0,False
 2026-01-06,2026-01-05 23:40,2026-01-06 00:14,Seoul,ICN,Vietnam Airlines,VN416,2,11R,Departed,VN-A873,B78X,0,passenger,N/A,N/A,False,0,0,False
@@ -6732,7 +6732,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-07,2026-01-07 23:40,2026-01-07 23:56,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A637,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-01-07,2026-01-07 23:40,2026-01-07 23:52,Seoul,ICN,Vietnam Airlines,VN416,2,11R,Departed,VN-A872,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-01-07,2026-01-07 23:00,2026-01-07 23:48,Macau,MFM,Air Macau,NX981,2,11R,Departed,B-MCE,A321,0,passenger,N/A,N/A,False,0,0,False
-2026-01-07,2026-01-07 22:45,2026-01-07 23:45,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A658,A320,0,passenger,VN-A532,64.0,True,0,0,False
+2026-01-07,2026-01-07 22:45,2026-01-07 23:45,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A658,A320,0,passenger,VN-A658,64.0,False,0,0,False
 2026-01-07,2026-01-07 23:25,2026-01-07 23:42,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A863,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-01-07,2026-01-07 23:20,2026-01-07 23:32,Paris,CDG,Vietnam Airlines,VN19,2,11R,Departed,VN-A890,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-01-07,N/A,2026-01-07 23:29,Guangzhou,CAN,FedEx,FX6002,0,11R,Departed,N108FE,B763,0,cargo,N/A,N/A,False,0,0,False
@@ -7640,7 +7640,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-10,2026-01-10 23:20,2026-01-10 23:49,Paris,CDG,Vietnam Airlines,VN19,2,11R,Departed,VN-A892,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-01-10,2026-01-10 23:05,2026-01-10 23:46,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8345,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-01-10,2026-01-10 23:25,2026-01-10 23:42,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A861,B789,0,passenger,N/A,N/A,False,0,0,False
-2026-01-10,2026-01-10 22:45,2026-01-10 23:29,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A580,A21N,0,passenger,VN-A642,68.0,True,0,0,False
+2026-01-10,2026-01-10 22:45,2026-01-10 23:29,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A580,A21N,0,passenger,VN-A580,68.0,False,0,0,False
 2026-01-10,N/A,2026-01-10 23:26,Istanbul,IST,Turkish Airlines,TK6361,0,11R,Departed,TC-LJL,B77L,0,cargo,N/A,N/A,False,0,0,False
 2026-01-10,2026-01-10 22:55,2026-01-10 23:23,Istanbul,IST,Turkish Airlines,TK165,2,11R,Departed,TC-LLZ,B789,1,passenger,N/A,N/A,False,0,0,False
 2026-01-10,N/A,2026-01-10 23:20,Seoul,ICN,Ups,5X99,0,11R,Departed,N605UP,B748,0,cargo,N/A,N/A,False,0,0,False
@@ -7937,7 +7937,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-10,2026-01-10 00:20,2026-01-10 00:39,Manila,MNL,Vietnam Airlines,VN647,2,11R,Departed,VN-A601,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-01-10,2026-01-09 23:40,2026-01-10 00:36,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A642,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-01-10,2026-01-09 23:00,2026-01-10 00:33,Macau,MFM,Air Macau,NX981,2,11R,Departed,B-MCL,A20N,0,passenger,N/A,N/A,False,0,0,False
-2026-01-10,2026-01-09 22:45,2026-01-10 00:27,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A643,A321,0,passenger,VN-A580,66.0,True,0,0,False
+2026-01-10,2026-01-09 22:45,2026-01-10 00:27,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A643,A321,0,passenger,VN-A643,66.0,False,0,0,False
 2026-01-10,N/A,2026-01-10 00:21,Hong Kong,HKG,Cathay Pacific,CX3046,0,11R,Departed,B-LJG,B748,0,cargo,N/A,N/A,False,0,0,False
 2026-01-10,N/A,2026-01-10 00:17,Hong Kong,HKG,DHL Air,QY576,0,11R,Departed,D-AJFK,A333,0,cargo,N/A,N/A,False,0,0,False
 2026-01-10,2026-01-09 23:50,2026-01-10 00:14,Seoul,ICN,Asiana Airlines,OZ734,2,11R,Departed,HL7732,B772,1,passenger,N/A,N/A,False,0,0,False
@@ -7952,7 +7952,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-11,2026-01-11 23:20,2026-01-11 23:42,Paris,CDG,Vietnam Airlines,VN19,2,11R,Departed,VN-A896,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-01-11,N/A,2026-01-11 23:39,Guangzhou,CAN,FedEx,FX9125,0,11R,Departed,N122FE,B763,0,cargo,N/A,N/A,False,0,0,False
 2026-01-11,2026-01-11 12:45,2026-01-11 23:36,Singapore,SIN,Singapore Airlines,SQ191,2,11R,Departed,9V-SCD,B78X,0,passenger,N/A,N/A,False,0,0,False
-2026-01-11,2026-01-11 22:45,2026-01-11 23:28,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A642,A321,0,passenger,VN-A643,65.0,True,0,0,False
+2026-01-11,2026-01-11 22:45,2026-01-11 23:28,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A642,A321,0,passenger,VN-A642,65.0,False,0,0,False
 2026-01-11,2026-01-11 22:50,2026-01-11 23:16,Ho Chi Minh City,SGN,VietJet Air,VJ187,1,11R,Departed,VN-A552,A21N,0,passenger,VN-A552,106.0,False,0,0,False
 2026-01-11,2026-01-11 22:55,2026-01-11 23:12,Istanbul,IST,Turkish Airlines,TK165,2,11R,Departed,TC-LGI,A359,1,passenger,N/A,N/A,False,0,0,False
 2026-01-11,2026-01-11 23:00,2026-01-11 23:09,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,107.0,False,0,0,False
@@ -9150,7 +9150,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-14,2026-01-13 23:25,2026-01-14 00:01,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A862,B789,0,passenger,N/A,N/A,False,1,1,True
 2026-01-15,2026-01-15 23:40,2026-01-15 23:59,Seoul,ICN,Vietnam Airlines,VN416,2,11R,Departed,VN-A874,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-01-15,2026-01-15 23:00,2026-01-15 23:54,Macau,MFM,Air Macau,NX981,2,11R,Departed,B-MCL,A20N,0,passenger,N/A,N/A,False,0,0,False
-2026-01-15,2026-01-15 22:45,2026-01-15 23:52,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A655,A320,0,passenger,VN-A632,69.0,True,0,0,False
+2026-01-15,2026-01-15 22:45,2026-01-15 23:52,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A655,A320,0,passenger,VN-A655,69.0,False,0,0,False
 2026-01-15,2026-01-15 23:25,2026-01-15 23:46,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A861,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-01-15,2026-01-15 23:20,2026-01-15 23:41,Paris,CDG,Vietnam Airlines,VN19,2,11R,Departed,VN-A896,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-01-15,N/A,2026-01-15 23:39,Guangzhou,CAN,FedEx,FX6002,0,11R,Departed,N120FE,B763,0,cargo,N/A,N/A,False,0,0,False
@@ -9460,7 +9460,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-16,2026-01-16 23:20,2026-01-16 23:59,Paris,CDG,Vietnam Airlines,VN19,2,11R,Departed,VN-A890,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-01-16,2026-01-16 23:30,2026-01-16 23:56,Sydney,SYD,Vietnam Airlines,VN787,2,11R,Departed,VN-A897,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-01-16,N/A,2026-01-16 23:52,N/A,N/A,MJets Air,WW221,N/A,11R,Departed,9M-WWB,B738,0,cargo,N/A,N/A,False,0,0,False
-2026-01-16,2026-01-16 22:45,2026-01-16 23:45,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A632,A321,0,passenger,VN-A699,66.0,True,0,0,False
+2026-01-16,2026-01-16 22:45,2026-01-16 23:45,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A632,A321,0,passenger,VN-A632,66.0,False,0,0,False
 2026-01-16,2026-01-16 23:25,2026-01-16 23:39,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A864,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-01-16,2026-01-16 23:25,2026-01-16 23:36,Ho Chi Minh City,SGN,VietJet Air,VJ171,1,11R,Departed,VN-A820,A333,0,passenger,VN-A820,103.0,False,0,0,False
 2026-01-16,2026-01-16 23:05,2026-01-16 23:34,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8573,B78X,0,passenger,N/A,N/A,False,0,0,False
@@ -10061,7 +10061,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-18,N/A,2026-01-18 23:39,Guangzhou,CAN,FedEx,FX9125,0,11R,Departed,N118FE,B763,0,cargo,N/A,N/A,False,0,0,False
 2026-01-18,2026-01-18 22:35,2026-01-18 23:36,Ho Chi Minh City,SGN,Bamboo Airways,QH283,1,11R,Departed,PK-BBK,B739,0,passenger,PK-BBK,101.0,False,0,0,False
 2026-01-18,2026-01-18 23:05,2026-01-18 23:32,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8571,B78X,0,passenger,N/A,N/A,False,0,0,False
-2026-01-18,2026-01-18 22:45,2026-01-18 23:27,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A699,A320,0,passenger,VN-A676,62.0,True,0,0,False
+2026-01-18,2026-01-18 22:45,2026-01-18 23:27,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A699,A320,0,passenger,VN-A699,62.0,False,0,0,False
 2026-01-18,2026-01-18 23:00,2026-01-18 23:22,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,104.0,False,0,0,False
 2026-01-18,2026-01-18 22:50,2026-01-18 23:15,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A500,A21N,0,passenger,N/A,N/A,False,0,0,False
 2026-01-18,2026-01-18 22:55,2026-01-18 23:10,Istanbul,IST,Turkish Airlines,TK165,2,11R,Departed,TC-LGI,A359,1,passenger,N/A,N/A,False,0,0,False
@@ -10336,7 +10336,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-19,2026-01-19 23:40,2026-01-19 23:56,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A647,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-01-19,2026-01-19 22:50,2026-01-19 23:27,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A538,A21N,0,passenger,N/A,N/A,False,0,1,False
 2026-01-19,2026-01-19 23:00,2026-01-19 23:15,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,99.0,False,0,1,False
-2026-01-19,2026-01-19 22:45,2026-01-19 23:12,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A676,A320,0,passenger,VN-A658,67.0,True,0,1,False
+2026-01-19,2026-01-19 22:45,2026-01-19 23:12,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A676,A320,0,passenger,VN-A676,67.0,False,0,1,False
 2026-01-19,2026-01-19 22:55,2026-01-19 23:08,Istanbul,IST,Turkish Airlines,TK165,2,11R,Departed,TC-LGK,A359,1,passenger,N/A,N/A,False,0,1,False
 2026-01-19,N/A,2026-01-19 22:45,N/A,N/A,K-Mile Air,8K528,N/A,11L,Departed,HS-KMD,B738,0,cargo,N/A,N/A,False,0,1,False
 2026-01-19,2026-01-19 21:50,2026-01-19 22:38,Ho Chi Minh City,SGN,VietJet Air,VJ161,1,11R,Departed,VN-A537,A21N,0,passenger,VN-A537,103.0,False,0,1,False
@@ -10582,7 +10582,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-20,N/A,2026-01-20 23:37,N/A,N/A,FedEx,FX6002,N/A,11R,Departed,N109FE,B763,0,cargo,N/A,N/A,False,0,0,False
 2026-01-20,2026-01-20 22:35,2026-01-20 23:28,Ho Chi Minh City,SGN,Bamboo Airways,QH283,1,11R,Departed,PK-BBK,B739,0,passenger,PK-BBK,107.0,False,0,0,False
 2026-01-20,N/A,2026-01-20 23:22,Hong Kong,HKG,Cathay Pacific,CX48,0,11R,Departed,B-LIF,B744,0,cargo,N/A,N/A,False,0,0,False
-2026-01-20,2026-01-20 22:45,2026-01-20 23:19,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A658,A320,0,passenger,VN-A655,64.0,True,0,0,False
+2026-01-20,2026-01-20 22:45,2026-01-20 23:19,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A658,A320,0,passenger,VN-A658,64.0,False,0,0,False
 2026-01-20,2026-01-20 22:55,2026-01-20 23:16,Istanbul,IST,Turkish Airlines,TK165,2,11R,Departed,TC-JOF,A333,1,passenger,N/A,N/A,False,0,0,False
 2026-01-20,N/A,2026-01-20 23:10,Frankfurt,FRA,DHL Air,D0621,0,11R,Departed,D-AALW,B77L,0,cargo,N/A,N/A,False,0,0,False
 2026-01-20,2026-01-20 22:50,2026-01-20 23:05,Ho Chi Minh City,SGN,VietJet Air,VJ187,1,11R,Departed,VN-A532,A321,0,passenger,VN-A532,108.0,False,0,0,False
@@ -11158,7 +11158,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-22,2026-01-22 23:25,2026-01-22 23:55,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A870,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-01-22,2026-01-22 23:25,2026-01-22 23:43,Ho Chi Minh City,SGN,VietJet Air,VJ171,1,11R,Departed,VN-A656,A320,0,passenger,VN-A656,105.0,False,0,0,False
 2026-01-22,2026-01-22 23:20,2026-01-22 23:40,Paris,CDG,Vietnam Airlines,VN19,2,11R,Departed,VN-A892,A359,0,passenger,N/A,N/A,False,0,0,False
-2026-01-22,2026-01-22 22:45,2026-01-22 23:28,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A689,A320,0,passenger,VN-A677,66.0,True,0,0,False
+2026-01-22,2026-01-22 22:45,2026-01-22 23:28,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A689,A320,0,passenger,VN-A689,66.0,False,0,0,False
 2026-01-22,N/A,2026-01-22 23:25,N/A,N/A,FedEx,FX6002,N/A,11R,Departed,N126FE,B763,0,cargo,N/A,N/A,False,0,0,False
 2026-01-22,2026-01-22 23:15,2026-01-22 23:22,Haikou,HAK,Hainan Airlines,HU784,2,11R,Departed,B-1387,B38M,1,passenger,N/A,N/A,False,0,0,False
 2026-01-22,N/A,2026-01-22 23:18,Taipei,TPE,China Airlines,CI6888,0,11R,Departed,B-18721,B744,0,cargo,N/A,N/A,False,0,0,False
@@ -11456,7 +11456,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-22,N/A,2026-01-22 00:47,Kuala Lumpur,KUL,MJets Air,WW221,0,11R,Departed,9M-WWA,B738,0,cargo,N/A,N/A,False,0,0,False
 2026-01-22,2026-01-22 00:30,2026-01-22 00:43,Busan,PUS,Vietnam Airlines,VN428,2,11R,Departed,VN-A505,A21N,0,passenger,N/A,N/A,False,0,0,False
 2026-01-22,N/A,2026-01-22 00:41,Hong Kong,HKG,Hong Kong Air Cargo,RH9376,0,11R,Departed,B-LNX,A332,0,cargo,N/A,N/A,False,0,0,False
-2026-01-22,2026-01-21 22:45,2026-01-22 00:35,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A655,A320,0,passenger,VN-A689,63.0,True,0,0,False
+2026-01-22,2026-01-21 22:45,2026-01-22 00:35,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A655,A320,0,passenger,VN-A655,63.0,False,0,0,False
 2026-01-22,2026-01-22 00:25,2026-01-22 00:32,Dubai,DXB,Emirates,EK395,2,11R,Departed,A6-EPT,B77W,1,passenger,N/A,N/A,False,0,0,False
 2026-01-22,2026-01-22 00:20,2026-01-22 00:30,Tokyo,NRT,Vietnam Airlines,VN310,2,11R,Departed,VN-A874,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-01-22,2026-01-22 00:20,2026-01-22 00:25,Manila,MNL,Vietnam Airlines,VN647,2,11R,Departed,VN-A326,A321,1,passenger,N/A,N/A,False,0,0,False
@@ -11472,7 +11472,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-23,N/A,2026-01-23 23:38,Guangzhou,CAN,FedEx,FX6002,0,11R,Departed,N112FE,B763,0,cargo,N/A,N/A,False,0,0,False
 2026-01-23,2026-01-23 23:25,2026-01-23 23:35,Ho Chi Minh City,SGN,VietJet Air,VJ171,1,11R,Departed,VN-A811,A333,0,passenger,VN-A811,105.0,False,0,0,False
 2026-01-23,2026-01-23 22:35,2026-01-23 23:29,Ho Chi Minh City,SGN,Bamboo Airways,QH283,1,11R,Departed,PK-BBK,B739,0,passenger,PK-BBK,105.0,False,0,0,False
-2026-01-23,2026-01-23 22:45,2026-01-23 23:19,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A677,A321,0,passenger,VN-A532,65.0,True,0,0,False
+2026-01-23,2026-01-23 22:45,2026-01-23 23:19,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A677,A321,0,passenger,VN-A677,65.0,False,0,0,False
 2026-01-23,2026-01-23 23:05,2026-01-23 23:16,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8538,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-01-23,2026-01-23 23:00,2026-01-23 23:13,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,102.0,False,0,0,False
 2026-01-23,2026-01-23 22:50,2026-01-23 23:10,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A684,A321,0,passenger,N/A,N/A,False,0,0,False
@@ -11891,6 +11891,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-24,2026-01-24 15:55,2026-01-24 16:10,Ho Chi Minh City,SGN,VietJet Air,VJ191,1,11R,Departed,VN-A663,A320,0,passenger,VN-A672,98.0,True,0,0,False
 2026-01-24,2026-01-24 15:50,2026-01-24 16:06,Bangkok,BKK,VietJet Air,VJ903,2,11R,Departed,VN-A578,A21N,1,passenger,N/A,N/A,False,0,0,False
 2026-01-24,2026-01-24 15:45,2026-01-24 16:03,Kunming,KMG,China Eastern Airlines,MU9606,2,11R,Departed,B-1792,B738,0,passenger,N/A,N/A,False,0,0,False
+2026-01-24,2026-01-24 15:55,2026-01-24 15:59,Ho Chi Minh City,SGN,VietJet Air,VJ191,1,11R,Departed,VN-A672,A320,0,passenger,VN-A672,109.0,False,0,0,False
 2026-01-24,2026-01-24 15:45,2026-01-24 15:55,Guangzhou,CAN,China Southern Airlines,CZ8316,2,11R,Departed,B-6816,A320,1,passenger,N/A,N/A,False,0,0,False
 2026-01-24,2026-01-24 15:40,2026-01-24 15:53,Xiamen,XMN,Xiamen Air,MF870,2,11R,Departed,B-1969,B738,1,passenger,N/A,N/A,False,0,0,False
 2026-01-24,2026-01-24 15:20,2026-01-24 15:50,Chiang Mai,CNX,AirAsia,FD871,2,11R,Departed,HS-ABR,A320,1,passenger,N/A,N/A,False,0,0,False
@@ -12100,7 +12101,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-25,2026-01-25 23:05,2026-01-25 23:43,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8732,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-01-25,2026-01-25 22:50,2026-01-25 23:40,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A547,A21N,0,passenger,N/A,N/A,False,0,0,False
 2026-01-25,2026-01-25 23:20,2026-01-25 23:38,Paris,CDG,Vietnam Airlines,VN19,2,11R,Departed,VN-A890,A359,0,passenger,N/A,N/A,False,0,0,False
-2026-01-25,2026-01-25 22:45,2026-01-25 23:28,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A699,A320,0,passenger,VN-A642,61.0,True,0,0,False
+2026-01-25,2026-01-25 22:45,2026-01-25 23:28,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A699,A320,0,passenger,VN-A699,61.0,False,0,0,False
 2026-01-25,2026-01-25 22:55,2026-01-25 23:04,Istanbul,IST,Turkish Airlines,TK165,2,11R,Departed,TC-LGL,A359,1,passenger,N/A,N/A,False,0,0,False
 2026-01-25,2026-01-25 22:50,2026-01-25 23:00,Cebu,CEB,Vietnam Airlines,VN643,2,11R,Departed,VN-A332,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-01-25,2026-01-25 22:50,2026-01-25 22:56,Ho Chi Minh City,SGN,VietJet Air,VJ187,1,11R,Departed,VN-A630,A321,0,passenger,VN-A630,110.0,False,0,0,False
@@ -12419,7 +12420,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-26,2026-01-26 23:05,2026-01-26 23:41,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8535,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-01-26,N/A,2026-01-26 23:36,Ezhou,EHU,SF Airlines,O3168,0,11R,Departed,B-220H,B763,0,cargo,N/A,N/A,False,0,0,False
 2026-01-26,2026-01-26 23:00,2026-01-26 23:32,Macau,MFM,Air Macau,NX981,2,11R,Departed,B-MCL,A20N,0,passenger,N/A,N/A,False,0,0,False
-2026-01-26,2026-01-26 22:45,2026-01-26 23:30,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A642,A321,0,passenger,VN-A535,65.0,True,0,0,False
+2026-01-26,2026-01-26 22:45,2026-01-26 23:30,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A642,A321,0,passenger,VN-A642,65.0,False,0,0,False
 2026-01-26,2026-01-26 23:00,2026-01-26 23:28,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,111.0,False,0,0,False
 2026-01-26,2026-01-26 22:50,2026-01-26 23:25,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A667,A321,0,passenger,N/A,N/A,False,0,0,False
 2026-01-26,2026-01-26 22:10,2026-01-26 23:20,Ho Chi Minh City,SGN,VietJet Air,VJ123,1,11R,Departed,VN-A685,A321,0,passenger,VN-A685,108.0,False,0,0,False
@@ -13005,7 +13006,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-28,2026-01-28 23:25,2026-01-28 23:43,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A862,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-01-28,N/A,2026-01-28 23:36,Guangzhou,CAN,FedEx,FX6002,0,11R,Departed,N124FE,B763,0,cargo,N/A,N/A,False,0,0,False
 2026-01-28,N/A,2026-01-28 23:34,Hong Kong,HKG,DHL Air,QY576,0,11R,Departed,D-ALMD,A332,0,cargo,N/A,N/A,False,0,0,False
-2026-01-28,2026-01-28 22:45,2026-01-28 23:29,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A668,A320,0,passenger,VN-A658,64.0,True,0,0,False
+2026-01-28,2026-01-28 22:45,2026-01-28 23:29,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A668,A320,0,passenger,VN-A668,64.0,False,0,0,False
 2026-01-28,2026-01-28 23:00,2026-01-28 23:09,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A359,A321,0,passenger,VN-A359,100.0,False,0,0,False
 2026-01-28,2026-01-28 22:50,2026-01-28 23:06,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A645,A321,0,passenger,N/A,N/A,False,0,0,False
 2026-01-28,N/A,2026-01-28 23:03,Hong Kong,HKG,K-Mile Air,8K525,0,11R,Departed,HS-KMD,B738,0,cargo,N/A,N/A,False,0,0,False
@@ -13275,7 +13276,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-28,2026-01-28 01:40,2026-01-28 01:46,Seoul,ICN,Jeju Air,7C2202,2,11R,Departed,HL8524,B38M,0,passenger,N/A,N/A,False,0,0,False
 2026-01-28,2026-01-28 01:35,2026-01-28 01:44,Nagoya,NGO,VietJet Air,VJ920,2,11R,Departed,VN-A534,A21N,1,passenger,N/A,N/A,False,0,0,False
 2026-01-28,N/A,2026-01-28 01:28,Zhengzhou,CGO,N/A,JD648,0,11R,Departed,B-32GY,A332,0,cargo,N/A,N/A,False,0,0,False
-2026-01-28,2026-01-27 22:45,2026-01-28 01:24,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A535,A321,0,passenger,VN-A668,65.0,True,0,0,False
+2026-01-28,2026-01-27 22:45,2026-01-28 01:24,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A535,A321,0,passenger,VN-A535,65.0,False,0,0,False
 2026-01-28,2026-01-28 00:25,2026-01-28 01:22,Tokyo,NRT,All Nippon Airways,NH898,2,11R,Departed,JA876A,B789,1,passenger,N/A,N/A,False,0,0,False
 2026-01-28,2026-01-28 00:45,2026-01-28 01:20,London,LHR,Vietnam Airlines,VN55,2,11R,Departed,VN-A868,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-01-28,2026-01-28 01:00,2026-01-28 01:09,Busan,PUS,VietJet Air,VJ982,2,11R,Departed,VN-A661,A321,1,passenger,N/A,N/A,False,0,0,False
@@ -13891,7 +13892,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-31,2026-01-31 23:40,2026-01-31 23:49,Seoul,ICN,Vietnam Airlines,VN416,2,11R,Departed,VN-A610,A321,0,passenger,N/A,N/A,False,0,0,False
 2026-01-31,2026-01-31 23:25,2026-01-31 23:34,Ho Chi Minh City,SGN,VietJet Air,VJ171,1,11R,Departed,VN-A676,A320,0,passenger,VN-A676,99.0,False,0,0,False
 2026-01-31,2026-01-31 23:05,2026-01-31 23:31,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8732,B78X,0,passenger,N/A,N/A,False,0,0,False
-2026-01-31,2026-01-31 22:45,2026-01-31 23:19,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A636,A321,0,passenger,VN-A632,63.0,True,0,0,False
+2026-01-31,2026-01-31 22:45,2026-01-31 23:19,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A636,A321,0,passenger,VN-A636,63.0,False,0,0,False
 2026-01-31,2026-01-31 23:00,2026-01-31 23:16,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,104.0,False,0,0,False
 2026-01-31,2026-01-31 22:55,2026-01-31 23:11,Istanbul,IST,Turkish Airlines,TK165,2,11R,Departed,TC-LGJ,A359,1,passenger,N/A,N/A,False,0,0,False
 2026-01-31,2026-01-31 22:50,2026-01-31 23:02,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A500,A21N,0,passenger,N/A,N/A,False,0,0,False
@@ -14204,7 +14205,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-01,N/A,2026-02-01 23:35,Guangzhou,CAN,FedEx,FX9125,0,11R,Departed,N117FE,B763,0,cargo,N/A,N/A,False,0,0,False
 2026-02-01,2026-02-01 22:15,2026-02-01 23:30,Ho Chi Minh City,SGN,Vietnam Airlines,VN7213,1,11R,Departed,VN-A625,A21N,0,passenger,VN-A625,128.0,False,0,0,False
 2026-02-01,2026-02-01 23:15,2026-02-01 23:29,Haikou,HAK,Hainan Airlines,HU784,2,11R,Departed,B-6063,B738,1,passenger,N/A,N/A,False,0,0,False
-2026-02-01,2026-02-01 22:45,2026-02-01 23:26,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A632,A321,0,passenger,VN-A670,67.0,True,0,0,False
+2026-02-01,2026-02-01 22:45,2026-02-01 23:26,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A632,A321,0,passenger,VN-A632,67.0,False,0,0,False
 2026-02-01,2026-02-01 22:50,2026-02-01 23:19,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A575,A21N,0,passenger,N/A,N/A,False,0,0,False
 2026-02-01,2026-02-01 22:50,2026-02-01 23:16,Cebu,CEB,Vietnam Airlines,VN643,2,11R,Departed,VN-A327,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-02-01,2026-02-01 22:50,2026-02-01 23:12,Ho Chi Minh City,SGN,VietJet Air,VJ187,1,11R,Departed,VN-A646,A21N,0,passenger,VN-A646,120.0,False,0,0,False
@@ -14817,7 +14818,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-02,2026-02-01 23:30,2026-02-02 00:01,Sydney,SYD,Vietnam Airlines,VN787,2,11R,Departed,VN-A889,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-02-03,2026-02-03 23:55,2026-02-03 23:59,Tokyo,NRT,Japan Airlines,JL752,2,11R,Departed,JA618J,B763,1,passenger,N/A,N/A,False,0,0,False
 2026-02-03,2026-02-03 23:40,2026-02-03 23:55,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A649,A321,1,passenger,N/A,N/A,False,0,0,False
-2026-02-03,2026-02-03 22:45,2026-02-03 23:52,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A663,A320,0,passenger,VN-A685,62.0,True,0,0,False
+2026-02-03,2026-02-03 22:45,2026-02-03 23:52,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A663,A320,0,passenger,VN-A663,62.0,False,0,0,False
 2026-02-03,2026-02-03 23:00,2026-02-03 23:49,Macau,MFM,Air Macau,NX981,2,11R,Departed,B-MBO,A20N,0,passenger,N/A,N/A,False,0,0,False
 2026-02-03,2026-02-03 23:30,2026-02-03 23:47,Sydney,SYD,Vietnam Airlines,VN787,2,11R,Departed,VN-A891,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-02-03,2026-02-03 23:25,2026-02-03 23:43,Ho Chi Minh City,SGN,VietJet Air,VJ171,1,11R,Departed,VN-A812,A333,0,passenger,VN-A812,112.0,False,0,0,False
@@ -15107,7 +15108,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-03,2026-02-03 01:40,2026-02-03 01:50,Osaka,KIX,VietJet Air,VJ938,2,11R,Departed,VN-A528,A21N,1,passenger,N/A,N/A,False,0,0,False
 2026-02-03,2026-02-03 01:40,2026-02-03 01:47,Seoul,ICN,Jeju Air,7C2202,2,11R,Departed,HL8524,B38M,0,passenger,N/A,N/A,False,0,0,False
 2026-02-03,2026-02-03 01:35,2026-02-03 01:36,Nagoya,NGO,VietJet Air,VJ920,2,11R,Departed,VN-A525,A21N,1,passenger,N/A,N/A,False,0,0,False
-2026-02-03,2026-02-02 22:45,2026-02-03 01:32,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A670,A321,0,passenger,VN-A663,64.0,True,0,0,False
+2026-02-03,2026-02-02 22:45,2026-02-03 01:32,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A670,A321,0,passenger,VN-A670,64.0,False,0,0,False
 2026-02-03,2026-02-03 01:05,2026-02-03 01:19,Osaka,KIX,Vietnam Airlines,VN334,2,11R,Departed,VN-A893,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-02-03,2026-02-03 00:55,2026-02-03 01:16,Tokyo,NRT,VietJet Air,VJ932,2,11R,Departed,VN-A812,A333,1,passenger,N/A,N/A,False,0,0,False
 2026-02-03,2026-02-03 01:00,2026-02-03 01:13,Milan,MXP,Vietnam Airlines,VN73,2,11R,Departed,VN-A894,A359,0,passenger,N/A,N/A,False,0,0,False
@@ -15143,7 +15144,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-04,2026-02-04 23:00,2026-02-04 23:15,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,124.0,False,0,0,False
 2026-02-04,2026-02-04 22:55,2026-02-04 23:13,Ho Chi Minh City,SGN,Vietnam Airlines,VN7215,1,11R,Departed,VN-A501,A21N,0,passenger,VN-A501,113.0,False,0,0,False
 2026-02-04,2026-02-04 22:50,2026-02-04 23:07,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A547,A21N,0,passenger,N/A,N/A,False,0,0,False
-2026-02-04,2026-02-04 22:45,2026-02-04 23:04,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A685,A321,0,passenger,VN-A662,65.0,True,0,0,False
+2026-02-04,2026-02-04 22:45,2026-02-04 23:04,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A685,A321,0,passenger,VN-A685,65.0,False,0,0,False
 2026-02-04,N/A,2026-02-04 23:01,Hong Kong,HKG,Hong Kong Air Cargo,RH318,0,11R,Departed,B-LNV,A332,0,cargo,N/A,N/A,False,0,0,False
 2026-02-04,N/A,2026-02-04 22:54,N/A,N/A,K-Mile Air,8K525,N/A,11R,Departed,HS-KMD,B738,0,cargo,N/A,N/A,False,0,0,False
 2026-02-04,2026-02-04 21:30,2026-02-04 22:52,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G885,1,11R,Departed,VN-A279,A321,0,passenger,VN-A279,116.0,False,0,0,False
@@ -15452,7 +15453,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-05,2026-02-05 23:00,2026-02-05 23:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,103.0,False,0,0,False
 2026-02-05,2026-02-05 23:20,2026-02-05 23:38,Paris,CDG,Vietnam Airlines,VN19,2,11R,Departed,VN-A897,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-02-05,N/A,2026-02-05 23:33,Guangzhou,CAN,FedEx,FX6002,0,11R,Departed,N122FE,B763,0,cargo,N/A,N/A,False,0,0,False
-2026-02-05,2026-02-05 22:45,2026-02-05 23:31,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A662,A320,0,passenger,VN-A644,65.0,True,0,0,False
+2026-02-05,2026-02-05 22:45,2026-02-05 23:31,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A662,A320,0,passenger,VN-A662,65.0,False,0,0,False
 2026-02-05,2026-02-05 21:40,2026-02-05 23:28,Ho Chi Minh City,SGN,Vietnam Airlines,VN7211,1,11R,Departed,VN-A325,A321,0,passenger,VN-A325,101.0,False,0,0,False
 2026-02-05,2026-02-05 22:50,2026-02-05 23:25,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A693,A21N,0,passenger,N/A,N/A,False,0,0,False
 2026-02-05,2026-02-05 22:10,2026-02-05 23:22,Ho Chi Minh City,SGN,VietJet Air,VJ123,1,11R,Departed,VN-A516,A21N,0,passenger,VN-A516,110.0,False,0,0,False
@@ -16432,7 +16433,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-07,2026-02-06 23:45,2026-02-07 00:30,Munich,MUC,Vietnam Airlines,VN35,2,11R,Departed,VN-A864,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-02-07,2026-02-06 22:50,2026-02-07 00:22,Ho Chi Minh City,SGN,Vietnam Airlines,VN7251,1,11R,Departed,VN-A331,A321,0,passenger,VN-A331,127.0,False,0,0,False
 2026-02-07,2026-02-06 19:45,2026-02-07 00:18,Ho Chi Minh City,SGN,Vietnam Airlines,VN7253,1,11R,Departed,VN-A618,A21N,0,passenger,VN-A618,126.0,False,0,0,False
-2026-02-07,2026-02-06 22:45,2026-02-07 00:15,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A644,A321,0,passenger,VN-A536,64.0,True,0,0,False
+2026-02-07,2026-02-06 22:45,2026-02-07 00:15,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A644,A321,0,passenger,VN-A644,64.0,False,0,0,False
 2026-02-07,2026-02-06 21:55,2026-02-07 00:13,Hong Kong,HKG,HK express,UO543,2,11R,Departed,B-KKG,A21N,1,passenger,N/A,N/A,False,0,0,False
 2026-02-07,2026-02-06 23:25,2026-02-07 00:11,Ho Chi Minh City,SGN,VietJet Air,VJ171,1,11R,Departed,VN-A820,A333,0,passenger,VN-A820,131.0,False,0,0,False
 2026-02-07,2026-02-06 23:35,2026-02-07 00:08,Xi'an,XIY,VietJet Air,VJ7342,2,11R,Departed,VN-A663,A320,0,passenger,N/A,N/A,False,0,0,False
@@ -16757,7 +16758,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-08,2026-02-07 23:55,2026-02-08 01:04,Tokyo,NRT,Japan Airlines,JL752,2,11R,Departed,JA606J,B763,1,passenger,N/A,N/A,False,0,1,False
 2026-02-08,2026-02-08 00:30,2026-02-08 01:01,Busan,PUS,Vietnam Airlines,VN428,2,11R,Departed,VN-A870,B789,0,passenger,N/A,N/A,False,0,1,False
 2026-02-08,2026-02-08 00:25,2026-02-08 00:53,Tokyo,NRT,All Nippon Airways,NH898,2,11R,Departed,JA876A,B789,1,passenger,N/A,N/A,False,0,1,False
-2026-02-08,2026-02-07 22:45,2026-02-08 00:50,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A536,A21N,0,passenger,VN-A650,63.0,True,0,1,False
+2026-02-08,2026-02-07 22:45,2026-02-08 00:50,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A536,A21N,0,passenger,VN-A536,63.0,False,0,1,False
 2026-02-08,2026-02-07 21:05,2026-02-08 00:47,Ho Chi Minh City,SGN,Vietravel Airlines,VU701,1,11R,Departed,VN-A129,A321,0,passenger,VN-A129,98.0,False,0,1,False
 2026-02-08,2026-02-08 00:20,2026-02-08 00:44,Nagoya,NGO,Vietnam Airlines,VN348,2,11R,Departed,VN-A889,A359,0,passenger,N/A,N/A,False,0,1,False
 2026-02-08,2026-02-08 00:25,2026-02-08 00:38,Dubai,DXB,Emirates,EK395,2,11R,Departed,A6-ENC,B77W,1,passenger,N/A,N/A,False,0,1,False
@@ -16772,7 +16773,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-09,2026-02-09 23:40,2026-02-09 23:57,Seoul,ICN,Vietnam Airlines,VN416,2,11R,Departed,VN-A877,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-02-09,2026-02-09 23:20,2026-02-09 23:54,Paris,CDG,Vietnam Airlines,VN19,2,11R,Departed,VN-A899,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-02-09,2026-02-09 23:25,2026-02-09 23:51,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A868,B789,0,passenger,N/A,N/A,False,0,0,False
-2026-02-09,2026-02-09 22:45,2026-02-09 23:42,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A671,A320,0,passenger,VN-A669,64.0,True,0,0,False
+2026-02-09,2026-02-09 22:45,2026-02-09 23:42,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A671,A320,0,passenger,VN-A671,64.0,False,0,0,False
 2026-02-09,2026-02-09 23:00,2026-02-09 23:20,Macau,MFM,Air Macau,NX981,2,11R,Departed,B-MBP,A20N,0,passenger,N/A,N/A,False,0,0,False
 2026-02-09,2026-02-09 22:50,2026-02-09 23:17,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A528,A21N,0,passenger,N/A,N/A,False,0,0,False
 2026-02-09,2026-02-09 23:13,2026-02-09 23:13,Ho Chi Minh City,SGN,Vietnam Airlines,VN7203,1,29L,Departed,VN-A611,A321,0,passenger,VN-A611,135.0,False,0,0,False
@@ -17084,7 +17085,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-09,2026-02-09 03:03,2026-02-09 01:24,Ho Chi Minh City,SGN,Vietnam Airlines,VN7010,1,11R,Departed,VN-A601,A321,0,passenger,VN-A601,99.0,False,0,0,False
 2026-02-09,2026-02-08 18:00,2026-02-09 01:19,Busan,PUS,VietJet Air,VJ982,2,11R,Departed,VN-A500,A21N,1,passenger,N/A,N/A,False,0,0,False
 2026-02-09,2026-02-08 23:55,2026-02-09 01:15,Macau,MFM,Air Macau,NX983,2,11R,Departed,B-MCF,A320,0,passenger,N/A,N/A,False,0,0,False
-2026-02-09,2026-02-08 22:45,2026-02-09 01:13,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A650,A320,0,passenger,VN-A671,63.0,True,0,0,False
+2026-02-09,2026-02-08 22:45,2026-02-09 01:13,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A650,A320,0,passenger,VN-A650,63.0,False,0,0,False
 2026-02-09,2026-02-09 00:25,2026-02-09 01:11,Tokyo,NRT,All Nippon Airways,NH898,2,11R,Departed,JA928A,B789,1,passenger,N/A,N/A,False,0,0,False
 2026-02-09,2026-02-08 23:40,2026-02-09 01:09,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A636,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-02-09,2026-02-08 22:50,2026-02-09 01:06,Ho Chi Minh City,SGN,VietJet Air,VJ187,1,11R,Departed,VN-A640,A321,0,passenger,VN-A640,109.0,False,0,0,False
@@ -17450,7 +17451,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-11,N/A,2026-02-11 23:36,Guangzhou,CAN,FedEx,FX6002,0,11R,Departed,N117FE,B763,0,cargo,N/A,N/A,False,0,1,False
 2026-02-11,2026-02-11 23:33,2026-02-11 23:33,Ho Chi Minh City,SGN,Vietnam Airlines,VN7233,1,11R,Departed,VN-A897,A359,0,passenger,VN-A897,152.0,False,0,1,False
 2026-02-11,2026-02-11 23:27,2026-02-11 23:27,Ho Chi Minh City,SGN,Vietnam Airlines,VN7215,1,11R,Departed,VN-A392,A321,0,passenger,VN-A392,171.0,False,0,1,False
-2026-02-11,2026-02-11 22:45,2026-02-11 23:24,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A671,A320,0,passenger,VN-A650,75.0,True,0,1,False
+2026-02-11,2026-02-11 22:45,2026-02-11 23:24,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A671,A320,0,passenger,VN-A671,75.0,False,0,1,False
 2026-02-11,2026-02-11 22:55,2026-02-11 23:21,Istanbul,IST,Turkish Airlines,TK165,2,11R,Departed,TC-LGN,A359,1,passenger,N/A,N/A,False,0,1,False
 2026-02-11,2026-02-11 22:25,2026-02-11 23:17,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G895,1,11R,Departed,VN-A286,A21N,0,passenger,VN-A286,152.0,False,0,1,False
 2026-02-11,2026-02-11 22:30,2026-02-11 23:14,Hong Kong,HKG,K-Mile Air,8K525,0,11R,Departed,HS-KME,B738,1,cargo,N/A,N/A,False,0,1,False
@@ -17762,7 +17763,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-11,2026-02-11 01:49,2026-02-11 01:49,Ho Chi Minh City,SGN,Bamboo Airways,QH280,1,11R,Departed,VN-A597,A321,0,passenger,VN-A597,103.0,False,0,0,False
 2026-02-11,2026-02-11 00:30,2026-02-11 01:45,Busan,PUS,Vietnam Airlines,VN428,2,11R,Departed,VN-A873,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-02-11,2026-02-11 00:15,2026-02-11 01:34,Seoul,ICN,T'way Air,TW62,2,11R,Departed,HL8547,B738,0,passenger,N/A,N/A,False,0,0,False
-2026-02-11,2026-02-10 22:45,2026-02-11 01:31,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A669,A320,0,passenger,VN-A671,65.0,True,0,0,False
+2026-02-11,2026-02-10 22:45,2026-02-11 01:31,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A669,A320,0,passenger,VN-A669,65.0,False,0,0,False
 2026-02-11,2026-02-10 18:00,2026-02-11 01:18,Busan,PUS,VietJet Air,VJ982,2,11R,Departed,VN-A684,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-02-11,2026-02-11 00:55,2026-02-11 01:05,Tokyo,NRT,VietJet Air,VJ932,2,11R,Departed,VN-A820,A333,1,passenger,N/A,N/A,False,0,0,False
 2026-02-11,2026-02-11 00:45,2026-02-11 01:01,London,LHR,Vietnam Airlines,VN55,2,11R,Departed,VN-A861,B789,0,passenger,N/A,N/A,False,0,0,False
@@ -18121,7 +18122,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-12,2026-02-11 23:00,2026-02-12 00:10,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,167.0,False,0,0,False
 2026-02-12,2026-02-11 23:35,2026-02-12 00:03,Xi'an,XIY,VietJet Air,VJ7342,2,11R,Departed,VN-A645,A321,0,passenger,N/A,N/A,False,0,0,False
 2026-02-12,2026-02-11 21:30,2026-02-12 00:00,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G885,1,11R,Departed,VN-A280,A321,0,passenger,VN-A280,167.0,False,0,0,False
-2026-02-13,2026-02-13 22:45,2026-02-13 23:54,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A662,A320,0,passenger,VN-A656,69.0,True,0,0,False
+2026-02-13,2026-02-13 22:45,2026-02-13 23:54,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A662,A320,0,passenger,VN-A662,69.0,False,0,0,False
 2026-02-13,2026-02-13 23:20,2026-02-13 23:51,Paris,CDG,Vietnam Airlines,VN19,2,11R,Departed,VN-A893,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-02-13,2026-02-13 23:00,2026-02-13 23:48,Macau,MFM,Air Macau,NX981,2,11R,Departed,B-MBO,A20N,0,passenger,N/A,N/A,False,0,0,False
 2026-02-13,2026-02-13 23:00,2026-02-13 23:46,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,152.0,False,0,0,False
@@ -18442,7 +18443,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-13,2026-02-13 01:45,2026-02-13 01:50,Doha,DOH,Qatar Airways,QR985,2,11R,Departed,A7-BCW,B788,0,passenger,N/A,N/A,False,0,0,False
 2026-02-13,N/A,2026-02-13 01:44,Tokyo,NRT,All Nippon Airways,NH8448,0,11R,Departed,JA604F,B763,0,cargo,N/A,N/A,False,0,0,False
 2026-02-13,2026-02-13 01:00,2026-02-13 01:34,Busan,PUS,VietJet Air,VJ982,2,11R,Departed,VN-A633,A321,1,passenger,N/A,N/A,False,0,0,False
-2026-02-13,2026-02-12 22:45,2026-02-13 01:31,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A650,A320,0,passenger,VN-A662,62.0,True,0,0,False
+2026-02-13,2026-02-12 22:45,2026-02-13 01:31,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A650,A320,0,passenger,VN-A650,62.0,False,0,0,False
 2026-02-13,2026-02-13 01:00,2026-02-13 01:29,Milan,MXP,Vietnam Airlines,VN73,2,11R,Departed,VN-A898,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-02-13,2026-02-13 00:45,2026-02-13 01:26,London,LHR,Vietnam Airlines,VN55,2,11R,Departed,VN-A863,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-02-13,2026-02-13 00:55,2026-02-13 01:18,Tokyo,NRT,VietJet Air,VJ932,2,11R,Departed,VN-A814,A333,1,passenger,N/A,N/A,False,0,0,False
@@ -18460,13 +18461,13 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-13,2026-02-12 23:50,2026-02-13 00:19,Seoul,ICN,Asiana Airlines,OZ734,2,11R,Departed,HL8362,A359,1,passenger,N/A,N/A,False,0,0,False
 2026-02-13,2026-02-13 00:16,2026-02-13 00:16,Ho Chi Minh City,SGN,VietJet Air,VJ1125,1,11R,Departed,VN-A697,A21N,0,passenger,VN-A697,130.0,False,0,0,False
 2026-02-13,2026-02-12 21:05,2026-02-13 00:13,Da Nang,DAD,Vietnam Airlines,VN7193,1,11R,Departed,VN-A618,A21N,0,passenger,N/A,N/A,False,0,0,False
-2026-02-13,2026-02-12 20:50,2026-02-13 00:10,Da Nang,DAD,VietJet Air,VJ521,1,11R,Departed,VN-A543,A21N,0,passenger,VN-A641,90.0,True,0,0,False
+2026-02-13,2026-02-12 20:50,2026-02-13 00:10,Da Nang,DAD,VietJet Air,VJ521,1,11R,Departed,VN-A543,A21N,0,passenger,VN-A543,90.0,False,0,0,False
 2026-02-13,2026-02-12 23:10,2026-02-13 00:07,Ho Chi Minh City,SGN,Bamboo Airways,QH283,1,11R,Departed,PK-BBK,B739,0,passenger,PK-BBK,130.0,False,0,0,False
 2026-02-13,2026-02-12 23:40,2026-02-13 00:05,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A684,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-02-13,2026-02-12 23:25,2026-02-13 00:03,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A870,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-02-14,2026-02-14 23:10,2026-02-14 23:55,Ho Chi Minh City,SGN,Bamboo Airways,QH283,1,11R,Departed,PK-BBK,B739,0,passenger,PK-BBK,152.0,False,0,0,False
 2026-02-14,2026-02-14 23:25,2026-02-14 23:52,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A870,B789,0,passenger,N/A,N/A,False,0,0,False
-2026-02-14,2026-02-14 22:45,2026-02-14 23:50,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A656,A320,0,passenger,VN-A643,65.0,True,0,0,False
+2026-02-14,2026-02-14 22:45,2026-02-14 23:50,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A656,A320,0,passenger,VN-A656,65.0,False,0,0,False
 2026-02-14,2026-02-14 23:15,2026-02-14 23:47,Ho Chi Minh City,SGN,Vietnam Airlines,VN7066,1,11R,Departed,VN-A623,A21N,0,passenger,N/A,N/A,False,0,0,False
 2026-02-14,2026-02-14 23:00,2026-02-14 23:45,Kolkata,CCU,Sun PhuQuoc Airways,9G8894,2,11R,Departed,VN-A282,A21N,0,passenger,N/A,N/A,False,0,0,False
 2026-02-14,2026-02-14 23:41,2026-02-14 23:41,Hong Kong,HKG,Cathay Pacific,CX48,0,11R,Departed,B-LJE,B748,0,cargo,N/A,N/A,False,0,0,False
@@ -18819,7 +18820,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-14,2026-02-14 00:02,2026-02-14 00:02,Ho Chi Minh City,SGN,Vietnam Airlines,VN7297,1,11R,Departed,VN-A393,A321,0,passenger,VN-A393,141.0,False,0,0,False
 2026-02-15,2026-02-15 23:40,2026-02-15 23:56,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A642,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-02-15,2026-02-15 23:40,2026-02-15 23:52,Seoul,ICN,Vietnam Airlines,VN416,2,11R,Departed,VN-A873,B78X,0,passenger,N/A,N/A,False,0,0,False
-2026-02-15,2026-02-15 22:45,2026-02-15 23:39,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A643,A321,0,passenger,VN-A532,62.0,True,0,0,False
+2026-02-15,2026-02-15 22:45,2026-02-15 23:39,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A643,A321,0,passenger,VN-A643,62.0,False,0,0,False
 2026-02-15,N/A,2026-02-15 23:36,Guangzhou,CAN,FedEx,FX9125,0,11R,Departed,N104FE,B763,0,cargo,N/A,N/A,False,0,0,False
 2026-02-15,2026-02-15 23:05,2026-02-15 23:33,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8570,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-02-15,2026-02-15 20:15,2026-02-15 23:29,Hue,HUI,VietJet Air,VJ312,1,11R,Departed,LY-MLI,A320,0,passenger,N/A,N/A,False,0,0,False
@@ -19450,7 +19451,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-16,2026-02-15 23:30,2026-02-16 00:00,Sydney,SYD,Vietnam Airlines,VN787,2,11R,Departed,VN-A889,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-02-17,2026-02-17 23:20,2026-02-17 23:59,Paris,CDG,Vietnam Airlines,VN19,2,11R,Departed,VN-A898,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-02-17,2026-02-17 23:40,2026-02-17 23:54,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A516,A21N,1,passenger,N/A,N/A,False,0,0,False
-2026-02-17,2026-02-17 22:45,2026-02-17 23:52,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A650,A320,0,passenger,VN-A532,67.0,True,0,0,False
+2026-02-17,2026-02-17 22:45,2026-02-17 23:52,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A650,A320,0,passenger,VN-A650,67.0,False,0,0,False
 2026-02-17,2026-02-17 23:40,2026-02-17 23:49,Seoul,ICN,Vietnam Airlines,VN416,2,11R,Departed,VN-A872,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-02-17,2026-02-17 23:25,2026-02-17 23:47,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A890,A359,0,passenger,N/A,N/A,False,0,1,False
 2026-02-17,2026-02-17 23:05,2026-02-17 23:44,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8391,B789,0,passenger,N/A,N/A,False,0,1,False
@@ -20003,7 +20004,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-18,2026-02-18 04:30,2026-02-18 04:30,Da Nang,DAD,Vietnam Airlines,VN7157,1,11R,Departed,VN-A611,A321,0,passenger,VN-A611,63.0,False,0,0,False
 2026-02-18,2026-02-18 04:20,2026-02-18 04:20,Shanghai,PVG,China Eastern Airlines,MU7236,2,11R,Departed,B-32KF,A21N,1,passenger,N/A,N/A,False,0,0,False
 2026-02-18,N/A,2026-02-18 04:11,Delhi,DEL,Korean Air,KE9575,0,11R,Departed,HL8226,B77L,0,cargo,N/A,N/A,False,0,0,False
-2026-02-18,2026-02-18 04:06,2026-02-18 04:06,Da Nang,DAD,Vietnam Airlines,VN7159,1,11R,Departed,VN-A323,A321,0,passenger,VN-A512,61.0,True,0,0,False
+2026-02-18,2026-02-18 04:06,2026-02-18 04:06,Da Nang,DAD,Vietnam Airlines,VN7159,1,11R,Departed,VN-A323,A321,0,passenger,VN-A323,61.0,False,0,0,False
 2026-02-18,2026-02-18 02:45,2026-02-18 02:56,Shanghai,PVG,China Eastern Airlines,MU5076,2,11R,Departed,B-1722,B738,0,passenger,N/A,N/A,False,0,0,False
 2026-02-18,2026-02-18 02:54,2026-02-18 02:54,Ho Chi Minh City,SGN,Vietnam Airlines,VN7245,1,11R,Departed,VN-A613,A321,0,passenger,VN-A613,100.0,False,0,0,False
 2026-02-18,2026-02-18 02:50,2026-02-18 02:47,Hangzhou,HGH,Air China,CA708,2,11R,Departed,B-6745,A320,1,passenger,N/A,N/A,False,0,0,False
@@ -20045,7 +20046,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-19,2026-02-19 22:50,2026-02-19 23:17,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A543,A21N,0,passenger,N/A,N/A,False,0,0,False
 2026-02-19,2026-02-19 22:55,2026-02-19 23:15,Istanbul,IST,Turkish Airlines,TK165,2,11R,Departed,TC-LGO,A359,1,passenger,N/A,N/A,False,0,0,False
 2026-02-19,2026-02-19 22:50,2026-02-19 23:10,Cebu,CEB,Vietnam Airlines,VN643,2,11R,Departed,VN-A613,A321,1,passenger,N/A,N/A,False,0,0,False
-2026-02-19,2026-02-19 22:45,2026-02-19 23:06,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A699,A320,0,passenger,VN-A632,66.0,True,0,0,False
+2026-02-19,2026-02-19 22:45,2026-02-19 23:06,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A699,A320,0,passenger,VN-A699,66.0,False,0,0,False
 2026-02-19,2026-02-19 22:55,2026-02-19 23:02,Ho Chi Minh City,SGN,Vietnam Airlines,VN7215,1,11R,Departed,VN-A331,A321,0,passenger,VN-A331,108.0,False,0,0,False
 2026-02-19,2026-02-19 23:00,2026-02-19 22:59,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,101.0,False,0,0,False
 2026-02-19,2026-02-19 22:50,2026-02-19 22:56,Ho Chi Minh City,SGN,Vietnam Airlines,VN7251,1,11R,Departed,VN-A604,A321,0,passenger,VN-A604,101.0,False,0,0,False
@@ -21012,7 +21013,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-21,2026-02-21 00:20,2026-02-21 00:31,Manila,MNL,Vietnam Airlines,VN647,2,11R,Departed,VN-A611,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-02-21,2026-02-21 00:20,2026-02-21 00:28,Tuy Hoa,TBB,Bamboo Airways,QH9261,1,11R,Departed,VN-A596,A20N,0,passenger,N/A,N/A,False,0,0,False
 2026-02-21,2026-02-21 00:15,2026-02-21 00:24,Seoul,ICN,T'way Air,TW62,2,11R,Departed,HL8069,B738,0,passenger,N/A,N/A,False,0,0,False
-2026-02-21,2026-02-20 22:45,2026-02-21 00:22,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A632,A321,0,passenger,VN-A675,68.0,True,0,0,False
+2026-02-21,2026-02-20 22:45,2026-02-21 00:22,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A632,A321,0,passenger,VN-A632,68.0,False,0,0,False
 2026-02-21,2026-02-20 23:55,2026-02-21 00:18,Tokyo,NRT,Japan Airlines,JL752,2,11R,Departed,JA606J,B763,1,passenger,N/A,N/A,False,0,0,False
 2026-02-21,2026-02-20 23:50,2026-02-21 00:13,Seoul,ICN,Asiana Airlines,OZ734,2,11R,Departed,HL8362,A359,1,passenger,N/A,N/A,False,0,0,False
 2026-02-21,2026-02-20 23:55,2026-02-21 00:10,Macau,MFM,Air Macau,EK393,2,11R,Departed,A6-ENH,B77W,1,passenger,N/A,N/A,False,0,0,False
@@ -21355,7 +21356,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-22,2026-02-21 22:10,2026-02-22 00:23,Ho Chi Minh City,SGN,VietJet Air,VJ123,1,11R,Departed,VN-A697,A21N,0,passenger,VN-A697,127.0,False,0,0,False
 2026-02-22,2026-02-21 23:25,2026-02-22 00:20,Ho Chi Minh City,SGN,VietJet Air,VJ171,1,11R,Departed,VN-A649,A321,0,passenger,VN-A649,125.0,False,0,0,False
 2026-02-22,2026-02-21 23:55,2026-02-22 00:18,Tokyo,NRT,Japan Airlines,JL752,2,11R,Departed,JA617J,B763,1,passenger,N/A,N/A,False,0,0,False
-2026-02-22,2026-02-21 22:45,2026-02-22 00:16,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A675,A320,0,passenger,VN-A649,65.0,True,0,0,False
+2026-02-22,2026-02-21 22:45,2026-02-22 00:16,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A675,A320,0,passenger,VN-A675,65.0,False,0,0,False
 2026-02-22,2026-02-21 23:50,2026-02-22 00:13,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G8901,1,11R,Departed,VN-A284,A21N,1,passenger,VN-A284,126.0,False,0,0,False
 2026-02-22,2026-02-21 23:50,2026-02-22 00:11,Seoul,ICN,Asiana Airlines,OZ734,2,11R,Departed,HL8079,A359,1,passenger,N/A,N/A,False,0,0,False
 2026-02-22,N/A,2026-02-22 00:08,Seoul,ICN,Ups,5X99,0,11R,Departed,N625UP,B748,0,cargo,N/A,N/A,False,0,0,False
@@ -21644,7 +21645,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-23,2026-02-23 04:10,2026-02-23 04:29,Ho Chi Minh City,SGN,VietJet Air,VJ1121,1,11R,Departed,VN-A653,A21N,0,passenger,VN-A653,101.0,False,0,0,False
 2026-02-23,N/A,2026-02-23 04:26,N/A,N/A,Korean Air,KE9387,N/A,11R,Departed,HL7602,B744,0,cargo,N/A,N/A,False,0,0,False
 2026-02-23,2026-02-23 04:20,2026-02-23 04:22,Shanghai,PVG,China Eastern Airlines,MU7236,2,11R,Departed,B-32LH,A21N,1,passenger,N/A,N/A,False,0,0,False
-2026-02-23,2026-02-22 22:45,2026-02-23 03:47,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A649,A321,0,passenger,VN-A663,66.0,True,0,0,False
+2026-02-23,2026-02-22 22:45,2026-02-23 03:47,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A649,A321,0,passenger,VN-A649,66.0,False,0,0,False
 2026-02-23,2026-02-23 01:00,2026-02-23 03:34,Busan,PUS,VietJet Air,VJ982,2,11R,Departed,VN-A542,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-02-23,2026-02-23 03:20,2026-02-23 03:18,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G8803,1,11R,Departed,VN-A279,A321,0,passenger,VN-A279,105.0,False,0,0,False
 2026-02-23,2026-02-23 02:15,2026-02-23 03:14,Ho Chi Minh City,SGN,Vietravel Airlines,VU781,1,11R,Departed,VN-A289,A321,0,passenger,VN-A289,104.0,False,0,0,False
@@ -21697,7 +21698,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-24,N/A,2026-02-24 23:54,Istanbul,IST,Turkish Airlines,TK6233,0,11R,Departed,TC-LJR,B77L,0,cargo,N/A,N/A,False,0,0,False
 2026-02-24,N/A,2026-02-24 23:46,Guangzhou,CAN,FedEx,FX6002,0,11R,Departed,N118FE,B763,0,cargo,N/A,N/A,False,0,0,False
 2026-02-24,2026-02-24 23:20,2026-02-24 23:44,Paris,CDG,Vietnam Airlines,VN19,2,11R,Departed,VN-A891,A359,0,passenger,N/A,N/A,False,0,0,False
-2026-02-24,2026-02-24 22:45,2026-02-24 23:39,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A663,A320,0,passenger,VN-A532,73.0,True,0,0,False
+2026-02-24,2026-02-24 22:45,2026-02-24 23:39,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A663,A320,0,passenger,VN-A663,73.0,False,0,0,False
 2026-02-24,2026-02-24 22:15,2026-02-24 23:38,Ho Chi Minh City,SGN,Vietnam Airlines,VN7213,1,11R,Departed,VN-A622,A21N,0,passenger,VN-A622,134.0,False,0,0,False
 2026-02-24,2026-02-24 23:05,2026-02-24 23:34,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8393,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-02-24,2026-02-24 21:55,2026-02-24 23:32,Hong Kong,HKG,HK express,UO543,2,11R,Departed,B-KKH,A21N,1,passenger,N/A,N/A,False,0,0,False
@@ -22732,7 +22733,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-27,2026-02-27 23:40,2026-02-27 23:51,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A639,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-02-27,N/A,2026-02-27 23:48,Kolkata,CCU,IndiGo,6E8962,0,11R,Departed,VT-IKW,A321,0,cargo,N/A,N/A,False,0,0,False
 2026-02-27,2026-02-27 23:30,2026-02-27 23:44,Sydney,SYD,Vietnam Airlines,VN787,2,11R,Departed,VN-A891,A359,0,passenger,N/A,N/A,False,0,0,False
-2026-02-27,2026-02-27 22:45,2026-02-27 23:39,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A668,A320,0,passenger,VN-A658,64.0,True,0,0,False
+2026-02-27,2026-02-27 22:45,2026-02-27 23:39,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A668,A320,0,passenger,VN-A668,64.0,False,0,0,False
 2026-02-27,2026-02-27 23:20,2026-02-27 23:36,Paris,CDG,Vietnam Airlines,VN19,2,11R,Departed,VN-A892,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-02-27,N/A,2026-02-27 23:29,Taipei,TPE,China Airlines,CI6876,0,11R,Departed,B-18721,B744,0,cargo,N/A,N/A,False,0,0,False
 2026-02-27,2026-02-27 23:05,2026-02-27 23:25,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8085,B789,0,passenger,N/A,N/A,False,0,0,False
@@ -23044,7 +23045,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-27,2026-02-27 01:00,2026-02-27 01:41,Milan,MXP,Vietnam Airlines,VN73,2,11R,Departed,VN-A894,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-02-27,2026-02-27 00:45,2026-02-27 01:38,London,LHR,Vietnam Airlines,VN55,2,11R,Departed,VN-A863,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-02-27,N/A,2026-02-27 01:35,Tokyo,NRT,All Nippon Airways,NH8448,0,11R,Departed,JA605F,B763,0,cargo,N/A,N/A,False,0,0,False
-2026-02-27,2026-02-26 22:45,2026-02-27 01:31,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A522,A321,0,passenger,VN-A668,63.0,True,0,0,False
+2026-02-27,2026-02-26 22:45,2026-02-27 01:31,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A522,A321,0,passenger,VN-A522,63.0,False,0,0,False
 2026-02-27,2026-02-27 00:55,2026-02-27 01:28,Tokyo,NRT,VietJet Air,VJ932,2,11R,Departed,VN-A816,A333,1,passenger,N/A,N/A,False,0,0,False
 2026-02-27,2026-02-26 23:40,2026-02-27 01:24,Ho Chi Minh City,SGN,VietJet Air,VJ159,1,11R,Departed,VN-A663,A320,0,passenger,VN-A663,98.0,False,0,0,False
 2026-02-27,2026-02-27 01:05,2026-02-27 01:21,Osaka,KIX,Vietnam Airlines,VN334,2,11R,Departed,VN-A888,A359,0,passenger,N/A,N/A,False,0,0,False
@@ -23716,7 +23717,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-01,2026-03-01 00:25,2026-03-01 00:35,Tokyo,NRT,All Nippon Airways,NH898,2,11R,Departed,JA878A,B788,1,passenger,N/A,N/A,False,0,0,False
 2026-03-01,2026-02-28 23:25,2026-03-01 00:30,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A867,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-03-01,2026-02-28 23:50,2026-03-01 00:25,Macau,MFM,Air Macau,NX983,2,11R,Departed,B-MBP,A20N,0,passenger,N/A,N/A,False,0,0,False
-2026-03-01,2026-02-28 22:45,2026-03-01 00:23,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A658,A320,0,passenger,VN-A532,64.0,True,0,0,False
+2026-03-01,2026-02-28 22:45,2026-03-01 00:23,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A658,A320,0,passenger,VN-A658,64.0,False,0,0,False
 2026-03-01,2026-03-01 00:10,2026-03-01 00:19,Ho Chi Minh City,SGN,Vietnam Airlines,VN7295,1,11R,Departed,VN-A513,A20N,0,passenger,VN-A513,113.0,False,0,0,False
 2026-03-01,2026-02-28 23:40,2026-03-01 00:17,Ho Chi Minh City,SGN,VietJet Air,VJ159,1,11R,Departed,VN-A641,A321,0,passenger,VN-A641,102.0,False,0,0,False
 2026-03-01,2026-02-28 23:50,2026-03-01 00:13,Seoul,ICN,Asiana Airlines,OZ734,2,11R,Departed,HL7771,A359,1,passenger,N/A,N/A,False,0,0,False
@@ -23734,7 +23735,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-02,2026-03-02 22:50,2026-03-02 23:21,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A552,A21N,0,passenger,N/A,N/A,False,0,0,False
 2026-03-02,2026-03-02 23:20,2026-03-02 23:18,Ho Chi Minh City,SGN,Bamboo Airways,QH283,1,11R,Departed,JU-1410,A320,0,passenger,JU-1410,104.0,False,0,0,False
 2026-03-02,2026-03-02 23:14,2026-03-02 23:14,N/A,N/A,VietJet Air,VJ32,N/A,11R,Departed,VN-A651,A321,0,passenger,N/A,N/A,False,0,0,False
-2026-03-02,2026-03-02 22:45,2026-03-02 23:10,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A668,A320,0,passenger,VN-A656,63.0,True,0,0,False
+2026-03-02,2026-03-02 22:45,2026-03-02 23:10,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A668,A320,0,passenger,VN-A668,63.0,False,0,0,False
 2026-03-02,2026-03-02 22:55,2026-03-02 23:07,Istanbul,IST,Turkish Airlines,TK165,2,11R,Departed,TC-LGK,A359,1,passenger,N/A,N/A,False,0,0,False
 2026-03-02,2026-03-02 22:55,2026-03-02 23:02,Ho Chi Minh City,SGN,Vietnam Airlines,VN7215,1,11R,Departed,VN-A339,A321,0,passenger,VN-A339,107.0,False,0,0,False
 2026-03-02,2026-03-02 23:00,2026-03-02 22:57,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,103.0,False,0,0,False
@@ -24271,7 +24272,6 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-03,2026-03-03 08:35,2026-03-03 08:44,Tokyo,HND,Vietnam Airlines,VN384,2,11R,Departed,VN-A864,B789,1,passenger,N/A,N/A,False,0,1,False
 2026-03-03,2026-03-03 08:15,2026-03-03 08:27,Con Dao,VCS,VietJet Air,VJ107,1,11R,Departed,B-656E,AJ27,0,passenger,N/A,N/A,False,0,1,False
 2026-03-03,2026-03-03 08:15,2026-03-03 08:25,Guangzhou,CAN,China Southern Airlines,CZ372,2,11R,Departed,B-205L,B38M,1,passenger,N/A,N/A,False,0,1,False
-2026-03-03,2026-03-03 07:10,2026-03-03 08:23,Kuala Lumpur,KUL,VietJet Air,VJ905,2,11R,Departed,VN-A516,A21N,1,passenger,N/A,N/A,False,0,1,False
 2026-03-03,2026-03-03 08:15,2026-03-03 08:22,Da Nang,DAD,Vietnam Airlines,VN6081,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,58.0,False,0,1,False
 2026-03-03,2026-03-03 08:05,2026-03-03 08:10,Singapore,SIN,Vietnam Airlines,VN661,2,11R,Departed,VN-A620,A21N,0,passenger,N/A,N/A,False,0,1,False
 2026-03-03,2026-03-03 07:45,2026-03-03 08:08,Da Nang,DAD,Vietnam Airlines,VN163,1,11R,Departed,VN-A336,A321,0,passenger,VN-A336,65.0,False,0,1,False
@@ -24365,7 +24365,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-04,2026-03-04 22:50,2026-03-04 23:24,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A647,A321,0,passenger,N/A,N/A,False,0,0,False
 2026-03-04,N/A,2026-03-04 23:21,Kolkata,CCU,IndiGo,6E8962,0,11R,Departed,VT-IKW,A321,0,cargo,N/A,N/A,False,0,0,False
 2026-03-04,N/A,2026-03-04 23:19,Guangzhou,CAN,FedEx,FX6002,0,11R,Departed,N103FE,B763,0,cargo,N/A,N/A,False,0,0,False
-2026-03-04,2026-03-04 22:45,2026-03-04 23:08,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A656,A320,0,passenger,VN-A532,68.0,True,0,0,False
+2026-03-04,2026-03-04 22:45,2026-03-04 23:08,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A656,A320,0,passenger,VN-A656,68.0,False,0,0,False
 2026-03-04,2026-03-04 23:00,2026-03-04 23:03,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,97.0,False,0,0,False
 2026-03-04,2026-03-04 22:35,2026-03-04 22:55,Ho Chi Minh City,SGN,Bamboo Airways,QH283,1,11R,Departed,ER-00005,A320,0,passenger,ER-00005,104.0,False,0,0,False
 2026-03-04,2026-03-04 22:25,2026-03-04 22:52,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G895,1,11R,Departed,VN-A286,A21N,0,passenger,VN-A286,100.0,False,0,0,False
@@ -24679,7 +24679,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-05,2026-03-05 23:30,2026-03-05 23:47,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G895,1,11R,Departed,VN-A280,A321,0,passenger,VN-A280,102.0,False,0,0,False
 2026-03-05,2026-03-05 23:25,2026-03-05 23:41,Ho Chi Minh City,SGN,VietJet Air,VJ171,1,11R,Departed,VN-A817,A333,0,passenger,VN-A817,105.0,False,0,0,False
 2026-03-05,2026-03-05 23:05,2026-03-05 23:37,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL7209,B789,0,passenger,N/A,N/A,False,0,0,False
-2026-03-05,2026-03-05 22:45,2026-03-05 23:34,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A532,A321,0,passenger,VN-A661,65.0,True,0,0,False
+2026-03-05,2026-03-05 22:45,2026-03-05 23:34,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A532,A321,0,passenger,VN-A532,65.0,False,0,0,False
 2026-03-05,2026-03-05 23:00,2026-03-05 23:32,Macau,MFM,Air Macau,NX981,2,11R,Departed,B-MCE,A321,0,passenger,N/A,N/A,False,0,0,False
 2026-03-05,2026-03-05 23:20,2026-03-05 23:30,Ho Chi Minh City,SGN,Bamboo Airways,QH283,1,11R,Departed,JU-1410,A320,0,passenger,JU-1410,106.0,False,0,0,False
 2026-03-05,N/A,2026-03-05 23:27,N/A,N/A,FedEx,FX6002,N/A,11R,Departed,N118FE,B763,0,cargo,N/A,N/A,False,0,0,False
@@ -25318,7 +25318,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-07,2026-03-07 23:40,2026-03-07 23:51,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A641,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-03-07,2026-03-07 23:25,2026-03-07 23:40,Ho Chi Minh City,SGN,VietJet Air,VJ171,1,11R,Departed,VN-A532,A321,0,passenger,VN-A532,104.0,False,0,0,False
 2026-03-07,2026-03-07 23:25,2026-03-07 23:38,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A868,B789,0,passenger,N/A,N/A,False,0,0,False
-2026-03-07,2026-03-07 22:45,2026-03-07 23:32,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A689,A320,0,passenger,VN-A644,71.0,True,0,0,False
+2026-03-07,2026-03-07 22:45,2026-03-07 23:32,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A689,A320,0,passenger,VN-A689,71.0,False,0,0,False
 2026-03-07,2026-03-07 19:45,2026-03-07 23:30,Da Nang,DAD,VietJet Air,VJ519,1,11R,Departed,VN-A639,A321,0,passenger,N/A,N/A,False,0,0,False
 2026-03-07,2026-03-07 22:50,2026-03-07 23:16,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A545,A21N,0,passenger,N/A,N/A,False,0,0,False
 2026-03-07,2026-03-07 22:55,2026-03-07 23:10,Istanbul,IST,Turkish Airlines,TK165,2,11R,Departed,TC-LGK,A359,1,passenger,N/A,N/A,False,0,0,False
@@ -25631,12 +25631,12 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-07,N/A,2026-03-07 00:18,N/A,N/A,EVA Air,BR6062,N/A,11R,Departed,B-16790,B77L,0,cargo,N/A,N/A,False,0,0,False
 2026-03-07,2026-03-06 23:50,2026-03-07 00:15,Seoul,ICN,Asiana Airlines,OZ734,2,11R,Departed,HL7771,A359,1,passenger,N/A,N/A,False,0,0,False
 2026-03-07,2026-03-06 23:05,2026-03-07 00:06,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8570,B78X,0,passenger,N/A,N/A,False,0,0,False
-2026-03-07,2026-03-06 22:45,2026-03-07 00:04,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A661,A321,0,passenger,VN-A689,63.0,True,0,0,False
+2026-03-07,2026-03-06 22:45,2026-03-07 00:04,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A661,A321,0,passenger,VN-A661,63.0,False,0,0,False
 2026-03-07,2026-03-06 23:40,2026-03-07 00:01,Seoul,ICN,Vietnam Airlines,VN416,2,11R,Departed,VN-A878,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-03-08,2026-03-08 23:40,2026-03-08 23:58,Seoul,ICN,Vietnam Airlines,VN416,2,11R,Departed,VN-A390,A321,0,passenger,N/A,N/A,False,0,0,False
 2026-03-08,2026-03-08 23:30,2026-03-08 23:54,Sydney,SYD,Vietnam Airlines,VN787,2,11R,Departed,VN-A890,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-03-08,2026-03-08 23:00,2026-03-08 23:50,Macau,MFM,Air Macau,NX9983,2,11R,Departed,B-MBM,A321,1,passenger,N/A,N/A,False,0,0,False
-2026-03-08,2026-03-08 22:45,2026-03-08 23:48,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A644,A321,0,passenger,VN-A658,67.0,True,0,0,False
+2026-03-08,2026-03-08 22:45,2026-03-08 23:48,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A644,A321,0,passenger,VN-A644,67.0,False,0,0,False
 2026-03-08,N/A,2026-03-08 23:45,N/A,N/A,FedEx,FX9125,N/A,11R,Departed,N117FE,B763,0,cargo,N/A,N/A,False,0,0,False
 2026-03-08,2026-03-08 23:15,2026-03-08 23:38,Haikou,HAK,Hainan Airlines,HU784,2,11R,Departed,B-1390,B38M,1,passenger,N/A,N/A,False,0,0,False
 2026-03-08,2026-03-08 23:05,2026-03-08 23:32,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8538,B78X,0,passenger,N/A,N/A,False,0,0,False
@@ -25948,7 +25948,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-08,2026-03-07 23:55,2026-03-08 00:04,Tokyo,NRT,Japan Airlines,JL752,2,11R,Departed,JA617J,B763,1,passenger,N/A,N/A,False,0,0,False
 2026-03-08,2026-03-07 23:40,2026-03-08 00:02,Seoul,ICN,Vietnam Airlines,VN416,2,11R,Departed,VN-A879,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-03-09,2026-03-09 23:40,2026-03-09 23:57,Ho Chi Minh City,SGN,VietJet Air,VJ1159,1,11R,Departed,VN-A542,A321,0,passenger,VN-A542,98.0,False,0,0,False
-2026-03-09,2026-03-09 22:45,2026-03-09 23:52,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A658,A320,0,passenger,VN-A542,63.0,True,0,0,False
+2026-03-09,2026-03-09 22:45,2026-03-09 23:52,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A658,A320,0,passenger,VN-A658,63.0,False,0,0,False
 2026-03-09,2026-03-09 23:40,2026-03-09 23:50,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A632,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-03-09,2026-03-09 23:25,2026-03-09 23:46,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A864,B789,0,passenger,N/A,N/A,False,0,0,False
 2026-03-09,2026-03-09 23:24,2026-03-09 23:24,Guangzhou,CAN,FedEx,FX6013,0,11R,Departed,N108FE,B763,0,cargo,N/A,N/A,False,0,0,False
@@ -27192,7 +27192,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-13,2026-03-13 23:30,2026-03-13 23:54,Sydney,SYD,Vietnam Airlines,VN787,2,11R,Departed,VN-A896,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-03-13,2026-03-13 23:25,2026-03-13 23:44,Ho Chi Minh City,SGN,VietJet Air,VJ171,1,11R,Departed,VN-A810,A333,0,passenger,VN-A810,104.0,False,0,0,False
 2026-03-13,N/A,2026-03-13 23:37,Kolkata,CCU,IndiGo,6E8962,0,11R,Departed,VT-IKW,A321,0,cargo,N/A,N/A,False,0,0,False
-2026-03-13,2026-03-13 22:45,2026-03-13 23:35,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A637,A321,0,passenger,VN-A644,66.0,True,0,0,False
+2026-03-13,2026-03-13 22:45,2026-03-13 23:35,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A637,A321,0,passenger,VN-A637,66.0,False,0,0,False
 2026-03-13,N/A,2026-03-13 23:32,Guangzhou,CAN,FedEx,FX6002,0,11R,Departed,N112FE,B763,0,cargo,N/A,N/A,False,0,0,False
 2026-03-13,2026-03-13 23:05,2026-03-13 23:23,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8515,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-03-13,2026-03-13 23:00,2026-03-13 23:16,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,111.0,False,0,0,False
@@ -27494,7 +27494,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-13,2026-03-13 00:20,2026-03-13 00:48,Manila,MNL,Vietnam Airlines,VN647,2,11R,Departed,VN-A395,A321,1,passenger,N/A,N/A,False,0,0,False
 2026-03-13,2026-03-13 00:25,2026-03-13 00:45,Dubai,DXB,Emirates,EK395,2,11R,Departed,A6-ENH,B77W,1,passenger,N/A,N/A,False,0,0,False
 2026-03-13,2026-03-13 00:20,2026-03-13 00:41,Tokyo,NRT,Vietnam Airlines,VN310,2,11R,Departed,VN-A879,B78X,0,passenger,N/A,N/A,False,0,0,False
-2026-03-13,2026-03-13 00:37,2026-03-13 00:37,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A657,A321,0,passenger,VN-A637,65.0,True,0,0,False
+2026-03-13,2026-03-13 00:37,2026-03-13 00:37,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A657,A321,0,passenger,VN-A657,65.0,False,0,0,False
 2026-03-13,2026-03-13 00:25,2026-03-13 00:34,Tokyo,NRT,All Nippon Airways,NH898,2,11R,Departed,JA928A,B789,1,passenger,N/A,N/A,False,0,0,False
 2026-03-13,2026-03-13 00:20,2026-03-13 00:31,Nagoya,NGO,Vietnam Airlines,VN348,2,11R,Departed,VN-A886,A359,0,passenger,N/A,N/A,False,0,0,False
 2026-03-13,2026-03-12 23:40,2026-03-13 00:19,Guangzhou,CAN,VietJet Air,VJ7526,2,11R,Departed,VN-A641,A321,1,passenger,N/A,N/A,False,0,0,False
@@ -27511,7 +27511,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-14,2026-03-14 23:05,2026-03-14 23:30,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8732,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-03-14,2026-03-14 23:26,2026-03-14 23:26,Tianjin,TSN,VietJet Air,VJ36,2,11R,Departed,VN-A685,A321,0,passenger,N/A,N/A,False,0,0,False
 2026-03-14,2026-03-14 22:50,2026-03-14 23:22,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A537,A21N,0,passenger,N/A,N/A,False,0,0,False
-2026-03-14,2026-03-14 22:45,2026-03-14 23:20,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A644,A321,0,passenger,VN-A635,54.0,True,0,0,False
+2026-03-14,2026-03-14 22:45,2026-03-14 23:20,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A644,A321,0,passenger,VN-A644,54.0,False,0,0,False
 2026-03-14,N/A,2026-03-14 23:16,Istanbul,IST,Turkish Airlines,TK6361,0,11R,Departed,TC-LJT,B77L,0,cargo,N/A,N/A,False,0,0,False
 2026-03-14,2026-03-14 22:55,2026-03-14 23:10,Istanbul,IST,Turkish Airlines,TK165,2,11R,Departed,TC-LGL,A359,1,passenger,N/A,N/A,False,0,0,False
 2026-03-14,2026-03-14 23:00,2026-03-14 22:58,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,95.0,False,0,0,False
@@ -27824,7 +27824,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-15,2026-03-15 23:05,2026-03-15 23:28,Seoul,ICN,Korean Air,KE448,2,11R,Departed,HL8535,B78X,0,passenger,N/A,N/A,False,0,0,False
 2026-03-15,2026-03-15 22:50,2026-03-15 23:23,Seoul,ICN,VietJet Air,VJ962,2,11R,Departed,VN-A545,A21N,0,passenger,N/A,N/A,False,0,0,False
 2026-03-15,2026-03-15 22:55,2026-03-15 23:21,Istanbul,IST,Turkish Airlines,TK165,2,11R,Departed,TC-LGK,A359,1,passenger,N/A,N/A,False,0,0,False
-2026-03-15,2026-03-15 22:45,2026-03-15 23:18,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A635,A321,0,passenger,VN-A647,64.0,True,0,0,False
+2026-03-15,2026-03-15 22:45,2026-03-15 23:18,Da Nang,DAD,VietJet Air,VJ523,1,11R,Departed,VN-A635,A321,0,passenger,VN-A635,64.0,False,0,0,False
 2026-03-15,2026-03-15 23:00,2026-03-15 23:15,Macau,MFM,Air Macau,NX981,2,11R,Departed,B-MBP,A20N,0,passenger,N/A,N/A,False,0,0,False
 2026-03-15,2026-03-15 22:55,2026-03-15 23:06,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G895,1,11R,Departed,VN-A285,A21N,0,passenger,VN-A285,106.0,False,0,0,False
 2026-03-15,2026-03-15 23:00,2026-03-15 23:03,Ho Chi Minh City,SGN,Vietnam Airlines,VN6025,1,11R,Departed,VN-A363,A321,0,passenger,VN-A363,100.0,False,0,0,False

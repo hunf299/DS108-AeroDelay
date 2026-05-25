@@ -22,7 +22,7 @@ RUNWAY_REGEX = r"^(0[1-9]|[1-3][0-9])[LR]$"
 RETURN_THRESHOLD_MINUTES_DEFAULT = 90
 RETURN_THRESHOLD_MAX_MINUTES = 120
 ROUTE_MATCH_MAX_HOURS = 6.0
-DEDUP_NEAR_TIME_WINDOW_MINUTES = 10
+DEDUP_NEAR_TIME_WINDOW_MINUTES = 60
 
 DROP_SAME_ORIGIN_CATEGORIES = {"passenger", "unknown", "cargo"}
 TERMINAL_NON_PASSENGER_CATEGORIES = {
@@ -2016,7 +2016,6 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
 
     write_audit_csv(silver_audit_dir / "audit_arrival_time_semantics.csv", arrival_semantics_audit_rows)
     write_audit_csv(silver_audit_dir / "audit_deduplicate_decisions.csv", duplicate_audit_rows)
-    write_audit_csv(silver_audit_dir / "audit_duplicates.csv", duplicate_audit_rows)
     write_audit_csv(silver_audit_dir / "audit_flight_no_spq_to_9g.csv", spq_flight_no_audit_rows)
     write_audit_csv(silver_audit_dir / "audit_same_origin_actions.csv", same_origin_audit_rows)
     write_audit_csv(silver_audit_dir / "audit_tail_reconciliation.csv", tail_reconcile_audit_rows)

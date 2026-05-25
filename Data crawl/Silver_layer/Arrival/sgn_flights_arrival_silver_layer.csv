@@ -14215,6 +14215,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-24,2026-01-24 17:55,06:21,Perth,PER,VietJet Air,VJ92,2,25R,Landed,VN-A607,A21N,passenger,N/A,381,False,False,N/A,1,1,True
 2026-01-24,2026-01-24 17:54,01:53,Singapore,SIN,VietJet Air,VJ814,2,25R,Landed,VN-A630,A321,passenger,N/A,113,False,False,N/A,1,1,True
 2026-01-24,2026-01-24 17:51,01:53,Singapore,XSP,LifeFlight Australia,N/A,0,25R,Landed,VH-OFA,CL60,business jet,N/A,113,False,False,N/A,1,1,True
+2026-01-24,2026-01-24 17:48,01:49,Hanoi,HAN,VietJet Air,VJ191,1,25R,Landed,VN-A672,A320,passenger,N/A,109,False,False,N/A,0,0,False
 2026-01-24,2026-01-24 17:46,02:50,Jakarta,CGK,Vietnam Airlines,VN630,2,25R,Landed,VN-A399,A321,passenger,N/A,170,False,False,N/A,0,0,False
 2026-01-24,2026-01-24 17:43,01:27,Siem Reap,SAI,Air Cambodia,K6824,2,25R,Landed,XU-612,AT76,passenger,N/A,87,False,False,N/A,0,0,False
 2026-01-24,2026-01-24 17:40,00:48,Nha Trang,CXR,Vietnam Airlines,VN7347,3,25R,Landed,VN-A512,A21N,passenger,N/A,48,False,False,N/A,0,0,False
@@ -36172,7 +36173,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-03-15,2026-03-15 02:29,02:56,Kolkata,CCU,IndiGo,6E1641,2,25R,Landed,VT-IIU,A20N,passenger,N/A,176,False,False,N/A,0,0,False
 2026-03-15,2026-03-15 01:37,02:14,Shenzhen,SZX,Shenzhen Airlines,ZH117,2,25R,Landed,B-5607,B738,passenger,N/A,134,False,False,N/A,0,0,False
 2026-03-15,2026-03-15 01:23,03:20,Wuhan,WUH,China Southern Airlines,CZ8317,2,25R,Landed,B-5739,B738,passenger,N/A,200,False,False,N/A,0,0,False
-2026-03-15,2026-03-15 01:21,01:40,Hanoi,HAN,VietJet Air,VJ171,1,25R,Landed,VN-A532,A321,passenger,N/A,100,False,False,N/A,0,0,False
+2026-03-15,2026-03-15 01:21,01:40,Hanoi,HAN,VietJet Air,VJ171,1,25R,Landed,VN-A632,A321,passenger,N/A,100,False,False,N/A,0,0,False
 2026-03-15,2026-03-15 01:16,01:28,Vinh,VII,Vietnam Airlines,VN1281,3,25R,Landed,VN-A614,A321,passenger,N/A,88,False,False,N/A,0,0,False
 2026-03-15,2026-03-15 01:13,01:41,Hanoi,HAN,Bamboo Airways,QH283,3,25R,Landed,JU-1410,A320,passenger,N/A,101,False,False,N/A,0,0,False
 2026-03-15,2026-03-15 00:55,05:08,Beijing,PEK,Air China,CA903,2,25R,Landed,B-1958,B738,passenger,N/A,308,False,False,N/A,0,0,False
