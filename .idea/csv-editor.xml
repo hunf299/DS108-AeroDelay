@@ -199,13 +199,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="/Source code/dad_flights_departure_silver_layer_updated.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
       </map>
     </option>
   </component>

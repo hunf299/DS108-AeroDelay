@@ -27531,7 +27531,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-23,2026-02-23 19:35,2026-02-23 20:46,Hong Kong,HKG,Cathay Pacific,CX764,2,25L,Departed,B-HNG,B773,1,passenger,N/A,N/A,False,0,0,False
 2026-02-23,2026-02-23 20:10,2026-02-23 20:43,Haiphong,HPH,Bamboo Airways,QH1544,3,25L,Departed,JU-1410,A320,0,passenger,N/A,N/A,False,0,0,False
 2026-02-23,2026-02-23 20:05,2026-02-23 20:40,Shanghai,PVG,VietJet Air,VJ3900,2,25L,Departed,VN-A667,A321,0,passenger,N/A,N/A,False,0,0,False
-2026-02-23,2026-02-23 19:10,2026-02-23 20:38,Hanoi,HAN,VietJet Air,VJ196,1,25L,Departed,VN-A639,A321,0,passenger,VN-A816,102.0,True,0,0,False
+2026-02-23,2026-02-23 19:10,2026-02-23 20:38,Hanoi,HAN,VietJet Air,VJ196,1,25L,Departed,VN-A816,A333,0,passenger,VN-A816,102.0,False,0,0,False
 2026-02-23,2026-02-23 19:50,2026-02-23 20:36,Singapore,SIN,Singapore Airlines,SQ185,2,25L,Departed,9V-SCH,B78X,1,passenger,N/A,N/A,False,0,0,False
 2026-02-23,2026-02-23 20:00,2026-02-23 20:33,Hanoi,HAN,Vietnam Airlines,VN220,3,25L,Departed,VN-A899,A359,0,passenger,VN-A899,101.0,False,0,0,False
 2026-02-23,2026-02-23 20:31,2026-02-23 20:31,Hanoi,HAN,VietJet Air,VJ166,1,25L,Departed,VN-A639,A321,0,passenger,VN-A639,101.0,False,0,0,False
