@@ -43,7 +43,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-16,2025-12-16 20:55,01:42,Ho Chi Minh City,SGN,Bamboo Airways,QH262,1,11L,Landed,ER-00005,A320,passenger,N/A,102,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 20:52,01:19,Bangkok,BKK,VietJet Air,VJ904,2,11L,Landed,VN-A647,A321,passenger,N/A,79,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 20:45,01:27,Bangkok,BKK,Vietnam Airlines,VN618,2,11L,Landed,VN-A612,A321,passenger,N/A,87,False,False,N/A,0,0,False
-2025-12-16,2025-12-16 20:42,01:37,Da Lat,DLI,VietJet Air,VJ410,1,11L,Landed,N/A,N/A,unknown,N/A,97,False,False,N/A,0,0,False
+2025-12-16,2025-12-16 20:42,01:37,Da Lat,DLI,VietJet Air,VJ410,1,11L,Landed,N/A,N/A,general aviation,N/A,97,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 20:39,06:02,Tokyo,NRT,VietJet Air,VJ935,2,11L,Landed,VN-A539,A21N,passenger,N/A,362,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 20:36,01:31,Bangkok,DMK,AirAsia,FD644,2,11L,Landed,HS-EAF,A21N,passenger,N/A,91,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 20:33,01:06,Da Nang,DAD,Vietravel Airlines,VU658,1,11L,Landed,VN-A129,A321,passenger,N/A,66,False,False,N/A,0,0,False
@@ -120,7 +120,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-16,2025-12-16 16:00,04:03,Jakarta,CGK,Sun PhuQuoc Airways,9G9284,2,11L,Landed,VN-A284,A21N,passenger,N/A,243,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 15:44,01:47,Ho Chi Minh City,SGN,VietJet Air,VJ198,1,11L,Landed,VN-A549,A21N,passenger,N/A,107,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 15:41,08:16,Istanbul,IST,Turkish Airlines,TK164,2,11L,Landed,TC-LGK,A359,passenger,N/A,496,False,False,N/A,0,0,False
-2025-12-16,2025-12-16 15:38,01:31,Da Lat,DLI,VietJet Air,VJ408,1,11L,Landed,N/A,N/A,unknown,N/A,91,False,False,N/A,0,0,False
+2025-12-16,2025-12-16 15:38,01:31,Da Lat,DLI,VietJet Air,VJ408,1,11L,Landed,N/A,N/A,general aviation,N/A,91,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 15:35,01:50,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,VN-A672,A320,passenger,N/A,110,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 15:32,02:46,Singapore,SIN,Vietnam Airlines,VN660,2,11L,Landed,VN-A899,A359,passenger,N/A,166,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 15:29,01:44,Hong Kong,HKG,Vietnam Airlines,VN593,2,11L,Landed,VN-A397,A321,passenger,N/A,104,False,False,N/A,0,0,False
@@ -202,7 +202,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-16,2025-12-16 11:13,01:32,Da Lat,DLI,Vietnam Airlines,VN1572,1,11L,Landed,VN-A513,A20N,passenger,N/A,92,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 11:09,01:22,Buon Ma Thuot,BMV,Vietnam Airlines,VN1602,1,11L,Landed,VN-A614,A321,passenger,N/A,82,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 11:02,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN244,1,11L,Landed,VN-A896,A359,passenger,N/A,100,False,False,N/A,0,0,False
-2025-12-16,2025-12-16 10:58,01:19,Qui Nhon,UIH,VietJet Air,VJ430,1,11L,Landed,N/A,N/A,unknown,N/A,79,False,False,N/A,0,0,False
+2025-12-16,2025-12-16 10:58,01:19,Qui Nhon,UIH,VietJet Air,VJ430,1,11L,Landed,N/A,N/A,general aviation,N/A,79,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 10:55,04:35,Seoul,ICN,Korean Air,KE441,2,11L,Landed,HL8506,A21N,passenger,N/A,275,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 10:51,00:58,Da Nang,DAD,Vietnam Airlines,VN164,1,11L,Landed,VN-A329,A321,passenger,N/A,58,False,False,N/A,0,0,False
 2025-12-16,2025-12-16 10:48,01:38,Phu Quoc,PQC,VietJet Air,VJ442,1,11L,Landed,VN-A697,A21N,passenger,N/A,98,False,False,N/A,0,0,False
@@ -426,7 +426,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-17,2025-12-17 14:53,01:06,Kunming,KMG,China Eastern Airlines,MU9605,2,11L,Landed,B-6149,B738,passenger,N/A,66,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 14:50,01:43,Ho Chi Minh City,SGN,VietJet Air,VJ138,1,11L,Landed,VN-A653,A21N,passenger,N/A,103,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 14:47,01:43,Ho Chi Minh City,SGN,VietJet Air,VJ144,1,11L,Landed,VN-A536,A21N,passenger,N/A,103,False,False,N/A,0,0,False
-2025-12-17,2025-12-17 14:43,01:31,Da Lat,DLI,VietJet Air,VJ404,1,11L,Landed,N/A,N/A,unknown,N/A,91,False,False,N/A,0,0,False
+2025-12-17,2025-12-17 14:43,01:31,Da Lat,DLI,VietJet Air,VJ404,1,11L,Landed,N/A,N/A,general aviation,N/A,91,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 14:41,01:49,Ho Chi Minh City,SGN,Vietnam Airlines,VN7214,1,11L,Landed,VN-A339,A321,passenger,N/A,109,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 14:38,02:48,Kuala Lumpur,KUL,VietJet Air,VJ906,2,11L,Landed,VN-A647,A321,passenger,N/A,168,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 14:35,01:10,Chiang Mai,CNX,AirAsia,FD870,2,11L,Landed,HS-BBY,A20N,passenger,N/A,70,False,False,N/A,0,0,False
@@ -440,7 +440,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-17,2025-12-17 14:13,01:53,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1208,1,11L,Landed,VN-A280,A321,passenger,N/A,113,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 14:09,02:08,Con Dao,VCS,VietJet Air,VJ102,1,11L,Landed,B-652G,AJ27,passenger,N/A,128,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 14:06,01:57,Ho Chi Minh City,SGN,VietJet Air,VJ188,1,11L,Landed,VN-A655,A320,passenger,N/A,117,False,False,N/A,0,0,False
-2025-12-17,2025-12-17 14:01,03:11,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,191,False,False,N/A,0,0,False
+2025-12-17,2025-12-17 14:01,03:11,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,191,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 13:57,05:47,Khabarovsk,KHV,VietJet Air,VJ3524,2,29R,Landed,VN-A516,A21N,passenger,N/A,347,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 13:54,03:24,Shanghai,PVG,China Eastern Airlines,MU6011,2,11L,Landed,B-8570,A321,passenger,N/A,204,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 13:51,01:46,Ho Chi Minh City,SGN,Bamboo Airways,QH240,1,11L,Landed,ER-00005,A320,passenger,N/A,106,False,False,N/A,0,0,False
@@ -501,7 +501,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-17,2025-12-17 10:09,01:39,Hong Kong,HKG,Cathay Pacific,CX741,2,11L,Landed,B-KPZ,B77W,passenger,N/A,99,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 10:02,02:29,Kaohsiung,KHH,Vietnam Airlines,VN587,2,11L,Landed,VN-A605,A321,passenger,N/A,149,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 09:59,01:36,Ho Chi Minh City,SGN,Vietnam Airlines,VN208,1,11L,Landed,VN-A862,B789,passenger,N/A,96,False,False,N/A,0,0,False
-2025-12-17,2025-12-17 09:50,01:31,Da Lat,DLI,VietJet Air,VJ402,1,11L,Landed,N/A,N/A,unknown,N/A,91,False,False,N/A,0,0,False
+2025-12-17,2025-12-17 09:50,01:31,Da Lat,DLI,VietJet Air,VJ402,1,11L,Landed,N/A,N/A,general aviation,N/A,91,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 09:48,01:24,Buon Ma Thuot,BMV,VietJet Air,VJ492,1,11L,Landed,VN-A644,A321,passenger,N/A,84,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 09:36,02:49,Taipei,TPE,Vietnam Airlines,VN579,2,11L,Landed,VN-A392,A321,passenger,N/A,169,False,False,N/A,0,0,False
 2025-12-17,2025-12-17 09:34,01:01,Da Nang,DAD,Vietravel Airlines,VU638,1,11L,Landed,VN-A136,A320,passenger,N/A,61,False,False,N/A,0,0,False
@@ -1104,7 +1104,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-19,2025-12-19 09:23,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN242,1,11L,Landed,VN-A899,A359,passenger,N/A,100,False,False,N/A,0,1,False
 2025-12-19,2025-12-19 09:20,01:02,Da Nang,DAD,Vietnam Airlines,VN158,1,11L,Landed,VN-A608,A321,passenger,N/A,62,False,False,N/A,0,1,False
 2025-12-19,2025-12-19 09:14,04:31,Seoul,ICN,VietJet Air,VJ963,2,11L,Landed,VN-A693,A21N,passenger,N/A,271,False,False,N/A,0,2,False
-2025-12-19,2025-12-19 09:11,01:46,Ho Chi Minh City,SGN,Avion Express,X9774,1,11L,Landed,9H-MLW,A320,passenger,N/A,106,False,False,N/A,0,2,False
+2025-12-19,2025-12-19 09:11,01:46,Ho Chi Minh City,SGN,Avion Express,X9774,1,11L,Landed,9H-MLW,A320,business jet,N/A,106,False,False,N/A,0,2,False
 2025-12-19,2025-12-19 09:08,00:58,Da Nang,DAD,VietJet Air,VJ504,1,11L,Landed,VN-A525,A21N,passenger,N/A,58,False,False,N/A,0,2,False
 2025-12-19,2025-12-19 09:05,01:42,Ho Chi Minh City,SGN,Bamboo Airways,QH204,1,29R,Landed,PK-BBK,B739,passenger,N/A,102,False,False,N/A,0,2,False
 2025-12-19,2025-12-19 08:57,01:36,Ho Chi Minh City,SGN,Vietnam Airlines,VN240,1,11L,Landed,VN-A868,B789,passenger,N/A,96,False,False,N/A,0,2,False
@@ -1273,7 +1273,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-20,2025-12-20 17:40,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN250,1,11L,Landed,VN-A878,B78X,passenger,N/A,102,False,False,N/A,0,0,False
 2025-12-20,2025-12-20 17:38,01:07,Da Nang,DAD,VietJet Air,VJ514,1,11L,Landed,VN-A644,A321,passenger,N/A,67,False,False,N/A,0,0,False
 2025-12-20,2025-12-20 17:35,01:50,Phu Quoc,PQC,Vietnam Airlines,VN6400,1,11L,Landed,VN-A363,A321,passenger,N/A,110,False,False,N/A,0,0,False
-2025-12-20,2025-12-20 17:32,01:49,Ho Chi Minh City,SGN,VietJet Air,VJ194,1,11L,Landed,N/A,N/A,unknown,N/A,109,False,False,N/A,0,0,False
+2025-12-20,2025-12-20 17:32,01:49,Ho Chi Minh City,SGN,VietJet Air,VJ194,1,11L,Landed,N/A,N/A,general aviation,N/A,109,False,False,N/A,0,0,False
 2025-12-20,2025-12-20 17:30,03:06,Taipei,TPE,Starlux,JX717,2,11L,Landed,B-58207,A21N,passenger,N/A,186,False,False,N/A,0,0,False
 2025-12-20,2025-12-20 17:26,03:06,Singapore,SIN,Singapore Airlines,SQ194,2,11L,Landed,9V-MBM,B38M,passenger,N/A,186,False,False,N/A,0,0,False
 2025-12-20,2025-12-20 17:24,04:32,Denpasar,DPS,VietJet Air,VJ900,2,11L,Landed,VN-A547,A21N,passenger,N/A,272,False,False,N/A,0,0,False
@@ -1337,7 +1337,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-20,2025-12-20 13:47,05:34,Dubai,DXB,Emirates,EK394,2,11L,Landed,A6-ENY,B77W,passenger,N/A,334,False,False,N/A,0,0,False
 2025-12-20,2025-12-20 13:44,01:38,Nha Trang,CXR,VietJet Air,VJ772,1,29R,Landed,VN-A815,A333,passenger,N/A,98,False,False,N/A,0,0,False
 2025-12-20,2025-12-20 13:42,01:45,Shenzhen,SZX,Shenzhen Airlines,ZH103,2,11L,Landed,B-6286,A320,passenger,N/A,105,False,False,N/A,0,0,False
-2025-12-20,2025-12-20 13:38,01:01,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,61,False,False,N/A,0,0,False
+2025-12-20,2025-12-20 13:38,01:01,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,61,False,False,N/A,0,0,False
 2025-12-20,2025-12-20 13:35,02:56,Kuala Lumpur,KUL,Batik Air,OD571,2,11L,Landed,9M-LRD,B38M,passenger,N/A,176,False,False,N/A,0,0,False
 2025-12-20,2025-12-20 13:32,02:36,Kaohsiung,KHH,Vietnam Airlines,VN583,2,29R,Landed,VN-A335,A321,passenger,N/A,156,False,False,N/A,0,0,False
 2025-12-20,2025-12-20 13:29,05:36,Tokyo,NRT,Vietnam Airlines,VN311,2,11L,Landed,VN-A877,B78X,passenger,N/A,336,False,False,N/A,0,0,False
@@ -2030,7 +2030,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-22,2025-12-22 08:49,01:41,Hong Kong,HKG,HK express,UO540,2,11L,Landed,B-KKL,A21N,passenger,N/A,101,False,False,N/A,0,0,False
 2025-12-22,2025-12-22 08:44,02:52,Singapore,SIN,Scoot,TR300,2,11L,Landed,9V-OFG,B788,passenger,N/A,172,False,False,N/A,0,0,False
 2025-12-22,2025-12-22 08:41,01:29,Bangkok,DMK,AirAsia,FD642,2,11L,Landed,HS-CBJ,A20N,passenger,N/A,89,False,False,N/A,0,0,False
-2025-12-22,2025-12-22 08:38,01:45,Ho Chi Minh City,SGN,VietJet Air,VJ124,1,11L,Landed,N/A,N/A,unknown,N/A,105,False,False,N/A,0,0,False
+2025-12-22,2025-12-22 08:38,01:45,Ho Chi Minh City,SGN,VietJet Air,VJ124,1,11L,Landed,N/A,N/A,general aviation,N/A,105,False,False,N/A,0,0,False
 2025-12-22,2025-12-22 08:34,01:44,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G806,1,11L,Landed,VN-A280,A321,passenger,N/A,104,False,False,N/A,0,0,False
 2025-12-22,2025-12-22 08:25,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN7272,1,11L,Landed,VN-A515,A20N,passenger,N/A,101,False,False,N/A,0,0,False
 2025-12-22,2025-12-22 08:21,01:40,Hong Kong,HKG,Cathay Pacific,CX2049,0,11L,Landed,B-LIF,B744,cargo,N/A,100,False,False,N/A,0,0,False
@@ -2173,7 +2173,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-23,2025-12-23 19:19,04:56,Osaka,KIX,VietJet Air,VJ931,2,11L,Landed,VN-A578,A21N,passenger,N/A,296,False,False,N/A,0,0,False
 2025-12-23,2025-12-23 19:15,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN254,1,11R,Landed,VN-A870,B789,passenger,N/A,101,False,False,N/A,0,0,False
 2025-12-23,2025-12-23 19:09,01:43,Changsha,CSX,China Southern Airlines,CZ8359,2,11L,Landed,B-322V,A20N,passenger,N/A,103,False,False,N/A,0,0,False
-2025-12-23,2025-12-23 19:06,01:48,Ho Chi Minh City,SGN,VietJet Air,VJ152,1,11L,Landed,N/A,N/A,unknown,N/A,108,False,False,N/A,0,0,False
+2025-12-23,2025-12-23 19:06,01:48,Ho Chi Minh City,SGN,VietJet Air,VJ152,1,11L,Landed,N/A,N/A,general aviation,N/A,108,False,False,N/A,0,0,False
 2025-12-23,2025-12-23 19:02,01:32,Nha Trang,CXR,VietJet Air,VJ784,1,11L,Landed,VN-A645,A321,passenger,N/A,92,False,False,N/A,0,0,False
 2025-12-23,2025-12-23 18:57,01:46,Hong Kong,HKG,Hong Kong Airlines,HX528,2,11L,Landed,B-LPV,A320,passenger,N/A,106,False,False,N/A,0,0,False
 2025-12-23,2025-12-23 18:52,01:30,Phnom Penh,KTI,Air Cambodia,K6850,2,11L,Landed,XU-353,A320,passenger,N/A,90,False,False,N/A,0,0,False
@@ -2230,7 +2230,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-23,2025-12-23 16:00,01:21,Qui Nhon,UIH,Vietnam Airlines,VN1622,1,29R,Landed,VN-A619,A21N,passenger,N/A,81,False,False,N/A,1,1,True
 2025-12-23,2025-12-23 15:54,01:00,Da Nang,DAD,Vietnam Airlines,VN170,1,11L,Landed,VN-A602,A321,passenger,N/A,60,False,False,N/A,1,1,True
 2025-12-23,2025-12-23 15:52,00:49,Vientiane,VTE,Lao Airlines,QV311,2,11L,Landed,RDPL-34199,A320,passenger,N/A,49,False,False,N/A,1,1,True
-2025-12-23,2025-12-23 15:47,00:42,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,42,False,False,N/A,1,1,True
+2025-12-23,2025-12-23 15:47,00:42,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,42,False,False,N/A,1,1,True
 2025-12-23,2025-12-23 15:44,01:40,Hong Kong,HKG,Vietnam Airlines,VN593,2,11L,Landed,VN-A605,A321,passenger,N/A,100,False,False,N/A,1,1,True
 2025-12-23,2025-12-23 15:36,01:36,Da Lat,DLI,VietJet Air,VJ408,1,11L,Landed,VN-A651,A321,passenger,N/A,96,False,False,N/A,1,1,True
 2025-12-23,2025-12-23 15:33,02:51,Singapore,SIN,Vietnam Airlines,VN660,2,11L,Landed,VN-A508,A21N,passenger,N/A,171,False,False,N/A,1,1,True
@@ -2467,7 +2467,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-24,2025-12-24 19:22,06:13,Bahrain,BAH,DHL Air,QY576,0,11L,Landed,D-ALMG,A333,cargo,N/A,373,False,False,N/A,0,0,False
 2025-12-24,2025-12-24 19:19,01:19,Chengdu,TFU,Chengdu Airlines,EU2863,2,11L,Landed,B-8877,A320,passenger,N/A,79,False,False,N/A,0,0,False
 2025-12-24,2025-12-24 19:15,N/A,Siem Reap,SAI,Vietnam Airlines,VN836,2,11L,Landed,VN-A356,A321,passenger,N/A,,False,False,N/A,0,0,False
-2025-12-24,2025-12-24 19:13,N/A,Ho Chi Minh City,SGN,Vietnam Airlines,VN254,1,11L,Landed,N/A,B789,unknown,N/A,,False,False,N/A,0,0,False
+2025-12-24,2025-12-24 19:13,N/A,Ho Chi Minh City,SGN,Vietnam Airlines,VN254,1,11L,Landed,N/A,B789,general aviation,N/A,,False,False,N/A,0,0,False
 2025-12-24,2025-12-24 19:08,N/A,Nha Trang,CXR,Vietnam Airlines,VN1558,1,11L,Landed,VN-A338,A321,passenger,N/A,,False,False,N/A,0,0,False
 2025-12-24,2025-12-24 18:58,01:57,Changsha,CSX,China Southern Airlines,CZ8359,2,11L,Landed,B-325D,A20N,passenger,N/A,117,False,False,N/A,0,0,False
 2025-12-24,2025-12-24 18:53,01:48,N/A,N/A,Hong Kong Airlines,HX528,N/A,11L,Landed,B-LPV,A320,passenger,N/A,108,False,False,N/A,0,0,False
@@ -2538,7 +2538,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-24,2025-12-24 13:50,04:28,Seoul,ICN,VietJet Air,VJ961,2,11L,Landed,VN-A535,A321,passenger,N/A,268,False,False,N/A,0,1,False
 2025-12-24,2025-12-24 13:47,01:38,Nha Trang,CXR,Vietnam Airlines,VN7568,1,11L,Landed,VN-A356,A321,passenger,N/A,98,False,False,N/A,0,1,False
 2025-12-24,2025-12-24 13:44,00:55,N/A,N/A,Vietnam Airlines,VN7540,N/A,11L,Landed,VN-A331,A321,passenger,N/A,55,False,False,N/A,0,1,False
-2025-12-24,2025-12-24 13:40,00:59,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,59,False,False,N/A,0,1,False
+2025-12-24,2025-12-24 13:40,00:59,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,59,False,False,N/A,0,1,False
 2025-12-24,2025-12-24 13:34,01:37,Shenzhen,SZX,Shenzhen Airlines,ZH103,2,11L,Landed,B-6740,A320,passenger,N/A,97,False,False,N/A,0,1,False
 2025-12-24,2025-12-24 13:32,03:38,Delhi,DEL,IndiGo,6E1633,2,11L,Landed,VT-IPW,A20N,passenger,N/A,218,False,False,N/A,0,1,False
 2025-12-24,2025-12-24 13:31,N/A,Hue,HUI,VietJet Air,VJ566,1,11L,Landed,VN-A639,A321,passenger,N/A,,False,False,N/A,0,1,False
@@ -3102,7 +3102,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-26,2025-12-26 17:00,00:53,Hue,HUI,Vietnam Airlines,VN7546,1,11L,Landed,VN-A512,A21N,passenger,N/A,53,False,False,N/A,0,1,False
 2025-12-26,2025-12-26 16:55,04:28,Busan,PUS,VietJet Air,VJ957,2,11L,Landed,VN-A662,A320,passenger,N/A,268,False,False,N/A,1,1,True
 2025-12-26,2025-12-26 16:52,04:35,Denpasar,DPS,VietJet Air,VJ900,2,11L,Landed,VN-A525,A21N,passenger,N/A,275,False,False,N/A,1,1,True
-2025-12-26,2025-12-26 16:41,00:41,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,41,False,False,N/A,1,1,True
+2025-12-26,2025-12-26 16:41,00:41,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,41,False,False,N/A,1,1,True
 2025-12-26,2025-12-26 16:39,02:14,Kolkata,CCU,IndiGo,6E1631,2,11L,Landed,VT-IPW,A20N,passenger,N/A,134,False,False,N/A,1,1,True
 2025-12-26,2025-12-26 16:34,01:38,Ho Chi Minh City,SGN,Vietnam Airlines,VN212,1,29R,Landed,VN-A865,B789,passenger,N/A,98,False,False,N/A,1,2,True
 2025-12-26,2025-12-26 16:31,01:00,Da Nang,DAD,Vietnam Airlines,VN7186,1,11L,Landed,VN-A501,A21N,passenger,N/A,60,False,False,N/A,1,2,True
@@ -3297,7 +3297,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-26,2025-12-26 00:11,01:40,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G882,1,11L,Landed,VN-A281,A21N,passenger,N/A,100,False,False,N/A,0,0,False
 2025-12-26,2025-12-26 00:07,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN256,1,11L,Landed,VN-A399,A321,passenger,N/A,99,False,False,N/A,0,0,False
 2025-12-26,2025-12-26 00:01,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN224,1,11L,Landed,VN-A326,A321,passenger,N/A,99,False,False,N/A,0,0,False
-2025-12-27,2025-12-27 23:57,N/A,Ho Chi Minh City,SGN,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
 2025-12-27,2025-12-27 23:44,01:37,Ho Chi Minh City,SGN,Vietnam Airlines,VN256,1,11L,Landed,VN-A879,B78X,passenger,N/A,97,False,False,N/A,0,0,False
 2025-12-27,2025-12-27 23:41,01:43,Ho Chi Minh City,SGN,VietJet Air,VJ154,1,11L,Landed,VN-A637,A321,passenger,N/A,103,False,False,N/A,0,0,False
 2025-12-27,2025-12-27 23:38,01:46,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G882,1,11L,Landed,VN-A279,A321,passenger,N/A,106,False,False,N/A,0,0,False
@@ -3400,7 +3399,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-27,2025-12-27 17:51,02:10,Kolkata,CCU,IndiGo,6E1631,2,11L,Landed,VT-IPU,A20N,passenger,N/A,130,False,False,N/A,0,0,False
 2025-12-27,2025-12-27 17:49,02:51,Singapore,SIN,VietJet Air,VJ916,2,11L,Landed,VN-A545,A21N,passenger,N/A,171,False,False,N/A,0,0,False
 2025-12-27,2025-12-27 17:44,01:26,Bangkok,BKK,Vietnam Airlines,VN614,2,11L,Landed,VN-A399,A321,passenger,N/A,86,False,False,N/A,0,0,False
-2025-12-27,2025-12-27 17:41,N/A,Guangzhou,CAN,N/A,N/A,2,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
 2025-12-27,2025-12-27 17:38,03:31,Shanghai,PVG,China Eastern Airlines,MU6013,2,11L,Landed,B-32KT,A21N,passenger,N/A,211,False,False,N/A,0,0,False
 2025-12-27,2025-12-27 17:35,01:43,Phu Quoc,PQC,VietJet Air,VJ446,1,11L,Landed,VN-A699,A320,passenger,N/A,103,False,False,N/A,0,0,False
 2025-12-27,2025-12-27 17:31,01:35,Ho Chi Minh City,SGN,Vietnam Airlines,VN232,1,11L,Landed,VN-A879,B78X,passenger,N/A,95,False,False,N/A,0,0,False
@@ -3433,7 +3431,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-27,2025-12-27 15:56,01:32,Tuy Hoa,TBB,Vietnam Airlines,VN1650,1,11L,Landed,VN-A512,A21N,passenger,N/A,92,False,False,N/A,0,0,False
 2025-12-27,2025-12-27 15:52,01:47,Ho Chi Minh City,SGN,Vietravel Airlines,VU778,1,11L,Landed,9H-MLW,A320,passenger,N/A,107,False,False,N/A,0,0,False
 2025-12-27,2025-12-27 15:49,00:46,N/A,N/A,Hai Au Aviation,N/A,N/A,11L,Landed,VN-B466,C208,passenger,N/A,46,False,False,N/A,0,0,False
-2025-12-27,2025-12-27 15:46,00:45,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,45,False,False,N/A,0,0,False
+2025-12-27,2025-12-27 15:46,00:45,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,45,False,False,N/A,0,0,False
 2025-12-27,2025-12-27 15:45,01:41,Da Lat,DLI,VietJet Air,VJ408,1,11L,Landed,VN-A689,A320,passenger,N/A,101,False,False,N/A,0,1,False
 2025-12-27,2025-12-27 15:41,04:10,Busan,PUS,Vietnam Airlines,VN429,2,11L,Landed,VN-A893,A359,passenger,N/A,250,False,False,N/A,0,1,False
 2025-12-27,2025-12-27 15:37,01:45,Hong Kong,HKG,Vietnam Airlines,VN593,2,11L,Landed,VN-A395,A321,passenger,N/A,105,False,False,N/A,0,1,False
@@ -3462,7 +3460,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-27,2025-12-27 14:11,01:53,Ho Chi Minh City,SGN,Bamboo Airways,QH240,1,11L,Landed,ER-00005,A320,passenger,N/A,113,False,False,N/A,0,1,False
 2025-12-27,2025-12-27 14:08,05:46,Khabarovsk,KHV,VietJet Air,VJ3524,2,11L,Landed,VN-A537,A21N,passenger,N/A,346,False,False,N/A,0,1,False
 2025-12-27,2025-12-27 14:04,03:32,Shanghai,PVG,China Eastern Airlines,MU6011,2,11L,Landed,B-8979,A321,passenger,N/A,212,False,False,N/A,0,1,False
-2025-12-27,2025-12-27 14:02,01:46,Phu Quoc,PQC,VietJet Air,VJ440,1,11L,Landed,N/A,N/A,unknown,N/A,106,False,False,N/A,0,1,False
+2025-12-27,2025-12-27 14:02,01:46,Phu Quoc,PQC,VietJet Air,VJ440,1,11L,Landed,N/A,N/A,general aviation,N/A,106,False,False,N/A,0,1,False
 2025-12-27,2025-12-27 13:58,01:40,Nha Trang,CXR,Vietnam Airlines,VN7568,1,11L,Landed,VN-A356,A321,passenger,N/A,100,False,False,N/A,0,1,False
 2025-12-27,2025-12-27 13:55,02:46,Wuhu,WHA,N/A,JG2723,0,11L,Landed,B-226T,B738,cargo,N/A,166,False,False,N/A,0,1,False
 2025-12-27,2025-12-27 13:53,04:29,Seoul,ICN,VietJet Air,VJ961,2,11L,Landed,VN-A647,A321,passenger,N/A,269,False,False,N/A,0,1,False
@@ -3614,7 +3612,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-27,2025-12-27 00:07,01:52,Ho Chi Minh City,SGN,Bamboo Airways,QH284,1,11L,Landed,VN-A596,A20N,passenger,N/A,112,False,False,N/A,0,1,False
 2025-12-27,2025-12-27 00:04,01:07,Da Nang,DAD,VietJet Air,VJ518,1,11L,Landed,VN-A649,A321,passenger,N/A,67,False,False,N/A,0,1,False
 2025-12-27,2025-12-27 00:01,04:15,Seoul,ICN,DHL Air,K4602,0,11L,Landed,N740CK,B744,cargo,N/A,255,False,False,N/A,0,1,False
-2025-12-28,2025-12-28 23:57,N/A,Bangkok,BKK,N/A,N/A,2,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
 2025-12-28,2025-12-28 23:54,01:28,Nha Trang,CXR,VietJet Air,VJ778,1,11L,Landed,VN-A687,A321,passenger,N/A,88,False,False,N/A,0,0,False
 2025-12-28,2025-12-28 23:45,01:43,Ho Chi Minh City,SGN,VietJet Air,VJ156,1,11L,Landed,VN-A545,A21N,passenger,N/A,103,False,False,N/A,0,0,False
 2025-12-28,2025-12-28 23:41,04:42,Irkutsk,IKT,IrAero,IO893,2,11L,Landed,RA-89077,SU95,passenger,N/A,282,False,False,N/A,0,0,False
@@ -3793,7 +3790,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-28,2025-12-28 13:43,01:50,Ho Chi Minh City,SGN,VietJet Air,VJ188,1,11L,Landed,VN-A642,A321,passenger,N/A,110,False,False,N/A,0,0,False
 2025-12-28,2025-12-28 13:40,01:41,Shenzhen,SZX,Shenzhen Airlines,ZH103,2,11L,Landed,B-6691,A320,passenger,N/A,101,False,False,N/A,0,0,False
 2025-12-28,2025-12-28 13:36,01:04,Da Nang,DAD,Vietnam Airlines,VN166,1,11L,Landed,VN-A604,A321,passenger,N/A,64,False,False,N/A,0,0,False
-2025-12-28,2025-12-28 13:31,01:38,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,98,False,False,N/A,0,0,False
+2025-12-28,2025-12-28 13:31,01:38,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,98,False,False,N/A,0,0,False
 2025-12-28,2025-12-28 13:26,05:41,Tokyo,NRT,Vietnam Airlines,VN311,2,11L,Landed,VN-A886,A359,passenger,N/A,341,False,False,N/A,0,0,False
 2025-12-28,2025-12-28 13:23,04:14,Busan,PUS,Vietnam Airlines,VN429,2,11L,Landed,VN-A877,B78X,passenger,N/A,254,False,False,N/A,0,0,False
 2025-12-28,2025-12-28 13:20,04:24,Seoul,ICN,Vietnam Airlines,VN417,2,29R,Landed,VN-A879,B78X,passenger,N/A,264,False,False,N/A,0,0,False
@@ -4018,7 +4015,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-29,2025-12-29 18:30,01:46,Hong Kong,HKG,Cathay Pacific,CX743,2,11L,Landed,B-HNI,B773,passenger,N/A,106,False,False,N/A,0,0,False
 2025-12-29,2025-12-29 18:27,01:04,Luang Prabang,LPQ,Lao Airlines,QV313,2,11L,Landed,RDPL-34228,AT76,passenger,N/A,64,False,False,N/A,0,0,False
 2025-12-29,2025-12-29 18:24,01:43,Shenzhen,SZX,Shenzhen Airlines,ZH105,2,11L,Landed,B-1475,B738,passenger,N/A,103,False,False,N/A,0,0,False
-2025-12-29,2025-12-29 18:22,01:41,Phu Quoc,PQC,VietJet Air,VJ446,1,11L,Landed,N/A,N/A,unknown,N/A,101,False,False,N/A,0,0,False
+2025-12-29,2025-12-29 18:22,01:41,Phu Quoc,PQC,VietJet Air,VJ446,1,11L,Landed,N/A,N/A,general aviation,N/A,101,False,False,N/A,0,0,False
 2025-12-29,2025-12-29 18:19,01:42,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1216,1,11L,Landed,VN-A281,A21N,passenger,N/A,102,False,False,N/A,0,0,False
 2025-12-29,2025-12-29 18:16,03:06,Shanghai,PVG,Vietnam Airlines,VN533,2,11L,Landed,VN-A616,A21N,passenger,N/A,186,False,False,N/A,0,0,False
 2025-12-29,2025-12-29 18:11,01:41,Phu Quoc,PQC,Vietnam Airlines,VN6400,1,11L,Landed,VN-A363,A321,passenger,N/A,101,False,False,N/A,0,0,False
@@ -4052,7 +4049,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-29,2025-12-29 16:29,00:38,Dien Bien Phu,DIN,Vietnam Airlines,VN1805,1,11L,Landed,VN-A331,A321,passenger,N/A,38,False,False,N/A,0,0,False
 2025-12-29,2025-12-29 16:26,02:56,Taipei,TPE,China Airlines,CI793,2,11L,Landed,B-18660,B738,passenger,N/A,176,False,False,N/A,0,0,False
 2025-12-29,2025-12-29 16:22,01:28,Da Lat,DLI,Vietnam Airlines,VN1574,1,11L,Landed,VN-A513,A20N,passenger,N/A,88,False,False,N/A,0,0,False
-2025-12-29,2025-12-29 16:17,00:40,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,40,False,False,N/A,0,0,False
+2025-12-29,2025-12-29 16:17,00:40,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,40,False,False,N/A,0,0,False
 2025-12-29,2025-12-29 16:13,01:59,Con Dao,VCS,VietJet Air,VJ108,1,11L,Landed,B-656E,AJ27,passenger,N/A,119,False,False,N/A,0,0,False
 2025-12-29,2025-12-29 16:07,00:43,Vientiane,VTE,Lao Airlines,QV311,2,11L,Landed,RDPL-34199,A320,passenger,N/A,43,False,False,N/A,0,0,False
 2025-12-29,2025-12-29 16:02,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN214,1,11L,Landed,VN-A866,B789,passenger,N/A,100,False,False,N/A,0,0,False
@@ -4408,7 +4405,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2025-12-30,2025-12-30 14:38,01:49,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1208,1,11L,Landed,VN-A280,A321,passenger,N/A,109,False,False,N/A,1,1,True
 2025-12-30,2025-12-30 14:35,01:52,Guangzhou,CAN,China Southern Airlines,CZ8315,2,11L,Landed,B-6783,A320,passenger,N/A,112,False,False,N/A,1,1,True
 2025-12-30,2025-12-30 14:33,01:08,Da Nang,DAD,VietJet Air,VJ508,1,11L,Landed,VN-A635,A321,passenger,N/A,68,False,False,N/A,1,1,True
-2025-12-30,2025-12-30 14:29,02:20,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,140,False,False,N/A,1,1,True
+2025-12-30,2025-12-30 14:29,02:20,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,140,False,False,N/A,1,1,True
 2025-12-30,2025-12-30 14:23,02:46,Kuala Lumpur,KUL,VietJet Air,VJ906,2,11L,Landed,VN-A544,A321,passenger,N/A,166,False,False,N/A,1,1,True
 2025-12-30,2025-12-30 14:21,03:00,Kuala Lumpur,KUL,AirAsia,AK512,2,11L,Landed,9M-AJT,A320,passenger,N/A,180,False,False,N/A,1,1,True
 2025-12-30,2025-12-30 14:18,01:26,Bangkok,BKK,Vietnam Airlines,VN610,2,11L,Landed,VN-A512,A21N,passenger,N/A,86,False,False,N/A,1,1,True
@@ -5011,7 +5008,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-01,2026-01-01 16:20,01:57,Con Dao,VCS,VietJet Air,VJ108,1,11L,Landed,B-656E,AJ27,passenger,N/A,117,False,False,N/A,0,1,False
 2026-01-01,2026-01-01 16:11,02:56,Singapore,SIN,Vietnam Airlines,VN660,2,11L,Landed,VN-A332,A321,passenger,N/A,176,False,False,N/A,0,1,False
 2026-01-01,2026-01-01 16:06,01:50,Can Tho,VCA,Vietnam Airlines,VN1202,1,11L,Landed,VN-A356,A321,passenger,N/A,110,False,False,N/A,0,1,False
-2026-01-01,2026-01-01 16:02,01:01,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,61,False,False,N/A,0,1,False
+2026-01-01,2026-01-01 16:02,01:01,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,61,False,False,N/A,0,1,False
 2026-01-01,2026-01-01 15:59,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN214,1,11L,Landed,VN-A866,B789,passenger,N/A,101,False,False,N/A,0,1,False
 2026-01-01,2026-01-01 15:56,01:43,Ho Chi Minh City,SGN,Vietravel Airlines,VU770,1,11L,Landed,VN-A129,A321,passenger,N/A,103,False,False,N/A,0,1,False
 2026-01-01,2026-01-01 15:53,01:53,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,VN-A656,A320,passenger,N/A,113,False,False,N/A,0,1,False
@@ -5564,11 +5561,11 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-03,2026-01-03 20:26,01:29,Bangkok,BKK,VietJet Air,VJ904,2,11L,Landed,VN-A523,A21N,passenger,N/A,89,False,False,N/A,0,0,False
 2026-01-03,2026-01-03 20:19,02:38,Kuala Lumpur,KUL,China Airlines,CI5866,0,11L,Landed,B-18718,B744,cargo,N/A,158,False,False,N/A,0,0,False
 2026-01-03,2026-01-03 20:16,01:02,Da Nang,DAD,VietJet Air,VJ516,1,11L,Landed,VN-A635,A321,passenger,N/A,62,False,False,N/A,0,0,False
-2026-01-03,2026-01-03 20:14,N/A,Tokyo,HND,N/A,N/A,2,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
-2026-01-03,2026-01-03 20:11,N/A,Ho Chi Minh City,SGN,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
-2026-01-03,2026-01-03 20:08,N/A,Ho Chi Minh City,SGN,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
-2026-01-03,2026-01-03 20:01,N/A,Da Nang,DAD,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
-2026-01-03,2026-01-03 19:59,N/A,Yangon,RGN,N/A,N/A,2,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
+2026-01-03,2026-01-03 20:14,N/A,Tokyo,HND,N/A,N/A,2,11L,Landed,N/A,N/A,general aviation,N/A,,False,False,N/A,0,0,False
+2026-01-03,2026-01-03 20:11,N/A,Ho Chi Minh City,SGN,N/A,N/A,1,11L,Landed,N/A,N/A,general aviation,N/A,,False,False,N/A,0,0,False
+2026-01-03,2026-01-03 20:08,N/A,Ho Chi Minh City,SGN,N/A,N/A,1,11L,Landed,N/A,N/A,general aviation,N/A,,False,False,N/A,0,0,False
+2026-01-03,2026-01-03 20:01,N/A,Da Nang,DAD,N/A,N/A,1,11L,Landed,N/A,N/A,general aviation,N/A,,False,False,N/A,0,0,False
+2026-01-03,2026-01-03 19:59,N/A,Yangon,RGN,N/A,N/A,2,11L,Landed,N/A,N/A,general aviation,N/A,,False,False,N/A,0,0,False
 2026-01-03,2026-01-03 19:56,00:58,Da Nang,DAD,Bamboo Airways,QH148,1,11L,Landed,VN-A585,A321,passenger,N/A,58,False,False,N/A,0,0,False
 2026-01-03,2026-01-03 19:52,03:29,Delhi,DEL,SF Airlines,O3168,0,11L,Landed,B-227E,B763,cargo,N/A,209,False,False,N/A,0,0,False
 2026-01-03,2026-01-03 19:47,01:50,Hong Kong,HKG,Hong Kong Airlines,HX528,2,11L,Landed,B-LPC,A320,passenger,N/A,110,False,False,N/A,0,0,False
@@ -5594,10 +5591,10 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-03,2026-01-03 18:40,03:46,Beijing,PEK,Vietnam Airlines,VN513,2,11L,Landed,VN-A332,A321,passenger,N/A,226,False,False,N/A,0,1,False
 2026-01-03,2026-01-03 18:36,01:59,Shenzhen,SZX,Shenzhen Airlines,ZH105,2,11L,Landed,B-5402,B738,passenger,N/A,119,False,False,N/A,0,1,False
 2026-01-03,2026-01-03 18:34,01:30,Buon Ma Thuot,BMV,VietJet Air,VJ1492,1,11L,Landed,VN-A546,A21N,passenger,N/A,90,False,False,N/A,0,1,False
-2026-01-03,2026-01-03 18:30,N/A,Phu Quoc,PQC,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,1,False
-2026-01-03,2026-01-03 18:27,N/A,Da Nang,DAD,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,1,False
-2026-01-03,2026-01-03 18:25,N/A,Guangzhou,CAN,N/A,N/A,2,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,1,False
-2026-01-03,2026-01-03 18:22,N/A,Da Nang,DAD,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,1,False
+2026-01-03,2026-01-03 18:30,N/A,Phu Quoc,PQC,N/A,N/A,1,11L,Landed,N/A,N/A,general aviation,N/A,,False,False,N/A,0,1,False
+2026-01-03,2026-01-03 18:27,N/A,Da Nang,DAD,N/A,N/A,1,11L,Landed,N/A,N/A,general aviation,N/A,,False,False,N/A,0,1,False
+2026-01-03,2026-01-03 18:25,N/A,Guangzhou,CAN,N/A,N/A,2,11L,Landed,N/A,N/A,general aviation,N/A,,False,False,N/A,0,1,False
+2026-01-03,2026-01-03 18:22,N/A,Da Nang,DAD,N/A,N/A,1,11L,Landed,N/A,N/A,general aviation,N/A,,False,False,N/A,0,1,False
 2026-01-03,2026-01-03 18:19,01:41,Phnom Penh,KTI,Air Cambodia,K6850,2,11L,Landed,XU-353,A320,passenger,N/A,101,False,False,N/A,0,1,False
 2026-01-03,2026-01-03 18:16,01:04,Luang Prabang,LPQ,Lao Airlines,QV313,2,11L,Landed,RDPL-34228,AT76,passenger,N/A,64,False,False,N/A,0,1,False
 2026-01-03,2026-01-03 18:15,01:38,Nha Trang,CXR,Vietnam Airlines,VN1558,1,11L,Landed,VN-A512,A21N,passenger,N/A,98,False,False,N/A,0,1,False
@@ -5732,7 +5729,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-03,2026-01-03 10:20,01:41,Guangzhou,CAN,China Southern Airlines,CZ3049,2,11L,Landed,B-322F,A20N,passenger,N/A,101,False,False,N/A,0,0,False
 2026-01-03,2026-01-03 10:19,01:55,Can Tho,VCA,VietJet Air,VJ460,1,11L,Landed,VN-A635,A321,passenger,N/A,115,False,False,N/A,0,0,False
 2026-01-03,2026-01-03 10:15,02:31,Kaohsiung,KHH,Vietnam Airlines,VN587,2,11L,Landed,VN-A604,A321,passenger,N/A,151,False,False,N/A,0,0,False
-2026-01-03,2026-01-03 10:11,00:46,Haiphong,HPH,Avion Express,VCJ271,1,11R,Landed,LY-MLI,A320,passenger,N/A,46,False,False,N/A,0,0,False
+2026-01-03,2026-01-03 10:11,00:46,Haiphong,HPH,Avion Express,VCJ271,1,11R,Landed,LY-MLI,A320,business jet,N/A,46,False,False,N/A,0,0,False
 2026-01-03,2026-01-03 10:08,01:28,Phnom Penh,KTI,Air Cambodia,K6854,2,11L,Landed,XU-356,A320,passenger,N/A,88,False,False,N/A,0,0,False
 2026-01-03,2026-01-03 09:54,01:38,Hong Kong,HKG,Cathay Pacific,CX741,2,11L,Landed,B-KQR,B77W,passenger,N/A,98,False,False,N/A,0,0,False
 2026-01-03,2026-01-03 09:52,00:58,Da Nang,DAD,Vietnam Airlines,VN7150,1,11L,Landed,VN-A356,A321,passenger,N/A,58,False,False,N/A,0,0,False
@@ -6032,7 +6029,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-04,2026-01-04 12:32,01:49,Guangzhou,CAN,Shenzhen Airlines,ZH121,2,11L,Landed,B-1710,B738,passenger,N/A,109,False,False,N/A,0,0,False
 2026-01-04,2026-01-04 12:28,01:40,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1202,1,11L,Landed,VN-A284,A21N,passenger,N/A,100,False,False,N/A,0,0,False
 2026-01-04,2026-01-04 12:24,05:14,Dubai,DXB,Emirates,EK394,2,11L,Landed,A6-ENB,B77W,passenger,N/A,314,False,False,N/A,0,0,False
-2026-01-04,2026-01-04 12:21,N/A,Nha Trang,CXR,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
 2026-01-04,2026-01-04 12:18,01:40,Ho Chi Minh City,SGN,Bamboo Airways,QH224,1,11L,Landed,JU-1410,A320,passenger,N/A,100,False,False,N/A,0,0,False
 2026-01-04,2026-01-04 12:15,04:37,Seoul,ICN,Asiana Airlines,OZ729,2,11L,Landed,HL7700,B772,passenger,N/A,277,False,False,N/A,0,0,False
 2026-01-04,2026-01-04 12:11,02:57,Kuala Lumpur,KUL,Malaysia Airlines,MH752,2,11L,Landed,9M-MLO,B738,passenger,N/A,177,False,False,N/A,0,0,False
@@ -6060,7 +6056,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-04,2026-01-04 11:02,01:33,Da Lat,DLI,Vietnam Airlines,VN1572,1,11L,Landed,VN-A513,A20N,passenger,N/A,93,False,False,N/A,0,0,False
 2026-01-04,2026-01-04 10:59,01:35,Ho Chi Minh City,SGN,Vietnam Airlines,VN244,1,11L,Landed,VN-A868,B789,passenger,N/A,95,False,False,N/A,0,0,False
 2026-01-04,2026-01-04 10:54,01:12,Pleiku,PXU,Vietnam Airlines,VN1614,1,11L,Landed,VN-A622,A21N,passenger,N/A,72,False,False,N/A,0,0,False
-2026-01-04,2026-01-04 10:43,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ136,1,11L,Landed,N/A,N/A,unknown,N/A,102,False,False,N/A,0,0,False
+2026-01-04,2026-01-04 10:43,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ136,1,11L,Landed,N/A,N/A,general aviation,N/A,102,False,False,N/A,0,0,False
 2026-01-04,2026-01-04 10:40,01:16,Qui Nhon,UIH,VietJet Air,VJ430,1,11L,Landed,VN-A668,A320,passenger,N/A,76,False,False,N/A,0,0,False
 2026-01-04,2026-01-04 10:28,01:10,Chu Lai,VCL,Vietnam Airlines,VN1640,1,11L,Landed,VN-A514,A20N,passenger,N/A,70,False,False,N/A,0,0,False
 2026-01-04,2026-01-04 10:25,10:00,Oslo,OSL,Ethiopian Airlines,ET3792,0,11L,Landed,ET-AVN,B77L,cargo,N/A,600,False,False,N/A,0,0,False
@@ -6759,7 +6755,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-07,2026-01-07 23:41,06:08,Tokyo,NRT,All Nippon Airways,NH8447,0,11L,Landed,JA601F,B763,cargo,N/A,368,False,False,N/A,0,0,False
 2026-01-07,2026-01-07 23:22,04:41,Seoul,ICN,T'way Air,TW61,2,11L,Landed,HL8086,B738,passenger,N/A,281,False,False,N/A,0,0,False
 2026-01-07,2026-01-07 23:20,01:46,Ho Chi Minh City,SGN,VietJet Air,VJ164,1,11L,Landed,VN-A554,A21N,passenger,N/A,106,False,False,N/A,0,0,False
-2026-01-07,2026-01-07 23:17,01:51,Ho Chi Minh City,SGN,VietJet Air,VJ180,1,11L,Landed,N/A,N/A,unknown,N/A,111,False,False,N/A,0,0,False
+2026-01-07,2026-01-07 23:17,01:51,Ho Chi Minh City,SGN,VietJet Air,VJ180,1,11L,Landed,N/A,N/A,general aviation,N/A,111,False,False,N/A,0,0,False
 2026-01-07,2026-01-07 23:13,01:57,Can Tho,VCA,VietJet Air,VJ464,1,11L,Landed,VN-A641,A321,passenger,N/A,117,False,False,N/A,0,0,False
 2026-01-07,2026-01-07 23:10,01:49,Ho Chi Minh City,SGN,Bamboo Airways,QH280,1,11L,Landed,VN-A585,A321,passenger,N/A,109,False,False,N/A,0,0,False
 2026-01-07,2026-01-07 23:07,05:30,Tokyo,HND,Vietnam Airlines,VN385,2,11L,Landed,VN-A866,B789,passenger,N/A,330,False,False,N/A,0,0,False
@@ -6994,7 +6990,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-07,2026-01-07 09:10,04:32,Seoul,ICN,VietJet Air,VJ963,2,11L,Landed,VN-A552,A21N,passenger,N/A,272,False,False,N/A,0,0,False
 2026-01-07,2026-01-07 09:08,01:48,Ho Chi Minh City,SGN,Vietnam Airlines,VN240,1,11L,Landed,VN-A886,A359,passenger,N/A,108,False,False,N/A,0,0,False
 2026-01-07,2026-01-07 09:04,02:42,Singapore,SIN,EVA Air,BR6061,0,11L,Landed,B-16783,B77L,cargo,N/A,162,False,False,N/A,0,0,False
-2026-01-07,2026-01-07 08:56,N/A,Hue,HUI,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
 2026-01-07,2026-01-07 08:53,01:54,Ho Chi Minh City,SGN,VietJet Air,VJ176,1,11L,Landed,VN-A662,A320,passenger,N/A,114,False,False,N/A,0,0,False
 2026-01-07,2026-01-07 08:47,01:44,Hong Kong,HKG,HK express,UO540,2,11L,Landed,B-LCI,A320,passenger,N/A,104,False,False,N/A,0,0,False
 2026-01-07,2026-01-07 08:37,02:55,Singapore,SIN,Scoot,TR300,2,11L,Landed,9V-OJI,B789,passenger,N/A,175,False,False,N/A,0,0,False
@@ -7106,7 +7101,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-08,2026-01-08 20:29,01:25,Siem Reap,SAI,VietJet Air,VJ914,2,11L,Landed,VN-A661,A321,passenger,N/A,85,False,False,N/A,0,1,False
 2026-01-08,2026-01-08 20:26,01:26,Bangkok,BKK,VietJet Air,VJ904,2,11L,Landed,VN-A537,A21N,passenger,N/A,86,False,False,N/A,0,1,False
 2026-01-08,2026-01-08 20:22,01:28,Bangkok,DMK,AirAsia,FD644,2,11L,Landed,HS-EAB,A21N,passenger,N/A,88,False,False,N/A,0,2,False
-2026-01-08,2026-01-08 20:19,01:15,Pleiku,PXU,VietJet Air,VJ424,1,11L,Landed,N/A,N/A,unknown,N/A,75,False,False,N/A,0,2,False
+2026-01-08,2026-01-08 20:19,01:15,Pleiku,PXU,VietJet Air,VJ424,1,11L,Landed,N/A,N/A,general aviation,N/A,75,False,False,N/A,0,2,False
 2026-01-08,2026-01-08 20:16,01:50,Ho Chi Minh City,SGN,VietJet Air,VJ152,1,11L,Landed,VN-A643,A321,passenger,N/A,110,False,False,N/A,0,2,False
 2026-01-08,2026-01-08 20:13,00:38,Luang Prabang,LPQ,Vietnam Airlines,VN930,2,11L,Landed,VN-A605,A321,passenger,N/A,38,False,False,N/A,0,2,False
 2026-01-08,2026-01-08 20:10,01:31,Da Lat,DLI,VietJet Air,VJ410,1,11L,Landed,VN-A662,A320,passenger,N/A,91,False,False,N/A,0,2,False
@@ -7185,7 +7180,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-08,2026-01-08 15:56,01:31,Tuy Hoa,TBB,Vietnam Airlines,VN1650,1,11L,Landed,VN-A609,A321,passenger,N/A,91,False,False,N/A,0,0,False
 2026-01-08,2026-01-08 15:50,01:39,Nha Trang,CXR,Bamboo Airways,QH1416,1,11L,Landed,VN-A597,A321,passenger,N/A,99,False,False,N/A,0,0,False
 2026-01-08,2026-01-08 15:47,02:54,Singapore,SIN,Vietnam Airlines,VN660,2,11L,Landed,VN-A356,A321,passenger,N/A,174,False,False,N/A,0,0,False
-2026-01-08,2026-01-08 15:44,01:51,Ho Chi Minh City,SGN,VietJet Air,VJ198,1,11L,Landed,N/A,N/A,unknown,N/A,111,False,False,N/A,0,0,False
+2026-01-08,2026-01-08 15:44,01:51,Ho Chi Minh City,SGN,VietJet Air,VJ198,1,11L,Landed,N/A,N/A,general aviation,N/A,111,False,False,N/A,0,0,False
 2026-01-08,2026-01-08 15:42,01:38,Da Lat,DLI,VietJet Air,VJ408,1,11L,Landed,VN-A662,A320,passenger,N/A,98,False,False,N/A,0,0,False
 2026-01-08,2026-01-08 15:35,01:48,Ho Chi Minh City,SGN,Bamboo Airways,QH242,1,11L,Landed,PK-BBK,B739,passenger,N/A,108,False,False,N/A,0,0,False
 2026-01-08,2026-01-08 15:32,00:37,Quang Ninh,VDO,Vietnam Airlines,VN5003,1,11L,Landed,VN-A399,A321,passenger,N/A,37,False,False,N/A,0,0,False
@@ -7442,7 +7437,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-09,2026-01-09 18:54,05:11,Osaka,KIX,VietJet Air,VJ931,2,11L,Landed,VN-A674,A21N,passenger,N/A,311,False,False,N/A,1,2,True
 2026-01-09,2026-01-09 18:50,01:39,Da Lat,DLI,Bamboo Airways,QH1424,1,11L,Landed,ER-00005,A320,passenger,N/A,99,False,False,N/A,1,2,True
 2026-01-09,2026-01-09 18:47,01:48,Hong Kong,HKG,Hong Kong Airlines,HX528,2,11L,Landed,B-LPC,A320,passenger,N/A,108,False,False,N/A,1,2,True
-2026-01-09,2026-01-09 18:44,04:00,Jakarta,CGK,VietJet Air,VJ928,2,11L,Landed,N/A,N/A,unknown,N/A,240,False,False,N/A,1,2,True
+2026-01-09,2026-01-09 18:44,04:00,Jakarta,CGK,VietJet Air,VJ928,2,11L,Landed,N/A,N/A,general aviation,N/A,240,False,False,N/A,1,2,True
 2026-01-09,2026-01-09 18:41,01:14,Da Nang,DAD,Vietnam Airlines,VN174,1,11L,Landed,VN-A602,A321,passenger,N/A,74,False,False,N/A,1,2,True
 2026-01-09,2026-01-09 18:38,02:41,Guwahati,GAU,N/A,QO354,0,11L,Landed,VT-AAZ,B738,cargo,N/A,161,False,False,N/A,1,2,True
 2026-01-09,2026-01-09 18:35,01:35,Buon Ma Thuot,BMV,VietJet Air,VJ1492,1,11L,Landed,VN-A697,A21N,passenger,N/A,95,False,False,N/A,1,2,True
@@ -7620,7 +7615,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-09,2026-01-09 07:25,02:43,Manila,MNL,Cebu Pacific,5J744,2,11L,Landed,RP-C4133,A21N,passenger,N/A,163,False,False,N/A,0,0,False
 2026-01-09,2026-01-09 07:16,04:54,Seoul,ICN,Atlas Air,5Y8557,0,11L,Landed,N868GT,B748,cargo,N/A,294,False,False,N/A,0,0,False
 2026-01-09,2026-01-09 07:05,03:23,Cebu,CEB,Vietnam Airlines,VN642,2,11L,Landed,VN-A326,A321,passenger,N/A,203,False,False,N/A,0,0,False
-2026-01-09,2026-01-09 06:46,00:57,Da Nang,DAD,VietJet Air,VJ502,1,11L,Landed,N/A,N/A,unknown,N/A,57,False,False,N/A,0,0,False
+2026-01-09,2026-01-09 06:46,00:57,Da Nang,DAD,VietJet Air,VJ502,1,11L,Landed,N/A,N/A,general aviation,N/A,57,False,False,N/A,0,0,False
 2026-01-09,2026-01-09 06:38,06:26,Kuwait City,KWI,Turkish Airlines,TK6382,0,11L,Landed,TC-LJR,B77L,cargo,N/A,386,False,False,N/A,0,0,False
 2026-01-09,2026-01-09 06:11,10:16,Paris,CDG,Vietnam Airlines,VN18,2,11L,Landed,VN-A890,A359,passenger,N/A,616,False,False,N/A,0,0,False
 2026-01-09,2026-01-09 06:07,09:53,Frankfurt,FRA,Vietnam Airlines,VN36,2,11L,Landed,VN-A870,B789,passenger,N/A,593,False,False,N/A,0,0,False
@@ -7792,7 +7787,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-10,2026-01-10 16:02,02:51,Singapore,SIN,Vietnam Airlines,VN660,2,11L,Landed,VN-A622,A21N,passenger,N/A,171,False,False,N/A,0,0,False
 2026-01-10,2026-01-10 16:00,01:40,Hong Kong,HKG,Vietnam Airlines,VN593,2,11L,Landed,VN-A324,A321,passenger,N/A,100,False,False,N/A,0,0,False
 2026-01-10,2026-01-10 15:57,01:38,Ho Chi Minh City,SGN,Vietnam Airlines,VN214,1,11L,Landed,VN-A892,A359,passenger,N/A,98,False,False,N/A,0,0,False
-2026-01-10,2026-01-10 15:50,00:46,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,46,False,False,N/A,0,0,False
+2026-01-10,2026-01-10 15:50,00:46,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,46,False,False,N/A,0,0,False
 2026-01-10,2026-01-10 15:43,02:01,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,VN-A552,A21N,passenger,N/A,121,False,False,N/A,0,0,False
 2026-01-10,2026-01-10 15:40,01:47,Ho Chi Minh City,SGN,Vietnam Airlines,VN212,1,11L,Landed,VN-A870,B789,passenger,N/A,107,False,False,N/A,0,0,False
 2026-01-10,2026-01-10 15:38,01:40,Da Lat,DLI,VietJet Air,VJ408,1,11L,Landed,VN-A673,A321,passenger,N/A,100,False,False,N/A,0,0,False
@@ -8240,7 +8235,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-11,2026-01-11 05:15,09:46,Munich,MUC,Vietnam Airlines,VN34,2,11L,Landed,VN-A863,B789,passenger,N/A,586,False,False,N/A,0,0,False
 2026-01-11,2026-01-11 05:03,04:34,Seoul,ICN,Air Zeta,KJ389,0,11L,Landed,HL7507,B763,cargo,N/A,274,False,False,N/A,0,0,False
 2026-01-11,2026-01-11 04:48,03:06,Shanghai,PVG,VietJet Air,VJ7239,2,11L,Landed,VN-A676,A320,passenger,N/A,186,False,False,N/A,0,0,False
-2026-01-11,2026-01-11 04:13,03:11,Beijing,PKX,VietJet Air,VJ7713,2,11L,Landed,N/A,N/A,unknown,N/A,191,False,False,N/A,0,0,False
+2026-01-11,2026-01-11 04:13,03:11,Beijing,PKX,VietJet Air,VJ7713,2,11L,Landed,N/A,N/A,general aviation,N/A,191,False,False,N/A,0,0,False
 2026-01-11,2026-01-11 04:09,01:32,Guangzhou,CAN,VietJet Air,VJ7527,2,11L,Landed,VN-A637,A321,passenger,N/A,92,False,False,N/A,0,0,False
 2026-01-11,2026-01-11 02:24,04:54,Seoul,ICN,Air Zeta,KJ373,0,11L,Landed,HL8503,B738,cargo,N/A,294,False,False,N/A,0,0,False
 2026-01-11,2026-01-11 02:12,04:25,Seoul,ICN,Korean Air,KE361,0,11L,Landed,HL7601,B744,cargo,N/A,265,False,False,N/A,0,0,False
@@ -8326,7 +8321,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-12,2026-01-12 19:28,00:52,Luang Prabang,LPQ,Lao Airlines,QV313,2,11L,Landed,RDPL-34225,AT76,passenger,N/A,52,False,False,N/A,0,0,False
 2026-01-12,2026-01-12 19:23,01:35,Chongqing,CKG,West Air,PN6423,2,11L,Landed,B-9981,A320,passenger,N/A,95,False,False,N/A,0,0,False
 2026-01-12,2026-01-12 19:19,01:31,Phnom Penh,KTI,Air Cambodia,K6850,2,11L,Landed,XU-350,A321,passenger,N/A,91,False,False,N/A,0,0,False
-2026-01-12,2026-01-12 19:16,03:54,Jakarta,CGK,VietJet Air,VJ928,2,11L,Landed,N/A,N/A,unknown,N/A,234,False,False,N/A,0,0,False
+2026-01-12,2026-01-12 19:16,03:54,Jakarta,CGK,VietJet Air,VJ928,2,11L,Landed,N/A,N/A,general aviation,N/A,234,False,False,N/A,0,0,False
 2026-01-12,2026-01-12 19:11,01:23,Siem Reap,SAI,Vietnam Airlines,VN836,2,11L,Landed,VN-A326,A321,passenger,N/A,83,False,False,N/A,0,0,False
 2026-01-12,2026-01-12 19:08,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ152,1,11L,Landed,VN-A639,A321,passenger,N/A,102,False,False,N/A,0,0,False
 2026-01-12,2026-01-12 19:02,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN254,1,11L,Landed,VN-A891,A359,passenger,N/A,99,False,False,N/A,0,0,False
@@ -8421,7 +8416,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-12,2026-01-12 13:34,01:37,Shenzhen,SZX,Shenzhen Airlines,ZH103,2,11L,Landed,B-6781,A320,passenger,N/A,97,False,False,N/A,1,1,True
 2026-01-12,2026-01-12 13:31,01:01,Da Nang,DAD,Vietnam Airlines,VN166,1,11L,Landed,VN-A508,A21N,passenger,N/A,61,False,False,N/A,1,1,True
 2026-01-12,2026-01-12 13:28,05:13,Osaka,KIX,Vietnam Airlines,VN335,2,11L,Landed,VN-A886,A359,passenger,N/A,313,False,False,N/A,1,2,True
-2026-01-12,2026-01-12 13:25,00:54,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,54,False,False,N/A,1,2,True
+2026-01-12,2026-01-12 13:25,00:54,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,54,False,False,N/A,1,2,True
 2026-01-12,2026-01-12 13:21,00:59,Hue,HUI,VietJet Air,VJ566,1,11L,Landed,VN-A643,A321,passenger,N/A,59,False,False,N/A,1,2,True
 2026-01-12,2026-01-12 13:18,04:29,Seoul,ICN,Vietnam Airlines,VN417,2,11L,Landed,VN-A879,B78X,passenger,N/A,269,False,False,N/A,1,2,True
 2026-01-12,2026-01-12 13:16,05:36,Osaka,KIX,VietJet Air,VJ939,2,11L,Landed,VN-A550,A21N,passenger,N/A,336,False,False,N/A,1,2,True
@@ -8524,7 +8519,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-12,2026-01-12 05:00,10:43,London,LHR,Vietnam Airlines,VN56,2,11L,Landed,VN-A870,B789,passenger,N/A,643,False,False,N/A,0,0,False
 2026-01-12,2026-01-12 04:56,02:43,Kuala Lumpur,KUL,MJets Air,WW220,0,11L,Landed,9M-KXD,B738,cargo,N/A,163,False,False,N/A,0,0,False
 2026-01-12,2026-01-12 04:51,03:45,Mumbai,BOM,Vietnam Airlines,VN972,2,11L,Landed,VN-A866,B789,passenger,N/A,225,False,False,N/A,0,0,False
-2026-01-12,2026-01-12 04:46,03:12,Shanghai,PVG,VietJet Air,VJ7239,2,11L,Landed,N/A,N/A,unknown,N/A,192,False,False,N/A,0,0,False
+2026-01-12,2026-01-12 04:46,03:12,Shanghai,PVG,VietJet Air,VJ7239,2,11L,Landed,N/A,N/A,general aviation,N/A,192,False,False,N/A,0,0,False
 2026-01-12,2026-01-12 04:22,01:36,Guangzhou,CAN,VietJet Air,VJ7527,2,11L,Landed,VN-A535,A321,passenger,N/A,96,False,False,N/A,0,0,False
 2026-01-12,2026-01-12 04:02,03:24,Beijing,PKX,VietJet Air,VJ7713,2,11L,Landed,VN-A656,A320,passenger,N/A,204,False,False,N/A,0,0,False
 2026-01-12,2026-01-12 03:58,04:13,Seoul,ICN,Kalitta Air,K4602,0,11L,Landed,N707CK,B744,cargo,N/A,253,False,False,N/A,0,0,False
@@ -8824,7 +8819,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-13,2026-01-13 04:21,03:04,Kuala Lumpur,KUL,Raya Airways,TH251,0,11L,Landed,9M-BZB,A321,cargo,N/A,184,False,False,N/A,0,0,False
 2026-01-13,2026-01-13 04:18,02:30,Zhengzhou,CGO,N/A,JD647,0,11L,Landed,B-32GY,A332,cargo,N/A,150,False,False,N/A,0,0,False
 2026-01-13,2026-01-13 04:11,01:39,Guangzhou,CAN,VietJet Air,VJ7527,2,11L,Landed,VN-A639,A321,passenger,N/A,99,False,False,N/A,0,0,False
-2026-01-13,2026-01-13 04:00,03:15,Beijing,PKX,VietJet Air,VJ7713,2,11L,Landed,N/A,N/A,unknown,N/A,195,False,False,N/A,0,0,False
+2026-01-13,2026-01-13 04:00,03:15,Beijing,PKX,VietJet Air,VJ7713,2,11L,Landed,N/A,N/A,general aviation,N/A,195,False,False,N/A,0,0,False
 2026-01-13,2026-01-13 03:39,04:28,Seoul,ICN,Air Zeta,KJ933,0,11L,Landed,HL7645,B744,cargo,N/A,268,False,False,N/A,0,0,False
 2026-01-13,2026-01-13 02:47,04:18,Seoul,ICN,Korean Air,KE361,0,11L,Landed,HL7601,B744,cargo,N/A,258,False,False,N/A,0,0,False
 2026-01-13,2026-01-13 02:35,02:06,Dhaka,DAC,Hong Kong Air Cargo,RH6652,0,11L,Landed,B-LNW,A332,cargo,N/A,126,False,False,N/A,0,0,False
@@ -8961,7 +8956,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-14,2026-01-14 16:56,03:28,Shanghai,PVG,Air China,CA755,2,11L,Landed,B-8502,A321,passenger,N/A,208,False,False,N/A,0,2,False
 2026-01-14,2026-01-14 16:53,01:34,Da Lat,DLI,Bamboo Airways,QH1424,1,11L,Landed,VN-A596,A20N,passenger,N/A,94,False,False,N/A,0,2,False
 2026-01-14,2026-01-14 16:50,04:32,Denpasar,DPS,VietJet Air,VJ900,2,11L,Landed,VN-A523,A21N,passenger,N/A,272,False,False,N/A,0,2,False
-2026-01-14,2026-01-14 16:47,04:20,Busan,PUS,VietJet Air,VJ957,2,11L,Landed,N/A,N/A,unknown,N/A,260,False,False,N/A,0,2,False
+2026-01-14,2026-01-14 16:47,04:20,Busan,PUS,VietJet Air,VJ957,2,11L,Landed,N/A,N/A,general aviation,N/A,260,False,False,N/A,0,2,False
 2026-01-14,2026-01-14 16:43,02:11,Kolkata,CCU,IndiGo,6E1631,2,11L,Landed,VT-IPK,A20N,passenger,N/A,131,False,False,N/A,0,2,False
 2026-01-14,2026-01-14 16:40,05:14,Nagoya,NGO,Vietnam Airlines,VN349,2,11L,Landed,VN-A889,A359,passenger,N/A,314,False,False,N/A,0,2,False
 2026-01-14,2026-01-14 16:32,00:35,Dien Bien Phu,DIN,Vietnam Airlines,VN1805,1,11R,Landed,VN-A605,A321,passenger,N/A,35,False,False,N/A,0,2,False
@@ -9013,7 +9008,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-14,2026-01-14 14:09,01:46,Ho Chi Minh City,SGN,VietJet Air,VJ188,1,11L,Landed,LY-NVE,A320,passenger,N/A,106,False,False,N/A,2,2,True
 2026-01-14,2026-01-14 14:06,01:53,Ho Chi Minh City,SGN,Bamboo Airways,QH240,1,11L,Landed,ER-00005,A320,passenger,N/A,113,False,False,N/A,2,2,True
 2026-01-14,2026-01-14 14:03,03:32,Shanghai,PVG,China Eastern Airlines,MU6011,2,11L,Landed,B-6592,A321,passenger,N/A,212,False,False,N/A,2,2,True
-2026-01-14,2026-01-14 13:59,00:52,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,52,False,False,N/A,0,0,False
+2026-01-14,2026-01-14 13:59,00:52,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,52,False,False,N/A,0,0,False
 2026-01-14,2026-01-14 13:55,01:35,Shenzhen,SZX,Shenzhen Airlines,ZH103,2,11L,Landed,B-6720,A320,passenger,N/A,95,False,False,N/A,0,0,False
 2026-01-14,2026-01-14 13:50,00:59,Da Nang,DAD,VietJet Air,VJ508,1,29R,Landed,VN-A633,A321,passenger,N/A,59,False,False,N/A,0,1,False
 2026-01-14,2026-01-14 13:40,05:53,Tokyo,NRT,VietJet Air,VJ933,2,11L,Landed,VN-A815,A333,passenger,N/A,353,False,False,N/A,0,1,False
@@ -9120,7 +9115,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-14,2026-01-14 05:04,03:03,Shanghai,PVG,VietJet Air,VJ7239,2,11L,Landed,VN-A668,A320,passenger,N/A,183,False,False,N/A,0,0,False
 2026-01-14,2026-01-14 04:59,03:48,Mumbai,BOM,Vietnam Airlines,VN972,2,11L,Landed,VN-A888,A359,passenger,N/A,228,False,False,N/A,0,0,False
 2026-01-14,2026-01-14 04:18,03:02,Kuala Lumpur,KUL,Raya Airways,TH251,0,11L,Landed,9M-BZB,A321,cargo,N/A,182,False,False,N/A,0,0,False
-2026-01-14,2026-01-14 04:05,03:22,Beijing,PKX,VietJet Air,VJ7713,2,11L,Landed,N/A,N/A,unknown,N/A,202,False,False,N/A,0,0,False
+2026-01-14,2026-01-14 04:05,03:22,Beijing,PKX,VietJet Air,VJ7713,2,11L,Landed,N/A,N/A,general aviation,N/A,202,False,False,N/A,0,0,False
 2026-01-14,2026-01-14 04:03,01:32,Guangzhou,CAN,VietJet Air,VJ7527,2,11L,Landed,VN-A542,A321,passenger,N/A,92,False,False,N/A,0,0,False
 2026-01-14,2026-01-14 03:45,09:40,Milan,MXP,Vietnam Airlines,VN72,2,11L,Landed,VN-A889,A359,passenger,N/A,580,False,False,N/A,0,0,False
 2026-01-14,2026-01-14 03:41,04:05,Seoul,ICN,Air Zeta,KJ951,0,11L,Landed,HL7645,B744,cargo,N/A,245,False,False,N/A,0,0,False
@@ -9279,7 +9274,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-15,2026-01-15 12:47,05:11,Osaka,KIX,VietJet Air,VJ939,2,11L,Landed,VN-A554,A21N,passenger,N/A,311,False,False,N/A,0,0,False
 2026-01-15,2026-01-15 12:44,05:13,Nagoya,NGO,Vietnam Airlines,VN349,2,11L,Landed,VN-A896,A359,passenger,N/A,313,False,False,N/A,0,0,False
 2026-01-15,2026-01-15 12:41,04:38,Fukuoka,FUK,Vietnam Airlines,VN357,2,11L,Landed,VN-A356,A321,passenger,N/A,278,False,False,N/A,0,0,False
-2026-01-15,2026-01-15 12:39,01:46,Phu Quoc,PQC,VietJet Air,VJ440,1,11L,Landed,N/A,N/A,unknown,N/A,106,False,False,N/A,0,0,False
+2026-01-15,2026-01-15 12:39,01:46,Phu Quoc,PQC,VietJet Air,VJ440,1,11L,Landed,N/A,N/A,general aviation,N/A,106,False,False,N/A,0,0,False
 2026-01-15,2026-01-15 12:37,01:40,Nha Trang,CXR,VietJet Air,VJ780,1,11L,Landed,VN-A549,A21N,passenger,N/A,100,False,False,N/A,0,0,False
 2026-01-15,2026-01-15 12:33,01:57,Guangzhou,CAN,Shenzhen Airlines,ZH121,2,11L,Landed,B-5402,B738,passenger,N/A,117,False,False,N/A,0,0,False
 2026-01-15,2026-01-15 12:32,01:47,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1202,1,11L,Landed,VN-A284,A21N,passenger,N/A,107,False,False,N/A,0,0,False
@@ -9500,7 +9495,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-16,2026-01-16 15:41,03:03,Singapore,SIN,Vietnam Airlines,VN660,2,11L,Landed,VN-A356,A321,passenger,N/A,183,False,False,N/A,1,1,True
 2026-01-16,2026-01-16 15:38,01:44,Da Lat,DLI,Bamboo Airways,QH1422,1,11L,Landed,VN-A227,A321,passenger,N/A,104,False,False,N/A,1,1,True
 2026-01-16,2026-01-16 15:32,01:53,Ho Chi Minh City,SGN,Bamboo Airways,QH242,1,11L,Landed,PK-BBK,B739,passenger,N/A,113,False,False,N/A,0,0,False
-2026-01-16,2026-01-16 15:24,01:02,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,62,False,False,N/A,0,0,False
+2026-01-16,2026-01-16 15:24,01:02,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,62,False,False,N/A,0,0,False
 2026-01-16,2026-01-16 15:21,01:28,Qui Nhon,UIH,Vietnam Airlines,VN1622,1,11L,Landed,VN-A515,A20N,passenger,N/A,88,False,False,N/A,0,0,False
 2026-01-16,2026-01-16 15:13,01:12,Da Nang,DAD,Vietnam Airlines,VN170,1,29R,Landed,VN-A605,A321,passenger,N/A,72,False,False,N/A,0,0,False
 2026-01-16,2026-01-16 15:10,02:49,Fuzhou,FOC,Xiamen Air,MF8697,2,11L,Landed,B-5602,B738,passenger,N/A,169,False,False,N/A,0,0,False
@@ -9928,11 +9923,9 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-18,2026-01-18 21:13,01:42,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1230,1,11L,Landed,VN-A281,A21N,passenger,N/A,102,False,False,N/A,0,0,False
 2026-01-18,2026-01-18 21:10,01:47,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G872,1,11L,Landed,VN-A286,A21N,passenger,N/A,107,False,False,N/A,0,0,False
 2026-01-18,2026-01-18 21:08,01:51,Ho Chi Minh City,SGN,VietJet Air,VJ166,1,11L,Landed,VN-A630,A321,passenger,N/A,111,False,False,N/A,0,0,False
-2026-01-18,2026-01-18 21:04,N/A,Bangkok,BKK,N/A,N/A,2,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
 2026-01-18,2026-01-18 21:01,01:27,Macau,MFM,Qatar Airways,QR8027,0,11L,Landed,A7-BFC,B77L,cargo,N/A,87,False,False,N/A,0,0,False
 2026-01-18,2026-01-18 20:58,01:47,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G868,1,11L,Landed,VN-A279,A321,passenger,N/A,107,False,False,N/A,0,0,False
 2026-01-18,2026-01-18 20:55,01:38,Da Lat,DLI,VietJet Air,VJ410,1,11L,Landed,VN-A658,A320,passenger,N/A,98,False,False,N/A,0,0,False
-2026-01-18,2026-01-18 20:53,N/A,Da Nang,DAD,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
 2026-01-18,2026-01-18 20:50,01:07,Da Nang,DAD,Vietnam Airlines,VN7190,1,11L,Landed,VN-A608,A321,passenger,N/A,67,False,False,N/A,0,0,False
 2026-01-18,2026-01-18 20:47,01:49,Ho Chi Minh City,SGN,VietJet Air,VJ194,1,11L,Landed,VN-A639,A321,passenger,N/A,109,False,False,N/A,0,0,False
 2026-01-18,2026-01-18 20:45,00:56,Vientiane,VTE,Vietnam Airlines,VN920,2,11L,Landed,VN-A324,A321,passenger,N/A,56,False,False,N/A,0,0,False
@@ -10040,7 +10033,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-18,2026-01-18 14:06,01:45,Ho Chi Minh City,SGN,VietJet Air,VJ188,1,11L,Landed,LY-NVE,A320,passenger,N/A,105,False,False,N/A,0,0,False
 2026-01-18,2026-01-18 14:03,01:01,Da Nang,DAD,VietJet Air,VJ508,1,11L,Landed,VN-A635,A321,passenger,N/A,61,False,False,N/A,0,0,False
 2026-01-18,2026-01-18 14:00,02:43,Kuala Lumpur,KUL,AirAsia,AK512,2,11L,Landed,9M-AQN,A320,passenger,N/A,163,False,False,N/A,0,0,False
-2026-01-18,2026-01-18 13:57,00:49,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,49,False,False,N/A,0,0,False
+2026-01-18,2026-01-18 13:57,00:49,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,49,False,False,N/A,0,0,False
 2026-01-18,2026-01-18 13:52,01:43,Ho Chi Minh City,SGN,Bamboo Airways,QH240,1,11L,Landed,ER-00005,A320,passenger,N/A,103,False,False,N/A,0,0,False
 2026-01-18,2026-01-18 13:50,01:01,Da Nang,DAD,Vietnam Airlines,VN166,1,11L,Landed,VN-A612,A321,passenger,N/A,61,False,False,N/A,0,0,False
 2026-01-18,2026-01-18 13:45,04:29,Seoul,ICN,Atlas Air,5Y8522,0,11L,Landed,N487MC,B744,cargo,N/A,269,False,False,N/A,0,0,False
@@ -10499,7 +10492,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-20,2026-01-20 17:42,02:01,Can Tho,VCA,Vietnam Airlines,VN1202,1,11L,Landed,VN-A505,A21N,passenger,N/A,121,False,False,N/A,0,0,False
 2026-01-20,2026-01-20 17:41,01:49,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G854,1,11L,Landed,VN-A280,A321,passenger,N/A,109,False,False,N/A,0,0,False
 2026-01-20,2026-01-20 17:30,01:47,Ho Chi Minh City,SGN,Vietnam Airlines,VN250,1,11L,Landed,VN-A892,A359,passenger,N/A,107,False,False,N/A,0,0,False
-2026-01-20,2026-01-20 17:26,01:05,Da Nang,DAD,VietJet Air,VJ512,1,11L,Landed,N/A,N/A,unknown,N/A,65,False,False,N/A,0,0,False
+2026-01-20,2026-01-20 17:26,01:05,Da Nang,DAD,VietJet Air,VJ512,1,11L,Landed,N/A,N/A,general aviation,N/A,65,False,False,N/A,0,0,False
 2026-01-20,2026-01-20 17:19,04:28,Busan,PUS,VietJet Air,VJ957,2,11L,Landed,VN-A658,A320,passenger,N/A,268,False,False,N/A,0,0,False
 2026-01-20,2026-01-20 17:14,01:27,Nha Trang,CXR,Vietnam Airlines,VN7552,1,11R,Landed,VN-A329,A321,passenger,N/A,87,False,False,N/A,0,0,False
 2026-01-20,2026-01-20 17:05,02:56,Singapore,SIN,VietJet Air,VJ916,2,11L,Landed,VN-A578,A21N,passenger,N/A,176,False,False,N/A,0,0,False
@@ -10733,7 +10726,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-21,2026-01-21 17:27,01:51,Phu Quoc,PQC,Vietnam Airlines,VN6400,1,11L,Landed,VN-A354,A321,passenger,N/A,111,False,False,N/A,0,0,False
 2026-01-21,2026-01-21 17:25,02:51,Singapore,SIN,VietJet Air,VJ916,2,11L,Landed,VN-A537,A21N,passenger,N/A,171,False,False,N/A,0,0,False
 2026-01-21,2026-01-21 17:18,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN250,1,11L,Landed,VN-A872,B78X,passenger,N/A,102,False,False,N/A,0,0,False
-2026-01-21,2026-01-21 17:15,04:34,Busan,PUS,VietJet Air,VJ957,2,11L,Landed,N/A,N/A,unknown,N/A,274,False,False,N/A,0,0,False
+2026-01-21,2026-01-21 17:15,04:34,Busan,PUS,VietJet Air,VJ957,2,11L,Landed,N/A,N/A,general aviation,N/A,274,False,False,N/A,0,0,False
 2026-01-21,2026-01-21 17:11,00:59,Da Nang,DAD,VietJet Air,VJ512,1,11L,Landed,VN-A658,A320,passenger,N/A,59,False,False,N/A,0,0,False
 2026-01-21,2026-01-21 17:09,01:35,Guangzhou,CAN,Vietnam Airlines,VN507,2,11L,Landed,VN-A605,A321,passenger,N/A,95,False,False,N/A,0,0,False
 2026-01-21,2026-01-21 17:05,02:45,Taipei,TPE,EVA Air,BR385,2,11L,Landed,B-16215,A321,passenger,N/A,165,False,False,N/A,0,0,False
@@ -11065,7 +11058,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-22,2026-01-22 13:44,05:56,Tokyo,NRT,Vietnam Airlines,VN311,2,11L,Landed,VN-A874,B78X,passenger,N/A,356,False,False,N/A,0,0,False
 2026-01-22,2026-01-22 13:42,01:40,Shenzhen,SZX,Shenzhen Airlines,ZH103,2,11L,Landed,B-6722,A320,passenger,N/A,100,False,False,N/A,0,0,False
 2026-01-22,2026-01-22 13:37,01:04,Da Nang,DAD,Vietnam Airlines,VN166,1,11L,Landed,VN-A604,A321,passenger,N/A,64,False,False,N/A,0,0,False
-2026-01-22,2026-01-22 13:34,01:45,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,105,False,False,N/A,0,0,False
+2026-01-22,2026-01-22 13:34,01:45,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,105,False,False,N/A,0,0,False
 2026-01-22,2026-01-22 13:31,05:01,Osaka,KIX,Vietnam Airlines,VN335,2,11L,Landed,VN-A897,A359,passenger,N/A,301,False,False,N/A,0,0,False
 2026-01-22,2026-01-22 13:18,04:47,Busan,PUS,Vietnam Airlines,VN429,2,11L,Landed,VN-A505,A21N,passenger,N/A,287,False,False,N/A,0,0,False
 2026-01-22,2026-01-22 13:16,05:31,Osaka,KIX,VietJet Air,VJ939,2,11L,Landed,VN-A554,A21N,passenger,N/A,331,False,False,N/A,0,0,False
@@ -11408,7 +11401,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-23,2026-01-23 11:05,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN244,1,11L,Landed,VN-A865,B789,passenger,N/A,101,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 11:03,02:52,N/A,N/A,China Airlines,CI791,N/A,11L,Landed,B-18109,A21N,passenger,N/A,172,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 11:00,00:59,Da Nang,DAD,Vietnam Airlines,VN164,1,11L,Landed,VN-A606,A321,passenger,N/A,59,False,False,N/A,0,0,False
-2026-01-23,2026-01-23 10:57,N/A,N/A,N/A,Korean Air,N/A,N/A,11L,Landed,N/A,A21N,unknown,N/A,,False,False,N/A,0,0,False
+2026-01-23,2026-01-23 10:57,N/A,N/A,N/A,Korean Air,N/A,N/A,11L,Landed,N/A,A21N,general aviation,N/A,,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 10:52,01:43,Phu Quoc,PQC,VietJet Air,VJ442,1,11L,Landed,VN-A677,A321,passenger,N/A,103,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 10:46,01:45,Ho Chi Minh City,SGN,VietJet Air,VJ136,1,11L,Landed,VN-A676,A320,passenger,N/A,105,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 10:43,N/A,Busan,PUS,VietJet Air,VJ981,2,11L,Landed,VN-A698,A321,passenger,N/A,,False,False,N/A,0,0,False
@@ -11427,10 +11420,10 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-23,2026-01-23 09:34,N/A,N/A,N/A,Thai Airways,TG560,N/A,11L,Landed,HS-TXE,A320,passenger,N/A,,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 09:31,01:05,Da Nang,DAD,VietJet Air,VJ504,1,11L,Landed,VN-A651,A321,passenger,N/A,65,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 09:28,01:45,N/A,N/A,Bamboo Airways,QH204,N/A,11L,Landed,PK-BBK,B739,passenger,N/A,105,False,False,N/A,0,0,False
-2026-01-23,2026-01-23 09:25,N/A,N/A,N/A,Sun PhuQuoc Airways,N/A,N/A,11L,Landed,N/A,A21N,unknown,N/A,,False,False,N/A,0,0,False
+2026-01-23,2026-01-23 09:25,N/A,N/A,N/A,Sun PhuQuoc Airways,N/A,N/A,11L,Landed,N/A,A21N,general aviation,N/A,,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 09:16,01:42,Ho Chi Minh City,SGN,Vietravel Airlines,N/A,1,11L,Landed,VN-A129,A321,passenger,N/A,102,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 09:02,N/A,Ho Chi Minh City,SGN,Vietnam Airlines,VN240,1,11L,Landed,VN-A862,B789,passenger,N/A,,False,False,N/A,0,0,False
-2026-01-23,2026-01-23 08:56,N/A,N/A,N/A,VietJet Air,N/A,N/A,11L,Landed,N/A,A21N,unknown,N/A,,False,False,N/A,0,0,False
+2026-01-23,2026-01-23 08:56,N/A,N/A,N/A,VietJet Air,N/A,N/A,11L,Landed,N/A,A21N,general aviation,N/A,,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 08:53,04:23,Seoul,ICN,VietJet Air,VJ963,2,11L,Landed,VN-A553,A21N,passenger,N/A,263,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 08:50,00:56,Hue,HUI,Vietnam Airlines,VN1540,1,11L,Landed,VN-A608,A321,passenger,N/A,56,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 08:42,01:27,N/A,N/A,K-Mile Air,8K525,N/A,11L,Landed,HS-KME,B738,cargo,N/A,87,False,False,N/A,0,0,False
@@ -11438,11 +11431,10 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-23,2026-01-23 08:33,02:56,Singapore,SIN,Scoot,TR300,2,11L,Landed,9V-OFJ,B788,passenger,N/A,176,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 08:30,N/A,Hong Kong,HKG,HK express,UO540,2,11L,Landed,B-LEL,A321,passenger,N/A,,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 08:27,N/A,Ho Chi Minh City,SGN,Vietnam Airlines,VN238,1,11L,Landed,VN-A358,A321,passenger,N/A,,False,False,N/A,0,0,False
-2026-01-23,2026-01-23 08:18,N/A,N/A,N/A,VietJet Air,N/A,N/A,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,0,0,False
-2026-01-23,2026-01-23 08:03,N/A,N/A,N/A,Shenzhen Airlines,N/A,N/A,11L,Landed,N/A,A320,unknown,N/A,,False,False,N/A,0,0,False
-2026-01-23,2026-01-23 07:44,N/A,N/A,N/A,N/A,N/A,N/A,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
+2026-01-23,2026-01-23 08:18,N/A,N/A,N/A,VietJet Air,N/A,N/A,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,0,0,False
+2026-01-23,2026-01-23 08:03,N/A,N/A,N/A,Shenzhen Airlines,N/A,N/A,11L,Landed,N/A,A320,general aviation,N/A,,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 07:40,01:03,N/A,N/A,Vietnam Airlines,VN156,N/A,11L,Landed,VN-A331,A321,passenger,N/A,63,False,False,N/A,0,0,False
-2026-01-23,2026-01-23 07:37,02:58,Manila,MNL,N/A,5J744,2,11L,Landed,N/A,N/A,unknown,N/A,178,False,False,N/A,0,0,False
+2026-01-23,2026-01-23 07:37,02:58,Manila,MNL,N/A,5J744,2,11L,Landed,N/A,N/A,general aviation,N/A,178,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 07:33,09:38,Munich,MUC,Vietnam Airlines,VN34,2,11L,Landed,VN-A863,B789,passenger,N/A,578,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 07:28,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ124,1,11L,Landed,VN-A544,A321,passenger,N/A,102,False,False,N/A,0,0,False
 2026-01-23,2026-01-23 05:55,08:52,Melbourne,MEL,Vietnam Airlines,VN778,2,11L,Landed,VN-A888,A359,passenger,N/A,532,False,False,N/A,0,0,False
@@ -12461,7 +12453,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-27,2026-01-27 14:52,01:52,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1202,1,11L,Landed,VN-A284,A21N,passenger,N/A,112,False,False,N/A,1,4,True
 2026-01-27,2026-01-27 14:50,02:42,Kaohsiung,KHH,Vietnam Airlines,VN583,2,11L,Landed,VN-A623,A21N,passenger,N/A,162,False,False,N/A,1,4,True
 2026-01-27,2026-01-27 14:46,01:44,Ho Chi Minh City,SGN,Vietnam Airlines,VN212,1,11L,Landed,VN-A867,B789,passenger,N/A,104,False,False,N/A,2,4,True
-2026-01-27,2026-01-27 14:43,01:04,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,64,False,False,N/A,1,3,True
+2026-01-27,2026-01-27 14:43,01:04,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,64,False,False,N/A,1,3,True
 2026-01-27,2026-01-27 14:41,01:50,Guangzhou,CAN,China Southern Airlines,CZ8315,2,11L,Landed,B-324P,A21N,passenger,N/A,110,False,False,N/A,1,3,True
 2026-01-27,2026-01-27 14:36,01:55,Can Tho,VCA,Vietnam Airlines,VN1200,1,11L,Landed,VN-A324,A321,passenger,N/A,115,False,False,N/A,1,3,True
 2026-01-27,2026-01-27 14:33,01:46,Ho Chi Minh City,SGN,VietJet Air,VJ144,1,11L,Landed,VN-A649,A321,passenger,N/A,106,False,False,N/A,1,3,True
@@ -13091,7 +13083,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-29,2026-01-29 08:01,01:38,Ho Chi Minh City,SGN,VietJet Air,VJ124,1,11L,Landed,VN-A820,A333,passenger,N/A,98,False,False,N/A,0,0,False
 2026-01-29,2026-01-29 07:56,02:41,Kuala Lumpur,KUL,AirAsia,AK516,2,11L,Landed,9M-AQS,A320,passenger,N/A,161,False,False,N/A,0,0,False
 2026-01-29,2026-01-29 07:37,00:58,Da Nang,DAD,Vietnam Airlines,VN156,1,11L,Landed,VN-A390,A321,passenger,N/A,58,False,False,N/A,0,0,False
-2026-01-29,2026-01-29 07:34,03:01,Manila,MNL,N/A,5J744,2,11L,Landed,N/A,N/A,unknown,N/A,181,False,False,N/A,0,0,False
+2026-01-29,2026-01-29 07:34,03:01,Manila,MNL,N/A,5J744,2,11L,Landed,N/A,N/A,general aviation,N/A,181,False,False,N/A,0,0,False
 2026-01-29,2026-01-29 07:31,02:51,Manila,MNL,Vietnam Airlines,VN646,2,11L,Landed,VN-A611,A321,passenger,N/A,171,False,False,N/A,0,0,False
 2026-01-29,2026-01-29 07:20,00:57,Da Nang,DAD,VietJet Air,VJ524,1,11L,Landed,VN-A662,A320,passenger,N/A,57,False,False,N/A,0,0,False
 2026-01-29,2026-01-29 07:04,01:36,Ho Chi Minh City,SGN,VietJet Air,VJ122,1,11L,Landed,VN-A523,A21N,passenger,N/A,96,False,False,N/A,0,0,False
@@ -13269,7 +13261,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-30,2026-01-30 15:20,06:13,Blagoveshchensk,BQS,VietJet Air,VJ7615,2,11L,Landed,VN-A539,A21N,passenger,N/A,373,False,False,N/A,0,0,False
 2026-01-30,2026-01-30 15:16,02:02,Ho Chi Minh City,SGN,VietJet Air,VJ144,1,29R,Landed,VN-A657,A321,passenger,N/A,122,False,False,N/A,0,0,False
 2026-01-30,2026-01-30 15:13,02:07,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1208,1,11L,Landed,VN-A281,A21N,passenger,N/A,127,False,False,N/A,0,0,False
-2026-01-30,2026-01-30 15:08,01:03,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,63,False,False,N/A,0,0,False
+2026-01-30,2026-01-30 15:08,01:03,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,63,False,False,N/A,0,0,False
 2026-01-30,2026-01-30 15:04,02:52,Taipei,TPE,China Airlines,CI6885,0,11L,Landed,B-18721,B744,cargo,N/A,172,False,False,N/A,0,0,False
 2026-01-30,2026-01-30 15:00,02:51,Fuzhou,FOC,Xiamen Air,MF8697,2,11L,Landed,B-5529,B738,passenger,N/A,171,False,False,N/A,0,0,False
 2026-01-30,2026-01-30 14:57,02:36,Xiamen,XMN,Xiamen Air,MF869,2,11L,Landed,B-5435,B738,passenger,N/A,156,False,False,N/A,0,0,False
@@ -13534,7 +13526,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-01-31,2026-01-31 16:24,01:05,Vientiane,VTE,Lao Airlines,QV311,2,11L,Landed,RDPL-34199,A320,passenger,N/A,65,False,False,N/A,1,1,True
 2026-01-31,2026-01-31 16:22,01:49,Da Lat,DLI,Vietnam Airlines,VN1574,1,11L,Landed,VN-A514,A20N,passenger,N/A,109,False,False,N/A,1,1,True
 2026-01-31,2026-01-31 16:18,01:12,Da Nang,DAD,Vietnam Airlines,VN7164,1,11L,Landed,VN-A512,A21N,passenger,N/A,72,False,False,N/A,1,1,True
-2026-01-31,2026-01-31 16:11,01:02,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,62,False,False,N/A,1,1,True
+2026-01-31,2026-01-31 16:11,01:02,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,62,False,False,N/A,1,1,True
 2026-01-31,2026-01-31 16:07,04:57,Hiroshima,HIJ,VietJet Air,VJ953,2,11L,Landed,VN-A656,A320,passenger,N/A,297,False,False,N/A,1,1,True
 2026-01-31,2026-01-31 16:04,02:08,Con Dao,VCS,VietJet Air,VJ108,1,11L,Landed,B-656E,AJ27,passenger,N/A,128,False,False,N/A,1,1,True
 2026-01-31,2026-01-31 16:01,01:38,Tuy Hoa,TBB,Vietnam Airlines,VN1650,1,11L,Landed,VN-A353,A321,passenger,N/A,98,False,False,N/A,1,1,True
@@ -14365,12 +14357,12 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-03,2026-02-03 16:58,01:03,Da Nang,DAD,VietJet Air,VJ514,1,11L,Landed,VN-A637,A321,passenger,N/A,63,False,False,N/A,0,1,False
 2026-02-03,2026-02-03 16:56,04:58,Hiroshima,HIJ,VietJet Air,VJ953,2,11L,Landed,VN-A662,A320,passenger,N/A,298,False,False,N/A,0,1,False
 2026-02-03,2026-02-03 16:51,02:45,Taipei,TPE,EVA Air,BR385,2,11L,Landed,B-16227,A321,passenger,N/A,165,False,False,N/A,0,1,False
-2026-02-03,2026-02-03 16:48,N/A,Busan,PUS,VietJet Air,VJ957,2,11L,Landed,N/A,A320,unknown,N/A,,False,False,N/A,0,1,False
-2026-02-03,2026-02-03 16:44,N/A,Luang Prabang,LPQ,AirAsia,FD1038,2,11L,Landed,N/A,A320,unknown,N/A,,False,False,N/A,0,1,False
-2026-02-03,2026-02-03 16:41,N/A,Dien Bien Phu,DIN,Vietnam Airlines,VN1805,1,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,0,1,False
-2026-02-03,2026-02-03 16:38,N/A,Vientiane,VTE,Lao Airlines,QV311,2,11L,Landed,N/A,A320,unknown,N/A,,False,False,N/A,0,1,False
-2026-02-03,2026-02-03 16:34,N/A,Ho Chi Minh City,SGN,Vietnam Airlines,VN214,1,11L,Landed,N/A,B789,unknown,N/A,,False,False,N/A,0,1,False
-2026-02-03,2026-02-03 16:32,N/A,Ho Chi Minh City,SGN,VietJet Air,VJ130,1,11L,Landed,N/A,A333,unknown,N/A,,False,False,N/A,0,1,False
+2026-02-03,2026-02-03 16:48,N/A,Busan,PUS,VietJet Air,VJ957,2,11L,Landed,N/A,A320,general aviation,N/A,,False,False,N/A,0,1,False
+2026-02-03,2026-02-03 16:44,N/A,Luang Prabang,LPQ,AirAsia,FD1038,2,11L,Landed,N/A,A320,general aviation,N/A,,False,False,N/A,0,1,False
+2026-02-03,2026-02-03 16:41,N/A,Dien Bien Phu,DIN,Vietnam Airlines,VN1805,1,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,0,1,False
+2026-02-03,2026-02-03 16:38,N/A,Vientiane,VTE,Lao Airlines,QV311,2,11L,Landed,N/A,A320,general aviation,N/A,,False,False,N/A,0,1,False
+2026-02-03,2026-02-03 16:34,N/A,Ho Chi Minh City,SGN,Vietnam Airlines,VN214,1,11L,Landed,N/A,B789,general aviation,N/A,,False,False,N/A,0,1,False
+2026-02-03,2026-02-03 16:32,N/A,Ho Chi Minh City,SGN,VietJet Air,VJ130,1,11L,Landed,N/A,A333,general aviation,N/A,,False,False,N/A,0,1,False
 2026-02-03,2026-02-03 16:29,02:52,Taipei,TPE,China Airlines,CI793,2,11L,Landed,B-18105,A21N,passenger,N/A,172,False,False,N/A,0,1,False
 2026-02-03,2026-02-03 16:26,02:11,Kolkata,CCU,IndiGo,6E1631,2,11L,Landed,VT-ISV,A20N,passenger,N/A,131,False,False,N/A,0,1,False
 2026-02-03,2026-02-03 16:22,00:56,Da Nang,DAD,Vietnam Airlines,VN172,1,11L,Landed,VN-A623,A21N,passenger,N/A,56,False,False,N/A,0,1,False
@@ -14405,12 +14397,12 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-03,2026-02-03 14:22,01:35,Ho Chi Minh City,SGN,VietJet Air,VJ144,1,11L,Landed,VN-A810,A333,passenger,N/A,95,False,False,N/A,1,1,True
 2026-02-03,2026-02-03 14:18,01:00,Da Nang,DAD,Vietnam Airlines,VN168,1,11L,Landed,VN-A616,A21N,passenger,N/A,60,False,False,N/A,1,1,True
 2026-02-03,2026-02-03 14:16,04:41,Seoul,ICN,VietJet Air,VJ961,2,11L,Landed,VN-A687,A321,passenger,N/A,281,False,False,N/A,1,2,True
-2026-02-03,2026-02-03 14:09,N/A,Ho Chi Minh City,SGN,Vietnam Airlines,VN212,1,11L,Landed,N/A,A359,unknown,N/A,,False,False,N/A,1,2,True
-2026-02-03,2026-02-03 14:06,N/A,Kuala Lumpur,KUL,AirAsia,AK512,2,11L,Landed,N/A,A320,unknown,N/A,,False,False,N/A,0,1,False
-2026-02-03,2026-02-03 14:03,N/A,Tokyo,NRT,VietJet Air,VJ933,2,11L,Landed,N/A,A333,unknown,N/A,,False,False,N/A,0,1,False
-2026-02-03,2026-02-03 14:00,N/A,Shanghai,PVG,China Eastern Airlines,MU6011,2,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,0,1,False
-2026-02-03,2026-02-03 13:54,N/A,Da Nang,DAD,VietJet Air,VJ508,1,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,0,1,False
-2026-02-03,2026-02-03 13:50,N/A,Ho Chi Minh City,SGN,Vietnam Airlines,VN7258,1,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,0,1,False
+2026-02-03,2026-02-03 14:09,N/A,Ho Chi Minh City,SGN,Vietnam Airlines,VN212,1,11L,Landed,N/A,A359,general aviation,N/A,,False,False,N/A,1,2,True
+2026-02-03,2026-02-03 14:06,N/A,Kuala Lumpur,KUL,AirAsia,AK512,2,11L,Landed,N/A,A320,general aviation,N/A,,False,False,N/A,0,1,False
+2026-02-03,2026-02-03 14:03,N/A,Tokyo,NRT,VietJet Air,VJ933,2,11L,Landed,N/A,A333,general aviation,N/A,,False,False,N/A,0,1,False
+2026-02-03,2026-02-03 14:00,N/A,Shanghai,PVG,China Eastern Airlines,MU6011,2,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,0,1,False
+2026-02-03,2026-02-03 13:54,N/A,Da Nang,DAD,VietJet Air,VJ508,1,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,0,1,False
+2026-02-03,2026-02-03 13:50,N/A,Ho Chi Minh City,SGN,Vietnam Airlines,VN7258,1,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,0,1,False
 2026-02-03,2026-02-03 13:39,01:41,Shenzhen,SZX,Shenzhen Airlines,ZH103,2,11L,Landed,B-6855,A320,passenger,N/A,101,False,False,N/A,0,1,False
 2026-02-03,2026-02-03 13:36,02:38,Kaohsiung,KHH,Vietnam Airlines,VN583,2,11L,Landed,VN-A601,A321,passenger,N/A,158,False,False,N/A,0,1,False
 2026-02-03,2026-02-03 13:33,01:01,Da Nang,DAD,Vietnam Airlines,VN166,1,11L,Landed,VN-A608,A321,passenger,N/A,61,False,False,N/A,0,1,False
@@ -14445,12 +14437,12 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-03,2026-02-03 11:39,01:33,Bangkok,DMK,AirAsia,FD640,2,11L,Landed,HS-CBR,A320,passenger,N/A,93,False,False,N/A,1,2,True
 2026-02-03,2026-02-03 11:36,01:47,Ho Chi Minh City,SGN,VietJet Air,VJ186,1,11L,Landed,VN-A811,A333,passenger,N/A,107,False,False,N/A,1,2,True
 2026-02-03,2026-02-03 11:30,02:46,Taipei,TPE,EVA Air,BR397,2,11L,Landed,B-16726,B77W,passenger,N/A,166,False,False,N/A,1,2,True
-2026-02-03,2026-02-03 11:24,N/A,Singapore,SIN,Singapore Airlines,SQ192,2,11L,Landed,N/A,A359,unknown,N/A,,False,False,N/A,1,2,True
-2026-02-03,2026-02-03 11:21,N/A,Shanghai,PVG,Air China,CA703,2,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,1,2,True
-2026-02-03,2026-02-03 11:18,N/A,Da Lat,DLI,Vietnam Airlines,VN1572,1,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,1,2,True
-2026-02-03,2026-02-03 11:12,N/A,Buon Ma Thuot,BMV,Vietnam Airlines,VN1602,1,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,0,1,False
-2026-02-03,2026-02-03 11:10,N/A,Pleiku,PXU,Vietnam Airlines,VN1614,1,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,0,1,False
-2026-02-03,2026-02-03 11:04,N/A,Ho Chi Minh City,SGN,Vietnam Airlines,VN244,1,11L,Landed,N/A,B789,unknown,N/A,,False,False,N/A,0,1,False
+2026-02-03,2026-02-03 11:24,N/A,Singapore,SIN,Singapore Airlines,SQ192,2,11L,Landed,N/A,A359,general aviation,N/A,,False,False,N/A,1,2,True
+2026-02-03,2026-02-03 11:21,N/A,Shanghai,PVG,Air China,CA703,2,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,1,2,True
+2026-02-03,2026-02-03 11:18,N/A,Da Lat,DLI,Vietnam Airlines,VN1572,1,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,1,2,True
+2026-02-03,2026-02-03 11:12,N/A,Buon Ma Thuot,BMV,Vietnam Airlines,VN1602,1,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,0,1,False
+2026-02-03,2026-02-03 11:10,N/A,Pleiku,PXU,Vietnam Airlines,VN1614,1,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,0,1,False
+2026-02-03,2026-02-03 11:04,N/A,Ho Chi Minh City,SGN,Vietnam Airlines,VN244,1,11L,Landed,N/A,B789,general aviation,N/A,,False,False,N/A,0,1,False
 2026-02-03,2026-02-03 11:01,04:44,Seoul,ICN,Korean Air,KE441,2,11L,Landed,HL8589,A21N,passenger,N/A,284,False,False,N/A,0,1,False
 2026-02-03,2026-02-03 10:58,03:01,Taipei,TPE,China Airlines,CI791,2,11L,Landed,B-18120,A21N,passenger,N/A,181,False,False,N/A,0,1,False
 2026-02-03,2026-02-03 10:56,01:08,Chu Lai,VCL,Vietnam Airlines,VN1640,1,11L,Landed,VN-A515,A20N,passenger,N/A,68,False,False,N/A,0,1,False
@@ -14487,10 +14479,10 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-03,2026-02-03 08:04,05:55,Doha,DOH,Qatar Airways,QR8954,0,11L,Landed,A7-BFT,B77L,cargo,N/A,355,False,False,N/A,0,2,False
 2026-02-03,2026-02-03 07:55,01:35,Ho Chi Minh City,SGN,Vietnam Airlines,VN206,1,11L,Landed,VN-A898,A359,passenger,N/A,95,False,False,N/A,0,2,False
 2026-02-03,2026-02-03 07:47,03:44,Mumbai,BOM,Turkish Airlines,TK6388,0,11L,Landed,TC-LJU,B77L,cargo,N/A,224,False,False,N/A,0,2,False
-2026-02-03,2026-02-03 07:44,N/A,Ho Chi Minh City,SGN,Bamboo Airways,QH202,1,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,1,2,True
-2026-02-03,2026-02-03 07:40,N/A,Ho Chi Minh City,SGN,VietJet Air,VJ124,1,11L,Landed,N/A,A333,unknown,N/A,,False,False,N/A,1,2,True
-2026-02-03,2026-02-03 07:38,N/A,Da Nang,DAD,Vietnam Airlines,VN156,1,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,1,2,True
-2026-02-03,2026-02-03 07:31,N/A,Da Nang,DAD,VietJet Air,VJ524,1,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,1,2,True
+2026-02-03,2026-02-03 07:44,N/A,Ho Chi Minh City,SGN,Bamboo Airways,QH202,1,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,1,2,True
+2026-02-03,2026-02-03 07:40,N/A,Ho Chi Minh City,SGN,VietJet Air,VJ124,1,11L,Landed,N/A,A333,general aviation,N/A,,False,False,N/A,1,2,True
+2026-02-03,2026-02-03 07:38,N/A,Da Nang,DAD,Vietnam Airlines,VN156,1,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,1,2,True
+2026-02-03,2026-02-03 07:31,N/A,Da Nang,DAD,VietJet Air,VJ524,1,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,1,2,True
 2026-02-03,2026-02-03 07:27,02:54,Manila,MNL,Cebu Pacific,5J744,2,11L,Landed,RP-C4123,A21N,passenger,N/A,174,False,False,N/A,1,2,True
 2026-02-03,2026-02-03 07:15,02:46,Manila,MNL,Vietnam Airlines,VN646,2,11L,Landed,VN-A332,A321,passenger,N/A,166,False,False,N/A,1,2,True
 2026-02-03,2026-02-03 07:01,03:50,Mumbai,BOM,VietJet Air,VJ910,2,11L,Landed,VN-A548,A21N,passenger,N/A,230,False,False,N/A,2,2,True
@@ -14528,9 +14520,9 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-03,2026-02-03 00:30,01:39,Ho Chi Minh City,SGN,VietJet Air,VJ174,1,11L,Landed,VN-A647,A321,passenger,N/A,99,False,False,N/A,0,0,False
 2026-02-03,2026-02-03 00:20,01:45,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G886,1,11L,Landed,VN-A284,A21N,passenger,N/A,105,False,False,N/A,0,0,False
 2026-02-03,2026-02-03 00:17,05:52,Tokyo,NRT,All Nippon Airways,NH8447,0,11L,Landed,JA604F,B763,cargo,N/A,352,False,False,N/A,0,0,False
-2026-02-03,2026-02-03 00:13,N/A,Seoul,ICN,Jeju Air,7C2201,2,11L,Landed,N/A,B38M,unknown,N/A,,False,False,N/A,0,0,False
-2026-02-03,2026-02-03 00:10,N/A,Shanghai,PVG,Juneyao Air,HO1329,2,11L,Landed,N/A,A320,unknown,N/A,,False,False,N/A,0,0,False
-2026-02-03,2026-02-03 00:03,N/A,Ho Chi Minh City,SGN,Bamboo Airways,QH262,1,11L,Landed,N/A,A320,unknown,N/A,,False,False,N/A,0,0,False
+2026-02-03,2026-02-03 00:13,N/A,Seoul,ICN,Jeju Air,7C2201,2,11L,Landed,N/A,B38M,general aviation,N/A,,False,False,N/A,0,0,False
+2026-02-03,2026-02-03 00:10,N/A,Shanghai,PVG,Juneyao Air,HO1329,2,11L,Landed,N/A,A320,general aviation,N/A,,False,False,N/A,0,0,False
+2026-02-03,2026-02-03 00:03,N/A,Ho Chi Minh City,SGN,Bamboo Airways,QH262,1,11L,Landed,N/A,A320,general aviation,N/A,,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 23:49,02:48,Taipei,TPE,Emirates,EK9869,0,11L,Landed,A6-EFY,B77L,cargo,N/A,168,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 23:46,01:44,Ho Chi Minh City,SGN,VietJet Air,VJ158,1,11L,Landed,VN-A676,A320,passenger,N/A,104,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 23:43,01:43,Ho Chi Minh City,SGN,Vietravel Airlines,VU794,1,11L,Landed,VN-A129,A321,passenger,N/A,103,False,False,N/A,0,0,False
@@ -14592,9 +14584,9 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-05,2026-02-05 19:30,01:14,Qui Nhon,UIH,VietJet Air,VJ432,1,11L,Landed,VN-A655,A320,passenger,N/A,74,False,False,N/A,0,3,False
 2026-02-05,2026-02-05 19:24,08:14,Istanbul,IST,Turkish Airlines,TK164,2,29R,Landed,TC-LGH,A359,passenger,N/A,494,False,False,N/A,1,3,True
 2026-02-05,2026-02-05 19:21,01:25,Bangkok,BKK,Thai Airways,TG564,2,11L,Landed,HS-TXO,A320,passenger,N/A,85,False,False,N/A,1,3,True
-2026-02-05,2026-02-05 19:18,N/A,Ho Chi Minh City,SGN,Vietravel Airlines,VU780,1,29R,Landed,N/A,A321,unknown,N/A,,False,False,N/A,1,3,True
-2026-02-05,2026-02-05 19:15,N/A,Changsha,CSX,China Southern Airlines,CZ8359,2,11L,Landed,N/A,A20N,unknown,N/A,,False,False,N/A,1,3,True
-2026-02-05,2026-02-05 19:12,N/A,Ho Chi Minh City,SGN,VietJet Air,VJ152,1,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,1,3,True
+2026-02-05,2026-02-05 19:18,N/A,Ho Chi Minh City,SGN,Vietravel Airlines,VU780,1,29R,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,1,3,True
+2026-02-05,2026-02-05 19:15,N/A,Changsha,CSX,China Southern Airlines,CZ8359,2,11L,Landed,N/A,A20N,general aviation,N/A,,False,False,N/A,1,3,True
+2026-02-05,2026-02-05 19:12,N/A,Ho Chi Minh City,SGN,VietJet Air,VJ152,1,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,1,3,True
 2026-02-05,2026-02-05 19:04,01:48,Hong Kong,HKG,Hong Kong Airlines,HX528,2,11L,Landed,B-LPQ,A320,passenger,N/A,108,False,False,N/A,1,3,True
 2026-02-05,2026-02-05 19:00,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN252,1,11L,Landed,VN-A862,B789,passenger,N/A,102,False,False,N/A,1,3,True
 2026-02-05,2026-02-05 18:54,05:11,Osaka,KIX,VietJet Air,VJ931,2,11L,Landed,VN-A548,A21N,passenger,N/A,311,False,False,N/A,2,3,True
@@ -14631,10 +14623,10 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-05,2026-02-05 16:45,04:53,Hiroshima,HIJ,VietJet Air,VJ953,2,11L,Landed,VN-A672,A320,passenger,N/A,293,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 16:41,01:07,Da Nang,DAD,Vietnam Airlines,VN172,1,11L,Landed,VN-A609,A321,passenger,N/A,67,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 16:39,00:39,Dien Bien Phu,DIN,Vietnam Airlines,VN1805,1,11L,Landed,VN-A604,A321,passenger,N/A,39,False,False,N/A,0,0,False
-2026-02-05,2026-02-05 16:34,N/A,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1208,1,11L,Landed,N/A,A21N,unknown,N/A,,False,False,N/A,0,0,False
-2026-02-05,2026-02-05 16:30,N/A,Can Tho,VCA,Vietnam Airlines,VN1202,1,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,0,0,False
-2026-02-05,2026-02-05 16:21,N/A,Kolkata,CCU,IndiGo,6E1631,2,11L,Landed,N/A,A20N,unknown,N/A,,False,False,N/A,0,0,False
-2026-02-05,2026-02-05 16:19,N/A,Taipei,TPE,China Airlines,CI793,2,11L,Landed,N/A,A21N,unknown,N/A,,False,False,N/A,0,0,False
+2026-02-05,2026-02-05 16:34,N/A,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1208,1,11L,Landed,N/A,A21N,general aviation,N/A,,False,False,N/A,0,0,False
+2026-02-05,2026-02-05 16:30,N/A,Can Tho,VCA,Vietnam Airlines,VN1202,1,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,0,0,False
+2026-02-05,2026-02-05 16:21,N/A,Kolkata,CCU,IndiGo,6E1631,2,11L,Landed,N/A,A20N,general aviation,N/A,,False,False,N/A,0,0,False
+2026-02-05,2026-02-05 16:19,N/A,Taipei,TPE,China Airlines,CI793,2,11L,Landed,N/A,A21N,general aviation,N/A,,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 16:07,01:50,Ho Chi Minh City,SGN,Vietravel Airlines,VU770,1,11L,Landed,VN-A136,A320,passenger,N/A,110,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 16:04,00:45,Vientiane,VTE,Lao Airlines,QV311,2,11L,Landed,RDPL-34188,A320,passenger,N/A,45,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 16:00,02:02,Con Dao,VCS,VietJet Air,VJ108,1,11L,Landed,B-656E,AJ27,passenger,N/A,122,False,False,N/A,0,0,False
@@ -14671,7 +14663,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-05,2026-02-05 14:07,01:58,Con Dao,VCS,VietJet Air,VJ106,1,11L,Landed,B-652G,AJ27,passenger,N/A,118,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 14:00,06:12,Tokyo,NRT,Vietnam Airlines,VN311,2,11L,Landed,VN-A872,B78X,passenger,N/A,372,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 13:55,05:39,Nagoya,NGO,VietJet Air,VJ921,2,11L,Landed,VN-A516,A21N,passenger,N/A,339,False,False,N/A,0,0,False
-2026-02-05,2026-02-05 13:51,01:03,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,63,False,False,N/A,0,0,False
+2026-02-05,2026-02-05 13:51,01:03,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,63,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 13:48,02:40,Kaohsiung,KHH,Vietnam Airlines,VN583,2,11L,Landed,VN-A392,A321,passenger,N/A,160,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 13:45,04:31,Seoul,ICN,Air Zeta,KJ933,0,11L,Landed,HL7420,B744,cargo,N/A,271,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 13:40,04:42,Seoul,ICN,Vietnam Airlines,VN417,2,11L,Landed,VN-A873,B78X,passenger,N/A,282,False,False,N/A,0,0,False
@@ -14710,11 +14702,11 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-05,2026-02-05 11:05,01:02,Da Nang,DAD,Bamboo Airways,QH104,1,11L,Landed,VN-A596,A20N,passenger,N/A,62,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 11:01,04:39,Seoul,ICN,Korean Air,KE441,2,11L,Landed,HL8589,A21N,passenger,N/A,279,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 10:53,01:07,Chu Lai,VCL,Vietnam Airlines,VN1640,1,11L,Landed,VN-A613,A321,passenger,N/A,67,False,False,N/A,0,0,False
-2026-02-05,2026-02-05 10:50,N/A,Qui Nhon,UIH,VietJet Air,VJ430,1,11L,Landed,N/A,A321,unknown,N/A,,False,False,N/A,0,0,False
-2026-02-05,2026-02-05 10:42,N/A,Phu Quoc,PQC,VietJet Air,VJ442,1,11L,Landed,N/A,A21N,unknown,N/A,,False,False,N/A,0,0,False
-2026-02-05,2026-02-05 10:36,N/A,Taipei,TPE,China Airlines,CI791,2,11L,Landed,N/A,A333,unknown,N/A,,False,False,N/A,0,0,False
-2026-02-05,2026-02-05 10:33,N/A,Ho Chi Minh City,SGN,VietJet Air,VJ136,1,11L,Landed,N/A,A21N,unknown,N/A,,False,False,N/A,0,0,False
-2026-02-05,2026-02-05 10:19,N/A,Guangzhou,CAN,China Southern Airlines,CZ3049,2,11L,Landed,N/A,A320,unknown,N/A,,False,False,N/A,0,0,False
+2026-02-05,2026-02-05 10:50,N/A,Qui Nhon,UIH,VietJet Air,VJ430,1,11L,Landed,N/A,A321,general aviation,N/A,,False,False,N/A,0,0,False
+2026-02-05,2026-02-05 10:42,N/A,Phu Quoc,PQC,VietJet Air,VJ442,1,11L,Landed,N/A,A21N,general aviation,N/A,,False,False,N/A,0,0,False
+2026-02-05,2026-02-05 10:36,N/A,Taipei,TPE,China Airlines,CI791,2,11L,Landed,N/A,A333,general aviation,N/A,,False,False,N/A,0,0,False
+2026-02-05,2026-02-05 10:33,N/A,Ho Chi Minh City,SGN,VietJet Air,VJ136,1,11L,Landed,N/A,A21N,general aviation,N/A,,False,False,N/A,0,0,False
+2026-02-05,2026-02-05 10:19,N/A,Guangzhou,CAN,China Southern Airlines,CZ3049,2,11L,Landed,N/A,A320,general aviation,N/A,,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 10:15,01:43,Hong Kong,HKG,Cathay Pacific,CX741,2,11L,Landed,B-HNU,B773,passenger,N/A,103,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 10:04,02:25,Kaohsiung,KHH,Vietnam Airlines,VN587,2,11L,Landed,VN-A612,A321,passenger,N/A,145,False,False,N/A,0,0,False
 2026-02-05,2026-02-05 09:59,01:35,Ho Chi Minh City,SGN,Vietnam Airlines,VN208,1,11L,Landed,VN-A879,B78X,passenger,N/A,95,False,False,N/A,0,0,False
@@ -14858,7 +14850,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-06,2026-02-06 18:50,01:40,Nha Trang,CXR,Vietnam Airlines,VN1558,1,11L,Landed,VN-A507,A21N,passenger,N/A,100,False,False,N/A,1,1,True
 2026-02-06,2026-02-06 18:44,01:51,Bangkok,BKK,Vietnam Airlines,VN614,2,11L,Landed,VN-A338,A321,passenger,N/A,111,False,False,N/A,1,1,True
 2026-02-06,2026-02-06 18:35,01:19,Da Nang,DAD,Vietnam Airlines,VN174,1,11L,Landed,VN-A512,A21N,passenger,N/A,79,False,False,N/A,1,1,True
-2026-02-06,2026-02-06 18:31,04:12,Jakarta,CGK,VietJet Air,VJ928,2,11L,Landed,N/A,N/A,unknown,N/A,252,False,False,N/A,1,1,True
+2026-02-06,2026-02-06 18:31,04:12,Jakarta,CGK,VietJet Air,VJ928,2,11L,Landed,N/A,N/A,general aviation,N/A,252,False,False,N/A,1,1,True
 2026-02-06,2026-02-06 18:31,02:01,Ho Chi Minh City,SGN,Hai Au Aviation,HAI499,0,11L,Landed,VN-A499,FA8X,business jet,N/A,121,False,False,N/A,1,1,True
 2026-02-06,2026-02-06 18:28,04:00,Beijing,PEK,Vietnam Airlines,VN513,2,11L,Landed,VN-A610,A321,passenger,N/A,240,False,False,N/A,0,0,False
 2026-02-06,2026-02-06 18:16,01:52,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1216,1,11L,Landed,VN-A284,A21N,passenger,N/A,112,False,False,N/A,0,0,False
@@ -15000,7 +14992,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-06,2026-02-06 07:36,01:41,Ho Chi Minh City,SGN,Bamboo Airways,QH202,1,11L,Landed,VN-A227,A321,passenger,N/A,101,False,False,N/A,1,2,True
 2026-02-06,2026-02-06 07:30,03:01,Manila,MNL,Cebu Pacific,5J744,2,11L,Landed,RP-C4133,A21N,passenger,N/A,181,False,False,N/A,1,2,True
 2026-02-06,2026-02-06 07:26,02:55,Manila,MNL,Vietnam Airlines,VN646,2,11L,Landed,VN-A396,A321,passenger,N/A,175,False,False,N/A,1,2,True
-2026-02-06,2026-02-06 07:22,00:59,Da Nang,DAD,VietJet Air,VJ524,1,11L,Landed,N/A,N/A,unknown,N/A,59,False,False,N/A,1,2,True
+2026-02-06,2026-02-06 07:22,00:59,Da Nang,DAD,VietJet Air,VJ524,1,11L,Landed,N/A,N/A,general aviation,N/A,59,False,False,N/A,1,2,True
 2026-02-06,2026-02-06 07:21,03:31,Cebu,CEB,Vietnam Airlines,VN642,2,11L,Landed,VN-A610,A321,passenger,N/A,211,False,False,N/A,1,2,True
 2026-02-06,2026-02-06 07:16,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN7016,1,11L,Landed,VN-A398,A321,passenger,N/A,100,False,False,N/A,1,2,True
 2026-02-06,2026-02-06 07:08,01:40,Ho Chi Minh City,SGN,VietJet Air,VJ122,1,11L,Landed,VN-A697,A21N,passenger,N/A,100,False,False,N/A,1,2,True
@@ -15211,7 +15203,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-07,2026-02-07 13:40,01:47,Ho Chi Minh City,SGN,Vietnam Airlines,VN7256,1,11L,Landed,VN-A612,A321,passenger,N/A,107,False,False,N/A,0,1,False
 2026-02-07,2026-02-07 13:37,01:46,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1202,1,11L,Landed,VN-A284,A21N,passenger,N/A,106,False,False,N/A,0,1,False
 2026-02-07,2026-02-07 13:31,01:52,Phu Quoc,PQC,VietJet Air,VJ440,1,11L,Landed,VN-A672,A320,passenger,N/A,112,False,False,N/A,0,1,False
-2026-02-07,2026-02-07 13:28,00:53,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,53,False,False,N/A,0,1,False
+2026-02-07,2026-02-07 13:28,00:53,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,53,False,False,N/A,0,1,False
 2026-02-07,2026-02-07 13:25,02:49,Manila,MNL,Philippine Airlines,PR593,2,11L,Landed,RP-C9926,A321,passenger,N/A,169,False,False,N/A,0,1,False
 2026-02-07,2026-02-07 13:22,02:36,Kaohsiung,KHH,Vietnam Airlines,VN583,2,11L,Landed,VN-A610,A321,passenger,N/A,156,False,False,N/A,0,1,False
 2026-02-07,2026-02-07 13:15,01:37,Ho Chi Minh City,SGN,Vietnam Airlines,VN246,1,11L,Landed,VN-A867,B789,passenger,N/A,97,False,False,N/A,0,1,False
@@ -15255,7 +15247,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-07,2026-02-07 10:21,01:27,Buon Ma Thuot,BMV,VietJet Air,VJ492,1,11L,Landed,VN-A645,A321,passenger,N/A,87,False,False,N/A,0,0,False
 2026-02-07,2026-02-07 10:18,01:50,Ho Chi Minh City,SGN,VietJet Air,VJ148,1,11L,Landed,LY-NVG,A320,passenger,N/A,110,False,False,N/A,0,0,False
 2026-02-07,2026-02-07 10:16,02:50,Taipei,TPE,Vietnam Airlines,VN579,2,11L,Landed,VN-A392,A321,passenger,N/A,170,False,False,N/A,0,0,False
-2026-02-07,2026-02-07 10:09,N/A,Da Lat,DLI,VietJet Air,VJ402,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
+2026-02-07,2026-02-07 10:09,N/A,Da Lat,DLI,VietJet Air,VJ402,1,11L,Landed,N/A,N/A,general aviation,N/A,,False,False,N/A,0,0,False
 2026-02-07,2026-02-07 09:56,01:36,Ho Chi Minh City,SGN,Vietnam Airlines,VN208,1,11L,Landed,VN-A866,B789,passenger,N/A,96,False,False,N/A,0,0,False
 2026-02-07,2026-02-07 09:49,01:15,Pleiku,PXU,VietJet Air,VJ422,1,11L,Landed,VN-A632,A321,passenger,N/A,75,False,False,N/A,0,0,False
 2026-02-07,2026-02-07 09:45,00:37,Vinh,VII,Vietnam Airlines,VN1716,1,11L,Landed,VN-A611,A321,passenger,N/A,37,False,False,N/A,0,1,False
@@ -15302,7 +15294,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-07,2026-02-07 05:08,03:18,Hyderabad,HYD,Vietnam Airlines,VN984,2,11L,Landed,VN-A610,A321,passenger,N/A,198,False,False,N/A,0,0,False
 2026-02-07,2026-02-07 05:02,04:34,Seoul,ICN,Air Zeta,KJ951,0,29R,Landed,HL7645,B744,cargo,N/A,274,False,False,N/A,0,0,False
 2026-02-07,2026-02-07 04:57,01:46,Ho Chi Minh City,SGN,Bamboo Airways,QH292,1,11L,Landed,VN-A596,A20N,passenger,N/A,106,False,False,N/A,0,0,False
-2026-02-07,2026-02-07 04:53,03:35,Beijing,PKX,VietJet Air,VJ7713,2,11L,Landed,N/A,N/A,unknown,N/A,215,False,False,N/A,0,0,False
+2026-02-07,2026-02-07 04:53,03:35,Beijing,PKX,VietJet Air,VJ7713,2,11L,Landed,N/A,N/A,general aviation,N/A,215,False,False,N/A,0,0,False
 2026-02-07,2026-02-07 04:49,10:21,London,LHR,Vietnam Airlines,VN56,2,11L,Landed,VN-A862,B789,passenger,N/A,621,False,False,N/A,0,0,False
 2026-02-07,2026-02-07 04:37,01:37,Guangzhou,CAN,VietJet Air,VJ7527,2,11L,Landed,VN-A632,A321,passenger,N/A,97,False,False,N/A,0,0,False
 2026-02-07,2026-02-07 04:09,01:45,Ho Chi Minh City,SGN,Vietravel Airlines,VU702,1,11L,Landed,VN-A129,A321,passenger,N/A,105,False,False,N/A,0,0,False
@@ -15404,7 +15396,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-08,2026-02-08 20:12,01:42,Ho Chi Minh City,SGN,Vietnam Airlines,VN254,1,11L,Landed,VN-A873,B78X,passenger,N/A,102,False,False,N/A,0,0,False
 2026-02-08,2026-02-08 20:10,01:17,Pleiku,PXU,VietJet Air,VJ424,1,11L,Landed,VN-A657,A321,passenger,N/A,77,False,False,N/A,0,0,False
 2026-02-08,2026-02-08 20:06,01:45,Hong Kong,HKG,Hong Kong Airlines,HX528,2,11L,Landed,B-LPL,A320,passenger,N/A,105,False,False,N/A,0,0,False
-2026-02-08,2026-02-08 20:03,00:57,Da Nang,DAD,VietJet Air,VJ516,1,11L,Landed,N/A,N/A,unknown,N/A,57,False,False,N/A,0,0,False
+2026-02-08,2026-02-08 20:03,00:57,Da Nang,DAD,VietJet Air,VJ516,1,11L,Landed,N/A,N/A,general aviation,N/A,57,False,False,N/A,0,0,False
 2026-02-08,2026-02-08 19:59,01:32,Yangon,RGN,Myanmar Airways International,8M450,2,11L,Landed,XY-ALP,E190,passenger,N/A,92,False,False,N/A,0,0,False
 2026-02-08,2026-02-08 19:54,02:35,Taichung,RMQ,VietJet Air,VJ949,2,11L,Landed,VN-A547,A21N,passenger,N/A,155,False,False,N/A,0,1,False
 2026-02-08,2026-02-08 19:50,01:01,Da Nang,DAD,Vietnam Airlines,VN174,1,11L,Landed,VN-A610,A321,passenger,N/A,61,False,False,N/A,0,1,False
@@ -15471,7 +15463,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-08,2026-02-08 16:08,01:41,Hong Kong,HKG,Vietnam Airlines,VN593,2,11L,Landed,VN-A611,A321,passenger,N/A,101,False,False,N/A,0,0,False
 2026-02-08,2026-02-08 16:02,06:36,Tokyo,NRT,VietJet Air,VJ933,2,11L,Landed,VN-A816,A333,passenger,N/A,396,False,False,N/A,0,0,False
 2026-02-08,2026-02-08 15:54,01:53,Ho Chi Minh City,SGN,VietJet Air,VJ188,1,11L,Landed,LY-NVE,A320,passenger,N/A,113,False,False,N/A,0,0,False
-2026-02-08,2026-02-08 15:52,02:01,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,N/A,N/A,unknown,N/A,121,False,False,N/A,0,0,False
+2026-02-08,2026-02-08 15:52,02:01,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,N/A,N/A,general aviation,N/A,121,False,False,N/A,0,0,False
 2026-02-08,2026-02-08 15:50,01:56,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G838,1,11L,Landed,VN-A279,A321,passenger,N/A,116,False,False,N/A,0,0,False
 2026-02-08,2026-02-08 15:47,01:04,Vientiane,VTE,Lao Airlines,QV311,2,11L,Landed,RDPL-34188,A320,passenger,N/A,64,False,False,N/A,0,0,False
 2026-02-08,2026-02-08 15:39,05:53,Tokyo,NRT,Vietnam Airlines,VN311,2,11L,Landed,VN-A877,B78X,passenger,N/A,353,False,False,N/A,0,0,False
@@ -15515,7 +15507,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-08,2026-02-08 13:23,09:45,Oslo,OSL,Ethiopian Airlines,ET3792,0,11L,Landed,ET-ARK,B77L,cargo,N/A,585,False,False,N/A,0,0,False
 2026-02-08,2026-02-08 13:20,01:45,Phu Quoc,PQC,VietJet Air,VJ440,1,11L,Landed,VN-A671,A320,passenger,N/A,105,False,False,N/A,0,0,False
 2026-02-08,2026-02-08 13:16,04:24,Seoul,ICN,Vietnam Airlines,VN417,2,11L,Landed,VN-A878,B78X,passenger,N/A,264,False,False,N/A,0,1,False
-2026-02-08,2026-02-08 13:13,00:35,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,35,False,False,N/A,0,1,False
+2026-02-08,2026-02-08 13:13,00:35,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,35,False,False,N/A,0,1,False
 2026-02-08,2026-02-08 13:01,01:43,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1204,1,11L,Landed,VN-A281,A21N,passenger,N/A,103,False,False,N/A,0,1,False
 2026-02-08,2026-02-08 12:53,04:13,Busan,PUS,Vietnam Airlines,VN429,2,11L,Landed,VN-A870,B789,passenger,N/A,253,False,False,N/A,0,1,False
 2026-02-08,2026-02-08 12:51,01:52,Ho Chi Minh City,SGN,Bamboo Airways,QH224,1,11L,Landed,JU-1410,A320,passenger,N/A,112,False,False,N/A,0,1,False
@@ -15745,7 +15737,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-09,2026-02-09 17:08,02:53,Singapore,SIN,VietJet Air,VJ916,2,11L,Landed,VN-A539,A21N,passenger,N/A,173,False,False,N/A,0,0,False
 2026-02-09,2026-02-09 17:06,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN7046,1,11L,Landed,VN-A879,B78X,passenger,N/A,101,False,False,N/A,0,0,False
 2026-02-09,2026-02-09 17:03,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ146,1,11L,Landed,VN-A815,A333,passenger,N/A,102,False,False,N/A,0,0,False
-2026-02-09,2026-02-09 17:00,04:25,Busan,PUS,VietJet Air,VJ957,2,11L,Landed,N/A,N/A,unknown,N/A,265,False,False,N/A,0,0,False
+2026-02-09,2026-02-09 17:00,04:25,Busan,PUS,VietJet Air,VJ957,2,11L,Landed,N/A,N/A,general aviation,N/A,265,False,False,N/A,0,0,False
 2026-02-09,2026-02-09 16:58,07:33,Amman,AMM,Turkish Airlines,TK6232,0,11L,Landed,TC-LJY,B77L,cargo,N/A,453,False,False,N/A,0,0,False
 2026-02-09,2026-02-09 16:53,02:06,Con Dao,VCS,VietJet Air,VJ108,1,11L,Landed,B-656E,AJ27,passenger,N/A,126,False,False,N/A,0,0,False
 2026-02-09,2026-02-09 16:50,02:14,Kolkata,CCU,IndiGo,6E1631,2,11L,Landed,VT-IQF,A20N,passenger,N/A,134,False,False,N/A,0,0,False
@@ -15974,7 +15966,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-10,2026-02-10 22:49,05:57,Tokyo,NRT,All Nippon Airways,NH897,2,11L,Landed,JA836A,B789,passenger,N/A,357,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 22:46,01:27,Buon Ma Thuot,BMV,VietJet Air,VJ1492,1,11L,Landed,VN-A547,A21N,passenger,N/A,87,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 22:43,01:41,Chengdu,TFU,Sichuan Airlines,3U3905,2,11L,Landed,B-6697,A320,passenger,N/A,101,False,False,N/A,0,0,False
-2026-02-10,2026-02-10 22:40,01:02,Hue,HUI,VietJet Air,VJ568,1,11L,Landed,N/A,N/A,unknown,N/A,62,False,False,N/A,0,0,False
+2026-02-10,2026-02-10 22:40,01:02,Hue,HUI,VietJet Air,VJ568,1,11L,Landed,N/A,N/A,general aviation,N/A,62,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 22:37,01:42,Ho Chi Minh City,SGN,VietJet Air,VJ180,1,11L,Landed,VN-A820,A333,passenger,N/A,102,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 22:34,01:46,Ho Chi Minh City,SGN,Bamboo Airways,QH268,1,11L,Landed,PK-BBK,B739,passenger,N/A,106,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 22:31,01:40,Ho Chi Minh City,SGN,Vietnam Airlines,VN220,1,11L,Landed,VN-A861,B789,passenger,N/A,100,False,False,N/A,0,0,False
@@ -16121,7 +16113,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-10,2026-02-10 13:40,02:01,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1204,1,11L,Landed,VN-A281,A21N,passenger,N/A,121,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 13:37,04:43,Seoul,ICN,Vietnam Airlines,VN417,2,11L,Landed,VN-A877,B78X,passenger,N/A,283,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 13:34,01:46,Phnom Penh,KTI,Air Cambodia,K6854,2,11L,Landed,XU-350,A321,passenger,N/A,106,False,False,N/A,0,0,False
-2026-02-10,2026-02-10 13:31,01:03,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,63,False,False,N/A,0,0,False
+2026-02-10,2026-02-10 13:31,01:03,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,63,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 13:28,01:15,Hue,HUI,VietJet Air,VJ566,1,11L,Landed,VN-A637,A321,passenger,N/A,75,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 13:22,05:37,Nagoya,NGO,Vietnam Airlines,VN349,2,11L,Landed,VN-A886,A359,passenger,N/A,337,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 13:19,03:06,Manila,MNL,Philippine Airlines,PR593,2,11L,Landed,RP-C9919,A321,passenger,N/A,186,False,False,N/A,0,0,False
@@ -16252,7 +16244,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-10,2026-02-10 00:58,02:41,Zhengzhou,CGO,China Southern Airlines,CZ5029,2,11L,Landed,B-1979,B738,passenger,N/A,161,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 00:55,01:34,Shenzhen,SZX,Shenzhen Airlines,ZH107,2,11L,Landed,B-8409,A320,passenger,N/A,94,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 00:51,03:25,Shanghai,PVG,Juneyao Air,HO1329,2,11L,Landed,B-30CT,A20N,passenger,N/A,205,False,False,N/A,0,0,False
-2026-02-10,2026-02-10 00:41,N/A,Jinan,TNA,N/A,N/A,2,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 00:37,00:57,Da Nang,DAD,Vietnam Airlines,VN7192,1,11L,Landed,VN-A601,A321,passenger,N/A,57,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 00:33,01:44,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G882,1,11L,Landed,VN-A279,A321,passenger,N/A,104,False,False,N/A,0,0,False
 2026-02-10,2026-02-10 00:23,04:38,Seoul,ICN,Jeju Air,7C2201,2,11L,Landed,HL8555,B38M,passenger,N/A,278,False,False,N/A,0,0,False
@@ -16986,7 +16977,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-13,2026-02-13 15:41,01:54,Ho Chi Minh City,SGN,VietJet Air,VJ138,1,11L,Landed,VN-A641,A321,passenger,N/A,114,False,False,N/A,0,0,False
 2026-02-13,2026-02-13 15:35,01:43,Nha Trang,CXR,Vietnam Airlines,VN7068,1,11L,Landed,VN-A619,A21N,passenger,N/A,103,False,False,N/A,0,0,False
 2026-02-13,2026-02-13 15:33,01:57,Can Tho,VCA,VietJet Air,VJ460,1,29R,Landed,VN-A546,A21N,passenger,N/A,117,False,False,N/A,0,0,False
-2026-02-13,2026-02-13 15:25,00:57,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,57,False,False,N/A,0,0,False
+2026-02-13,2026-02-13 15:25,00:57,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,57,False,False,N/A,0,0,False
 2026-02-13,2026-02-13 15:18,01:43,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G838,1,29R,Landed,VN-A286,A21N,passenger,N/A,103,False,False,N/A,0,0,False
 2026-02-13,2026-02-13 15:12,01:11,Kunming,KMG,China Eastern Airlines,MU9605,2,11L,Landed,B-1788,B738,passenger,N/A,71,False,False,N/A,0,0,False
 2026-02-13,2026-02-13 15:08,01:43,Nha Trang,CXR,VietJet Air,VJ774,1,11L,Landed,VN-A522,A321,passenger,N/A,103,False,False,N/A,0,0,False
@@ -17837,7 +17828,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-16,2026-02-16 17:39,01:52,Phu Quoc,PQC,VietJet Air,VJ446,1,11L,Landed,VN-A671,A320,passenger,N/A,112,False,False,N/A,0,0,False
 2026-02-16,2026-02-16 17:36,00:44,Luang Prabang,LPQ,AirAsia,FD1038,2,11L,Landed,HS-BBG,A320,passenger,N/A,44,False,False,N/A,0,0,False
 2026-02-16,2026-02-16 17:33,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN232,1,11L,Landed,VN-A870,B789,passenger,N/A,101,False,False,N/A,0,0,False
-2026-02-16,2026-02-16 17:31,01:55,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,N/A,N/A,unknown,N/A,115,False,False,N/A,0,0,False
+2026-02-16,2026-02-16 17:31,01:55,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,N/A,N/A,general aviation,N/A,115,False,False,N/A,0,0,False
 2026-02-16,2026-02-16 17:29,02:26,Kaohsiung,KHH,VietJet Air,VJ947,2,11L,Landed,VN-A575,A21N,passenger,N/A,146,False,False,N/A,0,0,False
 2026-02-16,2026-02-16 17:27,01:26,Bangkok,BKK,Vietnam Airlines,VN614,2,11L,Landed,VN-A609,A321,passenger,N/A,86,False,False,N/A,0,0,False
 2026-02-16,2026-02-16 17:21,01:39,Ho Chi Minh City,SGN,VietJet Air,VJ194,1,11L,Landed,VN-A578,A21N,passenger,N/A,99,False,False,N/A,0,0,False
@@ -18132,7 +18123,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-17,2026-02-17 15:54,01:28,Tuy Hoa,TBB,Vietnam Airlines,VN1650,1,11L,Landed,VN-A323,A321,passenger,N/A,88,False,False,N/A,0,0,False
 2026-02-17,2026-02-17 15:51,01:47,Ho Chi Minh City,SGN,Vietnam Airlines,VN248,1,11L,Landed,VN-A334,A321,passenger,N/A,107,False,False,N/A,0,0,False
 2026-02-17,2026-02-17 15:49,01:39,Bangkok,BKK,China Airlines,CI6654,0,11L,Landed,B-18722,B744,cargo,N/A,99,False,False,N/A,0,0,False
-2026-02-17,2026-02-17 15:46,02:00,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,N/A,N/A,unknown,N/A,120,False,False,N/A,0,0,False
+2026-02-17,2026-02-17 15:46,02:00,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,N/A,N/A,general aviation,N/A,120,False,False,N/A,0,0,False
 2026-02-17,2026-02-17 15:43,01:43,Hong Kong,HKG,Vietnam Airlines,VN593,2,11L,Landed,VN-A396,A321,passenger,N/A,103,False,False,N/A,0,0,False
 2026-02-17,2026-02-17 15:40,02:47,Singapore,SIN,Vietnam Airlines,VN660,2,11L,Landed,VN-A895,A359,passenger,N/A,167,False,False,N/A,0,0,False
 2026-02-17,2026-02-17 15:37,01:33,Da Lat,DLI,VietJet Air,VJ408,1,11L,Landed,VN-A667,A321,passenger,N/A,93,False,False,N/A,0,0,False
@@ -18391,7 +18382,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-18,2026-02-18 15:43,01:53,Hong Kong,HKG,Vietnam Airlines,VN593,2,11L,Landed,VN-A604,A321,passenger,N/A,113,False,False,N/A,0,1,False
 2026-02-18,2026-02-18 15:41,01:39,Da Lat,DLI,VietJet Air,VJ408,1,11L,Landed,VN-A699,A320,passenger,N/A,99,False,False,N/A,0,1,False
 2026-02-18,2026-02-18 15:38,01:48,Ho Chi Minh City,SGN,Bamboo Airways,QH242,1,11L,Landed,VN-A227,A321,passenger,N/A,108,False,False,N/A,0,1,False
-2026-02-18,2026-02-18 15:35,01:57,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,N/A,N/A,unknown,N/A,117,False,False,N/A,0,1,False
+2026-02-18,2026-02-18 15:35,01:57,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,N/A,N/A,general aviation,N/A,117,False,False,N/A,0,1,False
 2026-02-18,2026-02-18 15:32,01:43,Nha Trang,CXR,Vietnam Airlines,VN7068,1,11L,Landed,VN-A353,A321,passenger,N/A,103,False,False,N/A,0,1,False
 2026-02-18,2026-02-18 15:26,01:46,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G838,1,11L,Landed,VN-A279,A321,passenger,N/A,106,False,False,N/A,0,1,False
 2026-02-18,2026-02-18 15:23,03:55,Jakarta,CGK,China Airlines,CI5870,0,11L,Landed,B-18725,B744,cargo,N/A,235,False,False,N/A,0,1,False
@@ -18630,7 +18621,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-19,2026-02-19 17:57,01:28,Bangkok,BKK,Vietnam Airlines,VN614,2,11L,Landed,VN-A601,A321,passenger,N/A,88,False,False,N/A,0,1,False
 2026-02-19,2026-02-19 17:54,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN216,1,11L,Landed,VN-A888,A359,passenger,N/A,99,False,False,N/A,0,2,False
 2026-02-19,2026-02-19 17:51,03:14,Shanghai,PVG,Vietnam Airlines,VN533,2,11L,Landed,VN-A623,A21N,passenger,N/A,194,False,False,N/A,0,2,False
-2026-02-19,2026-02-19 17:49,03:57,Jakarta,CGK,VietJet Air,VJ928,2,11L,Landed,N/A,N/A,unknown,N/A,237,False,False,N/A,0,2,False
+2026-02-19,2026-02-19 17:49,03:57,Jakarta,CGK,VietJet Air,VJ928,2,11L,Landed,N/A,N/A,general aviation,N/A,237,False,False,N/A,0,2,False
 2026-02-19,2026-02-19 17:45,02:26,Kaohsiung,KHH,VietJet Air,VJ947,2,11L,Landed,VN-A536,A21N,passenger,N/A,146,False,False,N/A,0,2,False
 2026-02-19,2026-02-19 17:42,03:25,Shanghai,PVG,China Eastern Airlines,MU6013,2,11L,Landed,B-32L9,A21N,passenger,N/A,205,False,False,N/A,0,2,False
 2026-02-19,2026-02-19 17:38,01:45,Ho Chi Minh City,SGN,VietJet Air,VJ194,1,11L,Landed,VN-A674,A21N,passenger,N/A,105,False,False,N/A,0,2,False
@@ -18650,7 +18641,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-19,2026-02-19 16:52,02:53,Taipei,TPE,EVA Air,BR385,2,11L,Landed,B-16217,A321,passenger,N/A,173,False,False,N/A,0,3,False
 2026-02-19,2026-02-19 16:47,03:37,Shanghai,PVG,Air China,CA755,2,11L,Landed,B-6791,A321,passenger,N/A,217,False,False,N/A,1,3,True
 2026-02-19,2026-02-19 16:43,01:43,Ho Chi Minh City,SGN,Vietnam Airlines,VN214,1,11L,Landed,VN-A869,B789,passenger,N/A,103,False,False,N/A,1,3,True
-2026-02-19,2026-02-19 16:39,00:42,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,42,False,False,N/A,1,3,True
+2026-02-19,2026-02-19 16:39,00:42,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,42,False,False,N/A,1,3,True
 2026-02-19,2026-02-19 16:33,01:52,Can Tho,VCA,Vietnam Airlines,VN1202,1,11L,Landed,VN-A324,A321,passenger,N/A,112,False,False,N/A,1,3,True
 2026-02-19,2026-02-19 16:30,04:54,Hiroshima,HIJ,VietJet Air,VJ953,2,11L,Landed,VN-A672,A320,passenger,N/A,294,False,False,N/A,1,3,True
 2026-02-19,2026-02-19 16:24,02:50,Taipei,TPE,China Airlines,CI793,2,11L,Landed,B-18111,A21N,passenger,N/A,170,False,False,N/A,1,3,True
@@ -18848,7 +18839,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-20,2026-02-20 22:19,01:42,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G872,1,11L,Landed,VN-A281,A21N,passenger,N/A,102,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 22:16,01:22,Buon Ma Thuot,BMV,VietJet Air,VJ1492,1,11L,Landed,VN-A642,A321,passenger,N/A,82,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 22:13,01:39,Ho Chi Minh City,SGN,VietJet Air,VJ196,1,29R,Landed,VN-A816,A333,passenger,N/A,99,False,False,N/A,0,0,False
-2026-02-20,2026-02-20 22:09,N/A,Ho Chi Minh City,SGN,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 22:03,01:34,Macau,MFM,Air Macau,NX982,2,11L,Landed,B-MBT,A21N,passenger,N/A,94,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 22:00,01:49,Phu Quoc,PQC,VietJet Air,VJ1440,1,11L,Landed,VN-A542,A321,passenger,N/A,109,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 21:57,01:49,Chengdu,TFU,Sichuan Airlines,3U3905,2,11L,Landed,B-8329,A320,passenger,N/A,109,False,False,N/A,0,0,False
@@ -18857,8 +18847,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-20,2026-02-20 21:48,01:37,Phnom Penh,KTI,Vietnam Airlines,VN922,2,29R,Landed,VN-A323,A321,passenger,N/A,97,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 21:43,04:20,Seoul,ICN,Korean Air,KE447,2,29R,Landed,HL8345,B789,passenger,N/A,260,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 21:37,01:37,Nha Trang,CXR,Vietnam Airlines,VN1562,1,11L,Landed,VN-A505,A21N,passenger,N/A,97,False,False,N/A,0,0,False
-2026-02-20,2026-02-20 21:33,N/A,Phu Quoc,PQC,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
-2026-02-20,2026-02-20 21:31,N/A,Hong Kong,HKG,N/A,N/A,2,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 21:28,00:43,Dien Bien Phu,DIN,Vietnam Airlines,VN1807,1,11L,Landed,VN-A325,A321,passenger,N/A,43,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 21:24,01:26,Qui Nhon,UIH,Vietnam Airlines,VN7620,1,11L,Landed,VN-A623,A21N,passenger,N/A,86,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 21:20,01:06,Da Nang,DAD,Vietravel Airlines,VU658,1,11L,Landed,VN-A129,A321,passenger,N/A,66,False,False,N/A,0,0,False
@@ -18917,8 +18905,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-20,2026-02-20 17:23,01:50,Ho Chi Minh City,SGN,Vietnam Airlines,VN7230,1,11L,Landed,VN-A889,A359,passenger,N/A,110,False,False,N/A,1,2,True
 2026-02-20,2026-02-20 17:20,03:06,Singapore,SIN,Singapore Airlines,SQ194,2,11L,Landed,9V-SHS,A359,passenger,N/A,186,False,False,N/A,1,2,True
 2026-02-20,2026-02-20 17:18,01:27,Bangkok,BKK,VietJet Air,VJ902,2,11L,Landed,VN-A677,A321,passenger,N/A,87,False,False,N/A,1,2,True
-2026-02-20,2026-02-20 17:11,N/A,Dien Bien Phu,DIN,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,1,2,True
-2026-02-20,2026-02-20 17:08,N/A,Guangzhou,CAN,N/A,N/A,2,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,1,2,True
 2026-02-20,2026-02-20 17:06,00:58,Da Nang,DAD,VietJet Air,VJ514,1,11L,Landed,VN-A635,A321,passenger,N/A,58,False,False,N/A,1,2,True
 2026-02-20,2026-02-20 17:02,02:57,Taipei,TPE,EVA Air,BR385,2,11L,Landed,B-16227,A321,passenger,N/A,177,False,False,N/A,1,2,True
 2026-02-20,2026-02-20 16:59,01:39,Ho Chi Minh City,SGN,Vietravel Airlines,VU770,1,11L,Landed,VN-A129,A321,passenger,N/A,99,False,False,N/A,1,2,True
@@ -18930,7 +18916,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-20,2026-02-20 16:40,01:41,Ho Chi Minh City,SGN,Vietnam Airlines,VN7040,1,11L,Landed,VN-A331,A321,passenger,N/A,101,False,False,N/A,2,2,True
 2026-02-20,2026-02-20 16:36,01:42,Phu Quoc,PQC,Hai Au Aviation,HAI489,0,11L,Landed,VN-A489,FA8X,business jet,N/A,102,False,False,N/A,2,2,True
 2026-02-20,2026-02-20 16:33,00:58,Da Nang,DAD,Vietnam Airlines,VN7164,1,11L,Landed,VN-A623,A21N,passenger,N/A,58,False,False,N/A,1,1,True
-2026-02-20,2026-02-20 16:28,00:58,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,58,False,False,N/A,1,1,True
+2026-02-20,2026-02-20 16:28,00:58,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,58,False,False,N/A,1,1,True
 2026-02-20,2026-02-20 16:25,02:10,Kolkata,CCU,IndiGo,6E1631,2,11L,Landed,VT-IAN,A320,passenger,N/A,130,False,False,N/A,1,1,True
 2026-02-20,2026-02-20 16:22,01:34,Da Lat,DLI,Vietnam Airlines,VN1574,1,11L,Landed,VN-A515,A20N,passenger,N/A,94,False,False,N/A,1,1,True
 2026-02-20,2026-02-20 16:18,02:00,Can Tho,VCA,Vietnam Airlines,VN1202,1,11L,Landed,VN-A323,A321,passenger,N/A,120,False,False,N/A,1,1,True
@@ -19070,7 +19056,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-20,2026-02-20 05:39,03:30,Delhi,DEL,VietJet Air,VJ972,2,11L,Landed,VN-A811,A333,passenger,N/A,210,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 05:35,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ1124,1,11L,Landed,VN-A632,A321,passenger,N/A,101,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 05:18,03:52,Ahmedabad,AMD,VietJet Air,VJ1926,2,11L,Landed,VN-A658,A320,passenger,N/A,232,False,False,N/A,0,0,False
-2026-02-20,2026-02-20 05:14,N/A,Ho Chi Minh City,SGN,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 05:06,01:41,Ho Chi Minh City,SGN,Bamboo Airways,QH292,1,11L,Landed,VN-A596,A20N,passenger,N/A,101,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 04:59,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN9108,1,11L,Landed,VN-A865,B789,passenger,N/A,99,False,False,N/A,0,0,False
 2026-02-20,2026-02-20 04:53,03:09,Shanghai,PVG,VietJet Air,VJ7239,2,11L,Landed,VN-A675,A320,passenger,N/A,189,False,False,N/A,0,0,False
@@ -19112,8 +19097,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-21,2026-02-21 23:48,00:37,Vinh,VII,Vietnam Airlines,VN7718,1,11L,Landed,VN-A604,A321,passenger,N/A,37,False,False,N/A,0,0,False
 2026-02-21,2026-02-21 23:43,01:45,Phu Quoc,PQC,VietJet Air,VJ3521,1,11L,Landed,VN-A516,A21N,passenger,N/A,105,False,False,N/A,0,0,False
 2026-02-21,2026-02-21 23:39,01:03,Da Nang,DAD,VietJet Air,VJ520,1,11L,Landed,VN-A549,A21N,passenger,N/A,63,False,False,N/A,0,0,False
-2026-02-21,2026-02-21 23:32,N/A,Hue,HUI,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
-2026-02-21,2026-02-21 23:25,N/A,Ho Chi Minh City,SGN,N/A,N/A,1,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,1,False
 2026-02-21,2026-02-21 23:17,04:24,Seoul,ICN,T'way Air,TW61,2,11L,Landed,HL8327,B738,passenger,N/A,264,False,False,N/A,0,1,False
 2026-02-21,2026-02-21 23:10,01:43,Ho Chi Minh City,SGN,VietJet Air,VJ190,1,11L,Landed,VN-A649,A321,passenger,N/A,103,False,False,N/A,0,1,False
 2026-02-21,2026-02-21 23:07,00:59,Hue,HUI,VietJet Air,VJ568,1,11L,Landed,VN-A675,A320,passenger,N/A,59,False,False,N/A,0,1,False
@@ -19659,7 +19642,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-22,2026-02-22 01:35,02:53,Manila,MNL,Philippine Airlines,PR595,2,11L,Landed,RP-C9935,A21N,passenger,N/A,173,False,False,N/A,0,0,False
 2026-02-22,2026-02-22 01:32,01:42,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G882,1,11L,Landed,VN-A280,A321,passenger,N/A,102,False,False,N/A,0,0,False
 2026-02-22,2026-02-22 01:24,01:44,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G8896,1,11L,Landed,VN-A909,A20N,passenger,N/A,104,False,False,N/A,0,0,False
-2026-02-22,2026-02-22 01:22,01:46,Ho Chi Minh City,SGN,VietJet Air,VJ172,1,11L,Landed,N/A,N/A,unknown,N/A,106,False,False,N/A,0,0,False
+2026-02-22,2026-02-22 01:22,01:46,Ho Chi Minh City,SGN,VietJet Air,VJ172,1,11L,Landed,N/A,N/A,general aviation,N/A,106,False,False,N/A,0,0,False
 2026-02-22,2026-02-22 01:15,01:42,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G886,1,11L,Landed,VN-A281,A21N,passenger,N/A,102,False,False,N/A,0,0,False
 2026-02-22,2026-02-22 01:08,01:43,Ho Chi Minh City,SGN,Vietnam Airlines,VN7010,1,11L,Landed,VN-A865,B789,passenger,N/A,103,False,False,N/A,0,0,False
 2026-02-22,2026-02-22 01:05,02:11,Wuhan,WUH,China Eastern Airlines,MU2573,2,11L,Landed,B-1449,B738,passenger,N/A,131,False,False,N/A,0,0,False
@@ -20086,7 +20069,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-24,2026-02-24 15:59,01:52,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1208,1,11L,Landed,VN-A286,A21N,passenger,N/A,112,False,False,N/A,0,0,False
 2026-02-24,2026-02-24 15:56,01:54,Ho Chi Minh City,SGN,Bamboo Airways,QH242,1,11L,Landed,PK-BBK,B739,passenger,N/A,114,False,False,N/A,0,0,False
 2026-02-24,2026-02-24 15:51,02:55,Kuala Lumpur,KUL,AirAsia,AK512,2,11L,Landed,9M-AJT,A320,passenger,N/A,175,False,False,N/A,0,0,False
-2026-02-24,2026-02-24 15:48,00:42,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,42,False,False,N/A,0,0,False
+2026-02-24,2026-02-24 15:48,00:42,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,42,False,False,N/A,0,0,False
 2026-02-24,2026-02-24 15:44,01:53,Can Tho,VCA,VietJet Air,VJ462,1,11L,Landed,VN-A666,A320,passenger,N/A,113,False,False,N/A,0,0,False
 2026-02-24,2026-02-24 15:39,01:33,Da Lat,DLI,VietJet Air,VJ408,1,11L,Landed,VN-A675,A320,passenger,N/A,93,False,False,N/A,0,0,False
 2026-02-24,2026-02-24 15:37,02:42,Singapore,SIN,Vietnam Airlines,VN660,2,11L,Landed,VN-A898,A359,passenger,N/A,162,False,False,N/A,0,0,False
@@ -20403,7 +20386,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-25,2026-02-25 13:44,01:36,Shenzhen,SZX,Shenzhen Airlines,ZH103,2,11L,Landed,B-6357,A320,passenger,N/A,96,False,False,N/A,0,0,False
 2026-02-25,2026-02-25 13:41,00:53,Hue,HUI,VietJet Air,VJ566,1,11L,Landed,VN-A670,A321,passenger,N/A,53,False,False,N/A,0,0,False
 2026-02-25,2026-02-25 13:36,01:37,Ho Chi Minh City,SGN,Vietnam Airlines,VN246,1,11L,Landed,VN-A895,A359,passenger,N/A,97,False,False,N/A,0,0,False
-2026-02-25,2026-02-25 13:31,00:55,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,55,False,False,N/A,0,0,False
+2026-02-25,2026-02-25 13:31,00:55,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,55,False,False,N/A,0,0,False
 2026-02-25,2026-02-25 13:25,05:23,Tokyo,NRT,Vietnam Airlines,VN311,2,11L,Landed,VN-A874,B78X,passenger,N/A,323,False,False,N/A,0,0,False
 2026-02-25,2026-02-25 13:19,04:16,Seoul,ICN,Vietnam Airlines,VN417,2,11L,Landed,VN-A873,B78X,passenger,N/A,256,False,False,N/A,0,0,False
 2026-02-25,2026-02-25 13:16,01:00,Da Nang,DAD,VietJet Air,VJ528,1,11L,Landed,VN-A524,A21N,passenger,N/A,60,False,False,N/A,0,0,False
@@ -20855,7 +20838,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-27,2026-02-27 16:43,02:53,Taipei,TPE,China Airlines,CI793,2,11L,Landed,B-18112,A21N,passenger,N/A,173,False,False,N/A,1,1,True
 2026-02-27,2026-02-27 16:40,03:02,Singapore,XSP,N/A,N/A,0,11L,Landed,B-6186,A318,business jet,N/A,182,False,False,N/A,1,1,True
 2026-02-27,2026-02-27 16:38,03:15,Shanghai,PVG,Air China Cargo,N/A,0,11L,Landed,B-2475,B744,cargo,N/A,195,False,False,N/A,0,0,False
-2026-02-27,2026-02-27 16:31,00:46,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,46,False,False,N/A,0,0,False
+2026-02-27,2026-02-27 16:31,00:46,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,46,False,False,N/A,0,0,False
 2026-02-27,2026-02-27 16:27,00:29,Dien Bien Phu,DIN,Vietnam Airlines,VN1805,1,11L,Landed,VN-A392,A321,passenger,N/A,29,False,False,N/A,0,0,False
 2026-02-27,2026-02-27 16:15,01:41,Da Lat,DLI,Vietnam Airlines,VN1574,1,11L,Landed,VN-A515,A20N,passenger,N/A,101,False,False,N/A,0,0,False
 2026-02-27,2026-02-27 16:09,01:39,Ho Chi Minh City,SGN,Vietnam Airlines,VN214,1,29R,Landed,VN-A866,B789,passenger,N/A,99,False,False,N/A,0,0,False
@@ -21068,7 +21051,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-02-28,2026-02-28 16:55,00:47,Dien Bien Phu,DIN,Vietnam Airlines,VN1805,1,11L,Landed,VN-A603,A321,passenger,N/A,47,False,False,N/A,1,1,True
 2026-02-28,2026-02-28 16:11,05:54,Khabarovsk,KHV,VietJet Air,VJ3524,2,11L,Landed,VN-A549,A21N,passenger,N/A,354,False,False,N/A,0,0,False
 2026-02-28,2026-02-28 16:02,01:27,Tuy Hoa,TBB,Vietnam Airlines,VN1650,1,11L,Landed,VN-A602,A321,passenger,N/A,87,False,False,N/A,0,0,False
-2026-02-28,2026-02-28 15:49,00:47,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,47,False,False,N/A,0,0,False
+2026-02-28,2026-02-28 15:49,00:47,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,47,False,False,N/A,0,0,False
 2026-02-28,2026-02-28 15:43,01:37,Da Lat,DLI,VietJet Air,VJ404,1,11L,Landed,VN-A662,A320,passenger,N/A,97,False,False,N/A,0,0,False
 2026-02-28,2026-02-28 15:25,01:07,Da Nang,DAD,Sun PhuQuoc Airways,9G922,1,11L,Landed,VN-A281,A21N,passenger,N/A,67,False,False,N/A,0,0,False
 2026-02-28,2026-02-28 15:22,01:49,Ho Chi Minh City,SGN,Vietnam Airlines,VN248,1,11L,Landed,VN-A895,A359,passenger,N/A,109,False,False,N/A,0,0,False
@@ -21223,7 +21206,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-03-02,2026-03-02 16:44,01:48,Guangzhou,CAN,China Southern Airlines,CZ8315,2,11L,Landed,B-301A,A20N,passenger,N/A,108,False,False,N/A,0,0,False
 2026-03-02,2026-03-02 14:33,01:36,Nha Trang,CXR,Vietnam Airlines,VN1552,1,11L,Landed,VN-A616,A21N,passenger,N/A,96,False,False,N/A,0,0,False
 2026-03-02,2026-03-02 14:17,02:46,Kuala Lumpur,KUL,AirAsia,AK512,2,11L,Landed,9M-AJT,A320,passenger,N/A,166,False,False,N/A,0,0,False
-2026-03-02,2026-03-02 13:46,02:55,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,175,False,False,N/A,0,0,False
+2026-03-02,2026-03-02 13:46,02:55,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,175,False,False,N/A,0,0,False
 2026-03-02,2026-03-02 13:44,03:18,Shanghai,PVG,China Eastern Airlines,MU6011,2,11L,Landed,B-6886,A321,passenger,N/A,198,False,False,N/A,0,0,False
 2026-03-02,2026-03-02 13:37,01:37,Shenzhen,SZX,Shenzhen Airlines,ZH9847,2,11L,Landed,B-6781,A320,passenger,N/A,97,False,False,N/A,0,0,False
 2026-03-02,2026-03-02 12:59,01:12,Da Nang,DAD,VietJet Air,VJ528,1,11L,Landed,VN-A550,A21N,passenger,N/A,72,False,False,N/A,0,0,False
@@ -21907,7 +21890,6 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-03-06,2026-03-06 01:36,02:47,Manila,MNL,Philippine Airlines,PR595,2,11L,Landed,RP-C9926,A321,passenger,N/A,167,False,False,N/A,0,0,False
 2026-03-06,2026-03-06 01:21,01:41,Ho Chi Minh City,SGN,VietJet Air,VJ182,1,11L,Landed,VN-A644,A321,passenger,N/A,101,False,False,N/A,0,0,False
 2026-03-06,2026-03-06 01:03,02:57,Hangzhou,HGH,Air China,CA707,2,11L,Landed,B-6745,A320,passenger,N/A,177,False,False,N/A,0,0,False
-2026-03-06,2026-03-06 00:51,N/A,Jinan,TNA,N/A,N/A,2,11L,Landed,N/A,N/A,unknown,N/A,,False,False,N/A,0,0,False
 2026-03-06,2026-03-06 00:48,01:38,Shenzhen,SZX,Shenzhen Airlines,ZH107,2,11L,Landed,B-8077,A320,passenger,N/A,98,False,False,N/A,0,0,False
 2026-03-06,2026-03-06 00:43,03:21,Shanghai,PVG,Juneyao Air,HO1329,2,11L,Landed,B-1808,A321,passenger,N/A,201,False,False,N/A,0,0,False
 2026-03-06,2026-03-06 00:40,01:37,Ho Chi Minh City,SGN,Vietnam Airlines,VN270,1,11L,Landed,VN-A614,A321,passenger,N/A,97,False,False,N/A,0,0,False
@@ -21988,7 +21970,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-03-07,2026-03-07 13:46,02:54,Wuhu,WHA,JD Airlines,JG2723,0,11L,Landed,B-5335,B738,cargo,N/A,174,False,False,N/A,0,0,False
 2026-03-07,2026-03-07 13:40,03:16,Shanghai,PVG,China Eastern Airlines,MU6011,2,11L,Landed,B-6886,A321,passenger,N/A,196,False,False,N/A,0,0,False
 2026-03-07,2026-03-07 13:35,04:12,Seoul,ICN,VietJet Air,VJ961,2,11L,Landed,VN-A543,A21N,passenger,N/A,252,False,False,N/A,0,0,False
-2026-03-07,2026-03-07 13:28,00:55,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,55,False,False,N/A,0,0,False
+2026-03-07,2026-03-07 13:28,00:55,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,55,False,False,N/A,0,0,False
 2026-03-07,2026-03-07 13:15,00:57,Hue,HUI,VietJet Air,VJ566,1,11L,Landed,VN-A685,A321,passenger,N/A,57,False,False,N/A,0,0,False
 2026-03-07,2026-03-07 13:07,04:56,Osaka,KIX,Vietnam Airlines,VN335,2,11L,Landed,VN-A888,A359,passenger,N/A,296,False,False,N/A,0,0,False
 2026-03-07,2026-03-07 12:57,01:41,Phu Quoc,PQC,VietJet Air,VJ450,1,11L,Landed,VN-A811,A333,passenger,N/A,101,False,False,N/A,0,0,False
@@ -22631,7 +22613,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-03-10,2026-03-10 11:23,01:45,Ho Chi Minh City,SGN,Sun PhuQuoc Airways,9G822,1,11L,Landed,VN-A280,A321,passenger,N/A,105,False,False,N/A,0,1,False
 2026-03-10,2026-03-10 11:17,02:51,Singapore,SIN,Singapore Airlines,SQ192,2,11L,Landed,9V-SHO,A359,passenger,N/A,171,False,False,N/A,0,1,False
 2026-03-10,2026-03-10 11:12,00:59,Da Nang,DAD,Vietnam Airlines,VN164,1,11L,Landed,VN-A336,A321,passenger,N/A,59,False,False,N/A,0,1,False
-2026-03-10,2026-03-10 11:02,01:27,Qui Nhon,UIH,VietJet Air,VJ430,1,11L,Landed,N/A,N/A,unknown,N/A,87,False,False,N/A,0,1,False
+2026-03-10,2026-03-10 11:02,01:27,Qui Nhon,UIH,VietJet Air,VJ430,1,11L,Landed,N/A,N/A,general aviation,N/A,87,False,False,N/A,0,1,False
 2026-03-10,2026-03-10 10:56,04:40,Seoul,ICN,Korean Air,KE441,2,11L,Landed,HL8531,A21N,passenger,N/A,280,False,False,N/A,0,1,False
 2026-03-10,2026-03-10 10:50,01:46,Ho Chi Minh City,SGN,VietJet Air,VJ136,1,11L,Landed,VN-A634,A321,passenger,N/A,106,False,False,N/A,0,1,False
 2026-03-10,2026-03-10 10:47,04:25,Busan,PUS,VietJet Air,VJ981,2,11L,Landed,VN-A546,A21N,passenger,N/A,265,False,False,N/A,0,1,False
@@ -22765,7 +22747,7 @@ Crawl_Date,Actual_Time,Flight_Time,Origin,IATA,Airline,Flight_No,Terminal,Arriva
 2026-03-11,2026-03-11 16:56,01:36,Bangkok,BKK,VietJet Air,VJ902,2,11L,Landed,VN-A635,A321,passenger,N/A,96,False,False,N/A,0,1,False
 2026-03-11,2026-03-11 16:35,02:40,Gaya,GAY,Vietnam Airlines,VN9982,2,11L,Landed,VN-A358,A321,passenger,N/A,160,False,False,N/A,0,1,False
 2026-03-11,2026-03-11 16:32,03:13,Shanghai,PVG,Air China,CA755,2,11L,Landed,B-6742,A321,passenger,N/A,193,False,False,N/A,0,1,False
-2026-03-11,2026-03-11 16:21,02:17,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,unknown,N/A,137,False,False,N/A,0,1,False
+2026-03-11,2026-03-11 16:21,02:17,N/A,N/A,N/A,N/A,N/A,11L,Landed,VN-B469,C208,general aviation,N/A,137,False,False,N/A,0,1,False
 2026-03-11,2026-03-11 16:18,01:00,Da Nang,DAD,Vietnam Airlines,VN172,1,29R,Landed,VN-A326,A321,passenger,N/A,60,False,False,N/A,0,1,False
 2026-03-11,2026-03-11 16:14,01:48,Can Tho,VCA,Vietnam Airlines,VN1202,1,29R,Landed,VN-A393,A321,passenger,N/A,108,False,False,N/A,0,1,False
 2026-03-11,2026-03-11 15:53,01:16,Pleiku,PXU,Vietnam Airlines,VN7612,1,11L,Landed,VN-A513,A20N,passenger,N/A,76,False,False,N/A,0,1,False
