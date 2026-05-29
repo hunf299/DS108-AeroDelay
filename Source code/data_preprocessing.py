@@ -2173,6 +2173,30 @@ def finalize_dataframe_for_export(df: pd.DataFrame) -> pd.DataFrame:
     return out
 
 
+def sort_flights_for_export(df: pd.DataFrame, airport: str) -> pd.DataFrame:
+    out = df.copy()
+    primary_col = "Scheduled_DateTime" if airport.upper() == "DAD" else "Actual_DateTime"
+
+    if primary_col in out.columns:
+        primary_time = pd.to_datetime(out[primary_col], errors="coerce")
+    else:
+        primary_time = event_datetime_series(out)
+
+    if "Crawl_Date" in out.columns:
+        crawl_date = pd.to_datetime(out["Crawl_Date"], errors="coerce")
+    else:
+        crawl_date = pd.Series(pd.NaT, index=out.index, dtype="datetime64[ns]")
+
+    out["_Sort_Crawl_Date"] = crawl_date
+    out["_Sort_Event_Time"] = primary_time
+    out["_Sort_Original_Order"] = np.arange(len(out))
+
+    sort_cols = ["_Sort_Crawl_Date", "_Sort_Event_Time", "_Sort_Original_Order"]
+    out = out.sort_values(sort_cols, kind="mergesort", na_position="last")
+    out = out.drop(columns=sort_cols).reset_index(drop=True)
+    return out
+
+
 def normalize_file_common(df: pd.DataFrame, airport: str, mode: str) -> Tuple[pd.DataFrame, Dict[str, object]]:
     stats: Dict[str, object] = {}
 
@@ -2647,6 +2671,9 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
             set_crawl_date_from_datetime(arrivals[airport], arrivals[airport][arr_ref_col])
         if dep_ref_col in departures[airport].columns:
             set_crawl_date_from_datetime(departures[airport], departures[airport][dep_ref_col])
+
+        arrivals[airport] = sort_flights_for_export(arrivals[airport], airport=airport.upper())
+        departures[airport] = sort_flights_for_export(departures[airport], airport=airport.upper())
 
         arr_clean = finalize_dataframe_for_export(arrivals[airport])
         dep_clean = finalize_dataframe_for_export(departures[airport])

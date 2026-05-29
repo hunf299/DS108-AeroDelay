@@ -1,22 +1,2 @@
 airport,mode,row_index,action,rule,crawl_date,scheduled_time,actual_time,flight_no,iata,airline,tail_number,aircraft_type,category
 HAN,arrival,21727,insert,manual_han_arr_vu774_inserted,2026-03-05,,09:12,VU774,SGN,Vietravel Airlines,9H-MLW,A320,passenger
-HAN,departure,475,update,manual_han_dep_c208_to_business_jet,2025-12-17,,09:43,,,Hai Au Aviation,VN-B466,C208,passenger
-HAN,departure,771,update,manual_han_dep_c208_to_business_jet,2025-12-18,,09:31,,,Hai Au Aviation,VN-B466,C208,passenger
-HAN,departure,1030,update,manual_han_dep_c208_to_business_jet,2025-12-19,,12:16,,,,VN-B469,C208,general aviation
-HAN,departure,1068,update,manual_han_dep_c208_to_business_jet,2025-12-19,,09:47,,,,VN-B469,C208,general aviation
-HAN,departure,1069,update,manual_han_dep_c208_to_business_jet,2025-12-19,,09:41,,,Hai Au Aviation,VN-B466,C208,passenger
-HAN,departure,1706,update,manual_han_dep_c208_to_business_jet,2025-12-21,,09:37,,,Hai Au Aviation,VN-B466,C208,passenger
-HAN,departure,2000,update,manual_han_dep_c208_to_business_jet,2025-12-22,,09:30,,,Hai Au Aviation,VN-B466,C208,passenger
-HAN,departure,2297,update,manual_han_dep_c208_to_business_jet,2025-12-23,,09:45,,,,VN-B469,C208,general aviation
-HAN,departure,2299,update,manual_han_dep_c208_to_business_jet,2025-12-23,,09:36,,,Hai Au Aviation,VN-B466,C208,passenger
-HAN,departure,2574,update,manual_han_dep_c208_to_business_jet,2025-12-24,,09:56,,,Hai Au Aviation,VN-B466,C208,passenger
-HAN,departure,2892,update,manual_han_dep_c208_to_business_jet,2025-12-25,,09:38,,,Hai Au Aviation,VN-B466,C208,passenger
-HAN,departure,3207,update,manual_han_dep_c208_to_business_jet,2025-12-26,,09:58,,NAV,,VN-B469,C208,passenger
-HAN,departure,3211,update,manual_han_dep_c208_to_business_jet,2025-12-26,,09:40,,,Hai Au Aviation,VN-B466,C208,passenger
-HAN,departure,4100,update,manual_han_dep_c208_to_business_jet,2025-12-29,,12:32,,NAV,,VN-B469,C208,passenger
-HAN,departure,4144,update,manual_han_dep_c208_to_business_jet,2025-12-29,,09:45,,,Hai Au Aviation,VN-B466,C208,passenger
-HAN,departure,4147,update,manual_han_dep_c208_to_business_jet,2025-12-29,,09:30,,NAV,,VN-B469,C208,passenger
-HAN,departure,9948,update,manual_han_dep_c208_to_business_jet,2026-01-17,,10:02,,NAV,,VN-B469,C208,passenger
-HAN,departure,14086,update,manual_han_dep_c208_to_business_jet,2026-01-31,,09:04,,NAV,,VN-B469,C208,passenger
-HAN,departure,14688,update,manual_han_dep_c208_to_business_jet,2026-02-02,,09:46,,NAV,,VN-B469,C208,passenger
-HAN,departure,15640,update,manual_han_dep_c208_to_business_jet,2026-02-05,,09:43,,NAV,,VN-B469,C208,passenger
