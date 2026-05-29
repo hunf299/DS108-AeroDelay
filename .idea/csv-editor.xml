@@ -3,13 +3,6 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="/Data crawl/Bronze_layer/Arrival/dad_aircraft_arrival.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="/Data crawl/Bronze_layer/Arrival/dad_flights_arrival_bronze_layer.csv">
           <value>
             <Attribute>
@@ -31,7 +24,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data crawl/Bronze_layer/Departure/dad_aircraft_departure.csv">
+        <entry key="/Data crawl/Bronze_layer/Audit/audit_manual_value_fixes.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -45,21 +38,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data crawl/Bronze_layer/Departure/han_aircraft.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="/Data crawl/Bronze_layer/Departure/han_flights_departure_bronze_layer.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data crawl/Bronze_layer/Departure/sgn_aircraft.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -129,13 +108,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data crawl/Silver_layer/Audit/audit_flight_no_spq_to_9g.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="/Data crawl/Silver_layer/Audit/audit_same_origin_actions.csv">
           <value>
             <Attribute>
@@ -171,20 +143,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data crawl/Silver_layer/Features/commercial_flights_with_military_features.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data crawl/Silver_layer/Features/military_activity_events.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="/Data crawl/Silver_layer/Features/weather_features_hourly.csv">
           <value>
             <Attribute>
@@ -192,63 +150,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data crawl/Silver_layer/audit_departure_without_arrival.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data crawl/Silver_layer/extra_patched_flights_not_in_audit.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data crawl/Silver_layer/patched_missing_arrivals-2.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data crawl/Silver_layer/patched_missing_arrivals.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Source code/audit_arrival_without_departure.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Source code/final_merged_patched_flights.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Source code/patched_missing_arrivals-3.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Source code/patched_missing_departures_updated (1).csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Source code/valid_patched_flights.csv">
+        <entry key="/Source code/airport_weather_hourly_merged.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

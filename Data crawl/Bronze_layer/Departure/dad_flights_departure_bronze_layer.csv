@@ -1056,9 +1056,9 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Checkin
 2025-12-24,12:10,13:30,Hanoi,HAN,Vietnam Airlines,VN166,11:30,1,3-16,8.0,Departed,VN-A614,A321,passenger,0.0,35R
 2025-12-24,12:15,12:15,Macau,MFM,VietJet Air,VJ8890,09:10,2,29-31,9.0,Departed,VN-A687,A321,passenger,0.0,Unknown
 2025-12-24,12:20,12:35,Kuala Lumpur,KUL,Air Asia,AK649,09:20,2,49-51,5.0,Departed,9M-AJP,A320,passenger,1.0,17R
-2025-12-24,12:20,12:20,Hanoi,HAN,VietJet Air,VJ508,10:20,1,27-34,6.0,Departed,VN-A538,A21N,passenger,0.0,Unknown
-2025-12-24,12:25,12:25,Manila,MNL,Philippine Airlines,PR586,09:25,2,16-20,3.0,Departed,RP-C9926,A321,passenger,0.0,Unknown
-2025-12-24,12:25,12:25,Hong Kong,HKG,Hong Kong Express Airways,UO563,09:25,2,12-15,4.0,Departed,B-LEF,A321,passenger,0.0,Unknown
+2025-12-24,12:20,12:20,Hanoi,HAN,VietJet Air,VJ508,10:20,1,27-34,6.0,Departed,VN-A538,A21N,passenger,0.0,35R
+2025-12-24,12:25,12:25,Manila,MNL,Philippine Airlines,PR586,09:25,2,16-20,3.0,Departed,RP-C9926,A321,passenger,0.0,35R
+2025-12-24,12:25,12:25,Hong Kong,HKG,Hong Kong Express Airways,UO563,09:25,2,12-15,4.0,Departed,B-LEF,A321,passenger,0.0,35R
 2025-12-24,12:30,12:30,Macau,MFM,Bamboo Airways,QH9588,09:30,2,32-34,1.0,Departed,VN-A585,A321,passenger,0.0,35R
 2025-12-24,12:30,12:30,Ho Chi Minh City,SGN,VietJet Air,VJ633,10:30,1,27-34,1.0,Departed,VN-A629,A321,passenger,0.0,35R
 2025-12-24,12:40,12:55,Bangkok,DMK,Thai Air Asia,FD637,09:40,2,52-54,7.0,Departed,HS-BBL,A320,passenger,1.0,35R
