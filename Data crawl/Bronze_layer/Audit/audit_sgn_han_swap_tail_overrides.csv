@@ -1,5 +1,0 @@
-route,target_file,target_index,flight_no,before_tail,after_tail,source_rule,status,dep_index,arr_index,scheduled_tail,actual_tail
-SGN->HAN,Data crawl\Bronze_layer_cleaned\Departure\sgn_flights_departure_bronze_layer.csv,27531,VJ196,VN-A639,VN-A816,han_arrival_actual_tail_to_sgn_departure,updated,27531,19715,VN-A639,VN-A816
-HAN->SGN,Data crawl\Bronze_layer_cleaned\Arrival\sgn_flights_arrival_bronze_layer.csv,29985,VJ161,VN-A532,VN-A632,han_departure_tail_to_sgn_arrival,updated,23033,29985,VN-A632,VN-A532
-HAN->SGN,Data crawl\Bronze_layer_cleaned\Arrival\sgn_flights_arrival_bronze_layer.csv,31162,VJ129,VN-A532,VN-A632,han_departure_tail_to_sgn_arrival,updated,23873,31162,VN-A632,VN-A532
-HAN->SGN,Data crawl\Bronze_layer_cleaned\Arrival\sgn_flights_arrival_bronze_layer.csv,36204,VJ171,VN-A632,VN-A532,han_departure_tail_to_sgn_arrival,updated,28071,36204,VN-A532,VN-A632

@@ -759,6 +759,12 @@ def apply_targeted_manual_fixes(
             update(mask, replacement_values, "manual_dad_arr_targeted_time_status_fixes")
 
     if airport == "HAN" and mode == "departure":
+        update(
+            eq_upper_mask(out, "Aircraft_Type", "C208"),
+            {"Category": "business jet"},
+            "manual_han_dep_c208_to_business_jet",
+        )
+
         conflicting_second_legs = [
             ("2026-02-18", "VN220", "20:41", "SGN"),
             ("2026-02-27", "VJ190", "21:16", "SGN"),

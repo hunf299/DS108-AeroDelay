@@ -1,9 +1,0 @@
-﻿Column,Missing_Before,Missing_After,Physical_Low_Clipped,Physical_High_Clipped,IQR_Clipped
-temperature,0,0,0,0,0
-precipitation,0,0,0,0,190
-cloudcover,0,0,0,0,0
-wind_speed,0,0,0,0,0
-wind_direction,0,0,0,0,0
-pressure,0,0,0,0,0
-humidity,0,0,0,0,0
-visibility,0,0,0,0,281

@@ -1,129 +1,22 @@
 airport,mode,row_index,action,rule,crawl_date,scheduled_time,actual_time,flight_no,iata,airline,tail_number,aircraft_type,category
-SGN,arrival,29986,update,manual_sgn_arr_han_sgn_swap_tail_override,2026-02-27,,02:12,VJ161,HAN,VietJet Air,VN-A532,A321,passenger
-SGN,arrival,31163,update,manual_sgn_arr_han_sgn_swap_tail_override,2026-03-02,,13:51,VJ129,HAN,VietJet Air,VN-A532,A321,passenger
-SGN,arrival,36205,update,manual_sgn_arr_han_sgn_swap_tail_override,2026-03-15,,01:21,VJ171,HAN,VietJet Air,VN-A632,A321,passenger
-SGN,arrival,36205,drop,manual_sgn_arr_drop_remaining_swap_true_vj171,2026-03-15,,01:21,VJ171,HAN,VietJet Air,VN-A532,A321,passenger
-SGN,arrival,14231,drop,manual_sgn_arr_drop_vj191_20260124,2026-01-24,,17:48,VJ191,HAN,VietJet Air,VN-A672,A320,passenger
-SGN,arrival,35907,update,manual_sgn_arr_20260315_unknown_to_general_aviation,2026-03-15,,21:09,,,,,,unknown
-HAN,arrival,11192,update,manual_han_arr_vj641_to_vj164,2026-01-22,,00:56,VJ641,SGN,VietJet Air,VN-A699,A320,passenger
 HAN,arrival,21727,insert,manual_han_arr_vu774_inserted,2026-03-05,,09:12,VU774,SGN,Vietravel Airlines,9H-MLW,A320,passenger
-HAN,arrival,443,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2025-12-17,,14:01,,,,VN-B469,C208,passenger
-HAN,arrival,1341,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2025-12-20,,13:38,,,,VN-B469,C208,passenger
-HAN,arrival,2235,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2025-12-23,,15:47,,,,VN-B469,C208,passenger
-HAN,arrival,2544,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2025-12-24,,13:40,,,,VN-B469,C208,passenger
-HAN,arrival,3108,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2025-12-26,,16:41,,,,VN-B469,C208,passenger
-HAN,arrival,3439,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2025-12-27,,15:46,,,,VN-B469,C208,passenger
-HAN,arrival,3800,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2025-12-28,,13:31,,,,VN-B469,C208,passenger
-HAN,arrival,4059,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2025-12-29,,16:17,,,,VN-B469,C208,passenger
-HAN,arrival,4415,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2025-12-30,,14:29,,,,VN-B469,C208,passenger
-HAN,arrival,5018,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-01-01,,16:02,,,,VN-B469,C208,passenger
-HAN,arrival,7802,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-01-10,,15:50,,,,VN-B469,C208,passenger
-HAN,arrival,8431,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-01-12,,13:25,,,,VN-B469,C208,passenger
-HAN,arrival,9023,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-01-14,,13:59,,,,VN-B469,C208,passenger
-HAN,arrival,9511,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-01-16,,15:24,,,,VN-B469,C208,passenger
-HAN,arrival,10051,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-01-18,,13:57,,,,VN-B469,C208,passenger
-HAN,arrival,11078,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-01-22,,13:34,,,,VN-B469,C208,passenger
-HAN,arrival,12474,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-01-27,,14:43,,,,VN-B469,C208,passenger
-HAN,arrival,13282,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-01-30,,15:08,,,,VN-B469,C208,passenger
-HAN,arrival,13550,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-01-31,,16:11,,,,VN-B469,C208,passenger
-HAN,arrival,14687,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-02-05,,13:51,,,,VN-B469,C208,passenger
-HAN,arrival,15228,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-02-07,,13:28,,,,VN-B469,C208,passenger
-HAN,arrival,15532,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-02-08,,13:13,,,,VN-B469,C208,passenger
-HAN,arrival,16139,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-02-10,,13:31,,,,VN-B469,C208,passenger
-HAN,arrival,17005,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-02-13,,15:25,,,,VN-B469,C208,passenger
-HAN,arrival,18670,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-02-19,,16:39,,,,VN-B469,C208,passenger
-HAN,arrival,18950,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-02-20,,16:28,,,,VN-B469,C208,passenger
-HAN,arrival,20106,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-02-24,,15:48,,,,VN-B469,C208,passenger
-HAN,arrival,20876,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-02-27,,16:31,,,,VN-B469,C208,passenger
-HAN,arrival,21090,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-02-28,,15:49,,,,VN-B469,C208,passenger
-HAN,arrival,22010,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-03-07,,13:28,,,,VN-B469,C208,passenger
-HAN,arrival,22787,update,manual_han_arr_vnb469_c208_passenger_to_unknown,2026-03-11,,16:21,,,,VN-B469,C208,passenger
-HAN,arrival,11453,drop,manual_han_arr_drop_20260123_0744_empty_unknown,2026-01-23,,07:44,,,,,,unknown
-HAN,arrival,11451,drop,manual_han_arr_drop_20260123_0818_vietjet_no_flight,2026-01-23,,08:18,,,VietJet Air,,A321,unknown
-DAD,arrival,5096,update,manual_dad_arr_targeted_time_status_fixes,2026-01-22,23:35,23:50,TW13,ICN,T'WAY AIR,HL8378,B738,passenger
-DAD,arrival,7395,update,manual_dad_arr_targeted_time_status_fixes,2026-02-09,00:20,23:50,ZE593,ICN,EASTAR JET,HL8759,B38M,passenger
-DAD,arrival,7955,update,manual_dad_arr_targeted_time_status_fixes,2026-02-12,22:45,23:50,VJ640,SGN,VIETJET AIR,VN-A643,A321,passenger
-DAD,arrival,8104,update,manual_dad_arr_targeted_time_status_fixes,2026-02-13,22:00,00:28,VJ646,SGN,VIETJET AIR,LY-MLN,A320,passenger
-DAD,arrival,8109,update,manual_dad_arr_targeted_time_status_fixes,2026-02-13,22:40,23:10,VN7122,SGN,VIETNAM AIRLINES,9H-MLE,A320,passenger
-DAD,arrival,8110,update,manual_dad_arr_targeted_time_status_fixes,2026-02-13,22:45,00:24,VJ640,SGN,VIETJET AIR,VN-A643,A321,passenger
-DAD,arrival,8273,update,manual_dad_arr_targeted_time_status_fixes,2026-02-15,00:20,23:55,ZE593,ICN,EASTAR JET,HL8715,B38M,passenger
-DAD,arrival,9753,update,manual_dad_arr_targeted_time_status_fixes,2026-02-24,23:40,00:00,LJ183,PUS,JIN AIR,HL7757,B738,passenger
-DAD,arrival,9897,update,manual_dad_arr_targeted_time_status_fixes,2026-02-25,22:00,00:00,VJ646,SGN,VIETJET AIR,LY-MLN,A320,passenger
-SGN,departure,27548,update,manual_sgn_dep_han_arr_swap_tail_override,2026-02-23,19:10,20:38,VJ196,HAN,VietJet Air,VN-A639,A321,passenger
-SGN,departure,29025,update,manual_sgn_dep_han_arr_swap_tail_override,2026-02-25,01:32,01:32,VJ174,HAN,VietJet Air,VN-A545,A21N,passenger
-SGN,departure,31729,update,manual_sgn_dep_vu774_runway_25l,2026-03-03,07:05,07:51,VU774,HAN,Vietravel Airlines,VN-A136,A320,passenger
-SGN,departure,12112,drop,manual_sgn_dep_drop_blank_vna359_a321,2026-01-18,,19:33,,,,VN-A359,A321,passenger
-SGN,departure,13731,drop,manual_sgn_dep_drop_blank_vna359_a321,2026-01-22,,05:34,,,,VN-A359,A321,passenger
-SGN,departure,19284,drop,manual_sgn_dep_drop_blank_vna359_a321,2026-02-06,,21:22,,,,VN-A359,A321,passenger
-SGN,departure,20895,drop,manual_sgn_dep_drop_blank_vna359_a321,2026-02-09,,10:35,,,,VN-A359,A321,passenger
-SGN,departure,23171,drop,manual_sgn_dep_drop_blank_vna359_a321,2026-02-14,,21:10,,,,VN-A359,A321,passenger
-SGN,departure,24128,drop,manual_sgn_dep_drop_blank_vna359_a321,2026-02-15,,01:02,,,,VN-A359,A321,passenger
-SGN,departure,25850,drop,manual_sgn_dep_drop_blank_vna359_a321,2026-02-19,,06:36,,,,VN-A359,A321,passenger
-SGN,departure,25975,drop,manual_sgn_dep_drop_blank_vna359_a321,2026-02-20,,22:10,,,,VN-A359,A321,passenger
-SGN,departure,26325,drop,manual_sgn_dep_drop_blank_vna359_a321,2026-02-20,,06:54,,,,VN-A359,A321,passenger
-SGN,departure,27520,drop,manual_sgn_dep_drop_blank_vna359_a321,2026-02-23,,21:47,,,,VN-A359,A321,passenger
-SGN,departure,27740,drop,manual_sgn_dep_drop_blank_vna359_a321,2026-02-23,,12:13,,,,VN-A359,A321,passenger
-SGN,departure,33108,drop,manual_sgn_dep_drop_blank_vna359_a321,2026-03-07,,17:10,,,,VN-A359,A321,passenger
-SGN,departure,33728,drop,manual_sgn_dep_drop_blank_vna359_a321,2026-03-08,,06:14,,,,VN-A359,A321,passenger
-SGN,departure,25997,drop,manual_sgn_dep_drop_blank_vna354_a321,2026-02-20,,21:10,,,,VN-A354,A321,passenger
-SGN,departure,26941,drop,manual_sgn_dep_drop_blank_vna354_a321,2026-02-21,,00:51,,,,VN-A354,A321,passenger
-SGN,departure,27427,drop,manual_sgn_dep_drop_blank_vna354_a321,2026-02-22,,02:30,,,,VN-A354,A321,passenger
-SGN,departure,28046,drop,manual_sgn_dep_drop_blank_vna354_a321,2026-02-24,,21:34,,,,VN-A354,A321,passenger
-SGN,departure,28583,drop,manual_sgn_dep_drop_blank_vna354_a321,2026-02-25,,21:08,,,,VN-A354,A321,passenger
-SGN,departure,28873,drop,manual_sgn_dep_drop_blank_vna354_a321,2026-02-25,,09:02,,,,VN-A354,A321,passenger
-SGN,departure,29557,drop,manual_sgn_dep_drop_blank_vna354_a321,2026-02-26,,00:40,,,,VN-A354,A321,passenger
-SGN,departure,31028,drop,manual_sgn_dep_drop_blank_vna354_a321,2026-03-02,,21:45,,,,VN-A354,A321,passenger
-SGN,departure,31198,drop,manual_sgn_dep_drop_blank_vna354_a321,2026-03-02,,13:11,,,,VN-A354,A321,passenger
-SGN,departure,31477,drop,manual_sgn_dep_drop_blank_vna354_a321,2026-03-03,,19:43,,,,VN-A354,A321,passenger
-SGN,departure,14084,drop,manual_sgn_dep_drop_blank_sun_phuquoc,2026-01-23,,07:45,,,Sun PhuQuoc Airways,,A21N,unknown
-SGN,departure,14091,drop,manual_sgn_dep_drop_blank_sun_phuquoc,2026-01-23,,07:17,,,Sun PhuQuoc Airways,,A21N,unknown
-SGN,departure,14099,drop,manual_sgn_dep_drop_blank_sun_phuquoc,2026-01-23,,06:41,,,Sun PhuQuoc Airways,,A321,unknown
-SGN,departure,14095,drop,manual_sgn_dep_drop_20260123_vasco_unknown,2026-01-23,,06:50,,,VASCO,,AT75,unknown
-HAN,departure,19761,drop,manual_han_dep_drop_conflicting_second_leg,2026-02-18,20:00,20:41,VN220,SGN,Vietnam Airlines,VN-A867,B789,passenger
-HAN,departure,22765,drop,manual_han_dep_drop_conflicting_second_leg,2026-02-27,19:50,21:16,VJ190,SGN,VietJet Air,VN-A546,A21N,passenger
-HAN,departure,22806,drop,manual_han_dep_drop_conflicting_second_leg,2026-02-27,18:25,18:53,9G868,SGN,Vietnam Airlines,VN-A280,A321,passenger
-HAN,departure,25780,drop,manual_han_dep_drop_conflicting_second_leg,2026-03-08,13:25,14:03,VU770,SGN,Bamboo Airways,VN-A129,A321,passenger
-HAN,departure,26580,drop,manual_han_dep_drop_conflicting_second_leg,2026-03-11,23:00,23:49,VN270,SGN,VietJet Air,VN-A616,A21N,passenger
-HAN,departure,26697,drop,manual_han_dep_drop_conflicting_second_leg,2026-03-11,14:50,15:10,VJ146,DAD,VietJet Air,VN-A636,A321,passenger
-HAN,departure,26722,drop,manual_han_dep_drop_conflicting_second_leg,2026-03-11,11:15,13:19,VJ188,SGN,Vietnam Airlines,LY-NVE,A320,passenger
-HAN,departure,27506,drop,manual_han_dep_drop_remaining_swap_true_vj171,2026-03-14,23:25,23:40,VJ171,SGN,VietJet Air,VN-A632,A321,passenger
-HAN,departure,18,update,manual_han_dep_20251216_schedule_fixes,2025-12-16,00:38,22:18,CZ8084,SZX,China Southern Airlines,B-9913,A320,passenger
-HAN,departure,19,update,manual_han_dep_20251216_schedule_fixes,2025-12-16,00:18,22:15,9G895,SGN,Sun PhuQuoc Airways,VN-A282,A21N,passenger
-HAN,departure,11892,drop,manual_han_dep_drop_vj191_20260124,2026-01-24,15:55,15:59,VJ191,SGN,VietJet Air,VN-A672,A320,passenger
-HAN,departure,28115,drop,manual_han_dep_drop_vj171_20260316,2026-03-16,23:25,23:31,VJ171,SGN,VietJet Air,VN-A536,A21N,passenger
-HAN,departure,27136,drop,manual_han_dep_drop_ok8903_20260312,2026-03-12,,06:33,OK8903,,,,,military or government
-HAN,departure,2574,drop,manual_han_dep_drop_blank_vnb469_c208,2025-12-24,,09:59,,,,VN-B469,C208,passenger
-HAN,departure,2891,drop,manual_han_dep_drop_blank_vnb469_c208,2025-12-25,,09:53,,,,VN-B469,C208,passenger
-HAN,departure,10497,drop,manual_han_dep_drop_blank_vnb469_c208,2026-01-19,,09:30,,,,VN-B469,C208,passenger
-HAN,departure,11683,drop,manual_han_dep_drop_blank_vnb469_c208,2026-01-23,,09:46,,,,VN-B469,C208,passenger
-HAN,departure,12890,drop,manual_han_dep_drop_blank_vnb469_c208,2026-01-27,,11:25,,,,VN-B469,C208,passenger
-HAN,departure,13200,drop,manual_han_dep_drop_blank_vnb469_c208,2026-01-28,,09:27,,,,VN-B469,C208,passenger
-HAN,departure,14407,drop,manual_han_dep_drop_blank_vnb469_c208,2026-02-01,,09:32,,,,VN-B469,C208,passenger
-HAN,departure,15027,drop,manual_han_dep_drop_blank_vnb469_c208,2026-02-03,,09:40,,,,VN-B469,C208,passenger
-HAN,departure,15989,drop,manual_han_dep_drop_blank_vnb469_c208,2026-02-06,,09:29,,,,VN-B469,C208,passenger
-HAN,departure,16310,drop,manual_han_dep_drop_blank_vnb469_c208,2026-02-07,,09:46,,,,VN-B469,C208,passenger
-HAN,departure,16657,drop,manual_han_dep_drop_blank_vnb469_c208,2026-02-08,,09:43,,,,VN-B469,C208,passenger
-HAN,departure,16984,drop,manual_han_dep_drop_blank_vnb469_c208,2026-02-09,,09:36,,,,VN-B469,C208,passenger
-HAN,departure,17997,drop,manual_han_dep_drop_blank_vnb469_c208,2026-02-12,,10:25,,,,VN-B469,C208,passenger
-HAN,departure,20572,drop,manual_han_dep_drop_blank_vnb469_c208,2026-02-20,,09:47,,,,VN-B469,C208,passenger
-HAN,departure,22192,drop,manual_han_dep_drop_blank_vnb469_c208,2026-02-25,,14:16,,,,VN-B469,C208,passenger
-HAN,departure,22262,drop,manual_han_dep_drop_blank_vnb469_c208,2026-02-25,,10:05,,,,VN-B469,C208,passenger
-HAN,departure,22593,drop,manual_han_dep_drop_blank_vnb469_c208,2026-02-26,,10:30,,,,VN-B469,C208,passenger
-HAN,departure,23279,drop,manual_han_dep_drop_blank_vnb469_c208,2026-02-28,,09:37,,,,VN-B469,C208,passenger
-HAN,departure,24572,drop,manual_han_dep_drop_blank_vnb469_c208,2026-03-04,,09:50,,,,VN-B469,C208,passenger
-HAN,departure,26476,drop,manual_han_dep_drop_blank_vnb469_c208,2026-03-10,,09:50,,,,VN-B469,C208,passenger
-HAN,departure,26781,drop,manual_han_dep_drop_blank_vnb469_c208,2026-03-11,,09:45,,,,VN-B469,C208,passenger
-HAN,departure,27081,drop,manual_han_dep_drop_blank_vnb469_c208,2026-03-12,,09:50,,,,VN-B469,C208,passenger
-HAN,departure,27082,drop,manual_han_dep_drop_blank_vnb469_c208,2026-03-12,,09:49,,,,VN-B469,C208,passenger
-HAN,departure,27713,drop,manual_han_dep_drop_blank_vnb469_c208,2026-03-14,,09:27,,,,VN-B469,C208,passenger
-HAN,departure,4509,drop,manual_han_dep_drop_blank_military,2025-12-30,,07:11,,,,,,military or government
-HAN,departure,4827,drop,manual_han_dep_drop_blank_military,2025-12-31,,07:41,,,,,,military or government
-HAN,departure,5446,drop,manual_han_dep_drop_blank_military,2026-01-02,,07:29,,,,,,military or government
-HAN,departure,7101,drop,manual_han_dep_drop_blank_military,2026-01-08,,18:16,,,,,,military or government
-HAN,departure,8502,drop,manual_han_dep_drop_ok8903_blank_military,2026-01-12,,06:44,OK8903,,,,,military or government
-HAN,departure,9099,drop,manual_han_dep_drop_ok8903_blank_military,2026-01-14,,06:44,OK8903,,,,,military or government
-HAN,departure,12721,drop,manual_han_dep_drop_blank_vna363_a321,2026-01-27,,21:56,,,,VN-A363,A321,passenger
-HAN,departure,12808,drop,manual_han_dep_drop_blank_vna363_a321,2026-01-27,,16:18,,,,VN-A363,A321,passenger
-HAN,departure,12883,drop,manual_han_dep_drop_blank_vna363_a321,2026-01-27,,11:50,,,,VN-A363,A321,passenger
-HAN,departure,12947,drop,manual_han_dep_drop_ok8902_20260127,2026-01-27,,06:45,OK8902,,,,,military or government
-HAN,departure,17921,drop,manual_han_dep_drop_20260212_1506_unknown,2026-02-12,,15:06,,,,,,unknown
+HAN,departure,475,update,manual_han_dep_c208_to_business_jet,2025-12-17,,09:43,,,Hai Au Aviation,VN-B466,C208,passenger
+HAN,departure,771,update,manual_han_dep_c208_to_business_jet,2025-12-18,,09:31,,,Hai Au Aviation,VN-B466,C208,passenger
+HAN,departure,1030,update,manual_han_dep_c208_to_business_jet,2025-12-19,,12:16,,,,VN-B469,C208,general aviation
+HAN,departure,1068,update,manual_han_dep_c208_to_business_jet,2025-12-19,,09:47,,,,VN-B469,C208,general aviation
+HAN,departure,1069,update,manual_han_dep_c208_to_business_jet,2025-12-19,,09:41,,,Hai Au Aviation,VN-B466,C208,passenger
+HAN,departure,1706,update,manual_han_dep_c208_to_business_jet,2025-12-21,,09:37,,,Hai Au Aviation,VN-B466,C208,passenger
+HAN,departure,2000,update,manual_han_dep_c208_to_business_jet,2025-12-22,,09:30,,,Hai Au Aviation,VN-B466,C208,passenger
+HAN,departure,2297,update,manual_han_dep_c208_to_business_jet,2025-12-23,,09:45,,,,VN-B469,C208,general aviation
+HAN,departure,2299,update,manual_han_dep_c208_to_business_jet,2025-12-23,,09:36,,,Hai Au Aviation,VN-B466,C208,passenger
+HAN,departure,2574,update,manual_han_dep_c208_to_business_jet,2025-12-24,,09:56,,,Hai Au Aviation,VN-B466,C208,passenger
+HAN,departure,2892,update,manual_han_dep_c208_to_business_jet,2025-12-25,,09:38,,,Hai Au Aviation,VN-B466,C208,passenger
+HAN,departure,3207,update,manual_han_dep_c208_to_business_jet,2025-12-26,,09:58,,NAV,,VN-B469,C208,passenger
+HAN,departure,3211,update,manual_han_dep_c208_to_business_jet,2025-12-26,,09:40,,,Hai Au Aviation,VN-B466,C208,passenger
+HAN,departure,4100,update,manual_han_dep_c208_to_business_jet,2025-12-29,,12:32,,NAV,,VN-B469,C208,passenger
+HAN,departure,4144,update,manual_han_dep_c208_to_business_jet,2025-12-29,,09:45,,,Hai Au Aviation,VN-B466,C208,passenger
+HAN,departure,4147,update,manual_han_dep_c208_to_business_jet,2025-12-29,,09:30,,NAV,,VN-B469,C208,passenger
+HAN,departure,9948,update,manual_han_dep_c208_to_business_jet,2026-01-17,,10:02,,NAV,,VN-B469,C208,passenger
+HAN,departure,14086,update,manual_han_dep_c208_to_business_jet,2026-01-31,,09:04,,NAV,,VN-B469,C208,passenger
+HAN,departure,14688,update,manual_han_dep_c208_to_business_jet,2026-02-02,,09:46,,NAV,,VN-B469,C208,passenger
+HAN,departure,15640,update,manual_han_dep_c208_to_business_jet,2026-02-05,,09:43,,NAV,,VN-B469,C208,passenger

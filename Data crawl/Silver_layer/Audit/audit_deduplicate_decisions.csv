@@ -56,7 +56,8 @@ SGN,departure,36599,36598,same_day_150m_window,0.0,Service_Date=2026-03-16|Fligh
 SGN,arrival,22368,22342,same_day_150m_window,66.0,Service_Date=2026-02-12 00:00:00|Flight_No=OK8902|IATA=<NA>|Destination=SGN
 HAN,departure,24251,24240,same_day_150m_window,39.0,Service_Date=2026-03-03|Flight_No=VJ905|IATA=KUL|Destination=Kuala Lumpur
 HAN,arrival,8532,8524,same_day_150m_window,72.0,Service_Date=2026-01-12 00:00:00|Flight_No=WW220|IATA=KUL|Destination=HAN
-HAN,arrival,23795,10962,same_day_150m_window,0.0,Service_Date=2026-01-22 00:00:00|Flight_No=9G868|IATA=SGN|Destination=HAN
+HAN,arrival,23796,10962,same_day_150m_window,0.0,Service_Date=2026-01-22 00:00:00|Flight_No=9G868|IATA=SGN|Destination=HAN
+HAN,arrival,21727,21725,same_day_150m_window,0.0,Service_Date=2026-03-05 00:00:00|Flight_No=VU774|IATA=SGN|Destination=HAN
 DAD,departure,7566,7565,same_day_150m_window,0.0,Service_Date=2026-02-11|Flight_No=QH195|IATA=SGN|Destination=Ho Chi Minh City
 DAD,departure,7863,7855,same_day_150m_window,55.0,Service_Date=2026-02-13|Flight_No=VN7147|IATA=SGN|Destination=Ho Chi Minh City
 DAD,departure,7865,7864,same_day_150m_window,0.0,Service_Date=2026-02-13|Flight_No=QH195|IATA=SGN|Destination=Ho Chi Minh City

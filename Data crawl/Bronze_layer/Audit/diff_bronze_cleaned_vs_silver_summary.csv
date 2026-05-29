@@ -1,7 +1,0 @@
-airport,mode,bronze_cleaned_rows,silver_rows,row_delta_silver_minus_bronze_cleaned,common_columns,bronze_only_columns,silver_only_columns
-SGN,arrival,36568,36521,-47,12,1,9
-HAN,arrival,23549,23510,-39,12,1,9
-DAD,arrival,12499,12499,0,13,1,8
-SGN,departure,36788,36720,-68,13,1,7
-HAN,departure,28392,28351,-41,13,1,7
-DAD,departure,12529,12524,-5,16,1,9
