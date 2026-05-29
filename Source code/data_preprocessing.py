@@ -5,6 +5,14 @@ from typing import Dict, List, Set, Tuple
 import numpy as np
 import pandas as pd
 
+from clean import (
+    apply_dad_arrival_belt_category_rule,
+    apply_route_name_fixes,
+    normalize_airline_values,
+    normalize_category_unknown,
+    normalize_terminal_values,
+)
+
 
 AIRPORTS = ("sgn", "han", "dad")
 ROUTES = [
@@ -19,10 +27,15 @@ ROUTES = [
 NA_TOKENS = {"", "nan", "none", "na", "n/a", "null"}
 RUNWAY_REGEX = r"^(0[1-9]|[1-3][0-9])[LR]$"
 
-RETURN_THRESHOLD_MINUTES_DEFAULT = 90
-RETURN_THRESHOLD_MAX_MINUTES = 120
+RETURN_THRESHOLD_MINUTES_DEFAULT = 150
+RETURN_THRESHOLD_MAX_MINUTES = 150
 ROUTE_MATCH_MAX_HOURS = 6.0
-DEDUP_NEAR_TIME_WINDOW_MINUTES = 60
+MISSING_ROUTE_MATCH_MAX_HOURS = 6.0
+DROP_DEPARTURES_WITHOUT_ARRIVAL = False
+DROP_ARRIVAL_WITHOUT_DEPARTURE_ROUTES: Set[Tuple[str, str]] = set()
+DEDUP_NEAR_TIME_WINDOW_MINUTES = 10
+DEDUP_CLUSTER_WINDOW_MINUTES = 150
+DEPARTURE_ARRIVAL_MATCH_EARLY_TOLERANCE_HOURS = 2.0
 
 DROP_SAME_ORIGIN_CATEGORIES = {"passenger", "unknown", "cargo"}
 TERMINAL_NON_PASSENGER_CATEGORIES = {
@@ -34,7 +47,6 @@ TERMINAL_NON_PASSENGER_CATEGORIES = {
     "ground vehicle",
     "non-categorized",
 }
-MILITARY_SIGNAL_CATEGORIES = {"military or government", "helicopter", "business jet"}
 
 VIETNAMESE_CARRIER_BY_PREFIX = {
     "0V": "VASCO",
@@ -79,6 +91,7 @@ RUNWAY_RULES = {
         "arrival": {
             "default": "25R",
             "reverse": "07L",
+            "emergency": "25L",
             "emergency_map": {"25R": "25L", "07L": "07R"},
         },
         "departure": {"default": "25L", "reverse": "07R"},
@@ -87,6 +100,7 @@ RUNWAY_RULES = {
         "arrival": {
             "default": "11L",
             "reverse": "29R",
+            "emergency": "11R",
             "emergency_map": {"11L": "11R", "29R": "29L"},
         },
         "departure": {"default": "11R", "reverse": "29L"},
@@ -95,6 +109,7 @@ RUNWAY_RULES = {
         "arrival": {
             "default": "35L",
             "reverse": "17R",
+            "emergency": "35R",
             "emergency_map": {"35L": "35R", "17R": "17L"},
         },
         "departure": {"default": "35R", "reverse": "17L"},
@@ -219,7 +234,34 @@ def parse_datetime_from_clock(crawl_date: pd.Series, clock_series: pd.Series) ->
     parsed = pd.Series(pd.NaT, index=clock_series.index, dtype="datetime64[ns]")
     valid = date_text.notna() & clock_text.notna()
     if valid.any():
-        combined = date_text.loc[valid] + " " + clock_text.loc[valid]
+        valid_clock = clock_text.loc[valid]
+        has_date = valid_clock.str.match(r"^\d{4}-\d{1,2}-\d{1,2}\b", na=False)
+
+        if has_date.any():
+            parsed.loc[valid_clock.loc[has_date].index] = pd.to_datetime(
+                valid_clock.loc[has_date],
+                errors="coerce",
+            )
+
+        clock_only = valid_clock.loc[~has_date]
+        if not clock_only.empty:
+            combined = date_text.loc[clock_only.index] + " " + clock_only
+            parsed.loc[clock_only.index] = pd.to_datetime(combined, errors="coerce")
+    return parsed
+
+
+def parse_datetime_on_crawl_date(crawl_date: pd.Series, clock_series: pd.Series) -> pd.Series:
+    date_text = crawl_date.astype("string").str.strip()
+    date_text = date_text.mask(date_text.str.lower().isin(NA_TOKENS))
+
+    clock_text = clock_series.astype("string").str.strip()
+    clock_text = clock_text.mask(clock_text.str.lower().isin(NA_TOKENS))
+    clock_part = clock_text.str.extract(r"(?P<clock>\d{1,2}:\d{2}(?::\d{2})?)", expand=False)
+
+    parsed = pd.Series(pd.NaT, index=clock_series.index, dtype="datetime64[ns]")
+    valid = date_text.notna() & clock_part.notna()
+    if valid.any():
+        combined = date_text.loc[valid] + " " + clock_part.loc[valid]
         parsed.loc[valid] = pd.to_datetime(combined, errors="coerce")
     return parsed
 
@@ -262,6 +304,64 @@ def shift_datetime_near_reference(
     return adjusted
 
 
+def shift_datetime_forward_if_far_behind(
+    target_dt: pd.Series,
+    reference_dt: pd.Series,
+    threshold_hours: float = 12.0,
+) -> pd.Series:
+    adjusted = target_dt.copy()
+    valid = target_dt.notna() & reference_dt.notna()
+    if not valid.any():
+        return adjusted
+
+    valid_idx = valid[valid].index
+    delta_hours = (
+        (target_dt.loc[valid_idx] - reference_dt.loc[valid_idx]).dt.total_seconds() / 3600.0
+    )
+    too_behind = delta_hours < -threshold_hours
+    if too_behind.any():
+        adjusted.loc[valid_idx[too_behind]] = adjusted.loc[valid_idx[too_behind]] + pd.Timedelta(days=1)
+
+    return adjusted
+
+
+def set_crawl_date_from_datetime(df: pd.DataFrame, datetime_series: pd.Series) -> int:
+    valid = datetime_series.notna()
+    if not valid.any():
+        return 0
+
+    current = df["Crawl_Date"].astype("string").str.strip()
+    current = current.mask(current.str.lower().isin(NA_TOKENS))
+    new_date = datetime_series.dt.strftime("%Y-%m-%d")
+    changed = valid & (current != new_date)
+    df.loc[valid, "Crawl_Date"] = new_date.loc[valid]
+    return int(changed.sum())
+
+
+def adjust_dad_arrival_crawl_date(df: pd.DataFrame) -> Tuple[pd.DataFrame, Dict[str, int]]:
+    out = df.copy()
+    stats = {"dad_arrival_crawl_date_shifted": 0}
+
+    if "Crawl_Date" not in out.columns or "Scheduled_Time" not in out.columns:
+        return out, stats
+
+    crawl_date = out["Crawl_Date"].astype("string").str.strip()
+    crawl_date = crawl_date.mask(crawl_date.str.lower().isin(NA_TOKENS))
+
+    scheduled_time = out["Scheduled_Time"].astype("string").str.strip()
+    scheduled_time = scheduled_time.mask(scheduled_time.str.lower().isin(NA_TOKENS))
+
+    scheduled_dt = parse_datetime_from_clock(crawl_date, scheduled_time)
+
+    if scheduled_dt.notna().any():
+        new_date = scheduled_dt.dt.strftime("%Y-%m-%d")
+        changed_mask = scheduled_dt.notna() & crawl_date.notna() & (new_date != crawl_date)
+        out.loc[scheduled_dt.notna(), "Crawl_Date"] = new_date
+        stats["dad_arrival_crawl_date_shifted"] = int(changed_mask.sum())
+
+    return out, stats
+
+
 def canonicalize_arrival_time_by_source(df: pd.DataFrame, airport: str) -> Tuple[pd.DataFrame, Dict[str, object]]:
     out = df.copy()
     stats: Dict[str, object] = {
@@ -292,22 +392,31 @@ def canonicalize_arrival_time_by_source(df: pd.DataFrame, airport: str) -> Tuple
         planned_landing_time = pd.Series(pd.NA, index=out.index, dtype="string")
         actual_landing_time = actual_time_raw.astype("string")
         duration_minutes = parse_duration_minutes(flight_time_raw)
+        if "Arrival_Flight_Duration_Minutes" in out.columns:
+            existing_duration = pd.to_numeric(out["Arrival_Flight_Duration_Minutes"], errors="coerce")
+            duration_minutes = duration_minutes.where(duration_minutes.notna(), existing_duration)
 
         duration_input = flight_time_raw.notna()
+        if "Arrival_Flight_Duration_Minutes" in out.columns:
+            duration_input = duration_input | out["Arrival_Flight_Duration_Minutes"].notna()
         stats["rows_duration_parsed"] = int(duration_minutes.notna().sum())
         stats["rows_duration_parse_failed"] = int((duration_input & duration_minutes.isna()).sum())
 
-    planned_dt = parse_datetime_from_clock(crawl_date, planned_landing_time)
-    actual_dt = parse_datetime_from_clock(crawl_date, actual_landing_time)
+    if airport == "DAD":
+        planned_dt = parse_datetime_on_crawl_date(crawl_date, planned_landing_time)
+        actual_dt = parse_datetime_on_crawl_date(crawl_date, actual_landing_time)
+    else:
+        planned_dt = parse_datetime_from_clock(crawl_date, planned_landing_time)
+        actual_dt = parse_datetime_from_clock(crawl_date, actual_landing_time)
 
     iata_series = out.get("IATA", pd.Series(pd.NA, index=out.index, dtype="string")).astype("string").str.upper().str.strip()
     domestic_mask = iata_series.isin(DOMESTIC_IATA_CODES)
 
     # Arrival rule:
-    #   - DAD: crawl_date is the day of actual_time; planned time may roll to next/prev day.
-    #   - SGN/HAN: crawl_date is the day of actual_time.
+    #   - DAD: Crawl_Date is the planned/scheduled landing date; actual may shift +/-1 day.
+    #   - SGN/HAN: Crawl_Date is the actual landing date.
     if airport == "DAD":
-        planned_dt = shift_datetime_near_reference(planned_dt, actual_dt)
+        actual_dt = shift_datetime_near_reference(actual_dt, planned_dt)
 
     out["Arrival_Planned_Landing_Time"] = planned_landing_time.astype("string")
     out["Arrival_Actual_Landing_Time"] = actual_landing_time.astype("string")
@@ -319,6 +428,11 @@ def canonicalize_arrival_time_by_source(df: pd.DataFrame, airport: str) -> Tuple
     out["Scheduled_Time"] = planned_landing_time.astype("string")
     out["Scheduled_DateTime"] = planned_dt
     out["Actual_DateTime"] = actual_dt
+
+    if airport == "DAD":
+        stats["crawl_date_realigned"] = set_crawl_date_from_datetime(out, planned_dt)
+    else:
+        stats["crawl_date_realigned"] = set_crawl_date_from_datetime(out, actual_dt)
 
     stats["rows_actual_landing_parsed"] = int(actual_dt.notna().sum())
     stats["rows_planned_landing_parsed"] = int(planned_dt.notna().sum())
@@ -335,48 +449,98 @@ def add_datetime_columns_with_rollover(df: pd.DataFrame, airport: str, mode: str
     if mode == "arrival":
         return canonicalize_arrival_time_by_source(out, airport=airport)
 
+    parse_departure_datetime = parse_datetime_on_crawl_date if airport == "DAD" else parse_datetime_from_clock
+
     if "Scheduled_Time" in out.columns:
-        out["Scheduled_DateTime"] = parse_datetime_from_clock(out["Crawl_Date"], out["Scheduled_Time"])
+        out["Scheduled_DateTime"] = parse_departure_datetime(out["Crawl_Date"], out["Scheduled_Time"])
     else:
         out["Scheduled_DateTime"] = pd.NaT
 
     if "Actual_Time" in out.columns:
-        out["Actual_DateTime"] = parse_datetime_from_clock(out["Crawl_Date"], out["Actual_Time"])
+        out["Actual_DateTime"] = parse_departure_datetime(out["Crawl_Date"], out["Actual_Time"])
     else:
         out["Actual_DateTime"] = pd.NaT
 
     # Departure rule:
-    #   - DAD: crawl_date is the scheduled day; actual may roll to next day.
-    #   - SGN/HAN: crawl_date is the actual day; scheduled may roll to prev/next day.
-    if airport != "DAD":
+    #   - DAD: Crawl_Date is the scheduled departure date; actual may shift +/-1 day.
+    #   - SGN/HAN: Crawl_Date is the actual departure date; scheduled may shift +/-1 day.
+    if airport == "DAD":
+        out["Actual_DateTime"] = shift_datetime_near_reference(
+            out["Actual_DateTime"],
+            out["Scheduled_DateTime"],
+        )
+        stats = {"crawl_date_realigned": set_crawl_date_from_datetime(out, out["Scheduled_DateTime"])}
+    else:
         out["Scheduled_DateTime"] = shift_datetime_near_reference(
             out["Scheduled_DateTime"],
             out["Actual_DateTime"],
         )
+        stats = {"crawl_date_realigned": set_crawl_date_from_datetime(out, out["Actual_DateTime"])}
 
-    if "Scheduled_Time" in out.columns and "Actual_Time" in out.columns:
-        sched_clock = pd.to_datetime(out["Scheduled_Time"], format="%H:%M", errors="coerce")
-        actual_clock = pd.to_datetime(out["Actual_Time"], format="%H:%M", errors="coerce")
+    return out, stats
 
-        sched_minutes = sched_clock.dt.hour * 60 + sched_clock.dt.minute
-        actual_minutes = actual_clock.dt.hour * 60 + actual_clock.dt.minute
 
-        # Only DAD departure may need +1 day for actual (crawl_date is scheduled day).
-        # HAN/SGN departure: crawl_date is actual day, so no +1 day.
-        if airport == "DAD":
-            rollover_mask = sched_minutes.notna() & actual_minutes.notna() & ((actual_minutes + 720) < sched_minutes)
-            out.loc[rollover_mask & out["Actual_DateTime"].notna(), "Actual_DateTime"] = (
-                out.loc[rollover_mask & out["Actual_DateTime"].notna(), "Actual_DateTime"] + pd.Timedelta(days=1)
-            )
+def collect_time_gap_over_12h_audit(df: pd.DataFrame, airport: str, mode: str) -> List[Dict[str, object]]:
+    audit_rows: List[Dict[str, object]] = []
 
-            # Fallback: scheduled missing but actual is early morning -> likely next day
-            sched_missing = out["Scheduled_Time"].isna() | out["Scheduled_Time"].astype("string").str.strip().eq("")
-            fallback_mask = sched_missing & actual_minutes.notna() & (actual_minutes < 300)
-            out.loc[fallback_mask & out["Actual_DateTime"].notna(), "Actual_DateTime"] = (
-                out.loc[fallback_mask & out["Actual_DateTime"].notna(), "Actual_DateTime"] + pd.Timedelta(days=1)
-            )
+    if "Crawl_Date" not in df.columns:
+        return audit_rows
 
-    return out, {}
+    if mode == "arrival":
+        if "Scheduled_Time" not in df.columns or "Actual_Time" not in df.columns:
+            return audit_rows
+        scheduled_raw = df["Scheduled_Time"].astype("string").str.strip()
+        actual_raw = df["Actual_Time"].astype("string").str.strip()
+    else:
+        if "Scheduled_Time" not in df.columns or "Actual_Time" not in df.columns:
+            return audit_rows
+        scheduled_raw = df["Scheduled_Time"].astype("string").str.strip()
+        actual_raw = df["Actual_Time"].astype("string").str.strip()
+
+    crawl_date = df["Crawl_Date"].astype("string").str.strip()
+    crawl_date = crawl_date.mask(crawl_date.str.lower().isin(NA_TOKENS))
+    scheduled_raw = scheduled_raw.mask(scheduled_raw.str.lower().isin(NA_TOKENS))
+    actual_raw = actual_raw.mask(actual_raw.str.lower().isin(NA_TOKENS))
+
+    scheduled_dt = parse_datetime_from_clock(crawl_date, scheduled_raw)
+    actual_dt = parse_datetime_from_clock(crawl_date, actual_raw)
+
+    for idx in df.index:
+        sched = scheduled_dt.at[idx]
+        actual = actual_dt.at[idx]
+        if pd.isna(sched) or pd.isna(actual):
+            continue
+
+        candidate_shifts = [-1, 0, 1]
+        candidate_gaps: Dict[int, float] = {}
+        for shift_days in candidate_shifts:
+            shifted_sched = sched + pd.Timedelta(days=shift_days)
+            candidate_gaps[shift_days] = abs((actual - shifted_sched).total_seconds() / 3600.0)
+
+        best_shift = min(candidate_gaps, key=candidate_gaps.get)
+        best_gap = candidate_gaps[best_shift]
+        raw_gap = abs((actual - sched).total_seconds() / 3600.0)
+
+        if best_gap <= 12:
+            continue
+
+        audit_rows.append(
+            {
+                "airport": airport,
+                "mode": mode,
+                "row_index": int(idx),
+                "crawl_date": df.at[idx, "Crawl_Date"] if "Crawl_Date" in df.columns else pd.NA,
+                "scheduled_time": df.at[idx, "Scheduled_Time"] if "Scheduled_Time" in df.columns else pd.NA,
+                "actual_time": df.at[idx, "Actual_Time"] if "Actual_Time" in df.columns else pd.NA,
+                "scheduled_datetime_raw": scheduled_dt.at[idx],
+                "actual_datetime_raw": actual_dt.at[idx],
+                "gap_hours_abs": round(raw_gap, 4),
+                "best_shift_days": best_shift,
+                "best_gap_hours_abs": round(best_gap, 4),
+            }
+        )
+
+    return audit_rows
 
 
 def cross_correct_arrival_dates(
@@ -618,254 +782,250 @@ def row_quality_score(row: pd.Series, mode: str) -> float:
     return score
 
 
-def deduplicate_flights(df: pd.DataFrame, airport: str, mode: str) -> Tuple[pd.DataFrame, List[Dict[str, object]], Dict[str, int]]:
+def compute_return_emergency_mask(
+    arrival_df: pd.DataFrame,
+    departure_df: pd.DataFrame | None,
+    airport: str,
+    return_threshold_minutes: int | None,
+) -> pd.Series:
+    mask = pd.Series(False, index=arrival_df.index)
+    if departure_df is None or return_threshold_minutes is None:
+        return mask
+    if "Flight_No" not in arrival_df.columns or "IATA" not in arrival_df.columns:
+        return mask
+
+    dep_event = event_datetime_series(departure_df)
+    dep_valid = departure_df.loc[departure_df["Flight_No"].notna() & dep_event.notna(), ["Flight_No"]].copy()
+    if dep_valid.empty:
+        return mask
+
+    dep_valid["Event_DateTime"] = dep_event.loc[dep_valid.index]
+    dep_valid["Flight_Key"] = dep_valid["Flight_No"].astype("string").str.upper().str.strip()
+
+    dep_times_by_flight: Dict[str, np.ndarray] = {}
+    for flight_key, grp in dep_valid.groupby("Flight_Key"):
+        dep_times_by_flight[str(flight_key)] = grp["Event_DateTime"].sort_values().to_numpy(dtype="datetime64[ns]")
+
+    arr_event = event_datetime_series(arrival_df)
+    same_origin_mask = arrival_df["IATA"].astype("string").str.upper().eq(airport)
+    for idx in arrival_df.loc[same_origin_mask & arr_event.notna()].index:
+        flight_no = arrival_df.at[idx, "Flight_No"]
+        if pd.isna(flight_no):
+            continue
+        flight_key = str(flight_no).strip().upper()
+        dep_times = dep_times_by_flight.get(flight_key)
+        if dep_times is None or dep_times.size == 0:
+            continue
+        event_time = arr_event.at[idx]
+        pos = np.searchsorted(dep_times, np.datetime64(event_time), side="right") - 1
+        if pos < 0:
+            continue
+        gap_minutes = (pd.Timestamp(event_time) - pd.Timestamp(dep_times[pos])).total_seconds() / 60.0
+        if 0 <= gap_minutes <= float(return_threshold_minutes):
+            mask.at[idx] = True
+    return mask
+
+
+def compute_departure_return_emergency_link_mask(
+    departure_df: pd.DataFrame,
+    arrival_df: pd.DataFrame | None,
+    airport: str,
+    return_threshold_minutes: int | None,
+) -> pd.Series:
+    mask = pd.Series(False, index=departure_df.index)
+    if arrival_df is None or return_threshold_minutes is None:
+        return mask
+    if "Flight_No" not in departure_df.columns or "Flight_No" not in arrival_df.columns:
+        return mask
+    if "IATA" not in arrival_df.columns:
+        return mask
+
+    dep_event = event_datetime_series(departure_df)
+    dep_valid = departure_df.loc[departure_df["Flight_No"].notna() & dep_event.notna(), ["Flight_No"]].copy()
+    if dep_valid.empty:
+        return mask
+
+    dep_valid["Event_DateTime"] = dep_event.loc[dep_valid.index]
+    dep_valid["Flight_Key"] = dep_valid["Flight_No"].astype("string").str.upper().str.strip()
+
+    dep_by_flight: Dict[str, pd.DataFrame] = {}
+    for flight_key, grp in dep_valid.groupby("Flight_Key"):
+        dep_by_flight[str(flight_key)] = grp.sort_values("Event_DateTime")
+
+    arr_event = event_datetime_series(arrival_df)
+    same_origin = arrival_df["IATA"].astype("string").str.upper().eq(airport)
+    explicit_return = (
+        arrival_df["Is_Return_Emergency"].astype("string").str.lower().eq("true")
+        if "Is_Return_Emergency" in arrival_df.columns
+        else pd.Series(False, index=arrival_df.index)
+    )
+    arrival_candidates = same_origin & arr_event.notna()
+    if explicit_return.any():
+        arrival_candidates = arrival_candidates | explicit_return
+
+    for idx in arrival_df.loc[arrival_candidates].index:
+        flight_no = arrival_df.at[idx, "Flight_No"]
+        if pd.isna(flight_no):
+            continue
+        flight_key = str(flight_no).strip().upper()
+        dep_group = dep_by_flight.get(flight_key)
+        if dep_group is None or dep_group.empty:
+            continue
+
+        event_time = pd.Timestamp(arr_event.at[idx])
+        lower = event_time - pd.Timedelta(minutes=float(return_threshold_minutes))
+        linked = dep_group[
+            (dep_group["Event_DateTime"] >= lower)
+            & (dep_group["Event_DateTime"] <= event_time)
+        ]
+        if not linked.empty:
+            mask.loc[linked.index] = True
+
+    return mask
+
+
+def deduplicate_flights(
+    df: pd.DataFrame,
+    airport: str,
+    mode: str,
+    departure_df: pd.DataFrame | None = None,
+    arrival_df: pd.DataFrame | None = None,
+    return_threshold_minutes: int | None = None,
+) -> Tuple[pd.DataFrame, List[Dict[str, object]], Dict[str, int]]:
     deduped = df.copy()
     audit_rows: List[Dict[str, object]] = []
     event_time = event_datetime_series(deduped)
-    rw_col = runway_column(mode)
 
-    tail_col = "Tail_Number"
-    if tail_col not in deduped.columns and "Scheduled_Tail" in deduped.columns:
-        tail_col = "Scheduled_Tail"
-    if tail_col not in deduped.columns and "Actual_Tail" in deduped.columns:
-        tail_col = "Actual_Tail"
+    if "Crawl_Date" not in deduped.columns:
+        deduped["Crawl_Date"] = pd.NA
 
-    route_col = route_column(mode)
-    group_cols = [
-        c
-        for c in [
-            # NOTE: Crawl_Date removed so that the same flight appearing on adjacent
-            # FR24 history pages (midnight overlap) is still detected as a duplicate.
-            "Flight_No",
-            "Scheduled_Time",
-            "IATA",
-            route_col,
-            tail_col,
-            "Aircraft_Type",
-        ]
-        if c in deduped.columns
-    ]
+    dest_col = "Destination"
+    if mode == "arrival":
+        dest_col = "_Dedup_Destination"
+        deduped[dest_col] = airport.upper()
+    elif dest_col not in deduped.columns:
+        deduped[dest_col] = pd.NA
+
+    if "Scheduled_DateTime" in deduped.columns:
+        scheduled_dt = pd.to_datetime(deduped["Scheduled_DateTime"], errors="coerce")
+    elif "Scheduled_Time" in deduped.columns:
+        scheduled_dt = parse_datetime_from_clock(deduped["Crawl_Date"], deduped["Scheduled_Time"])
+    else:
+        scheduled_dt = pd.Series(pd.NaT, index=deduped.index, dtype="datetime64[ns]")
+
+    deduped["_Dedup_Service_Date"] = scheduled_dt.dt.date
+    crawl_date = pd.to_datetime(deduped["Crawl_Date"], errors="coerce")
+    missing_service_date = deduped["_Dedup_Service_Date"].isna()
+    deduped.loc[missing_service_date, "_Dedup_Service_Date"] = crawl_date.loc[missing_service_date].dt.date
+
+    group_cols = ["_Dedup_Service_Date", "Flight_No", "IATA", dest_col]
+    group_cols = [c for c in group_cols if c in deduped.columns]
 
     if not group_cols:
         stats = {
             "exact_duplicate_removed": 0,
             "cluster_duplicate_removed": 0,
-            "near_time_duplicate_removed": 0,
+            "same_day_60m_duplicate_removed": 0,
             "dual_runway_duplicate_removed": 0,
         }
         return deduped, audit_rows, stats
 
+    return_emergency_mask = pd.Series(False, index=deduped.index)
+    if mode == "arrival":
+        return_emergency_mask = compute_return_emergency_mask(
+            deduped,
+            departure_df,
+            airport.upper(),
+            return_threshold_minutes,
+        )
+    elif mode == "departure":
+        return_emergency_mask = compute_departure_return_emergency_link_mask(
+            deduped,
+            arrival_df,
+            airport.upper(),
+            return_threshold_minutes,
+        )
+
     to_drop: Set[int] = set()
     cluster_removed = 0
-    near_time_removed = 0
-    dual_runway_removed = 0
 
     grouped = deduped.groupby(group_cols, dropna=False, sort=False)
     for _, group in grouped:
         if len(group) <= 1:
+            continue
+        if "Flight_No" in group.columns and group["Flight_No"].isna().all():
             continue
 
         group_event = event_time.loc[group.index].dropna().sort_values()
         if len(group_event) < 2:
             continue
 
-        cluster_indices: List[int] = [int(group_event.index[0])]
-        cluster_times: List[pd.Timestamp] = [pd.Timestamp(group_event.iloc[0])]
+        # 1. Gom nhóm theo NGÀY của actual time
+        event_dates = group_event.dt.date
+        for date_value, date_events in group_event.groupby(event_dates):
+            if len(date_events) <= 1:
+                continue
 
-        def process_cluster(indices: List[int], times: List[pd.Timestamp]) -> None:
-            nonlocal cluster_removed, near_time_removed, dual_runway_removed
-            if len(indices) <= 1:
-                return
+            # 2. LOGIC: Trong cung 1 ngay, phan cum neu cach nhau qua dedup window.
+            sub_clusters = (date_events.diff() > pd.Timedelta(minutes=DEDUP_CLUSTER_WINDOW_MINUTES)).cumsum()
 
-            cluster_frame = deduped.loc[indices].copy()
-            flight_complete = "Flight_No" in cluster_frame.columns and cluster_frame["Flight_No"].notna().all()
-            tail_complete = tail_col in cluster_frame.columns and cluster_frame[tail_col].notna().all()
-            aircraft_complete = "Aircraft_Type" in cluster_frame.columns and cluster_frame["Aircraft_Type"].notna().all()
-            scheduled_complete = "Scheduled_Time" in cluster_frame.columns and cluster_frame["Scheduled_Time"].notna().all()
-
-            runways = (
-                cluster_frame[rw_col].astype("string").str.upper().str.strip().dropna()
-                if rw_col in cluster_frame.columns
-                else pd.Series([], dtype="string")
-            )
-            runways = runways[~runways.str.lower().isin(NA_TOKENS)] if not runways.empty else runways
-
-            dual_runway_candidate = (
-                flight_complete
-                and scheduled_complete
-                and tail_complete
-                and aircraft_complete
-                and runways.nunique(dropna=True) >= 2
-            )
-            near_time_candidate = flight_complete and (tail_complete or aircraft_complete)
-
-            if not dual_runway_candidate and not near_time_candidate:
-                return
-
-            reason = "dual_runway" if dual_runway_candidate else "near_time"
-
-            scored = cluster_frame.copy()
-            scored["_score"] = scored.apply(lambda row: row_quality_score(row, mode), axis=1)
-            scored["_event_sort"] = event_time.loc[scored.index].fillna(pd.Timestamp("1900-01-01"))
-            best_idx = int(scored.sort_values(["_score", "_event_sort"], ascending=[False, False]).index[0])
-
-            key_signature = "|".join(
-                [
-                    f"Flight_No={cluster_frame.at[best_idx, 'Flight_No'] if 'Flight_No' in cluster_frame.columns else 'N/A'}",
-                    f"Scheduled_Time={cluster_frame.at[best_idx, 'Scheduled_Time'] if 'Scheduled_Time' in cluster_frame.columns else 'N/A'}",
-                    f"Aircraft_Type={cluster_frame.at[best_idx, 'Aircraft_Type'] if 'Aircraft_Type' in cluster_frame.columns else 'N/A'}",
-                    f"Tail={cluster_frame.at[best_idx, tail_col] if tail_col in cluster_frame.columns else 'N/A'}",
-                ]
-            )
-
-            kept_event = event_time.at[best_idx]
-            for idx in indices:
-                if idx == best_idx:
+            for cluster_id, cluster_events in date_events.groupby(sub_clusters):
+                indices = [int(idx) for idx in cluster_events.index]
+                if len(indices) <= 1:
                     continue
-                to_drop.add(int(idx))
-                cluster_removed += 1
-                if reason == "dual_runway":
-                    dual_runway_removed += 1
-                else:
-                    near_time_removed += 1
 
-                gap_minutes = np.nan
-                dropped_event = event_time.at[idx]
-                if pd.notna(kept_event) and pd.notna(dropped_event):
-                    gap_minutes = abs((pd.Timestamp(dropped_event) - pd.Timestamp(kept_event)).total_seconds()) / 60.0
+                if mode == "arrival" and return_emergency_mask.loc[indices].any():
+                    gaps = cluster_events.diff().dropna().dt.total_seconds().abs() / 60.0
+                    if not gaps.empty and gaps.min() <= DEDUP_NEAR_TIME_WINDOW_MINUTES:
+                        continue
+                if mode == "departure" and return_emergency_mask.loc[indices].any():
+                    continue
 
-                audit_rows.append(
-                    {
+                kept_idx = int(cluster_events.idxmax())
+                kept_event = event_time.at[kept_idx]
+
+                key_signature = "|".join([
+                    f"Service_Date={deduped.at[kept_idx, '_Dedup_Service_Date'] if '_Dedup_Service_Date' in deduped.columns else 'N/A'}",
+                    f"Flight_No={deduped.at[kept_idx, 'Flight_No'] if 'Flight_No' in deduped.columns else 'N/A'}",
+                    f"IATA={deduped.at[kept_idx, 'IATA'] if 'IATA' in deduped.columns else 'N/A'}",
+                    f"Destination={deduped.at[kept_idx, dest_col] if dest_col in deduped.columns else 'N/A'}",
+                ])
+
+                for idx in indices:
+                    if idx == kept_idx:
+                        continue
+                    to_drop.add(int(idx))
+                    cluster_removed += 1
+
+                    gap_minutes = np.nan
+                    dropped_event = event_time.at[idx]
+                    if pd.notna(kept_event) and pd.notna(dropped_event):
+                        gap_minutes = abs((pd.Timestamp(kept_event) - pd.Timestamp(dropped_event)).total_seconds()) / 60.0
+
+                    audit_rows.append({
                         "airport": airport,
                         "mode": mode,
                         "row_index_dropped": int(idx),
-                        "row_index_kept": int(best_idx),
-                        "dedup_reason": reason,
+                        "row_index_kept": int(kept_idx),
+                        "dedup_reason": f"same_day_{DEDUP_CLUSTER_WINDOW_MINUTES}m_window",
                         "actual_time_gap_minutes": gap_minutes,
                         "key_signature": key_signature,
-                    }
-                )
-
-        for idx, ts in group_event.iloc[1:].items():
-            current_idx = int(idx)
-            current_ts = pd.Timestamp(ts)
-            prev_ts = cluster_times[-1]
-            gap_minutes = (current_ts - prev_ts).total_seconds() / 60.0
-
-            if gap_minutes <= DEDUP_NEAR_TIME_WINDOW_MINUTES:
-                cluster_indices.append(current_idx)
-                cluster_times.append(current_ts)
-            else:
-                process_cluster(cluster_indices, cluster_times)
-                cluster_indices = [current_idx]
-                cluster_times = [current_ts]
-
-        process_cluster(cluster_indices, cluster_times)
+                    })
 
     if to_drop:
         deduped = deduped.drop(index=list(sorted(to_drop))).copy()
 
+    helper_dedup_cols = [c for c in ["_Dedup_Destination", "_Dedup_Service_Date"] if c in deduped.columns]
+    if helper_dedup_cols:
+        deduped = deduped.drop(columns=helper_dedup_cols)
+
     stats = {
         "exact_duplicate_removed": 0,
         "cluster_duplicate_removed": cluster_removed,
-        "near_time_duplicate_removed": near_time_removed,
-        "dual_runway_duplicate_removed": dual_runway_removed,
+        "same_day_60m_duplicate_removed": cluster_removed,
+        "dual_runway_duplicate_removed": 0,
     }
     return deduped, audit_rows, stats
-
-
-def normalize_spq_flight_number(
-    df: pd.DataFrame,
-    airport: str,
-    mode: str,
-) -> Tuple[pd.DataFrame, List[Dict[str, object]], Dict[str, int]]:
-    out = df.copy()
-    audit_rows: List[Dict[str, object]] = []
-
-    if "Flight_No" not in out.columns:
-        return out, audit_rows, {"spq_to_9g_converted": 0, "spq_to_9g_airline_match": 0, "spq_to_9g_pattern_match": 0}
-
-    flight_no = out["Flight_No"].astype("string")
-    flight_norm = flight_no.str.upper().str.strip()
-    spq_mask = flight_norm.str.match(r"^SPQ(\d+)$", na=False)
-
-    if "Airline" in out.columns:
-        airline = out["Airline"].astype("string").str.upper().str.strip()
-    else:
-        airline = pd.Series(pd.NA, index=out.index, dtype="string")
-
-    airline_missing = airline.isna() | airline.str.lower().isin(NA_TOKENS)
-    airline_match = airline.str.match(r"^SUN\s*PHU\s*QUOC\s*AIRWAYS$", na=False)
-
-    convert_airline = spq_mask & airline_match
-    convert_pattern = spq_mask & airline_missing
-    convert_mask = convert_airline | convert_pattern
-
-    if convert_mask.any():
-        out.loc[convert_mask, "Flight_No"] = flight_norm.loc[convert_mask].str.replace(r"^SPQ", "9G", regex=True)
-
-    for idx in out.loc[convert_mask].index:
-        rule = "airline_match" if bool(convert_airline.at[idx]) else "pattern_match"
-        audit_rows.append(
-            {
-                "airport": airport,
-                "mode": mode,
-                "row_index": int(idx),
-                "airline_before": df.at[idx, "Airline"] if "Airline" in df.columns else pd.NA,
-                "flight_no_before": df.at[idx, "Flight_No"],
-                "flight_no_after": out.at[idx, "Flight_No"],
-                "converted_by_rule": rule,
-            }
-        )
-
-    stats = {
-        "spq_to_9g_converted": int(convert_mask.sum()),
-        "spq_to_9g_airline_match": int(convert_airline.sum()),
-        "spq_to_9g_pattern_match": int(convert_pattern.sum()),
-    }
-    return out, audit_rows, stats
-
-
-def apply_dad_specific_fixes(
-    df: pd.DataFrame,
-    airport: str,
-) -> Tuple[pd.DataFrame, Dict[str, int]]:
-    if airport != "DAD":
-        return df, {
-            "dad_cancelled_cleared": 0,
-            "dad_bl_to_vn": 0,
-            "dad_airline_pacific_to_vietnam": 0,
-        }
-
-    out = df.copy()
-    stats = {
-        "dad_cancelled_cleared": 0,
-        "dad_bl_to_vn": 0,
-        "dad_airline_pacific_to_vietnam": 0,
-    }
-
-    if "Status" in out.columns:
-        status = out["Status"].astype("string").str.strip()
-        cancelled_mask = status.str.lower().eq("cancelled")
-        if cancelled_mask.any():
-            out.loc[cancelled_mask, "Status"] = pd.NA
-            stats["dad_cancelled_cleared"] = int(cancelled_mask.sum())
-
-    if "Flight_No" in out.columns:
-        flight_no = out["Flight_No"].astype("string").str.upper().str.strip()
-        bl_mask = flight_no.str.match(r"^BL(\d+)$", na=False)
-        if bl_mask.any():
-            out.loc[bl_mask, "Flight_No"] = flight_no.loc[bl_mask].str.replace(r"^BL", "VN", regex=True)
-            stats["dad_bl_to_vn"] = int(bl_mask.sum())
-
-    if "Airline" in out.columns:
-        airline = out["Airline"].astype("string").str.strip()
-        pac_mask = airline.str.lower().eq("pacific airlines")
-        if pac_mask.any():
-            out.loc[pac_mask, "Airline"] = "Vietnam Airlines"
-            stats["dad_airline_pacific_to_vietnam"] = int(pac_mask.sum())
-
-    return out, stats
 
 
 def infer_runway_orientation(
@@ -874,11 +1034,13 @@ def infer_runway_orientation(
     mode: str,
     window_minutes: int = 30,
     min_ratio: float = 0.6,
+    event_time: pd.Series | None = None,
 ) -> pd.Series:
     orientation = pd.Series(pd.NA, index=df.index, dtype="string")
     rw_col = runway_column(mode)
 
-    event_time = event_datetime_series(df)
+    if event_time is None:
+        event_time = event_datetime_series(df)
     valid_rows = event_time.notna()
     if not valid_rows.any():
         return orientation
@@ -936,6 +1098,80 @@ def infer_runway_orientation(
     return orientation
 
 
+def runway_from_orientation(airport: str, mode: str, orientation: object) -> str:
+    if pd.notna(orientation) and str(orientation).strip().lower() == "reverse":
+        return RUNWAY_RULES[airport][mode]["reverse"]
+    return RUNWAY_RULES[airport][mode]["default"]
+
+
+def fill_runway_from_nearest_window(
+    df: pd.DataFrame,
+    rw_col: str,
+    event_time: pd.Series,
+    needs_fill: pd.Series,
+    window_minutes: int = 30,
+    use_nearest: bool = False,
+    fallback_to_nearest_any: bool = False,
+) -> int:
+    valid_runway = df[rw_col].astype("string").str.match(RUNWAY_REGEX, na=False)
+    filled_count = 0
+
+    if not valid_runway.any() or not needs_fill.any() or not event_time.notna().any():
+        return filled_count
+
+    known_idx = df.loc[valid_runway].index
+    known_times = event_time.loc[known_idx]
+    known_runways = df.loc[known_idx, rw_col].astype("string")
+
+    window_ns = int(pd.Timedelta(minutes=window_minutes).value)
+    sorted_known = known_times.sort_values()
+    sorted_times_ns = sorted_known.astype("datetime64[ns]").astype("int64").to_numpy()
+    sorted_runways = known_runways.loc[sorted_known.index].to_numpy()
+
+    target_idx = event_time.loc[needs_fill & event_time.notna()].sort_values().index
+    target_times_ns = event_time.loc[target_idx].astype("datetime64[ns]").astype("int64").to_numpy()
+
+    left = 0
+    right = 0
+    n_known = len(sorted_times_ns)
+
+    for pos, t_ns in enumerate(target_times_ns):
+        idx = target_idx[pos]
+        lower = t_ns - window_ns
+        upper = t_ns + window_ns
+
+        while left < n_known and sorted_times_ns[left] < lower:
+            left += 1
+        while right < n_known and sorted_times_ns[right] <= upper:
+            right += 1
+
+        window_runways = sorted_runways[left:right]
+        if len(window_runways) > 0:
+            if use_nearest:
+                window_times = sorted_times_ns[left:right]
+                nearest_pos = int(np.argmin(np.abs(window_times - t_ns)))
+                df.at[idx, rw_col] = str(window_runways[nearest_pos])
+                filled_count += 1
+            else:
+                mode_rw = pd.Series(window_runways).mode()
+                if not mode_rw.empty:
+                    df.at[idx, rw_col] = str(mode_rw.iloc[0])
+                    filled_count += 1
+        elif fallback_to_nearest_any and n_known > 0:
+            insert_pos = int(np.searchsorted(sorted_times_ns, t_ns, side="left"))
+            candidate_positions = []
+            if insert_pos < n_known:
+                candidate_positions.append(insert_pos)
+            if insert_pos > 0:
+                candidate_positions.append(insert_pos - 1)
+            if candidate_positions:
+                nearest_pos = min(candidate_positions, key=lambda p: abs(sorted_times_ns[p] - t_ns))
+                df.at[idx, rw_col] = str(sorted_runways[nearest_pos])
+                filled_count += 1
+
+    return filled_count
+
+
 def fill_runway_values(df: pd.DataFrame, airport: str, mode: str) -> Tuple[pd.DataFrame, Dict[str, int]]:
     out = df.copy()
     rw_col = runway_column(mode)
@@ -948,108 +1184,99 @@ def fill_runway_values(df: pd.DataFrame, airport: str, mode: str) -> Tuple[pd.Da
     }
 
     if airport == "DAD" and mode == "departure":
-        event_time = event_datetime_series(out)
-        valid_runway = out[rw_col].astype("string").str.match(RUNWAY_REGEX, na=False)
+        if "Scheduled_DateTime" in out.columns:
+            event_time = pd.to_datetime(out["Scheduled_DateTime"], errors="coerce")
+        else:
+            event_time = event_datetime_series(out)
+        out["_Runway_Orientation"] = infer_runway_orientation(
+            out,
+            airport=airport,
+            mode=mode,
+            event_time=event_time,
+        )
         needs_fill = out[rw_col].isna() | out[rw_col].astype("string").str.strip().str.lower().eq("unknown")
 
-        before_unknown = int(needs_fill.sum())
-        filled_count = 0
-
-        if valid_runway.any() and needs_fill.any() and event_time.notna().any():
-            known_idx = out.loc[valid_runway].index
-            known_times = event_time.loc[known_idx]
-            known_runways = out.loc[known_idx, rw_col].astype("string")
-
-            window_ns = int(pd.Timedelta(minutes=30).value)
-            sorted_known = known_times.sort_values()
-            sorted_times_ns = sorted_known.astype("datetime64[ns]").astype("int64").to_numpy()
-            sorted_runways = known_runways.loc[sorted_known.index].to_numpy()
-
-            target_idx = out.loc[needs_fill & event_time.notna()].index
-            target_times_ns = event_time.loc[target_idx].astype("datetime64[ns]").astype("int64").to_numpy()
-
-            left = 0
-            right = 0
-            n_known = len(sorted_times_ns)
-
-            for pos, t_ns in enumerate(target_times_ns):
-                idx = target_idx[pos]
-                lower = t_ns - window_ns
-                upper = t_ns + window_ns
-
-                while left < n_known and sorted_times_ns[left] < lower:
-                    left += 1
-                while right < n_known and sorted_times_ns[right] <= upper:
-                    right += 1
-
-                window_runways = sorted_runways[left:right]
-                if len(window_runways) > 0:
-                    # pick the most frequent runway in the window
-                    unique, counts = pd.Series(window_runways).value_counts().index[0], pd.Series(window_runways).value_counts().iloc[0]
-                    # use pd.Series mode for clarity
-                    mode_rw = pd.Series(window_runways).mode()
-                    if not mode_rw.empty:
-                        out.at[idx, rw_col] = str(mode_rw.iloc[0])
-                        filled_count += 1
+        filled_count = fill_runway_from_nearest_window(
+            out,
+            rw_col=rw_col,
+            event_time=event_time,
+            needs_fill=needs_fill,
+            window_minutes=30,
+            use_nearest=True,
+            fallback_to_nearest_any=True,
+        )
 
         stats["runway_filled_nearest"] = filled_count
         remaining = out[rw_col].isna() | out[rw_col].astype("string").str.strip().str.lower().eq("unknown")
-        stats["runway_marked_unknown_dad"] = int(remaining.sum())
-        out.loc[remaining, rw_col] = "Unknown"
-        out["_Runway_Orientation"] = pd.NA
+        stats["runway_filled_default"] = int(remaining.sum())
+        if remaining.any():
+            out.loc[remaining, rw_col] = [
+                runway_from_orientation(airport, mode, out.at[idx, "_Runway_Orientation"])
+                for idx in out.loc[remaining].index
+            ]
         return out, stats
 
     if airport == "DAD" and mode == "arrival":
-        orientation = infer_runway_orientation(out, airport=airport, mode=mode)
-        out["_Runway_Orientation"] = orientation
+        if "Scheduled_DateTime" in out.columns:
+            event_time = pd.to_datetime(out["Scheduled_DateTime"], errors="coerce")
+        else:
+            event_time = event_datetime_series(out)
+        out["_Runway_Orientation"] = infer_runway_orientation(
+            out,
+            airport=airport,
+            mode=mode,
+            event_time=event_time,
+        )
+        needs_fill = out[rw_col].isna() | out[rw_col].astype("string").str.strip().str.lower().eq("unknown")
+        stats["runway_filled_nearest"] = fill_runway_from_nearest_window(
+            out,
+            rw_col=rw_col,
+            event_time=event_time,
+            needs_fill=needs_fill,
+            window_minutes=30,
+            use_nearest=True,
+            fallback_to_nearest_any=True,
+        )
 
-        default_rw = RUNWAY_RULES[airport][mode]["default"]
-        reverse_rw = RUNWAY_RULES[airport][mode]["reverse"]
-
-        missing_mask = out[rw_col].isna()
-        fill_default = missing_mask & out["_Runway_Orientation"].eq("default")
-        fill_reverse = missing_mask & out["_Runway_Orientation"].eq("reverse")
-
-        out.loc[fill_default, rw_col] = default_rw
-        out.loc[fill_reverse, rw_col] = reverse_rw
-        stats["runway_filled_orientation"] = int(fill_default.sum() + fill_reverse.sum())
-
-        remaining_mask = out[rw_col].isna()
+        remaining_mask = out[rw_col].isna() | out[rw_col].astype("string").str.strip().str.lower().eq("unknown")
         if remaining_mask.any():
-            stats["runway_marked_unknown_dad"] = int(remaining_mask.sum())
-            out.loc[remaining_mask, rw_col] = "Unknown"
+            stats["runway_filled_default"] = int(remaining_mask.sum())
+            out.loc[remaining_mask, rw_col] = [
+                runway_from_orientation(airport, mode, out.at[idx, "_Runway_Orientation"])
+                for idx in out.loc[remaining_mask].index
+            ]
 
         return out, stats
 
-    orientation = infer_runway_orientation(out, airport=airport, mode=mode)
-    out["_Runway_Orientation"] = orientation
-
-    default_rw = RUNWAY_RULES[airport][mode]["default"]
-    reverse_rw = RUNWAY_RULES[airport][mode]["reverse"]
-
-    missing_mask = out[rw_col].isna()
-    fill_default = missing_mask & out["_Runway_Orientation"].eq("default")
-    fill_reverse = missing_mask & out["_Runway_Orientation"].eq("reverse")
-
-    out.loc[fill_default, rw_col] = default_rw
-    out.loc[fill_reverse, rw_col] = reverse_rw
-    stats["runway_filled_orientation"] = int(fill_default.sum() + fill_reverse.sum())
-
-    remaining_mask = out[rw_col].isna()
-    if remaining_mask.any():
+    if "Actual_DateTime" in out.columns:
+        event_time = pd.to_datetime(out["Actual_DateTime"], errors="coerce")
+    else:
         event_time = event_datetime_series(out)
-        order = event_time.sort_values().index
-        propagated = out.loc[order, rw_col].ffill().bfill()
 
-        before_remaining = int(remaining_mask.sum())
-        out.loc[order, rw_col] = out.loc[order, rw_col].fillna(propagated)
-        after_nearest = int(out[rw_col].isna().sum())
-        stats["runway_filled_nearest"] = before_remaining - after_nearest
+    out["_Runway_Orientation"] = infer_runway_orientation(
+        out,
+        airport=airport,
+        mode=mode,
+        event_time=event_time,
+    )
+    needs_fill = out[rw_col].isna() | out[rw_col].astype("string").str.strip().str.lower().eq("unknown")
+    stats["runway_filled_nearest"] = fill_runway_from_nearest_window(
+        out,
+        rw_col=rw_col,
+        event_time=event_time,
+        needs_fill=needs_fill,
+        window_minutes=30,
+        use_nearest=True,
+        fallback_to_nearest_any=False,
+    )
 
-    remaining_mask = out[rw_col].isna()
+    remaining_mask = out[rw_col].isna() | out[rw_col].astype("string").str.strip().str.lower().eq("unknown")
     if remaining_mask.any():
         stats["runway_filled_default"] = int(remaining_mask.sum())
-        out.loc[remaining_mask, rw_col] = default_rw
+        out.loc[remaining_mask, rw_col] = [
+            runway_from_orientation(airport, mode, out.at[idx, "_Runway_Orientation"])
+            for idx in out.loc[remaining_mask].index
+        ]
 
     return out, stats
 
@@ -1061,6 +1288,15 @@ def normalize_category_value(value: object) -> str:
     if text in NA_TOKENS:
         return ""
     return text
+
+
+def emergency_arrival_runway_mask(arrival_df: pd.DataFrame, airport: str) -> pd.Series:
+    if "Arrival_Runway" not in arrival_df.columns:
+        return pd.Series(False, index=arrival_df.index)
+
+    emergency_runway = RUNWAY_RULES[airport]["arrival"]["emergency"]
+    runway = arrival_df["Arrival_Runway"].astype("string").str.strip().str.upper()
+    return runway.eq(emergency_runway).fillna(False).astype(bool)
 
 
 def handle_same_origin_anomalies(
@@ -1087,6 +1323,7 @@ def handle_same_origin_anomalies(
 
     arr_event = event_datetime_series(arr)
     same_origin_mask = arr["IATA"].astype("string").str.upper().eq(airport)
+    emergency_runway = emergency_arrival_runway_mask(arr, airport)
     same_origin_indices = arr.loc[same_origin_mask].index.tolist()
 
     drop_indices: List[int] = []
@@ -1105,6 +1342,7 @@ def handle_same_origin_anomalies(
 
         best_gap = np.nan
         is_return = False
+        is_emergency_runway = bool(emergency_runway.at[idx])
         if flight_key and pd.notna(event_time) and flight_key in dep_times_by_flight:
             dep_times = dep_times_by_flight[flight_key]
             pos = np.searchsorted(dep_times, np.datetime64(event_time), side="right") - 1
@@ -1125,6 +1363,8 @@ def handle_same_origin_anomalies(
                     "Row_Index": int(idx),
                     "Flight_No": flight_no,
                     "Category": category,
+                    "Arrival_Runway": arr.at[idx, "Arrival_Runway"] if "Arrival_Runway" in arr.columns else pd.NA,
+                    "Is_Emergency_Runway": is_emergency_runway,
                     "Action": "keep_return_emergency",
                     "Gap_Minutes": best_gap,
                 }
@@ -1143,6 +1383,8 @@ def handle_same_origin_anomalies(
                     "Row_Index": int(idx),
                     "Flight_No": flight_no,
                     "Category": category,
+                    "Arrival_Runway": arr.at[idx, "Arrival_Runway"] if "Arrival_Runway" in arr.columns else pd.NA,
+                    "Is_Emergency_Runway": is_emergency_runway,
                     "Action": "drop_unmatched_same_origin",
                     "Gap_Minutes": best_gap,
                 }
@@ -1156,7 +1398,11 @@ def handle_same_origin_anomalies(
                     arr.at[idx, col] = pd.NA
 
             orientation = arr.at[idx, "_Runway_Orientation"] if "_Runway_Orientation" in arr.columns else pd.NA
-            normal_runway = RUNWAY_RULES[airport]["arrival"]["reverse"] if orientation == "reverse" else RUNWAY_RULES[airport]["arrival"]["default"]
+            normal_runway = (
+                RUNWAY_RULES[airport]["arrival"]["reverse"]
+                if pd.notna(orientation) and str(orientation) == "reverse"
+                else RUNWAY_RULES[airport]["arrival"]["default"]
+            )
             arr.at[idx, "Arrival_Runway"] = normal_runway
 
             audit_rows.append(
@@ -1165,6 +1411,8 @@ def handle_same_origin_anomalies(
                     "Row_Index": int(idx),
                     "Flight_No": flight_no,
                     "Category": category,
+                    "Arrival_Runway": arr.at[idx, "Arrival_Runway"] if "Arrival_Runway" in arr.columns else pd.NA,
+                    "Is_Emergency_Runway": is_emergency_runway,
                     "Action": "keep_noncommercial_same_origin",
                     "Gap_Minutes": best_gap,
                 }
@@ -1203,117 +1451,6 @@ def apply_emergency_arrival_runway_mapping(arrival_df: pd.DataFrame, airport: st
             changed += 1
         arrival_df.at[idx, "Arrival_Runway"] = mapped
 
-    return changed
-
-
-def extract_flight_prefix(flight_series: pd.Series) -> pd.Series:
-    if flight_series is None:
-        return pd.Series(pd.NA)
-    return flight_series.astype("string").str.upper().str.strip().str.extract(r"^([0-9A-Z]{2})", expand=False)
-
-
-def normalize_airline_values(df: pd.DataFrame) -> int:
-    if "Airline" not in df.columns:
-        return 0
-
-    before = df["Airline"].astype("string").copy()
-    prefix = extract_flight_prefix(df.get("Flight_No", pd.Series(pd.NA, index=df.index)))
-
-    korean_mask = df["Airline"].astype("string").str.upper().eq("KOREAN AIRLINES")
-    df.loc[korean_mask, "Airline"] = "Korean Air"
-
-    vn_mask = prefix.isin(VIETNAMESE_CARRIER_BY_PREFIX.keys())
-    df.loc[vn_mask, "Airline"] = prefix.map(VIETNAMESE_CARRIER_BY_PREFIX)
-
-    airline_series = df["Airline"].astype("string")
-    all_caps_mask = airline_series.notna() & (airline_series == airline_series.str.upper())
-    df.loc[all_caps_mask, "Airline"] = airline_series.loc[all_caps_mask].str.title()
-
-    # Restore canonical form for VN carriers after title-casing.
-    df.loc[vn_mask, "Airline"] = prefix.map(VIETNAMESE_CARRIER_BY_PREFIX)
-    df.loc[df["Airline"].astype("string").str.upper().eq("KOREAN AIRLINES"), "Airline"] = "Korean Air"
-
-    after = df["Airline"].astype("string")
-    changed = int((before.fillna("") != after.fillna("")).sum())
-    return changed
-
-
-def normalize_category_unknown(df: pd.DataFrame) -> int:
-    if "Category" not in df.columns:
-        return 0
-
-    category = df["Category"].astype("string").str.strip().str.lower()
-    category = category.mask(category.str.lower().isin(NA_TOKENS))
-    df["Category"] = category
-
-    tail_col = "Tail_Number"
-    if "Tail_Number" not in df.columns and "Scheduled_Tail" in df.columns:
-        tail_col = "Scheduled_Tail"
-    if "Tail_Number" not in df.columns and "Actual_Tail" in df.columns:
-        tail_col = "Actual_Tail"
-
-    key_cols = [c for c in ["Flight_No", "Airline", tail_col, "Aircraft_Type", "IATA"] if c in df.columns]
-    if not key_cols:
-        return 0
-
-    missing_score = pd.Series(0, index=df.index, dtype="int64")
-    for col in key_cols:
-        missing_score = missing_score + df[col].isna().astype("int64")
-
-    non_passenger_with_identity = (
-        df["Category"].isin(TERMINAL_NON_PASSENGER_CATEGORIES)
-        & df.get(tail_col, pd.Series(pd.NA, index=df.index)).notna()
-        & df.get("Aircraft_Type", pd.Series(pd.NA, index=df.index)).notna()
-    )
-
-    assign_unknown = (missing_score >= 3) & ~non_passenger_with_identity
-    changed = int((assign_unknown & df["Category"].ne("unknown")).sum())
-    df.loc[assign_unknown, "Category"] = "unknown"
-    return changed
-
-
-def normalize_terminal_values(df: pd.DataFrame, airport: str, mode: str) -> int:
-    if "Terminal" not in df.columns:
-        return 0
-
-    before = df["Terminal"].astype("string").copy()
-    terminal = before.str.strip()
-    terminal = terminal.mask(terminal.str.lower().isin(NA_TOKENS))
-
-    route_col = route_column(mode)
-    route_missing = df[route_col].isna() if route_col in df.columns else pd.Series(True, index=df.index)
-
-    iata = df["IATA"].astype("string").str.upper() if "IATA" in df.columns else pd.Series(pd.NA, index=df.index)
-    same_origin_arrival = pd.Series(False, index=df.index)
-    if mode == "arrival":
-        same_origin_arrival = iata.eq(airport)
-
-    category = df["Category"].astype("string").str.lower() if "Category" in df.columns else pd.Series(pd.NA, index=df.index)
-    non_passenger = category.isin(TERMINAL_NON_PASSENGER_CATEGORIES)
-
-    # Priority 1: route missing or same-origin arrival => N/A.
-    terminal = terminal.mask(route_missing | same_origin_arrival, pd.NA)
-
-    # Priority 2: non-passenger rows (except rows already forced to N/A above).
-    non_passenger_effective = non_passenger & ~route_missing & ~same_origin_arrival
-    terminal = terminal.mask(non_passenger_effective, "0")
-
-    assignable = ~route_missing & ~same_origin_arrival & ~non_passenger_effective
-    domestic = iata.isin(DOMESTIC_IATA_CODES)
-    international = iata.notna() & ~domestic
-
-    terminal = terminal.mask(assignable & international, "2")
-
-    if airport == "SGN":
-        prefix = extract_flight_prefix(df.get("Flight_No", pd.Series(pd.NA, index=df.index)))
-        terminal = terminal.mask(assignable & domestic & prefix.eq("VJ"), "1")
-        terminal = terminal.mask(assignable & domestic & prefix.isin(SGN_DOMESTIC_PREFIX_T3), "3")
-        terminal = terminal.mask(assignable & domestic & terminal.isna(), "3")
-    else:
-        terminal = terminal.mask(assignable & domestic, "1")
-
-    df["Terminal"] = terminal
-    changed = int((before.fillna("") != df["Terminal"].astype("string").fillna("")).sum())
     return changed
 
 
@@ -1492,88 +1629,508 @@ def add_aircraft_swap_flags(
     return departures, audit_df, {**counts, **{f"swap_true_{k}": v for k, v in per_route_counts.items()}}
 
 
-def compute_window_counts(target_time: pd.Series, event_ns: np.ndarray, window_minutes: int) -> pd.Series:
-    counts = pd.Series(0, index=target_time.index, dtype="int64")
-    if event_ns.size == 0:
-        return counts
+def apply_swap_tail_overrides_for_dad(
+    departures: Dict[str, pd.DataFrame],
+    arrivals: Dict[str, pd.DataFrame],
+    swap_audit_df: pd.DataFrame,
+) -> Dict[str, int]:
+    if swap_audit_df.empty:
+        return {"swap_true_rows_used": 0, "dad_arrival_tail_overrides": 0, "dad_departure_tail_overrides": 0}
 
-    valid = target_time.notna()
-    if not valid.any():
-        return counts
+    dad_arr = arrivals.get("dad")
+    dad_dep = departures.get("dad")
+    if dad_arr is None or dad_dep is None:
+        return {"swap_true_rows_used": 0, "dad_arrival_tail_overrides": 0, "dad_departure_tail_overrides": 0}
 
-    target_ns = target_time.loc[valid].astype("datetime64[ns]").astype("int64").to_numpy()
-    window_ns = int(window_minutes * 60 * 1_000_000_000)
+    swapped_mask = swap_audit_df["Is_Aircraft_Swapped"].astype("string").str.strip().str.lower() == "true"
+    override_rows = swap_audit_df.loc[
+        swapped_mask & swap_audit_df["Route"].isin(["SGN->DAD", "HAN->DAD", "DAD->SGN", "DAD->HAN"])
+    ].copy()
+    if override_rows.empty:
+        return {"swap_true_rows_used": 0, "dad_arrival_tail_overrides": 0, "dad_departure_tail_overrides": 0}
 
-    left = np.searchsorted(event_ns, target_ns - window_ns, side="left")
-    right = np.searchsorted(event_ns, target_ns, side="right")
-    counts.loc[valid] = (right - left).astype("int64")
-    return counts
+    arrival_overrides = 0
+    departure_overrides = 0
 
+    def normalize_tail(value: object) -> str | None:
+        if value is None or pd.isna(value):
+            return None
+        text = str(value).strip()
+        if text.lower() in NA_TOKENS:
+            return None
+        return text.upper()
 
-def build_military_events(arrivals: Dict[str, pd.DataFrame], departures: Dict[str, pd.DataFrame]) -> pd.DataFrame:
-    records: List[Dict[str, object]] = []
-
-    for mode, datasets in [("arrival", arrivals), ("departure", departures)]:
-        rw_col = runway_column(mode)
-        for airport, df in datasets.items():
-            if "Category" not in df.columns:
+    for _, row in override_rows.iterrows():
+        route = str(row.get("Route", "")).strip().upper()
+        if route in ("SGN->DAD", "HAN->DAD"):
+            arr_idx = row.get("Arr_Index")
+            new_tail = normalize_tail(row.get("Scheduled_Tail"))
+            if new_tail is None or arr_idx is None:
                 continue
-
-            category = df["Category"].astype("string").str.lower()
-            event_time = event_datetime_series(df)
-            signal_mask = category.isin(MILITARY_SIGNAL_CATEGORIES) & event_time.notna()
-            if not signal_mask.any():
+            try:
+                arr_idx = int(arr_idx)
+            except (TypeError, ValueError):
                 continue
+            if arr_idx not in dad_arr.index:
+                continue
+            if "Actual_Tail" in dad_arr.columns and normalize_tail(dad_arr.at[arr_idx, "Actual_Tail"]) != new_tail:
+                dad_arr.at[arr_idx, "Actual_Tail"] = new_tail
+                arrival_overrides += 1
+        elif route in ("DAD->SGN", "DAD->HAN"):
+            dep_idx = row.get("Dep_Index")
+            new_tail = normalize_tail(row.get("Actual_Tail"))
+            if new_tail is None or dep_idx is None:
+                continue
+            try:
+                dep_idx = int(dep_idx)
+            except (TypeError, ValueError):
+                continue
+            if dep_idx not in dad_dep.index:
+                continue
+            if "Scheduled_Tail" in dad_dep.columns and normalize_tail(dad_dep.at[dep_idx, "Scheduled_Tail"]) != new_tail:
+                dad_dep.at[dep_idx, "Scheduled_Tail"] = new_tail
+                departure_overrides += 1
 
-            subset = df.loc[signal_mask].copy()
-            subset["Event_DateTime"] = event_time.loc[signal_mask]
-            subset["Airport"] = airport.upper()
-            subset["Mode"] = mode
-
-            cols = [
-                "Airport",
-                "Mode",
-                "Event_DateTime",
-                "Flight_No",
-                "Category",
-                rw_col,
-            ]
-            cols = [c for c in cols if c in subset.columns]
-            records.extend(subset[cols].to_dict("records"))
-
-    events = pd.DataFrame(records)
-    if not events.empty:
-        events = events.sort_values(["Airport", "Event_DateTime"]).reset_index(drop=True)
-    return events
+    arrivals["dad"] = dad_arr
+    departures["dad"] = dad_dep
+    return {
+        "swap_true_rows_used": int(len(override_rows)),
+        "dad_arrival_tail_overrides": arrival_overrides,
+        "dad_departure_tail_overrides": departure_overrides,
+    }
 
 
-def build_event_time_index(events_df: pd.DataFrame) -> Dict[str, np.ndarray]:
-    index: Dict[str, np.ndarray] = {}
-    if events_df.empty:
-        return index
+def audit_departures_without_arrival(
+    departures: Dict[str, pd.DataFrame],
+    arrivals: Dict[str, pd.DataFrame],
+    routes: List[Tuple[str, str]],
+    max_gap_hours: float,
+) -> List[Dict[str, object]]:
+    audit_rows: List[Dict[str, object]] = []
 
-    grouped = events_df.groupby("Airport")
-    for airport, grp in grouped:
-        if "Event_DateTime" not in grp.columns:
-            index[str(airport)] = np.array([], dtype="int64")
+    for origin, dest in routes:
+        origin_upper = origin.upper()
+        dest_upper = dest.upper()
+
+        dep_df = departures.get(origin)
+        if dep_df is None or dep_df.empty:
             continue
-        event_ns = grp["Event_DateTime"].astype("datetime64[ns]").astype("int64").to_numpy()
-        index[str(airport)] = np.sort(event_ns)
-    return index
+
+        arr_df = arrivals.get(dest)
+        dep_time = event_datetime_series(dep_df)
+        if "Scheduled_DateTime" in dep_df.columns:
+            dep_service_time = pd.to_datetime(dep_df["Scheduled_DateTime"], errors="coerce")
+        elif "Scheduled_Time" in dep_df.columns:
+            dep_service_time = pd.to_datetime(dep_df["Scheduled_Time"], errors="coerce")
+        else:
+            dep_service_time = dep_time
+
+        dep_mask = dep_df["Flight_No"].notna() & dep_time.notna()
+        if "IATA" in dep_df.columns:
+            dep_mask = dep_mask & (dep_df["IATA"].astype("string").str.upper().str.strip() == dest_upper)
+        if "Category" in dep_df.columns:
+            category = dep_df["Category"].astype("string").str.strip()
+            category = category.mask(category.str.lower().isin(NA_TOKENS))
+            dep_mask = dep_mask & category.str.lower().eq("passenger")
+
+        dep_work = dep_df.loc[dep_mask, ["Flight_No", "Scheduled_Time"]].copy()
+        if dep_work.empty:
+            continue
+
+        dep_work["Dep_Index"] = dep_work.index
+        dep_work["Dep_Time"] = dep_time.loc[dep_work.index]
+        dep_work["Dep_Service_Date"] = dep_service_time.loc[dep_work.index].dt.strftime("%Y-%m-%d")
+        dep_work["Flight_Key"] = dep_work["Flight_No"].astype("string").str.upper().str.strip()
+
+        if arr_df is None or arr_df.empty:
+            for _, row in dep_work.iterrows():
+                audit_rows.append(
+                    {
+                        "Route": f"{origin_upper}->{dest_upper}",
+                        "Origin": origin_upper,
+                        "Destination": dest_upper,
+                        "Dep_Index": int(row["Dep_Index"]),
+                        "Flight_No": row["Flight_No"],
+                        "Dep_Event_Time": row["Dep_Time"],
+                        "Scheduled_Time": row.get("Scheduled_Time", pd.NA),
+                        "Dep_Service_Date": row.get("Dep_Service_Date", pd.NA),
+                        "Reason": "no_arrival_dataset",
+                    }
+                )
+            continue
+
+        arr_time = event_datetime_series(arr_df)
+        if "Scheduled_DateTime" in arr_df.columns:
+            arr_service_time = pd.to_datetime(arr_df["Scheduled_DateTime"], errors="coerce")
+        elif "Scheduled_Time" in arr_df.columns:
+            arr_service_time = pd.to_datetime(arr_df["Scheduled_Time"], errors="coerce")
+        else:
+            arr_service_time = arr_time
+        arr_service_time = arr_service_time.where(arr_service_time.notna(), arr_time)
+        arr_mask = arr_df["Flight_No"].notna() & arr_time.notna()
+        if "IATA" in arr_df.columns:
+            arr_mask = arr_mask & (arr_df["IATA"].astype("string").str.upper().str.strip() == origin_upper)
+
+        arr_work = arr_df.loc[arr_mask, ["Flight_No"]].copy()
+        if arr_work.empty:
+            for _, row in dep_work.iterrows():
+                audit_rows.append(
+                    {
+                        "Route": f"{origin_upper}->{dest_upper}",
+                        "Origin": origin_upper,
+                        "Destination": dest_upper,
+                        "Dep_Index": int(row["Dep_Index"]),
+                        "Flight_No": row["Flight_No"],
+                        "Dep_Event_Time": row["Dep_Time"],
+                        "Scheduled_Time": row.get("Scheduled_Time", pd.NA),
+                        "Dep_Service_Date": row.get("Dep_Service_Date", pd.NA),
+                        "Reason": "no_arrival_rows",
+                    }
+                )
+            continue
+
+        arr_work["Arr_Time"] = arr_time.loc[arr_work.index]
+        arr_work["Arr_Service_Date"] = arr_service_time.loc[arr_work.index].dt.strftime("%Y-%m-%d")
+        arr_work["Flight_Key"] = arr_work["Flight_No"].astype("string").str.upper().str.strip()
+
+        arr_time_lookup: Dict[str, np.ndarray] = {}
+        for flight_key, grp in arr_work.groupby("Flight_Key"):
+            arr_time_lookup[str(flight_key)] = grp["Arr_Time"].sort_values().to_numpy(dtype="datetime64[ns]")
+
+        for _, row in dep_work.iterrows():
+            dep_event_time = row["Dep_Time"]
+            if pd.isna(dep_event_time):
+                continue
+            flight_key = str(row["Flight_Key"])
+
+            time_window_matched = False
+            flight_arr_times = arr_time_lookup.get(flight_key)
+            if flight_arr_times is not None and flight_arr_times.size > 0:
+                lower = np.datetime64(dep_event_time)
+                upper = np.datetime64(dep_event_time + pd.Timedelta(hours=max_gap_hours))
+                left = np.searchsorted(flight_arr_times, lower, side="left")
+                right = np.searchsorted(flight_arr_times, upper, side="right")
+                time_window_matched = right > left
+
+            if not time_window_matched:
+                audit_rows.append(
+                    {
+                        "Route": f"{origin_upper}->{dest_upper}",
+                        "Origin": origin_upper,
+                        "Destination": dest_upper,
+                        "Dep_Index": int(row["Dep_Index"]),
+                        "Flight_No": row["Flight_No"],
+                        "Dep_Event_Time": dep_event_time,
+                        "Scheduled_Time": row.get("Scheduled_Time", pd.NA),
+                        "Dep_Service_Date": row.get("Dep_Service_Date", pd.NA),
+                        "Reason": "no_arrival_match",
+                    }
+                )
+                continue
+
+    return audit_rows
 
 
-def add_military_features(df: pd.DataFrame, airport: str, event_index: Dict[str, np.ndarray]) -> pd.DataFrame:
+def drop_departures_without_arrival(
+    departures: Dict[str, pd.DataFrame],
+    audit_rows: List[Dict[str, object]],
+) -> Tuple[Dict[str, pd.DataFrame], Dict[str, int]]:
+    drop_indices_by_airport: Dict[str, Set[int]] = {airport: set() for airport in departures}
+
+    for row in audit_rows:
+        origin = str(row.get("Origin", "")).strip().lower()
+        if origin not in drop_indices_by_airport:
+            continue
+        dep_index = row.get("Dep_Index")
+        try:
+            dep_index_int = int(dep_index)
+        except (TypeError, ValueError):
+            continue
+        drop_indices_by_airport[origin].add(dep_index_int)
+        row["Action"] = "drop_departure"
+        row["Drop_Reason"] = "dep_without_arrival"
+
+    stats: Dict[str, int] = {}
+    for airport, indices in drop_indices_by_airport.items():
+        if not indices:
+            stats[f"{airport.upper()}_departures_dropped_without_arrival"] = 0
+            continue
+
+        df = departures[airport]
+        valid_indices = sorted(idx for idx in indices if idx in df.index)
+        departures[airport] = df.drop(index=valid_indices).copy()
+        stats[f"{airport.upper()}_departures_dropped_without_arrival"] = len(valid_indices)
+
+    stats["departures_dropped_without_arrival_total"] = sum(stats.values())
+    return departures, stats
+
+
+def audit_arrivals_without_departure(
+    arrivals: Dict[str, pd.DataFrame],
+    departures: Dict[str, pd.DataFrame],
+    routes: List[Tuple[str, str]],
+    max_gap_hours: float,
+) -> List[Dict[str, object]]:
+    audit_rows: List[Dict[str, object]] = []
+
+    for origin, dest in routes:
+        origin_upper = origin.upper()
+        dest_upper = dest.upper()
+
+        arr_df = arrivals.get(dest)
+        if arr_df is None or arr_df.empty:
+            continue
+
+        dep_df = departures.get(origin)
+        arr_time = event_datetime_series(arr_df)
+        if "Scheduled_DateTime" in arr_df.columns:
+            arr_service_time = pd.to_datetime(arr_df["Scheduled_DateTime"], errors="coerce")
+        elif "Scheduled_Time" in arr_df.columns:
+            arr_service_time = pd.to_datetime(arr_df["Scheduled_Time"], errors="coerce")
+        else:
+            arr_service_time = arr_time
+        arr_service_time = arr_service_time.where(arr_service_time.notna(), arr_time)
+
+        arr_mask = arr_df["Flight_No"].notna() & arr_time.notna()
+        if "IATA" in arr_df.columns:
+            arr_mask = arr_mask & (arr_df["IATA"].astype("string").str.upper().str.strip() == origin_upper)
+        if "Category" in arr_df.columns:
+            category = arr_df["Category"].astype("string").str.strip()
+            category = category.mask(category.str.lower().isin(NA_TOKENS))
+            arr_mask = arr_mask & category.str.lower().eq("passenger")
+
+        arr_work = arr_df.loc[arr_mask, ["Flight_No"]].copy()
+        if arr_work.empty:
+            continue
+
+        arr_work["Arr_Index"] = arr_work.index
+        arr_work["Arr_Time"] = arr_time.loc[arr_work.index]
+        arr_work["Arr_Service_Date"] = arr_service_time.loc[arr_work.index].dt.strftime("%Y-%m-%d")
+        arr_work["Flight_Key"] = arr_work["Flight_No"].astype("string").str.upper().str.strip()
+
+        if dep_df is None or dep_df.empty:
+            for _, row in arr_work.iterrows():
+                audit_rows.append(
+                    {
+                        "Route": f"{origin_upper}->{dest_upper}",
+                        "Origin": origin_upper,
+                        "Destination": dest_upper,
+                        "Arr_Index": int(row["Arr_Index"]),
+                        "Flight_No": row["Flight_No"],
+                        "Arr_Event_Time": row["Arr_Time"],
+                        "Arr_Service_Date": row.get("Arr_Service_Date", pd.NA),
+                        "Reason": "no_departure_dataset",
+                    }
+                )
+            continue
+
+        dep_time = event_datetime_series(dep_df)
+        if "Scheduled_DateTime" in dep_df.columns:
+            dep_service_time = pd.to_datetime(dep_df["Scheduled_DateTime"], errors="coerce")
+        elif "Scheduled_Time" in dep_df.columns:
+            dep_service_time = pd.to_datetime(dep_df["Scheduled_Time"], errors="coerce")
+        else:
+            dep_service_time = dep_time
+
+        dep_mask = dep_df["Flight_No"].notna() & dep_time.notna()
+        if "IATA" in dep_df.columns:
+            dep_mask = dep_mask & (dep_df["IATA"].astype("string").str.upper().str.strip() == dest_upper)
+
+        dep_work = dep_df.loc[dep_mask, ["Flight_No"]].copy()
+        if dep_work.empty:
+            for _, row in arr_work.iterrows():
+                audit_rows.append(
+                    {
+                        "Route": f"{origin_upper}->{dest_upper}",
+                        "Origin": origin_upper,
+                        "Destination": dest_upper,
+                        "Arr_Index": int(row["Arr_Index"]),
+                        "Flight_No": row["Flight_No"],
+                        "Arr_Event_Time": row["Arr_Time"],
+                        "Arr_Service_Date": row.get("Arr_Service_Date", pd.NA),
+                        "Reason": "no_departure_rows",
+                    }
+                )
+            continue
+
+        dep_work["Dep_Time"] = dep_time.loc[dep_work.index]
+        dep_work["Dep_Service_Date"] = dep_service_time.loc[dep_work.index].dt.strftime("%Y-%m-%d")
+        dep_work["Flight_Key"] = dep_work["Flight_No"].astype("string").str.upper().str.strip()
+
+        dep_time_lookup: Dict[str, np.ndarray] = {}
+        for flight_key, grp in dep_work.groupby("Flight_Key"):
+            dep_time_lookup[str(flight_key)] = grp["Dep_Time"].sort_values().to_numpy(dtype="datetime64[ns]")
+
+        for _, row in arr_work.iterrows():
+            arr_event_time = row["Arr_Time"]
+            if pd.isna(arr_event_time):
+                continue
+            flight_key = str(row["Flight_Key"])
+
+            time_window_matched = False
+            flight_dep_times = dep_time_lookup.get(flight_key)
+            if flight_dep_times is not None and flight_dep_times.size > 0:
+                lower = np.datetime64(arr_event_time - pd.Timedelta(hours=max_gap_hours))
+                upper = np.datetime64(arr_event_time)
+                left = np.searchsorted(flight_dep_times, lower, side="left")
+                right = np.searchsorted(flight_dep_times, upper, side="right")
+                time_window_matched = right > left
+
+            if not time_window_matched:
+                audit_rows.append(
+                    {
+                        "Route": f"{origin_upper}->{dest_upper}",
+                        "Origin": origin_upper,
+                        "Destination": dest_upper,
+                        "Arr_Index": int(row["Arr_Index"]),
+                        "Flight_No": row["Flight_No"],
+                        "Arr_Event_Time": arr_event_time,
+                        "Arr_Service_Date": row.get("Arr_Service_Date", pd.NA),
+                        "Reason": "no_departure_match",
+                    }
+                )
+
+    return audit_rows
+
+
+def drop_arrivals_without_departure_for_routes(
+    arrivals: Dict[str, pd.DataFrame],
+    audit_rows: List[Dict[str, object]],
+    routes_to_drop: Set[Tuple[str, str]],
+) -> Tuple[Dict[str, pd.DataFrame], Dict[str, int]]:
+    drop_indices_by_airport: Dict[str, Set[int]] = {airport: set() for airport in arrivals}
+
+    for row in audit_rows:
+        origin = str(row.get("Origin", "")).strip().upper()
+        dest = str(row.get("Destination", "")).strip().upper()
+        if (origin, dest) not in routes_to_drop:
+            row["Action"] = "keep_arrival_pending_review"
+            row["Drop_Reason"] = pd.NA
+            continue
+
+        dest_key = dest.lower()
+        if dest_key not in drop_indices_by_airport:
+            row["Action"] = "keep_arrival_pending_review"
+            row["Drop_Reason"] = pd.NA
+            continue
+
+        arr_index = row.get("Arr_Index")
+        try:
+            arr_index_int = int(arr_index)
+        except (TypeError, ValueError):
+            row["Action"] = "keep_arrival_pending_review"
+            row["Drop_Reason"] = pd.NA
+            continue
+
+        drop_indices_by_airport[dest_key].add(arr_index_int)
+        row["Action"] = "drop_arrival"
+        row["Drop_Reason"] = "arrival_without_departure"
+
+    stats: Dict[str, int] = {}
+    for airport, indices in drop_indices_by_airport.items():
+        if not indices:
+            stats[f"{airport.upper()}_arrivals_dropped_without_departure"] = 0
+            continue
+
+        df = arrivals[airport]
+        valid_indices = sorted(idx for idx in indices if idx in df.index)
+        arrivals[airport] = df.drop(index=valid_indices).copy()
+        stats[f"{airport.upper()}_arrivals_dropped_without_departure"] = len(valid_indices)
+
+    stats["arrivals_dropped_without_departure_total"] = sum(stats.values())
+    return arrivals, stats
+
+
+def initialize_match_quality_flags(df: pd.DataFrame) -> pd.DataFrame:
     out = df.copy()
-    event_time = event_datetime_series(out)
-    event_ns = event_index.get(airport, np.array([], dtype="int64"))
-
-    count_1h = compute_window_counts(event_time, event_ns, window_minutes=60)
-    count_3h = compute_window_counts(event_time, event_ns, window_minutes=180)
-
-    out["Military_Count_1h"] = count_1h.astype("int64")
-    out["Military_Count_3h"] = count_3h.astype("int64")
-    out["Is_Military_Active"] = out["Military_Count_1h"] > 0
+    out["Has_Matched_Departure"] = True
+    out["Has_Matched_Arrival"] = True
+    out["Match_Status"] = "matched"
+    out["Data_Completeness"] = "complete"
+    out["Exclude_From_Propagation_Training"] = False
     return out
+
+
+def mark_departures_without_arrival(
+    departures: Dict[str, pd.DataFrame],
+    audit_rows: List[Dict[str, object]],
+) -> Tuple[Dict[str, pd.DataFrame], Dict[str, int]]:
+    marked_indices_by_airport: Dict[str, Set[int]] = {airport: set() for airport in departures}
+
+    for row in audit_rows:
+        origin = str(row.get("Origin", "")).strip().lower()
+        if origin not in marked_indices_by_airport:
+            row["Action"] = "keep_unmatched_departure"
+            row["Drop_Reason"] = pd.NA
+            continue
+
+        dep_index = row.get("Dep_Index")
+        try:
+            dep_index_int = int(dep_index)
+        except (TypeError, ValueError):
+            row["Action"] = "keep_unmatched_departure"
+            row["Drop_Reason"] = pd.NA
+            continue
+
+        marked_indices_by_airport[origin].add(dep_index_int)
+        row["Action"] = "mark_missing_arrival"
+        row["Drop_Reason"] = pd.NA
+
+    stats: Dict[str, int] = {}
+    for airport, indices in marked_indices_by_airport.items():
+        df = departures[airport]
+        valid_indices = sorted(idx for idx in indices if idx in df.index)
+        if valid_indices:
+            df.loc[valid_indices, "Has_Matched_Departure"] = True
+            df.loc[valid_indices, "Has_Matched_Arrival"] = False
+            df.loc[valid_indices, "Match_Status"] = "dep_without_arrival"
+            df.loc[valid_indices, "Data_Completeness"] = "unmatched_departure"
+            df.loc[valid_indices, "Exclude_From_Propagation_Training"] = True
+        stats[f"{airport.upper()}_departures_marked_without_arrival"] = len(valid_indices)
+
+    stats["departures_marked_without_arrival_total"] = sum(stats.values())
+    return departures, stats
+
+
+def mark_arrivals_without_departure(
+    arrivals: Dict[str, pd.DataFrame],
+    audit_rows: List[Dict[str, object]],
+) -> Tuple[Dict[str, pd.DataFrame], Dict[str, int]]:
+    marked_indices_by_airport: Dict[str, Set[int]] = {airport: set() for airport in arrivals}
+
+    for row in audit_rows:
+        dest = str(row.get("Destination", "")).strip().lower()
+        if dest not in marked_indices_by_airport:
+            row["Action"] = "keep_unmatched_arrival"
+            row["Drop_Reason"] = pd.NA
+            continue
+
+        arr_index = row.get("Arr_Index")
+        try:
+            arr_index_int = int(arr_index)
+        except (TypeError, ValueError):
+            row["Action"] = "keep_unmatched_arrival"
+            row["Drop_Reason"] = pd.NA
+            continue
+
+        marked_indices_by_airport[dest].add(arr_index_int)
+        row["Action"] = "mark_missing_departure"
+        row["Drop_Reason"] = pd.NA
+
+    stats: Dict[str, int] = {}
+    for airport, indices in marked_indices_by_airport.items():
+        df = arrivals[airport]
+        valid_indices = sorted(idx for idx in indices if idx in df.index)
+        if valid_indices:
+            df.loc[valid_indices, "Has_Matched_Departure"] = False
+            df.loc[valid_indices, "Has_Matched_Arrival"] = True
+            df.loc[valid_indices, "Match_Status"] = "arrival_without_departure"
+            df.loc[valid_indices, "Data_Completeness"] = "unmatched_arrival"
+            df.loc[valid_indices, "Exclude_From_Propagation_Training"] = True
+        stats[f"{airport.upper()}_arrivals_marked_without_departure"] = len(valid_indices)
+
+    stats["arrivals_marked_without_departure_total"] = sum(stats.values())
+    return arrivals, stats
 
 
 def finalize_dataframe_for_export(df: pd.DataFrame) -> pd.DataFrame:
@@ -1649,11 +2206,13 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
             f"Keeping provided value, but recommended range is <= {RETURN_THRESHOLD_MAX_MINUTES}."
         )
 
-    bronze_dir = project_root / "Data crawl" / "Bronze_layer"
-    arrival_dir = bronze_dir / "Arrival"
-    departure_dir = bronze_dir / "Departure"
+    input_bronze_dir = project_root / "Data crawl" / "Bronze_layer_cleaned"
+    if not input_bronze_dir.exists():
+        input_bronze_dir = project_root / "Data crawl" / "Bronze_layer"
+    arrival_dir = input_bronze_dir / "Arrival"
+    departure_dir = input_bronze_dir / "Departure"
 
-    silver_dir = project_root / "Data crawl" / "Silver_layer"
+    silver_dir = project_root / "Data crawl" / "Silver_layer_2"
     silver_arrival_dir = silver_dir / "Arrival"
     silver_departure_dir = silver_dir / "Departure"
     silver_audit_dir = silver_dir / "Audit"
@@ -1671,12 +2230,13 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
     duplicate_audit_rows: List[Dict[str, object]] = []
     same_origin_audit_rows: List[Dict[str, object]] = []
     arrival_semantics_audit_rows: List[Dict[str, object]] = []
-    spq_flight_no_audit_rows: List[Dict[str, object]] = []
-    tail_reconcile_audit_rows: List[Dict[str, object]] = []
+    time_gap_over_12h_audit_rows: List[Dict[str, object]] = []
+    missing_arrival_audit_rows: List[Dict[str, object]] = []
+    missing_departure_audit_rows: List[Dict[str, object]] = []
 
     # 1) Load and clean basic schema.
     for airport in AIRPORTS:
-        for mode in ("arrival", "departure"):
+        for mode in ("departure", "arrival"):
             src_dir = arrival_dir if mode == "arrival" else departure_dir
             src_name = f"{airport}_flights_{mode}_bronze_layer.csv"
             src_path = src_dir / src_name
@@ -1684,10 +2244,15 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
                 raise FileNotFoundError(f"Missing input file: {src_path}")
 
             df = pd.read_csv(src_path, dtype=str)
+            restored_same_origin_rows = 0
             row_before = len(df)
 
             df, basic_stats = normalize_file_common(df, airport=airport.upper(), mode=mode)
             row_after_basic = len(df)
+
+            time_gap_over_12h_audit_rows.extend(
+                collect_time_gap_over_12h_audit(df, airport=airport.upper(), mode=mode)
+            )
 
             if mode == "arrival":
                 arrival_semantics_audit_rows.append(
@@ -1703,12 +2268,31 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
                     }
                 )
 
-            df, spq_audit, spq_stats = normalize_spq_flight_number(df, airport=airport.upper(), mode=mode)
-            spq_flight_no_audit_rows.extend(spq_audit)
+            dad_fix_stats = {
+                "dad_cancelled_cleared": 0,
+                "dad_bl_to_vn": 0,
+                "dad_airline_pacific_to_vietnam": 0,
+            }
 
-            df, dad_fix_stats = apply_dad_specific_fixes(df, airport=airport.upper())
-
-            deduped, dedup_audit, dedup_stats = deduplicate_flights(df, airport=airport.upper(), mode=mode)
+            arrival_for_departure_dedup = None
+            if mode == "departure":
+                arrival_ref_path = arrival_dir / f"{airport}_flights_arrival_bronze_layer.csv"
+                if arrival_ref_path.exists():
+                    arrival_for_departure_dedup = pd.read_csv(arrival_ref_path, dtype=str)
+                    arrival_for_departure_dedup, _ = normalize_file_common(
+                        arrival_for_departure_dedup,
+                        airport=airport.upper(),
+                        mode="arrival",
+                    )
+            dep_for_dedup = departures.get(airport) if mode == "arrival" else None
+            deduped, dedup_audit, dedup_stats = deduplicate_flights(
+                df,
+                airport=airport.upper(),
+                mode=mode,
+                departure_df=dep_for_dedup,
+                arrival_df=arrival_for_departure_dedup,
+                return_threshold_minutes=return_threshold_minutes if mode in ("arrival", "departure") else None,
+            )
             duplicate_audit_rows.extend(dedup_audit)
 
             runway_filled, runway_stats = fill_runway_values(deduped, airport=airport.upper(), mode=mode)
@@ -1719,6 +2303,12 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
             summary_rows.extend(
                 [
                     {"Airport": airport.upper(), "Mode": mode, "Metric": "rows_input", "Value": row_before},
+                    {
+                        "Airport": airport.upper(),
+                        "Mode": mode,
+                        "Metric": "same_origin_rows_restored_from_prior_audit",
+                        "Value": restored_same_origin_rows,
+                    },
                     {"Airport": airport.upper(), "Mode": mode, "Metric": "rows_after_basic_clean", "Value": row_after_basic},
                     {
                         "Airport": airport.upper(),
@@ -1753,32 +2343,14 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
                     {
                         "Airport": airport.upper(),
                         "Mode": mode,
-                        "Metric": "near_time_duplicate_removed",
-                        "Value": dedup_stats.get("near_time_duplicate_removed", 0),
+                        "Metric": "same_day_60m_duplicate_removed",
+                        "Value": dedup_stats.get("same_day_60m_duplicate_removed", 0),
                     },
                     {
                         "Airport": airport.upper(),
                         "Mode": mode,
                         "Metric": "dual_runway_duplicate_removed",
                         "Value": dedup_stats.get("dual_runway_duplicate_removed", 0),
-                    },
-                    {
-                        "Airport": airport.upper(),
-                        "Mode": mode,
-                        "Metric": "spq_to_9g_converted",
-                        "Value": spq_stats.get("spq_to_9g_converted", 0),
-                    },
-                    {
-                        "Airport": airport.upper(),
-                        "Mode": mode,
-                        "Metric": "spq_to_9g_airline_match",
-                        "Value": spq_stats.get("spq_to_9g_airline_match", 0),
-                    },
-                    {
-                        "Airport": airport.upper(),
-                        "Mode": mode,
-                        "Metric": "spq_to_9g_pattern_match",
-                        "Value": spq_stats.get("spq_to_9g_pattern_match", 0),
                     },
                     {
                         "Airport": airport.upper(),
@@ -1850,7 +2422,6 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
     # 1c) Reconcile departure tails (and aircraft types) from matched arrivals.
     # DISABLED: per plan, do not overwrite departure tails from arrivals to preserve
     # original Scheduled_Tail for swap detection.
-    tail_reconcile_audit_rows: List[Dict[str, object]] = []
     # departures, tail_reconcile_audit_rows, tail_stats = reconcile_tails_from_arrivals(
     #     departures,
     #     arrivals,
@@ -1875,6 +2446,16 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
     # )
 
     # 2) Same-origin anomaly handling on arrival, using departure of the same airport.
+    carried_same_origin_count = 0
+    summary_rows.append(
+        {
+            "Airport": "ALL",
+            "Mode": "arrival",
+            "Metric": "same_origin_noncommercial_audit_carried_forward",
+            "Value": carried_same_origin_count,
+        }
+    )
+
     for airport in AIRPORTS:
         arr_df = arrivals[airport]
         dep_df = departures[airport]
@@ -1933,6 +2514,12 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
             airline_changed = normalize_airline_values(df)
             category_unknown_assigned = normalize_category_unknown(df)
             terminal_changed = normalize_terminal_values(df, airport=airport.upper(), mode=mode)
+            thd_route_name_changed = apply_route_name_fixes(df, mode=mode)
+            dad_belt_general_aviation_changed = apply_dad_arrival_belt_category_rule(
+                df,
+                airport=airport.upper(),
+                mode=mode,
+            )
 
             if airport.upper() == "DAD" and mode == "departure":
                 df = add_dad_departure_gate_features(df)
@@ -1960,6 +2547,18 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
                         "Metric": "terminal_values_changed",
                         "Value": terminal_changed,
                     },
+                    {
+                        "Airport": airport.upper(),
+                        "Mode": mode,
+                        "Metric": "thd_route_name_changed",
+                        "Value": thd_route_name_changed,
+                    },
+                    {
+                        "Airport": airport.upper(),
+                        "Mode": mode,
+                        "Metric": "dad_belt_general_aviation_changed",
+                        "Value": dad_belt_general_aviation_changed,
+                    },
                 ]
             )
 
@@ -1971,22 +2570,88 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
         max_gap_hours=ROUTE_MATCH_MAX_HOURS,
     )
 
+    override_stats = apply_swap_tail_overrides_for_dad(departures, arrivals, swap_audit_df)
+    if override_stats.get("swap_true_rows_used", 0) > 0:
+        departures, swap_audit_df, swap_stats = add_aircraft_swap_flags(
+            departures,
+            arrivals,
+            routes=ROUTES,
+            max_gap_hours=ROUTE_MATCH_MAX_HOURS,
+        )
+
     for metric, value in swap_stats.items():
         summary_rows.append({"Airport": "ALL", "Mode": "departure", "Metric": metric, "Value": int(value)})
-
-    # 5) Build military events and military context features.
-    military_events = build_military_events(arrivals, departures)
-    military_event_index = build_event_time_index(military_events)
+    for metric, value in override_stats.items():
+        summary_rows.append({"Airport": "ALL", "Mode": "departure", "Metric": metric, "Value": int(value)})
 
     for airport in AIRPORTS:
-        arrivals[airport] = add_military_features(arrivals[airport], airport=airport.upper(), event_index=military_event_index)
-        departures[airport] = add_military_features(departures[airport], airport=airport.upper(), event_index=military_event_index)
+        arrivals[airport] = initialize_match_quality_flags(arrivals[airport])
+        departures[airport] = initialize_match_quality_flags(departures[airport])
 
-    # 6) Export cleaned files.
-    commercial_frames: List[pd.DataFrame] = []
+    missing_arrival_audit_rows = audit_departures_without_arrival(
+        departures,
+        arrivals,
+        routes=ROUTES,
+        max_gap_hours=MISSING_ROUTE_MATCH_MAX_HOURS,
+    )
+    missing_departure_audit_rows = audit_arrivals_without_departure(
+        arrivals,
+        departures,
+        routes=ROUTES,
+        max_gap_hours=MISSING_ROUTE_MATCH_MAX_HOURS,
+    )
+    summary_rows.append(
+        {
+            "Airport": "ALL",
+            "Mode": "arrival",
+            "Metric": "arrival_without_departure_rows",
+            "Value": len(missing_departure_audit_rows),
+        }
+    )
+    arrivals, missing_departure_mark_stats = mark_arrivals_without_departure(
+        arrivals,
+        missing_departure_audit_rows,
+    )
+    for metric, value in missing_departure_mark_stats.items():
+        summary_rows.append({"Airport": "ALL", "Mode": "arrival", "Metric": metric, "Value": int(value)})
+
+    if DROP_DEPARTURES_WITHOUT_ARRIVAL:
+        departures, missing_arrival_drop_stats = drop_departures_without_arrival(
+            departures,
+            missing_arrival_audit_rows,
+        )
+    else:
+        for row in missing_arrival_audit_rows:
+            row["Action"] = "keep_departure_pending_review"
+            row["Drop_Reason"] = pd.NA
+        missing_arrival_drop_stats = {
+            f"{airport.upper()}_departures_dropped_without_arrival": 0
+            for airport in AIRPORTS
+        }
+        missing_arrival_drop_stats["departures_dropped_without_arrival_total"] = 0
+
+    for metric, value in missing_arrival_drop_stats.items():
+        summary_rows.append({"Airport": "ALL", "Mode": "departure", "Metric": metric, "Value": int(value)})
+    departures, missing_arrival_mark_stats = mark_departures_without_arrival(
+        departures,
+        missing_arrival_audit_rows,
+    )
+    for metric, value in missing_arrival_mark_stats.items():
+        summary_rows.append({"Airport": "ALL", "Mode": "departure", "Metric": metric, "Value": int(value)})
+
+    # 5) Export cleaned files.
     for airport in AIRPORTS:
+        arr_ref_col = "Scheduled_DateTime" if airport.upper() == "DAD" else "Actual_DateTime"
+        dep_ref_col = "Scheduled_DateTime" if airport.upper() == "DAD" else "Actual_DateTime"
+        if arr_ref_col in arrivals[airport].columns:
+            set_crawl_date_from_datetime(arrivals[airport], arrivals[airport][arr_ref_col])
+        if dep_ref_col in departures[airport].columns:
+            set_crawl_date_from_datetime(departures[airport], departures[airport][dep_ref_col])
+
         arr_clean = finalize_dataframe_for_export(arrivals[airport])
         dep_clean = finalize_dataframe_for_export(departures[airport])
+        if airport.upper() in {"SGN", "HAN"} and "Flight_Time" in arr_clean.columns:
+            arr_clean = arr_clean.drop(columns=["Flight_Time"])
 
         arr_out = silver_arrival_dir / f"{airport}_flights_arrival_silver_layer.csv"
         dep_out = silver_departure_dir / f"{airport}_flights_departure_silver_layer.csv"
@@ -1997,48 +2662,21 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
         summary_rows.append({"Airport": airport.upper(), "Mode": "arrival", "Metric": "rows_output", "Value": len(arr_clean)})
         summary_rows.append({"Airport": airport.upper(), "Mode": "departure", "Metric": "rows_output", "Value": len(dep_clean)})
 
-        arr_passenger = arr_clean[arr_clean["Category"].astype(str).str.lower() == "passenger"].copy()
-        dep_passenger = dep_clean[dep_clean["Category"].astype(str).str.lower() == "passenger"].copy()
-
-        if not arr_passenger.empty:
-            arr_passenger["Mode"] = "arrival"
-            arr_passenger["Airport"] = airport.upper()
-            commercial_frames.append(arr_passenger)
-
-        if not dep_passenger.empty:
-            dep_passenger["Mode"] = "departure"
-            dep_passenger["Airport"] = airport.upper()
-            commercial_frames.append(dep_passenger)
-
-    # 7) Export audits and feature tables.
+    # 6) Export audits.
     summary_df = pd.DataFrame(summary_rows)
     summary_df.to_csv(silver_audit_dir / "audit_summary.csv", index=False)
 
     write_audit_csv(silver_audit_dir / "audit_arrival_time_semantics.csv", arrival_semantics_audit_rows)
+    write_audit_csv(silver_audit_dir / "audit_time_gap_over_12h.csv", time_gap_over_12h_audit_rows)
     write_audit_csv(silver_audit_dir / "audit_deduplicate_decisions.csv", duplicate_audit_rows)
-    write_audit_csv(silver_audit_dir / "audit_flight_no_spq_to_9g.csv", spq_flight_no_audit_rows)
     write_audit_csv(silver_audit_dir / "audit_same_origin_actions.csv", same_origin_audit_rows)
-    write_audit_csv(silver_audit_dir / "audit_tail_reconciliation.csv", tail_reconcile_audit_rows)
+    write_audit_csv(silver_audit_dir / "audit_departure_without_arrival.csv", missing_arrival_audit_rows)
+    write_audit_csv(silver_audit_dir / "audit_arrival_without_departure.csv", missing_departure_audit_rows)
 
     if swap_audit_df.empty:
         pd.DataFrame().to_csv(silver_audit_dir / "audit_aircraft_swap_matches.csv", index=False)
     else:
         swap_audit_df.to_csv(silver_audit_dir / "audit_aircraft_swap_matches.csv", index=False)
-
-    if military_events.empty:
-        pd.DataFrame().to_csv(silver_feature_dir / "military_activity_events.csv", index=False)
-    else:
-        military_events_export = military_events.copy()
-        if "Event_DateTime" in military_events_export.columns:
-            military_events_export["Event_DateTime"] = military_events_export["Event_DateTime"].dt.strftime("%Y-%m-%d %H:%M:%S")
-        military_events_export = finalize_dataframe_for_export(military_events_export)
-        military_events_export.to_csv(silver_feature_dir / "military_activity_events.csv", index=False)
-
-    if commercial_frames:
-        commercial_df = pd.concat(commercial_frames, ignore_index=True)
-    else:
-        commercial_df = pd.DataFrame()
-    commercial_df.to_csv(silver_feature_dir / "commercial_flights_with_military_features.csv", index=False)
 
     print("=" * 72)
     print("Silver preprocessing completed")

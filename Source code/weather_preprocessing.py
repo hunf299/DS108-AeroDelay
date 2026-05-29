@@ -11,7 +11,7 @@ Usage:
 
 import argparse
 from pathlib import Path
-from typing import Dict
+from typing import Dict, List, Tuple
 
 import numpy as np
 import pandas as pd
@@ -44,6 +44,28 @@ HUMIDITY_FOG_PCT = 90.0
 FREEZING_TEMP_C = 5.0
 HOT_TEMP_C = 35.0
 
+NUMERIC_WEATHER_COLS = [
+    "temperature",
+    "precipitation",
+    "cloudcover",
+    "wind_speed",
+    "wind_direction",
+    "pressure",
+    "humidity",
+    "visibility",
+]
+
+PHYSICAL_BOUNDS: Dict[str, Tuple[float, float]] = {
+    "temperature": (-10.0, 50.0),
+    "precipitation": (0.0, 300.0),
+    "cloudcover": (0.0, 100.0),
+    "wind_speed": (0.0, 180.0),
+    "wind_direction": (0.0, 360.0),
+    "pressure": (850.0, 1100.0),
+    "humidity": (0.0, 100.0),
+    "visibility": (0.0, 50000.0),
+}
+
 
 def load_bronze_weather(project_root: Path) -> pd.DataFrame:
     """Load raw merged weather CSV from Bronze layer."""
@@ -60,23 +82,133 @@ def load_bronze_weather(project_root: Path) -> pd.DataFrame:
     df["Airport"] = df["airport"].astype("string").str.lower().map(AIRPORT_CODE_MAP)
 
     # Cast numeric columns
-    numeric_cols = [
-        "temperature",
-        "precipitation",
-        "cloudcover",
-        "wind_speed",
-        "wind_direction",
-        "pressure",
-        "humidity",
-        "visibility",
-    ]
-    for col in numeric_cols:
+    for col in NUMERIC_WEATHER_COLS:
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce")
 
     # Sort for rolling windows
     df = df.sort_values(["Airport", "time"]).reset_index(drop=True)
     return df
+
+
+def audit_weather_quality(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    """Create missing and outlier EDA audit tables before cleaning."""
+    missing_rows: List[Dict[str, object]] = []
+    outlier_rows: List[Dict[str, object]] = []
+
+    group_cols = ["Airport"] if "Airport" in df.columns else []
+    for airport, grp in df.groupby(group_cols, dropna=False) if group_cols else [("ALL", df)]:
+        airport_label = airport[0] if isinstance(airport, tuple) else airport
+        for col in ["time", "Airport", *NUMERIC_WEATHER_COLS]:
+            if col not in grp.columns:
+                continue
+            missing_rows.append(
+                {
+                    "Airport": airport_label,
+                    "Column": col,
+                    "Rows": len(grp),
+                    "Missing_Count": int(grp[col].isna().sum()),
+                    "Missing_Rate": round(float(grp[col].isna().mean()), 6),
+                }
+            )
+
+        for col in NUMERIC_WEATHER_COLS:
+            if col not in grp.columns:
+                continue
+            values = grp[col]
+            lower, upper = PHYSICAL_BOUNDS[col]
+            physical_mask = values.notna() & ((values < lower) | (values > upper))
+
+            valid_values = values.dropna()
+            iqr_mask = pd.Series(False, index=grp.index)
+            iqr_lower = np.nan
+            iqr_upper = np.nan
+            if len(valid_values) >= 8:
+                q1 = valid_values.quantile(0.25)
+                q3 = valid_values.quantile(0.75)
+                iqr = q3 - q1
+                if pd.notna(iqr) and iqr > 0:
+                    iqr_lower = q1 - 3.0 * iqr
+                    iqr_upper = q3 + 3.0 * iqr
+                    iqr_mask = values.notna() & ((values < iqr_lower) | (values > iqr_upper))
+
+            combined_mask = physical_mask | iqr_mask
+            for idx in grp.loc[combined_mask].index:
+                outlier_rows.append(
+                    {
+                        "Airport": airport_label,
+                        "Row_Index": int(idx),
+                        "Time": df.at[idx, "time"] if "time" in df.columns else pd.NaT,
+                        "Column": col,
+                        "Value": df.at[idx, col],
+                        "Physical_Lower": lower,
+                        "Physical_Upper": upper,
+                        "IQR_Lower": iqr_lower,
+                        "IQR_Upper": iqr_upper,
+                        "Is_Physical_Outlier": bool(physical_mask.at[idx]),
+                        "Is_IQR_Outlier": bool(iqr_mask.at[idx]),
+                    }
+                )
+
+    return pd.DataFrame(missing_rows), pd.DataFrame(outlier_rows)
+
+
+def clean_weather_values(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    """Clip invalid/outlier values and impute missing hourly weather by airport."""
+    out = df.copy()
+    action_rows: List[Dict[str, object]] = []
+
+    out = out.dropna(subset=["time", "Airport"]).copy()
+    out = out.sort_values(["Airport", "time"]).reset_index(drop=True)
+
+    for col in NUMERIC_WEATHER_COLS:
+        if col not in out.columns:
+            continue
+
+        before_missing = int(out[col].isna().sum())
+        lower, upper = PHYSICAL_BOUNDS[col]
+        physical_low = out[col].notna() & (out[col] < lower)
+        physical_high = out[col].notna() & (out[col] > upper)
+        out.loc[physical_low, col] = lower
+        out.loc[physical_high, col] = upper
+
+        iqr_clipped = 0
+        for airport, idx in out.groupby("Airport").groups.items():
+            values = out.loc[idx, col]
+            valid_values = values.dropna()
+            if len(valid_values) < 8:
+                continue
+            q1 = valid_values.quantile(0.25)
+            q3 = valid_values.quantile(0.75)
+            iqr = q3 - q1
+            if pd.isna(iqr) or iqr <= 0:
+                continue
+            iqr_lower = max(q1 - 3.0 * iqr, lower)
+            iqr_upper = min(q3 + 3.0 * iqr, upper)
+            clipped = values.clip(lower=iqr_lower, upper=iqr_upper)
+            iqr_clipped += int((values.notna() & (values != clipped)).sum())
+            out.loc[idx, col] = clipped
+
+        out[col] = (
+            out.groupby("Airport", group_keys=False)[col]
+            .apply(lambda s: s.interpolate(method="linear", limit_direction="both"))
+        )
+        out[col] = out.groupby("Airport")[col].transform(lambda s: s.fillna(s.median()))
+        out[col] = out[col].fillna(out[col].median())
+
+        after_missing = int(out[col].isna().sum())
+        action_rows.append(
+            {
+                "Column": col,
+                "Missing_Before": before_missing,
+                "Missing_After": after_missing,
+                "Physical_Low_Clipped": int(physical_low.sum()),
+                "Physical_High_Clipped": int(physical_high.sum()),
+                "IQR_Clipped": iqr_clipped,
+            }
+        )
+
+    return out, pd.DataFrame(action_rows)
 
 
 def compute_wind_components(df: pd.DataFrame) -> pd.DataFrame:
@@ -218,25 +350,37 @@ def finalize_for_export(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def run_weather_pipeline(project_root: Path) -> None:
-    silver_dir = project_root / "Data crawl" / "Silver_layer" / "Features"
+    silver_dir = project_root / "Data crawl" / "Silver_layer_2" / "Features"
+    audit_dir = project_root / "Data crawl" / "Silver_layer_2" / "Audit"
     silver_dir.mkdir(parents=True, exist_ok=True)
+    audit_dir.mkdir(parents=True, exist_ok=True)
 
-    print("[1/4] Loading bronze weather data...")
+    print("[1/6] Loading bronze weather data...")
     df = load_bronze_weather(project_root)
     print(f"      Loaded {len(df)} rows from bronze weather.")
 
-    print("[2/4] Computing wind components (crosswind / headwind)...")
+    print("[2/6] Auditing weather missing values and outliers...")
+    missing_audit, outlier_audit = audit_weather_quality(df)
+    missing_audit.to_csv(audit_dir / "audit_weather_missing_summary.csv", index=False, encoding="utf-8-sig")
+    outlier_audit.to_csv(audit_dir / "audit_weather_outliers.csv", index=False, encoding="utf-8-sig")
+
+    print("[3/6] Cleaning weather missing values and outliers...")
+    df, cleaning_audit = clean_weather_values(df)
+    cleaning_audit.to_csv(audit_dir / "audit_weather_cleaning_actions.csv", index=False, encoding="utf-8-sig")
+
+    print("[4/6] Computing wind components (crosswind / headwind)...")
     df = compute_wind_components(df)
 
-    print("[3/4] Engineering weather features...")
+    print("[5/6] Engineering weather features...")
     df = engineer_features(df)
 
-    print("[4/4] Exporting silver weather features...")
+    print("[6/6] Exporting silver weather features...")
     df_export = finalize_for_export(df)
     out_path = silver_dir / "weather_features_hourly.csv"
     df_export.to_csv(out_path, index=False, encoding="utf-8-sig")
 
     print(f"      Exported {len(df_export)} rows to {out_path}")
+    print(f"      Weather audit dir: {audit_dir}")
 
     # Quick summary
     print("\n" + "=" * 60)
