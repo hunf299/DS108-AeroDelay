@@ -45,13 +45,13 @@ Ket luan: tam nhin van quan trong, nhung khong nen doc raw visibility nhu featur
 
 ## Humidity va visibility co giai thich duoc suong mu khong?
 
-Khong nen ket luan manh. Tuong quan `visibility` voi `humidity` theo san bay rat yeu:
+Phan nay chi noi ve quan he `humidity` voi `visibility`, khong phai quan he voi delay risk. Ket luan hien tai: khong nen ket luan manh. Tuong quan `visibility` voi `humidity` theo san bay rat yeu:
 
 - DAD: `-0.091` tren toan bo data; non-capped subset `-0.129`.
 - HAN: `-0.078` tren toan bo data; non-capped subset `-0.059`.
 - SGN: `-0.068` tren toan bo data; non-capped subset `+0.096`.
 
-Visibility cap la ly do quan trong: SGN cap `96.0%`, HAN `92.8%`, DAD `62.4%`. Nhung khi bo capped values, quan he van yeu/khong on dinh. Vi vay khong nen dung humidity lam proxy truc tiep cho fog/low visibility. Dataset thieu dew point, ceiling/cloud base, METAR weather code, RVR va fog observation; nen EDA chi nen xem humidity la bien phu hoac interaction feature.
+Visibility cap la ly do quan trong: SGN cap `96.0%`, HAN `92.8%`, DAD `62.4%`. Nhung khi bo capped values, quan he van yeu/khong on dinh. Vi vay nhan xet "do am cao lam giam tam nhin" khong duoc dataset nay the hien ro. Khong nen dung humidity lam proxy truc tiep cho fog/low visibility. Dataset thieu dew point, ceiling/cloud base, METAR weather code, RVR va fog observation; nen EDA chi nen xem humidity la bien phu hoac interaction feature.
 
 ## Crosswind va huong gio
 
