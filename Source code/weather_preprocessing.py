@@ -35,11 +35,17 @@ DEFAULT_RUNWAY_HEADING: Dict[str, float] = {
 }
 
 # Thresholds (aviation-oriented)
+KMH_PER_KT = 1.852
 RAIN_HEAVY_MM_H = 5.0
 WIND_STRONG_KMH = 30.0
 WIND_GALE_KMH = 50.0
 VIS_LOW_M = 5000.0
 VIS_FOG_M = 1000.0
+VIS_3SM_M = 3 * 1609.344
+VIS_1SM_M = 1609.344
+CROSSWIND_CAUTION_KT = 10.0
+CROSSWIND_MODERATE_KT = 15.0
+CROSSWIND_HIGH_KT = 20.0
 HUMIDITY_FOG_PCT = 90.0
 FREEZING_TEMP_C = 5.0
 HOT_TEMP_C = 35.0
@@ -54,6 +60,12 @@ NUMERIC_WEATHER_COLS = [
     "humidity",
     "visibility",
 ]
+
+NO_IQR_CLIP_COLS = {
+    "precipitation",
+    "wind_speed",
+    "visibility",
+}
 
 PHYSICAL_BOUNDS: Dict[str, Tuple[float, float]] = {
     "temperature": (-10.0, 50.0),
@@ -154,7 +166,11 @@ def audit_weather_quality(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]
 
 
 def clean_weather_values(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
-    """Clip invalid/outlier values and impute missing hourly weather by airport."""
+    """Clip physically invalid values and impute missing hourly weather by airport.
+
+    Event variables such as precipitation, wind speed, and visibility are not
+    IQR-clipped because rare extremes are operational signals for aviation EDA.
+    """
     out = df.copy()
     action_rows: List[Dict[str, object]] = []
 
@@ -173,21 +189,22 @@ def clean_weather_values(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
         out.loc[physical_high, col] = upper
 
         iqr_clipped = 0
-        for airport, idx in out.groupby("Airport").groups.items():
-            values = out.loc[idx, col]
-            valid_values = values.dropna()
-            if len(valid_values) < 8:
-                continue
-            q1 = valid_values.quantile(0.25)
-            q3 = valid_values.quantile(0.75)
-            iqr = q3 - q1
-            if pd.isna(iqr) or iqr <= 0:
-                continue
-            iqr_lower = max(q1 - 3.0 * iqr, lower)
-            iqr_upper = min(q3 + 3.0 * iqr, upper)
-            clipped = values.clip(lower=iqr_lower, upper=iqr_upper)
-            iqr_clipped += int((values.notna() & (values != clipped)).sum())
-            out.loc[idx, col] = clipped
+        if col not in NO_IQR_CLIP_COLS:
+            for airport, idx in out.groupby("Airport").groups.items():
+                values = out.loc[idx, col]
+                valid_values = values.dropna()
+                if len(valid_values) < 8:
+                    continue
+                q1 = valid_values.quantile(0.25)
+                q3 = valid_values.quantile(0.75)
+                iqr = q3 - q1
+                if pd.isna(iqr) or iqr <= 0:
+                    continue
+                iqr_lower = max(q1 - 3.0 * iqr, lower)
+                iqr_upper = min(q3 + 3.0 * iqr, upper)
+                clipped = values.clip(lower=iqr_lower, upper=iqr_upper)
+                iqr_clipped += int((values.notna() & (values != clipped)).sum())
+                out.loc[idx, col] = clipped
 
         out[col] = (
             out.groupby("Airport", group_keys=False)[col]
@@ -224,6 +241,20 @@ def compute_wind_components(df: pd.DataFrame) -> pd.DataFrame:
         ws = out.loc[mask, "wind_speed"]
         out.loc[mask, "Crosswind_Kmh"] = np.abs(ws * np.sin(angle_diff))
         out.loc[mask, "Headwind_Kmh"] = ws * np.cos(angle_diff)
+        relative_angle = np.degrees(np.arccos(np.clip(np.cos(angle_diff), -1.0, 1.0)))
+        out.loc[mask, "Wind_Runway_Relative_Angle_Deg"] = relative_angle
+
+    out["Wind_Kt"] = out["wind_speed"] / KMH_PER_KT
+    out["Crosswind_Kt"] = out["Crosswind_Kmh"] / KMH_PER_KT
+    out["Headwind_Kt"] = out["Headwind_Kmh"] / KMH_PER_KT
+    out["Wind_Sector"] = pd.cut(
+        wind_dir,
+        bins=[0, 22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5, 360],
+        labels=["N", "NE", "E", "SE", "S", "SW", "W", "NW", "N"],
+        include_lowest=True,
+        ordered=False,
+    ).astype("string")
+    out["Is_Tailwind_Default_Runway_5kt"] = out["Headwind_Kt"] <= -5.0
 
     return out
 
@@ -250,6 +281,11 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
 
     out["Wind_Gust_Estimate_Kmh"] = rolling_by_airport("wind_speed", 3, "max")
     out["Crosswind_Max_3H_Kmh"] = rolling_by_airport("Crosswind_Kmh", 3, "max")
+    out["Wind_Gust_Estimate_Kt"] = out["Wind_Gust_Estimate_Kmh"] / KMH_PER_KT
+    out["Crosswind_Max_3H_Kt"] = out["Crosswind_Max_3H_Kmh"] / KMH_PER_KT
+    out["Visibility_SM"] = out["visibility"] / 1609.344
+    out["Visibility_Deficit_5KM_M"] = (VIS_LOW_M - out["visibility"]).clip(lower=0.0)
+    out["Visibility_Deficit_3SM_M"] = (VIS_3SM_M - out["visibility"]).clip(lower=0.0)
 
     # --- Binary / categorical risk flags ---
     out["Is_Rain"] = out["precipitation"] > 0.0
@@ -258,6 +294,16 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     out["Is_Gale_Wind"] = out["wind_speed"] >= WIND_GALE_KMH
     out["Is_Low_Visibility"] = out["visibility"] < VIS_LOW_M
     out["Is_Fog"] = (out["visibility"] < VIS_FOG_M) & (out["humidity"] > HUMIDITY_FOG_PCT)
+    out["Is_Below_3SM_Visibility"] = out["visibility"] < VIS_3SM_M
+    out["Is_Below_1SM_Visibility"] = out["visibility"] < VIS_1SM_M
+    out["Visibility_Severity_Score"] = (
+        out["Is_Low_Visibility"].astype(int)
+        + out["Is_Below_3SM_Visibility"].astype(int)
+        + out["Is_Below_1SM_Visibility"].astype(int) * 2
+    )
+    out["Is_Crosswind_10kt"] = out["Crosswind_Kt"] >= CROSSWIND_CAUTION_KT
+    out["Is_Crosswind_15kt"] = out["Crosswind_Kt"] >= CROSSWIND_MODERATE_KT
+    out["Is_Crosswind_20kt"] = out["Crosswind_Kt"] >= CROSSWIND_HIGH_KT
     out["Is_Freezing"] = out["temperature"] <= FREEZING_TEMP_C
     out["Is_Extreme_Heat"] = out["temperature"] >= HOT_TEMP_C
     out["Is_Thunderstorm_Risk"] = (out["cloudcover"] > 80) & (out["precipitation"] > 0)
@@ -284,6 +330,17 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
         + out["Is_Thunderstorm_Risk"].astype(int)
     ).clip(upper=5)
 
+    # Aviation-oriented score: impact on airport operation, not just weather severity.
+    out["Aviation_Operational_Risk_Score"] = (
+        out["Visibility_Severity_Score"]
+        + out["Is_Crosswind_10kt"].astype(int)
+        + out["Is_Crosswind_15kt"].astype(int)
+        + out["Is_Crosswind_20kt"].astype(int)
+        + out["Is_Heavy_Rain"].astype(int)
+        + out["Runway_Wet_Risk"].clip(upper=2)
+        + out["Is_Thunderstorm_Risk"].astype(int)
+    ).clip(upper=8)
+
     return out
 
 
@@ -300,11 +357,20 @@ def finalize_for_export(df: pd.DataFrame) -> pd.DataFrame:
         "pressure",
         "humidity",
         "visibility",
+        "Visibility_SM",
+        "Visibility_Deficit_5KM_M",
+        "Visibility_Deficit_3SM_M",
+        "Visibility_Severity_Score",
     ]
 
     feature_cols = [
+        "Wind_Sector",
+        "Wind_Runway_Relative_Angle_Deg",
         "Crosswind_Kmh",
         "Headwind_Kmh",
+        "Wind_Kt",
+        "Crosswind_Kt",
+        "Headwind_Kt",
         "Temp_Change_1H_C",
         "Temp_Change_3H_C",
         "Pressure_Change_3H_Hpa",
@@ -313,18 +379,27 @@ def finalize_for_export(df: pd.DataFrame) -> pd.DataFrame:
         "Precip_Cumsum_6H_Mm",
         "Wind_Gust_Estimate_Kmh",
         "Crosswind_Max_3H_Kmh",
+        "Wind_Gust_Estimate_Kt",
+        "Crosswind_Max_3H_Kt",
         "Is_Rain",
         "Is_Heavy_Rain",
         "Is_Strong_Wind",
         "Is_Gale_Wind",
         "Is_Low_Visibility",
         "Is_Fog",
+        "Is_Below_3SM_Visibility",
+        "Is_Below_1SM_Visibility",
+        "Is_Crosswind_10kt",
+        "Is_Crosswind_15kt",
+        "Is_Crosswind_20kt",
+        "Is_Tailwind_Default_Runway_5kt",
         "Is_Freezing",
         "Is_Extreme_Heat",
         "Is_Thunderstorm_Risk",
         "Runway_Wet_Risk",
         "Runway_Ice_Risk",
         "Weather_Delay_Risk_Score",
+        "Aviation_Operational_Risk_Score",
     ]
 
     keep = [c for c in core_cols + feature_cols if c in df.columns]

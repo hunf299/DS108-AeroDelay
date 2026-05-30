@@ -1,0 +1,3 @@
+﻿,target_definition,positive_count,negative_count,positive_rate_pct,negative_to_positive_ratio
+0,Risk > 0,1556,5068,23.490338164251206,3.2570694087403598
+1,Risk >= 2,1024,5600,15.458937198067632,5.46875

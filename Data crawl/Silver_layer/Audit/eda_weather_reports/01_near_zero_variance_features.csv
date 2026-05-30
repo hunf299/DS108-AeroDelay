@@ -1,0 +1,8 @@
+﻿,feature,nunique,top_value,top_rate_pct
+3,Is_Heavy_Rain,2,0.0,99.86413043478261
+5,Is_Below_3SM_Visibility,2,0.0,99.80374396135265
+1,Visibility_Deficit_3SM_M,12,0.0,99.80374396135265
+6,Is_Extreme_Heat,2,0.0,99.80374396135265
+0,Visibility_Deficit_5KM_M,13,0.0,99.78864734299518
+2,Visibility_Severity_Score,3,0.0,99.78864734299518
+4,Is_Low_Visibility,2,0.0,99.78864734299518
