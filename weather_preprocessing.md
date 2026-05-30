@@ -2,17 +2,17 @@
 
 ## Aviation EDA update
 
-Phan EDA khi tuong nen duoc doc theo van hanh hang khong, khong chi theo khi tuong rieng le. Bao cao da bo sung nam tai `Data crawl/Silver_layer/Audit/eda_weather_reports/10_aviation_weather_operational_review.md`.
+Phần EDA khí tượng nên được đọc theo hướng **vận hành hàng không**, không chỉ theo khí tượng riêng lẻ. Báo cáo diễn giải chính nằm tại `Data crawl/Silver_layer/Audit/eda_weather_reports/10_aviation_weather_operational_review.md`.
 
-Nhung thay doi chinh:
+Những thay đổi chính:
 
-- Gio/crosswind duoc quy doi them sang knot: `Wind_Kt`, `Crosswind_Kt`, `Headwind_Kt`.
-- Them nguong crosswind `10 kt`, `15 kt`, `20 kt` de phan tich runway selection va workload khi cat/ha canh.
-- Them nguong visibility hang khong: `< 3 SM` va `< 1 SM` ben canh nguong meter.
-- Them `Aviation_Operational_Risk_Score` de tach rui ro khai thac bay khoi weather severity thuan tuy.
-- Them huong gio va wind sector: `Wind_Sector`, `Wind_Runway_Relative_Angle_Deg`, `Is_Tailwind_Default_Runway_5kt`.
-- Them visibility dung chieu voi risk: `Visibility_Deficit_5KM_M`, `Visibility_Deficit_3SM_M`, `Visibility_Severity_Score`.
-- Khi viet insight, khong ket luan "anh huong bay nang" neu chi thay visibility < 10 km; can kiem tra nguong < 3 SM, mua lon, runway wet, crosswind va so chuyen bay bi phoi nhiem.
+- Gió/crosswind được quy đổi thêm sang knot: `Wind_Kt`, `Crosswind_Kt`, `Headwind_Kt`.
+- Thêm ngưỡng crosswind `10 kt`, `15 kt`, `20 kt` để phân tích runway selection và workload khi cất/hạ cánh.
+- Thêm ngưỡng visibility hàng không: `< 3 SM` và `< 1 SM` bên cạnh ngưỡng mét.
+- Thêm `Aviation_Operational_Risk_Score` để tách rủi ro khai thác bay khỏi weather severity thuần túy.
+- Thêm hướng gió và wind sector: `Wind_Sector`, `Wind_Runway_Relative_Angle_Deg`, `Is_Tailwind_Default_Runway_5kt`.
+- Thêm biến visibility đúng chiều với risk: `Visibility_Deficit_5KM_M`, `Visibility_Deficit_3SM_M`, `Visibility_Severity_Score`.
+- Khi viết insight, không kết luận “ảnh hưởng bay nặng” nếu chỉ thấy visibility `< 10 km`; cần kiểm tra thêm ngưỡng `< 3 SM`, mưa lớn, runway wet, crosswind và số chuyến bay bị phơi nhiễm.
 
 ## 1. Tổng quan
 
