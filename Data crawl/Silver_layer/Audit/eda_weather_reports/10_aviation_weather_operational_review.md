@@ -43,6 +43,16 @@ Khong. Raw `visibility` cang cao thi dieu kien cang tot, nen correlation voi ris
 
 Ket luan: tam nhin van quan trong, nhung khong nen doc raw visibility nhu feature cung chieu voi risk. Khi bao cao, dung deficit/threshold flags de dien giai tac dong.
 
+## Humidity va visibility co giai thich duoc suong mu khong?
+
+Khong nen ket luan manh. Tuong quan `visibility` voi `humidity` theo san bay rat yeu:
+
+- DAD: `-0.091` tren toan bo data; non-capped subset `-0.129`.
+- HAN: `-0.078` tren toan bo data; non-capped subset `-0.059`.
+- SGN: `-0.068` tren toan bo data; non-capped subset `+0.096`.
+
+Visibility cap la ly do quan trong: SGN cap `96.0%`, HAN `92.8%`, DAD `62.4%`. Nhung khi bo capped values, quan he van yeu/khong on dinh. Vi vay khong nen dung humidity lam proxy truc tiep cho fog/low visibility. Dataset thieu dew point, ceiling/cloud base, METAR weather code, RVR va fog observation; nen EDA chi nen xem humidity la bien phu hoac interaction feature.
+
 ## Crosswind va huong gio
 
 | Airport | Dominant wind sectors | Hours xwind >=10 kt | Hours xwind >=15 kt | Max xwind |
