@@ -52,6 +52,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Data crawl/Gold_layer/Arrival/dad_flights_arrival_gold_layer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Gold_layer/Arrival/sgn_flights_arrival_gold_layer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Data crawl/Gold_layer/Audit/feature_eligibility_audit.csv">
           <value>
             <Attribute>
@@ -74,6 +88,20 @@
           </value>
         </entry>
         <entry key="/Data crawl/Gold_layer/Audit/temporal_data_leakage_report.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Gold_layer/Departure/dad_flights_departure_gold_layer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Gold_layer/Departure/sgn_flights_departure_gold_layer.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
