@@ -1,0 +1,72 @@
+airport,mode,row_index_dropped,row_index_kept,dedup_reason,actual_time_gap_minutes,key_signature
+SGN,departure,6455,6454,same_day_150m_window,1.0,Service_Date=2026-01-02|Flight_No=VN1895|IATA=VCS|Destination=Con Dao
+SGN,departure,8058,8057,same_day_150m_window,0.0,Service_Date=2026-01-06|Flight_No=VN1853|IATA=VCS|Destination=Con Dao
+SGN,departure,8751,8750,same_day_150m_window,0.0,Service_Date=2026-01-08|Flight_No=VN1404|IATA=VDH|Destination=Dong Hoi
+SGN,departure,9681,9680,same_day_150m_window,0.0,Service_Date=2026-01-11|Flight_No=VN1895|IATA=VCS|Destination=Con Dao
+SGN,departure,10791,10790,same_day_150m_window,0.0,Service_Date=2026-01-14|Flight_No=VN1895|IATA=VCS|Destination=Con Dao
+SGN,departure,13128,13123,same_day_150m_window,22.0,Service_Date=2026-01-19|Flight_No=VN11|IATA=CDG|Destination=Paris
+SGN,departure,14058,14057,same_day_150m_window,0.0,Service_Date=2026-01-23|Flight_No=VN1893|IATA=VCS|Destination=Con Dao
+SGN,departure,14107,14106,same_day_150m_window,0.0,Service_Date=2026-01-23|Flight_No=0V8073|IATA=VCS|Destination=Con Dao
+SGN,departure,14382,14381,same_day_150m_window,0.0,Service_Date=2026-01-24|Flight_No=VN1893|IATA=VCS|Destination=Con Dao
+SGN,departure,15086,15085,same_day_150m_window,1.0,Service_Date=2026-01-26|Flight_No=VN1895|IATA=VCS|Destination=Con Dao
+SGN,departure,15144,15143,same_day_150m_window,0.0,Service_Date=2026-01-26|Flight_No=VN1893|IATA=VCS|Destination=Con Dao
+SGN,departure,15905,15904,same_day_150m_window,0.0,Service_Date=2026-01-28|Flight_No=VN1893|IATA=VCS|Destination=Con Dao
+SGN,departure,17402,17401,same_day_150m_window,1.0,Service_Date=2026-02-01|Flight_No=VN1892|IATA=<NA>|Destination=<NA>
+SGN,departure,18963,18962,same_day_150m_window,0.0,Service_Date=2026-02-05|Flight_No=VN8093|IATA=VCS|Destination=Con Dao
+SGN,departure,19982,19981,same_day_150m_window,0.0,Service_Date=2026-02-07|Flight_No=VN1857|IATA=VCS|Destination=Con Dao
+SGN,departure,21536,21531,same_day_150m_window,16.0,Service_Date=2026-02-10|Flight_No=VJ840|IATA=TPE|Destination=Taipei
+SGN,departure,23553,23541,same_day_150m_window,40.0,Service_Date=2026-02-13|Flight_No=VN570|IATA=TPE|Destination=Taipei
+SGN,departure,23952,23949,same_day_150m_window,7.0,Service_Date=2026-02-15|Flight_No=VJ325|IATA=PQC|Destination=Phu Quoc
+SGN,departure,24849,24845,same_day_150m_window,11.0,Service_Date=2026-02-17|Flight_No=VN605|IATA=BKK|Destination=Bangkok
+SGN,departure,25171,25169,same_day_150m_window,5.0,Service_Date=2026-02-18|Flight_No=VJ386|IATA=UIH|Destination=Qui Nhon
+SGN,departure,25306,25305,same_day_150m_window,0.0,Service_Date=2026-02-18|Flight_No=VN8067|IATA=VCS|Destination=Con Dao
+SGN,departure,25698,25697,same_day_150m_window,1.0,Service_Date=2026-02-19|Flight_No=VN1859|IATA=VCS|Destination=Con Dao
+SGN,departure,25769,25768,same_day_150m_window,1.0,Service_Date=2026-02-19|Flight_No=VN1857|IATA=VCS|Destination=Con Dao
+SGN,departure,27652,27621,same_day_150m_window,89.0,Service_Date=2026-02-23|Flight_No=VJ842|IATA=TPE|Destination=Taipei
+SGN,departure,28252,28201,same_day_150m_window,122.0,Service_Date=2026-02-24|Flight_No=VJ244|IATA=THD|Destination=Thanh Hoa
+SGN,departure,28248,28247,same_day_150m_window,0.0,Service_Date=2026-02-24|Flight_No=VN8346|IATA=CXR|Destination=Nha Trang
+SGN,departure,28322,28321,same_day_150m_window,0.0,Service_Date=2026-02-24|Flight_No=VN8057|IATA=VCS|Destination=Con Dao
+SGN,departure,29680,29678,same_day_150m_window,2.0,Service_Date=2026-02-27|Flight_No=TR303|IATA=SIN|Destination=Singapore
+SGN,departure,30146,30120,same_day_150m_window,67.0,Service_Date=2026-02-28|Flight_No=MH767|IATA=KUL|Destination=Kuala Lumpur
+SGN,departure,31694,31692,same_day_150m_window,2.0,Service_Date=2026-03-03|Flight_No=BSF968|IATA=<NA>|Destination=<NA>
+SGN,departure,31695,31693,same_day_150m_window,2.0,Service_Date=2026-03-03|Flight_No=VN112|IATA=DAD|Destination=Da Nang
+SGN,departure,31715,31704,same_day_150m_window,29.0,Service_Date=2026-03-03|Flight_No=VU774|IATA=HAN|Destination=Hanoi
+SGN,departure,32048,32047,same_day_150m_window,0.0,Service_Date=2026-03-04|Flight_No=VN8067|IATA=VCS|Destination=Con Dao
+SGN,departure,32075,32074,same_day_150m_window,0.0,Service_Date=2026-03-04|Flight_No=VN8055|IATA=VCS|Destination=Con Dao
+SGN,departure,32121,32120,same_day_150m_window,1.0,Service_Date=2026-03-04|Flight_No=VN8059|IATA=VCS|Destination=Con Dao
+SGN,departure,33250,33249,same_day_150m_window,1.0,Service_Date=2026-03-07|Flight_No=VN8057|IATA=VCS|Destination=Con Dao
+SGN,departure,33256,33255,same_day_150m_window,0.0,Service_Date=2026-03-07|Flight_No=VN8055|IATA=VCS|Destination=Con Dao
+SGN,departure,33644,33643,same_day_150m_window,1.0,Service_Date=2026-03-08|Flight_No=VN8055|IATA=VCS|Destination=Con Dao
+SGN,departure,34001,34000,same_day_150m_window,0.0,Service_Date=2026-03-09|Flight_No=VN8067|IATA=VCS|Destination=Con Dao
+SGN,departure,34008,34007,same_day_150m_window,0.0,Service_Date=2026-03-09|Flight_No=VN1857|IATA=VCS|Destination=Con Dao
+SGN,departure,34086,34085,same_day_150m_window,0.0,Service_Date=2026-03-09|Flight_No=VN8073|IATA=VCS|Destination=Con Dao
+SGN,departure,34390,34389,same_day_150m_window,0.0,Service_Date=2026-03-10|Flight_No=VN8067|IATA=VCS|Destination=Con Dao
+SGN,departure,34402,34401,same_day_150m_window,0.0,Service_Date=2026-03-10|Flight_No=VN8057|IATA=VCS|Destination=Con Dao
+SGN,departure,34458,34457,same_day_150m_window,0.0,Service_Date=2026-03-10|Flight_No=VJ260|IATA=VDH|Destination=Dong Hoi
+SGN,departure,34727,34726,same_day_150m_window,1.0,Service_Date=2026-03-11|Flight_No=VN8346|IATA=CXR|Destination=Nha Trang
+SGN,departure,34789,34788,same_day_150m_window,1.0,Service_Date=2026-03-11|Flight_No=VN8057|IATA=VCS|Destination=Con Dao
+SGN,departure,34794,34793,same_day_150m_window,0.0,Service_Date=2026-03-11|Flight_No=VN8055|IATA=VCS|Destination=Con Dao
+SGN,departure,34843,34842,same_day_150m_window,0.0,Service_Date=2026-03-11|Flight_No=VN1853|IATA=VCS|Destination=Con Dao
+SGN,departure,35168,35167,same_day_150m_window,1.0,Service_Date=2026-03-12|Flight_No=VN8055|IATA=VCS|Destination=Con Dao
+SGN,departure,35538,35537,same_day_150m_window,0.0,Service_Date=2026-03-13|Flight_No=VN1857|IATA=VCS|Destination=Con Dao
+SGN,departure,36019,36014,same_day_150m_window,9.0,Service_Date=2026-03-13|Flight_No=KE476|IATA=ICN|Destination=Seoul
+SGN,departure,36021,36017,same_day_150m_window,8.0,Service_Date=2026-03-13|Flight_No=VN408|IATA=ICN|Destination=Seoul
+SGN,departure,36026,36024,same_day_150m_window,4.0,Service_Date=2026-03-13|Flight_No=EK393|IATA=DXB|Destination=Dubai
+SGN,departure,36599,36598,same_day_150m_window,0.0,Service_Date=2026-03-16|Flight_No=VN8346|IATA=CXR|Destination=Nha Trang
+SGN,arrival,22368,22342,same_day_150m_window,66.0,Service_Date=2026-02-12 00:00:00|Flight_No=OK8902|IATA=<NA>|Destination=SGN
+HAN,departure,24251,24240,same_day_150m_window,39.0,Service_Date=2026-03-03|Flight_No=VJ905|IATA=KUL|Destination=Kuala Lumpur
+HAN,arrival,8532,8524,same_day_150m_window,72.0,Service_Date=2026-01-12 00:00:00|Flight_No=WW220|IATA=KUL|Destination=HAN
+HAN,arrival,23798,10962,same_day_150m_window,0.0,Service_Date=2026-01-22 00:00:00|Flight_No=9G868|IATA=SGN|Destination=HAN
+HAN,arrival,21727,21725,same_day_150m_window,0.0,Service_Date=2026-03-05 00:00:00|Flight_No=VU774|IATA=SGN|Destination=HAN
+HAN,arrival,21728,21725,same_day_150m_window,0.0,Service_Date=2026-03-05 00:00:00|Flight_No=VU774|IATA=SGN|Destination=HAN
+HAN,arrival,21729,21725,same_day_150m_window,0.0,Service_Date=2026-03-05 00:00:00|Flight_No=VU774|IATA=SGN|Destination=HAN
+DAD,departure,7566,7565,same_day_150m_window,0.0,Service_Date=2026-02-11|Flight_No=QH195|IATA=SGN|Destination=Ho Chi Minh City
+DAD,departure,7863,7855,same_day_150m_window,55.0,Service_Date=2026-02-13|Flight_No=VN7147|IATA=SGN|Destination=Ho Chi Minh City
+DAD,departure,7865,7864,same_day_150m_window,0.0,Service_Date=2026-02-13|Flight_No=QH195|IATA=SGN|Destination=Ho Chi Minh City
+DAD,departure,8142,8143,same_day_150m_window,30.0,Service_Date=2026-02-14|Flight_No=VN7123|IATA=SGN|Destination=Ho Chi Minh City
+DAD,departure,9661,9662,same_day_150m_window,20.0,Service_Date=2026-02-25|Flight_No=QH195|IATA=SGN|Destination=Ho Chi Minh City
+DAD,departure,9671,9670,same_day_150m_window,20.0,Service_Date=2026-02-25|Flight_No=VN156|IATA=HAN|Destination=Hanoi
+DAD,departure,11795,11794,same_day_150m_window,75.0,Service_Date=2026-03-11|Flight_No=VJ641|IATA=SGN|Destination=Ho Chi Minh City
+DAD,departure,12212,12211,same_day_150m_window,0.0,Service_Date=2026-03-14|Flight_No=QH146|IATA=HAN|Destination=Hanoi
+DAD,arrival,7121,7109,same_day_150m_window,0.0,Service_Date=2026-02-07|Flight_No=VN7120|IATA=SGN|Destination=DAD
+DAD,arrival,7691,7696,same_day_150m_window,60.0,Service_Date=2026-02-11|Flight_No=VN106|IATA=SGN|Destination=DAD

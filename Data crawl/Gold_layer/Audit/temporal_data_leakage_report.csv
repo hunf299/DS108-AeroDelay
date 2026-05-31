@@ -1,1 +1,2 @@
-Airport,Flight_No,Tail_Number,Scheduled_Time,Prev_Actual_Arrival,Source_File,Source_Row_Index
+check_name,violation_count,rows_checked,status
+departure_scheduled_after_previous_arrival,0,74723,pass

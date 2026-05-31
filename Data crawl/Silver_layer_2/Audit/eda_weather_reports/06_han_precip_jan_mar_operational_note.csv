@@ -1,0 +1,5 @@
+﻿Airport,_month,hours,rain_hours,rain_rate_pct,heavy_rain_hours,precip_sum_mm,precip_mean_mm_h,wet_runway_hours,risk_mean
+HAN,2025-12,408,67,16.422,0,16.6,0.041,67,0.76
+HAN,2026-01,744,117,15.726,1,52.0,0.07,117,1.031
+HAN,2026-02,672,151,22.47,0,51.6,0.077,151,1.253
+HAN,2026-03,384,46,11.979,0,15.8,0.041,46,0.74

@@ -16,7 +16,9 @@ timezone = "Asia/Bangkok"
 features_archive = [
     "temperature_2m", "precipitation", "cloudcover",
     "windspeed_10m", "winddirection_10m", 
-    "surface_pressure", "relative_humidity_2m"
+    "surface_pressure", "relative_humidity_2m",
+    "dew_point_2m", "weather_code", "cape",
+    "lifted_index", "cloud_cover_low"
 ]
 
 features_forecast = [

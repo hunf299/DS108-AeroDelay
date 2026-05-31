@@ -2,6 +2,18 @@
 
 ## Aviation EDA update
 
+### Current Silver_layer_2 update
+
+Weather preprocessing hiện xuất vào `Data crawl/Silver_layer_2/Features/weather_features_hourly.csv` theo cùng layer với flight preprocessing mới. Bronze weather sau khi crawl lại có thêm `dew_point_2m`, `weather_code`, `cape`, `lifted_index`, `cloud_cover_low`; các cột này đã được giữ trong Silver và dùng để tạo thêm:
+
+- `Dew_Point_Spread_C`, `Is_Radiation_Fog_Risk`.
+- `Is_Low_Ceiling_Risk`.
+- `Is_Severe_Convection_Risk`, `Convective_Severity_Score`.
+- `Tailwind_Default_Runway_Kt`, `Forced_Runway_Swap_Risk`.
+- `Gust_Variation_Kt`.
+
+Report EDA chính hiện nằm tại `Data crawl/Silver_layer_2/Audit/eda_weather_reports/10_aviation_weather_operational_review.md`.
+
 Phần EDA khí tượng nên được đọc theo hướng **vận hành hàng không**, không chỉ theo khí tượng riêng lẻ. Báo cáo diễn giải chính nằm tại `Data crawl/Silver_layer/Audit/eda_weather_reports/10_aviation_weather_operational_review.md`.
 
 Những thay đổi chính:

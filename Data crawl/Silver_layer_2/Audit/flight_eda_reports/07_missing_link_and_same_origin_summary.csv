@@ -1,0 +1,4 @@
+﻿audit,rows,unique_Action,unique_Drop_Reason,unique_Airport
+departure_without_arrival,619,1,0.0,
+arrival_without_departure,476,1,0.0,
+same_origin,84,3,,2.0

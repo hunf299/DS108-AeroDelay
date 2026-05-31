@@ -1,4 +1,0 @@
-﻿,check,result
-0,Is_Strong_Wind summary,"Is_Strong_Wind=1 hours: 0, max wind_speed: 27.50"
-1,Wind >= 30kt equivalent,hours >= 55.6 km/h: 0
-2,Is_Fog vs Is_Low_Visibility,"fog hours=0, low visibility hours=14, lowvis but no fog=14"

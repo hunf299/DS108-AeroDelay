@@ -1,6 +1,0 @@
-Metric,Value
-valid_patched_rows,186
-matched_by_route_flight_clock,186
-missing_by_route_flight_clock,0
-matched_by_route_flight_full_datetime,185
-missing_by_route_flight_full_datetime,1

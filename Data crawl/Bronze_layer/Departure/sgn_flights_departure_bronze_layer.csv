@@ -36760,31 +36760,31 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-16,00:05,00:18,Osaka,KIX,Vietnam Airlines,VN320,2,25L,Departed,VN-A879,B78X,1,passenger
 2026-03-16,23:55,00:16,Dubai,DXB,Emirates,EK393,2,25R,Departed,A6-ECZ,B77W,1,passenger
 2026-03-16,23:50,00:04,Frankfurt,FRA,Vietnam Airlines,VN31,2,25L,Departed,VN-A862,B789,0,passenger
-2025-12-15,2025-12-15 22:05:00,2025-12-15 22:41,Hanoi,HAN,Vietnam Airlines,VN7268,3,,Departed,VN-A339,A321,,passenger
-2025-12-15,2025-12-15 22:20:00,2025-12-15 22:32,Hanoi,HAN,Vietnam Airlines,VN7206,3,,Departed,VN-A331,A321,,passenger
-2025-12-28,2025-12-28 21:15:00,2025-12-28 21:40,Hanoi,HAN,Vietnam Airlines,VN7204,3,,Departed,VN-A606,A321,,passenger
-2025-12-28,2025-12-28 23:20:00,2025-12-29 01:52,Hanoi,HAN,VietJet Air,VJ182,1,,Departed,VN-A668,A320,,passenger
-2025-12-28,2025-12-28 22:20:00,2025-12-29 00:01,Hanoi,HAN,Vietnam Airlines,VN7206,3,,Departed,VN-A601,A321,,passenger
-2026-01-04,2026-01-04 21:05:00,2026-01-04 21:56,Hanoi,HAN,Vietravel Airlines,VU794,3,,Departed,VN-A129,A321,,passenger
-2026-01-04,2026-01-04 23:55:00,2026-01-05 01:32,Hanoi,HAN,Vietnam Airlines,VN7258,3,,Departed,VN-A513,A20N,,passenger
-2026-01-08,2026-01-08 17:30:00,2026-01-08 18:50,Hanoi,HAN,Vietnam Airlines,VN7210,3,,Departed,VN-A864,B789,,passenger
-2026-01-09,2026-01-09 09:35:00,2026-01-09 10:06,Hanoi,HAN,Vietnam Airlines,VN6010,3,,Departed,VN-A363,A321,,passenger
-2026-01-10,2026-01-10 09:00:00,2026-01-10 12:49,Hanoi,HAN,VietJet Air,VJ132,1,,Departed,VN-A817,A333,,passenger
-2026-01-14,2026-01-14 23:00:00,2026-01-15 00:16,Hanoi,HAN,VietJet Air,VJ164,1,,Departed,VN-A814,A333,,passenger
-2026-01-21,2026-01-21 19:10:00,2026-01-21 19:30,Hanoi,HAN,VietJet Air,VJ196,1,,Departed,VN-A811,A333,,passenger
-2026-01-21,2026-01-21 23:00:00,2026-01-21 23:16,Hanoi,HAN,VietJet Air,VJ164,1,,Departed,VN-A699,A320,,passenger
-2026-01-24,2026-01-24 21:50:00,2026-01-24 22:18,Hanoi,HAN,Sun PhuQuoc Airways,9G882,3,,Departed,VN-A281,A21N,,passenger
-2026-01-24,2026-01-24 19:50:00,2026-01-24 20:41,Hanoi,HAN,VietJet Air,VJ190,1,,Departed,VN-A655,A320,,passenger
-2026-01-24,2026-01-24 17:00:00,2026-01-24 19:11,Hanoi,HAN,VietJet Air,VJ152,1,,Departed,VN-A644,A321,,passenger
-2026-01-24,2026-01-24 18:00:00,2026-01-24 19:03,Hanoi,HAN,Vietnam Airlines,VN218,3,,Departed,VN-A895,A359,,passenger
-2026-01-24,2026-01-24 12:00:00,2026-01-24 12:47,Hanoi,HAN,VietJet Air,VJ144,1,,Departed,VN-A663,A320,,passenger
-2026-02-17,2026-02-17 18:00:00,2026-02-17 20:27,Hanoi,HAN,Bamboo Airways,QH262,3,,Departed,VN-A227,A321,,passenger
-2025-12-15,2025-12-15 22:40:00,2025-12-15 23:45,Hanoi,HAN,VietJet Air,VJ522,1,,Departed,VN-A637,A321,,passenger
-2026-01-06,2026-01-06 18:15:00,2026-01-06 21:15,Hanoi,HAN,VietJet Air,VJ516,1,,Departed,VN-A639,A321,,passenger
-2026-01-06,2026-01-06 18:55:00,2026-01-06 19:00,Hanoi,HAN,Vietravel Airlines,VU658,3,,Departed,VN-A136,A320,,passenger
-2026-01-06,2026-01-06 15:25:00,2026-01-06 17:40,Hanoi,HAN,VietJet Air,VJ514,1,,Departed,VN-A661,A321,,passenger
-2026-01-06,2026-01-06 14:55:00,2026-01-06 15:32,Hanoi,HAN,Vietnam Airlines,VN172,3,,Departed,VN-A619,A21N,,passenger
-2026-01-06,2026-01-06 14:40:00,2026-01-06 15:01,Hanoi,HAN,Vietnam Airlines,VN7164,3,,Departed,VN-A611,A321,,passenger
-2026-01-06,2026-01-06 09:30:00,2026-01-06 09:30,Hanoi,HAN,Bamboo Airways,QH104,3,,Departed,VN-A597,A321,,passenger
-2026-01-06,2026-01-06 22:55:00,2026-01-06 23:36,Hanoi,HAN,Vietnam Airlines,VN7192,3,,Departed,VN-A323,A321,,passenger
-2026-01-27,2026-01-27 10:00:00,2026-01-27 10:42,Hanoi,HAN,Turkish Airlines,TK252,2,,Departed,TC-LLB,B789,,passenger
+2025-12-15,2025-12-15 22:05:00,2025-12-15 22:41,Hanoi,HAN,Vietnam Airlines,VN7268,3,,Departed,VN-A339,A321,0,passenger
+2025-12-15,2025-12-15 22:20:00,2025-12-15 22:32,Hanoi,HAN,Vietnam Airlines,VN7206,3,,Departed,VN-A331,A321,1,passenger
+2025-12-28,2025-12-28 21:15:00,2025-12-28 21:40,Hanoi,HAN,Vietnam Airlines,VN7204,3,,Departed,VN-A606,A321,0,passenger
+2025-12-28,2025-12-28 23:20:00,2025-12-29 01:52,Hanoi,HAN,VietJet Air,VJ182,1,,Departed,VN-A668,A320,1,passenger
+2025-12-28,2025-12-28 22:20:00,2025-12-29 00:01,Hanoi,HAN,Vietnam Airlines,VN7206,3,,Departed,VN-A601,A321,1,passenger
+2026-01-04,2026-01-04 21:05:00,2026-01-04 21:56,Hanoi,HAN,Vietravel Airlines,VU794,3,,Departed,VN-A129,A321,1,passenger
+2026-01-04,2026-01-04 23:55:00,2026-01-05 01:32,Hanoi,HAN,Vietnam Airlines,VN7258,3,,Departed,VN-A513,A20N,0,passenger
+2026-01-08,2026-01-08 17:30:00,2026-01-08 18:50,Hanoi,HAN,Vietnam Airlines,VN7210,3,,Departed,VN-A864,B789,1,passenger
+2026-01-09,2026-01-09 09:35:00,2026-01-09 10:06,Hanoi,HAN,Vietnam Airlines,VN6010,3,,Departed,VN-A363,A321,1,passenger
+2026-01-10,2026-01-10 09:00:00,2026-01-10 12:49,Hanoi,HAN,VietJet Air,VJ132,1,,Departed,VN-A817,A333,1,passenger
+2026-01-14,2026-01-14 23:00:00,2026-01-15 00:16,Hanoi,HAN,VietJet Air,VJ164,1,,Departed,VN-A814,A333,1,passenger
+2026-01-21,2026-01-21 19:10:00,2026-01-21 19:30,Hanoi,HAN,VietJet Air,VJ196,1,,Departed,VN-A811,A333,1,passenger
+2026-01-21,2026-01-21 23:00:00,2026-01-21 23:16,Hanoi,HAN,VietJet Air,VJ164,1,,Departed,VN-A699,A320,1,passenger
+2026-01-24,2026-01-24 21:50:00,2026-01-24 22:18,Hanoi,HAN,Sun PhuQuoc Airways,9G882,3,,Departed,VN-A281,A21N,1,passenger
+2026-01-24,2026-01-24 19:50:00,2026-01-24 20:41,Hanoi,HAN,VietJet Air,VJ190,1,,Departed,VN-A655,A320,1,passenger
+2026-01-24,2026-01-24 17:00:00,2026-01-24 19:11,Hanoi,HAN,VietJet Air,VJ152,1,,Departed,VN-A644,A321,1,passenger
+2026-01-24,2026-01-24 18:00:00,2026-01-24 19:03,Hanoi,HAN,Vietnam Airlines,VN218,3,,Departed,VN-A895,A359,1,passenger
+2026-01-24,2026-01-24 12:00:00,2026-01-24 12:47,Hanoi,HAN,VietJet Air,VJ144,1,,Departed,VN-A663,A320,1,passenger
+2026-02-17,2026-02-17 18:00:00,2026-02-17 20:27,Hanoi,HAN,Bamboo Airways,QH262,3,,Departed,VN-A227,A321,1,passenger
+2025-12-15,2025-12-15 22:40:00,2025-12-15 23:45,Hanoi,HAN,VietJet Air,VJ522,1,,Departed,VN-A637,A321,0,passenger
+2026-01-06,2026-01-06 18:15:00,2026-01-06 21:15,Hanoi,HAN,VietJet Air,VJ516,1,,Departed,VN-A639,A321,0,passenger
+2026-01-06,2026-01-06 18:55:00,2026-01-06 19:00,Hanoi,HAN,Vietravel Airlines,VU658,3,,Departed,VN-A136,A320,0,passenger
+2026-01-06,2026-01-06 15:25:00,2026-01-06 17:40,Hanoi,HAN,VietJet Air,VJ514,1,,Departed,VN-A661,A321,0,passenger
+2026-01-06,2026-01-06 14:55:00,2026-01-06 15:32,Hanoi,HAN,Vietnam Airlines,VN172,3,,Departed,VN-A619,A21N,0,passenger
+2026-01-06,2026-01-06 14:40:00,2026-01-06 15:01,Hanoi,HAN,Vietnam Airlines,VN7164,3,,Departed,VN-A611,A321,0,passenger
+2026-01-06,2026-01-06 09:30:00,2026-01-06 09:30,Hanoi,HAN,Bamboo Airways,QH104,3,,Departed,VN-A597,A321,0,passenger
+2026-01-06,2026-01-06 22:55:00,2026-01-06 23:36,Hanoi,HAN,Vietnam Airlines,VN7192,3,,Departed,VN-A323,A321,0,passenger
+2026-01-27,2026-01-27 10:00:00,2026-01-27 10:42,Hanoi,HAN,Turkish Airlines,TK252,2,,Departed,TC-LLB,B789,0,passenger

@@ -29,6 +29,7 @@ RUNWAY_REGEX = r"^(0[1-9]|[1-3][0-9])[LR]$"
 
 RETURN_THRESHOLD_MINUTES_DEFAULT = 150
 RETURN_THRESHOLD_MAX_MINUTES = 150
+DEFAULT_SILVER_LAYER_NAME = "Silver_layer_2"
 ROUTE_MATCH_MAX_HOURS = 6.0
 MISSING_ROUTE_MATCH_MAX_HOURS = 6.0
 DROP_DEPARTURES_WITHOUT_ARRIVAL = False
@@ -2220,7 +2221,11 @@ def write_audit_csv(path: Path, records: List[Dict[str, object]]) -> None:
         pd.DataFrame().to_csv(path, index=False)
 
 
-def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
+def run_pipeline(
+    project_root: Path,
+    return_threshold_minutes: int,
+    silver_layer_name: str = DEFAULT_SILVER_LAYER_NAME,
+) -> None:
     if return_threshold_minutes <= 0:
         raise ValueError("return_threshold_minutes must be positive")
 
@@ -2236,7 +2241,7 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
     arrival_dir = input_bronze_dir / "Arrival"
     departure_dir = input_bronze_dir / "Departure"
 
-    silver_dir = project_root / "Data crawl" / "Silver_layer_2"
+    silver_dir = project_root / "Data crawl" / silver_layer_name
     silver_arrival_dir = silver_dir / "Arrival"
     silver_departure_dir = silver_dir / "Departure"
     silver_audit_dir = silver_dir / "Audit"
@@ -2708,6 +2713,7 @@ def run_pipeline(project_root: Path, return_threshold_minutes: int) -> None:
     print("=" * 72)
     print("Silver preprocessing completed")
     print(f"Project root: {project_root}")
+    print(f"Silver layer name: {silver_layer_name}")
     print(f"Return threshold (minutes): {return_threshold_minutes}")
     print(f"Output arrival dir: {silver_arrival_dir}")
     print(f"Output departure dir: {silver_departure_dir}")
@@ -2730,6 +2736,12 @@ def parse_args() -> argparse.Namespace:
         default=RETURN_THRESHOLD_MINUTES_DEFAULT,
         help=f"Threshold for return/emergency matching in minutes (recommended <= {RETURN_THRESHOLD_MAX_MINUTES}).",
     )
+    parser.add_argument(
+        "--silver-layer-name",
+        type=str,
+        default=DEFAULT_SILVER_LAYER_NAME,
+        help=f"Output silver layer folder name under Data crawl. Default: {DEFAULT_SILVER_LAYER_NAME}.",
+    )
     return parser.parse_args()
 
 
@@ -2742,6 +2754,7 @@ def main() -> None:
     run_pipeline(
         project_root=project_root,
         return_threshold_minutes=int(args.return_threshold_minutes),
+        silver_layer_name=args.silver_layer_name,
     )
 
 

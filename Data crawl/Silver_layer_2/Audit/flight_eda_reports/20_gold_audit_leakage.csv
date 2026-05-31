@@ -1,0 +1,2 @@
+﻿check_name,violation_count,rows_checked,status
+departure_scheduled_after_previous_arrival,0,74723,pass

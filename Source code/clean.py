@@ -997,6 +997,100 @@ def clock_key_value(value: object) -> str:
     return f"{int(hour):02d}:{minute}"
 
 
+def fill_missing_is_fixed_flight(df: pd.DataFrame) -> Dict[str, int]:
+    if "Is_Fixed_Flight" not in df.columns or "Scheduled_Time" not in df.columns:
+        return {
+            "is_fixed_flight_normalized_existing": 0,
+            "is_fixed_flight_missing_before": 0,
+            "is_fixed_flight_filled_one": 0,
+            "is_fixed_flight_filled_zero": 0,
+            "is_fixed_flight_missing_after": 0,
+        }
+
+    raw_fixed = df["Is_Fixed_Flight"].astype("string").str.strip()
+    missing_before = raw_fixed.isna() | raw_fixed.str.lower().isin(NA_TOKENS)
+    normalized_existing = raw_fixed.str.lower().replace({"0.0": "0", "1.0": "1"})
+    normalize_existing_mask = (
+        ~missing_before
+        & normalized_existing.isin(["0", "1"])
+        & raw_fixed.ne(normalized_existing)
+    )
+    df.loc[normalize_existing_mask, "Is_Fixed_Flight"] = normalized_existing.loc[normalize_existing_mask]
+
+    if not missing_before.any():
+        return {
+            "is_fixed_flight_normalized_existing": int(normalize_existing_mask.sum()),
+            "is_fixed_flight_missing_before": 0,
+            "is_fixed_flight_filled_one": 0,
+            "is_fixed_flight_filled_zero": 0,
+            "is_fixed_flight_missing_after": 0,
+        }
+
+    flight_key = (
+        df["Flight_No"].map(flight_key_value)
+        if "Flight_No" in df.columns
+        else pd.Series("", index=df.index, dtype="string")
+    )
+    route_key = (
+        df["IATA"].map(flight_key_value)
+        if "IATA" in df.columns
+        else pd.Series("", index=df.index, dtype="string")
+    )
+    scheduled_clock = df["Scheduled_Time"].map(clock_key_value)
+    service_date = (
+        df["Crawl_Date"].astype("string").str.strip().str[:10]
+        if "Crawl_Date" in df.columns
+        else pd.Series("", index=df.index, dtype="string")
+    )
+
+    key_df = pd.DataFrame(
+        {
+            "flight_key": flight_key,
+            "route_key": route_key,
+            "scheduled_clock": scheduled_clock,
+            "service_date": service_date,
+        },
+        index=df.index,
+    )
+    valid_key = (
+        key_df["flight_key"].ne("")
+        & key_df["route_key"].ne("")
+        & key_df["scheduled_clock"].ne("")
+        & key_df["service_date"].ne("")
+    )
+
+    fixed_groups = (
+        key_df.loc[valid_key]
+        .groupby(["flight_key", "route_key", "scheduled_clock"], dropna=False)["service_date"]
+        .nunique()
+    )
+    fixed_keys = set(fixed_groups[fixed_groups >= 2].index)
+
+    row_keys = list(
+        zip(
+            key_df["flight_key"],
+            key_df["route_key"],
+            key_df["scheduled_clock"],
+        )
+    )
+    is_fixed = pd.Series([key in fixed_keys for key in row_keys], index=df.index)
+    fill_one = missing_before & valid_key & is_fixed
+    fill_zero = missing_before & ~fill_one
+
+    df.loc[fill_one, "Is_Fixed_Flight"] = "1"
+    df.loc[fill_zero, "Is_Fixed_Flight"] = "0"
+
+    raw_after = df["Is_Fixed_Flight"].astype("string").str.strip()
+    missing_after = raw_after.isna() | raw_after.str.lower().isin(NA_TOKENS)
+    return {
+        "is_fixed_flight_normalized_existing": int(normalize_existing_mask.sum()),
+        "is_fixed_flight_missing_before": int(missing_before.sum()),
+        "is_fixed_flight_filled_one": int(fill_one.sum()),
+        "is_fixed_flight_filled_zero": int(fill_zero.sum()),
+        "is_fixed_flight_missing_after": int(missing_after.sum()),
+    }
+
+
 def merge_patched_arrivals(project_root: Path, output_dir: Path) -> Tuple[List[Dict[str, object]], Dict[Tuple[str, str], Dict[str, int]]]:
     patch_path = project_root / "Data crawl" / "final_merged_patched_flights.csv"
     audit_rows: List[Dict[str, object]] = []
@@ -1269,6 +1363,7 @@ def clean_dataframe(
             airport=airport,
             mode=mode,
         ),
+        **fill_missing_is_fixed_flight(out),
     }
     return out, stats, spq_audit_rows, manual_audit_rows
 

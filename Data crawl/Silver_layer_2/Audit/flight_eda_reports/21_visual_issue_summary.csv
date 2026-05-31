@@ -1,0 +1,7 @@
+﻿issue,rows,stage
+master_excluded_departure,2972,Gold feature eligibility
+departure_without_arrival,619,Silver link audit
+arrival_without_departure,476,Silver link audit
+master_excluded_arrival,329,Gold feature eligibility
+same_origin_actions,84,Silver link audit
+dedup_rows_dropped,71,Silver preprocessing
