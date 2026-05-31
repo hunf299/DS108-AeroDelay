@@ -59,6 +59,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Data crawl/Gold_layer/Arrival/han_flights_arrival_gold_layer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Data crawl/Gold_layer/Arrival/sgn_flights_arrival_gold_layer.csv">
           <value>
             <Attribute>
@@ -101,7 +108,28 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Data crawl/Gold_layer/Departure/han_flights_departure_gold_layer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Data crawl/Gold_layer/Departure/sgn_flights_departure_gold_layer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Gold_layer/Features/master_aero_features_gold.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Gold_layer/Features/weather_features_hourly_gold.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

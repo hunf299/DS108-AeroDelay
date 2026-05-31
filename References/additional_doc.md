@@ -1,15 +1,40 @@
-### Về runway
+### Về thông tin hạ tầng từ 3 hồ sơ sân bay (AIP VVTS, VVNB, VVDN)
+Đây là các tài liệu thuộc Tập thông báo tin tức hàng không (AIP), cung cấp dữ liệu kỹ thuật nền tảng cho 3 sân bay lớn nhất Việt Nam:
+1. Cảng hàng không quốc tế Tân Sơn Nhất (VVTS - SGN):
+* Hệ thống đường cất hạ cánh (CHC): Sử dụng 2 đường CHC song song là 07L/25R và 07R/25L.
+* Tọa độ điểm quy chiếu (ARP): Nằm tại giao điểm của đường CHC 07R/25L và đường lăn Bắc - Nam.
+* Đặc điểm vận hành: 
+  * Mức cao sân bay là 10m (33ft), nhiệt độ tham chiếu là 35.2°C.
+  *Thường xuyên sử dụng cấu hình song song: một đường chuyên cất cánh và một đường chuyên hạ cánh để tối ưu hóa năng lực thông qua.
+  *Phương thức tiếp cận chủ đạo: ILS/DME cho cả hai đầu đường băng.
+2. Cảng hàng không quốc tế Nội Bài (VVNB - HAN):
+* Hệ thống đường CHC: Hai đường CHC song song 11L/29R và 11R/29L.
+* Tọa độ điểm quy chiếu (ARP): Giao điểm của đường CHC 11L/29R và đường lăn N3.
+* Đặc điểm kỹ thuật:
+  * Mức cao sân bay 13m (34ft).
+  * Hệ thống đường lăn (TWY) phức tạp với các đường lăn nối nhanh (Exit taxiways) giúp giải tỏa tàu bay khỏi đường băng nhanh chóng sau khi hạ cánh.
+  * Được trang bị hệ thống radar mặt đất và đèn tiếp cận hiện đại để hỗ trợ vận hành trong điều kiện tầm nhìn thấp (LVP).
+3. Cảng hàng không quốc tế Đà Nẵng (VVDN - DAD):
+* Hệ thống đường CHC: Hai đường CHC song song 17L/35R và 17R/35L.
+* Tọa độ điểm quy chiếu (ARP): Giao điểm của đường CHC 35R/17L và đường lăn E3.
+* Đặc điểm vận hành:
+  * Mức cao sân bay 9m (30ft), nhiệt độ tham chiếu 36°C.
+  * Do đặc thù vị trí, sân bay này có sự đan xen chặt chẽ giữa các hoạt động bay dân dụng và quân sự.
+  * Hệ thống bãi đỗ tại Đà Nẵng phân chia rõ rệt khu vực đỗ ống lồng (Jet Bridge) và bãi đỗ xa (Remote Stand).
 
-1. Nguyên tắc vận hành đường băng
-Phân công nhiệm vụ: Sân bay Tân Sơn Nhất sử dụng 2 đường CHC song song: 25L/07R chuyên cất cánh và 25R/07L chuyên hạ cánh.  
-Linh hoạt: Dù có phân công cố định, ATC vẫn có thể thay đổi hướng tùy theo điều kiện thực tế để đảm bảo an toàn và tối ưu hóa hoạt động.  
-2. Các yếu tố quyết định thay đổi hướng CHC
-Hướng gió: Theo quy định trong AIP, tàu bay thường cất hạ cánh ngược chiều gió. Tuy nhiên, nếu phi công đề nghị và điều kiện cho phép, tàu bay vẫn có thể hạ cánh với gió xuôi (giới hạn thường là dưới 10kts, hoặc tùy vào khả năng chấp nhận của phi công).  
-Quy định giảm tiếng ồn: ATC có thể chủ động chọn đường băng không ngược gió hoàn toàn để tránh các khu vực nhạy cảm tiếng ồn. Nếu các giới hạn an toàn về gió bị vi phạm, phương thức này sẽ bị hủy bỏ và ưu tiên quay về hướng đón gió thuận lợi nhất.  
-Tình trạng mặt đường băng:
-Trời khô: Với chiều dài đường băng lớn (3.048m - 3.800m), phi công có thể tính toán và chấp nhận hạ cánh gió xuôi nếu máy tính (FMC) xác nhận đủ quãng đường phanh.  
-Trời mưa: Giới hạn chịu đựng gió xuôi giảm xuống đáng kể; nếu gió xuôi vượt ngưỡng, ATC bắt buộc đổi chiều đường băng hoặc phi công sẽ từ chối hạ cánh.  
-Các yếu tố khác: Ngoài các yếu tố trên, còn nhiều điều kiện không lưu khác có thể khiến ATC yêu cầu thay đổi hướng CHC
+### Về vận hành runway
+Tài liệu này cung cấp các kiến thức nghiệp vụ về cách Không lưu (ATC) và Phi công đưa ra quyết định trong thực tế, giải thích các tình huống dữ liệu biến động:
+1. Quy tắc Gió và việc chọn Đường băng:
+* Nguyên tắc chung: Tàu bay luôn ưu tiên cất/hạ cánh ngược chiều gió để tăng lực nâng và giảm quãng đường chạy đà.
+* Ngoại lệ "Gió xuôi" (Tailwind): Tàu bay có thể cất/hạ cánh gió xuôi nếu đường băng đủ dài (TSN và Nội Bài đều có đường băng dài từ 3.000m - 3.800m). Phi công có thể chấp nhận gió xuôi lên đến 12-15 knots nếu máy tính trên tàu bay (FMC) tính toán đủ quãng đường phanh an toàn.
+2. Quy định Giảm tiếng ồn (Noise Abatement):
+* Mục đích: Để tránh bay qua các khu vực dân cư nhạy cảm (như trung tâm TP.HCM đối với đầu 07 SGN), ATC sẽ ưu tiên sử dụng một đầu đường băng nhất định ngay cả khi gió không hoàn toàn thuận lợi.
+* Điều kiện bắt buộc: Phương thức giảm tiếng ồn sẽ bị hủy bỏ và ATC phải đổi chiều đường băng ngay lập tức nếu:
+* Gió xuôi vượt quá ngưỡng an toàn (thường là 10 knots hoặc theo yêu cầu phi công).
+* Trời mưa/Đường băng ướt: Đây là yếu tố then chốt. Khi đường băng ướt, ma sát giảm, giới hạn gió xuôi sẽ bị thắt chặt lại rất thấp (thường chỉ còn 5 knots).
+3. Sự phối hợp ATC - Phi công:
+* ATC có quyền đề xuất hướng đường băng để điều phối luồng không lưu, nhưng Phi công có quyền từ chối nếu cảm thấy điều kiện thời tiết (gió giật, đường ướt) không đảm bảo an toàn cho loại tàu bay của họ.
+* Khi có sự thay đổi hướng đường băng (Runway Swap), toàn bộ hệ thống sân bay sẽ bị đình trệ tạm thời để sắp xếp lại luồng tàu bay đang chờ trên trời và dưới đất.
 
 ### Về additional weather feature
 - Tailwind_Kmh (Tốc độ gió xuôi thực tế): * Phương pháp: Áp dụng công thức lượng giác dựa trên ind_speed, wind_direction và hướng la bàn chuẩn của đầu đường băng đang khai thác (Departure_Runway / Arrival_Runway).
