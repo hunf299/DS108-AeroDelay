@@ -25808,7 +25808,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-03-08,08:25,10:13,Singapore,SIN,Bamboo Airways,QH154,2,11R,Departed,VN-A227,A321,0,passenger
 2026-03-08,09:45,10:10,Lijiang,LJG,VietJet Air,VJ897,2,11R,Departed,VN-A646,A21N,1,passenger
 2026-03-08,09:45,10:07,Can Tho,VCA,Vietnam Airlines,VN7044,1,11R,Departed,VN-A508,A21N,0,passenger
-2026-03-08,09:45,10:03,Phu Quoc,PQC,Sun PhuQuoc Airways,AF253,1,11R,Departed,F-HTYE,A359,0,passenger
+2026-03-08,09:45,10:03,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1207,1.0,11R,Departed,VN-A284,A21N,0,passenger
 2026-03-08,08:55,09:58,Ho Chi Minh City,SGN,VietJet Air,VJ127,1,11R,Departed,VN-A522,A321,0,passenger
 2026-03-08,09:35,09:56,Singapore,SIN,VietJet Air,VJ915,2,11R,Departed,VN-A542,A321,0,passenger
 2026-03-08,09:15,09:53,Melbourne,MEL,Vietnam Airlines,VN779,2,11R,Departed,VN-A889,A359,0,passenger
