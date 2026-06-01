@@ -94,6 +94,48 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Data crawl/Gold_layer/Audit/model_training/01_training_dataset_profile.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Gold_layer/Audit/model_training/02_feature_set_audit.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Gold_layer/Audit/model_training/03_time_split_profile.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Gold_layer/Audit/model_training/04_regression_benchmark_results.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Gold_layer/Audit/model_training/05_best_model_segment_metrics.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Gold_layer/Audit/model_training/06_best_model_test_predictions.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Data crawl/Gold_layer/Audit/temporal_data_leakage_report.csv">
           <value>
             <Attribute>
@@ -123,6 +165,13 @@
           </value>
         </entry>
         <entry key="/Data crawl/Gold_layer/Features/master_aero_features_gold.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Gold_layer/Features/weather_features_gold_drop_audit.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -207,6 +256,20 @@
           </value>
         </entry>
         <entry key="/Data crawl/Silver_layer/Audit/audit_time_gap_over_12h.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Silver_layer/Audit/audit_weather_missing_summary.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data crawl/Silver_layer/Audit/audit_weather_outliers.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
