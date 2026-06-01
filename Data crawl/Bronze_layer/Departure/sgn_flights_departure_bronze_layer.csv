@@ -141,7 +141,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-16,14:35,15:02,Hanoi,HAN,VietJet Air,VJ130,1,25L,Departed,VN-A816,A333,0,passenger
 2025-12-16,,14:59,,,Tianjin Air Cargo,HT3824,,25L,Departed,B-222Y,B738,0,cargo
 2025-12-16,14:35,14:57,Thanh Hoa,THD,VietJet Air,VJ254,1,25L,Departed,VN-A543,A21N,0,passenger
-2025-12-16,01:50,14:54,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
+2025-12-16,14:35,14:54,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
 2025-12-16,14:00,14:49,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A656,A320,0,passenger
 2025-12-16,13:20,14:45,Thanh Hoa,THD,VietJet Air,VJ258,1,25L,Departed,VN-A673,A321,0,passenger
 2025-12-16,13:25,14:42,Kota Kinabalu,BKI,AirAsia,AK1631,2,25L,Departed,9M-AGB,A20N,1,passenger
@@ -492,7 +492,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-17,14:35,15:19,Thanh Hoa,THD,VietJet Air,VJ254,1,25L,Departed,VN-A643,A321,0,passenger
 2025-12-17,15:50,15:15,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,0,passenger
 2025-12-17,14:50,15:09,Hanoi,HAN,VietJet Air,VJ146,1,25L,Departed,VN-A673,A321,0,passenger
-2025-12-17,01:50,14:58,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
+2025-12-17,14:35,14:58,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
 2025-12-17,13:35,14:50,Taipei,TPE,VietJet Air,VJ842,2,25L,Departed,VN-A543,A21N,0,passenger
 2025-12-17,14:20,14:48,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A602,A321,1,passenger
 2025-12-17,14:05,14:45,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8509,A21N,0,passenger
@@ -862,7 +862,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-18,14:10,14:49,Chu Lai,VCL,VietJet Air,VJ374,0,25L,Departed,,—,0,general aviation
 2025-12-18,14:20,14:46,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A331,A321,1,passenger
 2025-12-18,13:35,14:44,Taipei,TPE,VietJet Air,VJ842,2,25L,Departed,VN-A543,A21N,0,passenger
-2025-12-18,01:50,14:39,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
+2025-12-18,14:35,14:39,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
 2025-12-18,12:05,14:34,Nha Trang,CXR,Vietnam Airlines,VN7350,3,25L,Departed,VN-A616,A21N,0,passenger
 2025-12-18,14:05,14:32,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8529,A21N,0,passenger
 2025-12-18,14:00,14:29,Hanoi,HAN,Vietravel Airlines,VU770,3,25L,Departed,VN-A129,A321,0,passenger
@@ -1221,7 +1221,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-19,13:35,15:30,Taipei,TPE,VietJet Air,VJ842,2,25L,Departed,VN-A698,A321,0,passenger
 2025-12-19,15:05,15:27,Pleiku,PXU,Vietnam Airlines,VN1422,3,25L,Departed,VN-A501,A21N,0,passenger
 2025-12-19,15:59,15:25,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,0,passenger
-2025-12-19,01:50,15:19,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
+2025-12-19,14:35,15:19,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
 2025-12-19,14:05,15:09,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8530,A21N,0,passenger
 2025-12-19,12:00,15:06,Hanoi,HAN,VietJet Air,VJ144,1,25L,Departed,VN-A812,A333,0,passenger
 2025-12-19,13:35,15:03,Qui Nhon,UIH,Vietnam Airlines,VN1394,3,25L,Departed,VN-A339,A321,0,passenger
@@ -1583,7 +1583,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-20,13:50,14:57,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A616,A21N,0,passenger
 2025-12-20,14:30,14:54,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6630,A321,1,passenger
 2025-12-20,,14:50,Shenzhen,SZX,Tianjin Air Cargo,HT3824,0,25L,Departed,B-222Y,B738,0,cargo
-2025-12-20,01:50,14:45,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
+2025-12-20,14:35,14:45,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
 2025-12-20,14:00,14:43,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A667,A321,0,passenger
 2025-12-20,14:20,14:41,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A357,A321,1,passenger
 2025-12-20,14:05,14:39,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8558,A21N,0,passenger
@@ -1954,7 +1954,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-21,15:50,15:14,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,0,passenger
 2025-12-21,13:50,15:12,Hong Kong,HKG,Vietnam Airlines,VN594,2,25L,Departed,VN-A331,A321,1,passenger
 2025-12-21,14:35,15:09,Hanoi,HAN,VietJet Air,VJ172,1,25L,Departed,VN-A671,A320,0,passenger
-2025-12-21,01:50,15:06,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
+2025-12-21,14:35,15:06,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
 2025-12-21,14:30,14:51,Vinh,VII,VietJet Air,VJ228,1,25L,Departed,VN-A632,A321,0,passenger
 2025-12-21,14:00,14:49,Phu Quoc,PQC,Vietnam Airlines,VN1833,3,25L,Departed,VN-A335,A321,0,passenger
 2025-12-21,14:05,14:46,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8559,A21N,0,passenger
@@ -2329,7 +2329,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-22,14:20,15:15,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A604,A321,1,passenger
 2025-12-22,15:51,15:12,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,0,passenger
 2025-12-22,14:00,15:01,Phu Quoc,PQC,Vietnam Airlines,VN1833,3,25L,Departed,VN-A505,A21N,0,passenger
-2025-12-22,01:50,14:54,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAS,B77W,0,passenger
+2025-12-22,14:35,14:54,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAS,B77W,0,passenger
 2025-12-22,12:10,14:51,Singapore,SIN,VietJet Air,VJ815,2,25L,Departed,VN-A687,A321,0,passenger
 2025-12-22,13:50,14:49,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A501,A21N,0,passenger
 2025-12-22,14:30,14:46,Vinh,VII,VietJet Air,VJ228,1,25L,Departed,VN-A693,A21N,0,passenger
@@ -2695,7 +2695,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-23,15:47,15:16,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,0,passenger
 2025-12-23,14:00,15:13,Hanoi,HAN,Vietnam Airlines,VN214,3,25L,Departed,VN-A873,B78X,0,passenger
 2025-12-23,14:50,15:08,Hong Kong,HKG,VietJet Air,VJ876,2,25L,Departed,VN-A674,A21N,0,passenger
-2025-12-23,01:50,14:46,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAZ,B77W,0,passenger
+2025-12-23,14:35,14:46,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAZ,B77W,0,passenger
 2025-12-23,14:30,14:45,Vinh,VII,VietJet Air,VJ226,1,25L,Departed,VN-A552,A21N,0,passenger
 2025-12-23,13:20,14:43,Hanoi,HAN,VietJet Air,VJ198,1,25L,Departed,VN-A648,A321,0,passenger
 2025-12-23,14:00,14:40,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A635,A321,0,passenger
@@ -3046,7 +3046,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-24,13:30,14:59,Haiphong,HPH,Vietnam Airlines,VN6440,3,25L,Departed,VN-A359,A321,0,passenger
 2025-12-24,14:00,14:56,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A516,A21N,0,passenger
 2025-12-24,14:30,14:52,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6552,A321,1,passenger
-2025-12-24,01:50,14:48,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BEA,B77W,0,passenger
+2025-12-24,14:35,14:48,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BEA,B77W,0,passenger
 2025-12-24,14:00,14:45,Phu Quoc,PQC,Vietnam Airlines,VN1833,3,25L,Departed,VN-A335,A321,0,passenger
 2025-12-24,13:50,14:43,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A353,A321,0,passenger
 2025-12-24,,14:39,Shenzhen,SZX,Tianjin Air Cargo,HT3824,0,25L,Departed,B-222Y,B738,0,cargo
@@ -3411,7 +3411,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-25,14:00,15:02,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A687,A321,0,passenger
 2025-12-25,13:20,15:00,Thanh Hoa,THD,VietJet Air,VJ258,1,25L,Departed,VN-A644,A321,0,passenger
 2025-12-25,13:30,14:56,Haiphong,HPH,Vietnam Airlines,VN6440,3,25L,Departed,VN-A354,A321,0,passenger
-2025-12-25,01:50,14:51,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
+2025-12-25,14:35,14:51,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
 2025-12-25,14:30,14:45,Vinh,VII,VietJet Air,VJ226,1,25L,Departed,VN-A546,A21N,0,passenger
 2025-12-25,13:35,14:42,Qui Nhon,UIH,Vietnam Airlines,VN1394,3,25L,Departed,VN-A392,A321,0,passenger
 2025-12-25,14:00,14:40,Hanoi,HAN,Vietravel Airlines,VU770,3,25L,Departed,VN-A129,A321,0,passenger
@@ -4141,7 +4141,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-27,12:50,15:07,Phu Quoc,PQC,VietJet Air,VJ345,1,25L,Departed,VN-A525,A21N,0,passenger
 2025-12-27,13:50,15:04,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A503,A21N,0,passenger
 2025-12-27,13:30,15:02,Haiphong,HPH,Vietnam Airlines,VN6440,3,25L,Departed,VN-A354,A321,0,passenger
-2025-12-27,01:50,14:59,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAS,B77W,0,passenger
+2025-12-27,14:35,14:59,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAS,B77W,0,passenger
 2025-12-27,13:20,14:54,Thanh Hoa,THD,VietJet Air,VJ258,1,25L,Departed,VN-A526,A21N,0,passenger
 2025-12-27,15:26,14:52,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,0,passenger
 2025-12-27,14:05,14:49,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8515,B78X,0,passenger
@@ -4509,7 +4509,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-28,14:20,14:55,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A336,A321,1,passenger
 2025-12-28,14:05,14:52,Con Dao,VCS,Vietnam Airlines,VN1897,3,25L,Departed,VN-B219,AT75,0,passenger
 2025-12-28,13:30,14:49,Haiphong,HPH,Vietnam Airlines,VN6440,3,25L,Departed,VN-A359,A321,0,passenger
-2025-12-28,01:50,14:46,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
+2025-12-28,14:35,14:46,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
 2025-12-28,14:00,14:40,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A639,A321,0,passenger
 2025-12-28,14:30,14:38,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6552,A321,1,passenger
 2025-12-28,15:09,14:34,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,0,passenger
@@ -4881,7 +4881,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-29,14:35,14:58,Hanoi,HAN,VietJet Air,VJ130,1,25L,Departed,VN-A810,A333,0,passenger
 2025-12-29,13:20,14:56,Thanh Hoa,THD,VietJet Air,VJ258,1,25L,Departed,VN-A637,A321,0,passenger
 2025-12-29,14:30,14:52,Vinh,VII,VietJet Air,VJ228,1,25L,Departed,VN-A547,A21N,0,passenger
-2025-12-29,01:50,14:49,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
+2025-12-29,14:35,14:49,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
 2025-12-29,13:35,14:47,Taipei,TPE,VietJet Air,VJ842,2,25L,Departed,VN-A640,A321,0,passenger
 2025-12-29,13:35,14:44,Qui Nhon,UIH,Vietnam Airlines,VN1394,3,25L,Departed,VN-A334,A321,0,passenger
 2025-12-29,14:30,14:42,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-32FX,A20N,1,passenger
@@ -5253,7 +5253,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-30,17:14,14:51,Guilin,KWL,VietJet Air,VJ3692,2,25L,Departed,VN-A656,A320,0,passenger
 2025-12-30,13:35,14:47,Taipei,TPE,VietJet Air,VJ842,2,25L,Departed,VN-A693,A21N,0,passenger
 2025-12-30,14:05,14:42,Darwin,DRW,Nauru Airlines,ON314,2,25L,Departed,VH-AN2,B738,0,passenger
-2025-12-30,01:50,14:38,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BOG,B77W,0,passenger
+2025-12-30,14:35,14:38,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BOG,B77W,0,passenger
 2025-12-30,12:40,14:30,Hue,HUI,VietJet Air,VJ308,1,25L,Departed,VN-A607,A21N,0,passenger
 2025-12-30,15:03,14:28,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,0,passenger
 2025-12-30,14:05,14:25,Brunei,BWN,Royal Brunei Airlines,BI382,2,25L,Departed,V8-RBE,A20N,0,passenger
@@ -5638,7 +5638,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2025-12-31,14:00,14:44,Phu Quoc,PQC,Vietnam Airlines,VN1833,3,25L,Departed,VN-A606,A321,0,passenger
 2025-12-31,14:30,14:40,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6687,A321,1,passenger
 2025-12-31,15:22,14:36,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,0,passenger
-2025-12-31,01:50,14:31,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAX,B77W,0,passenger
+2025-12-31,14:35,14:31,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAX,B77W,0,passenger
 2025-12-31,14:05,14:25,Con Dao,VCS,Vietnam Airlines,VN1897,3,25L,Departed,VN-B225,AT75,0,passenger
 2025-12-31,13:50,14:15,Hong Kong,HKG,Vietnam Airlines,VN594,2,25L,Departed,VN-A329,A321,1,passenger
 2025-12-31,14:00,14:13,Hanoi,HAN,Vietravel Airlines,VU770,3,25L,Departed,VN-A136,A320,0,passenger
@@ -5996,7 +5996,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-01,15:00,15:19,Hanoi,HAN,Vietnam Airlines,VN250,3,25L,Departed,VN-A877,B78X,1,passenger
 2026-01-01,14:05,15:16,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8391,B789,0,passenger
 2026-01-01,12:50,15:12,Phu Quoc,PQC,VietJet Air,VJ347,1,25L,Departed,VN-A523,A21N,0,passenger
-2026-01-01,01:50,15:09,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAW,B77W,0,passenger
+2026-01-01,14:35,15:09,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAW,B77W,0,passenger
 2026-01-01,14:30,15:06,Vinh,VII,VietJet Air,VJ226,1,25L,Departed,VN-A535,A321,0,passenger
 2026-01-01,14:30,15:04,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6629,A321,1,passenger
 2026-01-01,14:20,15:01,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A397,A321,1,passenger
@@ -6377,7 +6377,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-02,15:00,15:32,Hanoi,HAN,Vietnam Airlines,VN250,3,25L,Departed,VN-A878,B78X,1,passenger
 2026-01-02,15:00,15:23,Phu Quoc,PQC,VietJet Air,VJ331,1,25L,Departed,VN-A671,A320,0,passenger
 2026-01-02,15:00,15:17,Con Dao,VCS,Vietnam Airlines,VN8093,3,25L,Departed,VN-B218,AT75,0,passenger
-2026-01-02,01:50,15:07,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
+2026-01-02,14:35,15:07,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
 2026-01-02,12:45,15:04,Qui Nhon,UIH,Vietnam Airlines,VN1394,3,25L,Departed,VN-A606,A321,0,passenger
 2026-01-02,13:35,15:00,Penang,PEN,AirAsia,AK1503,2,25L,Departed,9M-AHJ,A320,0,passenger
 2026-01-02,13:50,14:57,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A614,A321,0,passenger
@@ -6771,7 +6771,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-03,13:30,14:56,Haiphong,HPH,Vietnam Airlines,VN6440,3,25L,Departed,VN-A359,A321,0,passenger
 2026-01-03,14:00,14:54,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A353,A321,0,passenger
 2026-01-03,14:30,14:51,Vinh,VII,VietJet Air,VJ226,1,25L,Departed,VN-A697,A21N,0,passenger
-2026-01-03,01:50,14:48,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
+2026-01-03,14:35,14:48,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
 2026-01-03,13:50,14:45,Nha Trang,CXR,Vietnam Airlines,VN7352,3,25L,Departed,VN-A334,A321,0,passenger
 2026-01-03,14:30,14:39,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6552,A321,1,passenger
 2026-01-03,14:05,14:36,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8506,A21N,0,passenger
@@ -7139,7 +7139,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-04,14:55,15:16,Con Dao,VCS,Vietnam Airlines,VN8093,3,25L,Departed,VN-B218,AT75,0,passenger
 2026-01-04,11:40,15:11,Da Nang,DAD,VietJet Air,VJ634,1,25L,Departed,VN-A685,A321,0,passenger
 2026-01-04,13:55,15:07,Phu Quoc,PQC,Vietnam Airlines,VN1827,3,25L,Departed,VN-A324,A321,0,passenger
-2026-01-04,01:50,15:04,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
+2026-01-04,14:35,15:04,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
 2026-01-04,14:50,15:02,Con Dao,VCS,Vietnam Airlines,VN8091,3,25L,Departed,VN-B221,AT75,0,passenger
 2026-01-04,14:30,14:56,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6657,A321,1,passenger
 2026-01-04,14:40,14:53,Haiphong,HPH,Vietnam Airlines,VN6440,3,25L,Departed,VN-A354,A321,0,passenger
@@ -7509,7 +7509,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-05,15:20,15:52,Phu Quoc,PQC,Vietnam Airlines,VN1829,3,25L,Departed,VN-A329,A321,0,passenger
 2026-01-05,12:00,15:50,Hanoi,HAN,Vietnam Airlines,VN212,3,25L,Departed,VN-A614,A321,0,passenger
 2026-01-05,17:37,15:42,Hanoi,HAN,Sun PhuQuoc Airways,9G854,3,25L,Departed,VN-A279,A321,0,passenger
-2026-01-05,01:50,15:39,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
+2026-01-05,14:35,15:39,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
 2026-01-05,15:20,15:37,Hanoi,HAN,VietJet Air,VJ194,1,25L,Departed,VN-A523,A21N,0,passenger
 2026-01-05,14:55,15:34,Con Dao,VCS,Vietnam Airlines,VN8093,3,25L,Departed,VN-B218,AT75,0,passenger
 2026-01-05,14:00,15:32,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A602,A321,0,passenger
@@ -8265,7 +8265,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-07,14:20,15:05,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A323,A321,1,passenger
 2026-01-07,14:50,15:02,Con Dao,VCS,Vietnam Airlines,VN1897,3,25L,Departed,VN-B225,AT75,0,passenger
 2026-01-07,14:00,14:48,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A661,A321,0,passenger
-2026-01-07,01:50,14:45,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
+2026-01-07,14:35,14:45,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
 2026-01-07,13:30,14:43,Haiphong,HPH,Vietnam Airlines,VN6440,3,25L,Departed,VN-A359,A321,0,passenger
 2026-01-07,14:30,14:40,Vinh,VII,VietJet Air,VJ228,1,25L,Departed,VN-A632,A321,0,passenger
 2026-01-07,14:00,14:37,Hanoi,HAN,Vietravel Airlines,VU770,3,25L,Departed,VN-A136,A320,0,passenger
@@ -8614,7 +8614,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-08,14:50,15:08,Hong Kong,HKG,VietJet Air,VJ876,2,25L,Departed,VN-A547,A21N,0,passenger
 2026-01-08,13:35,15:06,Taipei,TPE,VietJet Air,VJ842,2,25L,Departed,VN-A649,A321,0,passenger
 2026-01-08,14:55,15:05,Qui Nhon,UIH,Bamboo Airways,QH1124,3,25L,Departed,ER-00005,A320,0,passenger
-2026-01-08,01:50,15:01,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
+2026-01-08,14:35,15:01,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
 2026-01-08,14:20,14:55,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A323,A321,1,passenger
 2026-01-08,13:10,14:42,Da Nang,DAD,VietJet Air,VJ630,1,25L,Departed,VN-A580,A21N,0,passenger
 2026-01-08,14:05,14:40,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8530,A21N,0,passenger
@@ -8956,7 +8956,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-09,15:20,15:27,Phu Quoc,PQC,Vietnam Airlines,VN1829,3,25L,Departed,VN-A601,A321,0,passenger
 2026-01-09,14:30,15:16,Con Dao,VCS,Vietnam Airlines,VN1859,3,25L,Departed,VN-B221,AT75,0,passenger
 2026-01-09,,15:12,Bangkok,DMK,Hai Au Aviation,HAI499,0,25L,Departed,VN-A499,FA8X,0,business jet
-2026-01-09,01:50,15:08,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
+2026-01-09,14:35,15:08,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
 2026-01-09,14:20,15:02,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A395,A321,1,passenger
 2026-01-09,14:05,15:00,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8558,A21N,0,passenger
 2026-01-09,16:30,14:54,Dong Hoi,VDH,VietJet Air,VJ262,1,25L,Departed,VN-A544,A321,0,passenger
@@ -9271,7 +9271,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-10,15:15,15:20,Con Dao,VCS,Vietnam Airlines,VN1885,3,25L,Departed,VN-B225,AT75,0,passenger
 2026-01-10,14:50,15:13,Hong Kong,HKG,VietJet Air,VJ876,2,25L,Departed,VN-A528,A21N,0,passenger
 2026-01-10,14:40,15:01,Hanoi,HAN,VietJet Air,VJ134,1,25L,Departed,LY-NVG,A320,0,passenger
-2026-01-10,01:50,14:54,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
+2026-01-10,14:35,14:54,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
 2026-01-10,14:05,14:52,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8559,A21N,0,passenger
 2026-01-10,13:20,14:48,Thanh Hoa,THD,VietJet Air,VJ258,1,25L,Departed,VN-A535,A321,0,passenger
 2026-01-10,14:30,14:45,Vinh,VII,VietJet Air,VJ226,1,25L,Departed,VN-A536,A21N,0,passenger
@@ -9613,7 +9613,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-11,15:15,15:11,Con Dao,VCS,Vietnam Airlines,VN1885,3,,Departed,VN-B221,AT75,0,passenger
 2026-01-11,14:05,15:07,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8531,A21N,0,passenger
 2026-01-11,14:35,14:54,Hanoi,HAN,VietJet Air,VJ172,1,25L,Departed,VN-A639,A321,0,passenger
-2026-01-11,01:50,14:48,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
+2026-01-11,14:35,14:48,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
 2026-01-11,13:35,14:43,Taipei,TPE,VietJet Air,VJ842,2,25L,Departed,VN-A670,A321,0,passenger
 2026-01-11,14:30,14:40,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6552,A321,1,passenger
 2026-01-11,14:20,14:38,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
@@ -9978,7 +9978,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-12,14:35,15:25,Hanoi,HAN,VietJet Air,VJ130,1,25L,Departed,VN-A526,A21N,0,passenger
 2026-01-12,15:15,15:22,Con Dao,VCS,Vietnam Airlines,VN1885,3,25L,Departed,VN-B225,AT75,0,passenger
 2026-01-12,15:10,15:20,Hong Kong,HKG,VietJet Air,VJ876,2,25L,Departed,VN-A578,A21N,0,passenger
-2026-01-12,01:50,15:17,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
+2026-01-12,14:35,15:17,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
 2026-01-12,14:50,15:15,Hanoi,HAN,VietJet Air,VJ146,1,25L,Departed,VN-A816,A333,0,passenger
 2026-01-12,14:55,15:10,Con Dao,VCS,Vietnam Airlines,VN8093,3,25L,Departed,VN-B221,AT75,0,passenger
 2026-01-12,11:00,15:08,Hanoi,HAN,Vietnam Airlines,VN246,3,25L,Departed,VN-A878,B78X,0,passenger
@@ -10352,7 +10352,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-13,15:37,14:49,Nha Trang,CXR,Vietnam Airlines,VN7352,3,25L,Departed,VN-A357,A321,0,passenger
 2026-01-13,14:15,14:46,Nha Trang,CXR,VietJet Air,VJ1616,1,25L,Departed,VN-A667,A321,0,passenger
 2026-01-13,14:30,14:43,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6630,A321,1,passenger
-2026-01-13,01:50,14:40,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
+2026-01-13,14:35,14:40,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
 2026-01-13,14:00,14:28,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A575,A21N,0,passenger
 2026-01-13,13:50,14:23,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A612,A321,0,passenger
 2026-01-13,13:50,14:20,Hong Kong,HKG,Vietnam Airlines,VN594,2,25L,Departed,VN-A390,A321,1,passenger
@@ -10717,7 +10717,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-14,15:00,15:15,Phu Quoc,PQC,VietJet Air,VJ331,1,25L,Departed,VN-A689,A320,0,passenger
 2026-01-14,14:30,15:03,Vinh,VII,VietJet Air,VJ228,1,25L,Departed,VN-A500,A21N,0,passenger
 2026-01-14,14:00,14:54,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A657,A321,0,passenger
-2026-01-14,01:50,14:52,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAQ,B77W,0,passenger
+2026-01-14,14:35,14:52,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAQ,B77W,0,passenger
 2026-01-14,13:50,14:51,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A613,A321,0,passenger
 2026-01-14,14:20,14:48,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A610,A321,1,passenger
 2026-01-14,14:30,14:45,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6978,A321,1,passenger
@@ -11092,7 +11092,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-15,14:00,14:51,Phu Quoc,PQC,Vietnam Airlines,VN1833,3,25L,Departed,VN-A392,A321,0,passenger
 2026-01-15,14:30,14:47,Vinh,VII,VietJet Air,VJ226,1,25L,Departed,VN-A500,A21N,0,passenger
 2026-01-15,14:30,14:45,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6659,A321,1,passenger
-2026-01-15,01:50,14:42,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
+2026-01-15,14:35,14:42,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
 2026-01-15,14:20,14:36,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A334,A321,1,passenger
 2026-01-15,13:10,14:34,Da Nang,DAD,VietJet Air,VJ630,1,25L,Departed,VN-A641,A321,0,passenger
 2026-01-15,14:20,14:31,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
@@ -11457,7 +11457,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-16,15:10,15:21,Hong Kong,HKG,VietJet Air,VJ876,2,25L,Departed,VN-A646,A21N,0,passenger
 2026-01-16,15:15,15:18,Da Nang,DAD,Vietnam Airlines,VN134,3,25L,Departed,VN-A601,A321,1,passenger
 2026-01-16,15:00,15:14,Hanoi,HAN,Vietnam Airlines,VN250,3,25L,Departed,VN-A889,A359,1,passenger
-2026-01-16,01:50,15:08,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
+2026-01-16,14:35,15:08,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
 2026-01-16,15:00,15:05,Con Dao,VCS,Vietnam Airlines,VN8093,3,25L,Departed,VN-B221,AT75,0,passenger
 2026-01-16,14:30,14:53,Vinh,VII,VietJet Air,VJ228,1,25L,Departed,VN-A552,A21N,0,passenger
 2026-01-16,14:00,14:50,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A516,A21N,0,passenger
@@ -11821,7 +11821,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-17,13:10,14:41,Da Nang,DAD,VietJet Air,VJ630,1,25L,Departed,VN-A641,A321,0,passenger
 2026-01-17,13:35,14:39,Penang,PEN,AirAsia,AK1503,2,25L,Departed,9M-AQE,A320,0,passenger
 2026-01-17,14:20,14:36,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A335,A321,1,passenger
-2026-01-17,01:50,14:33,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
+2026-01-17,14:35,14:33,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
 2026-01-17,14:20,14:30,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-01-17,14:05,14:27,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL7208,B789,0,passenger
 2026-01-17,14:05,14:24,Con Dao,VCS,Vietnam Airlines,VN1897,3,25L,Departed,VN-B225,AT75,0,passenger
@@ -12187,7 +12187,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-18,15:10,15:24,Hong Kong,HKG,VietJet Air,VJ876,2,25L,Departed,VN-A646,A21N,0,passenger
 2026-01-18,15:15,15:18,Con Dao,VCS,Vietnam Airlines,VN1885,3,25L,Departed,VN-B225,AT75,0,passenger
 2026-01-18,15:00,15:16,Hanoi,HAN,Vietnam Airlines,VN250,3,25L,Departed,VN-A872,B78X,1,passenger
-2026-01-18,01:50,15:12,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
+2026-01-18,14:35,15:12,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
 2026-01-18,14:20,15:09,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A614,A321,1,passenger
 2026-01-18,13:10,15:05,Da Nang,DAD,VietJet Air,VJ630,1,25L,Departed,VN-A552,A21N,0,passenger
 2026-01-18,14:55,15:02,Con Dao,VCS,Vietnam Airlines,VN8093,3,25L,Departed,VN-B218,AT75,0,passenger
@@ -12554,7 +12554,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-19,15:00,15:15,Hanoi,HAN,Vietnam Airlines,VN250,3,25L,Departed,VN-A878,B78X,1,passenger
 2026-01-19,14:10,15:12,Chu Lai,VCL,VietJet Air,VJ374,1,25L,Departed,VN-A662,A320,0,passenger
 2026-01-19,14:35,14:54,Hanoi,HAN,VietJet Air,VJ130,1,25L,Departed,VN-A697,A21N,0,passenger
-2026-01-19,01:50,14:48,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
+2026-01-19,14:35,14:48,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
 2026-01-19,14:20,14:42,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-01-19,14:30,14:40,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6979,A321,1,passenger
 2026-01-19,14:00,14:37,Phu Quoc,PQC,Vietnam Airlines,VN1833,3,25L,Departed,VN-A356,A321,0,passenger
@@ -12913,7 +12913,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-20,14:35,15:02,Hanoi,HAN,VietJet Air,VJ130,1,25L,Departed,VN-A814,A333,0,passenger
 2026-01-20,,14:57,,,SF Airlines,O3318,,25L,Departed,B-2845,B752,0,cargo
 2026-01-20,14:00,14:55,Phu Quoc,PQC,Vietnam Airlines,VN1833,3,25L,Departed,VN-A335,A321,0,passenger
-2026-01-20,01:50,14:52,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
+2026-01-20,14:35,14:52,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
 2026-01-20,,14:50,,,VietJet Air,VJT710,,25L,Departed,9H-JHK,FA7X,0,business jet
 2026-01-20,14:30,14:48,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6661,A321,1,passenger
 2026-01-20,14:20,14:46,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
@@ -13230,7 +13230,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-21,15:00,15:36,Hanoi,HAN,Vietnam Airlines,VN250,3,25L,Departed,VN-A872,B78X,1,passenger
 2026-01-21,14:55,15:34,Con Dao,VCS,Vietnam Airlines,VN8093,3,25L,Departed,VN-B218,AT75,0,passenger
 2026-01-21,15:00,15:31,Phu Quoc,PQC,VietJet Air,VJ331,1,25L,Departed,VN-A668,A320,0,passenger
-2026-01-21,01:50,15:29,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BOF,B77W,0,passenger
+2026-01-21,14:35,15:29,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BOF,B77W,0,passenger
 2026-01-21,,15:24,,,Turkish Airlines,TK6213,,25L,Departed,TC-LJR,B77L,0,cargo
 2026-01-21,14:30,15:22,Da Nang,DAD,Vietnam Airlines,VN7136,3,25L,Departed,VN-A616,A21N,0,passenger
 2026-01-21,13:50,15:19,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A514,A20N,0,passenger
@@ -13924,7 +13924,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-23,14:35,15:01,Hanoi,HAN,Vietnam Airlines,VN7242,3,25L,Departed,VN-A613,A321,0,passenger
 2026-01-23,14:30,14:58,Con Dao,VCS,Vietnam Airlines,VN8055,3,25L,Departed,VN-B221,AT75,0,passenger
 2026-01-23,14:30,14:56,Vinh,VII,VietJet Air,VJ228,1,25L,Departed,VN-A632,A321,0,passenger
-2026-01-23,01:50,14:53,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAQ,B77W,0,passenger
+2026-01-23,14:35,14:53,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAQ,B77W,0,passenger
 2026-01-23,14:05,14:51,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8536,B78X,0,passenger
 2026-01-23,14:20,14:48,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A334,A321,1,passenger
 2026-01-23,14:30,14:40,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6979,A321,1,passenger
@@ -14274,7 +14274,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-24,,15:00,Shenzhen,SZX,,HT3824,0,25L,Departed,B-2676,B738,0,cargo
 2026-01-24,14:30,14:58,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6355,A321,1,passenger
 2026-01-24,14:20,14:55,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
-2026-01-24,01:50,14:52,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
+2026-01-24,14:35,14:52,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
 2026-01-24,13:20,14:47,Thanh Hoa,THD,VietJet Air,VJ258,1,25L,Departed,VN-A651,A321,0,passenger
 2026-01-24,14:20,14:44,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A602,A321,1,passenger
 2026-01-24,14:05,14:42,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8572,B78X,0,passenger
@@ -14637,7 +14637,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-25,14:00,14:41,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A642,A321,0,passenger
 2026-01-25,14:20,14:38,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-01-25,14:25,14:35,Con Dao,VCS,Vietnam Airlines,VN8091,3,25L,Departed,VN-B221,AT75,0,passenger
-2026-01-25,01:50,14:32,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
+2026-01-25,14:35,14:32,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
 2026-01-25,14:00,14:29,Hanoi,HAN,Vietravel Airlines,VU770,3,25L,Departed,VN-A136,A320,0,passenger
 2026-01-25,13:35,14:27,Taipei,TPE,VietJet Air,VJ842,2,25L,Departed,VN-A542,A321,0,passenger
 2026-01-25,14:05,14:25,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8390,B789,0,passenger
@@ -15012,7 +15012,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-26,14:35,15:17,Thanh Hoa,THD,VietJet Air,VJ254,1,25L,Departed,VN-A580,A21N,0,passenger
 2026-01-26,15:00,15:14,Hanoi,HAN,Vietnam Airlines,VN250,3,25L,Departed,VN-A869,B789,1,passenger
 2026-01-26,14:35,15:09,Hanoi,HAN,VietJet Air,VJ130,1,25L,Departed,VN-A812,A333,0,passenger
-2026-01-26,01:50,14:57,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAQ,B77W,0,passenger
+2026-01-26,14:35,14:57,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAQ,B77W,0,passenger
 2026-01-26,14:20,14:54,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-01-26,,14:47,,,Bluesky Airways,BSF968,,25L,Departed,VN-A968,GLF6,0,business jet
 2026-01-26,14:30,14:45,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6913,A321,1,passenger
@@ -15397,7 +15397,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-27,13:50,14:57,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A513,A20N,0,passenger
 2026-01-27,13:20,14:55,Thanh Hoa,THD,VietJet Air,VJ258,1,25L,Departed,VN-A648,A321,0,passenger
 2026-01-27,02:05,14:49,Shenzhen,SZX,SF Airlines,O3318,0,25L,Departed,B-2845,B752,0,cargo
-2026-01-27,01:50,14:47,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAQ,B77W,0,passenger
+2026-01-27,14:35,14:47,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAQ,B77W,0,passenger
 2026-01-27,14:05,14:45,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8535,B78X,0,passenger
 2026-01-27,14:00,14:42,Hanoi,HAN,Vietravel Airlines,VU770,3,25L,Departed,VN-A136,A320,0,passenger
 2026-01-27,14:10,14:40,Chu Lai,VCL,VietJet Air,VJ374,1,25L,Departed,VN-A656,A320,0,passenger
@@ -15771,7 +15771,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-28,14:00,15:06,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A662,A320,0,passenger
 2026-01-28,,14:55,Shenzhen,SZX,Tianjin Air Cargo,HT3824,0,25L,Departed,B-223H,B738,0,cargo
 2026-01-28,13:50,14:49,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A513,A20N,0,passenger
-2026-01-28,01:50,14:45,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
+2026-01-28,14:35,14:45,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
 2026-01-28,14:05,14:43,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8536,B78X,0,passenger
 2026-01-28,14:20,14:40,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-01-28,14:20,14:37,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A603,A321,1,passenger
@@ -16160,7 +16160,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-29,14:35,15:04,Thanh Hoa,THD,VietJet Air,VJ254,1,25L,Departed,VN-A644,A321,0,passenger
 2026-01-29,,15:01,,,VietJet Air,VJ35,,25L,Departed,VN-A543,A21N,0,passenger
 2026-01-29,13:10,14:59,Da Nang,DAD,VietJet Air,VJ630,1,25L,Departed,VN-A677,A321,0,passenger
-2026-01-29,01:50,14:55,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
+2026-01-29,14:35,14:55,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
 2026-01-29,14:00,14:52,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A673,A321,0,passenger
 2026-01-29,13:50,14:49,Hong Kong,HKG,Vietnam Airlines,VN594,2,25L,Departed,VN-A395,A321,1,passenger
 2026-01-29,14:30,14:47,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6975,A320,1,passenger
@@ -16549,7 +16549,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-30,13:50,14:56,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A513,A20N,0,passenger
 2026-01-30,14:35,14:51,Thanh Hoa,THD,VietJet Air,VJ254,1,25L,Departed,VN-A656,A320,0,passenger
 2026-01-30,14:30,14:48,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6912,A321,1,passenger
-2026-01-30,01:50,14:44,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAQ,B77W,0,passenger
+2026-01-30,14:35,14:44,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAQ,B77W,0,passenger
 2026-01-30,13:50,14:37,Hong Kong,HKG,Vietnam Airlines,VN594,2,25L,Departed,VN-A503,A21N,1,passenger
 2026-01-30,14:00,14:34,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A642,A321,0,passenger
 2026-01-30,14:20,14:31,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
@@ -16915,7 +16915,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-01-31,15:00,15:16,Hanoi,HAN,Vietnam Airlines,VN250,3,25L,Departed,VN-A866,B789,1,passenger
 2026-01-31,13:50,15:12,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A513,A20N,0,passenger
 2026-01-31,15:00,15:10,Phu Quoc,PQC,VietJet Air,VJ331,1,25L,Departed,VN-A650,A320,0,passenger
-2026-01-31,01:50,14:59,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
+2026-01-31,14:35,14:59,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
 2026-01-31,14:05,14:55,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8575,B78X,0,passenger
 2026-01-31,14:00,14:53,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A643,A321,0,passenger
 2026-01-31,14:30,14:50,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6661,A321,1,passenger
@@ -17322,7 +17322,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-01,13:50,15:16,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,9H-MLX,A320,0,passenger
 2026-02-01,14:00,15:14,Hanoi,HAN,Vietravel Airlines,VU770,3,25L,Departed,VN-A136,A320,0,passenger
 2026-02-01,14:55,15:11,Con Dao,VCS,Vietnam Airlines,VN8093,3,25L,Departed,VN-B219,AT75,0,passenger
-2026-02-01,01:50,15:08,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
+2026-02-01,14:35,15:08,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
 2026-02-01,14:30,15:05,Chu Lai,VCL,VietJet Air,VJ378,1,25L,Departed,VN-A650,A320,0,passenger
 2026-02-01,14:35,15:03,Thanh Hoa,THD,VietJet Air,VJ254,1,25L,Departed,VN-A636,A321,0,passenger
 2026-02-01,13:00,14:55,Hanoi,HAN,VietJet Air,VJ198,1,25L,Departed,VN-A643,A321,0,passenger
@@ -17734,7 +17734,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-02,14:10,14:51,Vinh,VII,VietJet Air,VJ1210,1,25L,Departed,VN-A644,A321,1,passenger
 2026-02-02,14:25,14:49,Vinh,VII,Vietnam Airlines,VN7262,3,25L,Departed,VN-A353,A321,0,passenger
 2026-02-02,14:00,14:47,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A667,A321,0,passenger
-2026-02-02,01:50,14:44,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
+2026-02-02,14:35,14:44,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
 2026-02-02,14:30,14:41,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6659,A321,1,passenger
 2026-02-02,14:20,14:38,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-02-02,14:20,14:36,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A395,A321,1,passenger
@@ -18144,7 +18144,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-03,14:30,14:51,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6979,A321,1,passenger
 2026-02-03,14:20,14:48,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-02-03,14:30,14:46,Chu Lai,VCL,VietJet Air,VJ378,1,25L,Departed,VN-A689,A320,0,passenger
-2026-02-03,01:50,14:41,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
+2026-02-03,14:35,14:41,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
 2026-02-03,13:50,14:39,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,9H-MLX,A320,0,passenger
 2026-02-03,13:55,14:36,Con Dao,VCS,Vietnam Airlines,VN1897,3,25L,Departed,VN-B220,AT75,0,passenger
 2026-02-03,14:00,14:34,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A667,A321,0,passenger
@@ -18545,7 +18545,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-04,14:50,15:21,Hanoi,HAN,VietJet Air,VJ146,1,25L,Departed,VN-A815,A333,0,passenger
 2026-02-04,14:30,15:14,Chu Lai,VCL,VietJet Air,VJ378,1,25L,Departed,VN-A689,A320,0,passenger
 2026-02-04,14:20,15:11,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
-2026-02-04,01:50,15:08,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
+2026-02-04,14:35,15:08,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
 2026-02-04,14:00,15:05,Hanoi,HAN,Vietnam Airlines,VN214,3,25L,Departed,VN-A872,B78X,0,passenger
 2026-02-04,14:00,15:02,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A543,A21N,0,passenger
 2026-02-04,14:30,15:00,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6355,A321,1,passenger
@@ -18970,7 +18970,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-05,13:50,15:09,Hong Kong,HKG,Vietnam Airlines,VN594,2,25L,Departed,VN-A339,A321,1,passenger
 2026-02-05,14:00,15:06,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A683,A321,0,passenger
 2026-02-05,,15:04,Shenzhen,SZX,Tianjin Air Cargo,HT3824,0,25L,Departed,B-222Y,B738,0,cargo
-2026-02-05,01:50,15:01,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
+2026-02-05,14:35,15:01,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
 2026-02-05,14:20,14:55,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-02-05,14:35,14:52,Thanh Hoa,THD,VietJet Air,VJ254,1,25L,Departed,VN-A633,A321,0,passenger
 2026-02-05,13:30,14:50,Da Nang,DAD,Vietnam Airlines,VN132,3,25L,Departed,VN-A606,A321,0,passenger
@@ -19406,7 +19406,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-06,15:05,15:27,Pleiku,PXU,Vietnam Airlines,VN1422,3,25L,Departed,VN-A323,A321,0,passenger
 2026-02-06,15:00,15:25,Hanoi,HAN,Vietnam Airlines,VN7230,3,25L,Departed,VN-A886,A359,0,passenger
 2026-02-06,14:20,15:23,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
-2026-02-06,01:50,15:20,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
+2026-02-06,14:35,15:20,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
 2026-02-06,13:50,15:18,Hanoi,HAN,Vietravel Airlines,VU770,3,25L,Departed,VN-A129,A321,0,passenger
 2026-02-06,12:50,15:15,Phu Quoc,PQC,VietJet Air,VJ347,1,25L,Departed,VN-A637,A321,0,passenger
 2026-02-06,14:20,15:12,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A327,A321,1,passenger
@@ -19865,7 +19865,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-07,14:20,14:51,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A604,A321,1,passenger
 2026-02-07,14:00,14:49,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A649,A321,0,passenger
 2026-02-07,12:10,14:46,Phu Quoc,PQC,VietJet Air,VJ327,1,25L,Departed,VN-A812,A333,0,passenger
-2026-02-07,01:50,14:41,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
+2026-02-07,14:35,14:41,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
 2026-02-07,14:20,14:38,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-02-07,14:05,14:34,Con Dao,VCS,Vietnam Airlines,VN1897,3,25L,Departed,VN-B225,AT75,0,passenger
 2026-02-07,12:40,14:32,Hue,HUI,VietJet Air,VJ308,1,25L,Departed,LY-NVG,A320,0,passenger
@@ -20330,7 +20330,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-08,14:10,15:21,Vinh,VII,VietJet Air,VJ1210,1,25L,Departed,VN-A543,A21N,1,passenger
 2026-02-08,14:30,15:19,Chu Lai,VCL,VietJet Air,VJ378,1,25L,Departed,VN-A699,A320,0,passenger
 2026-02-08,13:00,15:16,Hanoi,HAN,Vietnam Airlines,VN248,3,25L,Departed,VN-A871,B789,0,passenger
-2026-02-08,01:50,15:13,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
+2026-02-08,14:35,15:13,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
 2026-02-08,12:50,15:10,Phu Quoc,PQC,VietJet Air,VJ347,1,25L,Departed,VN-A653,A21N,0,passenger
 2026-02-08,14:05,15:08,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8538,B78X,0,passenger
 2026-02-08,15:06,15:06,Shenzhen,SZX,Tianjin Air Cargo,HT3824,0,25L,Departed,B-222Y,B738,0,cargo
@@ -20788,7 +20788,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-09,14:20,14:53,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-02-09,14:30,14:51,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6913,A321,1,passenger
 2026-02-09,14:05,14:48,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8537,B78X,0,passenger
-2026-02-09,01:50,14:42,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
+2026-02-09,14:35,14:42,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
 2026-02-09,14:10,14:40,Chu Lai,VCL,VietJet Air,VJ374,1,25L,Departed,VN-A658,A320,0,passenger
 2026-02-09,14:00,14:37,Phu Quoc,PQC,Vietnam Airlines,VN1833,3,25L,Departed,VN-A606,A321,0,passenger
 2026-02-09,14:00,14:34,Hanoi,HAN,Vietnam Airlines,VN214,3,25L,Departed,VN-A862,B789,0,passenger
@@ -21270,7 +21270,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-10,12:40,14:58,Hue,HUI,VietJet Air,VJ308,1,25L,Departed,LY-NVE,A320,0,passenger
 2026-02-10,14:05,14:55,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8575,B78X,0,passenger
 2026-02-10,13:30,14:53,Haiphong,HPH,Vietnam Airlines,VN6440,3,25L,Departed,VN-A359,A321,0,passenger
-2026-02-10,01:50,14:51,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
+2026-02-10,14:35,14:51,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
 2026-02-10,13:00,14:49,Haiphong,HPH,VietJet Air,VJ1272,1,25L,Departed,VN-A649,A321,0,passenger
 2026-02-10,14:00,14:46,Phu Quoc,PQC,Vietnam Airlines,VN1833,3,25L,Departed,VN-A334,A321,0,passenger
 2026-02-10,14:00,14:44,Lijiang,LJG,Ruili Airlines,DR5052,2,25L,Departed,B-5811,B737,0,passenger
@@ -21744,7 +21744,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-11,15:00,15:38,Hanoi,HAN,Vietnam Airlines,VN250,3,25L,Departed,VN-A886,A359,1,passenger
 2026-02-11,14:35,15:35,Thanh Hoa,THD,VietJet Air,VJ254,1,25L,Departed,VN-A640,A321,0,passenger
 2026-02-11,15:00,15:32,Hanoi,HAN,Vietnam Airlines,VN7292,3,25L,Departed,VN-A878,B78X,0,passenger
-2026-02-11,01:50,15:29,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
+2026-02-11,14:35,15:29,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
 2026-02-11,14:20,15:26,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A622,A21N,1,passenger
 2026-02-11,14:20,15:23,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-02-11,14:10,15:21,Vinh,VII,VietJet Air,VJ1210,1,25L,Departed,VN-A629,A321,1,passenger
@@ -22254,7 +22254,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-12,14:05,15:28,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8393,B789,0,passenger
 2026-02-12,11:15,15:25,Vinh,VII,VietJet Air,VJ210,1,25L,Departed,LY-NVE,A320,0,passenger
 2026-02-12,15:22,15:22,Shenzhen,SZX,Tianjin Air Cargo,HT3824,0,25L,Departed,B-222Y,B738,0,cargo
-2026-02-12,01:50,15:19,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
+2026-02-12,14:35,15:19,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
 2026-02-12,13:55,15:12,Phu Quoc,PQC,Vietnam Airlines,VN1833,3,25L,Departed,VN-A606,A321,0,passenger
 2026-02-12,12:30,15:10,Vinh,VII,Vietnam Airlines,VN7266,3,25L,Departed,VN-A353,A321,0,passenger
 2026-02-12,13:35,15:08,Penang,PEN,AirAsia,AK1503,2,25L,Departed,9M-AQG,A320,0,passenger
@@ -22771,7 +22771,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-13,13:10,15:28,Hanoi,HAN,Vietravel Airlines,VU778,3,25L,Departed,9H-MLW,A320,0,passenger
 2026-02-13,13:30,15:26,Haiphong,HPH,Vietnam Airlines,VN6440,3,25L,Departed,VN-A354,A321,0,passenger
 2026-02-13,13:00,15:23,Haiphong,HPH,VietJet Air,VJ1272,1,25L,Departed,VN-A544,A321,0,passenger
-2026-02-13,01:50,15:21,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
+2026-02-13,14:35,15:21,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
 2026-02-13,11:15,15:18,Phuket,HKT,VietJet Air,VJ809,2,25L,Departed,VN-A643,A321,1,passenger
 2026-02-13,10:40,15:16,Hanoi,HAN,Vietnam Airlines,VN7226,3,25L,Departed,VN-A866,B789,0,passenger
 2026-02-13,13:00,15:13,Hanoi,HAN,Vietnam Airlines,VN248,3,25L,Departed,VN-A862,B789,0,passenger
@@ -23289,7 +23289,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-14,14:50,15:12,Hong Kong,HKG,VietJet Air,VJ876,2,25L,Departed,VN-A544,A321,0,passenger
 2026-02-14,14:50,15:09,Hanoi,HAN,VietJet Air,VJ146,1,25L,Departed,VN-A525,A21N,0,passenger
 2026-02-14,,15:06,Shenzhen,SZX,Tianjin Air Cargo,HT3824,0,25L,Departed,B-222Y,B738,0,cargo
-2026-02-14,01:50,15:03,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
+2026-02-14,14:35,15:03,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
 2026-02-14,14:05,15:01,Con Dao,VCS,Vietnam Airlines,VN1897,3,25L,Departed,VN-B220,AT75,0,passenger
 2026-02-14,14:00,14:59,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A542,A321,0,passenger
 2026-02-14,14:30,14:57,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6661,A321,1,passenger
@@ -23796,7 +23796,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-15,15:45,16:15,Taipei,TPE,EVA Air,BR396,2,25L,Departed,B-16736,B77W,1,passenger
 2026-02-15,15:05,16:13,Pleiku,PXU,Vietnam Airlines,VN1422,3,25L,Departed,VN-A602,A321,0,passenger
 2026-02-15,14:00,16:08,Phu Quoc,PQC,Vietnam Airlines,VN1833,3,25L,Departed,VN-A324,A321,0,passenger
-2026-02-15,01:50,16:05,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
+2026-02-15,14:35,16:05,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
 2026-02-15,14:35,16:03,Hanoi,HAN,VietJet Air,VJ172,1,25L,Departed,VN-A820,A333,0,passenger
 2026-02-15,14:35,16:00,Dong Hoi,VDH,Vietnam Airlines,VN7408,3,25L,Departed,VN-A515,A20N,0,passenger
 2026-02-15,15:45,15:58,Manila,MNL,Philippine Airlines,PR598,2,25L,Departed,RP-C8783,A333,0,passenger
@@ -24306,7 +24306,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-16,14:50,15:03,Hanoi,HAN,VietJet Air,VJ146,1,25L,Departed,VN-A817,A333,0,passenger
 2026-02-16,14:25,14:56,Vinh,VII,Vietnam Airlines,VN7262,3,25L,Departed,VN-A623,A21N,0,passenger
 2026-02-16,14:20,14:51,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A398,A321,1,passenger
-2026-02-16,01:50,14:42,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
+2026-02-16,14:35,14:42,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
 2026-02-16,14:10,14:36,Vinh,VII,VietJet Air,VJ1210,1,25L,Departed,VN-A662,A320,1,passenger
 2026-02-16,13:35,14:34,Qui Nhon,UIH,Vietnam Airlines,VN1394,3,25L,Departed,VN-A325,A321,0,passenger
 2026-02-16,14:05,14:31,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8575,B78X,0,passenger
@@ -24777,7 +24777,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-17,13:15,15:02,Vinh,VII,Vietravel Airlines,VU550,3,25L,Departed,9H-MLW,A320,0,passenger
 2026-02-17,14:35,15:00,Hanoi,HAN,VietJet Air,VJ130,1,25L,Departed,VN-A814,A333,0,passenger
 2026-02-17,14:20,14:57,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
-2026-02-17,01:50,14:54,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
+2026-02-17,14:35,14:54,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
 2026-02-17,14:00,14:51,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A661,A321,0,passenger
 2026-02-17,14:25,14:49,Vinh,VII,Vietnam Airlines,VN7262,3,25L,Departed,VN-A501,A21N,0,passenger
 2026-02-17,14:10,14:47,Vinh,VII,VietJet Air,VJ1210,1,25L,Departed,VN-A658,A320,1,passenger
@@ -25194,7 +25194,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-18,14:30,15:14,Shenzhen,SZX,China Southern Airlines,CZ8466,2,07R,Departed,B-6355,A321,1,passenger
 2026-02-18,13:50,15:12,Hanoi,HAN,Vietravel Airlines,VU770,3,07R,Departed,VN-A129,A321,0,passenger
 2026-02-18,14:05,15:09,Con Dao,VCS,Vietnam Airlines,VN1897,3,07R,Departed,VN-B220,AT75,0,passenger
-2026-02-18,01:50,15:06,Phnom Penh,KTI,Qatar Airways,QR970,2,07R,Departed,A7-BOF,B77W,0,passenger
+2026-02-18,14:35,15:06,Phnom Penh,KTI,Qatar Airways,QR970,2,07R,Departed,A7-BOF,B77W,0,passenger
 2026-02-18,13:00,15:03,Hanoi,HAN,Vietnam Airlines,VN248,3,07R,Departed,VN-A863,B789,0,passenger
 2026-02-18,13:30,15:00,Da Nang,DAD,Vietnam Airlines,VN132,3,07R,Departed,VN-A612,A321,0,passenger
 2026-02-18,14:05,14:58,Seoul,ICN,Korean Air,KE472,2,07R,Departed,HL8573,B78X,0,passenger
@@ -25646,7 +25646,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-19,14:00,15:02,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A667,A321,0,passenger
 2026-02-19,14:00,15:00,Hanoi,HAN,Vietnam Airlines,VN214,3,25L,Departed,VN-A869,B789,0,passenger
 2026-02-19,14:30,14:57,Chu Lai,VCL,VietJet Air,VJ378,1,25L,Departed,VN-A668,A320,0,passenger
-2026-02-19,01:50,14:54,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
+2026-02-19,14:35,14:54,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
 2026-02-19,14:20,14:51,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A329,A321,1,passenger
 2026-02-19,14:20,14:45,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-02-19,14:10,14:42,Vinh,VII,VietJet Air,VJ1210,1,25L,Departed,VN-A637,A321,1,passenger
@@ -26117,7 +26117,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-20,13:10,15:04,Da Nang,DAD,VietJet Air,VJ630,1,25L,Departed,VN-A643,A321,0,passenger
 2026-02-20,14:30,15:01,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6629,A321,1,passenger
 2026-02-20,13:45,14:58,Hanoi,HAN,Vietnam Airlines,VN7040,3,25L,Departed,VN-A331,A321,0,passenger
-2026-02-20,01:50,14:56,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
+2026-02-20,14:35,14:56,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
 2026-02-20,13:30,14:54,Haiphong,HPH,Vietnam Airlines,VN6440,3,25L,Departed,VN-A354,A321,0,passenger
 2026-02-20,13:50,14:51,Hong Kong,HKG,Vietnam Airlines,VN594,2,25L,Departed,VN-A326,A321,1,passenger
 2026-02-20,14:00,14:47,Da Nang,DAD,Bamboo Airways,QH158,3,25L,Departed,PK-BBK,B739,0,passenger
@@ -26625,7 +26625,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-21,12:50,14:46,Phu Quoc,PQC,VietJet Air,VJ347,1,25L,Departed,VN-A536,A21N,0,passenger
 2026-02-21,14:20,14:43,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A395,A321,1,passenger
 2026-02-21,14:10,14:41,Vinh,VII,VietJet Air,VJ1210,1,25L,Departed,VN-A655,A320,1,passenger
-2026-02-21,01:50,14:38,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
+2026-02-21,14:35,14:38,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
 2026-02-21,14:25,14:36,Vinh,VII,Vietnam Airlines,VN7262,3,25L,Departed,VN-A616,A21N,0,passenger
 2026-02-21,13:20,14:33,Thanh Hoa,THD,VietJet Air,VJ258,1,25L,Departed,VN-A553,A21N,0,passenger
 2026-02-21,13:15,14:31,Vinh,VII,Vietravel Airlines,VU550,3,25L,Departed,9H-MLW,A320,0,passenger
@@ -27149,7 +27149,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-22,14:20,15:03,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A610,A321,1,passenger
 2026-02-22,14:20,15:01,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-02-22,14:10,14:58,Chu Lai,VCL,VietJet Air,VJ374,1,25L,Departed,VN-A699,A320,0,passenger
-2026-02-22,01:50,14:56,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
+2026-02-22,14:35,14:56,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
 2026-02-22,14:00,14:53,Phu Quoc,PQC,Vietnam Airlines,VN1833,3,25L,Departed,VN-A601,A321,0,passenger
 2026-02-22,14:00,14:51,Hanoi,HAN,Vietnam Airlines,VN7248,3,25L,Departed,VN-A861,B789,0,passenger
 2026-02-22,14:30,14:48,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6661,A321,1,passenger
@@ -27660,7 +27660,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-23,14:20,15:03,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-02-23,14:25,15:01,Vinh,VII,Vietnam Airlines,VN7262,3,25L,Departed,VN-A503,A21N,0,passenger
 2026-02-23,13:50,14:58,Hong Kong,HKG,Vietnam Airlines,VN594,2,25L,Departed,VN-A356,A321,1,passenger
-2026-02-23,01:50,14:55,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
+2026-02-23,14:35,14:55,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAJ,B77W,0,passenger
 2026-02-23,14:00,14:50,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A649,A321,0,passenger
 2026-02-23,13:25,14:49,Qui Nhon,UIH,Vietravel Airlines,VU452,3,25L,Departed,VN-A289,A321,0,passenger
 2026-02-23,13:50,14:46,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A514,A20N,0,passenger
@@ -28179,7 +28179,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-24,14:25,15:08,Vinh,VII,Vietnam Airlines,VN7262,3,25L,Departed,VN-A353,A321,0,passenger
 2026-02-24,14:20,15:05,Singapore,SIN,Vietnam Airlines,VN655,2,25L,Departed,VN-A625,A21N,1,passenger
 2026-02-24,13:35,15:02,Penang,PEN,AirAsia,AK1503,2,25L,Departed,9M-DAG,A320,0,passenger
-2026-02-24,01:50,14:59,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
+2026-02-24,14:35,14:59,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAL,B77W,0,passenger
 2026-02-24,14:05,14:57,Hanoi,HAN,Vietnam Airlines,VN7248,3,25L,Departed,VN-A865,B789,0,passenger
 2026-02-24,14:35,14:54,Hanoi,HAN,Sun PhuQuoc Airways,9G824,3,25L,Departed,VN-A282,A21N,0,passenger
 2026-02-24,13:50,14:51,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A514,A20N,0,passenger
@@ -28702,7 +28702,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-25,15:00,15:15,Thanh Hoa,THD,Bamboo Airways,QH1174,3,25L,Departed,VN-A585,A321,0,passenger
 2026-02-25,15:00,15:13,Hanoi,HAN,Vietnam Airlines,VN7292,3,25L,Departed,VN-A872,B78X,0,passenger
 2026-02-25,13:50,15:10,Vinh,VII,Vietnam Airlines,VN1266,3,25L,Departed,VN-A514,A20N,0,passenger
-2026-02-25,01:50,15:07,Phnom Penh,KTI,Qatar Airways,QR970,2,25R,Departed,A7-BAB,B77W,0,passenger
+2026-02-25,14:35,15:07,Phnom Penh,KTI,Qatar Airways,QR970,2,25R,Departed,A7-BAB,B77W,0,passenger
 2026-02-25,14:50,15:05,Hanoi,HAN,VietJet Air,VJ146,1,25L,Departed,VN-A815,A333,0,passenger
 2026-02-25,13:35,15:03,Penang,PEN,AirAsia,AK1503,2,25L,Departed,9M-AQE,A320,0,passenger
 2026-02-25,14:05,15:00,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8393,B789,0,passenger
@@ -29237,7 +29237,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-26,14:35,15:01,Thanh Hoa,THD,VietJet Air,VJ254,1,25L,Departed,VN-A698,A321,0,passenger
 2026-02-26,14:05,14:58,Pleiku,PXU,Vietnam Airlines,VN7424,3,25L,Departed,VN-B225,AT75,1,passenger
 2026-02-26,13:55,14:56,Phu Quoc,PQC,Vietnam Airlines,VN1833,3,25L,Departed,VN-A336,A321,0,passenger
-2026-02-26,01:50,14:53,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
+2026-02-26,14:35,14:53,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAB,B77W,0,passenger
 2026-02-26,14:20,14:50,Phu Quoc,PQC,Sun PhuQuoc Airways,9G1977,3,25L,Departed,VN-A282,A21N,1,passenger
 2026-02-26,14:05,14:48,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL7782,B77W,0,passenger
 2026-02-26,14:10,14:42,Vinh,VII,VietJet Air,VJ1210,1,25L,Departed,VN-A673,A321,1,passenger
@@ -29740,7 +29740,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-27,14:00,15:19,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A645,A321,0,passenger
 2026-02-27,14:50,15:17,Hanoi,HAN,Sun PhuQuoc Airways,9G848,3,25L,Departed,VN-A906,A21N,0,passenger
 2026-02-27,14:35,15:14,Thanh Hoa,THD,VietJet Air,VJ254,1,25L,Departed,VN-A644,A321,0,passenger
-2026-02-27,01:50,15:12,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
+2026-02-27,14:35,15:12,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAA,B77W,0,passenger
 2026-02-27,13:45,15:09,Hanoi,HAN,Vietnam Airlines,VN7040,3,25L,Departed,VN-A886,A359,0,passenger
 2026-02-27,13:10,15:06,Da Nang,DAD,VietJet Air,VJ630,1,25L,Departed,VN-A543,A21N,0,passenger
 2026-02-27,14:30,15:04,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6339,A321,1,passenger
@@ -30225,7 +30225,7 @@ Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Termina
 2026-02-28,13:10,15:05,Da Nang,DAD,VietJet Air,VJ630,1,25L,Departed,VN-A639,A321,0,passenger
 2026-02-28,14:05,15:02,Seoul,ICN,Korean Air,KE472,2,25L,Departed,HL8275,B77W,0,passenger
 2026-02-28,14:00,14:57,Da Nang,DAD,VietJet Air,VJ632,1,25L,Departed,VN-A649,A321,0,passenger
-2026-02-28,01:50,14:54,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
+2026-02-28,14:35,14:54,Phnom Penh,KTI,Qatar Airways,QR970,2,25L,Departed,A7-BAN,B77W,0,passenger
 2026-02-28,14:10,14:50,Chu Lai,VCL,VietJet Air,VJ374,1,25L,Departed,VN-A675,A320,0,passenger
 2026-02-28,13:50,14:47,Hong Kong,HKG,Vietnam Airlines,VN594,2,25L,Departed,VN-A325,A321,1,passenger
 2026-02-28,14:30,14:45,Shenzhen,SZX,China Southern Airlines,CZ8466,2,25L,Departed,B-6978,A321,1,passenger
