@@ -1,0 +1,7 @@
+﻿metric,value
+rows,148519.0
+columns,108.0
+record_types,2.0
+flight_no_missing_rate_pct,0.1434159939132367
+imputed_link_rate_pct,1.025458022205913
+congested_rate_pct,17.43547963560218

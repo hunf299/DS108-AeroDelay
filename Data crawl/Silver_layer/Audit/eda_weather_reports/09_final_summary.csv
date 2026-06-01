@@ -1,9 +1,0 @@
-summary
-"Rows: 6,624"
-Columns: 86
-Airports: 3
-Time range: 2025-12-15 00:00:00 → 2026-03-16 23:00:00
-Risk > 0 rate: 42.42%
-Risk >= 2 rate: 23.26%
-Visibility capped rate: 19.01%
-Best precip lag overall: 0h (corr=0.254)

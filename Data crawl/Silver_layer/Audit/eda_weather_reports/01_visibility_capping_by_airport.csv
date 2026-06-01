@@ -1,4 +1,0 @@
-﻿Airport,visibility_min,visibility_p25,visibility_median,visibility_p75,visibility_max,capped_hours,total_hours,capped_rate_pct
-SGN,260.0,17600.0,22150.0,27320.0,43180.0,844,2208,38.224637681159415
-DAD,80.0,6420.0,12160.0,20680.0,36380.0,403,2208,18.2518115942029
-HAN,120.0,9195.0,14340.0,17900.0,25720.0,12,2208,0.5434782608695652

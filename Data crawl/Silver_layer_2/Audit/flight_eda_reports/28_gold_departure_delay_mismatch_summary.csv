@@ -1,0 +1,4 @@
+﻿Airport,valid_delay_rows,mismatch_rows_abs_gt_1min,mismatch_rate_pct,min_diff,max_diff,stored_delay_min,recomputed_delay_min
+DAD,12349,0,0.0,0.0,0.0,-705.0,-705.0
+HAN,26489,0,0.0,0.0,0.0,-664.0,-664.0
+SGN,35884,0,0.0,0.0,0.0,-687.0,-687.0

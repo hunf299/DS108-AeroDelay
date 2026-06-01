@@ -1,0 +1,2 @@
+raw_rows,training_rows,passenger_only,scheduled_min,scheduled_max,target_mean,target_median,target_p95,target_max
+77758,72375,True,2025-12-15 18:00:00,2026-03-16 23:40:00,34.1474127806563,23.0,113.0,240.0

@@ -1,3 +1,0 @@
-﻿mode,rows_input_after_silver,rows_feature_eligible,rows_excluded_from_master,reason
-arrival,74125,73796,329,missing Actual_Time or Tail_Number prevents tail-rotation feature computation
-departure,77695,74723,2972,missing Scheduled_Time/Event_Time or Tail_Number prevents propagation feature computation

@@ -1,0 +1,11 @@
+﻿,feature,reason
+0,Is_Extreme_Heat,review_near_zero_variance
+1,Is_Heavy_Rain,review_near_zero_variance
+2,Is_Crosswind_15kt,zero_variance
+3,Is_Crosswind_20kt,zero_variance
+4,Is_Freezing,zero_variance
+5,Is_Gale_Wind,zero_variance
+6,Is_Strong_Wind,zero_variance
+7,Is_WMO_Fog_Code,zero_variance
+8,Is_WMO_Thunderstorm_Code,zero_variance
+9,Runway_Ice_Risk,zero_variance

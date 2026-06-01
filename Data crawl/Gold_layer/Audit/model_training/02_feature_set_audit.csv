@@ -1,0 +1,5 @@
+feature_set,candidate_count,used_count,missing_count,missing_features,leakage_overlap
+F0_base,25,25,0,,
+F1_turnaround,29,29,0,,
+F2_lag,37,37,0,,
+F3_weather,87,87,0,,

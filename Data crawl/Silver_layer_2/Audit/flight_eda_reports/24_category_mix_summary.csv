@@ -1,0 +1,13 @@
+﻿airport,mode,category_group,rows,rate_pct
+DAD,arrival,non_passenger_or_missing,1075,8.550067605185715
+DAD,arrival,passenger,11498,91.44993239481428
+DAD,departure,non_passenger_or_missing,782,6.245507547320502
+DAD,departure,passenger,11739,93.7544924526795
+HAN,arrival,non_passenger_or_missing,2273,9.128880677938874
+HAN,arrival,passenger,22626,90.87111932206112
+HAN,departure,non_passenger_or_missing,2639,9.258999368465371
+HAN,departure,passenger,25863,90.74100063153463
+SGN,arrival,non_passenger_or_missing,1350,3.67857434807488
+SGN,arrival,passenger,35349,96.32142565192513
+SGN,departure,non_passenger_or_missing,1269,3.4544712127398935
+SGN,departure,passenger,35466,96.54552878726011

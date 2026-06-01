@@ -1,0 +1,7 @@
+﻿airport,mode,dedup_reason,rows_dropped,max_gap_min,median_gap_min
+DAD,arrival,same_day_150m_window,2,60.0,30.0
+DAD,departure,same_day_150m_window,8,75.0,20.0
+HAN,arrival,same_day_150m_window,5,72.0,0.0
+HAN,departure,same_day_150m_window,1,39.0,39.0
+SGN,arrival,same_day_150m_window,1,66.0,66.0
+SGN,departure,same_day_150m_window,54,122.0,0.5

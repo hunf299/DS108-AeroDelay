@@ -1,0 +1,1 @@
+﻿Airport,Crawl_Date,Flight_No,IATA,Airline,Scheduled_Tail,Scheduled_Time,Actual_Time,Departure_Delay,Departure_Delay_Reg_Target,Arrival_Delay,Turnaround_Buffer,Turnaround_Buffer_Model,Is_Long_Ground_Turnaround,Tail_Stagnation_Duration,Tail_Stagnation_Duration_Model,Match_Status,Data_Completeness

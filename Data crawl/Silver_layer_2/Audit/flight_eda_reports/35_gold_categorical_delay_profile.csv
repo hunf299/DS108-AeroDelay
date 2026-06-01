@@ -1,0 +1,26 @@
+﻿feature,value,rows,delay_a15_rate_pct,departure_delay_median,departure_delay_p95
+Airline_Type,LCC,35852,69.81479415374316,25.0,129.0
+Airline_Type,FSC,37259,65.57878633350332,21.0,94.0
+Airline_Type,Other,1612,57.00992555831266,17.0,85.0
+Airline_Type,,3035,0.0,,
+Airport,SGN,36735,77.53640941881041,29.0,130.0
+Airport,HAN,28502,64.46916005894323,22.0,98.0
+Airport,DAD,12521,28.152703458190242,0.0,70.0
+Category,passenger,73068,67.6096239119724,23.0,114.0
+Category,general aviation,2200,41.36363636363637,19.0,85.0
+Category,,10,20.0,22.0,34.6
+Category,cargo,2113,2.9815428300993845,9.5,178.5500000000001
+Category,business jet,257,2.7237354085603114,0.0,38.799999999999876
+Category,ground vehicle,1,0.0,,
+Category,helicopter,18,0.0,,
+Category,military or government,52,0.0,0.0,0.0
+Category,non-categorized,39,0.0,,
+Data_Completeness,complete,77139,64.86472471771737,23.0,112.84999999999127
+Data_Completeness,unmatched_departure,619,56.058158319870756,20.0,192.5000000000001
+Match_Status,matched,77139,64.86472471771737,23.0,112.84999999999127
+Match_Status,dep_without_arrival,619,56.058158319870756,20.0,192.5000000000001
+Time_of_Day,Night,19196,73.77057720358408,28.0,125.25
+Time_of_Day,Afternoon,23364,71.57164869029276,25.0,118.0
+Time_of_Day,Morning,22685,64.22305488208066,20.0,92.0
+Time_of_Day,Early_Morning,9478,52.02574382781178,15.0,111.0
+Time_of_Day,,3035,0.0,,

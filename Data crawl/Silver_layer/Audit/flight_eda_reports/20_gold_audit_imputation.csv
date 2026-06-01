@@ -1,5 +1,0 @@
-﻿Record_Type,Missing_Link_Type,rows,imputed_links,audit_missing_expected
-Arrival,arrival_without_departure,472,472,1095
-Arrival,,73324,0,1095
-Departure,departure_without_arrival,619,619,1095
-Departure,,74104,432,1095
