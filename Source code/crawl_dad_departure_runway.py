@@ -9,11 +9,7 @@ import undetected_chromedriver as uc
 import time
 import re
 
-# ================= CẤU HÌNH ================="
 CSV_FILE = r"Z:\PycharmProjects\DS108-AeroDelay\Data crawl\Silver_layer\Departure\dad_flights_departure_silver_layer.csv"
-
-# Nếu bạn muốn chỉ vá 1 vài ngày cụ thể, điền vào đây (VD: ["2026-03-15"]).
-# Để trống [] tool sẽ tự quét toàn bộ CSV.
 TARGET_PATCH_DATES = []
 
 

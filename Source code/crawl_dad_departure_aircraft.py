@@ -1,8 +1,9 @@
 from selenium import webdriver
-from selenium.webdriver.edge.options import Options as EdgeOptions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
@@ -144,8 +145,6 @@ def load_flights_until_target_date(driver, target_date="2025-12-01"):
                 print(f"    [!] Đã hết chuyến bay hoặc lỗi: {str(e)[:50]}")
                 break
 
-
-# ================= BƯỚC 1: TẠO FILE JSON TỪ CSV =================
 def create_fixed_flights_cache_from_csv():
     print("\n[*] BƯỚC 1: Tạo file JSON từ CSV...")
 
@@ -196,8 +195,6 @@ def create_fixed_flights_cache_from_csv():
 
     return cache_data
 
-
-# ================= BƯỚC 2: CRAWL TAIL NUMBER TỪ FLIGHT INFO =================
 def wait_for_manual_login(driver):
     """Chờ người dùng đăng nhập Business Account"""
     print("\n[!!!] CHỜ ĐĂNG NHẬP TÀI KHOẢN BUSINESS [!!!]")
@@ -247,12 +244,16 @@ def crawl_tail_numbers_from_flight_info(cache_data):
         return cache_data
 
     # === KHỞI ĐỘNG TRÌNH DUYỆT ===
-    print("[+] Khởi động trình duyệt Edge...")
-    options = EdgeOptions()
-    options.add_argument(
-        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0")
+    print(f"[+] Khởi động trình duyệt undetected_chrome cào Flightradar24 ({ORIGIN_IATA})...")
 
-    driver = webdriver.Edge(options=options)
+    # Khởi tạo Options của undetected_chromedriver
+    options = uc.ChromeOptions()
+    options.add_argument("--disable-notifications")
+
+    options.add_argument("--headless")
+
+    # Khởi trị driver bằng uc
+    driver = uc.Chrome(options=options)
     driver.maximize_window()
     driver.get("https://www.flightradar24.com")
     wait_for_manual_login(driver)
@@ -350,8 +351,6 @@ def crawl_tail_numbers_from_flight_info(cache_data):
     save_cache(cache_data)
     return cache_data
 
-
-# ================= BƯỚC 3: TẠO FILE AIRCRAFT CSV =================
 def create_aircraft_csv(cache_data):
     print("\n[*] BƯỚC 3: Tạo file Aircraft CSV...")
 
@@ -409,8 +408,6 @@ def calculate_is_fixed_for_flights(cache_data):
 
     return is_fixed_map
 
-
-# ================= BƯỚC 4: CẬP NHẬT CSV =================
 def update_csv_with_tail_numbers_and_is_fixed(cache_data, is_fixed_map):
     print("\n[*] BƯỚC 4: Cập nhật CSV với Tail Numbers và Is_Fixed...")
 
@@ -461,8 +458,6 @@ def update_csv_with_tail_numbers_and_is_fixed(cache_data, is_fixed_map):
     print(f"      - Tail numbers được điền: {tail_matched}")
     print(f"      - Is_Fixed_Flight được điền: {is_fixed_filled}")
 
-
-# ================= BƯỚC 5: LƯU IS_FIXED VÀO CACHE JSON =================
 def save_is_fixed_to_cache(cache_data, is_fixed_map):
     print("\n[*] BƯỚC 5: Lưu is_fixed vào cache JSON...")
 
@@ -473,8 +468,6 @@ def save_is_fixed_to_cache(cache_data, is_fixed_map):
     save_cache(cache_data)
     print(f"  [v] Lưu is_fixed cho {len(is_fixed_map)} chuyến bay vào {CACHE_FILE}")
 
-
-# ================= MAIN FUNCTION =================
 def main():
     """Chạy toàn bộ quy trình"""
     print("=" * 70)

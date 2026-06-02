@@ -1,9 +1,9 @@
 from selenium import webdriver
-from selenium.webdriver.edge.options import Options as EdgeOptions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
@@ -47,16 +47,16 @@ def wait_for_manual_login(driver):
 
 # ================= KỊCH BẢN CHÍNH ================
 def crawl_arrivals_history_fast():
-    print(f"[+] Khởi động trình duyệt Edge cào Arrivals cho {DEST_IATA}...")
-    options = EdgeOptions()
-    options.add_argument('--ignore-certificate-errors')
-    options.add_argument('--ignore-ssl-errors')
-    options.add_argument('--allow-running-insecure-content')
-    options.add_experimental_option("excludeSwitches", ["enable-logging"])
-    options.add_argument(
-        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0")
+    print(f"[+] Khởi động trình duyệt undetected_chrome cào Flightradar24...")
 
-    driver = webdriver.Edge(options=options)
+    # Khởi tạo Options của undetected_chromedriver
+    options = uc.ChromeOptions()
+    options.add_argument("--disable-notifications")
+
+    options.add_argument("--headless")
+
+    # Khởi trị driver bằng uc
+    driver = uc.Chrome(options=options)
     driver.maximize_window()
     driver.get("https://www.flightradar24.com")
     wait_for_manual_login(driver)

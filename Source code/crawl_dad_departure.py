@@ -151,8 +151,6 @@ def crawl_dad_historical_flights_edge(target_date_str):
     print(f"  > Hoàn tất ngày {target_date_str}: Cào được {len(flights_data)} chuyến.")
     return flights_data
 
-
-# ================= KỊCH BẢN CHẠY CHÍNH =================
 if __name__ == "__main__":
     all_flights = []
 

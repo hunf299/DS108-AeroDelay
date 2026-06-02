@@ -1,9 +1,9 @@
 from selenium import webdriver
-from selenium.webdriver.edge.options import Options as EdgeOptions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
@@ -11,6 +11,7 @@ from datetime import datetime, timedelta
 import json
 import os
 import random
+
 
 # ================= CẤU HÌNH BIẾN MÔI TRƯỜNG =================
 VN_IATAS = ['HAN', 'SGN', 'CXR', 'PQC', 'VCA', 'VDO', 'HPH', 'VII', 'THD', 'VDH', 'HUI', 'VCL', 'UIH', 'TBB', 'PXU',
@@ -252,12 +253,18 @@ def get_std_from_ui(driver, flight_no, t_fmt1, t_fmt2, p_fmt1, p_fmt2, actual_ti
 
 # ================= KỊCH BẢN CHÍNH (DEPARTURE) =================
 def crawl_historical_business_master():
-    print(f"[+] Khởi động trình duyệt Edge Cào Departures cho {ORIGIN_IATA}...")
-    options = EdgeOptions()
-    options.add_argument(
-        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0")
+    print(f"[+] Khởi động trình duyệt cào Departures cho {ORIGIN_IATA}...")
 
-    driver = webdriver.Edge(options=options)
+    # Khởi tạo Options của undetected_chromedriver
+    options = uc.ChromeOptions()
+    options.add_argument("--disable-notifications")
+
+    options.add_argument("--headless")
+
+    # Khởi trị driver bằng uc
+    driver = uc.Chrome(options=options)
+    url = f"https://www.flightradar24.com/airport/{ORIGIN_IATA.lower()}/departures"
+    driver.get(url)
     driver.maximize_window()
     driver.get("https://www.flightradar24.com")
     wait_for_manual_login(driver)

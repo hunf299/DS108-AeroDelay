@@ -1,5 +1,5 @@
 feature_set,candidate_count,used_count,missing_count,missing_features,leakage_overlap
-F0_base,25,25,0,,
-F1_turnaround,29,29,0,,
-F2_lag,39,39,0,,
-F3_weather,51,51,0,,
+F0_base,25,24,1,Airport,
+F1_turnaround,29,28,1,Airport,
+F2_lag,39,38,1,Airport,
+F3_weather,51,50,1,Airport,

@@ -3,10 +3,11 @@ import time
 import os
 from datetime import datetime, timedelta
 from selenium import webdriver
-from selenium.webdriver.edge.options import Options as EdgeOptions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
 from pathlib import Path
 
@@ -104,8 +105,6 @@ def load_flights_until_target_date(driver, target_date):
         except:
             break
 
-
-# ================= BƯỚC 1: CRAWL DỮ LIỆU =================
 def crawl_and_update_aircraft_csv():
     global crawled_data_map, flight_avg_time_map
     print(f"\n[*] BƯỚC 1: Khởi động trình thu thập Web...")
@@ -123,8 +122,14 @@ def crawl_and_update_aircraft_csv():
         return
 
     aircraft_results = []
-    options = EdgeOptions()
-    driver = webdriver.Edge(options=options)
+    print(f"[+] Khởi động trình duyệt undetected_chrome để thu thập dữ liệu...")
+
+    # Khởi tạo tùy chọn cấu hình của undetected_chromedriver
+    options = uc.ChromeOptions()
+    options.add_argument("--disable-notifications")
+
+    # Khởi tạo driver bằng uc
+    driver = uc.Chrome(options=options)
     driver.get("https://www.flightradar24.com")
     wait_for_manual_login(driver)
 
@@ -206,8 +211,6 @@ def crawl_and_update_aircraft_csv():
             new_aircraft_df = pd.concat([old_df, new_aircraft_df]).drop_duplicates(subset=['Tail_Number'])
         new_aircraft_df.to_csv(AIRCRAFT_CSV_FILE, index=False, encoding='utf-8-sig')
 
-
-# ================= BƯỚC 2: VÁ DỮ LIỆU =================
 def patch_original_csv():
     print(f"\n[*] BƯỚC 2: Vá dữ liệu vào file CSV gốc...")
     if not os.path.exists(ORIGINAL_CSV): return
