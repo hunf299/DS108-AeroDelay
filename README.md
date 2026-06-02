@@ -4,7 +4,7 @@
 ---
 
 ## Giới thiệu dự án
-**AeroDelay** là nền tảng thu thập – xử lý – trích xuất đặc trưng dữ liệu hàng không và dữ liệu thời tiết nhằm phục vụ bài toán **dự đoán trễ chuy�[...]
+**AeroDelay** là nền tảng thu thập – xử lý – trích xuất đặc trưng dữ liệu hàng không và dữ liệu thời tiết nhằm phục vụ bài toán **dự đoán trễ chuyến**
 Dự án áp dụng quy trình dữ liệu theo các lớp **Bronze → Silver → Gold** và triển khai các bước Feature Engineering / Model Training bằng Python (kết hợp notebook).
 
 ---
@@ -88,5 +88,5 @@ pip install -r requirements.txt
 | `matplotlib`, `seaborn` | Trực quan hóa |
 | `streamlit`, `plotly` | Dashboard / trực quan tương tác |
 | `dagster` | Orchestration pipeline |
-| `ollama` | Tích hợp/triển khai LLM cục bộ (nếu sử dụng) |
+| `ollama` | Tích hợp/triển khai LLM cục bộ |
 | `python-dotenv` | Quản lý biến môi trường |
