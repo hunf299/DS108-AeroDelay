@@ -4,7 +4,7 @@
 ---
 
 ## Giới thiệu dự án
-**AeroDelay** là nền tảng thu thập – xử lý – trích xuất đặc trưng dữ liệu hàng không và dữ liệu thời tiết nhằm phục vụ bài toán **dự đoán trễ chuyến** (tập trung vào hiện tượng **lan truyền trễ** và yếu tố **thời tiết**).  
+**AeroDelay** là nền tảng thu thập – xử lý – trích xuất đặc trưng dữ liệu hàng không và dữ liệu thời tiết nhằm phục vụ bài toán **dự đoán trễ chuy�[...]
 Dự án áp dụng quy trình dữ liệu theo các lớp **Bronze → Silver → Gold** và triển khai các bước Feature Engineering / Model Training bằng Python (kết hợp notebook).
 
 ---
@@ -82,7 +82,11 @@ pip install -r requirements.txt
 |---|---|
 | `pandas`, `numpy` | Xử lý, làm sạch và phân tích dữ liệu |
 | `selenium`, `beautifulsoup4`, `scrapy`, `requests` | Thu thập dữ liệu từ web |
-| `webdriver-manager`, `msedge-selenium-tools`, `fake-useragent` | Hỗ trợ driver và giả lập User-Agent để hạn chế anti-scraping |
+| `webdriver-manager`, `msedge-selenium-tools`, `fake-useragent`, `undetected-chromedriver` | Hỗ trợ driver, giả lập User-Agent và hạn chế anti-scraping |
+| `pyspark`, `kafka-python` | Xử lý dữ liệu lớn / streaming |
 | `scikit-learn`, `joblib` | Huấn luyện, đánh giá mô hình và lưu model |
 | `matplotlib`, `seaborn` | Trực quan hóa |
+| `streamlit`, `plotly` | Dashboard / trực quan tương tác |
+| `dagster` | Orchestration pipeline |
+| `ollama` | Tích hợp/triển khai LLM cục bộ (nếu sử dụng) |
 | `python-dotenv` | Quản lý biến môi trường |
