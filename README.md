@@ -4,7 +4,7 @@
 ---
 
 ## Giới thiệu dự án
-**AeroDelay** là nền tảng phân tích và dự báo tình trạng trễ chuyến bay dựa trên hiện tượng **lan truyền và thời tiết**. Dự án kết hợp các kỹ thuật Big Data và Machine Learning để giải quyết bài toán tối ưu hóa lịch trình bay tại các sân bay lớn của Việt Nam (SGN, HAN, DAD).
+**AeroDelay** là nền tảng phân tích và dự báo tình trạng trễ chuyến bay dựa trên hiện tượng **lan truyền và thời tiết**. Dự án giải quyết bài toán tối ưu hóa lịch trình bay tại các sân bay lớn của Việt Nam (SGN, HAN, DAD).
 
 ---
 
