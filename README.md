@@ -83,7 +83,6 @@ pip install -r requirements.txt
 | `pandas`, `numpy` | Xử lý, làm sạch và phân tích dữ liệu |
 | `selenium`, `beautifulsoup4`, `scrapy`, `requests` | Thu thập dữ liệu từ web |
 | `webdriver-manager`, `msedge-selenium-tools`, `fake-useragent` | Hỗ trợ driver và giả lập User-Agent để hạn chế anti-scraping |
-| `pyspark`, `kafka-python` | Xử lý dữ liệu lớn / streaming (nếu dùng) |
 | `scikit-learn`, `joblib` | Huấn luyện, đánh giá mô hình và lưu model |
 | `matplotlib`, `seaborn` | Trực quan hóa |
 | `python-dotenv` | Quản lý biến môi trường |
