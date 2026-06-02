@@ -1,4 +1,4 @@
-*Đồ án môn học nhóm 13 DS108 - Tiền xử lý và xây dựng bộ dữ liệu*
+*Đồ án môn học nhóm 18 DS108 - Tiền xử lý và xây dựng bộ dữ liệu*
 # AeroDelay: Thu thập dữ liệu hàng không và tiền xử lý cho bài toán dự đoán trễ chuyến dây chuyền.
 
 ---
