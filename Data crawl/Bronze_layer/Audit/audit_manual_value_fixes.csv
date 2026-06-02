@@ -1,2 +1,0 @@
-airport,mode,row_index,action,rule,crawl_date,scheduled_time,actual_time,flight_no,iata,airline,tail_number,aircraft_type,category
-HAN,arrival,21727,insert,manual_han_arr_vu774_inserted,2026-03-05,,09:12,VU774,SGN,Vietravel Airlines,9H-MLW,A320,passenger

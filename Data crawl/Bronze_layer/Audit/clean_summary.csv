@@ -1,7 +1,0 @@
-Airport,Mode,rows_input,rows_output,dad_cancelled_cleared,dad_bl_to_vn,dad_airline_pacific_to_vietnam,spq_to_9g_converted,spq_to_9g_airline_match,spq_to_9g_pattern_match,manual_rows_inserted,manual_rows_dropped,manual_rows_updated,airline_values_changed,category_values_changed,terminal_values_changed,thd_route_name_changed,dad_belt_general_aviation_changed,is_fixed_flight_normalized_existing,is_fixed_flight_missing_before,is_fixed_flight_filled_one,is_fixed_flight_filled_zero,is_fixed_flight_missing_after,arrival_flight_time_raw_dropped,patched_arrivals_inserted,patched_arrivals_skipped,manual_han_arr_vu774_inserted,patched_departures_inserted,patched_departures_skipped
-SGN,arrival,36721,36721,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,155.0,,,
-HAN,arrival,24920,24921,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0.0,1370.0,1.0,,
-DAD,arrival,12575,12575,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,76.0,,,
-SGN,departure,36789,36789,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,16,12,0,0,,,,0.0,28.0
-HAN,departure,28503,28503,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,157,134,23,0,0,,,,0.0,158.0
-DAD,departure,12529,12529,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12528,1,0,1,0,0,,,,,

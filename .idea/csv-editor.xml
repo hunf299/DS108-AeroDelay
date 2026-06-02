@@ -388,6 +388,34 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Data/Bronze_layer/airport_weather_hourly_merged.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data/Silver_layer/Audit/flight_eda_reports/21_visual_issue_summary.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data/final_merged_patched_flights.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data/valid_patched_flights.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Source code/master_departure_features_gold_annotated_full.csv">
           <value>
             <Attribute>
