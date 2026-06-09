@@ -32,8 +32,8 @@ Prev_Departure_Delay_Airport_1,0.021376360869745224
 Is_Imputed_Link,-0.017769262801343933
 Prev_Turnaround_Buffer_Tail_2,0.010866031559131411
 Rolling_Turnaround_Buffer_Tail_3,0.009929873165146395
-Exclude_From_Propagation_Training,-0.009644852133151843
 Has_Matched_Arrival,0.009644852133151843
+Exclude_From_Propagation_Training,-0.009644852133151843
 Previous_Station_Disruption,-0.008720009890335344
 Terminal,0.007007601587450867
 Flight_Density_Disruption,-0.005030520919370394

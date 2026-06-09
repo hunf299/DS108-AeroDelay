@@ -9,11 +9,6 @@ DAD,wind_direction,2208,0,0.0
 DAD,pressure,2208,0,0.0
 DAD,humidity,2208,0,0.0
 DAD,visibility,2208,0,0.0
-DAD,dew_point_2m,2208,0,0.0
-DAD,weather_code,2208,0,0.0
-DAD,cape,2208,0,0.0
-DAD,lifted_index,2208,0,0.0
-DAD,cloud_cover_low,2208,0,0.0
 HAN,time,2208,0,0.0
 HAN,Airport,2208,0,0.0
 HAN,temperature,2208,0,0.0
@@ -24,11 +19,6 @@ HAN,wind_direction,2208,0,0.0
 HAN,pressure,2208,0,0.0
 HAN,humidity,2208,0,0.0
 HAN,visibility,2208,0,0.0
-HAN,dew_point_2m,2208,0,0.0
-HAN,weather_code,2208,0,0.0
-HAN,cape,2208,0,0.0
-HAN,lifted_index,2208,0,0.0
-HAN,cloud_cover_low,2208,0,0.0
 SGN,time,2208,0,0.0
 SGN,Airport,2208,0,0.0
 SGN,temperature,2208,0,0.0
@@ -39,8 +29,3 @@ SGN,wind_direction,2208,0,0.0
 SGN,pressure,2208,0,0.0
 SGN,humidity,2208,0,0.0
 SGN,visibility,2208,0,0.0
-SGN,dew_point_2m,2208,0,0.0
-SGN,weather_code,2208,0,0.0
-SGN,cape,2208,0,0.0
-SGN,lifted_index,2208,0,0.0
-SGN,cloud_cover_low,2208,0,0.0

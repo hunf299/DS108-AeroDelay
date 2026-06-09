@@ -1,8 +1,8 @@
 ﻿metric,value,section
 silver_rows,6624,summary
-silver_columns,69,summary
+silver_columns,63,summary
 gold_rows,6624,summary
-gold_columns,60,summary
+gold_columns,54,summary
 dropped_columns_count,9,summary
 missing_requested_drop_columns_count,0,summary
 Is_Crosswind_15kt,1,drop_detail

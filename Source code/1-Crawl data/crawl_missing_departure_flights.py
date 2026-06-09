@@ -14,10 +14,7 @@ import threading
 import traceback
 
 # ================= CẤU HÌNH ĐƯỜNG DẪN & HẰNG SỐ =================
-CWD = Path.cwd().resolve()
-PROJECT_ROOT = CWD if (CWD / "Data").exists() else CWD.parent
-if not (PROJECT_ROOT / "Data").exists():
-    raise FileNotFoundError("Cannot find project root containing 'Data'.")
+PROJECT_ROOT = Path.cwd().parent.parent.resolve()
 
 SILVER = PROJECT_ROOT / "Data" / "Silver_layer"
 AUDIT_FILE = SILVER / "Audit" / "audit_departure_without_arrival.csv"
@@ -34,7 +31,7 @@ browser_init_lock = threading.Lock()
 CSV_COLUMNS = [
     "Crawl_Date", "Scheduled_Time", "Actual_Time", "Destination", "IATA",
     "Airline", "Flight_No", "Terminal", "Departure_Runway", "Status",
-    "Tail_Number", "Aircraft_Type", "Is_Fixed_Flight", "Category"
+    "Scheduled_Tail", "Aircraft_Type", "Is_Fixed_Flight", "Category"
 ]
 
 
@@ -285,7 +282,7 @@ def worker_process(dataframe_chunk, thread_id):
                         "Terminal": terminal,
                         "Departure_Runway": "",
                         "Status": flight_status,
-                        "Tail_Number": actual_tail,
+                        "Scheduled_Tail": actual_tail,
                         "Aircraft_Type": aircraft_type,
                         "Is_Fixed_Flight": "",
                         "Category": "passenger"

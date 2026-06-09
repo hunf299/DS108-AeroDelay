@@ -12,20 +12,18 @@ from datetime import datetime, timedelta
 import json
 import os
 import random
+import re
 
 
 # ================= CẤU HÌNH BIẾN MÔI TRƯỜNG =================
 VN_IATAS = ['HAN', 'SGN', 'CXR', 'PQC', 'VCA', 'VDO', 'HPH', 'VII', 'THD', 'VDH', 'HUI', 'VCL', 'UIH', 'TBB', 'PXU',
             'BMV', 'DLI', 'VKG', 'CAH', 'VCS', 'DIN']
-START_DATE = "2026-03-16"
-END_DATE = "2026-03-16"
+START_DATE = "2026-01-17"
+END_DATE = "2026-01-17"
 
-ORIGIN_IATA = "DAD"
+ORIGIN_IATA = os.environ.get("ORIGIN_DATA", "HAN")
 LIMIT_DATE = datetime(2025, 12, 1)
-CWD = Path.cwd().resolve()
-PROJECT_ROOT = CWD if (CWD / "Data").exists() else CWD.parent
-if not (PROJECT_ROOT / "Data").exists():
-    raise FileNotFoundError("Cannot find project root containing 'Data'.")
+PROJECT_ROOT = Path.cwd().parent.parent.resolve()
 
 BRONZE = PROJECT_ROOT / "Data" / "Bronze_layer"
 DEPARTURE_DIR = BRONZE / "Departure" / f"{ORIGIN_IATA.lower()}_flights_departure_bronze_layer.csv"
@@ -254,6 +252,7 @@ def get_std_from_ui(driver, flight_no, t_fmt1, t_fmt2, p_fmt1, p_fmt2, actual_ti
         pass
     finally:
         driver.close();
+        # QUAN TRỌNG: Đóng tab Info và quay lại đúng tab lịch sử chính
         driver.switch_to.window(driver.window_handles[0])
 
     return std_result, is_fixed, info_dest, info_iata, info_airline, info_aircraft, is_valid, full_schedule
@@ -267,30 +266,58 @@ def crawl_historical_business_master():
     options = uc.ChromeOptions()
     options.add_argument("--disable-notifications")
 
-    options.add_argument("--headless")
+    # 1. Thêm các cờ chống sập
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--no-sandbox")
 
-    # Khởi trị driver bằng uc
     driver = uc.Chrome(options=options)
-    url = f"https://www.flightradar24.com/airport/{ORIGIN_IATA.lower()}/departures"
-    driver.get(url)
     driver.maximize_window()
     driver.get("https://www.flightradar24.com")
     wait_for_manual_login(driver)
+
+    # == BỔ SUNG: Mở trang lịch sử sân bay 1 lần duy nhất ở Tab chính ==
+    base_url = f"https://www.flightradar24.com/airport/{ORIGIN_IATA.lower()}/departures"
+    driver.get(base_url)
+    time.sleep(3)
 
     date_list = pd.date_range(start=START_DATE, end=END_DATE).strftime('%Y-%m-%d').tolist()
     all_flights_data = []
 
     for target_date in date_list:
-        print(f"\n========== ĐANG CÀO NGÀY: {target_date} ==========")
-        url = f"https://www.flightradar24.com/airport/{ORIGIN_IATA.lower()}/history?type=takeoffs&date={target_date}"
-        driver.get(url)
-        time.sleep(3)
+        print(f"\n{'='*50}")
+        print(f"========== ĐANG CÀO NGÀY: {target_date} ==========")
+        print(f"{'='*50}")
 
         dt_obj = datetime.strptime(target_date, "%Y-%m-%d")
         prev_dt_obj = dt_obj - timedelta(days=1)
 
         fmt1, fmt2 = get_fr24_date_formats(dt_obj)
         p_fmt1, p_fmt2 = get_fr24_date_formats(prev_dt_obj)
+
+        # --- BẪY THỜI GIAN: CHỜ NGƯỜI DÙNG CHỌN NGÀY ---
+        print(f"\n[!!!] HÀNH ĐỘNG CẦN THIẾT [!!!]")
+        print(f"Vui lòng quay sang trình duyệt và chọn ngày '{target_date}' trên Calendar.")
+        print("Tool đang tự động lắng nghe thẻ <h3> để nhận diện...")
+
+        month_str = dt_obj.strftime("%b")
+        month_full = dt_obj.strftime("%B")
+        day_str = str(dt_obj.day)
+
+        pattern_short = rf"\b{month_str} {day_str}\b"
+        pattern_full = rf"\b{month_full} {day_str}\b"
+
+        while True:
+            try:
+                h3_element = driver.find_element(By.CSS_SELECTOR, "h3.inline-flex.items-center.text-sm")
+                h3_text = h3_element.text.strip()
+                if re.search(pattern_short, h3_text) or re.search(pattern_full, h3_text):
+                    print(f"\n  [v] Đã nhận diện đúng ngày: '{h3_text}'")
+                    print("  [>] Chờ 2s cho dữ liệu bảng ổn định...")
+                    time.sleep(2)
+                    break
+            except Exception:
+                pass
+            time.sleep(1)
 
         try:
             try:
@@ -417,7 +444,6 @@ def crawl_historical_business_master():
                         print(f"      [i] Chuyến thiếu Flight No -> Lấy ATD ({actual_time}) tính Congestion.")
 
                     elif is_passenger_or_unknown:
-                        # Bổ sung ép Mở Tab nếu thiếu cả aircraft_type
                         needs_deep = is_empty_val(destination) or is_empty_val(airline) or is_empty_val(aircraft_type)
                         atd_mins = time_to_mins(actual_time)
 
@@ -461,7 +487,6 @@ def crawl_historical_business_master():
                                 if is_empty_val(destination) and entry.get("dest"): destination, iata_code = entry.get(
                                     "dest"), entry.get("iata", iata_code)
                                 if is_empty_val(airline) and entry.get("airline"): airline = entry.get("airline")
-                                # Chữa lành Aircraft Type từ Cache JSON
                                 if is_empty_val(aircraft_type) and entry.get("aircraft"): aircraft_type = entry.get(
                                     "aircraft")
 
@@ -497,14 +522,14 @@ def crawl_historical_business_master():
                             if needs_deep:
                                 if is_empty_val(destination) and i_dest: destination, iata_code = i_dest, i_iata
                                 if is_empty_val(airline) and i_air: airline = i_air
-                                if is_empty_val(aircraft_type) and i_ac: aircraft_type = i_ac  # Bù đắp từ Tab lịch sử
+                                if is_empty_val(aircraft_type) and i_ac: aircraft_type = i_ac
 
                             if flight_no not in flight_std_cache: flight_std_cache[flight_no] = {"schedule": {}}
                             if not is_empty_val(destination): flight_std_cache[flight_no]["dest"] = destination
                             if iata_code: flight_std_cache[flight_no]["iata"] = iata_code
                             if not is_empty_val(airline): flight_std_cache[flight_no]["airline"] = airline
                             if not is_empty_val(aircraft_type): flight_std_cache[flight_no][
-                                "aircraft"] = aircraft_type  # Save cache AC
+                                "aircraft"] = aircraft_type
                             flight_std_cache[flight_no]["type"] = "fixed" if is_fixed == 1 else "dynamic"
                             flight_std_cache[flight_no]["is_fixed"] = is_fixed
                             if is_fixed == 1: flight_std_cache[flight_no]["std"] = scheduled_time
@@ -520,7 +545,7 @@ def crawl_historical_business_master():
                         "Crawl_Date": target_date, "Scheduled_Time": scheduled_time, "Actual_Time": actual_time,
                         "Destination": destination, "IATA": iata_code, "Airline": airline, "Flight_No": flight_no,
                         "Terminal": terminal_val, "Departure_Runway": departure_runway,
-                        "Status": "Departed", "Tail_Number": tail_number, "Aircraft_Type": aircraft_type,
+                        "Status": "Departed", "Scheduled_Tail": tail_number, "Aircraft_Type": aircraft_type,
                         "Is_Fixed_Flight": is_fixed, "Category": category
                     }
                     all_flights_data.append(record)
@@ -540,7 +565,7 @@ def crawl_historical_business_master():
             if all_flights_data:
                 df = pd.DataFrame(all_flights_data)
                 cols = ["Crawl_Date", "Scheduled_Time", "Actual_Time", "Destination", "IATA", "Airline", "Flight_No",
-                        "Terminal", "Departure_Runway", "Status", "Tail_Number", "Aircraft_Type", "Is_Fixed_Flight",
+                        "Terminal", "Departure_Runway", "Status", "Scheduled_Tail", "Aircraft_Type", "Is_Fixed_Flight",
                         "Category"]
                 df = df[cols]
                 s_day = format_date_short(START_DATE)

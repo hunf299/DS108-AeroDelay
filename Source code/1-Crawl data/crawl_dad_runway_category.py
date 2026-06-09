@@ -10,13 +10,15 @@ import undetected_chromedriver as uc
 import time
 import re
 
-CWD = Path.cwd().resolve()
-PROJECT_ROOT = CWD if (CWD / "Data").exists() else CWD.parent
-if not (PROJECT_ROOT / "Data").exists():
-    raise FileNotFoundError("Cannot find project root containing 'Data'.")
+PROJECT_ROOT = Path.cwd().parent.parent.resolve()
 
-SILVER = PROJECT_ROOT / "Data" / "Bronze_layer"
-CSV_FILE = SILVER / "Departure" / "dad_flights_departure_silver_layer.csv"
+ROUTE = os.environ.get("ROUTE", "departure")
+
+BRONZE = PROJECT_ROOT / "Data" / "Bronze_layer"
+if ROUTE == "departure":
+    CSV_FILE = BRONZE / "Departure" / "dad_flights_departure_bronze_layer.csv"
+else:
+    CSV_FILE = BRONZE / "Arrival" / "dad_flights_arrival_bronze_layer.csv"
 TARGET_PATCH_DATES = []
 
 
@@ -24,13 +26,18 @@ def start_undetected_browser():
     print("[+] Đang khởi tạo Undetected Chromedriver (Vượt Cloudflare)...")
 
     options = uc.ChromeOptions()
+    options.add_argument("--disable-notifications")
+
+    # 1. Thêm các cờ chống sập
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--no-sandbox")
+
     # Thêm user-agent chuẩn của người thật
     options.add_argument(
         "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
 
     # Khởi tạo trình duyệt
-    # Lưu ý: Không dùng chế độ ẩn danh (incognito) hay headless vì dễ bị Cloudflare nghi ngờ
-    driver = uc.Chrome(options=options, version_main=148)
+    driver = uc.Chrome(options=options)
     driver.maximize_window()
 
     return driver
@@ -49,9 +56,9 @@ def wait_for_manual_login(driver):
             if "business" in auth_btn.text.lower():
                 print("\n[v] Đã nhận diện tài khoản Business!\n")
                 break
-            time.sleep(3)
+            time.sleep(1)
         except:
-            time.sleep(3)
+            time.sleep(1)
 
 
 def patch_missing_runways():
@@ -62,8 +69,16 @@ def patch_missing_runways():
 
     df = pd.read_csv(CSV_FILE)
 
+    # ĐỘNG HOÁ TÊN CỘT DỰA VÀO ENV
+    runway_col = f"{ROUTE.capitalize()}_Runway"
+
+    if runway_col not in df.columns:
+        df[runway_col] = pd.NA
+    if "Category" not in df.columns:
+        df["Category"] = pd.NA
+
     # Tìm các ngày bị khuyết Runway
-    missing_mask = df['Departure_Runway'].apply(is_empty_val)
+    missing_mask = df[runway_col].apply(is_empty_val)
     if TARGET_PATCH_DATES:
         dates_to_patch = TARGET_PATCH_DATES
     else:
@@ -75,11 +90,7 @@ def patch_missing_runways():
 
     print(f"[!] Phát hiện {missing_mask.sum()} chuyến bay bị thiếu Runway phân bố trong {len(dates_to_patch)} ngày.")
 
-    # Khởi động Trình duyệt
     driver = start_undetected_browser()
-    driver.maximize_window()
-
-    # Chỉ load trang chủ lịch sử 1 lần
     driver.get("https://www.flightradar24.com")
     wait_for_manual_login(driver)
 
@@ -94,46 +105,35 @@ def patch_missing_runways():
         print(f"  > Ngày này có {len(missing_in_date)} chuyến cần vá Runway.")
         if missing_in_date.empty: continue
 
-        # --- BẪY THỜI GIAN: CHỜ NGƯỜI DÙNG CHỌN NGÀY ---
         print(f"\n[!!!] HÀNH ĐỘNG CẦN THIẾT [!!!]")
-        print(f"Vui lòng quay sang trình duyệt và chọn ngày '{target_date}' trên Calendar.")
-        print("Tool đang tự động lắng nghe thẻ <h3> để nhận diện...")
+        print(f"Vui lòng chọn ngày '{target_date}' trên Calendar. Tool đang lắng nghe...")
 
-        # Parse target_date ra format của FR24 để so sánh (VD: "May 5")
-        # Parse target_date ra format của FR24 để so sánh
         target_dt = datetime.strptime(target_date, "%Y-%m-%d")
-        month_str = target_dt.strftime("%b")  # Jan, Feb, Mar...
-        month_full = target_dt.strftime("%B")  # January, February...
+        month_str = target_dt.strftime("%b")
+        month_full = target_dt.strftime("%B")
         day_str = str(target_dt.day)
 
-        # Tạo mẫu Regex để bắt CHÍNH XÁC ngày (\b đảm bảo không bị dính chữ số đằng sau)
-        # VD: \bMay 2\b sẽ không bao giờ khớp với "May 24" hay "May 25"
         pattern_short = rf"\b{month_str} {day_str}\b"
         pattern_full = rf"\b{month_full} {day_str}\b"
 
         while True:
             try:
-                # Đọc thẻ h3
                 h3_element = driver.find_element(By.CSS_SELECTOR, "h3.inline-flex.items-center.text-sm")
                 h3_text = h3_element.text.strip()
-
-                # So khớp chính xác bằng Regex thay vì toán tử 'in'
                 if re.search(pattern_short, h3_text) or re.search(pattern_full, h3_text):
                     print(f"\n  [v] Đã nhận diện đúng ngày: '{h3_text}'")
-                    print("  [>] Chờ 3s cho dữ liệu bảng ổn định...")
-                    time.sleep(3)  # Chờ bảng load xong sau khi đổi ngày
+                    time.sleep(1)
                     break
             except Exception:
                 pass
-            time.sleep(2)
+            time.sleep(1)
 
-        # --- BẮT ĐẦU QUÉT BẢNG ---
         flights = driver.find_elements(By.CSS_SELECTOR, 'li[data-testid="airport-history__result-item"]')
         total_flights = len(flights)
 
         for i in range(total_flights):
-            # Check xem đã vá xong hết chưa
-            still_missing = df[(df['Crawl_Date'] == target_date) & (df['Departure_Runway'].apply(is_empty_val))]
+            still_missing = df[(df['Crawl_Date'] == target_date) &
+                               (df[runway_col].apply(is_empty_val) | df['Category'].apply(is_empty_val))]
             if still_missing.empty:
                 print("  [v] Đã vá xong toàn bộ Runway bị khuyết cho ngày này!")
                 break
@@ -144,7 +144,6 @@ def patch_missing_runways():
                 if i >= len(current_flights): break
                 flight = current_flights[i]
 
-                # Bóc tách bề mặt (Outer HTML)
                 html_outer = flight.get_attribute("outerHTML")
                 soup_outer = BeautifulSoup(html_outer, 'html.parser')
 
@@ -152,81 +151,70 @@ def patch_missing_runways():
                     el = soup_obj.find(attrs={"data-testid": test_id})
                     return el.text.strip() if el else ""
 
-                # LẤY FLIGHT_NO VÀ IATA TỪ BÊN NGOÀI
                 flight_no_web = get_text_safe(soup_outer, "airport-history__result-item__flight-number")
                 iata_code = get_text_safe(soup_outer, "airport-history__result-item__airport-iata")
 
-                # Bỏ qua nếu trên web không hiển thị Flight No (không có cơ sở để match)
-                if not flight_no_web:
-                    continue
+                if not flight_no_web: continue
 
-                # ================= SO KHỚP BẰNG FLIGHT_NO VÀ IATA =================
-                # Sử dụng .astype(str).str.strip() để tránh lỗi khoảng trắng ẩn trong pandas
                 match = still_missing[(still_missing['Flight_No'].astype(str).str.strip() == flight_no_web)]
                 if iata_code:
                     match = match[match['IATA'].astype(str).str.strip() == iata_code]
 
-                if match.empty:
-                    continue
+                if match.empty: continue
 
                 driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", flight)
                 time.sleep(0.3)
+                scraped_runway = ""
+                scraped_category = ""
 
-                departure_runway = ""
-
-                # ================= CƠ CHẾ FAST PATH (LẤY TỪ THẺ SPAN NGOÀI) =================
                 runway_span = soup_outer.find(attrs={"data-testid": "airport-history__result-item__airport-runway"})
                 if runway_span:
-                    # Lấy text và dọn dẹp các ký tự thừa
-                    departure_runway = runway_span.get_text(separator="", strip=True)
+                    scraped_runway = runway_span.get_text(separator="", strip=True)
 
-                # ================= CƠ CHẾ SLOW PATH (BUNG BẢNG RETRY 3 LẦN) =================
-                if is_empty_val(departure_runway):
+                if is_empty_val(scraped_runway) or is_empty_val(scraped_category):
                     clickable_div = flight.find_element(By.CSS_SELECTOR,
                                                         "div[data-testid='airport-history__result-item__data']")
-
                     for attempt in range(3):
                         details_check = flight.find_elements(By.CSS_SELECTOR,
                                                              "dl[data-testid='airport-history__result-item__details__category']")
                         if not details_check or not details_check[0].is_displayed():
                             driver.execute_script("arguments[0].click();", clickable_div)
-
                         try:
                             WebDriverWait(flight, 4).until(EC.visibility_of_element_located(
                                 (By.CSS_SELECTOR, "dl[data-testid='airport-history__result-item__details__category']")))
                             time.sleep(1.0)
                         except:
                             pass
-
                         soup_inner = BeautifulSoup(flight.get_attribute("outerHTML"), 'html.parser')
                         runway_el = soup_inner.find(
                             attrs={"data-testid": "airport-history__result-item__details__runway"})
-                        departure_runway = runway_el.find('dd').text.strip() if runway_el and runway_el.find(
-                            'dd') else ""
+                        scraped_runway = runway_el.find('dd').text.strip() if runway_el and runway_el.find('dd') else ""
 
-                        if not is_empty_val(departure_runway):
-                            break
-                        else:
-                            if attempt < 2:
-                                driver.execute_script("arguments[0].click();", clickable_div)
-                                time.sleep(1.0)
+                        dt_list = soup_inner.find_all("dt", class_="text-xs font-semibold uppercase text-gray-900")
+                        scraped_category = ""
+                        for dt in dt_list:
+                            if "category" in dt.text.lower():
+                                dd = dt.find_next_sibling("dd")
+                                scraped_category = dd.text.strip() if dd else ""
+                                break
 
-                # ================= CẬP NHẬT VÀO CSV =================
-                for idx, row in match.iterrows():
-                    if not is_empty_val(departure_runway):
-                        df.at[idx, 'Departure_Runway'] = departure_runway
-                        patched_count += 1
-                        print(f"    [+] VÁ THÀNH CÔNG ({flight_no_web}): Runway -> {departure_runway}")
-                    else:
-                        print(f"    [-] Bó tay ({flight_no_web}): Web không hiển thị Runway.")
-                    break  # Chỉ cập nhật dòng đầu tiên tìm thấy
+                        # Cập nhật vào DataFrame
+                    for idx, row in match.iterrows():
+                        if not is_empty_val(scraped_runway):
+                            df.at[idx, runway_col] = scraped_runway
+                        if not is_empty_val(scraped_category):
+                            df.at[idx, 'Category'] = scraped_category
+
+                        if not is_empty_val(scraped_runway) or not is_empty_val(scraped_category):
+                            patched_count += 1
+                            print(
+                                f"    [+] VÁ THÀNH CÔNG ({flight_no_web}): Runway -> {scraped_runway}, Cat -> {scraped_category}")
+                        break
 
             except Exception as e:
-                print(f"  [!] Lỗi dòng {i + 1}: {type(e).__name__}")
                 continue
 
         df.to_csv(CSV_FILE, index=False, encoding='utf-8-sig')
-        print(f"  [v] Đã lưu cập nhật CSV cho ngày {target_date}")
 
     driver.quit()
     print(f"\n[v] HOÀN TẤT VÁ LỖI RUNWAY. TỔNG CỘNG ĐÃ VÁ: {patched_count} CHUYẾN!")

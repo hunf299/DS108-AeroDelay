@@ -14,10 +14,7 @@ import os
 
 # ================= CẤU HÌNH BIẾN MÔI TRƯỜNG =================
 ORIGIN_IATA = "DAD"
-CWD = Path.cwd().resolve()
-PROJECT_ROOT = CWD if (CWD / "Data").exists() else CWD.parent
-if not (PROJECT_ROOT / "Data").exists():
-    raise FileNotFoundError("Cannot find project root containing 'Data'.")
+PROJECT_ROOT = Path.cwd().parent.parent.resolve()
 
 BRONZE = PROJECT_ROOT / "Data" / "Bronze_layer"
 DEPARTURE_DIR = BRONZE / "Departure" / f"{ORIGIN_IATA.lower()}_flights_departure_bronze_layer.csv"
@@ -136,7 +133,7 @@ def load_flights_until_target_date(driver, target_date="2025-12-01"):
             driver.execute_script("arguments[0].click();", load_btn)
 
             # Tăng thời gian chờ dữ liệu render (rất quan trọng)
-            time.sleep(3.5)
+            time.sleep(1)
 
             click_count += 1
             print(f"    [-] Đã click Load More lần {click_count} (Ngày cũ nhất hiện tại: {earliest_date})")
@@ -146,7 +143,7 @@ def load_flights_until_target_date(driver, target_date="2025-12-01"):
             if retries < max_retries:
                 retries += 1
                 print(f"    [!] Thử tìm lại nút Load More (Lần {retries})...")
-                time.sleep(2)
+                time.sleep(1)
                 continue
             else:
                 print(f"    [!] Đã hết chuyến bay hoặc lỗi: {str(e)[:50]}")
@@ -188,7 +185,7 @@ def create_fixed_flights_cache_from_csv():
                 'std': str(row['Scheduled_Time']).strip() if pd.notna(row['Scheduled_Time']) else "—",
                 'dest': str(row['Destination']).strip() if pd.notna(row['Destination']) else "",
                 'iata': str(row['IATA']).strip() if pd.notna(row['IATA']) else "",
-                'tail_number': str(row.get('Tail_Number', '')).strip() if pd.notna(row.get('Tail_Number', '')) else ""
+                'scheduled_tail': str(row.get('Scheduled_Tail', '')).strip() if pd.notna(row.get('Scheduled_Tail', '')) else ""
             }
 
             schedule[fr24_date].append(flight_info)
@@ -211,9 +208,9 @@ def wait_for_manual_login(driver):
             if "business" in auth_btn.text.lower():
                 print("\n[v] Đã nhận diện tài khoản Business!\n")
                 break
-            time.sleep(3)
+            time.sleep(1)
         except:
-            time.sleep(3)
+            time.sleep(1)
 
 
 def crawl_tail_numbers_from_flight_info(cache_data):
@@ -233,7 +230,7 @@ def crawl_tail_numbers_from_flight_info(cache_data):
         # Kiểm tra xem có ngày nào/chuyến nào bị trống tail_number không
         for date, flights in schedule.items():
             for f in flights:
-                tail = str(f.get('tail_number', '')).strip()
+                tail = str(f.get('scheduled_tail', '')).strip()
                 if not tail or tail in ['—', 'N/A', 'nan', 'NaN', 'None', 'unknown']:
                     needs_crawl = True
                     break  # Chỉ cần 1 chuyến thiếu là phải crawl lại mã này
@@ -257,9 +254,10 @@ def crawl_tail_numbers_from_flight_info(cache_data):
     options = uc.ChromeOptions()
     options.add_argument("--disable-notifications")
 
-    options.add_argument("--headless")
+    # 1. Thêm các cờ chống sập
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--no-sandbox")
 
-    # Khởi trị driver bằng uc
     driver = uc.Chrome(options=options)
     driver.maximize_window()
     driver.get("https://www.flightradar24.com")
@@ -283,10 +281,10 @@ def crawl_tail_numbers_from_flight_info(cache_data):
 
         try:
             driver.get(url)
-            time.sleep(2)
+            time.sleep(1)
 
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "tbl-datatable")))
-            time.sleep(1)
+            time.sleep(0.5)
 
             # ====== GỌI HÀM LOAD MORE CHỐNG TRƯỢT ======
             load_flights_until_target_date(driver, target_date="2025-12-01")
@@ -315,32 +313,36 @@ def crawl_tail_numbers_from_flight_info(cache_data):
                 # 3. Lấy STD
                 row_std = cols[7].text.strip() if len(cols) > 7 else ""
 
-                # 4. Lấy Tail Number
+                # 4. Lấy Tail Number và Aircraft Type
                 ac_col_text = cols[5].text.strip() if len(cols) > 5 else ""
-                tail_number = ""
+                scheduled_tail = ""
+                aircraft_type = ""  # Bổ sung biến này
+
                 if '(' in ac_col_text and ')' in ac_col_text:
-                    tail_number = ac_col_text.split('(')[1].split(')')[0].strip()
+                    parts = ac_col_text.split('(')
+                    aircraft_type = parts[0].strip()  # Ví dụ: "A321"
+                    scheduled_tail = parts[1].split(')')[0].strip()  # Ví dụ: "VN-A123"
 
                 # 5. Khớp dữ liệu linh hoạt
-                if tail_number and row_date in cache_data[flight_no]['schedule']:
+                if scheduled_tail and row_date in cache_data[flight_no]['schedule']:
                     for flight in cache_data[flight_no]['schedule'][row_date]:
-                        # Bỏ qua nếu chuyến này ĐÃ CÓ tail_number từ các lần chạy trước
-                        if flight.get('tail_number', '').strip() not in ['', '—', 'N/A', 'nan']:
+                        if flight.get('scheduled_tail', '').strip() not in ['', '—', 'N/A', 'nan']:
                             continue
 
-                        # Điều kiện 1: STD khớp hoàn toàn (Ưu tiên)
+                        # SỬA TẠI ĐÂY: Lưu thêm aircraft_type vào cache
                         if flight['std'] == row_std:
-                            flight['tail_number'] = tail_number
+                            flight['scheduled_tail'] = scheduled_tail
+                            flight['aircraft_type'] = aircraft_type  # Lưu thêm field này
                             flights_with_tail += 1
-                            print(f"    [{row_date}] {row_std} -> {tail_number} (Khớp STD)")
+                            print(f"    [{row_date}] {row_std} -> {aircraft_type} ({scheduled_tail}) (Khớp STD)")
                             break
 
-                        # Điều kiện 2: Lệch giờ vài phút nhưng IATA đích có trong chuỗi của FR24 (Giúp cứu vớt ZT661)
                         elif flight['iata'].lower() in to_airport:
-                            flight['tail_number'] = tail_number
+                            flight['scheduled_tail'] = scheduled_tail
+                            flight['aircraft_type'] = aircraft_type  # Lưu thêm field này
                             flights_with_tail += 1
                             print(
-                                f"    [{row_date}] {row_std} -> {tail_number} (Lệch giờ, Khớp IATA: {flight['iata']})")
+                                f"    [{row_date}] {row_std} -> {aircraft_type} ({scheduled_tail}) (Lệch giờ, Khớp IATA: {flight['iata']})")
                             break
 
             crawled_flights += 1
@@ -361,22 +363,30 @@ def crawl_tail_numbers_from_flight_info(cache_data):
 def create_aircraft_csv(cache_data):
     print("\n[*] BƯỚC 3: Tạo file Aircraft CSV...")
 
-    tail_numbers = set()
+    aircraft_dict = {}
 
     for flight_no, flight_data in cache_data.items():
         schedule = flight_data.get('schedule', {})
         for date, flights in schedule.items():
             for flight in flights:
-                tail = flight.get('tail_number', '').strip()
+                tail = flight.get('scheduled_tail', '').strip()
+                ac_type = flight.get('aircraft_type', '').strip()
+
                 if tail and tail not in ['', '—', 'N/A', 'nan']:
-                    tail_numbers.add(tail)
+                    # Lưu mapping tail_number -> aircraft_type
+                    # Ưu tiên ghi đè nếu lúc trước chưa lấy được ac_type
+                    if tail not in aircraft_dict or ac_type:
+                        aircraft_dict[tail] = ac_type
 
-    tail_numbers = sorted(list(tail_numbers))
-    print(f"  [+] Tìm thấy {len(tail_numbers)} unique tail numbers")
+    scheduled_tail = sorted(list(aircraft_dict.keys()))
+    aircraft_types = [aircraft_dict[t] for t in scheduled_tail]
 
+    print(f"  [+] Tìm thấy {len(scheduled_tail)} unique tail numbers")
+
+    # FIX TẠI ĐÂY: Truyền dữ liệu thật thay vì list chuỗi rỗng
     aircraft_df = pd.DataFrame({
-        'Aircraft_Type': [''] * len(tail_numbers),
-        'Tail_Number': tail_numbers
+        'Aircraft_Type': aircraft_types,
+        'Scheduled_Tail': scheduled_tail
     })
 
     aircraft_df.to_csv(AIRCRAFT_CSV_FILE, index=False, encoding='utf-8-sig')
@@ -416,7 +426,7 @@ def calculate_is_fixed_for_flights(cache_data):
     return is_fixed_map
 
 def update_csv_with_tail_numbers_and_is_fixed(cache_data, is_fixed_map):
-    print("\n[*] BƯỚC 4: Cập nhật CSV với Tail Numbers và Is_Fixed...")
+    print("\n[*] BƯỚC 4: Cập nhật CSV với Tail Numbers, Is_Fixed và Aircraft_Type...")
 
     if not os.path.exists(DEPARTURE_DIR):
         print(f"  [X] Không tìm thấy file: {DEPARTURE_DIR}")
@@ -424,6 +434,13 @@ def update_csv_with_tail_numbers_and_is_fixed(cache_data, is_fixed_map):
 
     df = pd.read_csv(DEPARTURE_DIR)
     print(f"  [+] Tải {len(df)} dòng từ CSV")
+
+    if 'Scheduled_Tail' not in df.columns:
+        df['Scheduled_Tail'] = pd.NA
+    if 'Is_Fixed_Flight' not in df.columns:
+        df['Is_Fixed_Flight'] = pd.NA
+    if 'Aircraft_Type' not in df.columns:
+        df['Aircraft_Type'] = pd.NA
 
     tail_matched = 0
     is_fixed_filled = 0
@@ -435,7 +452,7 @@ def update_csv_with_tail_numbers_and_is_fixed(cache_data, is_fixed_map):
 
         # ===== Cập nhật Tail_Number =====
         if flight_no in cache_data and (
-                pd.isna(row['Tail_Number']) or str(row['Tail_Number']).strip() in ['', 'nan', 'NaN']):
+                pd.isna(row['Scheduled_Tail']) or str(row['Scheduled_Tail']).strip() in ['', 'nan', 'NaN']):
             schedule = cache_data[flight_no].get('schedule', {})
 
             try:
@@ -445,9 +462,9 @@ def update_csv_with_tail_numbers_and_is_fixed(cache_data, is_fixed_map):
                 if fr24_date in schedule:
                     for flight in schedule[fr24_date]:
                         if flight.get('std', '').strip() == scheduled_time:
-                            tail = flight.get('tail_number', '').strip()
+                            tail = flight.get('scheduled_tail', '').strip()
                             if tail and tail not in ['', '—', 'N/A', 'nan']:
-                                df.at[idx, 'Tail_Number'] = tail
+                                df.at[idx, 'Scheduled_Tail'] = tail
                                 tail_matched += 1
                             break
             except:
@@ -459,6 +476,16 @@ def update_csv_with_tail_numbers_and_is_fixed(cache_data, is_fixed_map):
             if pd.isna(row['Is_Fixed_Flight']) or str(row['Is_Fixed_Flight']).strip() in ['', 'nan', 'NaN']:
                 df.at[idx, 'Is_Fixed_Flight'] = is_fixed_val
                 is_fixed_filled += 1
+
+    # ===== BỔ SUNG LOGIC ĐIỀN AIRCRAFT_TYPE TỪ AIRCRAFT.CSV =====
+    if os.path.exists(AIRCRAFT_CSV_FILE):
+        df_ac = pd.read_csv(AIRCRAFT_CSV_FILE)
+        # Tạo mapping dictionary: { 'VN-A123': 'A321', ... }
+        ac_mapping = df_ac.set_index('Scheduled_Tail')['Aircraft_Type'].to_dict()
+
+        # Ánh xạ Tail_Number sang Aircraft_Type và điền vào các ô bị trống
+        df['Aircraft_Type'] = df['Aircraft_Type'].fillna(df['Scheduled_Tail'].map(ac_mapping))
+        print(f"      - Đã cập nhật xong Aircraft_Type dựa vào Scheduled_Tail")
 
     df.to_csv(DEPARTURE_DIR, index=False, encoding='utf-8-sig')
     print(f"  [v] Cập nhật thành công:")

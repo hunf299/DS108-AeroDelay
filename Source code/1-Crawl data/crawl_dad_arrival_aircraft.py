@@ -2,33 +2,30 @@ import pandas as pd
 import time
 import os
 from datetime import datetime, timedelta
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
 import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
 from pathlib import Path
 
 # ================= CẤU HÌNH TÊN CỘT TRONG CSV =================
 COL_FLIGHT_NO = 'Flight_No'
-COL_TAIL_NUMBER = 'Tail_Number'
+COL_TAIL_NUMBER = 'Actual_Tail'
 COL_AIRCRAFT_TYPE = 'Aircraft_Type'
 COL_ARR_DATE = 'Arrival_Date'  # Yêu cầu định dạng YYYY-MM-DD
 COL_ARR_TIME = 'Arrival_Time'  # Yêu cầu định dạng HH:MM
 
 # ================= CẤU HÌNH ĐƯỜNG DẪN =================
-current_dir = Path(__file__).resolve().parent.parent
+current_dir = Path.cwd().parent.parent.resolve()
 DEST_IATA = "DAD"
-ORIGINAL_CSV = current_dir / "Data" / "Silver_layer" / "Arrival" / "{DEST_IATA.lower()}_flights_arrival_bronze_layer.csv"
-AIRCRAFT_CSV_FILE = f"{DEST_IATA.lower()}_aircraft.csv"
+ORIGINAL_CSV = current_dir / "Data" / "Bronze_layer" / "Arrival" / "{DEST_IATA.lower()}_flights_arrival_bronze_layer.csv"
+AIRCRAFT_CSV_FILE = f"{DEST_IATA.lower()}_arrival_aircraft.csv"
 
 # ================= BIẾN TOÀN CỤC =================
 INV_ENG_MONTHS = {"Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6,
                   "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12}
 
-# Dictionary lưu: { ('Flight_No', 'FR24_Date'): 'Tail_Number' }
 crawled_data_map = {}
 # Dictionary lưu thời gian bay trung bình: { 'Flight_No': avg_mins }
 flight_avg_time_map = {}
@@ -83,9 +80,9 @@ def wait_for_manual_login(driver):
             if "business" in auth_btn.text.lower():
                 print("[v] Đã nhận diện tài khoản Business!")
                 break
-            time.sleep(3)
+            time.sleep(1)
         except:
-            time.sleep(3)
+            time.sleep(1)
 
 
 def load_flights_until_target_date(driver, target_date):
@@ -101,9 +98,10 @@ def load_flights_until_target_date(driver, target_date):
                     break
             load_btn = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, "btn-load-earlier-flights")))
             driver.execute_script("arguments[0].click();", load_btn)
-            time.sleep(2)
+            time.sleep(1)
         except:
             break
+
 
 def crawl_and_update_aircraft_csv():
     global crawled_data_map, flight_avg_time_map
@@ -114,6 +112,11 @@ def crawl_and_update_aircraft_csv():
         return
 
     df_main = pd.read_csv(ORIGINAL_CSV)
+
+    # BỔ SUNG KHỞI TẠO CỘT NẾU CHƯA CÓ
+    if COL_TAIL_NUMBER not in df_main.columns:
+        df_main[COL_TAIL_NUMBER] = pd.NA
+
     df_missing = df_main[df_main[COL_TAIL_NUMBER].isna() | (df_main[COL_TAIL_NUMBER] == '')]
     flights_to_crawl = df_missing[COL_FLIGHT_NO].dropna().unique()
 
@@ -128,7 +131,10 @@ def crawl_and_update_aircraft_csv():
     options = uc.ChromeOptions()
     options.add_argument("--disable-notifications")
 
-    # Khởi tạo driver bằng uc
+    # 1. Thêm các cờ chống sập
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--no-sandbox")
+
     driver = uc.Chrome(options=options)
     driver.get("https://www.flightradar24.com")
     wait_for_manual_login(driver)
@@ -136,7 +142,7 @@ def crawl_and_update_aircraft_csv():
     for flight_no in flights_to_crawl:
         search_code = flight_no.replace("BL", "VN") if flight_no.startswith("BL") else flight_no
         driver.get(f"https://www.flightradar24.com/data/flights/{search_code.replace(' ', '').lower()}")
-        time.sleep(3)
+        time.sleep(1)
 
         # 1. Tính toán Average Flight Time
         soup = BeautifulSoup(driver.page_source, 'html.parser')
@@ -188,7 +194,7 @@ def crawl_and_update_aircraft_csv():
                         crawled_data_map[(flight_no, row_date_str)] = tail
 
                         # Lưu vào List cho file aircraft.csv
-                        aircraft_results.append({'Tail_Number': tail, 'Aircraft_Type': a_type})
+                        aircraft_results.append({'Actual_Tail': tail, 'Aircraft_Type': a_type})
 
                         # Xóa ngày đã tìm thấy
                         target_dates.remove(row_date_str)
@@ -205,10 +211,10 @@ def crawl_and_update_aircraft_csv():
 
     # Cập nhật DB máy bay (aircraft.csv)
     if aircraft_results:
-        new_aircraft_df = pd.DataFrame(aircraft_results).drop_duplicates(subset=['Tail_Number'])
+        new_aircraft_df = pd.DataFrame(aircraft_results).drop_duplicates(subset=['Actual_Tail'])
         if os.path.exists(AIRCRAFT_CSV_FILE):
             old_df = pd.read_csv(AIRCRAFT_CSV_FILE)
-            new_aircraft_df = pd.concat([old_df, new_aircraft_df]).drop_duplicates(subset=['Tail_Number'])
+            new_aircraft_df = pd.concat([old_df, new_aircraft_df]).drop_duplicates(subset=['Actual_Tail'])
         new_aircraft_df.to_csv(AIRCRAFT_CSV_FILE, index=False, encoding='utf-8-sig')
 
 def patch_original_csv():
@@ -216,6 +222,12 @@ def patch_original_csv():
     if not os.path.exists(ORIGINAL_CSV): return
 
     df_main = pd.read_csv(ORIGINAL_CSV)
+
+    # BỔ SUNG KHỞI TẠO CỘT
+    if COL_TAIL_NUMBER not in df_main.columns:
+        df_main[COL_TAIL_NUMBER] = pd.NA
+    if COL_AIRCRAFT_TYPE not in df_main.columns:
+        df_main[COL_AIRCRAFT_TYPE] = pd.NA
 
     # Hàm trợ giúp: Tính ngày để tra cứu Tail_Number
     def get_crawled_tail(row):
@@ -239,7 +251,7 @@ def patch_original_csv():
     # 2. Điền Aircraft_Type dựa vào Tail_Number
     if os.path.exists(AIRCRAFT_CSV_FILE):
         df_ac = pd.read_csv(AIRCRAFT_CSV_FILE)
-        ac_mapping = df_ac.set_index('Tail_Number')['Aircraft_Type'].to_dict()
+        ac_mapping = df_ac.set_index('Actual_Tail')['Aircraft_Type'].to_dict()
         df_main[COL_AIRCRAFT_TYPE] = df_main[COL_AIRCRAFT_TYPE].fillna(df_main[COL_TAIL_NUMBER].map(ac_mapping))
 
     df_main.to_csv(ORIGINAL_CSV, index=False, encoding='utf-8-sig')

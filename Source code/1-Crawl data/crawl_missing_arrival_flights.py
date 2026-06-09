@@ -14,8 +14,7 @@ import threading
 import traceback
 
 # ================= CẤU HÌNH ĐƯỜNG DẪN & HẰNG SỐ =================
-CWD = Path.cwd().resolve()
-PROJECT_ROOT = CWD if (CWD / "Data").exists() else CWD.parent
+PROJECT_ROOT = Path.cwd().parent.parent.resolve()
 if not (PROJECT_ROOT / "Data").exists():
     raise FileNotFoundError("Cannot find project root containing 'Data'.")
 

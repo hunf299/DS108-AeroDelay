@@ -1,4 +1,4 @@
-Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Terminal,Departure_Runway,Status,Tail_Number,Aircraft_Type,Is_Fixed_Flight,Category
+Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Terminal,Departure_Runway,Status,Scheduled_Tail,Aircraft_Type,Is_Fixed_Flight,Category
 2025-12-16,23:25,23:56,Frankfurt,FRA,Vietnam Airlines,VN37,2,11R,Departed,VN-A892,A359,0,passenger
 2025-12-16,23:00,23:44,Macau,MFM,Air Macau,NX981,0,11R,Departed,B-MBP,A20N,0,general aviation
 2025-12-16,23:30,23:40,Sydney,SYD,Vietnam Airlines,VN787,2,11R,Departed,VN-A889,A359,0,passenger

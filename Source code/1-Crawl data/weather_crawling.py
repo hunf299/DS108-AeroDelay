@@ -2,10 +2,7 @@ from pathlib import Path
 import requests
 import pandas as pd
 
-CWD = Path.cwd().resolve()
-PROJECT_ROOT = CWD if (CWD / "Data").exists() else CWD.parent
-if not (PROJECT_ROOT / "Data").exists():
-    raise FileNotFoundError("Cannot find project root containing 'Data'.")
+PROJECT_ROOT = Path.cwd().parent.parent.resolve()
 
 BRONZE = PROJECT_ROOT / "Data" / "Bronze_layer"
 OUTPUT_CSV = BRONZE / "airport_weather_hourly_merged.csv"

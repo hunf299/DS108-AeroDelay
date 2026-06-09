@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -9,19 +10,17 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import time
 from datetime import datetime, timedelta
+import re
 
 # ================= CẤU HÌNH BIẾN MÔI TRƯỜNG =================
 VN_IATAS = ['DAD', 'SGN', 'CXR', 'PQC', 'VCA', 'VDO', 'HPH', 'VII', 'THD', 'VDH', 'HUI', 'VCL', 'UIH', 'TBB', 'PXU',
             'BMV', 'DLI', 'VKG', 'CAH', 'VCS', 'DIN']
-START_DATE = "2026-01-12"
-END_DATE = "2026-01-13"
+START_DATE = "2026-01-17"
+END_DATE = "2026-01-17"
 
-DEST_IATA = "HAN"
+DEST_IATA = os.environ.get("ORIGIN_DATA", "DAD")
 
-CWD = Path.cwd().resolve()
-PROJECT_ROOT = CWD if (CWD / "Data").exists() else CWD.parent
-if not (PROJECT_ROOT / "Data").exists():
-    raise FileNotFoundError("Cannot find project root containing 'Data'.")
+PROJECT_ROOT = Path.cwd().parent.parent.resolve()
 
 BRONZE = PROJECT_ROOT / "Data" / "Bronze_layer"
 ARRIVAL_DIR = BRONZE / "Arrival" / f"{DEST_IATA.lower()}_flights_arrival_bronze_layer.csv"
@@ -62,22 +61,53 @@ def crawl_arrivals_history_fast():
     options = uc.ChromeOptions()
     options.add_argument("--disable-notifications")
 
-    options.add_argument("--headless")
+    # 1. Thêm các cờ chống sập
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--no-sandbox")
 
-    # Khởi trị driver bằng uc
     driver = uc.Chrome(options=options)
     driver.maximize_window()
     driver.get("https://www.flightradar24.com")
     wait_for_manual_login(driver)
 
+    # == BỔ SUNG: Mở trang lịch sử sân bay 1 lần duy nhất ở Tab chính ==
+    base_url = f"https://www.flightradar24.com/airport/{DEST_IATA.lower()}/arrivals"
+    driver.get(base_url)
+    time.sleep(3)
+
     date_list = pd.date_range(start=START_DATE, end=END_DATE).strftime('%Y-%m-%d').tolist()
     all_flights_data = []
 
     for target_date in date_list:
-        print(f"\n========== ĐANG CÀO NGÀY: {target_date} ==========")
-        url = f"https://www.flightradar24.com/airport/{DEST_IATA.lower()}/history?type=landings&date={target_date}"
-        driver.get(url)
-        time.sleep(3)
+        print(f"\n{'='*50}")
+        print(f"========== ĐANG CÀO NGÀY: {target_date} ==========")
+        print(f"{'='*50}")
+
+        # --- BẪY THỜI GIAN: CHỜ NGƯỜI DÙNG CHỌN NGÀY ---
+        print(f"\n[!!!] HÀNH ĐỘNG CẦN THIẾT [!!!]")
+        print(f"Vui lòng quay sang trình duyệt và chọn ngày '{target_date}' trên Calendar.")
+        print("Tool đang tự động lắng nghe thẻ <h3> để nhận diện...")
+
+        target_dt = datetime.strptime(target_date, "%Y-%m-%d")
+        month_str = target_dt.strftime("%b")
+        month_full = target_dt.strftime("%B")
+        day_str = str(target_dt.day)
+
+        pattern_short = rf"\b{month_str} {day_str}\b"
+        pattern_full = rf"\b{month_full} {day_str}\b"
+
+        while True:
+            try:
+                h3_element = driver.find_element(By.CSS_SELECTOR, "h3.inline-flex.items-center.text-sm")
+                h3_text = h3_element.text.strip()
+                if re.search(pattern_short, h3_text) or re.search(pattern_full, h3_text):
+                    print(f"\n  [v] Đã nhận diện đúng ngày: '{h3_text}'")
+                    print("  [>] Chờ 2s cho dữ liệu bảng ổn định...")
+                    time.sleep(2)
+                    break
+            except Exception:
+                pass
+            time.sleep(1)
 
         try:
             try:
@@ -211,7 +241,7 @@ def crawl_arrivals_history_fast():
                         "Terminal": terminal_val,
                         "Arrival_Runway": arrival_runway,
                         "Status": "Landed",
-                        "Tail_Number": tail_number,
+                        "Actual_Tail": tail_number,
                         "Aircraft_Type": aircraft_type,
                         "Category": category
                     }
@@ -228,7 +258,7 @@ def crawl_arrivals_history_fast():
             if all_flights_data:
                 df = pd.DataFrame(all_flights_data)
                 cols = ["Crawl_Date", "Actual_Time", "Flight_Time", "Origin", "IATA", "Airline", "Flight_No",
-                        "Terminal", "Arrival_Runway", "Status", "Tail_Number", "Aircraft_Type", "Category"]
+                        "Terminal", "Arrival_Runway", "Status", "Actual_Tail", "Aircraft_Type", "Category"]
                 df = df[cols]
                 s_day = format_date_short(START_DATE)
                 e_day = format_date_short(END_DATE)

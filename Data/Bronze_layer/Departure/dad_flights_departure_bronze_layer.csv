@@ -1,4 +1,4 @@
-Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Checkin_Time,Terminal,Checkin_Counter,Gate,Status,Tail_Number,Aircraft_Type,Category,Is_Fixed_Flight,Departure_Runway
+Crawl_Date,Scheduled_Time,Actual_Time,Destination,IATA,Airline,Flight_No,Checkin_Time,Terminal,Checkin_Counter,Gate,Status,Scheduled_Tail,Aircraft_Type,Category,Is_Fixed_Flight,Departure_Runway
 2025-12-16,00:30,00:30,Tokyo,NRT,Vietnam Airlines,VN318,21:30,2,21-23,3.0,Departed,VN-A336,A321,passenger,0,35R
 2025-12-16,00:30,00:30,Macau,MFM,Air Macau,NX977,21:30,0,18-20,4.0,Departed,B-MBA,A321,general aviation,1,35R
 2025-12-16,00:40,01:15,Seoul,ICN,Air Seoul,RS512,21:40,2,14-17,5.0,Departed,HL7790,A321,passenger,1,35R

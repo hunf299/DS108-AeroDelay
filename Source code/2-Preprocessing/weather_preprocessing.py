@@ -6,9 +6,7 @@ import numpy as np
 import pandas as pd
 
 
-# ------------------------------------------------------------------
 # Airport mappings
-# ------------------------------------------------------------------
 AIRPORT_CODE_MAP: Dict[str, str] = {
     "tan_son_nhat": "SGN",
     "noi_bai": "HAN",
@@ -87,7 +85,7 @@ PHYSICAL_BOUNDS: Dict[str, Tuple[float, float]] = {
 def load_bronze_weather(project_root: Path) -> pd.DataFrame:
     """Load raw merged weather CSV from Bronze layer."""
     bronze_path = (
-        project_root / "Data" / "Silver_layer" / "airport_weather_hourly_merged.csv"
+        project_root / "Data" / "Bronze_layer" / "airport_weather_hourly_merged.csv"
     )
     if not bronze_path.exists():
         raise FileNotFoundError(f"Missing bronze weather file: {bronze_path}")
@@ -579,9 +577,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    script_path = Path(__file__).resolve()
-    default_root = script_path.parents[1]
-    project_root = Path(args.project_root).resolve() if args.project_root else default_root
+    project_root = Path.cwd().parent.parent.resolve()
     run_weather_pipeline(project_root, silver_layer_name=args.silver_layer_name)
 
 

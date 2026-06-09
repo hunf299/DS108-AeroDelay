@@ -5,15 +5,6 @@ from typing import Dict, List, Set, Tuple
 import numpy as np
 import pandas as pd
 
-from clean import (
-    apply_dad_arrival_belt_category_rule,
-    apply_route_name_fixes,
-    normalize_airline_values,
-    normalize_category_unknown,
-    normalize_terminal_values,
-)
-
-
 AIRPORTS = ("sgn", "han", "dad")
 ROUTES = [
     ("sgn", "dad"),
@@ -29,7 +20,7 @@ RUNWAY_REGEX = r"^(0[1-9]|[1-3][0-9])[LR]$"
 
 RETURN_THRESHOLD_MINUTES_DEFAULT = 150
 RETURN_THRESHOLD_MAX_MINUTES = 150
-DEFAULT_SILVER_LAYER_NAME = "Silver_layer_2"
+DEFAULT_SILVER_LAYER_NAME = "Silver_layer"
 ROUTE_MATCH_MAX_HOURS = 6.0
 MISSING_ROUTE_MATCH_MAX_HOURS = 6.0
 DROP_DEPARTURES_WITHOUT_ARRIVAL = False
@@ -1516,6 +1507,9 @@ def build_swap_matches_for_route(
     dep_time = event_datetime_series(departure_df)
     arr_time = event_datetime_series(arrival_df)
 
+    rename_tail_column(departure_df, mode = "departure")
+    rename_tail_column(arrival_df, mode = "arrival")
+
     dep_mask = departure_df["Flight_No"].notna() & dep_time.notna()
     if "IATA" in departure_df.columns:
         dep_mask = dep_mask & (departure_df["IATA"].astype("string").str.upper().str.strip() == dest_upper)
@@ -2448,32 +2442,6 @@ def run_pipeline(
         }
     )
 
-    # 1c) Reconcile departure tails (and aircraft types) from matched arrivals.
-    # DISABLED: per plan, do not overwrite departure tails from arrivals to preserve
-    # original Scheduled_Tail for swap detection.
-    # departures, tail_reconcile_audit_rows, tail_stats = reconcile_tails_from_arrivals(
-    #     departures,
-    #     arrivals,
-    #     routes=ROUTES,
-    #     max_gap_hours=ROUTE_MATCH_MAX_HOURS,
-    # )
-    # summary_rows.extend(
-    #     [
-    #         {
-    #             "Airport": "ALL",
-    #             "Mode": "departure",
-    #             "Metric": "dep_tail_overwritten",
-    #             "Value": tail_stats.get("dep_tail_overwritten", 0),
-    #         },
-    #         {
-    #             "Airport": "ALL",
-    #             "Mode": "departure",
-    #             "Metric": "dep_ac_overwritten",
-    #             "Value": tail_stats.get("dep_ac_overwritten", 0),
-    #         },
-    #     ]
-    # )
-
     # 2) Same-origin anomaly handling on arrival, using departure of the same airport.
     carried_same_origin_count = 0
     summary_rows.append(
@@ -2535,61 +2503,16 @@ def run_pipeline(
             ]
         )
 
-    # 3) Airline/category/terminal normalization.
+    # 3) Final source-specific feature alignment.
     for airport in AIRPORTS:
         for mode, datasets in (("arrival", arrivals), ("departure", departures)):
             df = datasets[airport]
-
-            airline_changed = normalize_airline_values(df)
-            category_unknown_assigned = normalize_category_unknown(df)
-            terminal_changed = normalize_terminal_values(df, airport=airport.upper(), mode=mode)
-            thd_route_name_changed = apply_route_name_fixes(df, mode=mode)
-            dad_belt_general_aviation_changed = apply_dad_arrival_belt_category_rule(
-                df,
-                airport=airport.upper(),
-                mode=mode,
-            )
 
             if airport.upper() == "DAD" and mode == "departure":
                 df = add_dad_departure_gate_features(df)
 
             df = rename_tail_column(df, mode=mode)
             datasets[airport] = df
-
-            summary_rows.extend(
-                [
-                    {
-                        "Airport": airport.upper(),
-                        "Mode": mode,
-                        "Metric": "airline_values_changed",
-                        "Value": airline_changed,
-                    },
-                    {
-                        "Airport": airport.upper(),
-                        "Mode": mode,
-                        "Metric": "category_unknown_assigned",
-                        "Value": category_unknown_assigned,
-                    },
-                    {
-                        "Airport": airport.upper(),
-                        "Mode": mode,
-                        "Metric": "terminal_values_changed",
-                        "Value": terminal_changed,
-                    },
-                    {
-                        "Airport": airport.upper(),
-                        "Mode": mode,
-                        "Metric": "thd_route_name_changed",
-                        "Value": thd_route_name_changed,
-                    },
-                    {
-                        "Airport": airport.upper(),
-                        "Mode": mode,
-                        "Metric": "dad_belt_general_aviation_changed",
-                        "Value": dad_belt_general_aviation_changed,
-                    },
-                ]
-            )
 
     # 4) Aircraft swap matching and flagging.
     departures, swap_audit_df, swap_stats = add_aircraft_swap_flags(
@@ -2747,9 +2670,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    script_path = Path(__file__).resolve()
-    default_root = script_path.parents[1]
-    project_root = Path(args.project_root).resolve() if args.project_root else default_root
+    project_root = Path.cwd().parent.parent.resolve()
 
     run_pipeline(
         project_root=project_root,

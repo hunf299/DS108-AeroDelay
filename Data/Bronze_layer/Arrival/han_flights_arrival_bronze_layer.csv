@@ -1,4 +1,4 @@
-Crawl_Date,Actual_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Tail_Number,Aircraft_Type,Category,Arrival_Flight_Duration_Minutes
+Crawl_Date,Actual_Time,Origin,IATA,Airline,Flight_No,Terminal,Arrival_Runway,Status,Actual_Tail,Aircraft_Type,Category,Arrival_Flight_Duration_Minutes
 2025-12-16,23:55,Ho Chi Minh City,SGN,Vietnam Airlines,VN224,1,11L,Landed,VN-A503,A21N,passenger,101
 2025-12-16,23:52,Phu Quoc,PQC,VietJet Air,VJ3523,1,11L,Landed,VN-A516,A21N,passenger,100
 2025-12-16,23:47,Bangkok,BKK,Vietnam Airlines,VN616,2,11L,Landed,VN-A614,A321,passenger,80

@@ -10,9 +10,7 @@ import json
 from pathlib import Path
 from ollama import chat
 
-# ==========================================
 # 1. CẤU HÌNH TRANG & GIAO DIỆN MLOPS CSS
-# ==========================================
 st.set_page_config(page_title="AeroDelay Interactive System", page_icon="✈️", layout="wide")
 
 st.markdown("""
@@ -21,12 +19,14 @@ st.markdown("""
     .metric-card { background-color: #ffffff; padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #e1e4e8; box-shadow: 0 2px 4px rgba(0,0,0,0.05);}
     .action-box { background-color: #f0fff4; padding: 15px; border-radius: 8px; border: 1px solid #c6f6d5; margin-bottom: 15px; }
     .llm-box { background-color: #fff8e1; padding: 15px; border-radius: 8px; border: 1px dashed #ff9800; margin-top: 15px;}
+    /* [BỔ SUNG MỚI] CSS cho cảnh báo hành khách */
+    .passenger-alert-green { background-color: #e6fffa; border-left: 5px solid #38b2ac; padding: 15px; border-radius: 5px; margin-bottom: 15px; }
+    .passenger-alert-yellow { background-color: #fffff0; border-left: 5px solid #ecc94b; padding: 15px; border-radius: 5px; margin-bottom: 15px; }
+    .passenger-alert-red { background-color: #fff5f5; border-left: 5px solid #e53e3e; padding: 15px; border-radius: 5px; margin-bottom: 15px; }
     </style>
 """, unsafe_allow_html=True)
 
-# ==========================================
 # 2. PROMPT LLM
-# ==========================================
 SYSTEM_PROMPT = """
 Bạn là một chuyên gia điều hành vận hành hàng không (Aviation Operations Expert).
 Dựa trên bảng mã IATA Delay Codes chuẩn (AHM730) và các thông số chuyến bay được cung cấp, hãy chẩn đoán nguyên nhân gốc rễ gây trễ chuyến và gán MỘT mã IATA duy nhất, ưu tiên theo thứ tự logic nghiệp vụ sau:
@@ -50,7 +50,6 @@ BẮT BUỘC trả về ĐÚNG định dạng JSON như sau, KHÔNG kèm markdow
 {"Delay_Code": "CODE_XX", "Reason": "Giải thích logic dưới 30 chữ dựa trên dữ liệu đầu vào."}
 """
 
-# Cung cấp ví dụ (Few-shot) để đưa vào ngữ cảnh của user
 FEW_SHOT_CONTEXT = """
 Dưới đây là một số ví dụ phân tích để bạn tham khảo:
 
@@ -81,7 +80,6 @@ def predict_delay_reason_local(flight_data: dict) -> dict:
         )
         result_text = response.message.content.strip()
 
-        # Tiền xử lý: Cắt bỏ các thẻ markdown ```json ``` mà LLM hay thêm vào
         if "```json" in result_text:
             result_text = result_text.split("```json")[1].split("```")[0].strip()
         elif "```" in result_text:
@@ -101,9 +99,7 @@ def predict_delay_reason_local(flight_data: dict) -> dict:
         return {"Delay_Code": "CODE_99", "Reason": f"Lỗi gọi Model (Hãy chắc chắn Ollama đang bật): {str(e)}"}
 
 
-# ==========================================
 # 3. NẠP DỮ LIỆU & MÔ HÌNH HỌC MÁY THỰC TẾ
-# ==========================================
 @st.cache_data
 def load_historical_data():
     try:
@@ -166,9 +162,7 @@ def fetch_live_weather(airport_code, query_date):
 df_raw = load_historical_data()
 model, model_features, model_loaded = load_ml_model()
 
-# ==========================================
-# 4. SIDEBAR (CONTROL PANEL LỌC DỮ LIỆU)
-# ==========================================
+# 4. SIDEBAR (CONTROL PANEL FILTER)
 st.sidebar.image("https://cdn-icons-png.flaticon.com/512/3135/3135715.png", width=50)
 st.sidebar.title("AeroDelay Control")
 
@@ -184,11 +178,11 @@ df_filtered = df_raw[
     (df_raw['Airport'].isin(selected_airports)) & (df_raw.get('Airline', df_raw.index).isin(selected_airlines))].copy()
 df_filtered['Is_Delayed_Custom'] = df_filtered['Departure_Delay_Real'] >= delay_threshold
 
-tab1, tab2, tab3 = st.tabs(["📊 EDA: HẠ TẦNG & KHAI THÁC", "🔄 A-CDM: TRỄ LAN TRUYỀN", "🤖 DỰ ĐOÁN TRỄ CHUYẾN"])
+# [BỔ SUNG MỚI] Thêm Tab 4 vào khai báo Tab
+tab1, tab2, tab3, tab4 = st.tabs(
+    ["📊 EDA: HẠ TẦNG & KHAI THÁC", "🔄 A-CDM: TRỄ LAN TRUYỀN", "🤖 DỰ ĐOÁN TRỄ CHUYẾN", "🧑‍✈️ TRẢI NGHIỆM HÀNH KHÁCH"])
 
-# ------------------------------------------
 # TAB 1: EDA HẠ TẦNG SÂN BAY & VẬN HÀNH
-# ------------------------------------------
 with tab1:
     st.header("Dashboard Năng lực Khai thác Tại Sân bay")
     c1, c2, c3, c4 = st.columns(4)
@@ -208,8 +202,6 @@ with tab1:
     col0, col1 = st.columns([1, 1.5])
     with col0:
         st.subheader("1. Phân bổ Nguyên nhân Trễ (IATA Codes)")
-
-        # 1. Định nghĩa bảng ánh xạ để hiển thị chi tiết (cần thiết cho Tooltip)
         delay_code_map = {
             'CODE_71': 'Thời tiết xấu tại sân bay khởi hành',
             'CODE_72': 'Thời tiết xấu tại điểm đến',
@@ -220,25 +212,17 @@ with tab1:
             'CODE_99': 'Nguyên nhân khác'
         }
 
-        # 2. Xử lý dữ liệu
         df_causes = df_filtered[~df_filtered['LLM_Delay_Code'].isin([np.nan, 'NaN', '', 'ERROR'])].copy()
         df_causes['LLM_Delay_Code'] = df_causes['LLM_Delay_Code'].replace(['-1', -1], 'Đúng giờ')
-
-        # Loại bỏ 'Đúng giờ'
         df_causes = df_causes[df_causes['LLM_Delay_Code'] != 'Đúng giờ']
 
         if not df_causes.empty:
             causes_count = df_causes['LLM_Delay_Code'].value_counts().reset_index()
             causes_count.columns = ['Mã IATA', 'Số lượng']
-
-            # Gán mô tả chi tiết vào cột mới để hiển thị trong biểu đồ
             causes_count['Mô tả'] = causes_count['Mã IATA'].map(delay_code_map).fillna('Không xác định')
 
-            # 3. Vẽ biểu đồ với hover_data để hiện mô tả
             fig_pie = px.pie(causes_count, values='Số lượng', names='Mã IATA', hole=0.4,
-                             hover_data=['Mô tả'],
-                             color_discrete_sequence=px.colors.qualitative.Pastel)
-
+                             hover_data=['Mô tả'], color_discrete_sequence=px.colors.qualitative.Pastel)
             fig_pie.update_traces(hovertemplate="<b>%{label}</b><br>Số lượng: %{value}<br>Mô tả: %{customdata[0]}")
             st.plotly_chart(fig_pie, use_container_width=True)
         else:
@@ -281,9 +265,7 @@ with tab1:
             "<div class='insight-box'><b>💡 Ý nghĩa trực quan Boxplot:</b> Trực quan hóa biên độ biến động trễ cất cánh theo từng loại cấu hình tàu bay (Thân rộng vs Thân hẹp), giúp kiểm định giả thuyết về ảnh hưởng của thời gian phục vụ kỹ thuật mặt đất lên độ trễ.</div>",
             unsafe_allow_html=True)
 
-# ------------------------------------------
 # TAB 2: A-CDM TRỄ LAN TRUYỀN & ĐIỀU HÀNH
-# ------------------------------------------
 with tab2:
     st.markdown(
         "Kéo thanh trượt để thử nghiệm kịch bản cực đoan: Mọi chuyến bay cập bến đều bị trễ thêm X phút. Quan sát sự sụt giảm thời gian Buffer.")
@@ -319,21 +301,15 @@ with tab2:
     st.divider()
     c3, c4 = st.columns([1, 1.5])
     with c3:
-        st.subheader("3. Khả năng phục hồi Quỹ thời gian cho chặng tiếp theo theo Khung giờ")
-        # Phân tích Boxplot để xem khung giờ nào dễ bị sập quỹ thời gian quay đầu (Turnaround) nhất
-        fig_buffer_hr = px.box(df_filtered, x='Hour', y='Turnaround_Buffer_Actual',
-                               color_discrete_sequence=['#ff9800'],
-                               labels={'Hour': 'Khung giờ trong ngày (Hour)',
-                                       'Turnaround_Buffer_Actual': 'Turnaround Buffer (Phút)'})
-
-        # Thêm đường đánh dấu ngưỡng nguy hiểm (Buffer = 0)
-        fig_buffer_hr.add_hline(y=0, line_dash="dash", line_color="red",
-                                annotation_text="Ngưỡng thâm hụt (Buffer < 0)")
+        st.subheader("3. Khả năng phục hồi Quỹ thời gian cho chặng tiếp theo theo Khung giờ")
+        fig_buffer_hr = px.box(df_filtered, x='Hour', y='Turnaround_Buffer_Actual', color_discrete_sequence=['#ff9800'],
+                               labels={'Hour': 'Khung giờ trong ngày (Hour)',
+                                       'Turnaround_Buffer_Actual': 'Turnaround Buffer (Phút)'})
+        fig_buffer_hr.add_hline(y=0, line_dash="dash", line_color="red", annotation_text="Ngưỡng thâm hụt (Buffer < 0)")
         fig_buffer_hr.update_yaxes(range=[-60, 120])
         st.plotly_chart(fig_buffer_hr, use_container_width=True)
-
         st.markdown(
-            "<div class='insight-box'><b>💡 Insight A-CDM:</b> Biểu đồ hộp (Boxplot) cho thấy các khung giờ cao điểm có nguy cơ làm quỹ thời gian mặt đất (Buffer) lao dốc xuống dưới 0 mạnh nhất. Khi trung vị đâm xuyên qua vạch đỏ, nguy cơ trễ lan truyền hệ thống là không thể tránh khỏi.</div>",
+            "<div class='insight-box'><b>💡 Insight A-CDM:</b> Biểu đồ hộp (Boxplot) cho thấy các khung giờ cao điểm có nguy cơ làm quỹ thời gian mặt đất (Buffer) lao dốc xuống dưới 0 mạnh nhất. Khi trung vị đâm xuyên qua vạch đỏ, nguy cơ trễ lan truyền hệ thống là không thể tránh khỏi.</div>",
             unsafe_allow_html=True)
 
     with c4:
@@ -356,18 +332,14 @@ with tab2:
                 title=f"Nhật ký tích lũy trễ của Tàu: {selected_tail} | Cấu hình dòng máy bay: {ac_type}")
             st.plotly_chart(fig_tail, use_container_width=True)
 
-            # BỔ SUNG BẢNG HIỂN THỊ CÁC CHUYẾN BAY CỦA ĐUÔI TÀU ĐÓ THEO ĐÚNG 11 CỘT ĐẶC TRƯNG YÊU CẦU
             st.markdown(f"##### 📋 Danh sách lịch trình bay chi tiết của Tàu {selected_tail}:")
             req_cols = ['Scheduled_Time', 'Actual_Time', 'Destination', 'IATA', 'Airline', 'Flight_No', 'Terminal',
                         'Departure_Runway', 'Status', 'Is_Fixed_Flight', 'Category']
             existing_cols = [c for c in req_cols if c in df_tail.columns]
             st.dataframe(df_tail[existing_cols], width="stretch")
 
-# ------------------------------------------
-# TAB 3: LIVE AI PREDICTOR (BRONZE PIPELINE ENGINE)
-# ------------------------------------------
+# TAB 3: LIVE PREDICTOR (BRONZE PIPELINE ENGINE)
 with tab3:
-    # Khởi tạo bộ đệm Session State để tránh lỗi trống thông tin môi trường
     if 'derived_buffer' not in st.session_state: st.session_state['derived_buffer'] = 45.0
     if 'derived_inc_delay' not in st.session_state: st.session_state['derived_inc_delay'] = 0.0
     if 'live_weather_score' not in st.session_state: st.session_state['live_weather_score'] = 0.1
@@ -389,7 +361,6 @@ with tab3:
             f_time_str = st.text_input("Giờ cất cánh dự kiến (HH:MM):", value="14:30",
                                        help="Nhập giờ theo định dạng 24 giờ. Ví dụ: 08:15, 23:00")
 
-            # Xử lý bóc tách cấu trúc giờ an toàn để nạp vào Feature Pipeline
             try:
                 f_time_parsed = datetime.datetime.strptime(f_time_str.strip(), "%H:%M").time()
                 f_hour = f_time_parsed.hour
@@ -403,37 +374,39 @@ with tab3:
 
             btn_fetch = st.form_submit_button("🔄 Thu thập Môi trường & Lịch sử")
 
-        # THỰC THI PIPELINE TRÍCH XUẤT ĐẶC TRƯNG TƯƠNG ĐỒNG (FEATURE DERIVATION)
-        if btn_fetch:
-            with st.spinner("Đang kết nối API OpenMeteo & Quét CSDL Tìm kiếm chuyến bay tương đồng..."):
-                # 1. Gọi API khí tượng Live theo vị trí sân bay cất cánh
-                w_score, w_precip, w_wind = fetch_live_weather(f_origin, f_date)
-                st.session_state['live_weather_score'] = w_score
-                st.session_state['live_precip'] = w_precip
-                st.session_state['live_wind'] = w_wind
+            # THỰC THI PIPELINE TRÍCH XUẤT ĐẶC TRƯNG TƯƠNG ĐỒNG (FEATURE DERIVATION)
+            if btn_fetch:
+                with st.spinner(f"Đang phân tích Trung vị lịch sử lúc {f_hour}:00 tại {f_origin}..."):
+                    # 1. Gọi API khí tượng Live
+                    w_score, w_precip, w_wind = fetch_live_weather(f_origin, f_date)
+                    st.session_state['live_weather_score'] = w_score
+                    st.session_state['live_precip'] = w_precip
+                    st.session_state['live_wind'] = w_wind
 
-                # 2. Quét CSDL Gold tìm kiếm chuyến tương đồng gần nhất của tàu bay (Tail Number) hoặc Chuyến bay
-                match_history = df_raw[df_raw['Tail_Number'].astype(str).str.upper() == f_tail.strip().upper()]
-                if match_history.empty:
-                    match_history = df_raw[df_raw['Flight_No'].astype(str).str.upper() == f_flight_no.strip().upper()]
+                    # Lưu bối cảnh để Tab 4 dùng chung
+                    st.session_state['input_hour'] = f_hour
+                    st.session_state['input_origin'] = f_origin
 
-                if not match_history.empty:
-                    # Trích xuất các biến Lag và áp lực vận hành thực tế từ file Gold dự phòng
-                    st.session_state['derived_inc_delay'] = float(match_history['Incoming_Delay'].median())
-                    st.session_state['derived_buffer'] = float(match_history['Turnaround_Buffer_Actual'].median())
-                else:
-                    # Nội suy mặc định dựa trên đặc thù sân bay nếu là tàu bay mới tinh
-                    st.session_state['derived_inc_delay'] = float(
-                        df_raw[df_raw['Airport'] == f_origin]['Incoming_Delay'].median())
-                    st.session_state['derived_buffer'] = float(
-                        df_raw[df_raw['Airport'] == f_origin]['Turnaround_Buffer_Actual'].median())
+                    # 2. LẤY TRUNG VỊ ĐÚNG KHUNG GIỜ VÀ SÂN BAY ĐÓ TỪ TẬP DATA GOLD
+                    context_match = df_raw[(df_raw['Airport'] == f_origin) & (df_raw['Hour'] == f_hour)]
 
-                st.success("🎉 Đã hoàn tất tính toán đặc trưng thành công!")
+                    if not context_match.empty:
+                        st.session_state['derived_inc_delay'] = float(context_match['Incoming_Delay'].median())
+                        st.session_state['derived_buffer'] = float(context_match['Turnaround_Buffer_Actual'].median())
+                        # Trích thêm trung vị số phút trễ lịch sử để Tab 4 đánh giá tình trạng Sân bay
+                        st.session_state['median_hourly_delay'] = float(context_match['Departure_Delay_Real'].median())
+                    else:
+                        # Fallback lấy trung vị cả ngày nếu khung giờ đó (như 2h sáng) không có chuyến
+                        fallback_df = df_raw[df_raw['Airport'] == f_origin]
+                        st.session_state['derived_inc_delay'] = float(fallback_df['Incoming_Delay'].median())
+                        st.session_state['derived_buffer'] = float(fallback_df['Turnaround_Buffer_Actual'].median())
+                        st.session_state['median_hourly_delay'] = float(fallback_df['Departure_Delay_Real'].median())
+
+                    st.success(f"🎉 Nạp thành công Trung vị vận hành lúc {f_hour}:00 tại {f_origin}!")
 
     with col_out:
         st.subheader("📤 Giám sát Trạng thái Môi trường Vận hành")
 
-        # Đảm bảo hiển thị số liệu trực quan không bao giờ bị trống
         em1, em2, em3 = st.columns(3)
         em1.metric("Turnaround Buffer", f"{st.session_state['derived_buffer']:.1f} p",
                    delta="Thâm hụt" if st.session_state['derived_buffer'] < 0 else "An toàn", delta_color="inverse")
@@ -446,7 +419,6 @@ with tab3:
             with st.spinner("Đang chạy mô hình dự toán Scikit-Learn..."):
                 f_airline = "Vietnam Airlines" if f_flight_no.upper().startswith("VN") else "VietJet Air"
 
-                # CHẠY MODEL THỰC TẾ TỪ FILE .PKL
                 if model_loaded:
                     form_inputs = {
                         'Scheduled_Hour': f_hour,
@@ -458,7 +430,6 @@ with tab3:
                         'Is_Wide_Body': 1 if f_ac_type.upper() in ['A350', 'B787', 'A359', 'B789'] else 0
                     }
 
-                    # Ánh xạ chuẩn hóa mảng vector 1D khớp hoàn hảo với model_training
                     input_row = {}
                     for col in model_features:
                         if col in form_inputs:
@@ -471,7 +442,6 @@ with tab3:
                                 "Airline_") or col.startswith("Aircraft_Type_"):
                             input_row[col] = 0
                         else:
-                            # Điền trung vị lịch sử của file gold để bảo vệ hệ thống không bị NaN
                             val = df_raw[col].median() if col in df_raw.columns and pd.api.types.is_numeric_dtype(
                                 df_raw[col]) else 0
                             input_row[col] = val if pd.notna(val) else 0
@@ -480,12 +450,10 @@ with tab3:
                     st.session_state['feature_vector_df'] = input_df
                     st.session_state['prediction_minutes'] = int(max(0, model.predict(input_df)[0]))
                 else:
-                    # Thuật toán toán học dự phòng
                     st.session_state['prediction_minutes'] = int(max(0, 5 + (
                         abs(st.session_state['derived_buffer']) * 1.3 if st.session_state[
                                                                              'derived_buffer'] < 0 else 0)))
 
-                # LUỒNG 2: GỌI HỆ CHUYÊN GIA LLM CHẨN ĐOÁN
                 payload_to_llm = {
                     "Flight_No": f_flight_no, "Departure_Delay": st.session_state['prediction_minutes'],
                     "Turnaround_Buffer": st.session_state['derived_buffer'],
@@ -493,10 +461,10 @@ with tab3:
                 }
                 st.session_state['llm_diagnose'] = predict_delay_reason_local(payload_to_llm)
 
-        # HIỂN THỊ KẾT QUẢ ĐẦU RA SAU KHI CLICK DỰ BÁO
         if st.session_state['prediction_minutes'] > 0 or st.session_state['llm_diagnose'] is not None:
+            delay_minutes = st.session_state['prediction_minutes']
             st.markdown(
-                f"<h3 style='text-align: center; color: #d32f2f;'>⏱️ KẾT QUẢ DỰ BÁO: TRỄ {st.session_state['prediction_minutes']} PHÚT</h3>",
+                f"<h3 style='text-align: center; color: #d32f2f;'>⏱️ KẾT QUẢ DỰ BÁO: TRỄ {delay_minutes} PHÚT</h3>",
                 unsafe_allow_html=True)
 
             if st.session_state['llm_diagnose']:
@@ -504,13 +472,113 @@ with tab3:
                 d_reason = st.session_state['llm_diagnose'].get('Reason', 'Phân tích hoàn tất.')
                 st.markdown(f"""
                 <div class='llm-box'>
-                    <h4 style='color: #ff9800; margin-top:0;'>🧠 Lý do trễ</h4>
+                    <h4 style='color: #ff9800; margin-top:0;'>Lý do trễ</h4>
                     <p><b>Mã Nguyên Nhân IATA:</b> <span style='color:#d32f2f; font-weight:bold;'>{d_code}</span></p>
                     <p><b>Chẩn đoán chi tiết:</b> {d_reason}</p>
                 </div>
                 """, unsafe_allow_html=True)
 
-            # MLOPS: CHỈ HIỂN THỊ CÁC FEATURE THỰC TẾ ĐƯỢC TÍNH TOÁN VÀ NẠP VÀO MODEL
+            # [BỔ SUNG MỚI] GÓC NHÌN HÀNH KHÁCH NGAY TRÊN TAB DỰ BÁO
+            st.markdown("<hr>", unsafe_allow_html=True)
+            st.markdown("### 🧑‍✈️ KHUYẾN NGHỊ HÀNH KHÁCH (DỰA TRÊN DỰ BÁO)")
+
+            colA, colB = st.columns(2)
+            with colA:
+                if delay_minutes <= 15:
+                    st.markdown("""
+                    <div class='passenger-alert-green'>
+                        <h4 style='margin-top:0;'>🟢 Hành trình Suôn sẻ</h4>
+                        Chuyến bay khởi hành đúng giờ hoặc trễ không đáng kể. Quý khách thoải mái thư giãn tại phòng chờ.
+                    </div>
+                    """, unsafe_allow_html=True)
+                elif delay_minutes <= 45:
+                    st.markdown("""
+                    <div class='passenger-alert-yellow'>
+                        <h4 style='margin-top:0;'>🟡 Cảnh báo Khả năng Trễ chuyến</h4>
+                        Chuyến bay dự kiến trễ từ 15-45 phút. Vui lòng theo dõi bảng điện tử và chú ý lắng nghe thông báo.
+                    </div>
+                    """, unsafe_allow_html=True)
+                else:
+                    st.markdown("""
+                    <div class='passenger-alert-red'>
+                        <h4 style='margin-top:0;'>🔴 Rủi ro Cao & Lỡ nối chuyến</h4>
+                        Chuyến bay dự kiến trễ trên 45 phút! <b>Nguy cơ cao ảnh hưởng đến các chặng nối chuyến.</b> Vui lòng liên hệ quầy dịch vụ của hãng để kiểm tra phương án dự phòng.
+                    </div>
+                    """, unsafe_allow_html=True)
+
+            with colB:
+                buffer_val = st.session_state.get('derived_buffer', 0)
+                if buffer_val < 0:
+                    st.info(
+                        f"🔄 **Đồng hành cùng bạn:** Tàu bay mang số hiệu `{f_tail}` phục vụ chuyến bay của bạn hiện đang bị chậm trễ từ chặng trước. Đội ngũ mặt đất đang dốc toàn lực để tăng tốc quay đầu (Turnaround) ngay khi tàu hạ cánh. Rất mong quý khách thông cảm!")
+                else:
+                    st.success(
+                        f"✅ **Thông tin Tàu bay:** Tàu bay `{f_tail}` phục vụ chuyến bay của bạn đã sẵn sàng tại bãi đỗ hoặc đang bay về đúng tiến độ.")
+
             if model_loaded and st.session_state['feature_vector_df'] is not None:
                 with st.expander("🔍 MLOps: Quản lý Đặc trưng Được Tính toán"):
                     st.dataframe(st.session_state['feature_vector_df'], width="stretch")
+
+# TAB 4: TRẢI NGHIỆM HÀNH KHÁCH (HEATMAP)
+with tab4:
+    st.markdown("### 🗺️ BẢN ĐỒ ÁP LỰC HẠ TẦNG (CONGESTION HEATMAP)")
+    st.markdown(
+        "Cảnh báo mật độ hành khách và tắc nghẽn đường lăn để hành khách có thể chủ động thời gian làm thủ tục Check-in.")
+
+    # Lấy thông tin bối cảnh từ Tab 3 (Mặc định là 12h SGN nếu chưa bấm)
+    current_hour = st.session_state.get('input_hour', 12)
+    current_origin = st.session_state.get('input_origin', 'SGN')
+    median_delay = st.session_state.get('median_hourly_delay', 5.0)
+
+    st.info(
+        f"📍 **Bối cảnh phân tích:** Sân bay {current_origin} vào lúc {current_hour}:00 (Trung vị trễ lịch sử: {median_delay:.1f} phút)")
+
+    col1, col2, col3 = st.columns(3)
+
+    # Tính toán Toán học (Không dùng Random) dựa trên Trung vị trễ và Khung giờ
+    peak_hours = [6, 7, 8, 9, 16, 17, 18, 19]
+    base_load = 80 if current_hour in peak_hours else 55
+
+    # 1. Hệ số tải = Cơ bản + Tác động từ Trung vị trễ của giờ đó
+    load_factor = int(min(98, base_load + (median_delay * 0.8)))
+
+    # 2. Taxi-out (Lăn ra đường băng) = Base + ảnh hưởng từ hệ số tải
+    taxi_out = int(12 + max(0, (load_factor - 50) * 0.4))
+
+    col1.metric("Hệ số Tải Nhà ga (Terminal Load)", f"{load_factor}%", delta=f"{load_factor - 70}% so với trung bình",
+                delta_color="inverse")
+    col2.metric("Thời gian Lăn ra đường băng (Taxi-out)", f"{taxi_out} phút", delta=f"{taxi_out - 15} phút",
+                delta_color="inverse")
+    col3.metric("Rủi ro Kẹt Check-in / An ninh", "Cao 🔴" if load_factor > 85 else "Bình thường 🟢")
+
+    if load_factor > 85 or taxi_out > 25:
+        st.warning(
+            f"⚠️ **LỜI KHUYÊN DÀNH CHO HÀNH KHÁCH:** Sân bay {current_origin} hiện đang vào giờ cao điểm, lịch sử ghi nhận độ trễ lan truyền cao. Thời gian qua cửa kiểm tra an ninh sẽ lâu hơn bình thường. Quý khách vui lòng đến quầy check-in sớm hơn ít nhất **40 phút**.")
+    else:
+        st.success(
+            f"✅ **LỜI KHUYÊN DÀNH CHO HÀNH KHÁCH:** Áp lực hạ tầng tại {current_origin} đang ổn định. Thời gian làm thủ tục diễn ra bình thường.")
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # Cố định cấu trúc Heatmap theo Giờ và Sân bay (Loại bỏ nhảy hình ngẫu nhiên khi chuyển tab)
+    fixed_seed = current_hour * 100 + (1 if current_origin == 'SGN' else 2)
+    np.random.seed(fixed_seed)
+
+    coords = {'SGN': (10.816, 106.662), 'HAN': (21.221, 105.807), 'DAD': (16.043, 108.202)}
+    center_lat, center_lon = coords.get(current_origin, (10.816, 106.662))
+
+    # Số lượng điểm ảnh Heatmap phụ thuộc vào load_factor (Càng đông -> Heatmap càng đỏ)
+    map_data = pd.DataFrame({
+        'lat': np.random.normal(center_lat, 0.003, int(load_factor * 3)),
+        'lon': np.random.normal(center_lon, 0.003, int(load_factor * 3)),
+        'intensity': np.random.rand(int(load_factor * 3)) * 100
+    })
+
+    fig_map = px.density_mapbox(
+        map_data, lat='lat', lon='lon', z='intensity', radius=12,
+        center=dict(lat=center_lat, lon=center_lon), zoom=13.5,
+        mapbox_style="carto-positron",
+        title=f"Bản đồ Mật độ Phương tiện Sân đỗ hiện tại - {current_origin} ({current_hour}:00)"
+    )
+    fig_map.update_layout(margin={"r": 0, "t": 40, "l": 0, "b": 0})
+    st.plotly_chart(fig_map, use_container_width=True)

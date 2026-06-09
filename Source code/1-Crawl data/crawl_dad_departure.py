@@ -8,10 +8,7 @@ import time
 from datetime import datetime, timedelta
 import re
 
-CWD = Path.cwd().resolve()
-PROJECT_ROOT = CWD if (CWD / "Data").exists() else CWD.parent
-if not (PROJECT_ROOT / "Data").exists():
-    raise FileNotFoundError("Cannot find project root containing 'Data'.")
+PROJECT_ROOT = Path.cwd().parent.parent.resolve()
 
 BRONZE = PROJECT_ROOT / "Data" / "Bronze_layer"
 DEPARTURE_DIR = BRONZE / "Departure" / "dad_flights_departure_bronze_layer.csv"
@@ -163,8 +160,8 @@ def crawl_dad_historical_flights_edge(target_date_str):
 if __name__ == "__main__":
     all_flights = []
 
-    start_date = datetime(2026, 3, 16)
-    end_date = datetime(2026, 3, 16)
+    start_date = datetime(2026, 1, 17)
+    end_date = datetime(2026, 1, 17)
 
     current = start_date
 

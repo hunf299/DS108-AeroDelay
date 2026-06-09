@@ -1,0 +1,1000 @@
+﻿id,text,admin_label,hunf_label,huong_label,Ground_Truth
+1102,"Chuyến bay: CX766 | Thời gian trễ: 117.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 6.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.2045454545454546.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1103,"Chuyến bay: VJ513 | Thời gian trễ: 29.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 32.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7297297297297297.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 1.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.",CODE_89,CODE_99,CODE_99,CODE_99
+1104,"Chuyến bay: VN7165 | Thời gian trễ: 317.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 758.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7027027027027027.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 1.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1105,"Chuyến bay: OD572 | Thời gian trễ: 22.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 45.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 2.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7567567567567568.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1106,"Chuyến bay: VJ282 | Thời gian trễ: 24.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 127.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7272727272727273.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1107,"Chuyến bay: AK1503 | Thời gian trễ: 22.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 50.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8409090909090909.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_99,CODE_89,CODE_99,CODE_99
+1108,"Chuyến bay: VN7010 | Thời gian trễ: 34.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 51.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7954545454545454.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1109,"Chuyến bay: VN119 | Thời gian trễ: 165.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 28.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.6666666666666666.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 1.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_99,CODE_99,CODE_89,CODE_99
+1110,"Chuyến bay: VN170 | Thời gian trễ: 25.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 8.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.5416666666666666.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 1.0.
+",CODE_93#CODE_99,CODE_99,CODE_99,CODE_99
+1111,"Chuyến bay: CZ8466 | Thời gian trễ: 15.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 77.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.6590909090909091.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1112,"Chuyến bay: VN1825 | Thời gian trễ: 24.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 65.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8863636363636364.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1113,"Chuyến bay: VJ503 | Thời gian trễ: 17.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 377.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.5135135135135135.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1114,"Chuyến bay: FD871 | Thời gian trễ: 19.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 39.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7837837837837838.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1115,"Chuyến bay: VJ1306 | Thời gian trễ: 54.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 69.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.5454545454545454.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1116,"Chuyến bay: VN136 | Thời gian trễ: 111.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 24.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 40.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.1136363636363635.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1117,"Chuyến bay: VJ394 | Thời gian trễ: 27.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 53.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9090909090909092.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1118,"Chuyến bay: VJ152 | Thời gian trễ: 58.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 50.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9772727272727272.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1119,"Chuyến bay: VJ868 | Thời gian trễ: 82.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 110.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.0909090909090908.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 8.0.
+",CODE_81,CODE_89,CODE_99,CODE_99
+1120,"Chuyến bay: VJ1302 | Thời gian trễ: 31.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 878.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.6136363636363636.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1121,"Chuyến bay: VN248 | Thời gian trễ: 19.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 66.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7045454545454546.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 1.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 1.0.
+",CODE_89,CODE_99,CODE_89,CODE_89
+1122,"Chuyến bay: VJ634 | Thời gian trễ: 211.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 155.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.2045454545454546.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 6.0.
+",CODE_89,CODE_89,CODE_99,CODE_89
+1123,"Chuyến bay: 8M453 | Thời gian trễ: 28.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 82.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7954545454545454.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1124,"Chuyến bay: 9G1955 | Thời gian trễ: 19.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 79.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9318181818181818.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1125,"Chuyến bay: CX766 | Thời gian trễ: 33.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 75.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.0454545454545454.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1126,"Chuyến bay: VN1188 | Thời gian trễ: 106.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 144.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 3.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8863636363636364.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 6.0.
+",CODE_99,CODE_89,CODE_89,CODE_89
+1127,"Chuyến bay: KE480 | Thời gian trễ: 15.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 536.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8636363636363636.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1128,"Chuyến bay: VN206 | Thời gian trễ: 22.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 97.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 2.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.6590909090909091.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 6.0.
+",CODE_81,CODE_99,CODE_81,CODE_81
+1129,"Chuyến bay: VJ809 | Thời gian trễ: 20.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 120.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.0.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 8.0.
+",CODE_81,CODE_89,CODE_99,CODE_99
+1130,"Chuyến bay: NX981 | Thời gian trễ: 57.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 72.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.5945945945945946.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1131,"Chuyến bay: CZ8466 | Thời gian trễ: 18.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 58.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.75.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1132,"Chuyến bay: VJ119 | Thời gian trễ: 17.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 56.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.0227272727272727.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 7.0.
+",CODE_89,CODE_89,CODE_99,CODE_89
+1133,"Chuyến bay: VJ152 | Thời gian trễ: 48.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 52.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8863636363636364.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1134,"Chuyến bay: VN7040 | Thời gian trễ: 36.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 62.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 9.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9545454545454546.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_89,CODE_89,CODE_99,CODE_89
+1135,"Chuyến bay: VN6420 | Thời gian trễ: 30.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 530.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.75.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1136,"Chuyến bay: VN1268 | Thời gian trễ: 59.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 11.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.0810810810810811.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_89,CODE_06,CODE_99,CODE_99
+1137,"Chuyến bay: VN578 | Thời gian trễ: 82.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 3.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.054054054054054.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_99,CODE_99,CODE_89,CODE_99
+1138,"Chuyến bay: VJ905 | Thời gian trễ: 15.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 175.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 3.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.6486486486486487.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_71,CODE_99,CODE_99,CODE_99
+1139,"Chuyến bay: VN679 | Thời gian trễ: 58.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 13.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9772727272727272.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_99,CODE_89,CODE_89,CODE_89
+1140,"Chuyến bay: VJ386 | Thời gian trễ: 81.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 13.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9772727272727272.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 8.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1141,"Chuyến bay: VJ7238 | Thời gian trễ: 16.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 196.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7297297297297297.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1142,"Chuyến bay: 9G837 | Thời gian trễ: 24.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 51.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 2.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8378378378378378.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 1.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1143,"Chuyến bay: FD659 | Thời gian trễ: 21.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 37.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8863636363636364.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1144,"Chuyến bay: PR586 | Thời gian trễ: 230.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 669.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7916666666666666.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1145,"Chuyến bay: QH283 | Thời gian trễ: 54.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 18.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.6756756756756757.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 1.0.
+",CODE_99,CODE_93,CODE_99,CODE_99
+1146,"Chuyến bay: MU7258 | Thời gian trễ: 50.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 24.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.5.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1147,"Chuyến bay: MU6014 | Thời gian trễ: 21.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 68.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.918918918918919.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1148,"Chuyến bay: VJ858 | Thời gian trễ: 55.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 324.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 2.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9318181818181818.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1149,"Chuyến bay: VJ514 | Thời gian trễ: 65.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 117.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8333333333333334.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_99,CODE_89,CODE_89,CODE_89
+1150,"Chuyến bay: VN180 | Thời gian trễ: 15.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 15.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.5416666666666666.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 0.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1151,"Chuyến bay: VJ3900 | Thời gian trễ: 26.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 137.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8181818181818182.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_99,CODE_99,CODE_81,CODE_99
+1152,"Chuyến bay: BR396 | Thời gian trễ: 23.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 306.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.0227272727272727.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1153,"Chuyến bay: KE476 | Thời gian trễ: 31.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 82.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 2.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.5909090909090909.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 1.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1154,"Chuyến bay: VJ521 | Thời gian trễ: 98.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 396.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.972972972972973.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 1.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1155,"Chuyến bay: FD635 | Thời gian trễ: 30.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 13.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.625.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 0.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1156,"Chuyến bay: VN647 | Thời gian trễ: 37.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 25.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 2.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.6216216216216216.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1157,"Chuyến bay: VJ143 | Thời gian trễ: 24.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 64.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8378378378378378.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_81,CODE_89,CODE_89,CODE_89
+1158,"Chuyến bay: VN1591 | Thời gian trễ: 32.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 31.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8648648648648649.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1159,"Chuyến bay: QH242 | Thời gian trễ: 33.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 71.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.1136363636363635.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1160,"Chuyến bay: VN578 | Thời gian trễ: 45.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 22.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 27.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.054054054054054.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_89,CODE_99,CODE_89,CODE_89
+1161,"Chuyến bay: FD639 | Thời gian trễ: 15.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 25.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.5416666666666666.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1162,"Chuyến bay: VJ858 | Thời gian trễ: 146.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 209.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 230.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7954545454545454.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_99,CODE_93,CODE_99,CODE_99
+1163,"Chuyến bay: VN123 | Thời gian trễ: 35.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 158.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9166666666666666.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 1.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1164,"Chuyến bay: VJ1218 | Thời gian trễ: 18.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 67.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.0.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 6.0.
+",CODE_99,CODE_81,CODE_89,CODE_99
+1165,"Chuyến bay: GX8972 | Thời gian trễ: 21.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 57.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8378378378378378.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1166,"Chuyến bay: VJ210 | Thời gian trễ: 250.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 662.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.1136363636363635.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 8.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1167,"Chuyến bay: HO1328 | Thời gian trễ: 20.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 55.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 2.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7954545454545454.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1168,"Chuyến bay: VJ270 | Thời gian trễ: 33.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 216.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9772727272727272.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_89,CODE_99,CODE_99,CODE_99
+1169,"Chuyến bay: MH751 | Thời gian trễ: 81.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 18.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.1363636363636365.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1170,"Chuyến bay: VJ1604 | Thời gian trễ: 70.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 42.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.0227272727272727.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 7.0.
+",CODE_99,CODE_89,CODE_81,CODE_99
+1171,"Chuyến bay: VN6036 | Thời gian trễ: 19.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 100.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9772727272727272.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 1.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 9.0.
+",CODE_99,CODE_81,CODE_99,CODE_99
+1172,"Chuyến bay: VJ394 | Thời gian trễ: 341.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 64.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9772727272727272.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_89,CODE_89,CODE_99,CODE_89
+1173,"Chuyến bay: SQ173 | Thời gian trễ: 15.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 26.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.5.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 1.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1174,"Chuyến bay: ZH106 | Thời gian trễ: 31.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 60.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8648648648648649.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1175,"Chuyến bay: VJ7526 | Thời gian trễ: 39.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 115.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 2.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.4594594594594595.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1176,"Chuyến bay: SQ185 | Thời gian trễ: 35.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 81.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8409090909090909.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1177,"Chuyến bay: VJ1625 | Thời gian trễ: 135.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 42.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 78.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.5.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 0.0.
+",CODE_99,CODE_99,CODE_93,CODE_99
+1178,"Chuyến bay: VN122 | Thời gian trễ: 58.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 43.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8409090909090909.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1179,"Chuyến bay: VJ1805 | Thời gian trễ: 63.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 159.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9545454545454546.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1180,"Chuyến bay: TR353 | Thời gian trễ: 46.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 32.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9545454545454546.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 1.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1181,"Chuyến bay: VJ901 | Thời gian trễ: 32.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 679.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7027027027027027.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1182,"Chuyến bay: BR392 | Thời gian trễ: 44.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 54.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9090909090909092.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1183,"Chuyến bay: JL750 | Thời gian trễ: 49.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 112.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7045454545454546.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1184,"Chuyến bay: AK525 | Thời gian trễ: 49.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 3.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9318181818181818.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_99,CODE_89,CODE_99,CODE_99
+1185,"Chuyến bay: VN923 | Thời gian trễ: 21.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 57.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8918918918918919.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_99,CODE_89,CODE_99,CODE_99
+1186,"Chuyến bay: VJ304 | Thời gian trễ: 44.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 52.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7954545454545454.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1187,"Chuyến bay: BR382 | Thời gian trễ: 19.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 222.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.3181818181818182.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 0.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1188,"Chuyến bay: VJ187 | Thời gian trễ: 29.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 183.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.6486486486486487.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 1.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1189,"Chuyến bay: EY431 | Thời gian trễ: 29.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 96.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.972972972972973.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1190,"Chuyến bay: 9G1985 | Thời gian trễ: 85.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 212.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.1590909090909092.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 6.0.
+",CODE_99,CODE_89,CODE_99,CODE_99
+1191,"Chuyến bay: VJ1214 | Thời gian trễ: 186.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 446.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.9772727272727272.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 4.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1192,"Chuyến bay: VN195 | Thời gian trễ: 18.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 44.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7027027027027027.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_99,CODE_81,CODE_81,CODE_81
+1193,"Chuyến bay: VN163 | Thời gian trễ: 18.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 621.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 3.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.5405405405405406.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_71,CODE_71,CODE_71,CODE_71
+1194,"Chuyến bay: VN7715 | Thời gian trễ: 122.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 244.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.6216216216216216.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 0.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1195,"Chuyến bay: VZ961 | Thời gian trễ: 35.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 4.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.5.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Có (1).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 2.0.
+",CODE_06,CODE_06,CODE_06,CODE_06
+1196,"Chuyến bay: VJ321 | Thời gian trễ: 22.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 359.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.6818181818181818.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 6.0.
+",CODE_81,CODE_81,CODE_81,CODE_81
+1197,"Chuyến bay: QH154 | Thời gian trễ: 35.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 44.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.2272727272727273.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_89,CODE_89,CODE_89,CODE_89
+1198,"Chuyến bay: VJ325 | Thời gian trễ: 46.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 31.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.8863636363636364.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 5.0.
+",CODE_89,CODE_89,CODE_99,CODE_89
+1199,"Chuyến bay: VN414 | Thời gian trễ: 22.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 58.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 1.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7567567567567568.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_99,CODE_99,CODE_99,CODE_99
+1200,"Chuyến bay: VN9270 | Thời gian trễ: 23.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 278.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 1.0909090909090908.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 8.0.
+",CODE_99,CODE_89,CODE_81,CODE_99
+1201,"Chuyến bay: BR392 | Thời gian trễ: 47.0 phút.
+----------------------------------------
+- Quỹ thời gian quay đầu (Turnaround Buffer): 49.0 phút.
+- Thời gian trễ tích lũy từ chặng trước (Accumulated Delay): 0.0 phút.
+- Chỉ số rủi ro thời tiết tại sân bay đi (Weather Risk Score): 0.0.
+- Tải lượng sân bay đi (Airport Load Factor): 0.7954545454545454.
+- Nguy cơ tắc nghẽn tại điểm đến (Destination Congestion Risk): 0.0.
+- Áp dụng bãi đỗ xa (Is Remote Stand): Không (0).
+- Nguy cơ tắc nghẽn do không lưu (Taxi_Out_Congestion): 3.0.
+",CODE_99,CODE_99,CODE_99,CODE_99

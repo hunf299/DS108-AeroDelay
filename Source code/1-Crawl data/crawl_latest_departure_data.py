@@ -18,10 +18,7 @@ VN_IATAS = ['HAN', 'DAD', 'CXR', 'PQC', 'VCA', 'VDO', 'HPH', 'VII', 'THD', 'VDH'
 
 ORIGIN_IATA = "SGN"
 LIMIT_DATE = datetime(2025, 12, 1)
-CWD = Path.cwd().resolve()
-PROJECT_ROOT = CWD if (CWD / "Data").exists() else CWD.parent
-if not (PROJECT_ROOT / "Data").exists():
-    raise FileNotFoundError("Cannot find project root containing 'Data'.")
+PROJECT_ROOT = Path.cwd().parent.parent.resolve()
 
 BRONZE = PROJECT_ROOT / "Data" / "Bronze_layer"
 DEPARTURE_DIR = BRONZE / "Departure" / f"{ORIGIN_IATA.lower()}_flights_departure_bronze_layer.csv"
@@ -408,7 +405,7 @@ def crawl_fr24_departures():
                     "Terminal": terminal_val,
                     "Departure_Runway": "",
                     "Status": status,
-                    "Tail_Number": tail_number,
+                    "Scheduled_Tail": tail_number,
                     "Aircraft_Type": aircraft_type,
                     "Is_Fixed_Flight": is_fixed,
                     "Category": category
