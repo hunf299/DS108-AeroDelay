@@ -14,7 +14,7 @@ This addendum reviews flight-only Gold-layer features: delay, turnaround, tail r
 
 ## Correlation Insight
 
-Top Spearman correlations with the regression target among flight-only predictor candidates: Number_of_Flights_in_Last_Hour=0.447, Airport_Load_Factor=0.364, Rolling_Departure_Delay_Tail_3=0.338, Prev_Departure_Delay_Tail_1=0.323, Ground_Handling_Pressure=0.319, Is_Airport_Congested=0.308, Standard_Turnaround=0.293, Taxi_Out_Congestion=0.280. Raw `Departure_Delay` is label source, not a predictor. `Runway_Swap_Event`, `Matched_Actual_Tail`, and `Swap_Match_Gap_Minutes` are excluded from Gold training exports because they are linkage/leakage-risk fields.
+Top Spearman correlations with the regression target among flight-only predictor candidates: Number_of_Flights_in_Last_Hour=0.443, Airport_Load_Factor=0.362, Rolling_Departure_Delay_Tail_3=0.340, Prev_Departure_Delay_Tail_1=0.325, Ground_Handling_Pressure=0.320, Is_Airport_Congested=0.306, Standard_Turnaround=0.287, Taxi_Out_Congestion=0.276. Raw `Departure_Delay` is label source, not a predictor. `Runway_Swap_Event`, `Matched_Actual_Tail`, and `Swap_Match_Gap_Minutes` are excluded from Gold training exports because they are linkage/leakage-risk fields.
 
 ## Leakage Review
 

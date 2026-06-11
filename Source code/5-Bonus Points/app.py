@@ -130,13 +130,13 @@ def load_historical_data():
 
 @st.cache_resource
 def load_ml_model():
-    model_path = Path("Source code/models/best_aerodelay_model.pkl")
-    features_path = Path("Source code/models/best_model_features.pkl")
+    model_path = Path("Source code/3-Feature Engineering & Model/models/best_aerodelay_model.pkl")
+    features_path = Path("Source code/3-Feature Engineering & Model/models/best_model_features.pkl")
     if not model_path.exists():
         model_path = Path(
-            "/Users/nguyenhung/PycharmProjects/DS108_AeroDelay/Source code/models/best_aerodelay_model.pkl")
+            "/Users/nguyenhung/PycharmProjects/DS108_AeroDelay/Source code/3-Feature Engineering & Model/models/best_aerodelay_model.pkl")
         features_path = Path(
-            "/Users/nguyenhung/PycharmProjects/DS108_AeroDelay/Source code/models/best_model_features.pkl")
+            "/Users/nguyenhung/PycharmProjects/DS108_AeroDelay/Source code/3-Feature Engineering & Model/models/best_model_features.pkl")
     try:
         model = joblib.load(model_path)
         features = joblib.load(features_path)
