@@ -1,8 +1,6 @@
 *Đồ án môn học nhóm 18 DS108 - Tiền xử lý và xây dựng bộ dữ liệu*
 # AeroDelay: Thu thập dữ liệu hàng không và tiền xử lý cho bài toán dự đoán trễ chuyến dây chuyền.
 
----
-
 ## Giới thiệu dự án
 **AeroDelay** là nền tảng thu thập – xử lý – trích xuất đặc trưng dữ liệu hàng không và dữ liệu thời tiết nhằm phục vụ bài toán **dự đoán trễ chuyến**.
 
@@ -71,23 +69,6 @@ Dự án áp dụng quy trình dữ liệu theo các lớp **Bronze → Silver �
 
 ---
 
-## Ghi chú từ phân tích mã nguồn (tổng hợp thay đổi cập nhật)
-- Thực tế repository hiện có cấu trúc dữ liệu theo Bronze → Silver → Gold và chứa nhiều tệp đầu ra (ví dụ các file patched, audit, và master feature files) dưới thư mục Data. README đã được cập nhật để phản ánh cấu trúc chi tiết hơn.
-- Có các tệp Gold master features (ví dụ `Data/Gold_layer/Features/master_departure_features_gold.csv`) được sử dụng bởi ứng dụng và notebook huấn luyện.
-- Các file audit và patched outputs (ví dụ: `valid_patched_flights.csv`, `final_merged_patched_flights.csv`) tồn tại trong luồng xử lý — người dùng/độc giả nên tham khảo cây Data để biết chi tiết.
-- Lưu ý case-sensitivity: một số đường dẫn trong code (ví dụ `dagster_pipeline.py`) sử dụng tên thư mục có khác biệt về hoa/thường so với tên thư mục trên repo (`1-Crawl data` vs `1-Crawl Data`, `5-Bonus points` vs `5-Bonus Points`) — có thể gây lỗi trên hệ thống file phân biệt hoa/thường (Linux). Hãy kiểm tra và thống nhất tên thư mục nếu chạy pipeline trên môi trường Linux.
-
-### Phần phụ thuộc (tổng hợp so sánh giữa code và requirements)
-- Thêm vào requirements (không có trong file gốc) vì được sử dụng trong notebooks / model training / tiện ích:
-  - `lightgbm` (sử dụng trong model training notebook)
-  - `statsmodels` (sử dụng trong một số notebook phân tích)
-  - `tqdm` (sử dụng trong LLM annotator notebook)
-  - Các gói phục vụ notebook/runtime: `jupyter`, `notebook`, `ipython`, `nbconvert` (để chạy/convert notebook và môi trường tương tác)
-- Một số thư viện được liệt kê trong README (ví dụ `pyspark`, `kafka-python`) không có bằng chứng sử dụng trong mã nguồn hiện tại; nếu không cần, có thể gỡ khỏi danh sách phụ thuộc để giảm khối lượng cài đặt.
-- Một vài thư viện xuất hiện trong requirements.txt nhưng hiện ít/không thấy import trong mã: ví dụ `msedge-selenium-tools` hoặc `python-dotenv` — giữ/loại bỏ tùy theo nhu cầu triển khai thực tế.
-
----
-
 ## Cài đặt & môi trường (nhắc lại)
 
 ```bash
@@ -119,5 +100,3 @@ pip install -r requirements.txt
 | `jupyter`, `notebook`, `ipython`, `nbconvert` | Hỗ trợ chạy và xuất notebook |
 
 ---
-
-Nếu bạn muốn, tôi có thể tiếp tục tạo một changelog chi tiết các file đã cập nhật, hoặc mở một pull request với các thay đổi này để bạn/nhóm review trước khi merge.
