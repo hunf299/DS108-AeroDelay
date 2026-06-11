@@ -4,7 +4,7 @@ silver_columns,63,summary
 gold_rows,6624,summary
 gold_columns,54,summary
 dropped_columns_count,9,summary
-missing_requested_drop_columns_count,0,summary
+missing_requested_drop_columns_count,2,summary
 Is_Crosswind_15kt,1,drop_detail
 Is_Crosswind_20kt,1,drop_detail
 Is_Freezing,1,drop_detail
@@ -14,3 +14,5 @@ Is_WMO_Fog_Code,1,drop_detail
 Is_WMO_Thunderstorm_Code,1,drop_detail
 Runway_Ice_Risk,1,drop_detail
 Is_Extreme_Heat,1,drop_detail
+Is_crosswind_10kt,0,drop_detail
+Is_heavy_rain,0,drop_detail

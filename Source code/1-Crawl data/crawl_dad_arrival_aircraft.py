@@ -13,8 +13,8 @@ from pathlib import Path
 COL_FLIGHT_NO = 'Flight_No'
 COL_TAIL_NUMBER = 'Actual_Tail'
 COL_AIRCRAFT_TYPE = 'Aircraft_Type'
-COL_ARR_DATE = 'Arrival_Date'  # Yêu cầu định dạng YYYY-MM-DD
-COL_ARR_TIME = 'Arrival_Time'  # Yêu cầu định dạng HH:MM
+COL_ARR_DATE = 'Crawl_Date'  # Yêu cầu định dạng YYYY-MM-DD
+COL_ARR_TIME = 'Scheduled_Time'  # Yêu cầu định dạng HH:MM
 
 # ================= CẤU HÌNH ĐƯỜNG DẪN =================
 current_dir = Path.cwd().parent.parent.resolve()

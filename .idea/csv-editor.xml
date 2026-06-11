@@ -66,6 +66,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Data/Gold_layer/Audit/model_training/03_time_split_profile.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Data/Gold_layer/Audit/model_training/04_regression_benchmark_results.csv">
           <value>
             <Attribute>
@@ -123,6 +130,13 @@
           </value>
         </entry>
         <entry key="/Data/Gold_layer/Features/weather_features_gold_drop_audit.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data/Gold_layer/Features/weather_features_hourly_gold.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

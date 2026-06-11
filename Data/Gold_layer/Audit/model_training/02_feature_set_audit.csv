@@ -1,5 +1,5 @@
 feature_set,candidate_count,used_count,missing_count,missing_features,leakage_overlap
-F0_base,25,24,1,Airport,
-F1_turnaround,29,28,1,Airport,
-F2_lag,39,38,1,Airport,
-F3_weather,51,50,1,Airport,
+F0_base,25,23,2,"Airport, Is_Special_Days",
+F1_turnaround,29,26,3,"Airport, Is_Special_Days, Turnaround_Deficit_Min",
+F2_lag,39,36,3,"Airport, Is_Special_Days, Turnaround_Deficit_Min",
+F3_weather,51,46,5,"Airport, Is_Crosswind_10kt, Is_Heavy_Rain, Is_Special_Days, Turnaround_Deficit_Min",

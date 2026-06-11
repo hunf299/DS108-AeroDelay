@@ -338,7 +338,7 @@ with tab2:
             existing_cols = [c for c in req_cols if c in df_tail.columns]
             st.dataframe(df_tail[existing_cols], width="stretch")
 
-# TAB 3: LIVE PREDICTOR (BRONZE PIPELINE ENGINE)
+# TAB 3: LIVE PREDICTOR
 with tab3:
     if 'derived_buffer' not in st.session_state: st.session_state['derived_buffer'] = 45.0
     if 'derived_inc_delay' not in st.session_state: st.session_state['derived_inc_delay'] = 0.0
@@ -352,7 +352,7 @@ with tab3:
     col_in, col_out = st.columns([1, 1.3])
 
     with col_in:
-        st.subheader("📥 Thông tin Lịch trình Chuyến bay (Bronze Inputs)")
+        st.subheader("📥 Thông tin Lịch trình Chuyến bay")
         with st.form("bronze_input_form"):
             f_flight_no = st.text_input("Mã chuyến bay (Flight_No):", value="VN213")
             f_origin = st.selectbox("Sân bay Cất cánh (Origin):", ["SGN", "HAN", "DAD"])
