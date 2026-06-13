@@ -30,6 +30,11 @@ VN_IATAS = ['DAD', 'SGN', 'CXR', 'PQC', 'VCA', 'VDO', 'HPH', 'VII', 'THD', 'VDH'
 csv_lock = threading.Lock()
 browser_init_lock = threading.Lock()
 
+# QUẢN LÝ TỐC ĐỘ RPM
+rpm_lock = threading.Lock()
+total_processed_flights = 0
+scraping_start_time = None
+
 CSV_COLUMNS = [
     "Crawl_Date", "Scheduled_Time", "Actual_Time", "Origin", "IATA",
     "Airline", "Flight_No", "Terminal", "Arrival_Runway", "Status",
@@ -38,6 +43,21 @@ CSV_COLUMNS = [
 
 
 # ================= HÀM TIỆN ÍCH =================
+def update_and_print_rpm(thread_id):
+    global total_processed_flights, scraping_start_time
+    with rpm_lock:
+        total_processed_flights += 1
+
+        # Chỉ tính thời gian nếu đã bắt đầu cào thực sự
+        if scraping_start_time is not None:
+            elapsed_seconds = time.time() - scraping_start_time
+            elapsed_minutes = elapsed_seconds / 60.0
+
+            if elapsed_minutes > 0:
+                rpm = total_processed_flights / elapsed_minutes
+                print(
+                    f"  ---> [RPM Monitor] Luồng {thread_id} | Tổng đã check: {total_processed_flights} chuyến | Tốc độ: {rpm:.2f} chuyến/phút")
+
 def start_undetected_browser(thread_id):
     """
     Sử dụng browser_init_lock để đảm bảo 2 luồng không tranh nhau gọi uc.Chrome() cùng 1 tíc tắc.
@@ -45,9 +65,6 @@ def start_undetected_browser(thread_id):
     with browser_init_lock:
         print(f"[Luồng {thread_id}] Đang khởi tạo Browser...")
 
-        # --- ĐÃ SỬA LỖI TẠI ĐÂY ---
-        # Lấy đường dẫn tuyệt đối của thư mục chứa file Python này (Ổ Z:\...)
-        # Thay vì dùng os.getcwd() có thể bị nhảy vào C:\WINDOWS\system32
         base_dir = os.path.dirname(os.path.abspath(__file__))
         profile_dir = os.path.join(base_dir, f"chrome_profile_thread_{thread_id}")
         os.makedirs(profile_dir, exist_ok=True)
@@ -62,7 +79,7 @@ def start_undetected_browser(thread_id):
         # Khởi tạo browser
         driver = uc.Chrome(options=options, user_data_dir=profile_dir, version_main=148)
 
-        # Sắp xếp 2 cửa sổ để bạn dễ theo dõi
+        # Sắp xếp 2 cửa sổ
         if thread_id == 1:
             driver.set_window_rect(0, 0, 900, 800)
         else:
@@ -74,15 +91,16 @@ def start_undetected_browser(thread_id):
 
 
 def wait_for_manual_login(driver, thread_id):
-    print(f"\n[!!!] [Luồng {thread_id}] CHỜ ĐĂNG NHẬP TÀI KHOẢN BUSINESS [!!!]")
+    print(f"\n[!!!] LUỒNG {thread_id} CHỜ ĐĂNG NHẬP TÀI KHOẢN BUSINESS [!!!]")
     while True:
         try:
-            if driver.find_element(By.ID, "auth-button"):
-                print(f"\n[v] [Luồng {thread_id}] Đã nhận diện tài khoản!")
+            auth_btn = driver.find_element(By.ID, "auth-button")
+            if "business" in auth_btn.text.lower():
+                print(f"\n[v] LUỒNG {thread_id} đã nhận diện tài khoản Business!\n")
                 break
+            time.sleep(2)
         except:
-            pass
-        time.sleep(3)
+            time.sleep(2)
 
 
 def parse_fr24_date(date_str):
@@ -275,6 +293,8 @@ def worker_process(dataframe_chunk, thread_id):
             if not matched:
                 print(f"  [Luồng {thread_id}] [-] Không tìm thấy khớp.")
 
+            update_and_print_rpm(thread_id)
+
         driver.quit()
         print(f"\n[Luồng {thread_id}] ĐÃ XONG!")
     except Exception as e:
@@ -304,11 +324,14 @@ def run_multithreading():
     print(f"[*] Tổng số: {total_rows} chuyến")
     print(f"[*] Luồng 1 xử lý: {len(part1)} chuyến | Luồng 2 xử lý: {len(part2)} chuyến")
 
+    global scraping_start_time
+    scraping_start_time = time.time()
+
     with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
         future1 = executor.submit(worker_process, part1, 1)
         future2 = executor.submit(worker_process, part2, 2)
 
-        # Cực kỳ quan trọng: Lệnh result() sẽ ép Python hiện lỗi ra màn hình nếu luồng bị crash
+        # Lệnh result() sẽ ép Python hiện lỗi ra màn hình nếu luồng bị crash
         try:
             future1.result()
             future2.result()

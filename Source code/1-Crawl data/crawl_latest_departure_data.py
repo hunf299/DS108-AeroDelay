@@ -1,5 +1,4 @@
 from pathlib import Path
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -291,8 +290,6 @@ def crawl_fr24_departures():
                 driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", flight)
                 time.sleep(0.3)
 
-                # ================= FIX LỖI CLICK HEADER MỚI =================
-                # Thuộc tính flight-header__ đã bị FR24 xóa, giờ dùng thẻ div mang data-testid airport-panel__schedules__flight...
                 header = flight.find_element(By.CSS_SELECTOR, "div[data-testid^='airport-panel__schedules__flight__']")
                 driver.execute_script("arguments[0].click();", header)
 
@@ -305,7 +302,6 @@ def crawl_fr24_departures():
                 html = flight.get_attribute("outerHTML")
                 soup = BeautifulSoup(html, 'html.parser')
 
-                # ================= FIX LỖI ẨN MÃ TESTID CỦA FR24 =================
                 def get_fr24_text(test_id):
                     # Tìm theo data-testid HOẶC testid (Vì FR24 xài lẫn lộn cả hai)
                     elem = soup.find(attrs={"data-testid": test_id}) or soup.find(attrs={"testid": test_id})

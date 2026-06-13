@@ -1,9 +1,7 @@
 from pathlib import Path
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
 import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -74,7 +72,7 @@ def get_earliest_flight_date(flights):
             date_element = last_flight.find_element(By.XPATH, ".//td[@data-time-format='DD MMM YYYY']")
             date_str = date_element.text.strip()
         except:
-            # Nếu không có thì lấy cột thứ 3 (như logic BeautifulSoup của bạn)
+            # Nếu không có thì lấy cột thứ 3
             cols = last_flight.find_elements(By.TAG_NAME, "td")
             if len(cols) > 2:
                 date_str = cols[2].text.strip()

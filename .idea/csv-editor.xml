@@ -108,6 +108,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Data/Gold_layer/Features/human_annotated_validation_set/hunf299.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Data/Gold_layer/Features/master_departure_features_gold.csv">
           <value>
             <Attribute>
@@ -151,6 +158,13 @@
           </value>
         </entry>
         <entry key="/Data/Silver_layer/Arrival/sgn_flights_arrival_silver_layer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data/Silver_layer/Audit/audit_weather_cleaning_actions.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

@@ -17,7 +17,7 @@ import traceback
 PROJECT_ROOT = Path.cwd().parent.parent.resolve()
 
 SILVER = PROJECT_ROOT / "Data" / "Silver_layer"
-AUDIT_FILE = SILVER / "Audit" / "audit_departure_without_arrival.csv"
+AUDIT_FILE = SILVER / "Audit" / "audit_arrival_without_departure.csv"
 OUTPUT_CSV = PROJECT_ROOT / "Data" / "valid_patched_flights.csv"
 LIMIT_DATE = datetime(2025, 12, 15)
 
@@ -28,14 +28,33 @@ VN_IATAS = ['DAD', 'SGN', 'CXR', 'PQC', 'VCA', 'VDO', 'HPH', 'VII', 'THD', 'VDH'
 csv_lock = threading.Lock()
 browser_init_lock = threading.Lock()
 
+# QUẢN LÝ TỐC ĐỘ RPM
+rpm_lock = threading.Lock()
+total_processed_flights = 0
+scraping_start_time = None
+
 CSV_COLUMNS = [
     "Crawl_Date", "Scheduled_Time", "Actual_Time", "Destination", "IATA",
     "Airline", "Flight_No", "Terminal", "Departure_Runway", "Status",
     "Scheduled_Tail", "Aircraft_Type", "Is_Fixed_Flight", "Category"
 ]
 
-
 # ================= HÀM TIỆN ÍCH =================
+def update_and_print_rpm(thread_id):
+    global total_processed_flights, scraping_start_time
+    with rpm_lock:
+        total_processed_flights += 1
+
+        # Chỉ tính thời gian nếu đã bắt đầu cào thực sự
+        if scraping_start_time is not None:
+            elapsed_seconds = time.time() - scraping_start_time
+            elapsed_minutes = elapsed_seconds / 60.0
+
+            if elapsed_minutes > 0:
+                rpm = total_processed_flights / elapsed_minutes
+                print(
+                    f"  ---> [RPM Monitor] Luồng {thread_id} | Tổng đã check: {total_processed_flights} chuyến | Tốc độ: {rpm:.2f} chuyến/phút")
+
 def start_undetected_browser(thread_id):
     with browser_init_lock:
         print(f"[Luồng {thread_id}] Đang khởi tạo Browser...")
@@ -63,15 +82,16 @@ def start_undetected_browser(thread_id):
 
 
 def wait_for_manual_login(driver, thread_id):
-    print(f"\n[!!!] [Luồng {thread_id}] CHỜ ĐĂNG NHẬP TÀI KHOẢN BUSINESS [!!!]")
+    print(f"\n[!!!] LUỒNG {thread_id} CHỜ ĐĂNG NHẬP TÀI KHOẢN BUSINESS [!!!]")
     while True:
         try:
-            if driver.find_element(By.ID, "auth-button"):
-                print(f"\n[v] [Luồng {thread_id}] Đã nhận diện tài khoản!")
+            auth_btn = driver.find_element(By.ID, "auth-button")
+            if "business" in auth_btn.text.lower():
+                print(f"\n[v] LUỒNG {thread_id} đã nhận diện tài khoản Business!\n")
                 break
+            time.sleep(2)
         except:
-            pass
-        time.sleep(3)
+            time.sleep(2)
 
 
 def parse_fr24_date(date_str):
@@ -298,6 +318,8 @@ def worker_process(dataframe_chunk, thread_id):
             if not matched:
                 print(f"  [Luồng {thread_id}] [-] Không tìm thấy khớp.")
 
+            update_and_print_rpm(thread_id)
+
         driver.quit()
         print(f"\n[Luồng {thread_id}] ĐÃ XONG!")
     except Exception as e:
@@ -326,6 +348,9 @@ def run_multithreading():
 
     print(f"[*] Tổng số: {total_rows} chuyến")
     print(f"[*] Luồng 1 xử lý: {len(part1)} chuyến | Luồng 2 xử lý: {len(part2)} chuyến")
+
+    global scraping_start_time
+    scraping_start_time = time.time()
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
         future1 = executor.submit(worker_process, part1, 1)
