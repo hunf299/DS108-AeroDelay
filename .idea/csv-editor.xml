@@ -52,6 +52,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Data/Gold_layer/Arrival/dad_flights_arrival_gold_layer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data/Gold_layer/Arrival/han_flights_arrival_gold_layer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Data/Gold_layer/Arrival/sgn_flights_arrival_gold_layer.csv">
           <value>
             <Attribute>
@@ -157,6 +171,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Data/Silver_layer/Arrival/han_flights_arrival_silver_layer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Data/Silver_layer/Arrival/sgn_flights_arrival_silver_layer.csv">
           <value>
             <Attribute>
@@ -164,7 +185,35 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Data/Silver_layer/Audit/audit_arrival_time_semantics.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data/Silver_layer/Audit/audit_missing_imputation.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data/Silver_layer/Audit/audit_summary.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Data/Silver_layer/Audit/audit_weather_cleaning_actions.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Data/Silver_layer/Audit/eda_weather_reports/06_fog_ceiling_visibility_rain_interaction_profile.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

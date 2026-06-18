@@ -8,22 +8,29 @@ Dự án áp dụng quy trình dữ liệu theo các lớp **Bronze → Silver �
 
 ---
 
-## Cấu trúc dự án (cập nhật)
+## Cấu trúc dự án
 ```text
-├── Data/
+├── 18_24520617_24520636_Data/
 │   ├── Bronze_layer/                 # Dữ liệu thô (flights, weather...)
 │   │   ├── Arrival/
 │   │   └── Departure/
+│   │   └── airport_weather_hourly_merged.csv 
 │   ├── Silver_layer/                 # Dữ liệu đã làm sạch/chuẩn hóa (có audit & patch files)
 │   │   ├── Arrival/
 │   │   ├── Departure/
 │   │   └── Audit/
+│   │   └── Features/
 │   └── Gold_layer/                   # Dữ liệu đặc trưng sẵn sàng cho ML (master feature files)
-│       └── Features/
+│   │ 	├── Arrival/
+│   │   ├── Departure/
+│   │   └── Audit/	
+│   |   └── Features/
+│   ├── final_merged_patched_flights.csv     
+│   ├── valid_patched_flights.csv    
 │
-├── References/                       # Tài liệu tham khảo / ghi chú / tài liệu liên quan
+├── 18_24520617_24520636_References/  # Tài liệu tham khảo / ghi chú / tài liệu liên quan
 │
-├── Source code/
+├── 18_24520617_24520636_Source code/
 │   ├── 1-Crawl data/                 # Scripts thu thập dữ liệu (Bronze)
 │   ├── 2-Preprocessing/              # Tiền xử lý flights & weather
 │   │   ├── data_preprocessing.py
@@ -38,6 +45,8 @@ Dự án áp dụng quy trình dữ liệu theo các lớp **Bronze → Silver �
 │   └── 5-Bonus Points/                # Phần mở rộng / bonus (Streamlit dashboard + Dagster)
 │       ├── app.py
 │       └── dagster_pipeline.py
+│       └── cross_validation_llm.ipynb
+│       └── llm_annotator.ipynb
 │
 ├── requirements.txt
 └── README.md
@@ -45,7 +54,7 @@ Dự án áp dụng quy trình dữ liệu theo các lớp **Bronze → Silver �
 
 ---
 
-## Quy trình thực hiện (tổng quan)
+## Quy trình thực hiện
 
 ### 1) Thu thập dữ liệu (Crawling)
 - Thu thập dữ liệu chuyến bay và dữ liệu thời tiết theo các nguồn nhóm sử dụng.
@@ -69,7 +78,7 @@ Dự án áp dụng quy trình dữ liệu theo các lớp **Bronze → Silver �
 
 ---
 
-## Cài đặt & môi trường (nhắc lại)
+## Cài đặt & môi trường
 
 ```bash
 python -m venv .venv
@@ -83,7 +92,7 @@ pip install -r requirements.txt
 
 ---
 
-## Thư viện chính sử dụng (cập nhật)
+## Thư viện chính sử dụng
 
 | Thư viện | Mục đích |
 |---|---|
