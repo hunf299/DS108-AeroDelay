@@ -27,6 +27,7 @@ Dự án áp dụng quy trình dữ liệu theo các lớp **Bronze → Silver �
 │   |   └── Features/
 │   ├── final_merged_patched_flights.csv     
 │   ├── valid_patched_flights.csv    
+│   ├── CODEBOOK_AERODELAY_GOLD.xlsx   
 │
 ├── 18_24520617_24520636_References/  # Tài liệu tham khảo / ghi chú / tài liệu liên quan
 │
@@ -48,6 +49,10 @@ Dự án áp dụng quy trình dữ liệu theo các lớp **Bronze → Silver �
 │       └── cross_validation_llm.ipynb
 │       └── llm_annotator.ipynb
 │
+├── 18_24520617_24520636_Demo/
+│
+├── 18_24520617_24520636_Report.pdf
+├── 18_24520617_24520636_Slide.pdf
 ├── requirements.txt
 └── README.md
 ```
