@@ -3,245 +3,84 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="/Data/Bronze_layer/Arrival/dad_flights_arrival_bronze_layer.csv">
+        <entry key="/18_24520617_24520636_Data/Gold_layer/Arrival/dad_flights_arrival_gold_layer.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data/Bronze_layer/Arrival/han_flights_arrival_bronze_layer.csv">
+        <entry key="/18_24520617_24520636_Data/Gold_layer/Arrival/han_flights_arrival_gold_layer.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data/Bronze_layer/Arrival/sgn_flights_arrival_bronze_layer.csv">
+        <entry key="/18_24520617_24520636_Data/Gold_layer/Arrival/sgn_flights_arrival_gold_layer.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data/Bronze_layer/Departure/dad_flights_departure_bronze_layer.csv">
+        <entry key="/18_24520617_24520636_Data/Gold_layer/Features/master_departure_features_gold.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data/Bronze_layer/Departure/han_flights_departure_bronze_layer.csv">
+        <entry key="/18_24520617_24520636_Data/Gold_layer/Features/master_departure_features_gold_annotated.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data/Bronze_layer/Departure/sgn_flights_departure_bronze_layer.csv">
+        <entry key="/18_24520617_24520636_Data/Gold_layer/Features/weather_features_hourly_gold.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data/Bronze_layer/airport_weather_hourly_merged.csv">
+        <entry key="/18_24520617_24520636_Data/Silver_layer/Arrival/dad_flights_arrival_silver_layer.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data/Gold_layer/Arrival/dad_flights_arrival_gold_layer.csv">
+        <entry key="/18_24520617_24520636_Data/Silver_layer/Arrival/han_flights_arrival_silver_layer.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data/Gold_layer/Arrival/han_flights_arrival_gold_layer.csv">
+        <entry key="/18_24520617_24520636_Data/Silver_layer/Arrival/sgn_flights_arrival_silver_layer.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data/Gold_layer/Arrival/sgn_flights_arrival_gold_layer.csv">
+        <entry key="/18_24520617_24520636_Data/Silver_layer/Audit/audit_arrival_time_semantics.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data/Gold_layer/Audit/final_cross_evaluation_report.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=":" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Gold_layer/Audit/model_training/03_time_split_profile.csv">
+        <entry key="/18_24520617_24520636_Data/Silver_layer/Audit/audit_missing_imputation.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/Data/Gold_layer/Audit/model_training/04_regression_benchmark_results.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Gold_layer/Audit/model_training/05_best_model_segment_metrics.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Gold_layer/Audit/model_training/06_best_model_test_predictions.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Gold_layer/Departure/sgn_flights_departure_gold_layer.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Gold_layer/Features/human_annotated_results.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=":" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Gold_layer/Features/human_annotated_validation_set/hunf299.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=":" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Gold_layer/Features/master_departure_features_gold.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Gold_layer/Features/master_departure_features_gold_annotated.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Gold_layer/Features/validation_departure_features_gold.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=":" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Gold_layer/Features/weather_features_gold_drop_audit.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Gold_layer/Features/weather_features_hourly_gold.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Silver_layer/Arrival/dad_flights_arrival_silver_layer.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Silver_layer/Arrival/han_flights_arrival_silver_layer.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Silver_layer/Arrival/sgn_flights_arrival_silver_layer.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Silver_layer/Audit/audit_arrival_time_semantics.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Silver_layer/Audit/audit_missing_imputation.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Silver_layer/Audit/audit_summary.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Silver_layer/Audit/audit_weather_cleaning_actions.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Silver_layer/Audit/eda_weather_reports/06_fog_ceiling_visibility_rain_interaction_profile.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Silver_layer/Audit/flight_eda_reports/21_visual_issue_summary.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/Silver_layer/Departure/sgn_flights_departure_silver_layer.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/final_merged_patched_flights.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Data/valid_patched_flights.csv">
+        <entry key="/18_24520617_24520636_Data/Silver_layer/Audit/audit_summary.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
